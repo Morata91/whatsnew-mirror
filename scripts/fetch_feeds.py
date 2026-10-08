@@ -8,7 +8,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 FEEDS = {
-    "whats_new": "https://aws.amazon.com/jp/about-aws/whats-new/recent/feed/",
+    "whats_new": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
     "aws_blog": "https://aws.amazon.com/jp/blogs/news/feed/",
 }
 OUT = Path("data/latest.json")
