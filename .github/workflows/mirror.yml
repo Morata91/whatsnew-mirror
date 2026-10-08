@@ -2,7 +2,7 @@ name: Fetch AWS feeds
 
 on:
   schedule:
-    - cron: "0 21 * * *" # UTC 21:00 = JST 06:00
+    - cron: "10 22 * * *" # UTC 21:00 = JST 06:00
   workflow_dispatch:
 
 permissions:
