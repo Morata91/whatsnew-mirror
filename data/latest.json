@@ -1,0 +1,613 @@
+{
+  "generated_at": "2026-10-08T06:50:37.267256+00:00",
+  "feeds": {
+    "whats_new": {
+      "source": "https://aws.amazon.com/jp/about-aws/whats-new/recent/feed/",
+      "items": [
+        {
+          "title": "AWS CLI、Agent Toolkit for AWS のスキルの一括更新とバージョンチェックをサポート",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aws-cli-agent-toolkit-update-skill/",
+          "published": "2026-09-30T20:16:00+00:00",
+          "summary": "<p>本日、AWS は <a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/what-is-agent-toolkit.html\" target=\"_blank\" rel=\"noopener noreferrer\">Agent Toolkit for AWS</a> 向けの AWS コマンドラインインターフェイス (CLI) コマンドを拡張し、エージェントスキルを最新の状態に保ちやすくする 2 つの新機能を追加しました。aws agent-toolkit check-skill-updates を実行すると、インストールされているすべてのスキルと、レジストリで利用可能な最新バージョンを比較できます。また、aws agent-toolkit update-skill --all を使用すると、古くなったすべてのスキルを 1 つのコマンドで更新できます。</p>\n<p>Agent Toolkit for AWS は、AWS MCP サーバー、エージェントスキル、プラグインで構成されています。AWS MCP サーバーでは、15,000 を超える AWS API に安全かつ監査可能な方法でアクセスするためのエージェントインターフェイスを利用できます。エージェントスキルでは、ストレージ、ネットワーキング、分析など、さまざまな分野の専門的なガイダンスをエージェントに提供できます。プラグインでは、MCP サーバーと厳選されたスキルセットがまとめられており、1 回でインストールできます。これまでは、各スキルを個別にチェックして更新する必要がありました。今回 AWS CLI に追加された機能を利用すると、デベロッパーは新しいバージョンが利用可能なスキルをすばやく特定し、1 つずつ更新を管理することなく、スキルセット全体を最新の状態にできます。これは特に、サーバーレス、ストレージ、ネットワーキング、分析などの分野にわたって多数のスキルをインストールしており、コーディングエージェントで常に最新のガイダンスを使用したいチームに役立ちます。これらの新しいコマンドは、Agent Toolkit 向けの既存の AWS CLI 機能に追加されます。既存の機能では、Kiro、Claude Code、Codex、Cursor、その他の一般的なコーディングエージェントで、AWS MCP サーバーとエージェントスキルをインストール、検索、設定できます。&nbsp;</p>\n<p>使用を開始するには、Agent Toolkit for AWS ユーザーガイドの <a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS CLI</a> を参照してください。AWS CLI バージョン 2.37.0 以降がインストールされていることを確認してください。AWS MCP サーバーは米国東部 (バージニア北部) と欧州 (フランクフルト) リージョンで利用可能です。</p>",
+          "categories": [
+            "general:products/aws-developer-tools,marketing:marchitecture/developer-tools"
+          ]
+        },
+        {
+          "title": "Amazon S3 Vectors、メタデータの事前フィルタリングによってフィルター検索の再現率が最大 5 倍に向上",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/s3-vectors-introduces-metadata-pre-filtering/",
+          "published": "2026-09-30T20:00:00+00:00",
+          "summary": "<p>Amazon S3 Vectors で事前フィルタリングがサポートされるようになりました。事前フィルタリングでは、類似性検索の実行前にメタデータフィルターが評価され、フィルターの選択性が高い場合、一致するベクトルが最大 5 倍多く返されます。また、S3 Vectors には、パスや URL などの値をフィルタリングするためのプレフィックス一致演算子 ($startsWith) も追加されました。これらの機能強化により、取得拡張生成 (RAG)、エージェンティック、セマンティック検索の各アプリケーションでフィルタリングを行う際に、より完全な結果を取得できるため、より関連性の高い回答を返せるようになります。</p>\n<p>S3 Vectors では、Amazon S3 にベクトルを保存してクエリするためのネイティブサポートとして、数十億規模のベクトルに対応するよう専用設計され、コスト最適化された保存機能とクエリ機能を利用できます。今回のリリースにより、新しいベクトルバケット内のインデックスでは、デフォルトでメタデータの事前フィルタリングが使用されます。PutVectors でベクトルを書き込む方法や、QueryVectors でフィルター付きクエリを実行する方法に変更はありません。既存のインデックスで事前フィルタリングを使用する場合は、UpdateIndexMode API を使用してインデックスをその場で更新できます。更新する前に QueryVectors のクエリごとのパラメータを使用して、同じインデックスで事前フィルタリングと現在のフィルタリングを比較することもできます。</p>\n<p>メタデータの事前フィルタリングは、Amazon S3 Vectors が提供されているすべての商用 AWS リージョンと AWS 中国リージョンで、追加料金なしで利用できます。現在、この変更のデプロイを進めており、近日中にデプロイを完了する予定です。使用を開始するには、AWS CLI、AWS SDK、または Amazon S3 コンソールを使用してください。詳細については、Amazon S3 Vectors の<a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-metadata-filtering.html\" target=\"_blank\" rel=\"noopener noreferrer\">ドキュメント</a>および <a href=\"https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches\" target=\"_blank\" rel=\"noopener noreferrer\">AWS ニュースブログ</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-s3,marketing:marchitecture/storage"
+          ]
+        },
+        {
+          "title": "Amazon Managed Grafana が Grafana 13.2 ワークスペース作成のサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-managed-grafana-now-supports-creating-grafana-13-2-workspaces",
+          "published": "2026-09-30T19:30:00+00:00",
+          "summary": "<p>Amazon Managed Grafana は、Grafana バージョン 13.2 で新しいワークスペース作成のサポートを開始しました。このリリースでは、ダッシュボード向け Git Sync、動的ダッシュボード、Amazon CloudWatch データソースプラグインでの PromQL クエリのサポートなど、オープンソース Grafana バージョン 13.0～13.2 の機能が導入されます。</p>\n<p>Git Sync を使用すると、ワークスペースを Git リポジトリにリンクして、ダッシュボードをコードとして扱うことができます。これにより、バージョン管理を利用して、ダッシュボードへの変更の追跡、レビュー、取り消しを行えます。動的ダッシュボードでは、データや変数に応じた条件に基づいてレスポンシブなビューを構築でき、より柔軟にレイアウトとパネルを調整できます。また、Amazon CloudWatch データソースプラグインで PromQL クエリもサポートされるようになりました。これにより、Prometheus Query Language を使用して、CloudWatch が OpenTelemetry (OTLP) エンドポイント経由で取り込んだメトリクスに対してクエリを実行でき、既存のクエリタイプであるメトリクス検索とメトリクスインサイトと併せて使用できます。</p>\n<p>Grafana 13.2 は、Amazon Managed Grafana が一般提供されているすべての AWS リージョンで利用できます。</p>\n<p>バージョン 13.2 を使用した Amazon Managed Grafana ワークスペースの作成方法については、<a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v13\">ユーザードキュメント</a>を参照してください。Amazon Managed Grafana の機能と料金の詳細については、<a href=\"https://aws.amazon.com/grafana/\">製品ページ</a>および<a href=\"https://aws.amazon.com/grafana/pricing/\">料金ページ</a>をご覧ください。</p>",
+          "categories": [
+            "marketing:marchitecture/management-and-governance,general:products/amazon-managed-service-for-grafana,general:products/amazon-cloudwatch"
+          ]
+        },
+        {
+          "title": "OpenAI GPT-6 Astra、Amazon Bedrock で Ultrafast モードのサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/openai-gpt-6-astra-ultrafast-on-amazon-bedrock/",
+          "published": "2026-09-30T19:00:00+00:00",
+          "summary": "<p>&nbsp;本日、AWS は Amazon Bedrock 上の OpenAI GPT-6 Astra で Ultrafast モードが利用可能になったことを発表しました。Ultrafast は、高速な処理が最も重視されるワークロード向けに構築された GPT-6 Astra のプレミアム速度階層です。OpenAI によると、Ultrafast を使用すると、API での推論が最大 6 倍高速になり、1 秒あたり最大 300 トークンを処理できます。Amazon Bedrock の推論エンジンを使用することで、本番ワークロードに必要なパフォーマンス、セキュリティ、信頼性を確保できます。</p>\n<p>GPT-6 Astra Ultrafast は、リアルタイムのコーディングアシスタント、インタラクティブエージェント、高速で高品質な応答が求められる顧客向けエクスペリエンスなど、レイテンシーの影響を受けやすいアプリケーションに使用できます。既存の AWS の制御機能を利用すれば、ワークロードを保護し、アクセスを管理して、モデル呼び出しアクティビティを監査できます。</p>\n<p>このモードは、<a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/\">Amazon Bedrock コンソール</a>から、またはサポートされている Amazon Bedrock API を使用してプログラムから開始できます。サポートされている <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\">AWS リージョン</a>、エンドポイント、API、機能、推論プロファイル、料金については、<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-astra.html\">Amazon Bedrock のドキュメント</a>を参照してください。&nbsp;</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,general:products/amazon-bedrock"
+          ]
+        },
+        {
+          "title": "AWS Parallel Computing Service、スケーリングログのサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aws-pcs-scaling-logs/",
+          "published": "2026-09-30T19:00:00+00:00",
+          "summary": "<p>AWS Parallel Computing Service (AWS PCS) では、クラスター内のコンピューティングノードグループのスケーリング状況を記録するスケーリングログがサポートされるようになりました。各ログエントリには、1 つのコンピューティングノードで発生した 1 回の状態遷移が記録されます。例えば、インスタンスの起動、ノードの登録、スケールダウン、起動の失敗とその理由などです。スケーリングログを使用すると、スケーリング問題のトラブルシューティングが簡単になります。例えば、コンピューティングノードグループがターゲットサイズに達しなかった理由、キャパシティ上の理由で失敗した起動、あるノードが開始または停止した時刻を特定できます。AWS PCS でのスケーリングログの配信はオプトイン方式です。スケーリングログの出力先には、Amazon CloudWatch Logs、Amazon S3、Amazon Data Firehose を指定できます。</p>\n<p>AWS PCS は、Slurm を使用して AWS での HPC ワークロードの実行とスケーリングを簡素化するマネージドサービスです。コンピューティング、ストレージ、ネットワーク、可視化ツールを統合した包括的で伸縮自在な環境を構築できます。クラスターの運用は、マネージド更新や組み込みのオブザーバビリティ機能により、サービス側で処理されます。</p>\n<p>この機能は、<a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"><u>AWS PCS が提供されているすべての AWS リージョン</u></a>でご利用いただけます。使用を開始するには、<a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/monitoring-overview.html\">AWS PCS ユーザーガイド</a>を参照してください。</p>",
+          "categories": [
+            "marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Amazon Aurora Serverless がスケーリング速度を向上させ、エージェンティック AI やその他の突発的なワークロードをサポート可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/08/aurora-serverless-instant-16-acu-scaling/",
+          "published": "2026-09-30T17:50:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/aurora/serverless/\">Amazon Aurora Serverless</a> では、さらに大きな単位でスケールできるようになりました。現在のキャパシティに 1 秒以内で最大 16 Aurora 容量ユニット (ACU) を追加でき、ワークロードの増加に応じて最大 256 ACU までスケールアップできます。今回のリリースにより、ワークロードの変化にさらにすばやく対応し、必要なキャパシティまでスケールできるようになりました。ワークロードが終了すると、自動的にゼロまでスケールダウンされるため、使用した分に対してのみ料金が発生します。この特性は、一時的なアクティビティの急増、長いアイドル時間、予測不能なトラフィックパターンを特徴とするエージェンティック AI アプリケーションに特に最適です。</p>\n<p>この機能強化は、プラットフォームバージョン 3 または 4 を実行しているすべての Aurora Serverless クラスターでデフォルトで有効化されており、設定変更は不要です。プラットフォームバージョン 1 および 2 の既存のクラスターは、最新のプラットフォームバージョン 4 に直接アップグレードすることで、これらの改善の恩恵を受けることができます。クラスターのプラットフォームバージョンは、AWS マネジメントコンソールのインスタンス設定セクションで確認するか、RDS API の ServerlessV2PlatformVersion パラメータで確認できます。</p>\n<p>料金の詳細と利用できるリージョンについては、<a href=\"https://aws.amazon.com/rds/aurora/pricing/\">Amazon Aurora の料金</a>をご覧ください。詳細については、Aurora Serverless スケーリングの<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html\">ドキュメント</a>をお読みいただき、<a href=\"https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-2_a53ff6382623e9a3&amp;client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&amp;forceMobileApp=0&amp;code_challenge=SCavOinSDkGpz8021yaDgWGy_E5aIbgB7HoRsIR47N0&amp;code_challenge_method=SHA-256\">AWS マネジメントコンソール</a>からわずか数ステップで Aurora Serverless データベースを作成することから始めましょう。</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-aurora"
+          ]
+        },
+        {
+          "title": "Amazon Aurora と Amazon RDS、AMD ベースの R8a インスタンスをサポート",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aurora-rds-amd-r8a/",
+          "published": "2026-09-30T17:00:00+00:00",
+          "summary": "<p>Amazon Aurora と Amazon RDS で、第 5 世代 AMD EPYC プロセッサを搭載した M8a データベースインスタンスがサポートされるようになりました。これにより、データベースワークロードに合わせて選択できるインスタンスの幅が広がります。R8a データベースインスタンスでは、各 vCPU が物理 CPU コアに対応しているため、コアごとに一貫したパフォーマンスが得られます。I/O 要件が高いワークロードでは、最大 75 Gbps のネットワーク帯域幅と 60 Gbps の Amazon EBS 帯域幅を利用できます。すべての R8a インスタンスが、第 6 世代 Nitro Card を使用して AWS Nitro System 上に構築されています。</p>\n<p>R8a データベースインスタンスは、Amazon Aurora PostgreSQL 互換エディション、Amazon Aurora MySQL 互換エディション、Amazon RDS for PostgreSQL、Amazon RDS for MySQL、Amazon RDS for MariaDB でサポートされています。R8a データベースインスタンスは、米国東部 (バージニア北部、オハイオ)、米国西部 (オレゴン)、カナダ (中部)、アジアパシフィック (東京、台北)、欧州 (アイルランド、フランクフルト、スペイン) の各リージョンで利用できます。&nbsp;</p>\n<p>R8a データベースインスタンスは、<a href=\"https://console.aws.amazon.com/rds/home?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"><u>Amazon RDS マネジメントコンソール</u></a>または <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be#Aurora.CreateInstance.Creating\" target=\"_blank\" rel=\"noopener noreferrer\"><u>AWS コマンドラインインターフェイス</u></a> (CLI) を使用して開始できます。これらのインスタンスクラスをサポートするエンジンバージョンについては、<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.SupportAurora.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"><u>Aurora</u></a> と <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.Support.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"><u>RDS</u></a> のドキュメントを参照してください。料金については、<a href=\"https://aws.amazon.com/rds/aurora/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"><u>Amazon Aurora の料金ページ</u></a>と <a href=\"https://aws.amazon.com/rds/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"><u>Amazon RDS の料金ページ</u></a>をご覧ください。</p>",
+          "categories": [
+            "general:products/amazon-rds,marketing:marchitecture/databases,general:products/amazon-aurora"
+          ]
+        },
+        {
+          "title": "Amazon RDS、AMD ベースの M8a インスタンスのサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aurora-rds-amd-m8a/",
+          "published": "2026-09-30T17:00:00+00:00",
+          "summary": "<p>Amazon RDS for PostgreSQL、Amazon RDS for MySQL、Amazon RDS for MariaDB で、第 5 世代 AMD EPYC プロセッサを搭載した M8a データベースインスタンスがサポートされるようになりました。これにより、データベースワークロードに合わせて選択できるインスタンスの幅が広がります。M8a データベースインスタンスでは、各 vCPU が物理 CPU コアに対応しているため、コアごとに一貫したパフォーマンスが得られます。I/O 要件が高いワークロードでは、最大 75 Gbps のネットワーク帯域幅と 60 Gbps の Amazon EBS 帯域幅を利用できます。すべてのインスタンスが、第 6 世代 Nitro Card を使用して AWS Nitro System 上に構築されています。</p>\n<p>M8a データベースインスタンスは、米国東部 (バージニア北部、オハイオ)、米国西部 (オレゴン)、アジアパシフィック (ムンバイ、東京、ハイデラバード)、欧州 (アイルランド、フランクフルト、スペイン) の各リージョンで利用できます。M8a データベースインスタンスは、<a href=\"https://console.aws.amazon.com/rds/home?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"><u>Amazon RDS マネジメントコンソール</u></a>または <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html\" target=\"_blank\" rel=\"noopener noreferrer\"><u>AWS コマンドラインインターフェイス</u></a> (CLI) を使用して開始できます。これらのインスタンスクラスをサポートするエンジンバージョンについては、<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.Support.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"><u>RDS</u></a> のドキュメントを参照してください。料金については、<a href=\"https://aws.amazon.com/rds/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"><u>Amazon RDS の料金ページ</u></a>をご覧ください。</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-rds"
+          ]
+        },
+        {
+          "title": "Aurora PostgreSQL、Apache Iceberg データと Parquet データのクエリをサポート",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aurora-postgresql-query-apache-iceberg-and-parquet/",
+          "published": "2026-09-30T16:00:00+00:00",
+          "summary": "<p>本日より、既存の PostgreSQL のアプリケーションやツールを使用して、運用データと、データレイクに Apache Iceberg 形式と Parquet 形式で保存されているデータに対して、まとめて直接クエリを実行できるようになりました。抽出、変換、ロード (ETL) パイプラインを構築したり、データを複製したりする必要はありません。</p>\n<p>より多くの情報に基づいて意思決定を行い、ビジネスプロセスを自動化するため、アプリケーションからデータレイクのデータにアクセスする必要性が高まっています。こうしたデータは多くの場合、Apache Iceberg 形式や Parquet 形式で保存されています。これまでは、このデータにアクセスするためにデータレイクから Aurora にデータをコピーするパイプラインが必要になることが多く、スキーマの進化に伴ってコストやエンジニアリング作業も増えていました。今回のリリースにより、Amazon S3、Amazon S3 Tables、AWS Glue データカタログにある Iceberg データまたは Parquet データを参照する PostgreSQL 外部テーブルを作成できるようになりました。作成した外部テーブルに対してクエリを実行すると、PostgreSQL に組み込まれた DuckDB の高性能クエリエンジンにより、基盤となる Iceberg データと Parquet データに対してクエリが実行されます。既存のアプリケーションや BI ツールでは、これまでと同じ PostgreSQL インターフェイスを引き続き使用できます。</p>\n<p>また、AWS Glue データカタログを通じてフェデレーションされた外部の Iceberg REST Catalog (IRC) 互換カタログにあるテーブルに対しても、データを移動または複製することなくクエリを実行できます。レイテンシーの影響を受けやすいワークロードでは、ETL パイプラインを使用せず、標準の SQL ステートメントを使用して Iceberg データまたは Parquet データをネイティブの Aurora PostgreSQL テーブルにマテリアライズできます。</p>\n<p>この機能は、Aurora PostgreSQL 17.11 以降および 18.6 以降で、すべての AWS 商用リージョンおよび AWS GovCloud (米国) リージョンにおいて一般提供されています。追加料金はかかりません。使用を開始するには、<a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS コンソール</a>または任意の PostgreSQL クライアントを使用してください。詳細については、<a href=\"https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake\" target=\"_blank\" rel=\"noopener noreferrer\">ブログ記事</a>または<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/query-iceberg-and-parquet-data.html\" target=\"_blank\" rel=\"noopener noreferrer\">ドキュメント</a>をご覧ください。</p>",
+          "categories": [
+            "general:products/amazon-aurora,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "Amazon RDS for MySQL が Amazon RDS データベースプレビュー環境で MySQL 26.7 をサポート",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/rds-mysql-26-7-preview-environment/",
+          "published": "2026-09-30T16:00:00+00:00",
+          "summary": "<p>本日より、<a href=\"https://aws.amazon.com/rds/mysql/\" target=\"_blank\">Amazon RDS for MySQL</a> 26.7 が <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/create-db-instance-in-preview-environment.html\" target=\"_blank\">Amazon RDS データベースプレビュー環境</a>で利用できるようになりました。これにより、Amazon RDS for MySQL で MySQL 26.7 のプレリリースを評価できます。</p>\n<p>MySQL 26.7 は、新しい YY.M (年.月) 形式のカレンダーバージョニングモデルを採用した最初の Innovation リリースです。バグ修正やセキュリティパッチに加えて、Change Stream Applier などの新機能が含まれています。Change Stream Applier はモジュール式のレプリケーションアプライヤーで、テストワークロードでは、適用スループットの向上とバックログからの迅速な復旧が可能になります。詳細については、<a href=\"https://dev.mysql.com/doc/refman/26.7/en/mysql-nutshell.html\" target=\"_blank\">MySQL 26.7 リリースノート</a>を参照してください。</p>\n<p>Amazon RDS データベースプレビュー環境のデータベースインスタンスは最大 60 日間保持され、この保持期間を過ぎると自動的に削除されます。プレビュー環境で作成したデータベーススナップショットは、プレビュー環境内でのみ使用できます。プレビュー環境のデータベースインスタンスには、米国東部 (オハイオ) リージョンの<a href=\"https://aws.amazon.com/rds/postgresql/pricing/\" target=\"_blank\">料金</a>が適用されます。</p>\n<p>詳細については、<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/create-db-instance-in-preview-environment.html\" target=\"_blank\">Amazon RDS データベースプレビュー環境のドキュメント</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-rds,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "CloudTrail Event Coverage で AWS データプレーンオペレーションの盲点を把握",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aws-cloudtrail-event-coverage/",
+          "published": "2026-09-30T16:00:00+00:00",
+          "summary": "<p>AWS CloudTrail に、アカウントレベルと組織レベルでデータプレーンオペレーションのカバレッジを可視化できる、新しいコンソールエクスペリエンスの Event Coverage が導入されました。この機能では、環境内の AWS のサービスとリソースタイプについて、データイベントのログ記録が有効になっているものと、有効になっていないものを確認できます。そのため、組織内のアカウントを手動で確認しなくても、ログ記録体制のギャップをすばやく特定できます。</p>\n<p>AWS のサービスのデータプレーンオペレーションは、データイベントを使用して追跡できます。例えば、GetObject や PutObject などの Amazon S3 オブジェクトレベルのオペレーションをログに記録することで、不正なデータアクセスやデータ流出の試みを検出できます。データイベントのカバレッジが包括的でない場合、こうしたアクティビティが見過ごされ、セキュリティモニタリングに盲点が生じる可能性があります。Event Coverage を使用すると、サポートされているすべてのデータイベントソースのカバレッジを 1 か所で確認し、ダッシュボードからデータイベントを直接サブスクライブできます。これにより、数回クリックするだけでカバレッジのギャップを解消しやすくなります。特に、複数のアカウントを管理する組織では、サービス全体のカバレッジを追跡する際に時間がかかることがあるため、この機能が役立ちます。</p>\n<p>Event Coverage には AWS CloudTrail コンソールからアクセスできます。この機能は、AWS CloudTrail がサポートされているすべての商用 AWS リージョンで利用できます。データイベントのログ記録の詳細については、<a href=\"https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events\">AWS CloudTrail のドキュメント</a>を参照してください。</p>",
+          "categories": [
+            "general:products/aws-cloudtrail,general:use-case/security-and-compliance,marketing:marchitecture/management-and-governance"
+          ]
+        },
+        {
+          "title": "Partner Revenue Measurement、リソースタグ付けで複数パートナーをサポート",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/partner-revenue-measurement-multi-partner-resource-tagging",
+          "published": "2026-09-30T12:00:00+00:00",
+          "summary": "<p>Partner Revenue Measurement (PRM) では、パートナーソリューションによって生じた AWS 使用量を測定できます。本日、PRM のリソースタグ付けで複数パートナーをサポートし、同じ AWS リソースについて複数の AWS パートナーに収益を帰属できるようになりました。これまでは、1 つのリソースに設定できるパートナータグは <i>aws-apn-id</i> の 1 つのみだったため、複数のパートナーが同じワークロードに貢献していても、収益が帰属するのは 1 社のパートナーのみでした。&nbsp;</p>\n<p>今回のアップデートにより、各パートナーは <i>aws-apn-id-&lt;partner-central-aws-account-id&gt;</i> 形式の新しいキーを使用して、自社が貢献するリソースにタグを付けることができます。 複数のパートナーが同じリソースにタグを付けた場合は、タグを付けた各パートナーに収益が帰属します。これは、AWS アカウントでソフトウェアパートナーの製品をデプロイして運用するコンサルティングパートナーなど、ソリューションを共同で提供するパートナーに利点があります。既存の <i>aws-apn-id</i> キーは引き続き使用でき、このキーが設定されているリソースに追加の変更は必要ありません。&nbsp;</p>\n<p>リソースタグ付けでの複数パートナーのサポートは、現在、すべての商用 AWS リージョンで利用できます。既存の <i>aws-apn-id</i> キーと新しいキーのどちらによって帰属した収益も、<a href=\"https://aws.amazon.com/blogs/apn/unlock-revenue-insights-in-the-new-attributed-revenue-dashboard/\">Attributed Revenue Dashboard</a>の「リソースタグ付け」方式に表示されます。ダッシュボード自体に変更はありません。</p>\n<p>詳細については、<a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/what-is-service.html\">Partner Revenue Measurement の製品ページ</a>、およびリソースタグ付けに関する<a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/\">オンボーディングガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/aws-marketplace"
+          ]
+        },
+        {
+          "title": "AWS アカウントで電話番号の検証が可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aws-accounts-phone-number-verification/",
+          "published": "2026-09-30T08:00:00+00:00",
+          "summary": "<p>AWS アカウントで、主な連絡先の電話番号を検証できるようになりました。これまでは、AWS アカウントの連絡先情報に登録された電話番号について形式のみが検証され、別の通信手段を使用した確認は行われていませんでした。今回、SMS のワンタイムパスコード (OTP) を使用して電話番号を検証できるようになりました。</p>\n<p>電話番号を検証するには、AWS マネジメントコンソールから、または新しい SendPhoneNumberVerification API を使用してプログラムで検証を開始します。この API により、6 桁の OTP が送信されます。コードを入力すると、VerifyPhoneNumber API によってコードが検証され、検証済みステータスが保持されます。PutContactInformation API を使用して電話番号を変更した場合は、再度検証を完了するよう求められます。GetContactInformation API では検証ステータスも公開されるようになったため、どの電話番号が検証済みであるかを確認できます。</p>\n<p>AWS Organizations を利用している場合は、電話番号の検証済みステータスを管理アカウントから継承できます。検証済みの電話番号が管理アカウントからメンバーアカウントに適用された場合、その番号が管理アカウントの電話番号と一致していれば、メンバーアカウントにも検証済みステータスが継承されるため、数千のアカウントで同じ番号を検証する必要がなくなります。メンバーアカウントで独自に電話番号を変更した場合は、個別に検証を完了する必要があります。</p>\n<p>この機能は、すべての AWS 商用リージョンでご利用いただけます。電話番号の検証の詳細については、<a href=\"https://docs.aws.amazon.com/accounts/latest/reference/\">AWS アカウント管理のドキュメント</a>を参照してください。</p>",
+          "categories": [
+            "marketing:marchitecture/management-and-governance,general:products/aws-organizations,marketing:marchitecture/security-identity-and-compliance"
+          ]
+        },
+        {
+          "title": "AWS Transfer Family、SFTP コネクタのクォータ引き上げを 1,000 個まで自動承認",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aws-transfer-family-sftp-connector-quota-1000/",
+          "published": "2026-09-30T08:00:00+00:00",
+          "summary": "<p>AWS Transfer Family では、各 AWS リージョンの AWS アカウントごとに、SFTP コネクタのクォータを最大 1,000 個まで引き上げるリクエストが自動承認されるようになりました。ファイル転送ニーズが増えても、手動での承認を待たずにコネクタを追加できます。</p>\n<p>デフォルトのクォータは、引き続き各 AWS リージョンの AWS アカウントごとに 100 個の SFTP コネクタです。クォータの引き上げは、これまでと同様に AWS Service Quotas コンソールでリクエストします。これまでは、すべてのクォータ引き上げに手動での承認が必要でした。自動承認は、サービスマネージドエグレスまたは Amazon VPC Lattice エグレスを使用するコネクタに適用されます。1,000 個を超えるコネクタが必要な場合は、Service Quotas コンソールでクォータの引き上げをリクエストしてください。</p>\n<p>この機能は、Transfer Family SFTP コネクタが提供されているすべての AWS リージョンで利用できます。詳細については、<a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/creating-connectors.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Transfer Family SFTP コネクタのドキュメント</a>を参照してください。</p>",
+          "categories": [
+            "marketing:marchitecture/storage,general:products/aws-transfer-family"
+          ]
+        },
+        {
+          "title": "AWS IAM アイデンティティセンターの Identity Store API、リソース ID に加えてリソース ARN のサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/iam-identity-center-apis-arns/",
+          "published": "2026-09-30T08:00:00+00:00",
+          "summary": "<p>AWS IAM アイデンティティセンターの Identity Store API では、これまでリソース ID を指定できたすべての API パラメータで、ユーザー、グループ、グループメンバーシップ、ID ストアの Amazon リソースネーム (ARN) も指定できるようになりました。ARN のサポートは既存の機能に追加されるため、既存の統合は変更なしで引き続き使用できます。</p>\n<p>Identity Store API を使用してアプリケーションを構築している場合、IAM ポリシーの評価、CloudTrail イベント、サービス間の統合などを通じて、既にリソース ARN を取得していることがあります。これまでは、Identity Store API を呼び出す前に、ARN からリソース ID を抽出する必要がありました。今回の変更により、どちらの形式もそのまま渡せるため、アプリケーションコードを簡素化し、解析エラーが発生する可能性をなくせます。</p>\n<p>この変更は、Identity Store API 全体のすべてのリクエスト識別子フィールドに適用されます。レスポンスでは、これまでと同様に引き続きリソース ID が返されます。形式が正しくない ARN やリソースタイプが正しくない ARN を指定すると、ValidationException が返されます。</p>\n<p>この機能は、AWS IAM アイデンティティセンターが提供されているすべての AWS リージョンで、追加料金なしで利用できます。詳細については、<a href=\"https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/\">アイデンティティストアの API リファレンス</a>を参照してください。</p>",
+          "categories": [
+            "general:products/aws-iam-identity-center"
+          ]
+        },
+        {
+          "title": "AWS Marketplace、使用量ベースのメータリング統合向け AI エージェントスキルを提供開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/marketplace-ai-agent-metering/",
+          "published": "2026-09-30T05:00:00+00:00",
+          "summary": "<p>AWS は、AWS Marketplace メータリングエージェントスキルの一般提供を開始しました。これは AI によるガイド付きエクスペリエンスで、出品者が AI コーディングアシスタント内で、使用量ベース (従量制) の SaaS メータリング統合を構築、デプロイ、検証するのに役立ちます。このスキルを使用すると、統合プロセス全体を通じて、製品タイプ、料金モデル、使用量ディメンションの収集から、適切なメータリング API の選定、統合コードと設定に合わせてカスタマイズされた AWS CloudFormation スタックの生成、本番環境のコードをリリースする前の AWS Marketplace に対するエンドツーエンドテストまで、必要な手順に沿って進めることができます。</p>\n<p>これまで、メータリングを統合する出品者は、ドキュメントやワークショップを参照しながら、試行錯誤して API コールを行う必要がありました。ディメンション名の不一致や無効なタイムスタンプなどの一般的なミスによって請求のギャップが生じても、発見まで数日かかる場合がありました。メータリングエージェントスキルを使用すると、出品者の実際の製品設定に照らしてディメンションが相互検証され、組み込みのガードレールが適用されます。また、ResolveCustomer API、BatchMeterUsage API、サブスクリプションイベント用の Amazon EventBridge を使用したサーバーレスのメータリングパイプラインがデプロイされ、ライブテストで統合が検証されます。このスキルは<a href=\"https://aws.amazon.com/blogs/awsmarketplace/complete-guide-to-upgrading-your-saas-product-to-aws-marketplace-concurrent-agreements/\">同時契約</a>にも対応しており、既存の出品者によるメータリングレコードの調査、デバッグ、分析にも役立ちます。</p>\n<p>このスキルは、<a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-started-aws-mcp-server.html\"><u>AWS MCP サーバー</u></a>を通じて利用でき、Amazon Q Developer、Kiro、その他の MCP 互換クライアントなど、MCP をサポートする任意の AI コーディングアシスタントを使用できます。プラグインのインストールは不要です。</p>\n<p>使用を開始するには、<a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/metering-for-usage.html#configure-application-for-meter-usage\">SaaS サブスクリプションでの使用量の計測の設定</a>を参照してください。</p>",
+          "categories": [
+            "general:products/aws-marketplace,marketing:marchitecture/aws-marketplace-and-partners,marketing:marchitecture/partner-network"
+          ]
+        },
+        {
+          "title": "Amazon S3 Tables、Apache Iceberg V3 の全データ型のサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-s3-tables-iceberg-v3-data-types",
+          "published": "2026-09-30T04:00:00+00:00",
+          "summary": "<p>Amazon S3 Tables では、Apache Iceberg バージョン 3 (V3) 仕様で定義されている geometry、geography、unknown、nanosecond timestamp の各データ型と、列のデフォルト値がサポートされるようになりました。これにより、地理空間の座標やナノ秒精度のイベント時刻を文字列や整数にエンコードせず、そのまま保存できるようになりました。これにより、ストレージ効率とパフォーマンスを向上させながら、データアーキテクチャを簡素化できます。今回のリリースにより、S3 Tables では既存の Variant データ型、削除ベクトル、行リネージュに加えて、V3 で導入されたすべてのデータ型もサポートされます。</p>\n<p>geometry 列と geography 列には、点、線、ポリゴンをそのまま保存できるため、フリート追跡やアセットマッピングのワークロードでは、クエリ時に位置情報でフィルタリングできます。nanosecond timestamp を使用すると、テレメトリや金融のワークロードで、イベント時刻をソースと同じ精度で記録できます。列のデフォルト値を使用すると、新しく追加した列に既存の行の値を設定できるため、バックフィルは必要ありません。S3 Tables では Apache Iceberg テーブルのメンテナンスと圧縮が自動的に行われるため、V3 データ型を使用するテーブルでも、データ量が増加した場合にパフォーマンスとコスト効率を維持できます。</p>\n<p>これらのデータ型は、S3 Tables が提供されているすべての AWS リージョンでサポートされています。詳細については、<a href=\"https://aws.amazon.com/s3/features/tables/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon S3 Tables</a>、<a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/working-with-apache-iceberg-v3.html\" target=\"_blank\" rel=\"noopener noreferrer\">Apache Iceberg V3 の使用</a>、および Iceberg テーブル形式仕様バージョン 3 の使用に関する <a href=\"https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/table-spec-v3.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS 規範ガイダンス</a>を参照してください。</p>",
+          "categories": [
+            "marketing:marchitecture/storage,general:products/amazon-simple-storage-service"
+          ]
+        },
+        {
+          "title": "AWS Deadline Cloud のジョブテンプレートで式のサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/08/aws-deadline-cloud-expressions-job-templates/",
+          "published": "2026-09-29T21:55:00+00:00",
+          "summary": "<p>AWS Deadline Cloud のジョブテンプレートで、柔軟な式とさまざまなパラメータタイプがサポートされるようになりました。これにより、既存の本番パイプラインに合わせて、より簡単かつ柔軟にサービスを使用できます。Deadline Cloud は、視覚効果、アニメーション、プロダクトデザイン、シミュレーション、およびゲーム開発向けに、計算量が膨大なワークロードをクラウド上で実行できるようチームを支援するフルマネージド型のサービスです。</p>\n<p>今回のサポートにより、パイプラインロジックをジョブテンプレート内で直接表現できるようになりました。算術演算、条件式、文字列やパスの演算、リスト内包表記などを、使い慣れた Python 形式の構文で記述できます。こうした構文を使用して、フレーム範囲をタスクごとのフレームに分割したり、シーン名から出力パスを導出したり、ジョブテンプレート内でオプションのフラグを直接切り替えたりできます。そのため、個別の要件に合わせたパイプラインオペレーションを自動化しやすくなります。ブール値、リスト、フレーム範囲のパラメータタイプも新たに使用でき、パイプラインで既に使用している作業の記述方法に合わせることができます。例えば、チェックボックスをオンにした場合に --gpu フラグとそれに対応するホスト要件を追加したり、カメラのリストをステップのタスク範囲として使用したりできます。式は送信時に型チェックされ、同じ条件では常に同じ結果になるように評価されるため、ジョブは毎回予測可能な方法で実行されます。</p>\n<p>これらの機能は、Deadline Cloud でジョブテンプレートに使用されているオープン仕様、Open Job Description の新しい EXPR 拡張機能によるものです。AWS Deadline Cloud がサポートされているすべての AWS リージョンで利用できます。</p>\n<p>使用を開始するには、<a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/VERIFY-expr-doc-url.html\">Deadline Cloud デベロッパーガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/aws-deadline-cloud"
+          ]
+        },
+        {
+          "title": "OpenAI 搭載の Amazon Bedrock マネージドエージェントがプレビューで利用可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/",
+          "published": "2026-09-29T21:10:00+00:00",
+          "summary": "<p>Bedrock Managed Agents (BMA) は AWS と OpenAI が共同開発したもので、AWS 環境にネイティブに統合されるよう設計されています。AWS リソースと統合された OpenAI の Agents API のカスタマイズバージョンを基盤としています。&nbsp;BMA を使用することで、OpenAI モデル向けに最適化され、すべて AWS 内で実行されるエージェントを、既存のアイデンティティ、アクセス許可、ガバナンスコントロールを利用して構築できるようになりました。&nbsp;</p>\n<p>BMA では、モデルによる状態の保持、ツールの選択と使用、コードの実行、複数のステップや意思決定にわたる作業の調整が管理されます。永続セッションでは、メッセージやツール呼び出し、中間結果が保持されるため、後から作業に戻って新しい情報を提供し、それまでの進捗を引き継いで作業を続行できます。専門的な手順に使用できる再利用可能なスキルを追加したり、モデルコンテキストプロトコル (MCP) サーバー経由などでエージェントをツールに接続したりできます。各エージェントは個別の IAM ロールで動作し、重大な結果を及ぼす可能性のあるアクションを実行する前に、人間による承認を受けることができます。また、サポートされている API アクティビティは AWS CloudTrail に記録されます。</p>\n<p>プレビュー期間中は、エージェントが使用する基盤となる AWS リソースの料金を除き、BMA の追加料金はかかりません。一般提供の開始時には、料金が変更される可能性があります。</p>\n<p>Amazon Bedrock マネージドエージェントは、サポートされている API を通じて今すぐ使用を開始できます。BMA は、米国東部 (バージニア北部)、米国西部 (オレゴン)、米国東部 (オハイオ) でプレビューとして利用できます。詳細については、<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed-agents-openai.html\">Amazon Bedrock のドキュメント</a>を参照してください。&nbsp;</p>",
+          "categories": [
+            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Amazon RDS のコンソールと API でフルスナップショットサイズの情報を確認可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-rds-full-snapshot-size-available/",
+          "published": "2026-09-29T21:00:23+00:00",
+          "summary": "<p>Amazon RDS で RDS スナップショットのフルスナップショットサイズが表示されるようになりました。この機能強化により、DescribeDBSnapshots API の新しいフィールド FullSnapshotSizeInBytes を利用して、プログラムからフルスナップショットサイズを取得できます。この情報は、コンソールの [フルスナップショットサイズ] 列で確認することもできます。&nbsp; &nbsp;</p>\n<p>Amazon RDS スナップショットはインクリメンタルです。このため、あるボリュームのスナップショットを時間の経過とともに複数作成すると、各スナップショットには新しいブロックまたは変更されたブロックのみが保存され、過去のスナップショットから変更されていないブロックへの参照が維持されます。[FullSnapshotSizeInBytes] フィールドには、そのスナップショットで直接保存されたブロックと、過去のスナップショットから参照されるすべてのブロックの両方を含めた、スナップショットの合計ブロックサイズが表示されます。例えば、100 GB のデータベースボリュームに 50 GB のデータがある場合、フルスナップショットサイズは、最初のスナップショットか後続のスナップショットかにかかわらず 50 GB と表示されます。これは増分スナップショットサイズとは異なることに注意してください。増分スナップショットサイズは、新たに変更されて、特定のスナップショットに保存されたブロックのサイズのみを示します。</p>\n<p>フルスナップショットサイズは、すべての商用 AWS リージョンにおいてすべての Amazon RDS データベースインスタンスで確認できます。Amazon RDS マネジメントコンソール、AWS コマンドラインインターフェイス (CLI)、または AWS SDK を使用して、今すぐ使用を開始できます。詳細については、<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html\" target=\"_blank\">Amazon RDS ユーザーガイド</a>をご覧ください。</p>",
+          "categories": [
+            "general:products/amazon-rds,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "AWS Deadline Cloud、Linux サービスマネージドフリートで ECS コンテナをサポート",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/08/aws-deadline-cloud-ecs-containers-linux-smf/",
+          "published": "2026-09-29T20:18:00+00:00",
+          "summary": "<p>AWS Deadline Cloud では、Linux ベースのサービスマネージドフリート上で、Amazon Elastic Container Service (ECS) の Docker コンテナを使用してジョブを実行できるようになりました。Deadline Cloud は、視覚効果、アニメーション、プロダクトデザイン、シミュレーション、およびゲーム開発向けに、計算量が膨大なワークロードをクラウド上で実行できるようチームを支援するフルマネージド型のサービスです。\n <br>\n <br>\n Deadline Cloud のお客様は、Docker 対応フリートを利用して、独自のソフトウェアコンテナを Deadline Cloud で直接使用できるようになりました。既にソフトウェアをコンテナイメージとしてパッケージ化している場合は、そのイメージを Deadline Cloud から直接参照できます。これにより、Blender などのレンダリングツール、NVIDIA Isaac Sim や MuJoCo などのフィジカル AI ワークロードなど、コンテナでデプロイするあらゆるソフトウェアのユースケースに対応できます。サービスマネージドフリートを使用すると、コンテナ化されたソフトウェアがすべてのワーカーインスタンスに大規模かつ自動的にデプロイされます。</p>\n<p>コンテナは Deadline Cloud のフリートおよびキューと統合されているため、ジョブテンプレートにコンテナコマンドやイメージ参照を含める必要はありません。つまり、Open Job Description CLI を使用してローカルで実行しているものと同じジョブバンドルを、変更を加えることなく Deadline Cloud に送信できます。これにより、既存のコンテナ化されたソフトウェアワークフローから、フルマネージドのレンダリングおよびコンピューティングファームへの移行を迅速に行えます。</p>\n<p>サービスマネージドフリートのコンテナサポートは、Deadline Cloud が提供されているすべての AWS リージョンで利用できます。</p>\n<p>使用を開始するには、<a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/fleet-container-support.html\">ユーザーガイド</a>および<a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/containers.html\">デベロッパーガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/aws-deadline-cloud"
+          ]
+        },
+        {
+          "title": "OpenAI GPT-6.1 Sol が Amazon Bedrock で一般提供開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/openai-gpt-6-1-sol-on-amazon-bedrock/",
+          "published": "2026-09-29T20:17:00+00:00",
+          "summary": "<p>本日、AWS は、Amazon Bedrock で OpenAI の GPT-6.1 Sol の一般提供を開始したことを発表しました。GPT-6 Sol のアップグレード版である GPT-6.1 Sol は、エージェント型コーディング、コンピュータ操作、および専門的な業務において非常に優れたパフォーマンスを発揮します。OpenAI によると、要求水準の高い各種評価において、GPT-6 Astra に迫る性能を約 5 分の 1 のコストで実現しており、高性能なエージェントを大規模に構築、運用するための余裕が大幅に広がります。&nbsp;Amazon Bedrock の推論エンジンでは、本番ワークロードに必要なパフォーマンス、セキュリティ、信頼性を確保できます。</p>\n<p>GPT-6.1 Sol を使用して、機能の構築、問題のデバッグ、ソリューションの反復改善、複数ステップからなるワークフローの実行、複雑なコードベースの調査などが行えます。また、Amazon Bedrock 上での明示的なプロンプトキャッシュもサポートしており、繰り返し発生するリクエスト間でコンテキストを再利用するエージェント型ワークロードにおいて実用的なソリューションとなります。既存の AWS の制御機能を利用すれば、ワークロードを保護し、アクセスを管理して、モデル呼び出しアクティビティを監査できます。</p>\n<p>GPT 6.1 Sol は、<a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/\">Amazon Bedrock コンソール</a>上で、またはサポートされている Amazon Bedrock API を経由してプログラムからご利用いただけます。サポートされている <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\">AWS リージョン</a>、エンドポイント、API、機能、推論プロファイル、料金については、<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html\">Amazon Bedrock のドキュメント</a>を参照してください。詳細については、<a href=\"https://aws.amazon.com/blogs/machine-learning/bring-near-astra-intelligence-to-everyday-work-with-gpt-6-1-sol-on-amazon-bedrock/\">ブログ</a>をお読みください。&nbsp;</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,general:products/amazon-bedrock"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer で参照データの管理機能が拡張され、コンタクトセンターの設定をリアルタイムで変更可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-connect-manage-data-tables/",
+          "published": "2026-09-29T17:00:00+00:00",
+          "summary": "<p>Amazon Connect Customer では、管理者がコンタクトセンターの設定を制御する参照データをより多く保存できるようになりました。管理者はデータテーブルを使用して 1 テーブルあたり最大 2 万件の値を格納し、問い合わせフローの分岐を決める設定 (営業時間、エスカレーションルール、AI エージェントプロンプト、キュー割り当てなど) を定義できるようになりました。さらに管理者は、テーブルのエクスポート、数百件のレコードの一括編集、Connect Customer インスタンス間でのテーブルの移動を行ったり、Excel や DynamoDB などのツールやソースを使用して外部システムから参照データを読み込んだりすることも可能になりました。ビジネスチームはこのデータを常に最新の状態に保ち、状況の変化に応じてコンタクトセンターの構成を調整できるため、技術リソースに頼らずに済みます。</p>\n<p>この機能は、Amazon Connect Customer が提供されている<a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#amazonconnect_region\" target=\"_blank\" rel=\"noopener noreferrer\">すべての商用 AWS リージョンと AWS GovCloud (米国西部) リージョン</a>でご利用いただけます。詳細については、Amazon Connect 管理者ガイドの<a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/data-tables.html\" target=\"_blank\" rel=\"noopener noreferrer\">データテーブルの作成と設定</a>を参照してください。Amazon Connect の詳細については、<a href=\"https://aws.amazon.com/products/connect/customer/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Connect Customer のウェブサイト</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-connect,marketing:marchitecture/contact-center,marketing:marchitecture/business-productivity,general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon WorkSpaces Applications が統合グラフィックスイメージを導入",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-workspaces-applications-unified-graphics-images/",
+          "published": "2026-09-29T17:00:00+00:00",
+          "summary": "<p>本日、Amazon WorkSpaces Applications において統合グラフィックスイメージが発表されました。これは、G4dn、G5、G6、G7 などのサポート対象となるすべてのグラフィックスインスタンスファミリーで共通して使える単一のイメージタイプです。これまでは、各グラフィックス世代に対応した専用イメージを個別に用意する必要がありました。今後は、サポートされている任意のグラフィックスインスタンスファミリー上でフリートを作成、管理する際、単一のイメージを使用できるようになります。</p>\n<p>統合グラフィックスイメージを利用することでイメージ管理の負担が軽減され、新しい世代の GPU が登場した際の切り替えが容易になります。統合グラフィックスイメージを使用してフリートを作成する際、コンソールには互換性のあるすべてのインスタンスタイプが表示されるため、ワークロードに合った料金とパフォーマンスを選択できます。統合グラフィックスイメージで構築されたフリートでは、コンソールまたは UpdateFleet API を使用して、サポートされているファミリー間でインスタンスタイプを変更することもできます。従来、この変更は同一インスタンスファミリー内のサイズ変更に限定されていました。</p>\n<p>統合グラフィックスイメージは、Amazon WorkSpaces Applications のグラフィックスインスタンスがサポートされているすべての AWS 商用リージョンと AWS GovCloud (米国) リージョンで利用できます。</p>\n<p>使用を開始するには、マネージドイメージ更新を使用して既存のグラフィックスイメージをアップグレードするか、統合ベースイメージからイメージビルダーを起動します。詳細については、<a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/unified-graphics-images.html\" target=\"_blank\">Amazon WorkSpaces Applications のドキュメント</a>をご覧ください。\n <br></p>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance,general:products/amazon-workspaces,marketing:marchitecture/business-productivity,marketing:marchitecture/desktop-and-app-streaming,general:products/amazon-appstream-2-0"
+          ]
+        },
+        {
+          "title": "AWS サービスの提供状況に関する最新情報",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aws-service-availability/",
+          "published": "2026-09-29T16:21:00+00:00",
+          "summary": "<p>以下の AWS のサービスおよび機能に関する提供状況の変更をお知らせします。</p>\n<p><b>メンテナンスに移行するサービス</b></p>\n<p>メンテナンスに移行するサービスは、2026 年 10 月 29 日以降、新規のお客様にご利用いただけなくなります。これらのサービスおよび機能を既に使用しているお客様は、引き続きご利用いただけます。AWS は引き続き、これらのサービスおよび機能の運用とサポートを行います。お客様には、製品ページやドキュメントで変更内容を確認することをお勧めします。</p>\n<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-service-change.html\">Amazon Chime SDK SIP メディアアプリケーション</a></p>\n<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://docs.aws.amazon.com/workspaces-web/latest/adminguide/workspaces-secure-browser-maintenance-mode.html\">Amazon WorkSpaces Secure Browser</a></p>\n<p><b>廃止されるサービス</b></p>\n<p>以下のサービスは廃止されます。サービスの運用とサポートを終了する日程をお知らせいたします。これらのサービスをご利用中のお客様は、以下のリンクをクリックして廃止までのスケジュールをご確認いただき、サービスの最新のウェブページおよびドキュメントで推奨されている代替手段への移行を計画してください。</p>\n<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html\">Amazon Managed Blockchain</a> (2027 年 9 月 29 日にサポート終了)</p>\n<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://docs.aws.amazon.com/devops-guru/latest/userguide/devops-guru-end-of-support.html\">Amazon DevOps Guru</a> (2027 年 9 月 30 日にサポート終了)</p>\n<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://docs.aws.amazon.com/sap/latest/sap-AnyDB/ase-backint-end-of-support.html\">AWS Backint Agent for SAP ASE</a> (2027 年 9 月 29 日にサポート終了)</p>\n<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://docs.aws.amazon.com/infrastructure-composer/latest/dg/composer-availability-change.html\">AWS Infrastructure Composer</a> (スタンドアロンコンソールが 2026 年 12 月 7 日にサポート終了)</p>\n<p><b>サポートが終了したサービス</b></p>\n<p>以下のサービスはサポートが終了し、2026 年 9 月 29 日をもってご利用いただけなくなりました。</p>\n<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amazon Mechanical Turk</p>\n<p>これらの変更の影響を受けるお客様のために、包括的な移行ガイドをご用意しております。また、AWS のサポートチームが移行をお手伝いいたします。詳細については AWS 製品のライフサイクルのページをご覧ください。また、今後の更新情報については RSS フィードをサブスクライブしてください。</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon RDS for PostgreSQL が延長サポートのマイナーバージョン 13.23-rds.20260514、12.22-rds.20260514、11.22-rds.20260514 を発表",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-rds-postgresql-extended-support/",
+          "published": "2026-09-29T16:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/postgresql/\">Amazon Relational Database Service (RDS) for PostgreSQL</a> で、Amazon RDS 延長サポートのマイナーバージョン 13.23-rds.20260514、12.22-rds.20260514、11.22-rds.20260514 が発表されました。</p>\n<p><a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html\">Amazon RDS 延長サポート</a>では、メジャーバージョンの標準サポート終了日を過ぎた後も、重大な共通脆弱性識別子 (CVE) およびバグに対する修正が最大 3 年間追加で提供されます。これにより、新しいメジャーバージョンへのアップグレードまでの猶予が延びます。</p>\n<p>データベースのアップグレードは、<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\">Amazon RDS ブルー/グリーンデプロイ</a>、インプレースアップグレード、スナップショットからの復元を使用して実行できます。バージョンアップグレードの実行の詳細については、<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\">Amazon RDS for PostgreSQL ユーザーガイド</a>を参照してください。&nbsp;</p>\n<p>Amazon RDS for PostgreSQL を使用すると、クラウドにデプロイした PostgreSQL を簡単にセットアップ、運用、スケールできます。フルマネージド型の Amazon RDS データベースの作成や更新は、<a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS マネジメントコンソール</a>で、または AWS コマンドラインインターフェイス (AWS CLI) を使用して行うことができます。</p>",
+          "categories": [
+            "general:products/amazon-rds,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "Amazon Aurora が PostgreSQL 18.6、17.11、16.15、15.19、14.24 のサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24/",
+          "published": "2026-09-29T16:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora PostgreSQL 互換エディション</a>では、PostgreSQL バージョン 18.6、17.11、16.15、15.19、14.24 をサポートするようになりました。これらのバージョンには、PostgreSQL コミュニティによるバグ修正と Aurora 固有の機能強化が含まれています。これらの改善点の適用と共通脆弱性識別子 (CVE) への対処のために、最新のマイナーバージョンにアップグレードすることをお勧めします。詳細については、<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Updates.html\" target=\"_blank\" rel=\"noopener noreferrer\">リリースノート</a>を参照してください。\n <br>\n <br>\n 自動マイナーバージョンアップグレードを使用すると、スケジュールされたメンテナンスウィンドウ中にデータベースをアップグレードできます。大規模な運用を簡素化するには、自動マイナーバージョンアップグレードを有効にし、AWS Organizations の<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Maintenance.AMVU.UpgradeRollout.html\" target=\"_blank\">アップグレードロールアウトポリシー</a>を使用して複数のアップグレードを段階的に統制し、重要な環境をアップグレードする前に優先度の低い環境で検証してください。詳細については、「<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora PostgreSQL DB クラスターのアップグレード</a>」を参照してください。</p>\n<p>Amazon Aurora は、PostgreSQL との完全な互換性を備え、世界規模で高いパフォーマンスと可用性を発揮するよう設計されています。ゼロまでスケールできるサーバーレスコンピューティング、マルチリージョンの耐障害性を実現する Aurora Global Database、I/O を多用するワークロードのコストパフォーマンスを向上させるための Aurora I/O-Optimized、組み込みセキュリティと継続的バックアップを提供します。使用を開始するには、<a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_GettingStartedAurora.html\" target=\"_blank\" rel=\"noopener noreferrer\">開始方法のページ</a>をご覧ください。</p>",
+          "categories": [
+            "general:products/amazon-rds,marketing:marchitecture/databases,general:products/amazon-aurora"
+          ]
+        },
+        {
+          "title": "Amazon Bedrock、Claude モデルの提供範囲をインド、韓国、シンガポールに拡大",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/claude-region-expansion-in-sk/",
+          "published": "2026-09-29T15:41:00+00:00",
+          "summary": "<p>Anthropic の <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5.html\" target=\"_blank\" rel=\"noopener noreferrer\">Claude Opus 5</a>、<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5.html\" target=\"_blank\" rel=\"noopener noreferrer\">Claude Sonnet 5</a>、<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-4-5.html\" target=\"_blank\" rel=\"noopener noreferrer\">Claude Haiku 4.5</a> がインドの Amazon Bedrock で利用可能になりました。また、韓国では Claude Opus 5 と Claude Sonnet 5、シンガポールでは Claude Sonnet 5 を利用できます。金融サービス、ヘルスケア、公共部門など、特定の地域内でデータを処理する必要があるお客様は、推論を国内で行いながら、これらのモデルを大規模に使用できるようになりました。</p>\n<p>インドでは、ムンバイリージョンとハイデラバードリージョンにまたがる地理的クロスリージョン推論により、リージョンエンドポイントを使用できます。インドのお客様は、既にサポートされているグローバルクロスリージョン推論に加えて、インドのリージョン内でデータを処理しながら、これらのモデルを利用できます。</p>\n<p>韓国では、ソウル (ap-northeast-2) リージョンの bedrock-runtime エンドポイントで、Claude Opus 5 および Claude Sonnet 5 モデルのリージョン内推論がサポートされています。シンガポール (ap-southeast-1) では、bedrock-runtime エンドポイントでリージョン内推論による Claude Sonnet 5 がサポートされています。推論リクエストとデータは、呼び出し先のリージョン内で処理され、そのリージョン外に転送されることはありません。</p>\n<p>各リージョンでのモデルの提供状況に関する最新情報については、Amazon Bedrock ユーザーガイドの<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\" target=\"_blank\" rel=\"noopener noreferrer\">各モデルのリージョン別提供状況</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "AWS Transform、Amazon MSK 向け Apache Kafka 移行評価のサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-msk-migration-assessment-with-aws-transform",
+          "published": "2026-09-29T15:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/transform/\">AWS Transform</a> のエージェンティック移行評価を使用して、オンプレミスの Apache Kafka クラスターから <a href=\"https://aws.amazon.com/msk/\">Amazon Managed Streaming for Apache Kafka (Amazon MSK)</a> への移行を評価できるようになりました。AWS Transform <a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-app-assessments.html\">移行評価</a>では、エージェンティック AI によってワークロードが分析され、AWS の最適なサービスの推奨、料金オプションと実行可能な次のステップを含む総保有コスト (TCO) のビジネスケースの生成が行われます。自然言語によるチャットまたは <a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-migrations-mcp.html\">AWS Transform MCP サーバー</a>を使用することで、これらをすべて数分で実行できます。Apache Kafka ワークロードでは、評価エージェントにより、互換性のチェック、適切なサイズの <a href=\"https://aws.amazon.com/msk/features/express-brokers-for-amazon-msk/\">Amazon MSK Express ブローカー</a>の推奨、コストの予測が行われるため、移行のビジネスケースを迅速に作成し、移行に関する意思決定を早めることができます。</p>\n<p>Kafka から MSK への移行を評価するには、トポロジーのマッピング、互換性の検証、ブローカーの適切なサイジング、コストの予測など、複数のステップが必要になることが多く、手動では数週間かかることがあります。今回のリリースにより、Kafka クラスターのインベントリファイルをアップロードするか、チャットでクラスターについて説明するだけで、移行評価を開始できます。その後、評価エージェントにより、各クラスターについて、トポロジー、バージョン、設定、認証、クォータの観点から MSK との互換性がチェックされ、MSK Express ブローカーのサイズが決定されます。また、ブローカー時間、ストレージ、データ受信、AZ 間転送にかかるコストも予測されます。さらに、前提条件をカスタマイズした what-if シナリオを作成し、リージョン間の料金比較、保持期間の調整、別の設定の検討を行うこともできます。これにより、関係者が確信を持って移行を進められるよう、包括的な移行ビジネスケースを作成できます。</p>\n<p>Amazon MSK 向けの<a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-app-assessments.html\">移行評価</a>は、<a href=\"https://docs.aws.amazon.com/transform/latest/userguide/regions.html\"><u>AWS Transform が提供されている</u></a>すべての AWS リージョンで利用できます。使用を開始するには、<a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html\">Amazon MSK デベロッパーガイド</a>、<a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator-migrate-ai-assist.html\">AI ツールによる移行の準備状況の評価</a>、<a href=\"https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html\">AWS Transform ユーザーガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-msk,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "AWS Transfer Family がウェブアプリケーションでの複数のファイルおよびフォルダのダウンロードをサポート開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/transfer-family-web-apps-download-multiple-files-folders",
+          "published": "2026-09-29T08:00:00+00:00",
+          "summary": "<p>AWS Transfer Family では、ウェブアプリケーションのユーザーが複数のファイルやフォルダを一度にダウンロードできるようになりました。エンドユーザーは、ファイルとフォルダを自由に組み合わせて選び、1 回の操作でまとめてダウンロードできます。データは ZIP 形式でダウンロードされ、解凍すると元のフォルダ階層がそのまま復元されます。</p>\n<p>この機能は、任意の場所でファイルやフォルダを選択し、アクションメニューから [ダウンロード] をクリックするだけで使用できます。以前は、一度に 1 つのファイルしかダウンロードできず、フォルダをダウンロードすることはできませんでした。ウェブアプリケーションにはダウンロード対象のファイルとリアルタイムのダウンロード進捗状況が示され、それぞれのファイルに対して成功または失敗のステータスが示されます。</p>\n<p>Google Chrome、Mozilla Firefox、および Microsoft Edge などの Chromium ベースのブラウザで、複数ファイルのダウンロードが可能です。この機能は現在 Safari でサポートされていないため、引き続きファイルを 1 つずつダウンロードする必要があります。この機能は、Transfer Family ウェブアプリケーションが提供されているすべての AWS リージョンで利用できます。詳細については、<a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/web-app.html\">Transfer Family ウェブアプリケーションのユーザーガイド</a>を参照してください。</p>",
+          "categories": []
+        },
+        {
+          "title": "AWS DataSync が共有 VPC のサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aws-datasync-shared-vpcs/",
+          "published": "2026-09-29T08:00:00+00:00",
+          "summary": "<p>AWS DataSync は共有仮想プライベートクラウド (VPC) をサポートするようになりました。AWS Resource Access Manager (RAM) を使用して複数の AWS アカウント間で共有されたサブネットを利用し、DataSync エージェントを作成したり転送タスクを実行したりできます。これにより、アカウントごとに個別でサブネットと VPC エンドポイントを用意するのではなく、中央アカウントで管理されている共有のサブネットおよび VPC エンドポイントを経由して、プライベートにデータを転送できるようになります。</p>\n<p>これまでネットワークを集約的に運用している環境では、AWS PrivateLink 経由でプライベート接続するアカウントごとに、別々の DataSync VPC エンドポイントを作成する必要がありました。エンドポイントが増えるたびに IP アドレスが消費され、複数のアカウントを管理する手間も運用上のオーバーヘッドとなっていました。共有 VPC への対応により、VPC 所有アカウントにエンドポイントを 1 つ用意すれば、サブネットを共有する全アカウントでそのエンドポイントを利用できるようになりました。これにより IP アドレスを節約でき、アカウントごとにエンドポイントを作成する必要もなくなります。このリリースは、単一のアカウントのみで運用している環境にとってもメリットがあります。1 つの VPC エンドポイントを複数のサブネット間で使い回せるようになったため、以前のようにサブネットごとに VPC エンドポイントを配置する必要はもうありません。</p>\n<p>共有 VPC は、拡張モードと基本モードの両方のエージェントベースタスクでサポートされています。はじめに、コンソールまたは CreateAgent API を使用して DataSync エージェントを作成し、AWS RAM 経由でアカウントと共有するサブネットを指定します。AWS DataSync による共有 VPC のサポートは、AWS DataSync が提供されているすべての AWS リージョンで利用できます。ただし、AWS Secret Region は除きます。詳細については、<a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/choose-service-endpoint.html#datasync-in-vpc\" target=\"_blank\">AWS DataSync 機能のドキュメント</a>をご覧ください。</p>",
+          "categories": [
+            "general:products/aws-datasync,marketing:marchitecture/storage,general:products/aws-privatelink,general:products/amazon-vpc,marketing:marchitecture/migration"
+          ]
+        },
+        {
+          "title": "Amazon CloudWatch Logs、頻繁にクエリされるフィールドのインデックスを自動作成",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/cloudwatch-logs-auto-indexes-fields/",
+          "published": "2026-09-29T08:00:00+00:00",
+          "summary": "<p>Amazon CloudWatch Logs で、頻繁にクエリするフィールドのインデックスが自動作成されるようになり、手動で設定しなくても CloudWatch Logs Insights のクエリを高速化できるようになりました。これまでは、クエリパターンと使用状況に基づいて、インデックスを作成するフィールドを手動で選択する必要がありました。そのため、クエリパターンが時間の経過とともに変化するチームでは、追加の作業が必要でした。</p>\n<p>CloudWatch Logs では、クエリ内で = および IN オペレーションによるフィルタリングに使用するフィールドが特定され、そのインデックスが自動作成されます。そのため、より高速にクエリを実行し、スキャンするデータ量を減らせます。インデックスが自動作成されたフィールドは、1 ロググループあたり 20 フィールドの制限にはカウントされず、30 日間保持されます。インデックスが自動作成されたフィールドのリストは、クエリパターンの変化に応じて更新されます。フィールドのインデックスを永続的に維持するには、コンソールまたは API を使用して、そのフィールドをフィールドインデックスポリシーに昇格させます。</p>\n<p>自動インデックス作成は、CloudWatch Logs のフィールドインデックス作成がサポートされているすべての AWS リージョンで、追加料金なしで利用できます。詳細については、<a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/\">Amazon CloudWatch Logs ユーザーガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch-logs"
+          ]
+        },
+        {
+          "title": "AWS Systems Manager が AWS Resource Access Manager を経由したドキュメントの共有をサポート開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/systems-manager-sharing-documents-ram/",
+          "published": "2026-09-29T08:00:00+00:00",
+          "summary": "<p>AWS Systems Manager では、AWS Resource Access Manager (AWS RAM) を使用して、Systems Manager ドキュメント (SSM ドキュメント) を AWS Organizations の組織全体または特定の組織単位 (OU) と共有できるようになりました。従来は、ドキュメントをパブリックに共有するか、個別のアカウント ID のリストを指定して共有することしかできませんでした。組織や OU とドキュメントを簡単に共有できるようになり、組織や OU においてアカウントが追加または削除された場合でも Systems Manager が共有状態を自動的に最新に保つため、アカウントを手動で追跡および更新する必要がなくなります。</p>\n<p>ドキュメントを共有するには、AWS RAM リソース共有を作成し、共有する SSM ドキュメントを追加して、共有先の組織または OU を選択します。共有は AWS RAM とリソースベースのポリシーによって管理されるため、標準的な AWS の認可機能によってアクセス権が付与されます。組織外のアカウントとドキュメントを共有する場合、そのアカウントはリソース共有への招待を受け取り、その招待を承認した後にのみアクセス権が付与されるため、ドキュメントの所有者と利用者の双方が共有アクセスをより高度に制御できます。</p>\n<p>この機能は、AWS Systems Manager が利用可能なすべての AWS リージョンにおいて、Systems Manager コンソール、AWS コマンドラインインターフェイス (AWS CLI)、AWS SDK で利用できます。AWS RAM を使用してドキュメントを共有しても追加料金はかかりません。使用を開始するには、Systems Manager コンソールの [ドキュメント] ページを開くか、<a href=\"https://docs.aws.amazon.com/systems-manager/latest/userguide/documents-ssm-sharing.html\">AWS Systems Manager ユーザーガイド</a> を参照してください。</p>",
+          "categories": [
+            "general:products/aws-resource-access-manager,general:products/aws-systems-manager"
+          ]
+        },
+        {
+          "title": "Amazon CloudWatch Logs Insights、クエリ実行前にスキャンされるバイト数の見積もりが可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/cloudwatch-logs-estimate-bytes-scanned/",
+          "published": "2026-09-29T08:00:00+00:00",
+          "summary": "<p>Amazon CloudWatch Logs Insights で、選択したロググループと時間範囲を対象に、クエリによってスキャンされるログデータ量をバイト単位で見積もることができるようになりました。見積もりのためクエリを実行する必要はありません。そのため、ロググループの選択、時間範囲、フィルターをクエリの実行前に調整できます。</p>\n<p>CloudWatch コンソールでは、ロググループの選択、時間範囲、クエリテキストを変更すると、クエリエディタに見積もりが自動的に表示されます。AWS CLI または API を使用する場合は、クエリに estimate コマンドを追加して、見積もりを明示的にリクエストできます。estimate コマンドを使用するクエリには、CloudWatch Logs Insights のクエリ料金は発生しません。</p>\n<p>estimate コマンドは、すべての AWS 商用リージョンで使用できます。詳細については、<a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-Estimate.html\">Amazon CloudWatch Logs のドキュメント</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch-logs,general:products/amazon-cloudwatch"
+          ]
+        },
+        {
+          "title": "Amazon ElastiCache Serverless for Valkey がパブリックエンドポイントのサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-elasticache-serverless-public-endpoints/",
+          "published": "2026-09-29T07:00:00+00:00",
+          "summary": "<p>Amazon ElastiCache Serverless for Valkey はパブリックエンドポイントをサポートするようになりました。これにより、VPN、踏み台ホスト、または SSH トンネルを設定しなくても、ノートパソコン、サーバーレス機能、または AWS 外部で実行されているアプリケーションからキャッシュに直接接続できます。</p>\n<p>パブリックエンドポイントを使えば、VPC の設定やインフラストラクチャのプロビジョニングを行わなくても、インターネット経由で接続できるフルマネージドキャッシュを 1 分未満で立ち上げることができます。このキャッシュによって、スピーディーにプロトタイプを開発したり、AI コーディングツールと AI エージェントをキャッシュに直接接続したり、VPC に到達できないワークロードにキャッシュ機能を追加したりできます。通信はすべて TLS 1.3 上の IAM 認証によって保護されているため、パスワードを管理したりローテーションしたりする必要はありません。&nbsp;接続方法としては、ネイティブで IAM に対応した Valkey GLIDE 2.2 以降を使用するか、任意の Valkey クライアントと Developer Toolkit for ElastiCache (IAM 認証トークンの生成やリフレッシュを実行する OSS ライブラリ) を併せて使用できます。</p>\n<p>ElastiCache Serverless のパブリックエンドポイントは、すべての商用 AWS リージョンと中国リージョンで利用できます。パブリックエンドポイントを使用しても、ElastiCache Serverless の通常料金以外に請求が発生することはありません。&nbsp;使用を開始するには、<a href=\"https://console.aws.amazon.com/elasticache/\" target=\"_blank\" rel=\"noopener noreferrer\">AWS マネジメントコンソール</a>、AWS SDK、または AWS CLI を使用して、パブリックエンドポイントを備えた Valkey 9.0 以降のサーバーレスキャッシュを作成します。パブリックエンドポイントの詳細については、<a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-public-endpoints-chapter.html\" target=\"_blank\" rel=\"noopener noreferrer\">パブリックエンドポイントを備えた Valkey サーバーレスキャッシュを作成する</a>を参照してください。</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon Route 53 Resolver DNS Firewall による Palo Alto Networks Advanced DNS Security のサポートが一般提供 (GA) 開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/route-53-dns-firewall-panw-dns-security-generally-available",
+          "published": "2026-09-29T01:03:00+00:00",
+          "summary": "<p>​Amazon Route 53 Resolver DNS Firewall による Palo Alto Networks (PANW) Advanced DNS Security のサポートが 32 の AWS リージョンで一般提供されるようになりました。これによりセキュリティチームは、個別のファイアウォールをデプロイしたり VPC 構成を変更したりすることなく、VPC から直接送信される悪意のある DNS トラフィックを PANW Advanced DNS Security ルールを使用して検知およびブロックできます。</p>\n<p>​AWS Summit New York City で<a href=\"https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-route-53-resolver-dns/\" target=\"_blank\" rel=\"noopener noreferrer\">プレビュー公開</a>されたこの機能により、セキュリティ管理者は Palo Alto Networks が提供する DNS 脅威対策 (コマンド &amp; コントロール、マルウェア、フィッシング、新規登録ドメインなど) を Route 53 DNS Firewall ルールから直接適用し、Amazon VPC やハイブリッドクラウド (Route 53 Resolver エンドポイント経由) からの悪意のある DNS クエリトラフィックを検査してブロックできます。</p>\n<p>​一般提供に伴い、DNS Firewall 上の PANW Advanced DNS Security は、DNS Firewall が提供されているすべての AWS リージョンでサポートされるようになりました。お客様は、Route 53 DNS Firewall コンソールから直接この機能をサブスクライブして有効化できるほか、AWS License Manager を使用して自社組織のアカウント間でライセンスを共有したり、AWS Resource Access Manager、Route 53 Profiles、または AWS Firewall Manager を使用して PANW ルールを含む DNS Firewall ルールグループを VPC に関連付けたりできます。</p>\n<p>​​​詳細と使用方法については、Route 53 DNS Firewall の<a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-partner-panw.html\" target=\"_blank\" rel=\"noopener noreferrer\">ドキュメント</a>を参照してください。Route 53 DNS Firewall の料金を確認するには、Route 53 の<a href=\"https://aws.amazon.com/route53/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">料金ページ</a>をご覧ください。PANW Advanced DNS Security の AWS Marketplace への掲載と料金の詳細については、AWS Marketplace の<a href=\"https://aws.amazon.com/marketplace/pp/prodview-lrceyvgks3z6o?sr=0-19&amp;ref_=beagle&amp;applicationId=AWSMPContessa\" target=\"_blank\" rel=\"noopener noreferrer\">製品ページ</a>をご覧ください。​</p>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance,general:products/amazon-route-53,marketing:marchitecture/networking-and-content-delivery"
+          ]
+        },
+        {
+          "title": "Amazon EC2 における将来の日付でのキャパシティ予約で開始日の延期がサポート",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date/",
+          "published": "2026-09-28T21:17:00+00:00",
+          "summary": "<p>Amazon EC2 における将来の日付でのキャパシティ予約では、必要なキャパシティ、開始日、および契約期間を指定することで、最大 120 日前から事前にキャパシティを確保できます。提供前に計画が変更された場合、新しいスケジュールに合わせて開始日を遅らせることができるようになりました。</p>\n<p>開始日を延期すると、EC2 は新しい開始日と必要な契約期間を示す見積もりを提示します。開始日を延期するタイミングによっては、契約期間が長くなる場合があります。見積もりを確認して承認すると、EC2 は新しい開始日で予約を更新します。</p>\n<p>この機能は、将来の日付でのキャパシティ予約をご利用のすべてのお客様にご利用いただけます。この機能を利用可能なリージョンについては、<a href=\"https://builder.aws.com/build/capabilities/explore\">リージョンごとの AWS 可用性</a>ウェブサイトをご確認ください。詳細については、<a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-modify.html\">キャパシティ予約ユーザーガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-ec2,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Amazon Rekognition Face Liveness がフィードバックコードを返すように",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/rekognition-liveness-feedback-codes/",
+          "published": "2026-09-28T20:41:00+00:00",
+          "summary": "<p>Amazon Rekognition Face Liveness は、ライブネスチェックのスコアが低くなった理由や、ユーザーがどのようにすれば再試行に成功するかをお客様が理解するのに役立つフィードバックコードを返すようになりました。コードは GetFaceLivenessSessionResults API レスポンスで返され、照明不足、顔の遮蔽、閉じた目、動画の品質不足など、低スコアの原因となった具体的な条件を特定します。お客様はこれらのコードをエンドユーザーに表示することができ、ユーザーは狙いを絞った修正を行い、自信を持って再試行できます。単一のセッションで複数のフィードバックコードを一度に返すことができるため、ユーザーは 1 回の再試行ですべての問題を解決できます。&nbsp;この機能は、本人確認オンボーディング、再認証フロー、およびアクセシビリティシナリオで特に役に立ちます。</p>\n<p>Amazon Rekognition Face Liveness は、ガイドに従った短い自撮り動画チェックを通じて、カメラの前にいる人物が本物の生きている人間であり、写真、動画再生、仮面、ディープフェイクなどではないことを検証します。信頼度スコア、顔照合用の参照画像、およびセッション監査用画像を返します。&nbsp;\n <br>\n <br>\n Rekognition Face Liveness は、米国東部 (バージニア北部)、米国西部 (オレゴン)、欧州 (アイルランド)、アジアパシフィック (東京、ムンバイ、マレーシア、タイ)、および南米 (サンパウロ) でご利用いただけます。詳細については、<a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-programming-api.html\">Amazon Rekognition Face Liveness API ドキュメント</a>と <a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-faq.html\">Face Liveness に関するよくある質問</a>をご覧ください。</p>",
+          "categories": [
+            "general:products/amazon-rekognition,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Grok 4.7 が Amazon Bedrock で利用可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-bedrock-grok-4-7/",
+          "published": "2026-09-28T18:29:00+00:00",
+          "summary": "<p>Amazon Bedrock で、コーディング、エージェントタスク、ナレッジワーク向けに構築されたフロンティアモデルである SpaceXAI Grok 4.7 が、US Geo および Global のクロスリージョン推論でサポートされるようになりました。&nbsp;</p>\n<p>Grok 4.7 は Grok 4.6 をベースにしており、複合ドキュメント処理の向上、計画立案とエラー回復を備えたリポジトリ規模でのより信頼性の高いコーディング、そしてフォーム入力やポータルナビゲーションを行うブラウザ利用エージェントの機能強化が実現されています。&nbsp;</p>\n<p><a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/\">Amazon Bedrock コンソール</a>で Grok 4.7 の使用を開始することも、サポートされている Amazon Bedrock API を使用するプログラムを通じて使用を開始することもできます。サポートされている <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\">AWS リージョン</a>、エンドポイント、API、機能、推論プロファイル、料金については、<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-7.html\">Amazon Bedrock のドキュメント</a>を参照してください。詳細については、提供開始に関する<a href=\"https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/\">ブログ記事</a>をご覧ください。</p>\n<p>&nbsp;</p>",
+          "categories": [
+            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Claude Sonnet 5.5 が AWS GovCloud (米国) で利用可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws-govcloud-us/",
+          "published": "2026-09-28T15:00:00+00:00",
+          "summary": "<p>AWS GovCloud (米国) で、Claude Sonnet 5.5 の提供が開始されました。これはよりスマートで効率的な Sonnet であり、大半の作業においてタスクあたりのコストを抑え、より高速に、コーディングやナレッジワークにおける明確な飛躍的進歩をもたらします。</p>\n<p>Claude Sonnet 5.5 は、よりスマートで効率的な Sonnet であり、Sonnet 5 からの大きなステップアップとなるため、既に Sonnet を基盤に構築を行っているチームにとって自然なアップグレード対象となります。コーディング機能が強化されており、同一セッション内で Claude とともに機能の構築や修正を行ったり、要件に対して出力を検証したりするなど、より大きなコーディング戦略の一環として範囲の明確なタスクを完了できます。また、1 ページの要約書、図表、要約スライドの作成から、ドキュメントの編集やスプレッドシートの整理まで、すぐに共有可能なナレッジワーク成果物を生成します。</p>\n<p>Amazon Bedrock では、リージョン内のデータレジデンシーによって AWS インフラストラクチャ内にデータを保持しながら Sonnet の機能を利用でき、ガードレールやナレッジベースといった AWS のマネージド機能とともに、統合サービスを通じてアクセスできます。詳細については、Amazon Bedrock の<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5-5.html\">ドキュメント</a>および<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html?refid=7ecf60df-6136-414c-a7c3-6aa4d2d6019f#model-regions-anthropic\">利用可能なリージョン</a>を参照してください。&nbsp;</p>",
+          "categories": [
+            "general:products/amazon-bedrock,general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Claude Sonnet 5.5 が AWS で利用可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws/",
+          "published": "2026-09-28T15:00:00+00:00",
+          "summary": "<p>AWS は Claude Sonnet 5.5 の提供を開始しました。これはよりスマートで効率的な Sonnet であり、大半の作業においてタスクあたりのコストを抑え、より高速に、コーディングやナレッジワークにおける明確な飛躍的進歩をもたらします。</p>\n<p>Claude Sonnet 5.5 は、よりスマートで効率的な Sonnet であり、Sonnet 5 からの大きなステップアップとなるため、既に Sonnet を基盤に構築を行っているチームにとって自然なアップグレード対象となります。コーディング機能が強化されており、同一セッション内で Claude とともに機能の構築や修正を行ったり、要件に対して出力を検証したりするなど、より大きなコーディング戦略の一環として範囲の明確なタスクを完了できます。また、1 ページの要約書、図表、要約スライドの作成から、ドキュメントの編集やスプレッドシートの整理まで、すぐに共有可能なナレッジワーク成果物を生成します。</p>\n<p>Claude Sonnet 5.5 を利用するには、Amazon Bedrock と Claude Platform on AWS の 2 つの方法があります。</p>\n<p>Amazon Bedrock では、リージョン内のデータレジデンシーによって AWS インフラストラクチャ内にデータを保持しながら Sonnet の機能を利用でき、ガードレールやナレッジベースといった AWS のマネージド機能とともに、統合サービスを通じてアクセスできます。詳細については、Amazon Bedrock の<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5-5.html\" target=\"_blank\" rel=\"noopener noreferrer\">ドキュメント</a>および<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html?refid=7ecf60df-6136-414c-a7c3-6aa4d2d6019f#model-regions-anthropic\" target=\"_blank\" rel=\"noopener noreferrer\">利用可能なリージョン</a>を参照してください。&nbsp;</p>\n<p>Claude Platform on AWS では、AWS コンソール経由で Anthropic 独自のプラットフォーム環境や機能への直接的なアクセスを提供します。Anthropic と直接やり取りする場合と同じ API、機能、コンソールエクスペリエンスでビルド、テスト、デプロイを行うことができ、料金請求や認証は AWS に一元化されます。使用を開始するには、Claude Platform on AWS の<a href=\"https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.html?refid=7ecf60df-6136-414c-a7c3-6aa4d2d6019f\" target=\"_blank\" rel=\"noopener noreferrer\">ドキュメント</a>を参照してください。</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,general:products/amazon-bedrock"
+          ]
+        },
+        {
+          "title": "Amazon Corretto の 2026 年 9 月パッチアップデート",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-corretto-sept-2026-updates/",
+          "published": "2026-09-28T14:00:00+00:00",
+          "summary": "<p>2026 年 9 月 25 日、Amazon は OpenJDK の Amazon Corretto 長期サポート (LTS) および機能リリース (FR) バージョンに対するパッチアップデートを発表しました。現在、Corretto 25.0.4.10.1、21.0.12.11.1、17.0.20.12.1、および 11.0.32.12.1 が<a href=\"https://aws.amazon.com/corretto/\">ダウンロード</a>可能です。Amazon Corretto はマルチプラットフォームで、本番稼働に対応した無料の OpenJDK ディストリビューションです。このパッチには、最新の tzdata 2026d アップデートが含まれています。</p>\n<p>Corretto の<a href=\"https://aws.amazon.com/corretto\">ホームページ</a>にアクセスして、Corretto 27、Corretto 25、Corretto 21、Corretto 17、Corretto 11、Corretto 8 のいずれかをダウンロードしてください。また、<a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-26-ug/generic-linux-install.html\">Corretto Apt、Yum、Apk リポジトリ</a>を設定することで、お使いの Linux システムでアップデートを入手することもできます。</p>\n<p><a href=\"https://github.com/corretto\">こちら</a>からフィードバックをお寄せいただけますとさいわいです。</p>",
+          "categories": [
+            "marketing:marchitecture/developer-tools,general:products/amazon-corretto,general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon SageMaker Unified Studio が 2 つの新しい接続機能をサポート開始: Iceberg REST Catalog 接続と Amazon DocumentDB の IAM 認証",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/sagemaker-iceberg-rest-iam-documentdb/",
+          "published": "2026-09-28T08:00:00+00:00",
+          "summary": "<p>Amazon SageMaker Unified Studio が 2 つの接続機能に新たに対応しました。(1) 外部 Apache Iceberg カタログを連携させる Iceberg REST Catalog (IRC) 接続と、(2) Amazon DocumentDB 向けの IAM 認証です。この 2 つの機能により、データチームはガバナンスの効いた多種多様なデータソースへと接続範囲を広げられると同時に、複数のプロジェクト間で認証情報を持たない安全な認証方式を適用できます。</p>\n<p><b>Iceberg REST Catalog 接続。</b> SageMaker Unified Studio は Iceberg REST Catalog (IRC) 接続をサポートするようになり、Iceberg REST 仕様に準拠した外部の Apache Iceberg カタログに接続できるようになりました。サポートされているカタログタイプには、Snowflake Open Catalog (Polaris)、Databricks Unity Catalog、仕様に準拠したその他のカタログ用の Generic IRC タイプなどがあります。接続が完了すると、Data Explorer でカタログを閲覧 (カタログ/スキーマ/テーブルの一覧表示、列の確認、サンプルデータのプレビュー) したり、Visual ETL で入力元や、追加/上書きの出力先として読み書きを行ったり、データノートブックからカタログにクエリを実行したりできます。認証には OAuth2 またはベアラートークンを使用し、データアクセスには自動発行される有効期間の短い Amazon S3 認証情報を使用します。接続のライフサイクル (接続の作成、編集、削除、テスト) が完全にサポートされています。</p>\n<p><b>Amazon DocumentDB の IAM 認証。</b> SageMaker Unified Studio で Amazon DocumentDB に接続する際に IAM 認証が利用可能になり、接続構成やノートブックコード内にデータベースのユーザー名やパスワードを保持することなく DocumentDB に接続できるようになりました。この接続は専用の IAM ロールを用いて認証されます。DocumentDB 側では AWS Security Token Service (AWS STS) を使用してその認証情報が検証されます。これには、TLS が有効になっている Amazon DocumentDB 5.0 以降のインスタンスベースのクラスターが必要です。この接続は、データノートブック、Data Explorer、テスト接続、Visual ETL データプレビューから使用できます。</p>\n<p>こうした接続機能は、本日から Amazon SageMaker Unified Studio が提供されているすべての <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS リージョン</a>で、追加料金なしで利用できます。</p>\n<p>Amazon SageMaker Unified Studio の詳細については、<a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/what-is-sagemaker-unified-studio.html\">Amazon SageMaker Unified Studio ユーザーガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-documentdb,general:products/amazon-sagemaker,marketing:marchitecture/databases,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "AWS Backup が Amazon FSx for NetApp ONTAP 向けの論理エアギャップボールトのサポートを追加",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/aws-backup-air-gapped-vault-fsx-ontap/",
+          "published": "2026-09-28T08:00:00+00:00",
+          "summary": "<p>AWS Backup が Amazon FSx for NetApp ONTAP 向けの論理エアギャップボールトをサポートするようになりました。論理エアギャップボールトは、複数のアカウントや AWS Organizations でバックアップを安全に共有できるタイプの AWS Backup ボールトです。直接復元をサポートしており、データ損失イベントからの復旧時間を短縮します。</p>\n<p>Amazon FSx for NetApp ONTAP ボリュームを論理エアギャップボールトで保護できるようになりました。論理エアギャップボールトに保存される変更不可能なバックアップは、デフォルトでロックされており、AWS が所有するキーまたはカスタマーマネージドキーを使用して暗号化され分離されています。同じアカウント内または他のアカウントやリージョンにわたって、論理エアギャップボールトに FSx for NetApp ONTAP バックアップを保存できます。これにより、ダウンタイムのリスクを軽減し、ビジネス継続性を確保し、コンプライアンスとディザスタリカバリの要件を満たすことができます。</p>\n<p>利用を開始するには、AWS Backup コンソール、AWS コマンドラインインターフェイス (CLI)、AWS SDK を使用できます。バックアップ計画でプライマリターゲットまたはコピー先として指定することで、論理エアギャップボールトを FSx for NetApp ONTAP バックアップのターゲットに設定します。AWS Resource Access Manager (RAM) を使用して他のアカウントとボールトを共有し、リカバリや復元テストを行ったり、アカウントが乗っ取られた際にも<a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/multipartyapproval.html\" target=\"_blank\" rel=\"noopener noreferrer\">マルチパーティー承認</a>を使用してボールトへのアクセスを保護したりできます。利用可能になると、そのアカウントから直接復元ジョブを開始できるため、最初にバックアップをコピーする手間が省けます。</p>\n<p>このサポートは、論理エアギャップボールトと Amazon FSx for NetApp ONTAP の両方が利用可能なすべての AWS リージョンでご利用いただけます。詳細および利用可能なリージョンについては、<a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Backup のドキュメント</a>をご覧ください。論理エアギャップボールトの詳細については、<a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html\">機能に関するドキュメント</a>と<a href=\"https://aws.amazon.com/backup/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">料金表のページ</a>をご覧ください。</p>",
+          "categories": [
+            "general:products/aws-backup,general:products/amazon-fsx-netapp-ontap,marketing:marchitecture/storage"
+          ]
+        },
+        {
+          "title": "Amazon DocumentDB (MongoDB 互換) がバージョン 8.0.2 で 5 つの MongoDB 集計ステージおよび変更ストリーム機能のサポートを追加",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-documentdb-8-0-2/",
+          "published": "2026-09-28T08:00:00+00:00",
+          "summary": "<p>Amazon DocumentDB (MongoDB 互換) では、マイナーバージョン 8.0.2 以降、再試行可能な書き込み、5 つの新しい集計ステージ、および変更ストリームといった機能強化がサポートされるようになりました。このリリースにより MongoDB API の互換性が拡張され、クエリパフォーマンスが向上したため、アプリケーションコードを変更することなく MongoDB ワークロードを Amazon DocumentDB に移行することがさらに容易になります。</p>\n<p>バージョン 8.0.2 の主な新機能は次のとおりです。</p>\n<p>- 再試行可能な書き込み - 挿入、更新、削除の操作は一時的なネットワークエラー発生時に自動的に再試行されるため、フェイルオーバー時のアプリケーションの耐障害性が向上します。\n <br>\n - 新しい集計ステージ - $setWindowFields (ウィンドウ演算子のフルセットを含む)、$bucketAuto、$facet、$graphLookup、および相関 $lookup をサポートし、高度な分析、ファセット検索、階層クエリが可能になります。\n <br>\n - 変更ストリームの強化 - $changeStreamSplitLargeEvent ステージによって 16 MB の上限を超える変更イベントが複数のフラグメントに分割されるようになりました。また、変更ストリームで createCollection 操作および createIndex 操作もイベントとして通知されるようになりました。\n <br>\n - クエリパフォーマンスの向上 - クエリプランナーの強化により、find および集計クエリ向けのインデックスオンリースキャン、$expr 述部に対するインデックススキャン、増分ソートが可能になったほか、count() および countDocuments() の処理速度が向上しました。\n <br>\n - インデックス管理 - 部分インデックスにおける reIndex コマンドの実行に対応しました。</p>\n<p>これらの機能は、Amazon DocumentDB 8.0.2 以降、Amazon DocumentDB が利用可能なすべてのリージョンでご利用いただけます。詳細については、<a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html\">サポートされている MongoDB API、オペレーション、およびデータ型</a>、<a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/release-notes.html\">Amazon DocumentDB リリースノート</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-documentdb"
+          ]
+        },
+        {
+          "title": "Amazon DocumentDB (MongoDB 互換) が再試行可能な書き込みのサポートを開始",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-documentdb-retryable-writes/",
+          "published": "2026-09-28T08:00:00+00:00",
+          "summary": "<p>MongoDB 互換アプリケーションを構築するデベロッパーにとって、再試行可能な書き込みは、ネットワークの中断やプライマリのフェイルオーバーなどの一時的なエラーの発生時に、アプリケーションの耐障害性を向上させます。Amazon DocumentDB (MongoDB 互換) は、エンジンバージョン 8.0.2 以降で再試行可能な書き込みをサポートするようになり、この機能を有効にする際に追加のコード変更を行う必要がなくなりました。</p>\n<p>再試行可能な書き込みを使用すると、一時的なエラーが発生した場合に、MongoDB ドライバーが特定の書き込み操作を自動的に 1 回再試行します。最新の MongoDB 互換ドライバーの大半では、デフォルトで再試行可能な書き込みが有効になっています。このリリースにより、Amazon DocumentDB 8.0.2 に接続するアプリケーションは、エラー防止のために接続文字列に retryWrites=false を指定する必要がなくなりました。再試行可能な書き込みは、updateMany と deleteMany、ならびにトランザクションのコミットおよびアボートのコマンドを除く、すべての書き込みコマンドでサポートされています。8.0.2 より前のエンジンバージョンでは、再試行可能な書き込みはサポートされていないため、無効にする必要があります。</p>\n<p>再試行可能な書き込みは、Amazon DocumentDB 8.0 が利用可能なすべてのリージョンにおいて、Amazon DocumentDB 8.0.2 インスタンスベースおよびサーバーレスのクラスターで利用できます。再試行可能な書き込みを使用するには、<a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/retryable-writes.html\">Amazon DocumentDB デベロッパーガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-documentdb,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "Amazon Transcribe がカスタムリソース向けにカスタマーマネージド KMS キーのサポートを追加",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-transcribe/",
+          "published": "2026-09-25T19:19:00+00:00",
+          "summary": "<p>Amazon Transcribe では、お客様が所有および管理するカスタマーマネージド AWS KMS キーを使用して、カスタム語彙、カスタム語彙フィルター、およびカスタム言語モデルを保管時に暗号化できるようになりました。</p>\n<p>これまでは、これらのカスタムリソースは常に AWS が所有するキーで暗号化されていました。これらのリソースを作成または更新する際に独自の対称 AWS KMS キーを指定できるようになったため、Transcribe がお客様に代わって保管するアーティファクトは、お客様のアカウント内にあるキーの下で暗号化されます。キーを指定しない場合、リソースは引き続いて AWS が所有するキーで暗号化されるため、オプトインしない限りアクションは不要です。</p>\n<p>カスタマーマネージドキーを使用すると、キーのアクセス許可を制御し、どのプリンシパルやサービスがカスタムリソースを暗号化および復号できるかを正確に決定できます。キーの使用履歴はすべて AWS CloudTrail に記録されるため、コンプライアンスやモニタリングのための完全な監査証跡が得られます。また、アクセス許可を取り消すために、独自のスケジュールでキーを無効化したり、リソースを別のキーに移行したりすることも可能です。</p>\n<p>この機能は、Amazon Transcribe が提供されているすべての AWS リージョンでご利用いただけます。詳細については、<a href=\"https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html\">Amazon Transcribe デベロッパーガイド</a>を参照してください。</p>",
+          "categories": [
+            "general:products/amazon-transcribe"
+          ]
+        },
+        {
+          "title": "Amazon EC2 M8i と M8i-flex のインスタンスが追加のリージョンで利用可能に",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/amazon-ec2-m8i-m8i-flex-thf/",
+          "published": "2026-09-25T18:40:00+00:00",
+          "summary": "<p>本日より、Amazon EC2 M8i および M8i-flex インスタンスが AWS European Sovereign Cloud (ドイツ) リージョンで利用できるようになります。これらのインスタンスは、AWS でのみ利用可能なカスタム Intel Xeon 6 プロセッサを搭載しており、クラウド内の同等の Intel プロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。M8i インスタンスと M8i-flex インスタンスは、前世代の Intel ベースのインスタンスと比較して、コストパフォーマンスが最大 15% 向上し、メモリ帯域幅も 2.5 倍向上しています。M7i および M7i-flex インスタンスと比較した場合、パフォーマンスは最大で 20% 向上し、特定のワークロードではより高いパフォーマンスが実現します。M8i インスタンスと M8i-flex インスタンスは、M7i インスタンスと M7i-flex インスタンスと比較して、PostgreSQL データベースでは最大 30%、NGINX ウェブアプリケーションでは最大 60%、AI 深層学習レコメンデーションモデルでは最大 40% 高速化されます。\n <br>\n <br>\n M8i-flex は、ウェブサーバーやアプリケーションサーバー、マイクロサービス、中小規模データストア、仮想デスクトップ、エンタープライズアプリケーションなどのほとんどの汎用ワークロードでコストパフォーマンスのメリットが得られる最も簡単な方法です。large から 16xlarge までの非常に一般的なサイズを提供しており、すべてのコンピューティングリソースをフルに活用しきれていないアプリケーションに最適な選択肢です。\n <br>\n <br>\n M8i インスタンスは、汎用ワークロード全般に適しています。特に、最大のインスタンスサイズや、継続的に高い CPU 使用率を必要とするワークロードに最適です。SAP 認定の M8i インスタンスは、13 種類のサイズで提供されています。そのうち 2 つはベアメタル型で、大規模なアプリケーションに対応する新しいサイズ 96xlarge も追加されています。\n <br>\n <br>\n 使用を開始するには、<a href=\"https://aws.amazon.com/console/\" target=\"_blank\"><u>AWS マネジメントコンソール</u></a>にサインインしてください。この新しいインスタンスの詳細については、<a href=\"https://aws.amazon.com/ec2/instance-types/m8i/\" target=\"_blank\"><u>M8i および M8i-flex インスタンスのページ</u></a>または AWS ニュース<a href=\"https://aws.amazon.com/blogs/aws/new-general-purpose-amazon-ec2-m8i-and-m8i-flex-instances-are-now-available/\" target=\"_blank\"><u>ブログ</u></a>をご覧ください。</p>",
+          "categories": [
+            "general:products/amazon-ec2,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Amazon EC2 の R8i および R8i-flex インスタンスを利用できるリージョンが拡大",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/ec2-r8i-r8i-flex-thf/",
+          "published": "2026-09-25T18:37:00+00:00",
+          "summary": "<p>本日より、Amazon Elastic Compute Cloud (Amazon EC2) R8i および R8i-flex インスタンスが AWS European Sovereign Cloud (ドイツ) リージョンで利用できるようになります。これらのインスタンスは、AWS でのみ利用可能なカスタム Intel Xeon 6 プロセッサを搭載しており、クラウド内の同等の Intel プロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。R8i インスタンスと R8i-flex インスタンスは、前世代の Intel ベースのインスタンスと比較して、コストパフォーマンスが最大 15% 向上し、メモリ帯域幅も 2.5 倍向上しています。R7i インスタンスと比較した場合、パフォーマンスは 20% 向上し、特定のワークロードではさらに高いパフォーマンスが実現します。また、R7i インスタンスと比較して、PostgreSQL データベースでは最大 30%、NGINX ウェブアプリケーションでは最大 60%、AI 深層学習レコメンデーションモデルでは最大 40%高速化されます。</p>\n<p>R8i-flex は、AWS 初のメモリ最適化 Flex インスタンスです。メモリ負荷の高いほとんどのワークロードにおいて、最も手軽にコストパフォーマンスの利点を得られる選択肢です。large から 16xlarge までの非常に一般的なサイズを提供しており、すべてのコンピューティングリソースをフルに活用しきれていないアプリケーションに最適な選択肢です。</p>\n<p>R8i インスタンスは、メモリ負荷の高いワークロード全般に適しています。特に、最大のインスタンスサイズや継続的に高い CPU 使用率を必要とするワークロードに最適です。R8i インスタンスは、13 種類のサイズで提供されています。そのうち 2 つはベアメタルサイズで、大規模なアプリケーションに対応する新しいサイズ 96xlarge も追加されています。<a href=\"https://docs.aws.amazon.com/sap/latest/general/sap-hana-aws-ec2.html\" target=\"_blank\"><u>R8i インスタンスは、SAP 認定を受けており</u></a>、オンプレミス環境とクラウド環境の同等のマシンにおいて最高となる 142,100 個の aSAPS を達成しています。そのため、ミッションクリティカルな SAP ワークロードにおいて優れたパフォーマンスを発揮します。</p>\n<p>使用を開始するには、<a href=\"https://aws.amazon.com/console/\" target=\"_blank\"><u>AWS マネジメントコンソール</u></a>にサインインしてください。このインスタンスは、Savings Plans、オンデマンドインスタンス、スポットインスタンスでご購入いただけます。この新しい <a href=\"https://aws.amazon.com/ec2/instance-types/r8i\" target=\"_blank\"><u>R8i および R8i-flex</u></a> インスタンスの詳細については、AWS ニュース<a href=\"https://aws.amazon.com/blogs/aws/best-performance-and-fastest-memory-with-the-new-amazon-ec2-r8i-and-r8i-flex-instances/\" target=\"_blank\"><u>ブログ</u></a>をご覧ください。</p>",
+          "categories": [
+            "marketing:marchitecture/compute,general:products/amazon-ec2"
+          ]
+        },
+        {
+          "title": "Amazon EC2 の C8i および C8i-flex インスタンスを利用できるリージョンが拡大",
+          "link": "https://aws.amazon.com/jp/about-aws/whats-new/2026/09/c8i-c8i-flex-thf-september-2026/",
+          "published": "2026-09-25T18:09:00+00:00",
+          "summary": "<p>本日より、Amazon Elastic Compute Cloud (Amazon EC2) C8i および C8i-flex インスタンスが AWS European Sovereign Cloud (ドイツ) リージョンで利用できるようになります。これらのインスタンスは、AWS でのみ利用可能なカスタム Intel Xeon 6 プロセッサを搭載しており、クラウド内の同等の Intel プロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。C8i インスタンスと C8i-flex インスタンスは、前世代の Intel ベースのインスタンスと比較して、コストパフォーマンスが最大 15% 向上し、メモリ帯域幅も 2.5 倍向上しています。C7i および C7i-flex インスタンスと比較した場合、パフォーマンスは最大で 20% 向上し、一部のワークロードではより高いパフォーマンスが実現します。C8i および C8i-flex は、C7i および C7i-flex と比較して、NGINX ウェブアプリケーションでは最大 60％、AI 深層学習推奨モデルでは最大 40％、Memcached ストアでは最大 35％ 高速です。\n <br>\n <br>\n C8i-flex は、ウェブサーバーやアプリケーションサーバー、データベース、キャッシュ、Apache Kafka、Elasticsearch、エンタープライズアプリケーションなど、コンピューティング負荷の高いワークロードの大部分で価格パフォーマンスのメリットを得る最も簡単な方法です。large から 16xlarge までの非常に一般的なサイズを提供しており、すべてのコンピューティングリソースをフルに活用しきれていないアプリケーションに最適な選択肢です。\n <br>\n <br>\n C8i インスタンスは、メモリ負荷の高いワークロード全般に適しています。特に、最大のインスタンスサイズや継続的に高い CPU 使用率を必要とするワークロードに最適です。C8i インスタンスは、13 種類のサイズで提供されています。そのうち 2 つはベアメタルサイズで、大規模なアプリケーションに対応する新しいサイズ 96xlarge も追加されています。\n <br>\n <br>\n 使用を開始するには、<a href=\"https://aws.amazon.com/console/\" target=\"_blank\"><u>AWS マネジメントコンソール</u></a>にサインインしてください。このインスタンスは、Savings Plans、オンデマンドインスタンス、スポットインスタンスでご購入いただけます。この新しい <a href=\"https://aws.amazon.com/ec2/instance-types/c8i/\" target=\"_blank\"><u>C8i と C8i-flex</u></a> のインスタンスの詳細については、<a href=\"https://aws.amazon.com/blogs/aws/introducing-new-compute-optimized-amazon-ec2-c8i-and-c8i-flex-instances/\" target=\"_blank\"><u>AWS ニュースブログ</u></a>をご覧ください。</p>",
+          "categories": [
+            "marketing:marchitecture/compute,general:products/amazon-ec2"
+          ]
+        }
+      ]
+    },
+    "aws_blog": {
+      "source": "https://aws.amazon.com/jp/blogs/news/feed/",
+      "items": [
+        {
+          "title": "Amazon DynamoDB から Amazon S3 へのフィルター付きエクスポート機能のご紹介",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-filtered-export-from-amazon-dynamodb-to-amazon-s3/",
+          "published": "2026-10-08T05:58:45+00:00",
+          "summary": "本ブログでは、Amazon DynamoDB の新機能であるフィルター付きエクスポートについてご紹介します。この機能を使うと、ExportTableToPointInTime リクエストに FilterSpecification を指定することで、必要なアイテムや属性のみを Amazon S3 へエクスポートでき、テーブルのキャパシティを消費しません。マルチテナント環境における特定テナントのリカバリ、属性を限定したデータ共有、Amazon Athena を用いた影響分析、別リージョンへの移行といった実践的なユースケースを通して、効率的なデータ運用方法を学べます。",
+          "categories": [
+            "Advanced (300)",
+            "Amazon DynamoDB",
+            "Amazon Simple Storage Service (S3)",
+            "Announcements"
+          ]
+        },
+        {
+          "title": "数値で見る AWS が支える Amazon プライムデー 2026",
+          "link": "https://aws.amazon.com/jp/blogs/news/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
+          "published": "2026-10-08T04:39:38+00:00",
+          "summary": "Amazon プライムデー 2026 はプライム会員限定で、2026 年 6 月 23 日から 26 日まで開 […]",
+          "categories": [
+            "Amazon Aurora",
+            "Amazon CloudFront",
+            "Amazon CloudWatch",
+            "Amazon DynamoDB",
+            "Amazon EC2",
+            "Amazon Elastic Block Store (Amazon EBS)",
+            "Amazon Elastic Container Service",
+            "Amazon ElastiCache",
+            "Amazon GuardDuty",
+            "Amazon Simple Email Service (SES)",
+            "Amazon Simple Queue Service (SQS)",
+            "AWS CloudTrail",
+            "AWS Fargate",
+            "AWS Fault Injection Service (FIS)",
+            "AWS Lambda",
+            "AWS Support",
+            "Graviton",
+            "Kinesis Data Streams"
+          ]
+        },
+        {
+          "title": "Amazon Bedrock の自動推論チェックが変える生成 AI のコンプライアンス",
+          "link": "https://aws.amazon.com/jp/blogs/news/how-automated-reasoning-checks-in-amazon-bedrock-transform-generative-ai-compliance/",
+          "published": "2026-10-08T04:38:26+00:00",
+          "summary": "別の大規模言語モデル (LLM) に出力を評価させる LLM-as-a-judge のような確率的な検証は、規制業界が監査で求められる形式的な保証を提供できません。この記事では、Amazon Bedrock Guardrails の自動推論チェックが形式的検証によって AI の出力を数学的に検証し、監査にそのまま使えるエビデンスとともに、確率的な確信から数学的な証明へ進む道筋を提供する仕組みを説明します。Amazon Logistics、Lucid Motors、Fortive、FETG など 6 業界の導入事例と、コンプライアンスチェックのリファレンスアーキテクチャ、利用開始の手順も紹介します。",
+          "categories": [
+            "Amazon Bedrock",
+            "Artificial Intelligence",
+            "Generative AI",
+            "Responsible AI",
+            "Security, Identity, & Compliance",
+            "automated reasoning",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "Timestream for InfluxDB 3 のワークロード分析とベストプラクティス",
+          "link": "https://aws.amazon.com/jp/blogs/news/timestream-for-influxdb-3-workload-analysis-and-best-practices/",
+          "published": "2026-10-08T03:12:19+00:00",
+          "summary": "本記事は、Timestream for InfluxDB 3 workload analysis and be […]",
+          "categories": [
+            "Advanced (300)",
+            "Amazon Timestream",
+            "Technical How-to"
+          ]
+        },
+        {
+          "title": "AWS ウィークリーまとめ：OpenAI を搭載した Amazon Bedrock マネージドエージェント、Q3 のサービス可用性アップデート、Kiro ワークフローなど（2026 年 10 月 5 日）",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/",
+          "published": "2026-10-08T01:56:49+00:00",
+          "summary": "2026 年 9 月 28 日週、OpenAI を搭載した Amazon Bedrock マネージドエージェン […]",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon S3 Tables",
+            "AWS Partner Network",
+            "AWS Well-Architected Tool",
+            "Kiro",
+            "Strands Agents"
+          ]
+        },
+        {
+          "title": "AWS Continuum が自律型コードセキュリティの新たな基準を確立: CyberGym-E2E で成功率 89.0% を達成",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-continuum-sets-a-new-standard-in-autonomous-code-security/",
+          "published": "2026-10-08T01:36:38+00:00",
+          "summary": "AI モデルの進化により脆弱性への迅速な対応が求められるなか、AWS Continuum for code vulnerabilities は、マシンスピードで動作する自律型セキュリティによって脆弱性の発見、検証、修復を加速します。脆弱性ライフサイクル全体を評価する CyberGym-E2E ベンチマークで、Continuum は 920 件中 819 件のタスクをパスし、成功率 89.0% を達成しました。これは従来の公開最高値を 23.1 ポイント上回る結果です。本記事では、ベンチマークの評価方法、マルチエージェントのハーネス設計、今後の評価の方向性を紹介します。",
+          "categories": [
+            "Announcements",
+            "Security, Identity, & Compliance",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "【開催報告 & 資料公開】Claude Mythos 時代の AWS セキュリティ対策 ～ AWS Security Agent ご紹介 ～",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-jpps-seminar-2026-july/",
+          "published": "2026-10-07T08:59:05+00:00",
+          "summary": "こんにちは。アマゾン ウェブ サービス ジャパン合同会社 パートナーソリューションアーキテクトの深井宣之です。 […]",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon GuardDuty",
+            "Amazon Inspector",
+            "AWS Lambda",
+            "AWS Security Hub",
+            "AWS WAF",
+            "AWS Partner Network"
+          ]
+        },
+        {
+          "title": "Autodesk が Migration Assistant とインテリジェントルーティングで 23 億ドキュメントを Amazon OpenSearch Service に移行した方法",
+          "link": "https://aws.amazon.com/jp/blogs/news/how-autodesk-migrated-2-3-billion-documents-to-amazon-opensearch-service-using-migration-assistant-and-intelligent-routing/",
+          "published": "2026-10-07T04:51:28+00:00",
+          "summary": "本記事では、Autodesk が Amazon OpenSearch Service 上の単一インデックスの Elasticsearch 7.1.1 ドメインを、Migration Assistant for Amazon OpenSearch Service と、各クエリを該当データを持つシャードへ振り分けるルーティング層を使って、4 つのマルチインデックス OpenSearch Service ドメインへ再設計した方法を紹介します。",
+          "categories": [
+            "Amazon DynamoDB",
+            "Amazon Elastic Block Store (Amazon EBS)",
+            "Amazon OpenSearch Service",
+            "Amazon VPC",
+            "AWS Fargate",
+            "AWS Identity and Access Management (IAM)"
+          ]
+        },
+        {
+          "title": "Amazon Bedrock の自動推論ポリシーの自動改善",
+          "link": "https://aws.amazon.com/jp/blogs/news/automated-reasoning-policy-refinement-in-amazon-bedrock/",
+          "published": "2026-10-07T03:17:02+00:00",
+          "summary": "Amazon Bedrock Guardrails の自動推論チェック (Automated Reasoning checks) で、失敗したテストの診断と形式論理の修正案の作成を自動化するポリシーの自動改善を紹介します。ルールの問題に対応する Iterative Refinement と、変換のあいまいさに対応する Ambiguous Variable Refinement の使い分け、AWS SDK for Python (Boto3) による非同期の開始・ポーリング・取得ワークフロー、お客様が承認するまで変更が反映されないレビューゲート、Fidelity Report (忠実度レポート) による検証、コンソールでのウォークスルーを解説します。",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon Bedrock Guardrails",
+            "Announcements",
+            "Intermediate (200)",
+            "Security, Identity, & Compliance",
+            "Artificial Intelligence",
+            "automated reasoning",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "AWS RAM を使った AWS Organization 全体への Systems Manager ドキュメント共有",
+          "link": "https://aws.amazon.com/jp/blogs/news/share-systems-manager-documents-across-your-aws-organization-with-aws-ram/",
+          "published": "2026-10-07T02:16:46+00:00",
+          "summary": "AWS Systems Manager (SSM) ドキュメントの共有は、これまでアカウント ID を個別に指定する方式で、組織の変更のたびにリストを手作業で更新する必要がありました。AWS Resource Access Manager (AWS RAM) を使うと、SSM ドキュメントを組織全体または OU 単位で共有でき、アカウントの参加・離脱に合わせて共有の状態が自動で同期されます。本稿では、共有の仕組みを説明し、Active Directory ドメイン参加ランブックを例に、コンソール・AWS CLI・CloudFormation で共有してメンバーアカウントから実行する手順を紹介します。",
+          "categories": [
+            "Announcements",
+            "AWS Systems Manager",
+            "Best Practices",
+            "Management Tools",
+            "Resource Access Manager (RAM)",
+            "Technical How-to",
+            "Automation",
+            "AWS CloudFormation",
+            "AWS Organizations",
+            "Best practices",
+            "Cloud Operations",
+            "How-to"
+          ]
+        }
+      ]
+    }
+  }
+}
