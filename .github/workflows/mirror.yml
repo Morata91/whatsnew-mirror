@@ -5,6 +5,7 @@ on:
     - cron: "10 22 * * *" # UTC 21:00 = JST 06:00
   workflow_dispatch:
 
+
 permissions:
   contents: write
 
