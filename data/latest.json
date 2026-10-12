@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T00:57:35.234228+00:00",
+  "generated_at": "2026-10-12T01:17:28.518370+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
@@ -274,21 +274,21 @@
           ]
         },
         {
-          "title": "AWS Client VPN now supports device posture assessment",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-client-vpn-device-posture/",
-          "published": "2026-10-05T17:00:00+00:00",
-          "summary": "<p>AWS Client VPN now supports device posture assessment, allowing you to verify that connecting user devices meet your security and compliance requirements before granting network access. This feature integrates with your existing device posture providers, so only trusted, compliant devices can access your AWS resources through Client VPN.</p>\n<p>Previously, Client VPN authenticated users through certificates, SAML, or Active Directory. With device posture assessment, you can now also integrate &nbsp;<a href=\"https://www.crowdstrike.com/\">CrowdStrike&nbsp;</a>, &nbsp;<a href=\"https://www.jamf.com/\">Jamf&nbsp;</a>, or &nbsp;<a href=\"https://jumpcloud.com/\">JumpCloud&nbsp;</a> with Client VPN to automatically evaluate device security signals such as compliance scores, encryption status, and risk level before allowing a connection. You define these requirements using &nbsp;<a href=\"https://cedarpolicy.com/\">Cedar policies&nbsp;</a>, giving you fine-grained control over which devices can connect. To help you author and validate these policies, Client VPN provides you a Test Policy tool that guides you through creating Cedar policies for your device posture requirements.</p>\n<p>This feature continuously re-evaluates device compliance during active sessions, and automatically disconnects a session if a device falls out of compliance, such as when risk score or security settings change. You can also use this feature in monitoring-only mode, which logs posture evaluation results without disconnecting sessions, so you can assess the impact of your policies before enforcing them. Device posture assessment works alongside your existing authorization rules to provide defense in depth.</p>\n<p>This feature is available in all AWS Regions where AWS Client VPN is available, at no additional cost. This feature requires AWS VPN Client version 6.2.0 or later.</p>\n<p>To learn more about Client VPN:</p>\n<ul>\n <li>Visit the AWS Client VPN &nbsp;<a href=\"https://aws.amazon.com/vpn/client-vpn/\">product page</a></li>\n</ul>\n<ul>\n <li>Download the &nbsp;<a href=\"https://aws.amazon.com/vpn/client-vpn-download/\">AWS VPN Client</a></li>\n</ul>\n<ul>\n <li>Read the AWS Client VPN &nbsp;<a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html\">administrator guide</a></li>\n</ul>\n<ul>\n <li>Read the AWS Client VPN &nbsp;<a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-user-what-is.html\">user guide</a></li>\n</ul>",
-          "categories": [
-            "marketing:marchitecture/networking-and-content-delivery,general:products/aws-client-vpn"
-          ]
-        },
-        {
           "title": "AWS Advanced Ruby Driver Wrapper is generally available",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ruby-driver-wrapper-available/",
           "published": "2026-10-05T17:00:00+00:00",
           "summary": "<p>The Amazon Web Services (AWS) Advanced Ruby Driver Wrapper is now generally available for use with <a href=\"https://aws.amazon.com/rds/\" target=\"_blank\">Amazon RDS</a> and <a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\">Amazon Aurora</a> PostgreSQL and MySQL-compatible databases. This advanced database driver reduces RDS Blue/Green switchover, Aurora Global database switchover and database failover times, improving application availability. Additionally, it supports multiple authentication mechanisms for your database, including AWS Secrets Manager authentication, and token-based authentication with AWS Identity and Access Management (IAM).</p>\n<p>The AWS Advanced Ruby Driver Wrapper builds on top of the community <a href=\"https://rubygems.org/gems/pg\" target=\"_blank\" rel=\"noopener noreferrer\">pg</a> (PostgreSQL), and the <a href=\"https://rubygems.org/gems/mysql2\" target=\"_blank\" rel=\"noopener noreferrer\">mysql2</a> (MySQL) drivers to provide enhanced functionality beyond standard database connectivity. The wrapper is natively integrated with Aurora and RDS databases, enabling it to monitor database cluster status and quickly connect to newly promoted writers during unexpected failures that trigger database failovers. Furthermore, the wrapper seamlessly integrates with the ActiveRecord through provided aws_postgresql and aws_mysql2 adapters, so you can enable it without changing your application code.</p>\n<p>The driver is available as an open-source project under the Apache 2.0 license. Refer to the instructions on the <a href=\"https://github.com/aws/aws-advanced-ruby-driver-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub repository</a> to get started.</p>",
           "categories": [
             "marketing:marchitecture/databases,general:products/amazon-rds,general:products/amazon-aurora"
+          ]
+        },
+        {
+          "title": "AWS Client VPN now supports device posture assessment",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-client-vpn-device-posture/",
+          "published": "2026-10-05T17:00:00+00:00",
+          "summary": "<p>AWS Client VPN now supports device posture assessment, allowing you to verify that connecting user devices meet your security and compliance requirements before granting network access. This feature integrates with your existing device posture providers, so only trusted, compliant devices can access your AWS resources through Client VPN.</p>\n<p>Previously, Client VPN authenticated users through certificates, SAML, or Active Directory. With device posture assessment, you can now also integrate &nbsp;<a href=\"https://www.crowdstrike.com/\">CrowdStrike&nbsp;</a>, &nbsp;<a href=\"https://www.jamf.com/\">Jamf&nbsp;</a>, or &nbsp;<a href=\"https://jumpcloud.com/\">JumpCloud&nbsp;</a> with Client VPN to automatically evaluate device security signals such as compliance scores, encryption status, and risk level before allowing a connection. You define these requirements using &nbsp;<a href=\"https://cedarpolicy.com/\">Cedar policies&nbsp;</a>, giving you fine-grained control over which devices can connect. To help you author and validate these policies, Client VPN provides you a Test Policy tool that guides you through creating Cedar policies for your device posture requirements.</p>\n<p>This feature continuously re-evaluates device compliance during active sessions, and automatically disconnects a session if a device falls out of compliance, such as when risk score or security settings change. You can also use this feature in monitoring-only mode, which logs posture evaluation results without disconnecting sessions, so you can assess the impact of your policies before enforcing them. Device posture assessment works alongside your existing authorization rules to provide defense in depth.</p>\n<p>This feature is available in all AWS Regions where AWS Client VPN is available, at no additional cost. This feature requires AWS VPN Client version 6.2.0 or later.</p>\n<p>To learn more about Client VPN:</p>\n<ul>\n <li>Visit the AWS Client VPN &nbsp;<a href=\"https://aws.amazon.com/vpn/client-vpn/\">product page</a></li>\n</ul>\n<ul>\n <li>Download the &nbsp;<a href=\"https://aws.amazon.com/vpn/client-vpn-download/\">AWS VPN Client</a></li>\n</ul>\n<ul>\n <li>Read the AWS Client VPN &nbsp;<a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html\">administrator guide</a></li>\n</ul>\n<ul>\n <li>Read the AWS Client VPN &nbsp;<a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-user-what-is.html\">user guide</a></li>\n</ul>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:products/aws-client-vpn"
           ]
         },
         {
@@ -333,21 +333,21 @@
           ]
         },
         {
-          "title": "Amazon Aurora DSQL now supports partial indexes",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-dsql-partial-indexes/",
-          "published": "2026-10-02T17:30:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/rds/aurora/dsql/\">Amazon Aurora DSQL</a> now lets you build an index over a specific subset of a table, storing only qualifying rows rather than every row in the entire table, which improves query performance and lowers index storage cost.</p>\n<p>Many tables hold a small working set alongside a much larger history, such as open orders among years of completed ones. Add a WHERE clause to CREATE INDEX to index just that working set. The index stays small as the table grows, and queries that target those rows read less data. Aurora DSQL uses a partial index for any query whose filter falls within the index's condition.</p>\n<p>Partial indexes are available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where Aurora DSQL is available. To learn more, see <a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-index-syntax-support.html\">CREATE INDEX</a> in the Aurora DSQL User Guide.</p>",
-          "categories": [
-            "marketing:marchitecture/databases"
-          ]
-        },
-        {
           "title": "Amazon EKS and Amazon EKS Distro now support Kubernetes version 1.37",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37",
           "published": "2026-10-02T17:30:00+00:00",
           "summary": "<p>Kubernetes version 1.37 introduced several new features and bug fixes, and AWS is excited to announce that you can now use <a href=\"https://aws.amazon.com/eks/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Elastic Kubernetes Service</a> (EKS) and <a href=\"https://aws.amazon.com/eks/eks-distro/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon EKS Distro</a> to run Kubernetes version 1.37. Starting today, you can create new EKS clusters using version 1.37 and upgrade existing clusters to version 1.37 using the EKS console, the eksctl command line interface, or through an infrastructure-as-code tool.</p>\n<p>Kubernetes version 1.37 introduces several key improvements, promoting the Metrics API to general availability as <i>metrics.k8s.io/v1</i>. This API provides Pod and node CPU and memory usage for the Horizontal Pod Autoscaler and <i>kubectl top</i>. Dynamic Resource Allocation (DRA) device taints and tolerations also graduate to general availability, letting DRA drivers and administrators taint devices such as GPUs so the scheduler avoids them unless tolerated. Horizontal Pod Autoscaler scale-to-zero graduates to beta and is enabled by default, allowing autoscalers with <i>minReplicas: 0</i> that use object or external metrics to scale workloads to zero Pods when idle and back up when demand returns. To learn more about Kubernetes version 1.37, see our <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions-standard.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a> and the Kubernetes project <a href=\"https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md\" target=\"_blank\" rel=\"noopener noreferrer\">release notes.</a></p>\n<p>EKS now supports Kubernetes version 1.37 in all the AWS Regions where EKS is available, including the AWS GovCloud (US) Regions.</p>\n<p>You can learn more about the Kubernetes versions available on EKS and instructions to update your cluster to version 1.37 by visiting EKS documentation. You can use <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/cluster-insights.html\" target=\"_blank\" rel=\"noopener noreferrer\">EKS cluster insights</a> to check if there are any issues that can impact your Kubernetes cluster upgrades. EKS Distro builds of Kubernetes version 1.37 are available through ECR Public Gallery and GitHub. Learn more about the EKS version lifecycle policies in the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>.</p>",
           "categories": [
             "marketing:marchitecture/containers,general:products/aws-govcloud-us,general:products/amazon-eks"
+          ]
+        },
+        {
+          "title": "Amazon Aurora DSQL now supports partial indexes",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-dsql-partial-indexes/",
+          "published": "2026-10-02T17:30:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/aurora/dsql/\">Amazon Aurora DSQL</a> now lets you build an index over a specific subset of a table, storing only qualifying rows rather than every row in the entire table, which improves query performance and lowers index storage cost.</p>\n<p>Many tables hold a small working set alongside a much larger history, such as open orders among years of completed ones. Add a WHERE clause to CREATE INDEX to index just that working set. The index stays small as the table grows, and queries that target those rows read less data. Aurora DSQL uses a partial index for any query whose filter falls within the index's condition.</p>\n<p>Partial indexes are available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where Aurora DSQL is available. To learn more, see <a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-index-syntax-support.html\">CREATE INDEX</a> in the Aurora DSQL User Guide.</p>",
+          "categories": [
+            "marketing:marchitecture/databases"
           ]
         },
         {
@@ -441,6 +441,22 @@
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "【開催報告】AWS Cashless Frontier ― 決済業界のフロントランナーと描くAI × デジタル通貨の未来",
+          "link": "https://aws.amazon.com/jp/blogs/news/%E3%80%90%E9%96%8B%E5%82%AC%E5%A0%B1%E5%91%8A%E3%80%91aws-cashless-frontier-%E2%80%95-%E6%B1%BA%E6%B8%88%E6%A5%AD%E7%95%8C%E3%81%AE%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%83%A9%E3%83%B3%E3%83%8A/",
+          "published": "2026-10-11T09:07:44+00:00",
+          "summary": "開催概要 2026年9月2日に、AWS麻布台ヒルズオフィスにて「AWS Cashless Frontier」を […]",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon Bedrock AgentCore",
+            "Financial Services",
+            "General",
+            "Generative AI",
+            "AI",
+            "Financial Services Industry",
+            "業界・目的別の生成 AI ユースケース"
+          ]
+        },
         {
           "title": "Kiro CLI V3 をデフォルトのエクスペリエンスとして順次展開します",
           "link": "https://aws.amazon.com/jp/blogs/news/cli-3/",
@@ -570,17 +586,6 @@
             "Security, Identity, & Compliance",
             "automated reasoning",
             "Security Blog"
-          ]
-        },
-        {
-          "title": "Timestream for InfluxDB 3 のワークロード分析とベストプラクティス",
-          "link": "https://aws.amazon.com/jp/blogs/news/timestream-for-influxdb-3-workload-analysis-and-best-practices/",
-          "published": "2026-10-08T03:12:19+00:00",
-          "summary": "本記事は、Timestream for InfluxDB 3 workload analysis and be […]",
-          "categories": [
-            "Advanced (300)",
-            "Amazon Timestream",
-            "Technical How-to"
           ]
         }
       ]
