@@ -1,9 +1,84 @@
 {
-  "generated_at": "2026-10-13T03:00:56.342568+00:00",
+  "generated_at": "2026-10-14T01:11:18.097145+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon ECS adds LiveTaskCount and removes the charge for RunningTaskCount metric",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/ecs-service-metrics/",
+          "published": "2026-10-13T22:00:00+00:00",
+          "summary": "<p>Today, Amazon Elastic Container Service (Amazon ECS) announces LiveTaskCount, a new ECS service metric that reports how many tasks are actively running in your service, available to all customers at no additional charge. Additionally, the existing RunningTaskCount metric in Amazon CloudWatch Container Insights no longer incurs a charge.</p>\n<p>LiveTaskCount reports the number of actively running ECS tasks across all desired states (ACTIVATING, RUNNING, and DEACTIVATING), including tasks still running while transitioning to a stopped state, for example, tasks undergoing connection draining during a scale-in event. This comprehensive state coverage makes LiveTaskCount well suited for autoscaling policies and capacity planning where a complete view of active, metric-generating tasks is required. It is available at no charge as part of ECS service utilization metrics and does not require opting in to CloudWatch Container Insights. The existing CloudWatch Container Insights RunningTaskCount metric tracks tasks where both the current and desired state are RUNNING, and continues to serve as a health and stability signal for customers who depend on it. With today's update, RunningTaskCount is now available at no additional charge for all CloudWatch Container Insights users.</p>\n<p>These updates are available in all AWS Regions where Amazon ECS is available. No action is required, and the pricing change for RunningTaskCount takes effect beginning October 1, 2026, and applies automatically. To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_utilization.html#cw_live_task_count\">ECS CloudWatch metrics</a> and <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwatch-container-insights.html\">ECS Container Insights metrics</a>. For a pricing example, see <a href=\"https://aws.amazon.com/cloudwatch/pricing/\">Amazon CloudWatch pricing</a>.</p>",
+          "categories": [
+            "general:products/amazon-ecs,marketing:marchitecture/containers,general:products/amazon-cloudwatch"
+          ]
+        },
+        {
+          "title": "AWS Agent Registry now supports custom metadata for registry records",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records",
+          "published": "2026-10-13T21:00:00+00:00",
+          "summary": "<p>AWS Agent Registry is the centralized, governed catalog for agents, MCP servers, agent skills, gateways, and custom resources within your organization. As organizations scale to hundreds of such resources, a name and description alone are insufficient for effective governance and discovery. Custom metadata lets you extend every registry record with your organization's own structured fields, so both people and automated systems can find and govern resources consistently.\n <br>\n <br>\n With custom metadata, publishers can record fields like team ownership, data classification, or review status directly on each registry record. You define a schema once per registry with common attributes, then extend it with type-specific fields — such as a model family for agent records. Each field supports free text, a URL, a Boolean, or a choice from a list of allowed values, and the registry validates required fields and values on every record creation or update. You can then filter search results on any custom metadata field from the AWS Management Console, the AWS CLI, the AWS SDKs, or the registry's MCP endpoint.\n <br>\n <br>\n Custom metadata is available in all AWS Regions where AWS Agent Registry is available: US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Ireland).\n <br>\n <br>\n To learn more, visit the <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html\">AWS Agent Registry documentation</a>. For detailed setup guidance, see <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-custom-metadata-schema.html\">Define a custom metadata schema</a> and&nbsp;<a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-custom-metadata-values.html\">Set custom metadata values on a record</a>.</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon DCV releases version 2026.0 with RHEL 10 support and new clients",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dcv-2026-0/",
+          "published": "2026-10-13T19:35:00+00:00",
+          "summary": "<p>Amazon DCV 2026.0 is now available, adding support for RHEL 10, Rocky Linux 10, CentOS 10, and Ubuntu 26.04 along with a new macOS client and updated Windows and Linux clients. Amazon DCV is a high-performance remote display protocol that enables customers to securely access remote desktops and application sessions across Windows, Linux, and macOS.</p>\n<p>Amazon DCV 2026.0 includes the following key features and improvements:</p>\n<ul>\n <li>\n  <p>Support for RHEL 10, Rocky Linux 10, CentOS 10, and Ubuntu 26.04, with Linux hosts and sessions running on the modern Wayland display server</p>\n </li>\n <li>\n  <p>A new macOS client with gamepad support, and updated Windows and Linux clients</p>\n </li>\n <li>\n  <p>URL redirection on Windows hosts, so configured links opened in a remote session launch in the local browser on the client device</p>\n </li>\n <li>\n  <p>Printer preferences redirection on Windows, giving remote sessions access to client-side printer settings</p>\n </li>\n <li>\n  <p>Performance improvements, including H.264 frame slice support and slice-based multithreaded decoding on the Linux and macOS clients for lower latency</p>\n </li>\n <li>\n  <p>Support for new macOS server versions on Amazon EC2</p>\n </li>\n</ul>\n<p>For more information about the new features and enhancements in Amazon DCV 2026.0, see the <a href=\"https://docs.aws.amazon.com/dcv/latest/adminguide/doc-history-release-notes.html\" target=\"_blank\" rel=\"noopener noreferrer\">release notes</a> or visit the <a href=\"https://aws.amazon.com/hpc/dcv/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon DCV webpage</a> to learn more and get started.</p>\n<h2>&nbsp;</h2>",
+          "categories": [
+            "marketing:marchitecture"
+          ]
+        },
+        {
+          "title": "AWS Deadline Cloud now helps users find their accessible resources in the Deadline Cloud monitor",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/deadline-cloud/resources",
+          "published": "2026-10-13T18:54:00+00:00",
+          "summary": "<p>AWS Deadline Cloud now lets users who have access to specific queues, fleets, or jobs, rather than an entire farm, find the resources they can reach directly from the Deadline Cloud monitor. Deadline Cloud is a fully managed service that helps teams run compute-intensive workloads for visual effects, animation, product design, simulation, and gaming.</p>\n<p>Previously, a user with access to only one queue had to get the farm ID from an administrator before they could reach their work. With this launch, the Deadline Cloud monitor displays to users queues they have access to, the parent IDs needed to reach them, and their level of access, covering both direct and group-inherited permissions. Teams now can share a single monitor entry point (URL) across different permission levels without additional coordination.</p>\n<p>Resource discovery is available in all AWS Regions where Deadline Cloud is available. To learn more, visit the <a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/view-member-resource-access.html\">AWS Deadline Cloud user guide</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/media-services,general:products/aws-deadline-cloud"
+          ]
+        },
+        {
+          "title": "Amazon Location Service launches an interactive API Playground featuring Places, Routes and Maps APIs",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-location-service-api-playground",
+          "published": "2026-10-13T18:46:00+00:00",
+          "summary": "<p>Amazon Location Service now offers a complete, interactive API Playground that lets developers explore and test every Places, Routes, and Maps API visually without writing code. With this release, all 14 Amazon Location Service Places, Maps and Routes APIs are available in an interactive API Playground, where developers can make real API calls, see results rendered on an interactive map, adjust parameters, and copy ready-to-use request snippets directly into their applications.</p>\n<p>The API Playground covers Amazon Location Service's Places, Routes, and Maps APIs: search and geocoding (Geocode, ReverseGeocode, Autocomplete, Suggest, SearchText, SearchNearby, and GetPlace), route planning and optimization (CalculateRoutes, CalculateRouteMatrix, CalculateIsolines, OptimizeWaypoints, and SnapToRoads), and mapping (Dynamic Map and GetStaticMap). Customers can simulate validating delivery addresses, planning truck-safe multi-stop routes, visualizing drive-time service areas, or embedding maps into their apps — with no SDK setup or test scripts required.</p>\n<p>The API Playground is available in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Malaysia), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Spain), Europe (Stockholm), and South America (São Paulo).</p>\n<p>To get started, visit the <a href=\"https://console.aws.amazon.com/location/api-playground\">Amazon Location Service API Playground</a> in the AWS Console, or learn more in the <a href=\"https://docs.aws.amazon.com/location/latest/developerguide/api-playground.html\">Developer Guide</a>.</p>",
+          "categories": []
+        },
+        {
+          "title": "Bring deep SageMaker AI expertise to your coding agent with the AWS AI/ML skill in the Agent Toolkit for AWS",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bring-sagemaker-ai-expertise-to-your-coding-agent/",
+          "published": "2026-10-13T14:00:00+00:00",
+          "summary": "<p>Your coding agent can select, train, optimize and deploy models on Amazon SageMaker AI while working across the rest of your AWS environment in a single natural-language workflow. The AWS AI/ML skill is now a core skill in the <a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main\">Agent Toolkit for AWS</a>, so it works alongside the toolkit's other AWS skills like EC2, Bedrock, and more.</p>\n<p>We released the new AWS AI/ML skill on the Agent Toolkit for AWS. The toolkit is now the single, supported integration point, replacing the previous AWS Labs skills and plugins, with a consistent and easy install and update path. The skill is also pre-installed into SageMaker Studio JupyterLab for use with Kiro or your coding agent of choice.</p>\n<p>Moreover, we extended the SageMaker AI capability areas supported by skills.</p>\n<ul>\n <li>\n  <p><a href=\"https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent/\">Inference optimization</a>: optimize deployed models for latency, throughput, and cost</p>\n </li>\n <li>\n  <p><a href=\"https://builder.aws.com/content/3BRdZnv6dY63soyl4qn7FJMQdqd/agentic-model-customization-simplifying-fine-tuning-with-ai-guided-workflows-in-amazon-sagemaker-ai\">Model customization</a>: end-to-end guided fine-tuning workflows, from use case definition through training, evaluation and deployment</p>\n </li>\n <li>\n  <p>Serverful training for both traditional ML and generative AI</p>\n </li>\n <li>\n  <p>MLflow: experiment tracking and model lifecycle management</p>\n </li>\n <li>\n  <p>JumpStart model deployment and model recommendations: deploy pre-built JumpStart models and get guided recommendations on the right model for the use case</p>\n </li>\n <li>\n  <p>Processing jobs: data preparation and ETL on managed compute</p>\n </li>\n</ul>\n<p>The AWS AI/ML skill is available at no additional charge; you pay only for the AWS resources your agents use. To get started, install the skill from the <a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main\">Agent Toolkit for AWS</a> on GitHub, or use it pre-installed in SageMaker Studio JupyterLab. To learn more about <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-coding-assistant.html\">using a coding assistant with your SageMaker AI workflows</a>, see the Amazon SageMaker AI documentation.</p>",
+          "categories": []
+        },
+        {
+          "title": "AWS DataSync Enhanced mode now supports FSx for OpenZFS, NFS 4.2, and object metadata controls",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/datasync-enhanced-openzfs-nfs42-metadata/",
+          "published": "2026-10-13T08:00:00+00:00",
+          "summary": "<p>AWS DataSync Enhanced mode now supports Amazon FSx for OpenZFS as a source or destination location, NFS version 4.2 for on-premises NFS servers and FSx for OpenZFS file systems, and a new ObjectMetadata option for object storage transfers. Previously, customers transferring data to or from FSx for OpenZFS were limited to Basic mode.</p>\n<p>NFS 4.2 lets you transfer data from NFS servers on the latest version without reconfiguring them to an older protocol version. The ObjectMetadata option gives you control over whether an object's user metadata is copied to the destination, which helps when destination metadata must stay intact, such as buckets served by AWS Storage Gateway, or when source metadata keys are not compatible with the destination, such as Azure Blob Storage. Existing tasks remain unaffected and continue to run as scheduled.</p>\n<p>These capabilities are available for Enhanced mode tasks in all AWS Regions where AWS DataSync Enhanced mode is supported. To learn more, visit the <a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html\">AWS DataSync documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/storage,general:products/amazon-fsx-for-openzfs,general:products/aws-datasync,marketing:marchitecture/migration"
+          ]
+        },
+        {
+          "title": "Amazon Route 53 now supports registrations, transfers, and renewals for Premium Domains",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/route-53-premium-domains/",
+          "published": "2026-10-13T08:00:00+00:00",
+          "summary": "<p>Amazon Route 53 Domains now supports Premium Domain Names. Customers can now search for, register, transfer, renew, and restore registry premium names directly through Route 53.</p>\n<p>Most domain registries set aside a selection of \"premium\" domains - names that are short, memorable, or in high demand. Previously, Route 53 Domains did not support these premium names, which meant customers who wanted them had to register and manage them through other registrars, fragmenting their portfolios across multiple providers. With this launch, customers can now discover and acquire premium domains directly in Route 53 Domains, consolidate their existing premium domains from other registrars, and manage premium and standard domains together through a single, unified experience. Finding and registering a premium domain works just like it does for standard domains. Premium domains appear automatically in domain search and availability results, with pricing shown upfront, so customers know the cost before they commit.</p>\n<p>To learn more about Amazon Route 53 Domains and start registering premium domains, visit the <a href=\"https://aws.amazon.com/route53/domains/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Route 53 Domains page</a>. For a complete list of supported top-level domains, see the <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-tld-list.html\" target=\"_blank\" rel=\"noopener noreferrer\">Route 53 TLD list</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:producer/partner,general:products,general:products/amazon-route-53"
+          ]
+        },
+        {
+          "title": "Amazon RDS now supports the latest CU for Microsoft SQL Server",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-supports-latest-cu-microsoft-sql-server/",
+          "published": "2026-10-13T07:30:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\">Amazon Relational Database Service (Amazon RDS) for SQL Server </a>now supports the latest Cumulative Updates (CU) for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2025 CU8 <a href=\"https://support.microsoft.com/en-us/servicing/sql/sql-server-2025/cumulative-update/kb5104822-cu8\" target=\"_blank\">KB5104822</a> (RDS version 17.00.4075.5.v1).\n <br>\n <br>\n For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5104822. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\">Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine</a>.\n <br></p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/aws-govcloud-us,general:products/amazon-rds-for-sql-server"
+          ]
+        },
         {
           "title": "Amazon CloudFront now supports AWS Lambda Web Functions as an origin",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin/",
@@ -362,81 +437,6 @@
           "categories": [
             "general:products/aws-control-tower"
           ]
-        },
-        {
-          "title": "AWS Continuum for Penetration Testing now supports continuous penetration testing integrated directly into your CI/CD pipeline",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-penetration-testing/",
-          "published": "2026-10-05T18:32:00+00:00",
-          "summary": "<p>AWS Continuum for Penetration Testing now integrates continuous penetration testing directly into your CI/CD pipeline (public preview)</p>\n<p>AWS Continuum for Penetration Testing (formerly AWS Security Agent) already provides continuous, on-demand penetration testing without the need to contract third-party pentest vendors. Now, in public preview, Continuum for Penetration Testing shifts security testing even further left by integrating directly into your existing CI/CD systems, making penetration testing a deploy-time event.</p>\n<p>Development teams ship code daily, but even with on-demand penetration testing available, security validation often happens outside the deployment workflow. CI/CD integration closes this gap. Developers receive findings, including severity, affected endpoints, and remediation guidance, directly in pipeline output. Non-security changes complete with no meaningful delay, and the pipeline automatically re-tests and verifies fixes after remediation without requiring manual re-triggers.</p>\n<p>Getting started requires no security expertise. An auto-generated pipeline snippet can be pasted into any existing pipeline and is completable in under five minutes. Application context bootstraps automatically on the first run, with no prior full penetration test required.</p>\n<p>Continuous penetration testing is available today. To get started, visit our <a href=\"https://docs.aws.amazon.com/securityagent/latest/userguide/cicd-pentest.html\">documentation</a>.</p>",
-          "categories": []
-        },
-        {
-          "title": "Amazon EC2 introduces shared tags for Amazon Machine Images",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-ami-shared-tags",
-          "published": "2026-10-05T17:28:00+00:00",
-          "summary": "<p>Amazon EC2 now supports AMI tag sharing, a new feature that lets AMI owners make selected tags visible to all AWS accounts an AMI is shared with. Whether an AMI is shared with an account, across an organization, or made public, a shared tag is automatically shared alongside the AMI, eliminating the need to build and maintain custom tag replication workflows.</p>\n<p>AMI owners simply add the 'ec2:SharedTag/' prefix to any tag key, and every account the AMI is shared with can immediately see it. This removes the operational burden of replicating tags into each account after sharing an AMI. Shared tags are read-only for recipient accounts, so only the owner can create, modify, or delete them. They count only against the owner's 50 tag per resource quota, allowing recipient accounts to continue adding their own private tags without any impact to their limits.</p>\n<p>This feature is available in all AWS Regions at no additional cost. To learn more, please visit the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-explicit.html\">documentation</a>&nbsp;and read the <a href=\"https://aws.amazon.com/blogs/compute/introducing-ec2-ami-tag-sharing-share-ec2-tags-across-aws-accounts/\">blog</a>.</p>",
-          "categories": [
-            "general:products/amazon-ec2,marketing:marchitecture/compute,general:products/aws-govcloud-us"
-          ]
-        },
-        {
-          "title": "AWS Advanced Ruby Driver Wrapper is generally available",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ruby-driver-wrapper-available/",
-          "published": "2026-10-05T17:00:00+00:00",
-          "summary": "<p>The Amazon Web Services (AWS) Advanced Ruby Driver Wrapper is now generally available for use with <a href=\"https://aws.amazon.com/rds/\" target=\"_blank\">Amazon RDS</a> and <a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\">Amazon Aurora</a> PostgreSQL and MySQL-compatible databases. This advanced database driver reduces RDS Blue/Green switchover, Aurora Global database switchover and database failover times, improving application availability. Additionally, it supports multiple authentication mechanisms for your database, including AWS Secrets Manager authentication, and token-based authentication with AWS Identity and Access Management (IAM).</p>\n<p>The AWS Advanced Ruby Driver Wrapper builds on top of the community <a href=\"https://rubygems.org/gems/pg\" target=\"_blank\" rel=\"noopener noreferrer\">pg</a> (PostgreSQL), and the <a href=\"https://rubygems.org/gems/mysql2\" target=\"_blank\" rel=\"noopener noreferrer\">mysql2</a> (MySQL) drivers to provide enhanced functionality beyond standard database connectivity. The wrapper is natively integrated with Aurora and RDS databases, enabling it to monitor database cluster status and quickly connect to newly promoted writers during unexpected failures that trigger database failovers. Furthermore, the wrapper seamlessly integrates with the ActiveRecord through provided aws_postgresql and aws_mysql2 adapters, so you can enable it without changing your application code.</p>\n<p>The driver is available as an open-source project under the Apache 2.0 license. Refer to the instructions on the <a href=\"https://github.com/aws/aws-advanced-ruby-driver-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub repository</a> to get started.</p>",
-          "categories": [
-            "marketing:marchitecture/databases,general:products/amazon-rds,general:products/amazon-aurora"
-          ]
-        },
-        {
-          "title": "AWS Client VPN now supports device posture assessment",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-client-vpn-device-posture/",
-          "published": "2026-10-05T17:00:00+00:00",
-          "summary": "<p>AWS Client VPN now supports device posture assessment, allowing you to verify that connecting user devices meet your security and compliance requirements before granting network access. This feature integrates with your existing device posture providers, so only trusted, compliant devices can access your AWS resources through Client VPN.</p>\n<p>Previously, Client VPN authenticated users through certificates, SAML, or Active Directory. With device posture assessment, you can now also integrate &nbsp;<a href=\"https://www.crowdstrike.com/\">CrowdStrike&nbsp;</a>, &nbsp;<a href=\"https://www.jamf.com/\">Jamf&nbsp;</a>, or &nbsp;<a href=\"https://jumpcloud.com/\">JumpCloud&nbsp;</a> with Client VPN to automatically evaluate device security signals such as compliance scores, encryption status, and risk level before allowing a connection. You define these requirements using &nbsp;<a href=\"https://cedarpolicy.com/\">Cedar policies&nbsp;</a>, giving you fine-grained control over which devices can connect. To help you author and validate these policies, Client VPN provides you a Test Policy tool that guides you through creating Cedar policies for your device posture requirements.</p>\n<p>This feature continuously re-evaluates device compliance during active sessions, and automatically disconnects a session if a device falls out of compliance, such as when risk score or security settings change. You can also use this feature in monitoring-only mode, which logs posture evaluation results without disconnecting sessions, so you can assess the impact of your policies before enforcing them. Device posture assessment works alongside your existing authorization rules to provide defense in depth.</p>\n<p>This feature is available in all AWS Regions where AWS Client VPN is available, at no additional cost. This feature requires AWS VPN Client version 6.2.0 or later.</p>\n<p>To learn more about Client VPN:</p>\n<ul>\n <li>Visit the AWS Client VPN &nbsp;<a href=\"https://aws.amazon.com/vpn/client-vpn/\">product page</a></li>\n</ul>\n<ul>\n <li>Download the &nbsp;<a href=\"https://aws.amazon.com/vpn/client-vpn-download/\">AWS VPN Client</a></li>\n</ul>\n<ul>\n <li>Read the AWS Client VPN &nbsp;<a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html\">administrator guide</a></li>\n</ul>\n<ul>\n <li>Read the AWS Client VPN &nbsp;<a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-user-what-is.html\">user guide</a></li>\n</ul>",
-          "categories": [
-            "marketing:marchitecture/networking-and-content-delivery,general:products/aws-client-vpn"
-          ]
-        },
-        {
-          "title": "AWS Batch now supports Amazon EKS access entry authentication",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-access-entries/",
-          "published": "2026-10-05T15:31:00+00:00",
-          "summary": "<p>AWS Batch now supports Amazon EKS access entry authentication for compute environments. EKS access entries provide an API-driven approach to granting IAM principals access to Kubernetes clusters, complementing the existing <i>aws-auth</i> <i>ConfigMap</i>. AWS Batch can now authenticate to your cluster through the access entry mechanism, simplifying cluster setup and authentication lifecycle management.\n <br>\n <br>\n To get started, use the <i>CreateComputeEnvironment</i> or <i>UpdateComputeEnvironment</i> APIs to set <i>accessEntry.desiredState</i> to ENABLED on all AWS Batch compute environments targeting your cluster. AWS Batch creates one access entry per cluster and associates the <i>AWSBatchClusterPolicy</i> with it. You can configure access entries through the AWS CLI, AWS SDKs, or AWS Management Console.\n <br>\n <br>\n Access entry authentication for AWS Batch on Amazon EKS is now supported in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where AWS Batch is available. For more information, see Amazon EKS access entry authentication in the <a href=\"https://docs.aws.amazon.com/batch/latest/userguide/eks-access-entries.html\">AWS Batch User Guide</a>.</p>",
-          "categories": []
-        },
-        {
-          "title": "AWS Private CA now provides detailed certificate issuance logs",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-private-ca-certificate-issuance-logs/",
-          "published": "2026-10-05T09:00:00+00:00",
-          "summary": "<p>AWS Private CA announces detailed certificate issuance logs, a new AWS CloudTrail service event that records the complete certificate content, issuing CA information, requester identity, and signing status for every issuance. You can use these events for compliance auditing, certificate inventory, algorithm migration tracking, and failed-issuance monitoring. Previously, the CloudTrail management event for the IssueCertificate API confirmed that the API call succeeded by providing a certificate ARN but did not capture the certificate content, information about the CA that signed it, or issuances that failed before signing.</p>\n<p>The new IssueCertificateDetails event captures the complete to-be-signed (TBS) certificate with all X.509 fields and extensions, plus convenience fields for the subject, issuer, serial number, validity period, template, and signing algorithm. Events are emitted for both successful and failed issuance, so pre-signing failures such as name constraints violations now produce a record with a failure explanation. Each event identifies the requester: the account and IAM principal for direct API callers, or the service principal for certificates issued through AWS Private CA connectors or integrated AWS services. In cross-account configurations, the event is delivered to the CA owner account.</p>\n<p>The event is delivered automatically as a CloudTrail management event, with no configuration or opt-in required and no additional cost beyond standard AWS CloudTrail pricing. Because it flows through CloudTrail, you can act on it in real time with Amazon EventBridge or query it in batch with Amazon Athena for certificate auditing, inventory, tracking, and monitoring.&nbsp;This feature is available in all AWS Regions where AWS Private CA is offered. To learn more, see the <a href=\"https://docs.aws.amazon.com/privateca/latest/userguide/logging-using-cloudtrail-pca.html#pca-service-events\" style=\"background-color: rgb(255,255,255);\">AWS Private CA User Guide</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,general:products/aws-cloudtrail,general:products/amazon-athena,general:products/aws-private-certificate-authority"
-          ]
-        },
-        {
-          "title": "Announcing Amazon Nova 2.5 Sonic with improved reasoning for voice agents",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-sonic/",
-          "published": "2026-10-05T08:10:00+00:00",
-          "summary": "<p>Today, we announce the general availability of Amazon Nova 2.5 Sonic, our latest speech-to-speech model for natural, real-time voice agents. This release brings improved reasoning, instruction following, and tool-calling accuracy to real-time voice applications. The model also delivers lower latency, enabling faster, more natural interactions.</p>\n<p>Nova 2.5 Sonic helps voice agents maintain context, follow multi-step instructions, and use connected tools to complete customer tasks. For example, a customer-service agent can look up an order, check return eligibility, and initiate a return within a conversation. These improvements help developers build more capable voice agents for customer service, personal AI assistants, and real-time conversational applications.</p>\n<p>Nova 2.5 Sonic builds on existing capabilities, including robust speech understanding, expressive voices in seven languages, and controllable turn-taking, alongside support for voice and text in the same session, asynchronous tool calling, and a 256K context window. Developers can also use Nova 2.5 Sonic with Strands Bidi Agents, now generally available, to build production voice agents in a few lines of code, with longer conversations and connections to other agents.</p>\n<p>Nova 2.5 Sonic is available in Amazon Bedrock in the US East (N. Virginia), US West (Oregon), Europe (Stockholm), and Asia Pacific (Tokyo) AWS Regions, at the same pricing as Nova 2 Sonic. To learn more, visit the <a href=\"https://aws.amazon.com/nova/models/\">Amazon Nova models page</a>. To get started, see the <a href=\"https://docs.aws.amazon.com/nova/latest/nova2-userguide/what-is-nova-2.html\">Amazon Nova user guide</a>, and<a href=\"https://strandsagents.com/blog/bidi-agents-now-ga/\">&nbsp;blog on building voice agents with Nova 2.5 Sonic and Strands Bidi Agents</a>.</p>",
-          "categories": []
-        },
-        {
-          "title": "Amazon ECS adds Amazon VPC Lattice support for blue/green, linear, and canary deployments",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-vpc-lattice-blue-green-deployments",
-          "published": "2026-10-02T20:18:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Elastic Container Service</a> (Amazon ECS) now supports built-in blue/green, linear, and canary deployment strategies for ECS services using <a href=\"https://aws.amazon.com/vpc/lattice/\" target=\"_blank\">Amazon VPC Lattice</a>. Applications that use VPC Lattice for service-to-service communication across VPCs and AWS accounts can now take advantage of managed traffic shifting natively from Amazon ECS when rolling out updates.</p>\n<p>With this launch, ECS customers using VPC Lattice can shift traffic in a controlled manner during deployments, choosing how quickly traffic moves based on their confidence in each release: all at once with blue/green, in equal increments with linear, or starting with a small percentage with canary. Teams can validate new versions with test traffic before shifting production traffic, and run custom validation steps or manual approvals with deployment lifecycle hooks, including Lambda and pause hooks. These services can also use Amazon CloudWatch alarms and the Amazon ECS deployment circuit breaker to automatically roll back deployments if issues are detected, with bake time keeping the previous version ready for a quick rollback without downtime.</p>\n<p>To get started, select your VPC Lattice target groups, listener rule, and preferred deployment strategy in the ECS service configuration using the AWS Management Console, AWS CLI, AWS SDKs, or Infrastructure-as-Code tools. This functionality can be enabled for both new and existing ECS services in all AWS <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\">Regions</a> where VPC Lattice is available. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/vpc-lattice-resources-for-blue-green.html\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon ECS deployments with VPC Lattice</a>.\n <br></p>",
-          "categories": [
-            "general:products/aws-fargate,marketing:marchitecture/containers,general:products/amazon-ecs,marketing:marchitecture/serverless"
-          ]
-        },
-        {
-          "title": "AWS Health introduces the version catalog for software lifecycle management",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-health-introduces-version-catalog-software-lifecycle-management",
-          "published": "2026-10-02T18:09:00+00:00",
-          "summary": "<p>Today, AWS Health introduces the version catalog which provides a centralized source of lifecycle information for software versions across AWS services. The version catalog helps customers move from reactive to proactive management of version upgrades and end-of-support risk. It is available in the AWS Health Dashboard, and customers on Business Support Plus, Enterprise Support, or Unified Operations can use the AWS Health API to integrate lifecycle data into their operational workflows.</p>\n<p>Customers running applications on AWS need to stay current with software versions to maintain a strong security and operational posture. AWS Health already sends account and resource-specific Planned Lifecycle Events well in advance for major version end-of-support milestones. The version catalog adds service-wide view of supported versions and their timelines, so customers can build upgrade schedules, governance controls, and move to newer supported versions before receiving an account-specific Planned Lifecycle Event.</p>\n<p>At launch, the version catalog covers multiple AWS services including Amazon RDS, Amazon EKS, and AWS Lambda with more services being added over time. The version catalog is available across all AWS Commercial Regions.</p>\n<p>To get started, visit the version catalog in the <a href=\"https://health.console.aws.amazon.com/health/home?region=us-east-1#/account/version-catalog\">AWS Health Dashboard</a> or read the <a href=\"https://docs.aws.amazon.com/health/latest/ug/aws-health-version-catalog.html\">documentation</a> to learn more.</p>",
-          "categories": [
-            "general:products/aws-health,marketing:marchitecture/management-and-governance,general:products/aws-support"
-          ]
         }
       ]
     },
@@ -444,92 +444,73 @@
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
         {
-          "title": "責任ある AI ガバナンス: お客様が ISO/IEC 42005:2025 との整合を図れるよう AWS が支援する方法",
-          "link": "https://aws.amazon.com/jp/blogs/news/responsible-ai-governance-how-aws-positions-customers-to-align-with-iso-iec-420052025/",
-          "published": "2026-10-13T01:19:29+00:00",
-          "summary": "生成 AI の導入が急速に進む中、組織には責任ある AI ガバナンスへの体系的なアプローチが求められています。本記事では、国際規格 ISO/IEC 42005:2025 に基づく AI システム影響評価の概要と、既存のリスク管理プロセスへの統合方法を解説します。再評価のトリガーやトリアージを含む評価プロセスの構築方法も取り上げます。また、ISO/IEC 42001 認証の取得における ISO/IEC 42005 の役割や、AWS Well-Architected Responsible AI Lens をはじめとする規格との整合を支援する AWS のツールも紹介します。",
+          "title": "AWS Customer Incident Response Team (CIRT) のご紹介: セキュリティイベント発生時の支援と公開リソース",
+          "link": "https://aws.amazon.com/jp/blogs/news/welcoming-the-aws-customer-incident-response-team/",
+          "published": "2026-10-14T00:47:20+00:00",
+          "summary": "私たち AWS Customer Incident Response Team (CIRT) は、AWS 責任共有モデルにおけるお客様の責任範囲で進行中のセキュリティイベントへの対応を支援する、24 時間 365 日体制のグローバルチームです。この記事では、AWS CIRT の支援範囲と支援の依頼方法をご紹介します。また、脅威アクターによる AWS 固有の戦術、手法、手順 (TTPs) をまとめた Threat Technique Catalog for AWS (TTC) や、インシデントレスポンスに役立つオープンソースツール、ワークショップなどの公開リソースも取り上げます。",
           "categories": [
-            "Artificial Intelligence",
-            "Intermediate (200)",
-            "Responsible AI",
+            "Announcements",
+            "Security, Identity, & Compliance",
+            "Incident response",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "EC2 インスタンス構成証明でセルフマネージド型データベースのゼロオペレーターアクセス (ZOA) を実現",
+          "link": "https://aws.amazon.com/jp/blogs/news/zero-operator-access-for-self-managed-databases-using-ec2-instance-attestation/",
+          "published": "2026-10-14T00:39:34+00:00",
+          "summary": "この記事では、Amazon EC2 インスタンス構成証明、NitroTPM、Attestable AMI を使用して、セルフマネージド型データベースでゼロオペレーターアクセス (ZOA) を実現する方法を説明します。Nix Flakes で再現可能な AMI をビルドして PCR 測定値を算出し、AWS KMS キーポリシーの条件に設定します。これにより、LUKS で暗号化された EBS ボリュームを、正しい AMI で起動したインスタンスでのみ復号できるようにします。PostgreSQL を例に、dm-verity やセキュアブートを組み合わせたブート時の信頼チェーンも詳しく解説します。",
+          "categories": [
+            "Amazon EC2",
+            "Expert (400)",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "L1TF Reloaded に対する Amazon EC2 の防御の仕組み",
+          "link": "https://aws.amazon.com/jp/blogs/news/ec2-defenses-against-l1tf-reloaded/",
+          "published": "2026-10-14T00:32:18+00:00",
+          "summary": "一時的実行攻撃「L1TF Reloaded」は、ハーフ Spectre ガジェットと L1TF を組み合わせてゲストデータを漏洩させます。しかし、AWS Nitro System と Nitro Hypervisor を使用するお客様のゲストデータは影響を受けず、追加の対応も不要です。本記事では、攻撃の仕組みを解説します。さらに、XPFO の概念に基づくシークレットハイディングやゲスト CPU コンテキストの保護など、Nitro Hypervisor の多層防御の設計も詳しく説明します。",
+          "categories": [
+            "Advanced (300)",
+            "Amazon EC2",
             "Security, Identity, & Compliance",
             "Thought Leadership",
+            "AWS Nitro System",
             "Security Blog"
           ]
         },
         {
-          "title": "新しいコンプライアンスガイド「ISO/IEC 42001:2023 on AWS」を公開 – AI マネジメントシステムの設計と運用を支援",
-          "link": "https://aws.amazon.com/jp/blogs/news/new-compliance-guide-available-iso-iec-420012023-on-aws/",
-          "published": "2026-10-13T01:14:41+00:00",
-          "summary": "AWS は、コンプライアンスガイド「ISO/IEC 42001:2023 on AWS」を公開しました。このガイドでは、AWS サービスを使用して AI マネジメントシステム (AIMS) を設計、運用する方法を説明します。ISO 42001:2023 の箇条 4～10 と附属書 A の管理策を AWS サービスにマッピングし、AI ワークロードへの AWS 責任共有モデルの適用方法も解説します。エビデンス収集の自動化や、Infrastructure as Code を活用して AI コンプライアンス活動を運用に組み込む方法も取り上げ、AI ガバナンスの強化と認証審査への準備を支援します。",
+          "title": "月刊 AWS 製造 2026 年 10月号",
+          "link": "https://aws.amazon.com/jp/blogs/news/monthly-manufacturing-202610/",
+          "published": "2026-10-14T00:13:57+00:00",
+          "summary": "みなさまこんにちは。自動車・製造インダストリーソリューションアーキテクトの 小川 です。10月に入っても関東は […]",
           "categories": [
-            "Announcements",
-            "Artificial Intelligence",
-            "Generative AI",
-            "Intermediate (200)",
-            "Security, Identity, & Compliance",
-            "AWS Compliance",
-            "Security Blog",
-            "Whitepaper"
-          ]
-        },
-        {
-          "title": "AWS で実現する AI 主権",
-          "link": "https://aws.amazon.com/jp/blogs/news/enabling-ai-sovereignty-on-aws/",
-          "published": "2026-10-13T01:11:05+00:00",
-          "summary": "AI 主権は、データ主権と運用主権を基盤に、AI の出力で文化的規範や価値観、現地の言語を守るという新たな考慮事項を加えた概念です。本記事では、チップ、デプロイ先、モデルを自由に選べる AI スタック全体でのコントロールと選択肢を紹介します。また、Meltemi や SEA-LION などの現地の言語に対応したモデルの支援、AWS Nitro System による検証可能なデータアクセスのコントロール、ISO/IEC 42001 認証による透明性と保証についても説明します。",
-          "categories": [
-            "Amazon SageMaker",
-            "Announcements",
-            "Artificial Intelligence",
-            "Compliance",
-            "Intermediate (200)",
-            "Security, Identity, & Compliance",
-            "AI",
-            "AWS Security",
-            "Cloud Security",
-            "compliance",
-            "Machine Learning",
-            "SageMaker",
-            "Security",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "ソニー銀行が勘定系システムの開発に AI エージェントを適用し基本設計から結合テストまでの開発期間を 30% 短縮",
-          "link": "https://aws.amazon.com/jp/blogs/news/casestudy-sonybank-agent-in-development/",
-          "published": "2026-10-13T01:03:34+00:00",
-          "summary": "このブログ記事は、AWS ソリューションアーキテクト 小塚が執筆し、ソニー銀行株式会社および富士通株式会社に監 […]",
-          "categories": [
-            "Amazon Bedrock",
-            "AWS CodeCommit",
+            "Best Practices",
             "Case Study",
-            "Experience-Based Acceleration",
-            "Amazon EC2",
-            "AWS CodeBuild"
-          ]
-        },
-        {
-          "title": "【開催報告】AWS Cashless Frontier ― 決済業界のフロントランナーと描くAI × デジタル通貨の未来",
-          "link": "https://aws.amazon.com/jp/blogs/news/%E3%80%90%E9%96%8B%E5%82%AC%E5%A0%B1%E5%91%8A%E3%80%91aws-cashless-frontier-%E2%80%95-%E6%B1%BA%E6%B8%88%E6%A5%AD%E7%95%8C%E3%81%AE%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%83%A9%E3%83%B3%E3%83%8A/",
-          "published": "2026-10-11T09:07:44+00:00",
-          "summary": "開催概要 2026年9月2日に、AWS麻布台ヒルズオフィスにて「AWS Cashless Frontier」を […]",
-          "categories": [
-            "Amazon Bedrock",
-            "Amazon Bedrock AgentCore",
-            "Financial Services",
             "General",
             "Generative AI",
-            "AI",
-            "Financial Services Industry",
-            "業界・目的別の生成 AI ユースケース"
+            "Industries",
+            "Manufacturing",
+            "AWS Manufacturing Monthly"
           ]
         },
         {
-          "title": "Kiro CLI V3 をデフォルトのエクスペリエンスとして順次展開します",
-          "link": "https://aws.amazon.com/jp/blogs/news/cli-3/",
-          "published": "2026-10-10T12:22:45+00:00",
-          "summary": "Kiro CLI V3 は、Kiro IDE と Kiro Web を動かしているものと同じエージェントハーネスをターミナルで使えるようにします。V3 では、計画・実装・レビューが必要なタスクを Kiro に渡し、workflow のエージェントがバックグラウンドで各ステップを進めている間も、ご自身は作業を続けられます。クラウドセッションを開始すれば、ノート PC を閉じても作業は止まりません。新しい spec モードでは、Kiro がコードを書き始める前に要件と設計を Kiro と一緒にレビューできます。新しい tangent モードを使うと、メインセッションのコンテキストに影響を与えずに、並行する会話へ分岐できます。",
+          "title": "「フィジカル AI 開発支援プログラム by AWS ジャパン」第2期の応募受付を開始",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-japan-physical-ai-development-support-program-wave2/",
+          "published": "2026-10-13T12:26:05+00:00",
+          "summary": "「フィジカル AI 開発支援プログラム by AWS ジャパン」第 2 期の応募受付を開始 AWS ジャパンは […]",
+          "categories": [
+            "General"
+          ]
+        },
+        {
+          "title": "エンタープライズ向けサインイン制御を強化しました",
+          "link": "https://aws.amazon.com/jp/blogs/news/sign-in-controls/",
+          "published": "2026-10-13T10:59:53+00:00",
+          "summary": "これまで、管理対象デバイスでエンタープライズユーザーが Kiro にどの方法でサインインするかを制御する手段はありませんでした。組織として IAM Identity Center の利用を必須にしていても、ユーザーは個人アカウント（Google、GitHub、Builder ID）で Kiro にサインインできてしまっていました。Kiro では、利用できるサインイン方法を管理者が決められるようになりました。ユーザーには組織が許可した選択肢だけが表示されます。",
           "categories": [
             "Amazon Q Developer",
             "Developer Tools",
@@ -537,55 +518,87 @@
           ]
         },
         {
-          "title": "自治体のためのクラウドコスト最適化 ③：予算要求・執行・決算の実務",
-          "link": "https://aws.amazon.com/jp/blogs/news/lg-cost-optimization-03-budget-management/",
-          "published": "2026-10-09T05:39:19+00:00",
-          "summary": "「自治体のためのクラウドコスト最適化」シリーズについて 自治体がガバメントクラウド上で業務システムを運用する場 […]",
-          "categories": [
-            "Cloud Cost Optimization",
-            "Government",
-            "Public Sector",
-            "State or Local Government"
-          ]
-        },
-        {
-          "title": "AI を活用した脆弱性検出ハーネス (パート 2 設定編): ステアリングファイルで実現する証拠ベースの脆弱性トリアージ",
-          "link": "https://aws.amazon.com/jp/blogs/news/configuring-your-ai-vulnerability-harness-part-2-the-steering-file/",
-          "published": "2026-10-09T03:37:58+00:00",
-          "summary": "AI モデルに経験豊富なセキュリティアナリストと同等の一貫性で脆弱性トリアージを実行させる、ステアリングファイルの設計と使い方を紹介します。重要な 5 つのセクションとして、構造的検証によるハルシネーションの抑制、証拠ベースの信頼度スコアリング、AWS WAF などの補完的コントロールを考慮したインフラストラクチャの評価、CISA KEV や EPSS を活用した脅威インテリジェンスの統合、P0～P3 の優先度分類を解説します。検証結果に加え、Kiro や Claude Code での導入方法も説明します。",
+          "title": "GuardDuty 拡張脅威検出に 5 つの新しいインジケーターを追加: 攻撃シーケンスの検出を強化",
+          "link": "https://aws.amazon.com/jp/blogs/news/guardduty-extended-threat-detection-has-added-five-new-indicators-to-surface-attack-sequences/",
+          "published": "2026-10-13T08:52:20+00:00",
+          "summary": "Amazon GuardDuty 拡張脅威検出の攻撃シーケンスの検出結果に、5 つの新しいインジケーターが追加されました。Amazon Inspector、Amazon VPC Reachability Analyzer、Amazon Macie、AWS Security Hub から得られる脆弱性、悪意のあるパッケージ、到達可能性、設定ミス、機密データの情報を、弱いランタイムシグナルと相関付けます。これにより、ノイズは重要度が CRITICAL の対応可能な検出結果に変わります。この記事では、Amazon EKS と Amazon EC2 での実例に加えて、EPSS を重視した優先順位付けによるインシデント対応の手順を解説します。",
           "categories": [
             "Advanced (300)",
-            "Artificial Intelligence",
+            "Amazon GuardDuty",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "AWS における耐量子署名、パート 2: SCP と IAM による ML-DSA アルゴリズムポリシーの強制",
+          "link": "https://aws.amazon.com/jp/blogs/news/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+          "published": "2026-10-13T08:01:10+00:00",
+          "summary": "この記事では、組織の暗号アルゴリズムポリシーを AWS の予防的コントロールと発見的コントロールに変換する方法を紹介します。ML-DSA-65 と ML-DSA-87 を承認し、ML-DSA-44 を除外する例を用いて、kms:KeySpec 条件キーと SCP、IAM ポリシー、アクセス許可の境界、キーポリシーを組み合わせた多層防御を解説します。AWS Private CA や TLS 証明書に対するプロビジョニング制御、AWS CloudTrail と AWS Config によるドリフト検出、暗号アジリティを実現する設計のポイントも説明します。",
+          "categories": [
+            "Amazon Elastic Container Registry",
+            "Amazon Elastic Kubernetes Service",
+            "Amazon Inspector",
+            "Amazon Simple Storage Service (S3)",
+            "AWS CLI",
+            "AWS CloudTrail",
+            "AWS Identity and Access Management (IAM)",
+            "AWS Key Management Service",
+            "AWS Private Certificate Authority",
+            "AWS Secrets Manager",
+            "AWS Security Token Service",
+            "AWS Systems Manager",
             "Best Practices",
-            "Generative AI",
+            "Compliance",
+            "Configuration, compliance, and auditing",
+            "Expert (400)",
+            "Quantum Technologies",
+            "Security",
+            "Security, Identity, & Compliance",
+            "Supply Chain",
+            "Technical How-to",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "AWS における耐量子署名、パート 1: ML-DSA によるソフトウェアサプライチェーンの構築",
+          "link": "https://aws.amazon.com/jp/blogs/news/quantum-resistant-signing-on-aws-part-1-build-a-software-supply-chain-with-ml-dsa/",
+          "published": "2026-10-13T07:59:14+00:00",
+          "summary": "「今収集し、後で偽造する」脅威に備え、AWS KMS、AWS Private CA、IAM Roles Anywhere を組み合わせて、ML-DSA による耐量子ソフトウェアサプライチェーンを構築する方法を紹介します。ML-DSA PKI 階層の構築から、CI/CD パイプラインでのバイナリ、コンテナイメージ、SBOM への署名、デプロイ時の検証、SCP による予防的コントロールまでを解説します。さらに、CNSA 2.0 や EU サイバーレジリエンス法の期限に向けた推奨アクションもまとめます。",
+          "categories": [
+            "Amazon Elastic Container Registry",
+            "Amazon Elastic Kubernetes Service",
+            "Amazon Inspector",
+            "Amazon Simple Storage Service (S3)",
+            "AWS CLI",
+            "AWS CloudTrail",
+            "AWS Identity and Access Management (IAM)",
+            "AWS Key Management Service",
+            "AWS Organizations",
+            "AWS Private Certificate Authority",
+            "AWS Secrets Manager",
+            "AWS Security Token Service",
+            "AWS Systems Manager",
+            "Best Practices",
+            "Compliance",
+            "Configuration, compliance, and auditing",
+            "Expert (400)",
+            "Quantum Technologies",
+            "Security",
             "Security, Identity, & Compliance",
             "Security Blog"
           ]
         },
         {
-          "title": "AI を活用した脆弱性検出ハーネス (パート 1 構築編): 3 層パイプラインによる検出結果の絞り込み",
-          "link": "https://aws.amazon.com/jp/blogs/news/building-your-ai-vulnerability-harness-part-1/",
-          "published": "2026-10-09T03:30:05+00:00",
-          "summary": "脆弱性スキャナーの検出結果は、手動のトリアージでは処理しきれないほど増え続けています。この記事では、AI を活用した脆弱性検出ハーネスを紹介します。複数スキャナー間の一致、AST による構造検証、IaC テンプレートを用いたデプロイコンテキストの 3 層で検出結果をフィルタリングし、悪用可能性の証拠を備えた優先順位付きの少数の検出結果に絞り込みます。パイプラインの構築から得られた 4 つの原則と、段階的な導入手順も解説します。",
+          "title": "週刊AWS – 2026/10/05週",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-20261005/",
+          "published": "2026-10-13T06:26:21+00:00",
+          "summary": "Amazon Nova 2.5 Sonic が GA、Claude Haiku 5.5 が AWS で利用可能に、Amazon GuardDuty RDS Protection が Aurora / RDS のデータ流出と破壊を検知、AWS Security Hub が検出結果の S3 エクスポートに対応など",
           "categories": [
-            "Artificial Intelligence",
-            "Best Practices",
-            "Generative AI",
-            "Intermediate (200)",
-            "Security, Identity, & Compliance",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "【公共向け】AWS WAF 実践ワークショップ開催報告 ― AI 時代の Web アプリケーション防御",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-waf-workshop-report-ai-bot-protection/",
-          "published": "2026-10-09T03:24:16+00:00",
-          "summary": "みなさん、こんにちは。ソリューションアーキテクトの梅田です。 AWS Japan パブリックセクターチームでは […]",
-          "categories": [
-            "AWS WAF",
-            "Public Sector",
-            "Security, Identity, & Compliance",
-            "Webinars"
+            "General",
+            "News",
+            "AWSサービスアップデートまとめ",
+            "週刊AWS"
           ]
         }
       ]
