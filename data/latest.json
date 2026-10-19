@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T00:00:04.302782+00:00",
+  "generated_at": "2026-10-19T00:11:36.762631+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
@@ -245,21 +245,21 @@
           ]
         },
         {
-          "title": "Oracle Database@AWS supports aggregate and default routes for ODB peering",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/oracle-database-aws-aggregate-routes-odb/",
-          "published": "2026-10-15T08:00:00+00:00",
-          "summary": "<p>Oracle Database@AWS (ODB) now supports advertising aggregate routes and a default route (0.0.0.0/0) when configuring ODB peering between applications in an Amazon VPC and databases in an ODB network. This simplifies network operations as customers extend new VPCs or on-premises networks to reach their databases, without updating the advertised CIDRs for each network that needs connectivity to the ODB network.</p>\n<p>Previously, customers had to advertise each network reaching the ODB network as a separate CIDR, and could not advertise a broad aggregate range or a default route. With this launch, customers can advertise any CIDR range, so a single aggregate or default route can cover all networks reachable through the peered VPC, such as those connected through an AWS Transit Gateway, without a separate entry for each one.</p>\n<p>This capability is available on ODB networks that support multiple ODB peering connections, in all AWS Regions where Oracle Database@AWS is available. To learn more, visit <a href=\"https://aws.amazon.com/marketplace/featured-seller/oracle/\" target=\"_blank\">Oracle Database@AWS</a> and the <a href=\"https://docs.aws.amazon.com/odb/latest/UserGuide/what-is-odb.html\" target=\"_blank\">Oracle Database@AWS User Guide</a>. To get started, subscribe through <a href=\"https://aws.amazon.com/marketplace/pp/prodview-qks5dl3hr7nfw?applicationId=AWSMPContessa&amp;ref_=beagle&amp;sr=0-1\" target=\"_blank\">AWS Marketplace</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/networking-and-content-delivery,general:products/amazon-vpc,marketing:marchitecture/databases,general:products/aws-transit-gateway"
-          ]
-        },
-        {
           "title": "Amazon Managed Workflows for Apache Airflow now offers AI agent skills",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-ai-agent-skills/",
           "published": "2026-10-15T08:00:00+00:00",
           "summary": "<p>Amazon Managed Workflows for Apache Airflow (MWAA) now integrates with the <a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/what-is-agent-toolkit.html\">Agent Toolkit for AWS</a> to provide built-in AI agent skills that let you author, debug, and test MWAA workflows and upgrade MWAA environments using any AI coding assistant that supports agent skills.</p>\n<p>The four skills are authoring-mwaa-workflow, debugging-mwaa-workflow, testing-mwaa-workflow, and upgrading-mwaa-environments. Together they let your AI assistant interact directly with MWAA using natural language, reducing the manual effort of building and maintaining data pipelines. For example, you can describe an ETL pipeline in plain language and the authoring skill generates a working DAG complete with task dependencies and error handling.</p>\n<p>The Amazon MWAA AI agent skills work with both Amazon MWAA Provisioned and Amazon MWAA Serverless environments, and are available in all AWS Regions where Amazon MWAA is available.</p>\n<p>To get started, install the <a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/plugins/aws-data-analytics#agent-skills\">aws-data-analytics plugin</a> and configure your AI coding assistant to use the MWAA agent skills. To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/using-agent-skills.html\">Using agent skills with Amazon MWAA</a> in the Amazon MWAA User Guide and the <a href=\"https://docs.aws.amazon.com/agent-toolkit/\">Agent Toolkit for AWS documentation</a>.</p>",
           "categories": [
             "marketing:marchitecture/analytics,general:products/amazon-mwaa"
+          ]
+        },
+        {
+          "title": "Oracle Database@AWS supports aggregate and default routes for ODB peering",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/oracle-database-aws-aggregate-routes-odb/",
+          "published": "2026-10-15T08:00:00+00:00",
+          "summary": "<p>Oracle Database@AWS (ODB) now supports advertising aggregate routes and a default route (0.0.0.0/0) when configuring ODB peering between applications in an Amazon VPC and databases in an ODB network. This simplifies network operations as customers extend new VPCs or on-premises networks to reach their databases, without updating the advertised CIDRs for each network that needs connectivity to the ODB network.</p>\n<p>Previously, customers had to advertise each network reaching the ODB network as a separate CIDR, and could not advertise a broad aggregate range or a default route. With this launch, customers can advertise any CIDR range, so a single aggregate or default route can cover all networks reachable through the peered VPC, such as those connected through an AWS Transit Gateway, without a separate entry for each one.</p>\n<p>This capability is available on ODB networks that support multiple ODB peering connections, in all AWS Regions where Oracle Database@AWS is available. To learn more, visit <a href=\"https://aws.amazon.com/marketplace/featured-seller/oracle/\" target=\"_blank\">Oracle Database@AWS</a> and the <a href=\"https://docs.aws.amazon.com/odb/latest/UserGuide/what-is-odb.html\" target=\"_blank\">Oracle Database@AWS User Guide</a>. To get started, subscribe through <a href=\"https://aws.amazon.com/marketplace/pp/prodview-qks5dl3hr7nfw?applicationId=AWSMPContessa&amp;ref_=beagle&amp;sr=0-1\" target=\"_blank\">AWS Marketplace</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:products/amazon-vpc,marketing:marchitecture/databases,general:products/aws-transit-gateway"
           ]
         },
         {
@@ -442,6 +442,49 @@
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
         {
+          "title": "Amazon Bedrock における最小権限アクセスの実装",
+          "link": "https://aws.amazon.com/jp/blogs/news/implementing-least-privilege-access-for-amazon-bedrock/",
+          "published": "2026-10-19T00:08:27+00:00",
+          "summary": "生成 AI アプリケーションでは、Amazon Bedrock や大規模言語モデル (LLM) などを組み合わせるため、さまざまなレベルでのアクセスコントロールが欠かせません。この記事では、モデルの選択、適応、テスト、運用の各フェーズで最小権限の原則を適用する方法を紹介します。サービスコントロールポリシー (SCP)、VPC エンドポイントポリシー、KMS キーポリシー、Amazon Bedrock Guardrails、Amazon Bedrock Agents を使ったポリシーの例も示します。あわせて、モデル呼び出しログの機密データ保護と、IAM Access Analyzer によるアクセス許可の定期的な見直しについても説明します。",
+          "categories": [
+            "Amazon Bedrock",
+            "Best Practices",
+            "Expert (400)",
+            "Security, Identity, & Compliance",
+            "Thought Leadership",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "AWS セキュリティサービスでアクセスキーの漏えいリスクを最小限に抑える実践的な手順",
+          "link": "https://aws.amazon.com/jp/blogs/news/practical-steps-to-minimize-key-exposure-using-aws-security-services/",
+          "published": "2026-10-19T00:06:18+00:00",
+          "summary": "漏えいした長期的な認証情報 (アクセスキー) は、AWS Customer Incident Response Team (CIRT) が観測したセキュリティインシデントで、現在も脅威アクターに最も多く使われる侵入経路です。この記事では、Amazon Q Developer や AWS IAM Access Analyzer を使用して、漏えいしたキーや未使用のアクセスを検出する方法を紹介します。さらに、SCP と RCP によるデータ境界の確立、Amazon Inspector や AWS WAF によるランタイム環境の保護、Secrets Manager によるキーの自動ローテーション、Amazon GuardDuty による異常な IAM アクティビティの検出を取り上げます。これらを組み合わせた多層防御の実践的な手順を説明します。",
+          "categories": [
+            "Intermediate (200)",
+            "Security, Identity, & Compliance",
+            "AWS IAM",
+            "IAM",
+            "Incident response",
+            "Security",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "Amazon Bedrock API キーの保護: 実装と管理のベストプラクティス",
+          "link": "https://aws.amazon.com/jp/blogs/news/securing-amazon-bedrock-api-keys-best-practices-for-implementation-and-management/",
+          "published": "2026-10-19T00:04:08+00:00",
+          "summary": "Amazon Bedrock API キーを安全に実装、管理するためのベストプラクティスを紹介します。AWS STS の一時的な認証情報を優先し、使用できない場合は短期 API キー、最終手段として長期 API キーを選ぶという判断基準を整理します。そのうえで、SCP と条件キーによる作成と使用の制御、CloudTrail、Amazon EventBridge、AWS Config ルールによる監視、侵害時のインシデント対応手順を、NIST CSF 2.0 に沿って解説します。",
+          "categories": [
+            "Advanced (300)",
+            "Amazon Bedrock",
+            "Best Practices",
+            "Generative AI",
+            "Security, Identity, & Compliance",
+            "Security Blog"
+          ]
+        },
+        {
           "title": "AWS での多段階攻撃の検出: サービス横断のシグナル相関分析ガイド",
           "link": "https://aws.amazon.com/jp/blogs/news/detecting-multi-stage-attacks-on-aws-a-guide-to-cross-service-signal-correlation/",
           "published": "2026-10-16T08:09:37+00:00",
@@ -529,48 +572,6 @@
           "summary": "2026年9月9日、経済産業省と国立研究開発法人新エネルギー・産業技術総合開発機構 (NEDO) が実施する […]",
           "categories": [
             "General"
-          ]
-        },
-        {
-          "title": "Amazon S3 Access Points で Amazon FSx for NetApp ONTAP 上のデータに AWS サービスからゼロコピーでアクセスする",
-          "link": "https://aws.amazon.com/jp/blogs/news/enable-zero-copy-access-to-aws-services-on-amazon-fsx-for-netapp-ontap-with-amazon-s3-access-points/",
-          "published": "2026-10-16T00:56:58+00:00",
-          "summary": "半導体の検証チームが毎晩生成する大量の EDA ログを、データを移動せずに AI で分析するアーキテクチャを紹介します。Amazon S3 Access Points を使って Amazon FSx for NetApp ONTAP 上のログに S3 API でアクセスし、Amazon Bedrock AgentCore と Amazon Quick により、リグレッションテストで失敗した原因の切り分けを自然言語の質問で行います。",
-          "categories": [
-            "Amazon Bedrock AgentCore",
-            "Amazon FSx for NetApp ONTAP",
-            "Amazon Quick Suite",
-            "Amazon Simple Storage Service (S3)",
-            "Industries",
-            "Intermediate (200)",
-            "Semiconductor",
-            "Technical How-to",
-            "AWS for Industrial",
-            "AWS Semiconductor"
-          ]
-        },
-        {
-          "title": "エージェンティック AI への備え: 金融サービスにおけるセキュリティアプローチ",
-          "link": "https://aws.amazon.com/jp/blogs/news/preparing-for-agentic-ai-a-financial-services-approach/",
-          "published": "2026-10-16T00:07:00+00:00",
-          "summary": "金融サービスでエージェンティック AI をデプロイするには、AI 固有のリスクに対処する追加のセキュリティ統制が必要です。この記事では、説明可能性と説明責任を支える包括的なオブザーバビリティときめ細かなアクセス制御に焦点を当て、7 つの中核的な設計原則を説明します。さらに、Amazon Bedrock AgentCore や Amazon CloudWatch を活用した監視、最小権限、ガードレール、マルチエージェントワークフローの管理など、規制要件を満たしながら安全に導入するための実装ガイダンスを紹介します。",
-          "categories": [
-            "Security, Identity, & Compliance",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "エージェンティック AI システムのための 4 つのセキュリティ原則",
-          "link": "https://aws.amazon.com/jp/blogs/news/four-security-principles-for-agentic-ai-systems/",
-          "published": "2026-10-16T00:02:22+00:00",
-          "summary": "AWS が NIST CAISI の情報提供依頼 (RFI) に提出した回答を基に、エージェンティック AI の 4 つのセキュリティ原則を紹介します。4 つの原則は、セキュアな開発ライフサイクル、従来のセキュリティ制御の継続適用、エージェントの外部に置く決定論的な制御 (セキュリティボックス)、評価に基づく段階的な自律性の拡大です。さらに、Amazon Bedrock AgentCore によるコンピューティングの分離、アイデンティティとアクセス管理、ポリシーの適用、オブザーバビリティといったアーキテクチャの構成要素も説明します。",
-          "categories": [
-            "Amazon Bedrock",
-            "Amazon Bedrock AgentCore",
-            "Amazon Bedrock Guardrails",
-            "Security, Identity, & Compliance",
-            "Thought Leadership",
-            "Security Blog"
           ]
         }
       ]
