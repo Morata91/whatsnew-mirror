@@ -1,9 +1,63 @@
 {
-  "generated_at": "2026-10-23T00:37:21.234893+00:00",
+  "generated_at": "2026-10-24T00:36:35.237608+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Web Search on AWS Bedrock now supports domain filtering and user location controls",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+          "published": "2026-10-23T21:04:00+00:00",
+          "summary": "<p>Web Search on AWS Bedrock now supports two new controls that give you more precision over the results that ground a model's response: domain filtering and user location. Both are configured directly on the web_search tool in your existing OpenAI Responses API request.</p> \n<p>With domain filtering, you can restrict Web Search results to a set of domains you choose. Using the filters parameter, you specify up to 100 allowed_domains to limit results to trusted sources, or up to 100 blocked_domains to exclude sources you don't want. This is useful when you want responses grounded only in specific sites, or when you need to keep certain domains out of results.</p> \n<p>With user location, you can optionally specify location parameters so that Web Search can return results relevant to that geography. This helps with location-dependent questions, such as regional availability or local services.</p> \n<p>Domain filtering and user location are available in all AWS Regions where Web Search is supported: US East (N. Virginia), US East (Ohio), US West (Oregon), and AWS GovCloud (US-West). To get started, see the Web Search section in the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html\">AWS Bedrock User Guide</a>. For pricing, see the <a href=\"https://aws.amazon.com/bedrock/pricing/\">AWS Bedrock pricing page</a>.</p>",
+          "categories": [
+            "general:products/amazon-bedrock"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-persistent-chat",
+          "published": "2026-10-23T17:00:00+00:00",
+          "summary": "<p>Amazon Connect Customer Global Resiliency now provides customers a mechanism to deliver long, persistent chat experiences across linked AWS Regions. With this capability, end users can resume previous conversations with full context, metadata, and transcripts carried over across Regions, eliminating the need for end users to repeat information and allowing agents to provide personalized service with access to the entire conversation history across AWS Regions.</p> \n<p>For example, an end user can start a chat in US-East (N. Virginia) and later come back to it in the linked US-West (Oregon) Region, continuing the same conversation with an agent with full conversation history&nbsp;and&nbsp;chat attachment. To adopt this capability, onboard to <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/global-routing-across-acgr-regions.html\">Global routing</a>.</p> \n<p>This feature is available in all AWS Regions where <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/get-started-connect-global-resiliency.html\">Amazon Connect Customer Global Resiliency</a> is supported. To learn more, visit <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/setup-connect-global-resiliency.html\">Amazon Connect Customer Admin Guide</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/contact-center,general:products/amazon-connect"
+          ]
+        },
+        {
+          "title": "AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/",
+          "published": "2026-10-23T15:43:00+00:00",
+          "summary": "<p>AWS Transit Gateway and AWS Cloud WAN now provide managed one-to-one network address translation (NAT) directly on their attachments, through integration with Regional Private NAT Gateway. This enables customers to connect private networks that share the same IP address ranges without renumbering either network, deploying a NAT appliance, or writing return-traffic rules.</p> \n<p>Networks with overlapping Classless Inter-Domain Routing (CIDR) blocks have long been unable to communicate, a common blocker during mergers and acquisitions, when connecting partner networks over AWS Site-to-Site VPN, in multicloud connectivity, and when independently provisioned VPCs need to interconnect. Using this capability, customers can define address-translation rules on a AWS Transit Gateway or AWS Cloud WAN attachment, specifying the private IP range each source CIDR translates to, across Amazon VPC, AWS Site-to-Site VPN, AWS Direct Connect, and SD-WAN appliances connected through Transit Gateway Connect. Both services apply translation automatically in both directions, with no separate return-traffic rule and no NAT appliance to deploy. AWS operates, scales, and manages the NAT capability as part of the attachment. For example, if a customer acquires a business and both VPCs use 10.0.0.0/16, they translate one VPC's addresses to a non-overlapping range on its attachment and connect the networks immediately. Customers set it up in minutes using the AWS Management Console, AWS Command Line Interface (AWS CLI), AWS SDKs, and AWS CloudFormation, and monitor translated traffic through Amazon CloudWatch metrics and Amazon EventBridge events.</p> \n<p>AWS Transit Gateway and AWS Cloud WAN offer 1:1 NAT through Regional Private NAT Gateway in all AWS commercial&nbsp;regions where they operate. For full pricing details, see &nbsp;<a href=\"https://aws.amazon.com/vpc/pricing/\">Amazon VPC pricing&nbsp;</a>. To learn more, see the &nbsp;<a href=\"https://aws.amazon.com/transit-gateway/\">AWS Transit Gateway&nbsp;</a> and &nbsp;<a href=\"https://aws.amazon.com/cloud-wan/\">AWS Cloud WAN&nbsp;</a> product pages, and the <a href=\"https://docs.aws.amazon.com/vpc/latest/tgw/\">AWS Transit Gateway&nbsp;</a> and <a href=\"https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html\">AWS Cloud WAN&nbsp;</a> documentation.</p>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:products/amazon-vpc,general:products/aws-cloud-wan,general:products/aws-transit-gateway"
+          ]
+        },
+        {
+          "title": "Amazon Corretto October 2026 Quarterly Updates",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates",
+          "published": "2026-10-23T14:00:00+00:00",
+          "summary": "<p>On October 22, 2026 Amazon announced quarterly security and critical updates for Amazon Corretto Long-Term Supported (LTS) versions of OpenJDK. Corretto 27.0.1.0.10, 25.0.5.0.9, 21.0.13.0.10, 17.0.21.0.10, 11.0.33.0.9, and 8u512 are now available for <a href=\"https://aws.amazon.com/corretto/\">download</a>. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.</p> \n<p>Visit the Corretto <a href=\"https://aws.amazon.com/corretto\">home page</a> to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a <a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/generic-linux-install.html\">Corretto Apt, Yum, or Apk repo</a>.</p> \n<p>Feedback is <a href=\"https://github.com/corretto\">welcomed</a>!</p>",
+          "categories": [
+            "marketing:marchitecture/developer-tools,general:products/aws-govcloud-us,general:products/amazon-corretto"
+          ]
+        },
+        {
+          "title": "Amazon MWAA now available in Mexico (Central) Region",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-mexico-central/",
+          "published": "2026-10-23T08:00:00+00:00",
+          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Provisioned environments are now available in the Mexico (Central) Region (mx-central-1). Amazon MWAA Serverless was already available in this Region, and customers can now also use Amazon MWAA Provisioned environments for their Apache Airflow workflows. Amazon MWAA is a managed orchestration service for Apache Airflow that makes it easier for customers to set up and operate end-to-end data pipelines in the cloud at scale.</p>\n<p>Customers can create Amazon MWAA Provisioned environments using the AWS Management Console, the AWS CLI, the AWS SDKs, or AWS CloudFormation. Customers in Mexico (Central) can now run their Amazon MWAA Provisioned workflows closer to their data sources and end users, reducing latency and helping meet data residency requirements. To learn more, visit the <a href=\"https://aws.amazon.com/managed-workflows-for-apache-airflow/\">Amazon MWAA product page</a> and the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html#regions-mwaa\">Amazon MWAA supported Regions documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/analytics,general:products/amazon-mwaa"
+          ]
+        },
+        {
+          "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
+          "published": "2026-10-23T08:00:00+00:00",
+          "summary": "<p>Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end.</p>\n<p>The 30% reduction in EMR on EKS pricing is available in all AWS Regions where Amazon EMR on EKS is available. To learn more about EMR on EKS, visit the <a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html\">Amazon EMR on EKS documentation</a> and the <a href=\"https://aws.amazon.com/emr/pricing/\">Amazon EMR pricing page</a>.</p>",
+          "categories": [
+            "marketing:benefits-realized/lower-cost,general:products/amazon-emr,marketing:marchitecture/analytics,general:products/amazon-eks"
+          ]
+        },
         {
           "title": "Amazon Connect Customer now supports customizing the Customer Profiles app on the agent workspace",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-customize-cp",
@@ -23,6 +77,15 @@
           ]
         },
         {
+          "title": "Amazon OpenSearch Service introduces intelligent ingestion for logs and documents in Amazon S3",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-intelligent-ingestion-logs-documents-s3",
+          "published": "2026-10-22T20:54:00+00:00",
+          "summary": "<p>Amazon OpenSearch Serverless now offers intelligent ingestion, a fully managed feature that turns logs and documents stored in Amazon S3 into searchable content in Amazon OpenSearch Serverless (NextGen) collections . With intelligent ingestion, you can set up ingestion with a few clicks in the AWS Management Console or a single API call, with no ingestion infrastructure to manage. Intelligent ingestion supports observability logs and structured data in JSON, NDJSON, and JSON array formats, and unstructured files in PDF, Word, plain text, and Markdown formats.</p> \n<p>You choose an S3 source and a collection index, and intelligent ingestion handles the rest. It automatically detects data types, parses documents, describes images, chunks text, generates vector embeddings, and indexes the results. You don't need to manage ingestion or document-processing infrastructure, or size capacity in advance. Use ingestion jobs for one-time loads such as migrations and backfills, or ingestion streams to keep an index in sync as new objects arrive in your bucket. Capacity scales with your workload up to the collection's configured limit, and you pay only for active processing. Source S3 buckets can be in the same AWS account as the collection or in a different account.</p> \n<p>For logs and structured data, intelligent ingestion applies transformations and optionally adds embeddings, with no pipeline code. For unstructured data, it parses PDF, Word, plain text, and Markdown files while keeping headings, reading order, and tables intact, so the content lands in an index ready for semantic and hybrid search. When documents contain charts, diagrams, screenshots, or photos, a vision-language model generates text descriptions that are indexed with the surrounding content, making visual information searchable too.</p> \n<p>Intelligent ingestion is available today for Amazon OpenSearch Serverless (NextGen) collections, with Amazon S3 as the source, in seven AWS Regions. To get started, open the Amazon OpenSearch Service console, choose your collection, and select the Ingestion tab. To learn more, see <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-intelligent-ingestion.html\">Intelligent ingestion</a> in the Amazon OpenSearch Service Developer Guide. For pricing, see <a href=\"https://aws.amazon.com/opensearch-service/pricing/\">Amazon OpenSearch Service pricing</a>.</p>",
+          "categories": [
+            "general:products/amazon-opensearch-service,marketing:marchitecture/analytics"
+          ]
+        },
+        {
           "title": "Amazon OpenSearch Serverless now supports a 5-second default refresh interval",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-serverless-supports-5-second-refresh-interval/",
           "published": "2026-10-22T18:34:00+00:00",
@@ -35,7 +98,7 @@
           "title": "AWS CloudFormation now simplifies stack update rollback operations",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-cloudformation-cdk/",
           "published": "2026-10-22T17:30:00+00:00",
-          "summary": "<p><a href=\"https://docs.aws.amazon.com/cloudformation/\">AWS CloudFormation</a>&nbsp;now makes it simpler to complete an update rollback and get back to deploying. An update rollback returns your stack to a known good state. Starting today, if some resources cannot roll back automatically, force rollback enables you to complete the rollback it in a single operation. It works across every CloudFormation workflow, from the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/cloudformation/\">AWS CLI</a>, and SDKs to <a href=\"https://docs.aws.amazon.com/cdk/v2/guide/\">AWS CDK</a>&nbsp;and AI agents.</p> \n<p>With force rollback, CloudFormation completes the update rollback and returns your stack to a deployable state in a single operation, instead of requiring you to identify, list, and retry the operation for each affected resource. Any resource that still needs attention, such as one affected a change outside CloudFormation, is recorded for you to review and resolve it before your next deployment.</p> \n<p>To get started, run continue update rollback with the force rollback option, then create a <a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/drift-aware-change-sets.html\">drift-aware change set</a> to review any configuration differences before your next deployment. To learn more, see &nbsp;<a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-continueupdaterollback.html\">Continue rolling back an update&nbsp;</a> in the AWS CloudFormation User Guide.</p> \n<p>Force rollback is available in all Regions at no additional cost. Refer to the &nbsp;<a href=\"https://docs.aws.amazon.com/general/latest/gr/cfn.html#cfn_region\">AWS Region table&nbsp;</a> for service availability details.</p>",
+          "summary": "<p><a href=\"https://docs.aws.amazon.com/cloudformation/\">AWS CloudFormation</a>&nbsp;now makes it simpler to complete an update rollback and get back to deploying. An update rollback returns your stack to a known good state. Starting today, if some resources cannot roll back automatically, force rollback enables you to complete the rollback in a single operation. It works across every CloudFormation workflow, from the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/cloudformation/\">AWS CLI</a>, and SDKs to <a href=\"https://docs.aws.amazon.com/cdk/v2/guide/\">AWS CDK</a>&nbsp;and AI agents.</p> \n<p>With force rollback, CloudFormation completes the update rollback and returns your stack to a deployable state in a single operation, instead of requiring you to identify, list, and retry the operation for each affected resource. Any resource that still needs attention, such as one affected by a change outside CloudFormation, is recorded for you to review and resolve it before your next deployment.</p> \n<p>To get started, run continue update rollback with the force rollback option, then create a <a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/drift-aware-change-sets.html\">drift-aware change set</a> to review any configuration differences before your next deployment. To learn more, see &nbsp;<a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-continueupdaterollback.html\">Continue rolling back an update&nbsp;</a> in the AWS CloudFormation User Guide.</p> \n<p>Force rollback is available in all Regions at no additional cost. Refer to the &nbsp;<a href=\"https://docs.aws.amazon.com/general/latest/gr/cfn.html#cfn_region\">AWS Region table&nbsp;</a> for service availability details.</p>",
           "categories": []
         },
         {
@@ -54,6 +117,15 @@
           "summary": "<p>Today, AWS announced the expansion of 100 Gbps dedicated connections at the existing <a href=\"https://aws.amazon.com/directconnect\">AWS Direct Connect</a> location in the Netmagic DC2 data center near Bangalore, India. You can now establish private, direct network access to all public AWS Regions (except those in China), AWS GovCloud Regions, and <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/\">AWS Local Zones</a> from this location.</p> \n<p>The Direct Connect service enables you to establish a private, physical network connection between AWS and your data center, office, or colocation environment. These private connections can provide a more consistent network experience than those made over the public internet.</p> \n<p>For more information on the over 150 Direct Connect locations worldwide, visit the <a href=\"https://aws.amazon.com/directconnect/locations/\">locations</a> section of the Direct Connect <a href=\"https://aws.amazon.com/directconnect\">product detail pages</a>. Or, visit our <a href=\"https://aws.amazon.com/directconnect/getting-started/\">getting started</a> page to learn more about how to purchase and deploy Direct Connect.</p>",
           "categories": [
             "general:products/aws-direct-connect,marketing:marchitecture/networking-and-content-delivery"
+          ]
+        },
+        {
+          "title": "Amazon MSK Connect now supports pausing and resuming connectors",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-connect-pause-resume",
+          "published": "2026-10-22T15:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/msk/features/msk-connect/\">Amazon MSK Connect</a> (Amazon Managed Streaming for Apache Kafka Connect) now supports pausing and resuming connectors, letting you temporarily pause a connector from processing records and resume it later. This is useful when you need to stop data flow during maintenance on a source database or a sink target, or to pause processing while you investigate an upstream or downstream issue.</p> \n<p>Amazon MSK Connect is a fully managed service that allows you to deploy, monitor, and scale Apache Kafka Connect connectors with <a href=\"https://aws.amazon.com/msk/\">Amazon MSK</a> (Managed Streaming for Apache Kafka). Previously, pausing a connector meant deleting it and recreating it - a more disruptive operation, adding risk and operational overhead. With this launch, you can pause a running connector and resume it in place when you are ready — a paused connector keeps its configuration, capacity settings, and committed offsets, and its tasks continue processing from the offsets they last committed when you resume.</p> \n<p>This capability is available at no additional cost through the Amazon MSK Console, AWS CLI, AWS SDK, and AWS CDK in all AWS Regions where Amazon MSK Connect is available. To learn more, visit the <a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/mskconnect.html\">Amazon MSK Connect documentation</a>. To get started, visit the <a href=\"https://console.aws.amazon.com/msk\">Amazon MSK Console</a>.</p>",
+          "categories": [
+            "general:products/amazon-msk,marketing:marchitecture/analytics"
           ]
         },
         {
@@ -269,15 +341,6 @@
           ]
         },
         {
-          "title": "AWS IAM Identity Center simplifies identity source changes from Active Directory",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-center-chg-id-src-from-ad/",
-          "published": "2026-10-20T08:00:00+00:00",
-          "summary": "<p>AWS IAM Identity Center now retains your workforce identities and their assignments when you change your identity source from Active Directory to an external identity provider (IdP), such as Okta or Microsoft Entra ID, or to the Identity Center directory. Specifically, it preserves your users, groups, group memberships, permission set assignments, and application assignments. Previously, this change required you to recreate them in IAM Identity Center.</p> \n<p>IAM Identity Center helps you connect your workforce identities to AWS once and manage their access centrally across AWS applications and accounts. When you change your identity source from Active Directory, your existing identity store remains in place, so your users and groups keep the same IDs. As a result, users retain their access to AWS accounts and applications, and policies that reference your user IDs, group IDs, or identity store ID continue to work.</p> \n<p>To make this change, configure your new identity source with the standard setup required for users to sign in. After the change, your workforce signs in through your dual-stack AWS access portal URL. Changing your identity source in the other direction, to Active Directory, works as before. This feature is available for organization instances of IAM Identity Center in all AWS Regions where IAM Identity Center is available. IAM Identity Center is provided at no additional cost.</p> \n<p>To get started, navigate to the IAM Identity Center console. For more information, see <a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-change.html\">Change your identity source</a> in the IAM Identity Center User Guide. To learn more about IAM Identity Center, visit the <a href=\"https://aws.amazon.com/iam/identity-center/\">product detail page</a>.</p>",
-          "categories": [
-            "general:products/aws-iam-identity-center,marketing:marchitecture/security-identity-and-compliance"
-          ]
-        },
-        {
           "title": "Amazon Bedrock Guardrails now supports Standard tier for contextual grounding checks",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-guardrails-grounding-standard/",
           "published": "2026-10-20T08:00:00+00:00",
@@ -296,12 +359,12 @@
           ]
         },
         {
-          "title": "Amazon CloudWatch Alarms now supports tags in alarm actions payload",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-tags-on-alarm-actions-payload",
+          "title": "AWS IAM Identity Center simplifies identity source changes from Active Directory",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-center-chg-id-src-from-ad/",
           "published": "2026-10-20T08:00:00+00:00",
-          "summary": "<p>Today, Amazon CloudWatch announces support for including alarm tags in action payloads and Amazon EventBridge events, enabling customers to route and filter alarm notifications by tag without additional lookups. When enabled on an alarm, CloudWatch adds the alarm tags to the messages it sends to Amazon SNS, AWS Lambda, and Amazon EventBridge each time the alarm changes state. This option is designed for customers who route many alarms through a shared notification pipeline and need to identify the owning team, environment, or service directly from the message.</p> \n<p>With tags in actions payloads, customers can avoid the extra work of correlating tag metadata with alarm events after the fact. For example, a team that routes hundreds of alarms through a single SNS topic to a Lambda function previously had to call ListTagsForResource for each event to find the owning team before paging. With this feature, the tags arrive in the notification, so the function can route directly from the message. The setting is off by default and configurable per alarm, and customers can include all tags, only selected tag keys, or all tags except selected keys. It is supported for metric, composite, and log alarms.</p> \n<p>Tags in actions and events for CloudWatch Alarms are available in all AWS Regions where Amazon CloudWatch is available except Middle East (UAE), and Middle East (Bahrain).</p> \n<p>To get started, see &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-tags-in-notifications.html\" target=\"_blank\" rel=\"noopener noreferrer\">Alarm tags in action payloads&nbsp;</a> in the Amazon CloudWatch User Guide. To learn more about Amazon CloudWatch Alarms, visit the &nbsp;<a href=\"https://aws.amazon.com/cloudwatch/\">Amazon CloudWatch&nbsp;</a> product page.</p>",
+          "summary": "<p>AWS IAM Identity Center now retains your workforce identities and their assignments when you change your identity source from Active Directory to an external identity provider (IdP), such as Okta or Microsoft Entra ID, or to the Identity Center directory. Specifically, it preserves your users, groups, group memberships, permission set assignments, and application assignments. Previously, this change required you to recreate them in IAM Identity Center.</p> \n<p>IAM Identity Center helps you connect your workforce identities to AWS once and manage their access centrally across AWS applications and accounts. When you change your identity source from Active Directory, your existing identity store remains in place, so your users and groups keep the same IDs. As a result, users retain their access to AWS accounts and applications, and policies that reference your user IDs, group IDs, or identity store ID continue to work.</p> \n<p>To make this change, configure your new identity source with the standard setup required for users to sign in. After the change, your workforce signs in through your dual-stack AWS access portal URL. Changing your identity source in the other direction, to Active Directory, works as before. This feature is available for organization instances of IAM Identity Center in all AWS Regions where IAM Identity Center is available. IAM Identity Center is provided at no additional cost.</p> \n<p>To get started, navigate to the IAM Identity Center console. For more information, see <a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-change.html\">Change your identity source</a> in the IAM Identity Center User Guide. To learn more about IAM Identity Center, visit the <a href=\"https://aws.amazon.com/iam/identity-center/\">product detail page</a>.</p>",
           "categories": [
-            "marketing:marchitecture/management-and-governance,general:products/amazon-cloudwatch"
+            "general:products/aws-iam-identity-center,marketing:marchitecture/security-identity-and-compliance"
           ]
         },
         {
@@ -320,6 +383,15 @@
           "summary": "<p>AWS Transform now supports more types of existing AWS environments when building landing zones for your migration, including AWS Control Tower landing zones and landing zones built with AWS Organizations. AWS Transform runs a foundation gap analysis of your current environment against AWS best practices and expands your landing zone on top of what's already in your target accounts, so your team can start migrating sooner.</p>\n<p>AWS Transform also now supports an Infrastructure as Code (IaC)-only mode for building landing zones for your migration. In this mode, AWS Transform analyzes your organization, generates recommendations, and produces IaC tailored to your migration plan in AWS CDK, Terraform, or Landing Zone Accelerator (LZA) format. IaC-only mode is designed for organizations that prefer not to grant AWS Transform direct access to their management account. AWS Transform can now connect through a delegated administrator (DA) account instead. It also benefits customers who manage their own deployment pipeline and don't need the agent to deploy automatically.</p>\n<p>The AWS Transform for migrations landing zone agent automates landing zone design end to end, including foundation setup, organizational unit (OU) and account structure, service control policies (SCPs), and workload accounts aligned to your migration planning and waves. You can deploy directly or generate IaC for your own pipeline.</p>\n<p>These new capabilities are available in <a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions\">all target AWS Regions supported by AWS Transform for migrations</a>.</p>\n<p>To learn more, please visit the <a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-landing-zone.html\">AWS Transform User Guide</a>.</p>",
           "categories": [
             "marketing:marchitecture/migration"
+          ]
+        },
+        {
+          "title": "Amazon CloudWatch Alarms now supports tags in alarm actions payload",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-tags-on-alarm-actions-payload",
+          "published": "2026-10-20T08:00:00+00:00",
+          "summary": "<p>Today, Amazon CloudWatch announces support for including alarm tags in action payloads and Amazon EventBridge events, enabling customers to route and filter alarm notifications by tag without additional lookups. When enabled on an alarm, CloudWatch adds the alarm tags to the messages it sends to Amazon SNS, AWS Lambda, and Amazon EventBridge each time the alarm changes state. This option is designed for customers who route many alarms through a shared notification pipeline and need to identify the owning team, environment, or service directly from the message.</p> \n<p>With tags in actions payloads, customers can avoid the extra work of correlating tag metadata with alarm events after the fact. For example, a team that routes hundreds of alarms through a single SNS topic to a Lambda function previously had to call ListTagsForResource for each event to find the owning team before paging. With this feature, the tags arrive in the notification, so the function can route directly from the message. The setting is off by default and configurable per alarm, and customers can include all tags, only selected tag keys, or all tags except selected keys. It is supported for metric, composite, and log alarms.</p> \n<p>Tags in actions and events for CloudWatch Alarms are available in all AWS Regions where Amazon CloudWatch is available except Middle East (UAE), and Middle East (Bahrain).</p> \n<p>To get started, see &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-tags-in-notifications.html\" target=\"_blank\" rel=\"noopener noreferrer\">Alarm tags in action payloads&nbsp;</a> in the Amazon CloudWatch User Guide. To learn more about Amazon CloudWatch Alarms, visit the &nbsp;<a href=\"https://aws.amazon.com/cloudwatch/\">Amazon CloudWatch&nbsp;</a> product page.</p>",
+          "categories": [
+            "marketing:marchitecture/management-and-governance,general:products/amazon-cloudwatch"
           ]
         },
         {
@@ -375,84 +447,26 @@
           "categories": [
             "general:products/amazon-bedrock,general:products/aws-govcloud-us"
           ]
-        },
-        {
-          "title": "AWS IAM Identity Center now supports optimistic locking for users and groups in its identity store",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-store-optimistic-locking/",
-          "published": "2026-10-19T08:00:00+00:00",
-          "summary": "<p>IAM Identity Center helps you configure the single sign-on experience of your workforce to AWS accounts and applications. You can now use optimistic locking for users and groups in the identity store, so that update and delete requests succeed only if the user or group hasn't changed since you last read it. This helps when multiple administrators or automated workflows modify the same user or group at nearly the same time, where previously one write could silently overwrite another.<br> <br> Each user and group now has a Revision value that changes every time the user's or group's attributes are modified, including through SCIM provisioning, Active Directory sync, or the IAM Identity Center console. Create, describe, update, and list operations return the current Revision, and you can pass it on a later UpdateUser, UpdateGroup, DeleteUser, or DeleteGroup request. The request succeeds only if the supplied Revision matches the current Revision. Otherwise, it returns a ConflictException, so your workflow can re-read the user or group and retry with the latest values.<br> <br> Providing a Revision is optional. Requests that omit it behave as before, so existing integrations continue to work without changes. Conditional requests are supported through the Identity Store API, not the SCIM endpoint. Group membership operations don't accept a Revision, and adding or removing members doesn't change the Revision of the user or the group. This capability is available in all AWS Regions where IAM Identity Center is available. IAM Identity Center is provided at no additional cost.<br> <br> To learn more about IAM Identity Center, visit the product detail page. To get started, see UpdateUser in the <a title=\"identity store update user API\" href=\"https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateUser.html\" target=\"_blank\" rel=\"noopener noreferrer\">Identity Store API Reference</a>.</p>",
-          "categories": [
-            "general:products/aws-iam-identity-center,marketing:marchitecture/security-identity-and-compliance"
-          ]
-        },
-        {
-          "title": "AWS Elemental MediaConnect Router now supports high bitrate mode",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/mediaconnect-router-high-bitrate/",
-          "published": "2026-10-19T08:00:00+00:00",
-          "summary": "<p>AWS Elemental MediaConnect Router now supports high bitrate modes with two new tiers: 250 Mbps and 500 Mbps. This allows professional broadcasters that need higher bitrates to transport high-value content without compromising quality or reliability.</p>\n<p>This enhancement enables industry-standard workflows such as VSF TR-07 compliant transport stream distribution for broadcast contribution, content distribution, and remote production. High bitrate mode supports up to two redundant sources for reliability and includes data plane optimizations that reduce jitter for improved performance.</p>\n<p>To learn more, visit the <a href=\"https://aws.amazon.com/mediaconnect/\">AWS Elemental MediaConnect product page</a> and the <a href=\"https://aws.amazon.com/mediaconnect/pricing/\">MediaConnect pricing page</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/media-services,general:products/aws-elemental-mediaconnect"
-          ]
-        },
-        {
-          "title": "Amazon RDS Custom now supports the latest Cumulative Update and GDR updates for Microsoft SQL Server",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-custom-supports-latest-cumulative-update-gdr-microsoft-sql-server/",
-          "published": "2026-10-19T07:30:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/rds/custom/\" target=\"_blank\">Amazon Relational Database Service (Amazon RDS) Custom for SQL Server</a> now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for SQL Server 2019 CU32+GDR <a href=\"https://support.microsoft.com/en-us/servicing/sql/sql-server-2019/cumulative-update/kb5122772-cu32-gdr-september-2026\" target=\"_blank\">KB5122772</a>(RDS version 15.00.4490.9.v1) and SQL Server 2022 CU26 + GDR <a href=\"https://support.microsoft.com/en-us/servicing/sql/sql-server-2022/cumulative-update/kb5122768-cu26-gdr-september-2026\" target=\"_blank\">KB5122768</a> (RDS version 16.00.4275.2.v1).<br> <br> For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5122772 and KB5122768. You can upgrade your Amazon RDS Custom for SQL Server instances to apply these recommended updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. To learn more about upgrading your database instances, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-upgrading-sqlserver.html\" target=\"_blank\">Amazon RDS Custom User Guide</a>.</p>",
-          "categories": [
-            "general:products/amazon-rds-for-sql-server,marketing:marchitecture/databases"
-          ]
-        },
-        {
-          "title": "Amazon RDS for SQL Server now supports snapshots on read replicas",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/rds-sqlserver-supports-snapshots-on-read-replicas",
-          "published": "2026-10-19T07:01:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Relational Database Service (Amazon RDS) for SQL Server</a> now supports creating DB snapshots directly on read replica instances. Previously, you could create snapshots only on standalone and primary DB instances. You can now snapshot a read replica without promoting it first, giving you more flexibility in your backup and disaster recovery (DR) workflows.</p> \n<p>Previously, enabling Multi-AZ on a promoted read replica meant waiting for an initial full snapshot to finish before the conversion could begin. On larger storage configurations—such as io2 volumes up to 64 TiB—that first snapshot could take a long time, making DR timelines hard to predict. Now, Amazon RDS for SQL Server maintains snapshot data on the read replica throughout its lifecycle, so the first snapshot after promotion completes faster. This shortens the time to enable Multi-AZ and helps you plan DR exercises with more predictable recovery timelines. You can take manual snapshots of a read replica, turn on automated backups by setting a backup retention period greater than zero, and retain automated backups when you delete the replica; however, point-in-time recovery (PITR) from a read replica isn't supported.</p> \n<p>This feature works for both in-region and cross-region read replicas. It's available for SQL Server Enterprise Edition on all SQL Server versions that support read replicas, in all AWS Regions where Amazon RDS for SQL Server read replicas are available, including the AWS GovCloud (US) Regions.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.ReadReplicas.html\" target=\"_blank\" rel=\"noopener noreferrer\">Working with read replicas for Microsoft SQL Server</a>. For pricing details, see <a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS for SQL Server Pricing</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/databases,general:products/amazon-rds-for-sql-server,general:products/aws-govcloud-us"
-          ]
-        },
-        {
-          "title": "AWS Partner Central adds Solution Matching Engine performance insights",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/solution-matching-engine-performance",
-          "published": "2026-10-17T03:00:00+00:00",
-          "summary": "<p>AWS Partner Central now gives AWS Partners more visibility into how the Solution Matching Engine (SME) contributes to their co-sell pipeline. The Solution Matching Engine performance section in Partner Analytics helps partners understand how SME performs for their company and AWS Marketplace listings.</p> \n<p>Partners can view recommendations, SME-attributed opportunities, their share of AWS-originated opportunities, stall rate, and pipeline attributed to SME. They can filter by recommendation type or AWS Marketplace listing and explore top customer profiles by Region, industry, and segment. These insights help partners assess their visibility and decide where to improve their listings and opportunity information.</p> \n<p>All partners eligible for <a href=\"https://aws.amazon.com/partners/programs/ace/\">APN Customer Engagements (ACE)</a> can find the section on the Opportunity pipeline analysis page under Partner Analytics in <a title=\"Link to AWS Partner Central\" href=\"https://aws.amazon.com/partners/partner-central/\">AWS Partner Central</a>.&nbsp;To learn more about SME and how to strengthen your visibility with AWS sellers, read <a href=\"https://aws.amazon.com/blogs/apn/solution-matching-engine-your-gateway-to-aws-sellers/\">Solution Matching Engine: Your Gateway to AWS Sellers</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/aws-marketplace-and-partners,general:products/aws-marketplace"
-          ]
-        },
-        {
-          "title": "Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion",
-          "published": "2026-10-16T20:04:00+00:00",
-          "summary": "<p>Amazon CloudWatch log centralization is now available in AWS GovCloud (US) and 13 additional commercial Regions. CloudWatch log centralization copies log data from multiple AWS accounts and Regions into a single destination account, integrating with AWS Organizations for efficient aggregation without the need for custom solutions.</p> \n<p>With this launch, organizations in the AWS GovCloud (US) partition and commercial partition can each centralize logs across their accounts and Regions for centralized monitoring. You can scope centralization rules to your entire organization, specific organizational units, or selected accounts and copy logs into a single account while preserving source context through enriched system fields.</p> \n<p>CloudWatch log centralization is now additionally available in Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Malaysia), Asia Pacific (Melbourne), Canada West (Calgary), Europe (Milan), Europe (Spain), Europe (Zurich), Israel (Tel Aviv), Middle East (Bahrain), Middle East (UAE), AWS GovCloud (US-East), and AWS GovCloud (US-West). For a complete list of supported Regions, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Region table</a>.</p> \n<p>To get started, create a centralization rule in the Amazon CloudWatch console, or by using the AWS CLI or AWS SDKs. To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/\">Log centralization</a> in the Amazon CloudWatch Logs User Guide. Customers can centralize one copy of logs for free; additional copies are charged at $0.05/GB. For details, see <a href=\"https://aws.amazon.com/cloudwatch/pricing/\">Amazon CloudWatch pricing</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/management-and-governance,general:products/amazon-cloudwatch-logs"
-          ]
-        },
-        {
-          "title": "Amazon EMR Serverless now supports IPv6 and dual-stack connectivity",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-serverless/",
-          "published": "2026-10-16T19:20:00+00:00",
-          "summary": "<p>Amazon EMR Serverless now supports IPv6 and dual-stack connectivity, expanding beyond the IPv4-only connectivity that was previously available. You can now run your Apache Spark and Apache Hive jobs over IPv6 in your Amazon Virtual Private Cloud (VPC) by supplying dual-stack (IPv4 and IPv6) or IPv6-only subnets. This gives you greater flexibility in how your applications connect to data stores and services, while maintaining full backward compatibility with your existing IPv4 workloads.</p> \n<p>As Spark and Hive workloads scale to many workers, the IPv4 address space in your VPCs and subnets can become a constraint, and a growing number of organizations face compliance mandates that require IPv6 adoption. With dual-stack connectivity, your EMR Serverless applications accept both IPv4 and IPv6, making it easy to adopt IPv6 gradually while maintaining backward compatibility with your existing IPv4 workloads. With IPv6-only subnets, you can eliminate the need for IPv4 addresses entirely, overcoming IPv4 address exhaustion and meeting the networking standards and compliance requirements that call for IPv6, while your jobs reach IPv6 endpoints and services both inside and outside your VPC.</p> \n<p>IPv6 and dual-stack connectivity for Amazon EMR Serverless is available at no additional cost in all AWS Regions where Amazon EMR Serverless is available. IPv6 and dual-stack subnets are supported on all EMR Serverless release versions. To get started, see <a href=\"https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/ipv6-subnets.html\">Configure IPv6 subnets for EMR Serverless applications</a> and <a href=\"https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/vpc-access.html\">Configuring VPC access for EMR Serverless applications</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/analytics,general:products/amazon-emr"
-          ]
-        },
-        {
-          "title": "AWS Lambda durable functions are now available in AWS GovCloud (US) Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud/",
-          "published": "2026-10-16T18:26:00+00:00",
-          "summary": "<p>AWS Lambda durable functions are now available in the AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions. Lambda durable functions enable developers to build reliable multi-step applications and AI workflows within the Lambda developer experience.</p> \n<p>Lambda durable functions extend the Lambda programming model with new primitives in your event handler, such as \"step\" and \"wait\", allowing you to checkpoint progress, automatically recover from failures, and pause executions without incurring compute charges for on-demand functions. With availability in the AWS GovCloud (US) Regions, government customers and regulated industries can orchestrate complex processes such as order workflows, user onboarding, and AI-assisted tasks while meeting stringent compliance and security requirements.</p> \n<p>You can activate durable functions for new Python (versions 3.13 and 3.14), Node.js (versions 22 and 24), Go (versions 1.24 or later), .Net (version 2.2), or Java (17+) based Lambda functions using the AWS Lambda API, AWS Management Console, or AWS SDK. You can also use infrastructure as code tools such as AWS CloudFormation, AWS Serverless Application Model (AWS SAM), and the AWS Cloud Development Kit (AWS CDK).</p> \n<p>For more information on durable functions, visit the <a href=\"https://aws.amazon.com/lambda/lambda-durable-functions/\">AWS Lambda durable functions product page</a> or the <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/\">AWS Lambda Developer Guide</a>. To learn about pricing, visit <a href=\"https://aws.amazon.com/lambda/pricing/\">AWS Lambda pricing</a>. For region availability, visit the <a href=\"https://builder.aws.com/build/capabilities\">AWS Capabilities by Region page</a>.&nbsp;</p>",
-          "categories": [
-            "general:products/aws-lambda,marketing:marchitecture/serverless"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "【開催報告 & 資料公開】AWS 秋のクラウドオペレーション祭り 2026",
+          "link": "https://aws.amazon.com/jp/blogs/news/awsopsfes2026autumn/",
+          "published": "2026-10-23T04:45:18+00:00",
+          "summary": "みなさん、こんにちは。 シニアスペシャリストソリューションアーキテクトの加藤です。 2026 年 10 月 7 […]",
+          "categories": [
+            "Amazon CloudWatch",
+            "AWS Cloud Financial Management",
+            "AWS Well-Architected Framework",
+            "DevOps",
+            "Enterprise governance and control",
+            "General"
+          ]
+        },
         {
           "title": "Amazon ECS ゲートウェイの紹介：ECS サービス向けの完全マネージド型イングレスソリューション",
           "link": "https://aws.amazon.com/jp/blogs/news/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/",
@@ -578,17 +592,6 @@
             "compliance",
             "Security",
             "Security Blog"
-          ]
-        },
-        {
-          "title": "Kiro はどのように自らを修正し、その修正の正しさをどう担保しているか",
-          "link": "https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/",
-          "published": "2026-10-21T09:41:47+00:00",
-          "summary": "Kiro のファイル読み取りツールと検索ツールの説明に、ハーネスの動作について事実と異なる主張をする一文がありました。この一文は数百のセッションで 61,742 回モデルに届いていました。何の役にも立っておらず、誰かがチケットを起票することもまずなかったでしょう。こうした問題は見つけるのが難しく、修正の良し悪しを判断するのも同じくらい難しいものです。たとえば私たちは、より多くのタスクに合格し、使用トークンも少ない修正をあやうくリリースするところでした。結果をホストごとに分けてみると、改善のほぼすべてが、エージェントがいつもはまり込むループからたまたま抜け出した 1 回の実行によるものだとわかったのです。そのホストを除くと、その修正は遅く、コストが高く、精度も下がっていました。自分の修正を自分で採点するループなら、これをリリースしていたでしょう。",
-          "categories": [
-            "Amazon Q Developer",
-            "Developer Tools",
-            "Kiro"
           ]
         }
       ]
