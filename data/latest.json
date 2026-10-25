@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-24T00:36:35.237608+00:00",
+  "generated_at": "2026-10-25T00:17:56.175721+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
         {
-          "title": "Web Search on AWS Bedrock now supports domain filtering and user location controls",
+          "title": "Web Search on Amazon Bedrock now supports domain filtering and user location controls",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
           "published": "2026-10-23T21:04:00+00:00",
-          "summary": "<p>Web Search on AWS Bedrock now supports two new controls that give you more precision over the results that ground a model's response: domain filtering and user location. Both are configured directly on the web_search tool in your existing OpenAI Responses API request.</p> \n<p>With domain filtering, you can restrict Web Search results to a set of domains you choose. Using the filters parameter, you specify up to 100 allowed_domains to limit results to trusted sources, or up to 100 blocked_domains to exclude sources you don't want. This is useful when you want responses grounded only in specific sites, or when you need to keep certain domains out of results.</p> \n<p>With user location, you can optionally specify location parameters so that Web Search can return results relevant to that geography. This helps with location-dependent questions, such as regional availability or local services.</p> \n<p>Domain filtering and user location are available in all AWS Regions where Web Search is supported: US East (N. Virginia), US East (Ohio), US West (Oregon), and AWS GovCloud (US-West). To get started, see the Web Search section in the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html\">AWS Bedrock User Guide</a>. For pricing, see the <a href=\"https://aws.amazon.com/bedrock/pricing/\">AWS Bedrock pricing page</a>.</p>",
+          "summary": "<p>Web Search on&nbsp;Amazon Bedrock now supports two new controls that give you more precision over the results that ground a model's response: domain filtering and user location. Both are configured directly on the web_search tool in your existing OpenAI Responses API request.</p> \n<p>With domain filtering, you can restrict Web Search results to a set of domains you choose. Using the filters parameter, you specify up to 100 allowed_domains to limit results to trusted sources, or up to 100 blocked_domains to exclude sources you don't want. This is useful when you want responses grounded only in specific sites, or when you need to keep certain domains out of results.</p> \n<p>With user location, you can optionally specify location parameters so that Web Search can return results relevant to that geography. This helps with location-dependent questions, such as regional availability or local services.</p> \n<p>Domain filtering and user location are available in all AWS Regions where Web Search is supported: US East (N. Virginia), US East (Ohio), US West (Oregon), and AWS GovCloud (US-West). To get started, see the Web Search section in the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html\">Amazon Bedrock User Guide</a>. For pricing, see the <a href=\"https://aws.amazon.com/bedrock/pricing/\">Amazon Bedrock pricing page</a>.</p>",
           "categories": [
             "general:products/amazon-bedrock"
           ]
@@ -41,21 +41,21 @@
           ]
         },
         {
-          "title": "Amazon MWAA now available in Mexico (Central) Region",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-mexico-central/",
-          "published": "2026-10-23T08:00:00+00:00",
-          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Provisioned environments are now available in the Mexico (Central) Region (mx-central-1). Amazon MWAA Serverless was already available in this Region, and customers can now also use Amazon MWAA Provisioned environments for their Apache Airflow workflows. Amazon MWAA is a managed orchestration service for Apache Airflow that makes it easier for customers to set up and operate end-to-end data pipelines in the cloud at scale.</p>\n<p>Customers can create Amazon MWAA Provisioned environments using the AWS Management Console, the AWS CLI, the AWS SDKs, or AWS CloudFormation. Customers in Mexico (Central) can now run their Amazon MWAA Provisioned workflows closer to their data sources and end users, reducing latency and helping meet data residency requirements. To learn more, visit the <a href=\"https://aws.amazon.com/managed-workflows-for-apache-airflow/\">Amazon MWAA product page</a> and the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html#regions-mwaa\">Amazon MWAA supported Regions documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/analytics,general:products/amazon-mwaa"
-          ]
-        },
-        {
           "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
           "published": "2026-10-23T08:00:00+00:00",
           "summary": "<p>Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end.</p>\n<p>The 30% reduction in EMR on EKS pricing is available in all AWS Regions where Amazon EMR on EKS is available. To learn more about EMR on EKS, visit the <a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html\">Amazon EMR on EKS documentation</a> and the <a href=\"https://aws.amazon.com/emr/pricing/\">Amazon EMR pricing page</a>.</p>",
           "categories": [
             "marketing:benefits-realized/lower-cost,general:products/amazon-emr,marketing:marchitecture/analytics,general:products/amazon-eks"
+          ]
+        },
+        {
+          "title": "Amazon MWAA now available in Mexico (Central) Region",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-mexico-central/",
+          "published": "2026-10-23T08:00:00+00:00",
+          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Provisioned environments are now available in the Mexico (Central) Region (mx-central-1). Amazon MWAA Serverless was already available in this Region, and customers can now also use Amazon MWAA Provisioned environments for their Apache Airflow workflows. Amazon MWAA is a managed orchestration service for Apache Airflow that makes it easier for customers to set up and operate end-to-end data pipelines in the cloud at scale.</p>\n<p>Customers can create Amazon MWAA Provisioned environments using the AWS Management Console, the AWS CLI, the AWS SDKs, or AWS CloudFormation. Customers in Mexico (Central) can now run their Amazon MWAA Provisioned workflows closer to their data sources and end users, reducing latency and helping meet data residency requirements. To learn more, visit the <a href=\"https://aws.amazon.com/managed-workflows-for-apache-airflow/\">Amazon MWAA product page</a> and the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html#regions-mwaa\">Amazon MWAA supported Regions documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/analytics,general:products/amazon-mwaa"
           ]
         },
         {
@@ -253,15 +253,6 @@
           ]
         },
         {
-          "title": "AWS Network Firewall now supports Route 53 Resolved IP Validation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/",
-          "published": "2026-10-21T08:00:00+00:00",
-          "summary": "<p>AWS Network Firewall now supports IP validation, extending domain-based filtering beyond HTTP/HTTPS to protocols such as SFTP and SSH. This new capability validates that a connection's destination IP address was resolved through your VPC's Amazon Route 53 VPC Resolver, closing security gaps where clients could bypass domain rules.</p> \n<p>This feature enables Network Firewall customers to implement domain filtering rules for any protocol, not just HTTP/HTTPS, providing more flexible security policies than IP-based rules alone. It simplifies protection against Server Name Identifier (SNI) spoofing by validating the IPs resolved by the Route 53 VPC Resolver against the SNI, ensuring traffic only reaches legitimately resolved destinations. Organizations can now enforce consistent domain-based security policies across all outbound traffic types, from web applications to file transfer protocols, without complex workarounds. Additionally, Route 53 Resolver DNS Firewall can be used with your VPC Resolver for extended DNS security.</p> \n<p>Resolved IP validation is available in all AWS commercial regions where AWS Network Firewall and Route 53 Resolver DNS Firewall are available, at no additional charge. For a full list of supported regions, visit the <a href=\"https://builder.aws.com/build/capabilities/explore?f=eJxVirEKg0AQBX9FXq1FWiGFjZAmRVKkcC0uusji4cneqYj477lcEUg3b94c8Gy5C9w_eBA3eZRoCIsv2PhQXAgt8l9TrUaseYuVsMewmvbsT-WY1c2sYa_FBtbYHIRAKJs2J8wRCE4JcQxfG98xSc-6Sse3Pn0uuWviNXH1emZ3DpvTMatFeTPWEs72xPkBR_VAow&amp;tab=service-feature\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Capabilities by Region page</a>.</p> \n<p>To learn more, visit AWS Network Firewall <a href=\"https://aws.amazon.com/network-firewall/\" target=\"_blank\" rel=\"noopener noreferrer\">product page</a> and service <a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/route53-resolved-ip-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,marketing:marchitecture/networking-and-content-delivery,general:products/amazon-route-53,general:products/aws-network-firewall"
-          ]
-        },
-        {
           "title": "Amazon SageMaker AI now supports custom sequence lengths for serverless model customization jobs",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-sequence-lengths/",
           "published": "2026-10-21T08:00:00+00:00",
@@ -277,6 +268,15 @@
           "summary": "<p>AWS Transform for migrations now gives you three ways to bring your network to AWS. In addition to migrating and modernizing your existing network, you can build a new network from scratch or convert your on-premises access rules into optimized security groups and deploy them into existing VPCs. Whichever path you choose, you arrive on AWS with a secure and scalable network foundation.</p> \n<p>On-premises networks accumulate years of definitions and access rules that you may not want to carry to AWS as-is. For a clean start, AWS Transform builds a new network aligned to AWS best practices. To bring your access rules with you, AWS Transform converts them into security groups and modernizes them as it goes, detecting stale rules and recommending optimizations, then deploys the groups into your existing VPCs without redeploying your network stack.</p> \n<p>These capabilities&nbsp;allow you migrate to any <a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions\">AWS commercial or GovCloud Region</a>.</p> \n<p>To get started, see <a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-network.html\">Migrate networks</a>. To learn more, visit <a href=\"https://aws.amazon.com/transform/migrations/\">AWS Transform for migrations</a>.</p>",
           "categories": [
             "general:products/amazon-vpc,marketing:marchitecture/migration,marketing:migration-to-aws,marketing:marchitecture/networking"
+          ]
+        },
+        {
+          "title": "AWS Network Firewall now supports Route 53 Resolved IP Validation",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/",
+          "published": "2026-10-21T08:00:00+00:00",
+          "summary": "<p>AWS Network Firewall now supports IP validation, extending domain-based filtering beyond HTTP/HTTPS to protocols such as SFTP and SSH. This new capability validates that a connection's destination IP address was resolved through your VPC's Amazon Route 53 VPC Resolver, closing security gaps where clients could bypass domain rules.</p> \n<p>This feature enables Network Firewall customers to implement domain filtering rules for any protocol, not just HTTP/HTTPS, providing more flexible security policies than IP-based rules alone. It simplifies protection against Server Name Identifier (SNI) spoofing by validating the IPs resolved by the Route 53 VPC Resolver against the SNI, ensuring traffic only reaches legitimately resolved destinations. Organizations can now enforce consistent domain-based security policies across all outbound traffic types, from web applications to file transfer protocols, without complex workarounds. Additionally, Route 53 Resolver DNS Firewall can be used with your VPC Resolver for extended DNS security.</p> \n<p>Resolved IP validation is available in all AWS commercial regions where AWS Network Firewall and Route 53 Resolver DNS Firewall are available, at no additional charge. For a full list of supported regions, visit the <a href=\"https://builder.aws.com/build/capabilities/explore?f=eJxVirEKg0AQBX9FXq1FWiGFjZAmRVKkcC0uusji4cneqYj477lcEUg3b94c8Gy5C9w_eBA3eZRoCIsv2PhQXAgt8l9TrUaseYuVsMewmvbsT-WY1c2sYa_FBtbYHIRAKJs2J8wRCE4JcQxfG98xSc-6Sse3Pn0uuWviNXH1emZ3DpvTMatFeTPWEs72xPkBR_VAow&amp;tab=service-feature\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Capabilities by Region page</a>.</p> \n<p>To learn more, visit AWS Network Firewall <a href=\"https://aws.amazon.com/network-firewall/\" target=\"_blank\" rel=\"noopener noreferrer\">product page</a> and service <a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/route53-resolved-ip-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance,marketing:marchitecture/networking-and-content-delivery,general:products/amazon-route-53,general:products/aws-network-firewall"
           ]
         },
         {
