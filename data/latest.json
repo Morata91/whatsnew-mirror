@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T00:17:56.175721+00:00",
+  "generated_at": "2026-10-26T00:16:30.296694+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
@@ -41,21 +41,21 @@
           ]
         },
         {
-          "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
-          "published": "2026-10-23T08:00:00+00:00",
-          "summary": "<p>Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end.</p>\n<p>The 30% reduction in EMR on EKS pricing is available in all AWS Regions where Amazon EMR on EKS is available. To learn more about EMR on EKS, visit the <a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html\">Amazon EMR on EKS documentation</a> and the <a href=\"https://aws.amazon.com/emr/pricing/\">Amazon EMR pricing page</a>.</p>",
-          "categories": [
-            "marketing:benefits-realized/lower-cost,general:products/amazon-emr,marketing:marchitecture/analytics,general:products/amazon-eks"
-          ]
-        },
-        {
           "title": "Amazon MWAA now available in Mexico (Central) Region",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-mexico-central/",
           "published": "2026-10-23T08:00:00+00:00",
           "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Provisioned environments are now available in the Mexico (Central) Region (mx-central-1). Amazon MWAA Serverless was already available in this Region, and customers can now also use Amazon MWAA Provisioned environments for their Apache Airflow workflows. Amazon MWAA is a managed orchestration service for Apache Airflow that makes it easier for customers to set up and operate end-to-end data pipelines in the cloud at scale.</p>\n<p>Customers can create Amazon MWAA Provisioned environments using the AWS Management Console, the AWS CLI, the AWS SDKs, or AWS CloudFormation. Customers in Mexico (Central) can now run their Amazon MWAA Provisioned workflows closer to their data sources and end users, reducing latency and helping meet data residency requirements. To learn more, visit the <a href=\"https://aws.amazon.com/managed-workflows-for-apache-airflow/\">Amazon MWAA product page</a> and the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html#regions-mwaa\">Amazon MWAA supported Regions documentation</a>.</p>",
           "categories": [
             "marketing:marchitecture/analytics,general:products/amazon-mwaa"
+          ]
+        },
+        {
+          "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
+          "published": "2026-10-23T08:00:00+00:00",
+          "summary": "<p>Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end.</p>\n<p>The 30% reduction in EMR on EKS pricing is available in all AWS Regions where Amazon EMR on EKS is available. To learn more about EMR on EKS, visit the <a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html\">Amazon EMR on EKS documentation</a> and the <a href=\"https://aws.amazon.com/emr/pricing/\">Amazon EMR pricing page</a>.</p>",
+          "categories": [
+            "marketing:benefits-realized/lower-cost,general:products/amazon-emr,marketing:marchitecture/analytics,general:products/amazon-eks"
           ]
         },
         {
@@ -253,6 +253,15 @@
           ]
         },
         {
+          "title": "AWS Network Firewall now supports Route 53 Resolved IP Validation",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/",
+          "published": "2026-10-21T08:00:00+00:00",
+          "summary": "<p>AWS Network Firewall now supports IP validation, extending domain-based filtering beyond HTTP/HTTPS to protocols such as SFTP and SSH. This new capability validates that a connection's destination IP address was resolved through your VPC's Amazon Route 53 VPC Resolver, closing security gaps where clients could bypass domain rules.</p> \n<p>This feature enables Network Firewall customers to implement domain filtering rules for any protocol, not just HTTP/HTTPS, providing more flexible security policies than IP-based rules alone. It simplifies protection against Server Name Identifier (SNI) spoofing by validating the IPs resolved by the Route 53 VPC Resolver against the SNI, ensuring traffic only reaches legitimately resolved destinations. Organizations can now enforce consistent domain-based security policies across all outbound traffic types, from web applications to file transfer protocols, without complex workarounds. Additionally, Route 53 Resolver DNS Firewall can be used with your VPC Resolver for extended DNS security.</p> \n<p>Resolved IP validation is available in all AWS commercial regions where AWS Network Firewall and Route 53 Resolver DNS Firewall are available, at no additional charge. For a full list of supported regions, visit the <a href=\"https://builder.aws.com/build/capabilities/explore?f=eJxVirEKg0AQBX9FXq1FWiGFjZAmRVKkcC0uusji4cneqYj477lcEUg3b94c8Gy5C9w_eBA3eZRoCIsv2PhQXAgt8l9TrUaseYuVsMewmvbsT-WY1c2sYa_FBtbYHIRAKJs2J8wRCE4JcQxfG98xSc-6Sse3Pn0uuWviNXH1emZ3DpvTMatFeTPWEs72xPkBR_VAow&amp;tab=service-feature\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Capabilities by Region page</a>.</p> \n<p>To learn more, visit AWS Network Firewall <a href=\"https://aws.amazon.com/network-firewall/\" target=\"_blank\" rel=\"noopener noreferrer\">product page</a> and service <a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/route53-resolved-ip-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance,marketing:marchitecture/networking-and-content-delivery,general:products/amazon-route-53,general:products/aws-network-firewall"
+          ]
+        },
+        {
           "title": "Amazon SageMaker AI now supports custom sequence lengths for serverless model customization jobs",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-sequence-lengths/",
           "published": "2026-10-21T08:00:00+00:00",
@@ -268,15 +277,6 @@
           "summary": "<p>AWS Transform for migrations now gives you three ways to bring your network to AWS. In addition to migrating and modernizing your existing network, you can build a new network from scratch or convert your on-premises access rules into optimized security groups and deploy them into existing VPCs. Whichever path you choose, you arrive on AWS with a secure and scalable network foundation.</p> \n<p>On-premises networks accumulate years of definitions and access rules that you may not want to carry to AWS as-is. For a clean start, AWS Transform builds a new network aligned to AWS best practices. To bring your access rules with you, AWS Transform converts them into security groups and modernizes them as it goes, detecting stale rules and recommending optimizations, then deploys the groups into your existing VPCs without redeploying your network stack.</p> \n<p>These capabilities&nbsp;allow you migrate to any <a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions\">AWS commercial or GovCloud Region</a>.</p> \n<p>To get started, see <a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-network.html\">Migrate networks</a>. To learn more, visit <a href=\"https://aws.amazon.com/transform/migrations/\">AWS Transform for migrations</a>.</p>",
           "categories": [
             "general:products/amazon-vpc,marketing:marchitecture/migration,marketing:migration-to-aws,marketing:marchitecture/networking"
-          ]
-        },
-        {
-          "title": "AWS Network Firewall now supports Route 53 Resolved IP Validation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/",
-          "published": "2026-10-21T08:00:00+00:00",
-          "summary": "<p>AWS Network Firewall now supports IP validation, extending domain-based filtering beyond HTTP/HTTPS to protocols such as SFTP and SSH. This new capability validates that a connection's destination IP address was resolved through your VPC's Amazon Route 53 VPC Resolver, closing security gaps where clients could bypass domain rules.</p> \n<p>This feature enables Network Firewall customers to implement domain filtering rules for any protocol, not just HTTP/HTTPS, providing more flexible security policies than IP-based rules alone. It simplifies protection against Server Name Identifier (SNI) spoofing by validating the IPs resolved by the Route 53 VPC Resolver against the SNI, ensuring traffic only reaches legitimately resolved destinations. Organizations can now enforce consistent domain-based security policies across all outbound traffic types, from web applications to file transfer protocols, without complex workarounds. Additionally, Route 53 Resolver DNS Firewall can be used with your VPC Resolver for extended DNS security.</p> \n<p>Resolved IP validation is available in all AWS commercial regions where AWS Network Firewall and Route 53 Resolver DNS Firewall are available, at no additional charge. For a full list of supported regions, visit the <a href=\"https://builder.aws.com/build/capabilities/explore?f=eJxVirEKg0AQBX9FXq1FWiGFjZAmRVKkcC0uusji4cneqYj477lcEUg3b94c8Gy5C9w_eBA3eZRoCIsv2PhQXAgt8l9TrUaseYuVsMewmvbsT-WY1c2sYa_FBtbYHIRAKJs2J8wRCE4JcQxfG98xSc-6Sse3Pn0uuWviNXH1emZ3DpvTMatFeTPWEs72xPkBR_VAow&amp;tab=service-feature\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Capabilities by Region page</a>.</p> \n<p>To learn more, visit AWS Network Firewall <a href=\"https://aws.amazon.com/network-firewall/\" target=\"_blank\" rel=\"noopener noreferrer\">product page</a> and service <a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/route53-resolved-ip-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,marketing:marchitecture/networking-and-content-delivery,general:products/amazon-route-53,general:products/aws-network-firewall"
           ]
         },
         {
@@ -454,6 +454,18 @@
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
         {
+          "title": "Amazon OpenSearch intelligent ingestion で Amazon S3 のデータから RAG 対応インデックスを構築する",
+          "link": "https://aws.amazon.com/jp/blogs/news/build-rag-ready-indexes-from-amazon-s3-with-amazon-opensearch-intelligent-ingestion/",
+          "published": "2026-10-25T23:34:06+00:00",
+          "summary": "契約書、製品マニュアル、調査レポートなど、企業の価値ある知識は Amazon S3 に保存されたドキュメントに蓄積されています。本記事では、Amazon OpenSearch Serverless (NextGen) の新機能である Amazon OpenSearch intelligent ingestion を使い、こうしたドキュメントの解析、画像の説明生成、チャンク分割、ベクトル埋め込みの生成、インデックス化までを、取り込みパイプラインを運用せずに実行する方法を紹介します。",
+          "categories": [
+            "Amazon OpenSearch Service",
+            "Amazon Simple Storage Service (S3)",
+            "Announcements",
+            "Foundational (100)"
+          ]
+        },
+        {
           "title": "【開催報告 & 資料公開】AWS 秋のクラウドオペレーション祭り 2026",
           "link": "https://aws.amazon.com/jp/blogs/news/awsopsfes2026autumn/",
           "published": "2026-10-23T04:45:18+00:00",
@@ -574,22 +586,6 @@
             "Intermediate (200)",
             "Security, Identity, & Compliance",
             "Incident response",
-            "Security",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "AWS Security Incident Response によるセキュリティ運用の最適化",
-          "link": "https://aws.amazon.com/jp/blogs/news/optimize-security-operations-with-aws-security-incident-response/",
-          "published": "2026-10-21T23:59:09+00:00",
-          "summary": "この記事では、AWS Security Incident Response を有効にして概念実証 (POC) を実施し、セキュリティ運用を迅速に強化する方法を説明します。まず、Amazon GuardDuty の検出結果と、AWS Security Hub でサードパーティ製ツールから取り込む一部の検出結果を自動でトリアージする仕組みを紹介します。次に、成功基準の設定、委任管理者やエスカレーションなどの構成の定義、デプロイの準備、コンソールでの有効化手順を順に解説します。さらに、初日からリアクティブ機能を活用し、疑わしいアクティビティがある場合は AWS がサポートするケースを作成して、AWS の専門家の支援を受けながら価値を最大化する方法も紹介します。",
-          "categories": [
-            "Best Practices",
-            "Customer Solutions",
-            "Security, Identity, & Compliance",
-            "Technical How-to",
-            "AWS Security",
-            "compliance",
             "Security",
             "Security Blog"
           ]
