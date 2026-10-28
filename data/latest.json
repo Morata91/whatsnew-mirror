@@ -1,9 +1,63 @@
 {
-  "generated_at": "2026-10-27T01:27:23.645965+00:00",
+  "generated_at": "2026-10-28T01:16:44.569459+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon ECS now supports GPU sharing with NVIDIA Multi-Process Service (MPS)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-gpu-sharing-nvidia-mps/",
+          "published": "2026-10-27T23:31:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\">Amazon Elastic Container Service</a> (Amazon ECS) now supports GPU sharing with NVIDIA Multi-Process Service (MPS), enabling you to run multiple Amazon ECS tasks concurrently on a single NVIDIA GPU. GPU sharing helps you increase GPU utilization and reduce infrastructure costs for workloads that use only part of a GPU's capacity, such as small-model inference, AV/ADAS simulations, embedding generation, and multi-model serving.</p> \n<p>With GPU sharing, you can pack more workloads onto each GPU instance without changing your application code. You define the GPU memory each container needs and can optionally set a maximum share of GPU compute, and Amazon ECS places tasks on GPUs with available capacity as your services scale and deploy. GPU sharing is supported on Amazon ECS Managed Instances and Amazon ECS on Amazon EC2. On Amazon ECS Managed Instances, Amazon ECS also monitors the MPS control daemon that enables sharing on each instance. If the daemon stops or becomes unhealthy, Amazon ECS automatically replaces the instance and moves your tasks to healthy capacity, so your GPU workloads keep running without manual intervention.</p> \n<p>To get started, use the AWS Management Console, AWS CLI, AWS SDKs, AWS CloudFormation, or other infrastructure-as-code tools to create a capacity provider with NVIDIA GPU instances, set the GPU sharing strategy and memory in the container definition of your task definition, and create a service on that capacity provider. This capability is available in all AWS commercial and AWS GovCloud (US) <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\">Regions</a>. To learn more, visit the Amazon ECS GPU sharing <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu-sharing.html\" target=\"_blank\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/containers,marketing:marchitecture/serverless,general:products/aws-fargate,general:products/amazon-ecs,general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "SageMaker MLflow Apps now support MLflow 3.16",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/",
+          "published": "2026-10-27T20:40:00+00:00",
+          "summary": "<p>Amazon SageMaker AI MLflow Apps now support MLflow 3.16, bringing a redesigned tracing experience and faster experiment tracking to your generative AI and machine learning workflows.</p> \n<p>MLflow 3.16 improves debugging and analysis of generative AI applications and agents. The redesigned trace explorer is now the default, with adjustable row height, reorderable columns, custom columns from any trace tag or metadata field. This release also accelerates metric charts for experiments with large metric histories.</p> \n<p>New MLflow Apps are created on MLflow 3.16 by default. Existing MLflow Apps will be upgraded to MLflow 3.16 during an upcoming maintenance window, with no action required.</p> \n<p>MLflow 3.16 is available in all AWS Regions where MLflow Apps are available. To learn more, visit the <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow.html\">SageMaker AI MLflow developer guide</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,general:products/amazon-sagemaker"
+          ]
+        },
+        {
+          "title": "Amazon Aurora serverless now supports up to 384 ACUs",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/",
+          "published": "2026-10-27T16:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/aurora/serverless/\" target=\"_blank\">Amazon Aurora serverless</a> now supports database capacity of up to 384 Aurora Capacity Units (ACUs) for Aurora PostgreSQL-Compatible Edition, a 50% increase from the previous maximum of 256 ACUs. Each ACU provides approximately 2 gibibytes (GiB) of memory with corresponding CPU and networking, so a single Aurora serverless database can now scale up to 768 GiB of memory. When the workload completes, Aurora serverless automatically scales down to zero. This makes Aurora serverless especially well-suited for agentic AI applications, which typically have bursts of activity, long idle windows, and unpredictable traffic patterns. Aurora serverless handles all of it automatically, scaling capacity with your agents, so you only pay for what you use.</p> \n<p>With 384 ACU support, customers can now use Aurora serverless for even more demanding workloads while continuing to scale down to zero when not in use, paying only for the capacity consumed. For new clusters, select a supported Aurora PostgreSQL engine version and set your maximum capacity up to 384 ACUs. For existing clusters on Platform Version 4, simply modify the cluster to update the maximum capacity setting (and the engine version if needed). There will be no downtime if your database is already on Platform Version 4. For existing clusters on older platform versions, upgrade to Platform Version 4 through a pending maintenance action. 384 ACU support is available for Aurora PostgreSQL versions 18.4, 17.10, 16.14, 15.18, and 14.23, running on Platform Version 4.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.how-it-works.html#aurora-serverless-v2.how-it-works.capacity\" target=\"_blank\">Aurora serverless capacity</a> in the Amazon Aurora User Guide. For pricing details and Region availability, visit <a href=\"https://aws.amazon.com/rds/aurora/pricing/\" target=\"_blank\">Amazon Aurora Pricing</a>. &nbsp;To get started, create or modify an Aurora serverless database in the <a href=\"https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-2_a53ff6382623e9a3&amp;client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&amp;forceMobileApp=0&amp;code_challenge=SCavOinSDkGpz8021yaDgWGy_E5aIbgB7HoRsIR47N0&amp;code_challenge_method=SHA-256\" target=\"_blank\">AWS Management Console</a>.</p>",
+          "categories": [
+            "general:products/amazon-aurora,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "Amazon ElastiCache for Valkey now supports changing durability on existing clusters",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/",
+          "published": "2026-10-27T15:21:00+00:00",
+          "summary": "<p>Amazon ElastiCache for Valkey now lets you enable or disable durability on your existing node-based clusters without creating a new cluster. Previously, you couldn't change the durability configuration of an existing cluster in place. This made it harder to move from caching to persistent data store use cases, or to adapt as your application requirements change. Now you can change durability at any point in your application's lifecycle.</p> \n<p>You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding to the client, designed for zero data loss at single-digit millisecond write latency. Asynchronous writes persist data after responding to the client, maintaining microsecond write latency at no additional cost. However, up to 10 seconds of uncommitted data could be lost in the rare event of a failure. Both options maintain microsecond read latency. You can now use ElastiCache for a broader set of use cases beyond caching where data loss is unacceptable such as AI agent long-term memory, AI agent workflow state, knowledge bases for RAG applications, payment tokenization, and real-time inventory management.</p> \n<p>This feature is available in all AWS Regions where ElastiCache for Valkey 9.0 and later is available. To get started, use the AWS Management Console, AWS SDK, or AWS CLI. For pricing, see the &nbsp;<a href=\"https://aws.amazon.com/elasticache/pricing/\">Amazon ElastiCache pricing page&nbsp;</a>. To learn more, see &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/\">Durability&nbsp;</a> in the ElastiCache documentation.</p>",
+          "categories": [
+            "general:products/amazon-elasticache,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "Amazon Corretto October 2026 Patch Updates",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-oct-2026-patch-updates",
+          "published": "2026-10-27T14:00:00+00:00",
+          "summary": "<p>On October 26, 2026 Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 27.0.1.0.11, 25.0.5.0.10, 21.0.13.0.11, 17.0.21.0.11, 11.0.33.0.10, and 8u512 are now available for <a href=\"https://aws.amazon.com/corretto/\">download</a>. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.</p> \n<p>Visit the Corretto <a href=\"https://aws.amazon.com/corretto\">home page</a> to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a <a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/generic-linux-install.html\">Corretto Apt, Yum, or Apk repo</a>.</p> \n<p>Feedback is <a href=\"https://github.com/corretto\">welcomed</a>!</p>",
+          "categories": [
+            "marketing:marchitecture/developer-tools,general:products/aws-govcloud-us,general:products/amazon-corretto"
+          ]
+        },
+        {
+          "title": "Amazon ECR now supports replication backfill for existing container images",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr",
+          "published": "2026-10-26T20:24:00+00:00",
+          "summary": "<p>Amazon Elastic Container Registry (Amazon ECR) now supports replication backfill, enabling you to replicate existing images in your private registry to your configured replication registry destinations. Previously, replication only applied to images pushed after the replication configuration was enabled, requiring customers to manually retag images to trigger replication of preexisting images. With replication backfill, you can now replicate your full image catalog to new or existing destinations with a single API call.</p> \n<p>Replication backfill is useful when expanding to a new AWS Region, validating disaster recovery readiness, updating replication rules, or ensuring complete image catalogs exist across Regions for compliance purposes. You can run up to ten backfill jobs concurrently, monitor progress and per-image results through new APIs, and stop a job at any time without deleting images that have already been replicated.</p> \n<p>Replication backfill is available in all AWS Regions where Amazon ECR is available. To learn more, refer to the <a href=\"https://docs.aws.amazon.com/AmazonECR/latest/userguide/replication-backfill.html\">Amazon ECR user guide</a>.&nbsp;</p>",
+          "categories": [
+            "marketing:marchitecture/containers,general:products/amazon-ecr"
+          ]
+        },
         {
           "title": "OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/",
@@ -19,6 +73,15 @@
           "published": "2026-10-26T18:00:00+00:00",
           "summary": "<p>Amazon WorkSpaces Core Managed Instances now supports the ModifyVolume API, which lets you change volume size, volume type, IOPS, or throughput in place, without detaching the volume or restarting the instance. Previously, changing storage capacity or performance on a deployed managed instance required rebuilding it.</p> \n<p>With ModifyVolume, you can increase volume size up to 16,384 GiB, switch between supported Amazon EBS volume types, adjust IOPS for gp3, io1, and io2 volumes, and modify throughput for gp3 volumes. The API supports idempotency tokens to prevent duplicate changes, and you can track progress with the Amazon EC2 DescribeVolumesModifications operation.</p> \n<p>ModifyVolume is available in all AWS Regions where Amazon WorkSpaces Core Managed Instances is available.</p> \n<p>To get started, call ModifyVolume directly, or use it through your WorkSpaces Core partner solution once available. To learn more, see <a href=\"https://docs.aws.amazon.com/workspaces-instances/latest/api/API_ModifyVolume.html\" target=\"_blank\" rel=\"noopener noreferrer\">ModifyVolume</a> in the WorkSpaces Instances API Reference and <a href=\"https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modify-volume.html#elastic-volumes-limitations\" target=\"_blank\" rel=\"noopener noreferrer\">Limitations</a> in the Amazon EBS User Guide, or visit <a href=\"https://aws.amazon.com/workspaces/vdi-partners/\" target=\"_blank\" rel=\"noopener noreferrer\">WorkSpaces Core</a>.</p>",
           "categories": []
+        },
+        {
+          "title": "Amazon IVS Low-Latency Streaming now provides a failover slate",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ivs-low-latency-streaming-failover-slate",
+          "published": "2026-10-26T15:40:00+00:00",
+          "summary": "<p>Amazon Interactive Video Service (Amazon IVS) Low-Latency Streaming now provides a failover slate, an animated image that IVS displays to viewers when a broadcaster's stream is unexpectedly interrupted. Instead of a buffering wheel or frozen frame, viewers see the slate until the broadcaster reconnects. Live playback then resumes automatically, without viewers needing to refresh their player.</p> \n<p>The failover slate helps you retain your audience during momentary disruptions and is ideal for broadcasters streaming from mobile devices or from locations with unreliable connectivity. You can enable the failover slate on new or existing channels and monitor slate activity with Amazon EventBridge events and Amazon CloudWatch metrics.</p> \n<p><a href=\"https://aws.amazon.com/ivs/\">Amazon IVS</a> is a managed live streaming solution designed to make low-latency or real-time video available to viewers around the world. Visit the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Region table</a> for a full list of AWS Regions where the Amazon IVS console and APIs for control and creation of video streams are available.</p> \n<p>To learn more, see the <a href=\"https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/failover-slate.html\">Amazon IVS Failover Slate documentation</a>.</p>",
+          "categories": [
+            "general:products/amazon-ivs"
+          ]
         },
         {
           "title": "Amazon SageMaker Unified Studio adds light mode support for IDC-based domains",
@@ -84,6 +147,15 @@
           ]
         },
         {
+          "title": "AWS Elemental MediaConnect Router now supports endpoint connection management",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/mediaconnect-cross-account-endpoints/",
+          "published": "2026-10-26T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/mediaconnect/features/router/\">AWS Elemental MediaConnect Router</a> now supports managing external connections through a new endpoint registry. The registry provides a centralized interface to register and manage both standard endpoints—devices or software outside the service, such as cameras, sources, monitors, and other destinations—and connections to other AWS accounts. You can share registered endpoints directly with other AWS accounts, streamlining cross-account live video workflows.&nbsp;</p> \n<p>Cross-account endpoint sharing lowers costs by reducing required compute instances and decreases latency through fewer network hops when sharing live content across AWS accounts.. It also eliminates the need to manually chain router inputs and outputs, coordinate IP addresses out of band, and manage connection security. The endpoint registry gives you a single interface to manage all external connections to MediaConnect for seamless integration with your existing infrastructure. You get cross-account sharing through AWS Resource Access Manager (AWS RAM), transparent verification of encryption and protocol controls, and built-in connection management with Connection Manager. Use cases include content distributors sharing live feeds with downstream partners, broadcasters collaborating across organizational boundaries, and media workflows that require secure cross-account video transport.</p> \n<p>MediaConnect endpoint registry is available in all AWS Regions where AWS Elemental MediaConnect Router is available, at no additional cost. For more information, see the AWS Elemental MediaConnect <a href=\"https://docs.aws.amazon.com/mediaconnect/latest/ug/working-with-endpoints.html\">User Guide</a>.</p>",
+          "categories": [
+            "general:products/aws-resource-access-manager,general:products/aws-elemental-mediaconnect,marketing:benefits-realized/lower-cost,marketing:marchitecture/media-services"
+          ]
+        },
+        {
           "title": "Amazon RDS now supports the latest Cumulative Update and GDR updates for Microsoft SQL Server",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-supports-latest-cumulative-update-gdr-microsoft-sql-server/",
           "published": "2026-10-26T07:30:00+00:00",
@@ -138,21 +210,21 @@
           ]
         },
         {
-          "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
-          "published": "2026-10-23T08:00:00+00:00",
-          "summary": "<p>Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end.</p>\n<p>The 30% reduction in EMR on EKS pricing is available in all AWS Regions where Amazon EMR on EKS is available. To learn more about EMR on EKS, visit the <a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html\">Amazon EMR on EKS documentation</a> and the <a href=\"https://aws.amazon.com/emr/pricing/\">Amazon EMR pricing page</a>.</p>",
-          "categories": [
-            "marketing:benefits-realized/lower-cost,general:products/amazon-emr,marketing:marchitecture/analytics,general:products/amazon-eks"
-          ]
-        },
-        {
           "title": "Amazon MWAA now available in Mexico (Central) Region",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-mexico-central/",
           "published": "2026-10-23T08:00:00+00:00",
           "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Provisioned environments are now available in the Mexico (Central) Region (mx-central-1). Amazon MWAA Serverless was already available in this Region, and customers can now also use Amazon MWAA Provisioned environments for their Apache Airflow workflows. Amazon MWAA is a managed orchestration service for Apache Airflow that makes it easier for customers to set up and operate end-to-end data pipelines in the cloud at scale.</p>\n<p>Customers can create Amazon MWAA Provisioned environments using the AWS Management Console, the AWS CLI, the AWS SDKs, or AWS CloudFormation. Customers in Mexico (Central) can now run their Amazon MWAA Provisioned workflows closer to their data sources and end users, reducing latency and helping meet data residency requirements. To learn more, visit the <a href=\"https://aws.amazon.com/managed-workflows-for-apache-airflow/\">Amazon MWAA product page</a> and the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html#regions-mwaa\">Amazon MWAA supported Regions documentation</a>.</p>",
           "categories": [
             "marketing:marchitecture/analytics,general:products/amazon-mwaa"
+          ]
+        },
+        {
+          "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
+          "published": "2026-10-23T08:00:00+00:00",
+          "summary": "<p>Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end.</p>\n<p>The 30% reduction in EMR on EKS pricing is available in all AWS Regions where Amazon EMR on EKS is available. To learn more about EMR on EKS, visit the <a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html\">Amazon EMR on EKS documentation</a> and the <a href=\"https://aws.amazon.com/emr/pricing/\">Amazon EMR pricing page</a>.</p>",
+          "categories": [
+            "marketing:benefits-realized/lower-cost,general:products/amazon-emr,marketing:marchitecture/analytics,general:products/amazon-eks"
           ]
         },
         {
@@ -350,6 +422,15 @@
           ]
         },
         {
+          "title": "AWS Network Firewall now supports Route 53 Resolved IP Validation",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/",
+          "published": "2026-10-21T08:00:00+00:00",
+          "summary": "<p>AWS Network Firewall now supports IP validation, extending domain-based filtering beyond HTTP/HTTPS to protocols such as SFTP and SSH. This new capability validates that a connection's destination IP address was resolved through your VPC's Amazon Route 53 VPC Resolver, closing security gaps where clients could bypass domain rules.</p> \n<p>This feature enables Network Firewall customers to implement domain filtering rules for any protocol, not just HTTP/HTTPS, providing more flexible security policies than IP-based rules alone. It simplifies protection against Server Name Identifier (SNI) spoofing by validating the IPs resolved by the Route 53 VPC Resolver against the SNI, ensuring traffic only reaches legitimately resolved destinations. Organizations can now enforce consistent domain-based security policies across all outbound traffic types, from web applications to file transfer protocols, without complex workarounds. Additionally, Route 53 Resolver DNS Firewall can be used with your VPC Resolver for extended DNS security.</p> \n<p>Resolved IP validation is available in all AWS commercial regions where AWS Network Firewall and Route 53 Resolver DNS Firewall are available, at no additional charge. For a full list of supported regions, visit the <a href=\"https://builder.aws.com/build/capabilities/explore?f=eJxVirEKg0AQBX9FXq1FWiGFjZAmRVKkcC0uusji4cneqYj477lcEUg3b94c8Gy5C9w_eBA3eZRoCIsv2PhQXAgt8l9TrUaseYuVsMewmvbsT-WY1c2sYa_FBtbYHIRAKJs2J8wRCE4JcQxfG98xSc-6Sse3Pn0uuWviNXH1emZ3DpvTMatFeTPWEs72xPkBR_VAow&amp;tab=service-feature\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Capabilities by Region page</a>.</p> \n<p>To learn more, visit AWS Network Firewall <a href=\"https://aws.amazon.com/network-firewall/\" target=\"_blank\" rel=\"noopener noreferrer\">product page</a> and service <a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/route53-resolved-ip-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance,marketing:marchitecture/networking-and-content-delivery,general:products/amazon-route-53,general:products/aws-network-firewall"
+          ]
+        },
+        {
           "title": "Amazon SageMaker AI now supports custom sequence lengths for serverless model customization jobs",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-sequence-lengths/",
           "published": "2026-10-21T08:00:00+00:00",
@@ -366,91 +447,63 @@
           "categories": [
             "general:products/amazon-vpc,marketing:marchitecture/migration,marketing:migration-to-aws,marketing:marchitecture/networking"
           ]
-        },
-        {
-          "title": "AWS Network Firewall now supports Route 53 Resolved IP Validation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/",
-          "published": "2026-10-21T08:00:00+00:00",
-          "summary": "<p>AWS Network Firewall now supports IP validation, extending domain-based filtering beyond HTTP/HTTPS to protocols such as SFTP and SSH. This new capability validates that a connection's destination IP address was resolved through your VPC's Amazon Route 53 VPC Resolver, closing security gaps where clients could bypass domain rules.</p> \n<p>This feature enables Network Firewall customers to implement domain filtering rules for any protocol, not just HTTP/HTTPS, providing more flexible security policies than IP-based rules alone. It simplifies protection against Server Name Identifier (SNI) spoofing by validating the IPs resolved by the Route 53 VPC Resolver against the SNI, ensuring traffic only reaches legitimately resolved destinations. Organizations can now enforce consistent domain-based security policies across all outbound traffic types, from web applications to file transfer protocols, without complex workarounds. Additionally, Route 53 Resolver DNS Firewall can be used with your VPC Resolver for extended DNS security.</p> \n<p>Resolved IP validation is available in all AWS commercial regions where AWS Network Firewall and Route 53 Resolver DNS Firewall are available, at no additional charge. For a full list of supported regions, visit the <a href=\"https://builder.aws.com/build/capabilities/explore?f=eJxVirEKg0AQBX9FXq1FWiGFjZAmRVKkcC0uusji4cneqYj477lcEUg3b94c8Gy5C9w_eBA3eZRoCIsv2PhQXAgt8l9TrUaseYuVsMewmvbsT-WY1c2sYa_FBtbYHIRAKJs2J8wRCE4JcQxfG98xSc-6Sse3Pn0uuWviNXH1emZ3DpvTMatFeTPWEs72xPkBR_VAow&amp;tab=service-feature\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Capabilities by Region page</a>.</p> \n<p>To learn more, visit AWS Network Firewall <a href=\"https://aws.amazon.com/network-firewall/\" target=\"_blank\" rel=\"noopener noreferrer\">product page</a> and service <a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/route53-resolved-ip-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,marketing:marchitecture/networking-and-content-delivery,general:products/amazon-route-53,general:products/aws-network-firewall"
-          ]
-        },
-        {
-          "title": "Announcing Amazon ECS Gateway, a managed ingress solution for your ECS services",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/announcing-amazon-ecs-gateway/",
-          "published": "2026-10-20T23:26:00+00:00",
-          "summary": "<p>AWS announces Amazon Elastic Container Service (Amazon ECS) Gateway, a new resource that simplifies ingress networking for containerized applications by dynamically provisioning and managing Application Load Balancers (ALBs) and their supporting resources directly in your account.</p> \n<p>With ECS Gateway, platform teams define organizational networking standards once on a gateway and associate it with one or more clusters, giving organizations a centralized way to govern how traffic reaches their ECS services. Application teams simply opt in to inherit those standards without requiring networking expertise. ECS Gateway offers host-based routing, allows up to 25 services to share an ALB to optimize infrastructure costs, and gives each service a unique Domain Name System (DNS) hostname. ECS manages the full lifecycle of the underlying infrastructure, provisioning the first ALB when your first service connects, adding more ALBs when capacity is reached, and removing them when no longer needed. You can inspect these resources and the gateway route to each service to see exactly how requests reach your applications. For traffic and health monitoring, you can use standard ALB metrics in Amazon CloudWatch and target health information from Elastic Load Balancing.</p> \n<p>To get started, create an ECS Gateway, associate it with a cluster, and opt in your ECS service by adding the gateway connector parameter using the AWS Management Console, AWS CLI, API, AWS SDKs, or AWS CloudFormation. ECS Gateway is available for ECS services using the awsvpc network mode across all launch types. It is available now in all commercial AWS Regions at no additional charge. You pay only for the underlying infrastructure provisioned in your account when your services connect to the gateway. To learn more, refer to the <a href=\"https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services\">AWS News blog</a> and our <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-overview.html\">documentation</a> page.</p>",
-          "categories": [
-            "general:products/amazon-ecs,general:products/aws-fargate,marketing:marchitecture/containers"
-          ]
-        },
-        {
-          "title": "Amazon DynamoDB global tables now support disassociating replicas",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/dynamodb-global-tables-disassociate/",
-          "published": "2026-10-20T23:00:00+00:00",
-          "summary": "<p><a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html\">Amazon DynamoDB</a> global tables now support disassociating a replica without deleting its table or data. Global tables provide fully managed, multi-Region, multi-active replication. You can now stop replication to and from a replica and continue using the same table as a single-Region table.</p> \n<p>An account can leave a shared multi-account global table and continue using its table independently. You can also stop replication to a Region while keeping its table for local workloads, validation, or audit, without creating a replacement table or copying data.</p> \n<p>DynamoDB supports disassociating replicas in all AWS Regions for same-account and multi-account global tables that use multi-Region eventual consistency (MREC).</p> \n<p>To get started, use the AWS Management Console, AWS CLI, DynamoDB API, or AWS CloudFormation. For more information, see <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables-disassociate.html\">Disassociating replicas</a> in the Amazon DynamoDB&nbsp;Developer Guide.</p>",
-          "categories": [
-            "general:products/amazon-dynamodb"
-          ]
-        },
-        {
-          "title": "Amazon WorkSpaces simplifies secure AI agent access to enterprise cloud desktops with less infrastructure to operate and manage",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/workspaces-ai-agents-oauth-connection-management",
-          "published": "2026-10-20T17:00:00+00:00",
-          "summary": "<p>WorkSpaces for AI agents now handles authentication and desktop connections as part of the managed Model Context Protocol (MCP) service, so you can connect agents to governed cloud desktops, removing the need to write custom code. This makes it easy to use WorkSpaces with any client that supports MCP.</p> \n<p>Connecting an agent to a desktop previously required you to manage presession requirements; generate, invoke, and rotate streaming URLs manually, adding complexity every time a session expired. You can now create sessions with your existing AWS credentials through OAuth 2.0, and the service handles the connection lifecycle. You configure once which desktop stack to use, and your agents reach the right desktop without ever seeing or handling the underlying streaming connection. You can also query session state to see which desktop stack, fleet, and session an agent is connected to, and generate a link for real-time observability of your agent. This gives you visibility and auditability over active agent work to know what your agents are doing and where.</p> \n<p>To help your agents work with multiple applications, they can now discover and launch applications through a catalog&nbsp;MCP Tool rather than navigating menus. Using these new tools, agents can list the available applications, launch one or several at runtime, and switch between them, replacing the start-menu and taskbar navigation with a programmatic, deterministic path that improves accuracy and reduces token cost.&nbsp;</p> \n<p>WorkSpaces for AI agents runs agent sessions inside the same network isolation and compliance boundaries that govern your human workforce, inheriting the VPC controls, data-loss prevention policies, and session-level security posture that enterprises have already configured. The service is also now available in four additional AWS Regions: South America (São Paulo), Europe (Milan), Europe (Spain), and Asia Pacific (Malaysia).</p> \n<p>To get started operating AI agents on WorkSpaces, visit: <a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-access.html\">https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-access.html</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/desktop-and-app-streaming,general:products/amazon-workspaces"
-          ]
-        },
-        {
-          "title": "Polly Generative engine upgraded with more natural speech, 14 new voices, and 2 new languages",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/polly-generative/",
-          "published": "2026-10-20T15:32:00+00:00",
-          "summary": "<p>Today, we are introducing a new model behind the Amazon Polly Generative engine that delivers more natural-sounding, accurate speech output with low latency. With this upgrade, you get access to an enhanced voice portfolio with higher overall quality, 14 new voices across nine locales, and two new languages—Hindi and Finnish—now generally available on the Generative engine for the first time. New voices include Kenneth and Nate (US English), Russell and Curtis (Australian English), Kiara and Arjun (Hindi and Indian English), Tina (German), Carlos (US Spanish), Leo and Carolina (Brazilian Portuguese), Hyunduk (Korean), and Suvi (Finnish).</p> \n<p><a href=\"https://aws.amazon.com/polly\"><u>Amazon Polly</u></a> is a fully managed service that turns text into natural-sounding speech. This drop-in model upgrade makes Generative voices more natural and accurate. Complex content such as numbers, email addresses, and street addresses is designed to sound more reliable, reducing the need to fine-tune speech output. You can continue to use Speech Synthesis Markup Language (SSML) tags to control speech output on the Generative engine, just as before. The low-latency streaming API makes it easy to build contact center experiences, chatbots, and large language model (LLM) based agentic voice applications for real-time conversations. The richness and variety of voice options are also well suited for news, media, entertainment, e-learning, and accessibility use cases. This launch also expands the Amazon Polly Generative offering to AWS GovCloud, providing more options for public sector and regulated industries.</p> \n<p>All new Generative voices are now available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt), Europe (Zurich), Europe (London), Asia Pacific (Sydney), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Tokyo), Canada (Central), and AWS GovCloud (US-West).</p> \n<p>To hear how Polly voices sound, go to <a href=\"https://aws.amazon.com/polly/features/?nc=sn&amp;loc=3\"><u>Amazon Polly Features</u></a>. For more details on the Polly offerings and use, see the <a href=\"https://docs.aws.amazon.com/polly/latest/dg/what-is.html\"><u>Amazon Polly documentation</u></a> and <a href=\"https://aws.amazon.com/polly/pricing/?nc=sn&amp;loc=4\"><u>pricing page</u></a>.</p>",
-          "categories": []
-        },
-        {
-          "title": "AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium",
-          "published": "2026-10-20T15:00:00+00:00",
-          "summary": "<p>Today, AWS launched the public beta of TorchNeuron, an open source native PyTorch backend for AWS Trainium. Trainium is a portfolio of AI chips designed to deliver high performance and cost efficiency for deep learning AI training and inference workloads. TorchNeuron enables AI scientists and researchers to experiment and build models with PyTorch natively on Trainium.</p> \n<p>With TorchNeuron, developers can enable their PyTorch code on Trainium simply by switching to .to('neuron') while maintaining full PyTorch compatibility with eager execution, torch.compile, and standard PyTorch APIs. Additionally, TorchNeuron integrates with Neuron Kernel Interface (NKI) to enable custom operators and performance optimization for Trainium hardware.</p> \n<p>TorchNeuron is available as open source through the <a href=\"https://github.com/aws-neuron/torch-neuronx\">TorchNeuron github repo</a> for Amazon EC2 Trainium2 instances and Amazon EC2 Trainium3 instances.</p> \n<p>To learn more about TorchNeuron and AWS Trainium accelerators, visit the <a href=\"https://aws.amazon.com/ai/machine-learning/neuron/\">AWS Neuron page</a>.</p>",
-          "categories": [
-            "general:products/amazon-ec2,marketing:marchitecture/compute,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "Structured outputs for Claude models available on Amazon Bedrock",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/",
-          "published": "2026-10-20T14:00:00+00:00",
-          "summary": "<p>Amazon Bedrock now supports structured outputs for all Anthropic Claude models across both the bedrock-runtime and the bedrock-mantle endpoint. Whether you call Claude through boto3 and the bedrock-runtime APIs or through the Messages API and the bedrock-mantle endpoint, you can now receive schema-compliant JSON responses that conform to a defined structure, without custom parsing, retry logic, or post-processing.</p> \n<p>With structured outputs for Claude on Amazon Bedrock, you can automate reliable, schema-compliant tasks across industries. Examples include extracting every required field from financial earnings reports and compliance documents, parsing clinical notes into Electronic Health Records (EHR), and enriching product catalogs with consistent, validated results. You can also analyze contracts for key terms, parties, and obligations, or power intelligent support ticket routing where intents, sentiments, and entities always match your application's data model.</p> \n<p>To learn more, see the Amazon Bedrock <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages-structured-outputs.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>&nbsp;. Structured outputs is available where claude models are available. For more information check the&nbsp;<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\" target=\"_blank\" rel=\"noopener noreferrer\">regional availability</a> details page.</p>",
-          "categories": [
-            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "AWS Clean Rooms now supports Databricks as a data source",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-clean-rooms-supports-databricks",
-          "published": "2026-10-20T12:23:00+00:00",
-          "summary": "<p>AWS Clean Rooms now supports <a href=\"https://docs.aws.amazon.com/clean-rooms/latest/userguide/prepare-data-databricks.html\" target=\"_blank\">Databricks as a data source</a>, so collaboration members and their partners can securely analyze data managed in Databricks without moving or revealing the source data. Members query a Databricks table shared through Delta Sharing directly in a collaboration. Databricks joins AWS Glue, Snowflake, and Amazon Athena as supported data sources in AWS Clean Rooms.</p> \n<p>Previously, members with data in Databricks had to export or replicate it into Amazon S3 to use it as a table in a collaboration, which added pipeline work and an extra copy of the data to govern. Now members can register a Databricks table directly by providing the workspace URL, schema, and table along with a Delta Sharing share, and make it available to a collaboration. For example, a retailer that manages its customer data in Databricks can collaborate with a media partner on campaign measurement in AWS Clean Rooms, running approved analyses against its Databricks data without first building and maintaining an export to S3.</p> \n<p>AWS Clean Rooms helps companies and their partners easily analyze and collaborate on their collective datasets without revealing or copying one another’s underlying data. For more information about the AWS Regions where AWS Clean Rooms is available, see the <a href=\"https://docs.aws.amazon.com/general/latest/gr/clean-rooms.html#clean-rooms_region\" target=\"_blank\">AWS Regions</a> table. To learn more about collaborating with AWS Clean Rooms, visit <a href=\"https://aws.amazon.com/clean-rooms/\" target=\"_blank\">AWS Clean Rooms</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/analytics,general:products/aws-clean-rooms"
-          ]
-        },
-        {
-          "title": "Amazon Bedrock Guardrails now supports Standard tier for contextual grounding checks",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-guardrails-grounding-standard/",
-          "published": "2026-10-20T08:00:00+00:00",
-          "summary": "<p>Amazon Bedrock Guardrails now offers a Standard tier for contextual grounding checks, which detect and filter hallucinations by checking whether a model response is grounded in your reference source and relevant to the user's query. The Standard tier is more robust than the Classic tier. It supports responses that include reasoning or conversational content, scores differently worded responses with the same meaning more consistently, and provides more comprehensive language support, matching the Standard tier for content filters and denied topics. Amazon Bedrock Guardrails provides configurable safeguards for generative AI applications on any foundation model through the ApplyGuardrail API.</p>\n<p>Until now, contextual grounding checks applied strict grounding suited to summarization, paraphrasing, and question answering. With the Standard tier, you can also apply contextual grounding checks to conversational applications and to responses that reason over the source. You choose the tier for each guardrail in the Amazon Bedrock console or API. Existing guardrails keep the Classic tier until you change them. Pricing is the same for both tiers. To use the Standard tier, your guardrail must use cross-Region inference with a guardrail profile.</p>\n<p>The Standard tier for contextual grounding checks is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Europe (Frankfurt), Europe (Ireland), Europe (Milan), Europe (Paris), Europe (Spain), Europe (Stockholm), and Asia Pacific (Tokyo). To learn more, see the Amazon Bedrock Guardrails documentation on <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-contextual-grounding-check.html\">contextual grounding checks</a> and <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-tiers.html\">safeguard tiers</a>, or visit the <a href=\"https://aws.amazon.com/bedrock/guardrails\">Amazon Bedrock Guardrails product page</a>.</p>",
-          "categories": [
-            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "Amazon Bedrock AgentCore を使用した電力・公益事業向けのインテリジェントなアラーム管理",
+          "link": "https://aws.amazon.com/jp/blogs/news/intelligent-alarm-management-for-power-and-utilities-using-amazon-bedrock-agentcore/",
+          "published": "2026-10-28T00:46:01+00:00",
+          "summary": "北米の大手電力会社が Amazon Bedrock AgentCore 上で運用しているマルチエージェント AI アーキテクチャを紹介します。このアーキテクチャにより、オペレーターがシフトごとに何十回も、複数のシステムをまたいで手作業で行っていた調査が不要になり、アラームのトリアージにかかる時間が数時間から数分に短縮されています。業界の課題、マルチエージェントの設計、GitHub 上のリファレンス実装について説明します。",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon Bedrock AgentCore",
+            "Amazon Bedrock Knowledge Bases",
+            "Amazon CloudWatch",
+            "Amazon Simple Storage Service (S3)",
+            "AWS CloudTrail",
+            "AWS Identity and Access Management (IAM)",
+            "AWS Key Management Service",
+            "AWS Secrets Manager",
+            "Energy",
+            "Industries"
+          ]
+        },
+        {
+          "title": "スペックファースト: SAP ABAP のスペック駆動開発",
+          "link": "https://aws.amazon.com/jp/blogs/news/spec-driven-development-for-sap-abap/",
+          "published": "2026-10-27T11:36:45+00:00",
+          "summary": "AI コーディングエージェントで ABAP を生成する際、スペックがなければ開発上の判断が記録に残りません。本記事では、Kiro CLI 上で動作する AWS Coding Plugin for SAP ABAP を使ったスペック駆動開発 (SDD) の進め方を紹介します。良い ABAP スペックの書き方、AI-DLC に沿ったスペックからトランスポートリリースまでの流れ、ステアリングファイルによるチーム標準の適用を解説します。スペックを Git に残すことで、ドキュメントのない既存プログラムにも変更のたびに最新の仕様が蓄積されます。",
+          "categories": [
+            "Kiro",
+            "SAP on AWS"
+          ]
+        },
+        {
+          "title": "Claude Haiku 5.5 が Kiro で利用可能になりました",
+          "link": "https://aws.amazon.com/jp/blogs/news/haiku-5-5/",
+          "published": "2026-10-27T11:13:41+00:00",
+          "summary": "Claude Haiku 5.5 が本日より Kiro IDE、CLI、Web、Crew のすべてで利用可能になりました。Claude 5.5 ファミリーで最も高速なモデルで、大量に実行され素早い応答が求められる作業を想定しています。Claude Haiku 4.5 から明確に進化しました。Haiku 5.5 の登場で、Claude 5.5 の 3 つのモデルがすべて Kiro で使えるようになります。最も難しい問題には Opus 5.5、日常的なコーディングには Sonnet 5.5 があり、処理量や速度が何より重要な場面では Haiku 5.5 が担います。",
+          "categories": [
+            "Amazon Q Developer",
+            "Developer Tools",
+            "Kiro"
+          ]
+        },
+        {
+          "title": "AWS Coding Plugin for SAP ABAP, powered by Kiro のご紹介",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-aws-coding-plugin-for-sap-abap/",
+          "published": "2026-10-27T11:12:15+00:00",
+          "summary": "Kiro を搭載した AWS Coding Plugin for SAP ABAP をリリースしました。SAP の ABAP Development Tools (ADT) と併せて Eclipse 上でスペック駆動開発 (SDD) を実現し、開発者とエージェントが協働して要件定義・設計・実装を進められます。IBM Consulting では、カスタム ABAP 拡張の開発時間を最大 30% 短縮し、開発後の不具合を最大 45% 削減しました。ECC から S/4HANA、BTP ABAP まで幅広いシステムに対応し、クリーンコアと RISE への移行を加速します。",
+          "categories": [
+            "SAP on AWS",
+            "#saponaws",
+            "SAP"
+          ]
+        },
         {
           "title": "週刊生成AI with AWS – 2026/10/19 週",
           "link": "https://aws.amazon.com/jp/blogs/news/weekly-genai-20261019/",
@@ -526,55 +579,6 @@
             "AWS Cost and Usage Report",
             "Billing & Account Management",
             "Kiro"
-          ]
-        },
-        {
-          "title": "Kiro IDE と CLI にメモリ機能が登場",
-          "link": "https://aws.amazon.com/jp/blogs/news/memory-in-ide-cli/",
-          "published": "2026-10-26T01:09:59+00:00",
-          "summary": "本日、Kiro IDE と CLI にメモリ機能を導入します。Kiro は、あなたが好む作業の進め方、リポジトリ固有のコマンドや規約、受けた訂正、デバッグで得た知見、すでに除外したアプローチを覚えておけるようになります。それらが再び関係する場面になると、Kiro はあなたのコンテキストを引き継ぎます。コンテキストを説明し直したり同じ訂正を繰り返したりする時間が減り、Kiro は言われなくてもあなたの好みに沿って動けるようになり、使い込むほど役に立つ存在になります。",
-          "categories": [
-            "Amazon Q Developer",
-            "Developer Tools",
-            "Kiro"
-          ]
-        },
-        {
-          "title": "Amazon OpenSearch intelligent ingestion で Amazon S3 のデータから RAG 対応インデックスを構築する",
-          "link": "https://aws.amazon.com/jp/blogs/news/build-rag-ready-indexes-from-amazon-s3-with-amazon-opensearch-intelligent-ingestion/",
-          "published": "2026-10-25T23:34:06+00:00",
-          "summary": "契約書、製品マニュアル、調査レポートなど、企業の価値ある知識は Amazon S3 に保存されたドキュメントに蓄積されています。本記事では、Amazon OpenSearch Serverless (NextGen) の新機能である Amazon OpenSearch intelligent ingestion を使い、こうしたドキュメントの解析、画像の説明生成、チャンク分割、ベクトル埋め込みの生成、インデックス化までを、取り込みパイプラインを運用せずに実行する方法を紹介します。",
-          "categories": [
-            "Amazon OpenSearch Service",
-            "Amazon Simple Storage Service (S3)",
-            "Announcements",
-            "Foundational (100)"
-          ]
-        },
-        {
-          "title": "【開催報告 & 資料公開】AWS 秋のクラウドオペレーション祭り 2026",
-          "link": "https://aws.amazon.com/jp/blogs/news/awsopsfes2026autumn/",
-          "published": "2026-10-23T04:45:18+00:00",
-          "summary": "みなさん、こんにちは。 シニアスペシャリストソリューションアーキテクトの加藤です。 2026 年 10 月 7 […]",
-          "categories": [
-            "Amazon CloudWatch",
-            "AWS Cloud Financial Management",
-            "AWS Well-Architected Framework",
-            "DevOps",
-            "Enterprise governance and control",
-            "General"
-          ]
-        },
-        {
-          "title": "Amazon ECS ゲートウェイの紹介：ECS サービス向けの完全マネージド型イングレスソリューション",
-          "link": "https://aws.amazon.com/jp/blogs/news/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/",
-          "published": "2026-10-22T14:45:10+00:00",
-          "summary": "プラットフォームチームが Amazon Elastic Container Service (Amazon E […]",
-          "categories": [
-            "Amazon Elastic Container Service",
-            "Compute",
-            "Launch",
-            "News"
           ]
         }
       ]
