@@ -1,9 +1,117 @@
 {
-  "generated_at": "2026-10-30T01:54:59.705834+00:00",
+  "generated_at": "2026-10-31T01:33:55.246020+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon Bedrock expands API support and introduces Cross-Region Inferencing for OpenAI models in AWS GovCloud (US)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/",
+          "published": "2026-10-30T20:43:00+00:00",
+          "summary": "<p>Amazon Bedrock now supports the OpenAI GPT-5.6 models (Terra and Luna) on the bedrock-runtime endpoint, with support for the Responses, Converse, and Chat Completions APIs in AWS GovCloud (US). It also adds support for Cross-Region Inference, allowing customers to use Cross-Region Inference within AWS GovCloud (US) regions to access higher throughput and increased redundancy.&nbsp;&nbsp;</p> \n<p>Cross-Region Inference automatically routes inference requests across both AWS GovCloud (US) Regions to give you higher throughput, without you needing to manage capacity across multiple Regions. Cross-Region Inference within AWS GovCloud (US) routes requests across both regions so you can scale while maintaining US data sovereignty, giving you the broadest access to Bedrock capacity and the highest throughput during demand spikes. This launch also expands API support; you can use OpenAI GPT models with the Responses API, Chat Completions API, and the Converse API on the bedrock-runtime endpoint. Because these native OpenAI APIs now run on bedrock-runtime, the models work with the same account-level controls you already use for other models on Bedrock: usage appears in Bedrock model invocation logging (deliverable to Amazon S3 or Amazon CloudWatch Logs) and in Amazon CloudWatch metrics covering invocation counts, token counts, latency, throttles, and errors, and it is itemized in AWS Cost Explorer and the AWS Cost and Usage Report so you can attribute spend by model.</p> \n<p>Cross-Region Inference for OpenAI models is available in all AWS Regions where OpenAI models on Amazon Bedrock are offered. To get started, review the model cards for GPT-5.6 (Terra and Luna) in the <a href=\"https://docs.aws.amazon.com/bedrock/\">Amazon Bedrock User Guide.</a></p>",
+          "categories": [
+            "general:products/aws-govcloud-us,general:products/amazon-bedrock"
+          ]
+        },
+        {
+          "title": "Web Search now available on Kiro in AWS GovCloud (US)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/kiro-web-search-aws-govcloud-us/",
+          "published": "2026-10-30T19:40:00+00:00",
+          "summary": "<p>Kiro web search gives the agent real-time access to current information on the internet, so its answers draw on up-to-date search results and page content. The agent uses web search automatically when a question involves recent changes or topics beyond the model's training data. Answers that use web results include citations.</p> \n<p>Kiro enterprise administrators can turn off web search and web fetch for their organization from the Kiro console under Settings. Teams can also remove web tools from individual custom agents, or block them with capability-based permission rules.</p> \n<p>For more details, visit the&nbsp;<a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-kiro.html\">AWS GovCloud (US) documentation</a>, the <a href=\"https://kiro.dev/docs/enterprise/monitor-and-track/\">monitoring and tracking guide</a>, or contact your AWS account team. To learn more about Kiro, visit the <a href=\"https://kiro.dev/\">Kiro product page</a>.</p>",
+          "categories": [
+            "general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer automatically saves in-progress emails as drafts",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-email-draft-save/",
+          "published": "2026-10-30T19:30:00+00:00",
+          "summary": "<p>Amazon Connect Customer automatically saves in-progress emails as drafts, helping agents resume work without losing progress when connectivity is interrupted or when their browser is accidentally closed or refreshed. When agents return, their drafts are restored with the message body, recipients, subject line, and attachment references intact. Customers can also access saved draft data in their Amazon S3 buckets to build integrations with other applications.</p>",
+          "categories": [
+            "marketing:marchitecture/contact-center,general:products/amazon-connect"
+          ]
+        },
+        {
+          "title": "Daybreak Red from OpenAI now available to eligible customers on Amazon Bedrock in AWS GovCloud (US-East)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-daybreak-red-govcloud-east/",
+          "published": "2026-10-30T18:20:00+00:00",
+          "summary": "<p>Security teams need powerful tools to find vulnerabilities, test exploits, and build defenses. Daybreak Red from OpenAI is now available to eligible customers on Amazon Bedrock in AWS GovCloud (US-East), bringing advanced AI to this work.</p> \n<p>&nbsp;</p> \n<p>Part of OpenAI’s Daybreak cyber defense initiative, Daybreak Red: GPT-5.6 Cyber is built for authorized vulnerability research, exploit reproduction, and mitigation development. It gives verified defenders more room to investigate complex security problems, with fewer refusals for this work and stronger identity verification, monitoring, and access controls.</p> \n<p>Daybreak Red runs on Bedrock’s next-generation inference engine, with zero-operator access enforced at the chip. Your inference data is not used to train models, and you do not need to share your Daybreak Red data with OpenAI.</p> \n<p>&nbsp;</p> \n<p>The model is available in US East (Ohio) and AWS GovCloud (US-East). Access to the model requires <a href=\"https://openai.com/form/enterprise-trusted-access-for-cyber/\">enrollment in Daybreak access</a> from OpenAI.&nbsp;To get started, contact OpenAI or your AWS account team about Daybreak eligibility. Once approved, work with your AWS account team to enable access.&nbsp;Learn more in the <a href=\"https://aws.amazon.com/blogs/machine-learning/accelerate-cyber-defense-with-openai-and-aws-daybreak-red-daybreak-blue-now-available-to-eligible-customers-on-amazon-bedrock/\">blog</a>.</p>",
+          "categories": [
+            "general:products/amazon-bedrock,general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon CloudFront now provides viewer ISP and post-quantum TLS details",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-viewer-isp-post-quantum-visbility/",
+          "published": "2026-10-30T18:15:00+00:00",
+          "summary": "<p>Amazon CloudFront can now forward two new optional headers to your origin. The CloudFront-Viewer-ISP header contains the name of the viewer's internet service provider (ISP), so you can see which network a request came from. The CloudFront-Viewer-TLS-Details header describes the cryptography used on each viewer's TLS connection, so you can see whether a connection used post-quantum cryptography (PQC).</p> \n<p>With CloudFront-Viewer-ISP, you can break down traffic and performance by network. You can also isolate unusual traffic from a single provider. CloudFront-Viewer-TLS-Details includes the key exchange, signature scheme, and signature public key type for each connection. You can use it to measure the share of viewers that actually connect with PQC and identify clients that do not yet do so. To forward either header to your origin, add it to an origin request policy and attach the policy to your distribution.</p> \n<p>To get started, see <a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/adding-cloudfront-headers.html\">adding CloudFront headers</a> and&nbsp;<a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/controlling-origin-requests.html\">controlling origin requests with a policy</a> in the Amazon CloudFront Developer Guide</p>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:products/amazon-cloudfront"
+          ]
+        },
+        {
+          "title": "Amazon MSK now supports TLS 1.3 for data in transit",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-tls/",
+          "published": "2026-10-30T17:00:00+00:00",
+          "summary": "<p>Amazon MSK now supports version 1.3 of Transport Layer Security (TLS) protocol for MSK Provisioned clusters through encryption policies. TLS 1.3 delivers faster, more secure encryption for streaming data and is increasingly required by compliance frameworks and enterprise security standards. It is also one of the prerequisites for post-quantum cryptography for protecting data against attacks that collect encrypted traffic now with the intent to decrypt it later.</p> \n<p>Customers can opt in to TLS 1.3 by selecting a named security policy in their MSK cluster configuration, with no change to existing clusters until a policy is applied. A named security policy defines which TLS version and cipher suites a cluster can accept. With this launch, Amazon MSK provides a set of policies customers can select and any connection that does not meet the selected policy requirements is rejected. This allows customers to stay in control of their security and compliance posture. Policies that support both TLS 1.2 and TLS 1.3 allow connections to negotiate the highest version the client supports allowing clients that support TLS 1.3 to connect on it immediately while clients on TLS 1.2 continue to connect on TLS 1.2. This lets customers upgrade their clients at their pace before applying a stricter policy. Customers can also select stricter policies that align closer with their compliance requirements to restrict connections to TLS 1.3 only.</p> \n<p>This capability is available at no additional cost in all AWS Regions where Amazon MSK Provisioned is available. To learn more, see the <a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/security.html\">Amazon MSK documentation</a>.</p>",
+          "categories": [
+            "general:products/aws-govcloud-us,general:products/amazon-msk,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "Amazon RDS for Oracle no longer requires automatic minor version upgrades for JVM, Spatial, Locator, and OLAP options",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/oracle-jvm-spatial-locator-olap-options-amvu-optional/",
+          "published": "2026-10-30T17:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/oracle/\">Amazon Relational Database Service (Amazon RDS) for Oracle</a> now lets you turn off automatic minor version upgrades on new and existing DB instances that use the JVM, Spatial, Locator, or OLAP option. Previously, these options required automatic minor version upgrades to be enabled.</p> \n<p>With this change, you decide when to apply minor version upgrades to DB instances using these options. If you turn off automatic minor version upgrades, we recommend that you apply new minor versions regularly so your DB instances keep the latest Oracle security fixes. To keep automatic minor version upgrades turned on and still control the order in which your environments are upgraded, you can use <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS.Maintenance.AMVU.UpgradeRollout.html\">AWS Organizations upgrade rollout policy</a>.</p> \n<p>This change is available in <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">all commercial AWS Regions and the AWS GovCloud (US) Regions</a> where Amazon RDS for Oracle is available. To learn more about options available in Amazon RDS for Oracle, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.Options.html\">Adding options to Oracle DB instances</a> in the Amazon RDS User Guide.</p>",
+          "categories": [
+            "general:products/amazon-rds-for-oracle,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "AWS WAF announces automatic SDK integration for Amazon CloudFront distributions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-waf-automatic-sdk-integration-amazon-cloudfront/",
+          "published": "2026-10-30T15:57:00+00:00",
+          "summary": "<p>AWS WAF announces automatic SDK integration for Amazon CloudFront distributions. When you enable it, CloudFront adds the script tag for the AWS WAF JavaScript SDK to the HTML it serves, with no change to your application code, build process, or deployment. The SDK supplies the client-side signals used by three AWS WAF managed rule groups: Bot Control at the targeted inspection level, Fraud Control account takeover prevention (ATP), and Fraud Control account creation fraud prevention (ACFP).<br> <br> Previously, supplying those signals required you to add a script tag to every page of every application you wanted to protect, and to maintain that tag across releases. For teams running many applications, or serving pages produced by systems they do not control, this created recurring work and a common source of misconfiguration, where a protection was enabled in AWS WAF but the client-side integration was missing. Enabling automatic SDK integration on the web ACL protecting your CloudFront distribution removes that per-application work.<br> <br> Automatic SDK integration is available for web ACLs that are used with Amazon CloudFront and contain at least one of those managed rule groups. You can configure it using the AWS Management Console, CLI, SDK, CDK, or CloudFormation. In the AWS WAF console, the setting appears with the managed rule group settings and is on by default for new web ACLs that you create with one of those rule group. When you create a web ACL programmatically, the setting is off by default. Web ACLs created before this release are unchanged.<br> <br> There is no additional charge for automatic SDK integration. For requirements, limitations, and Content Security Policy guidance, see <a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/waf-challenge-javascript-sdk-injection.html\">Automatic SDK integration for CloudFront distributions</a> in the AWS WAF Developer Guide.</p>",
+          "categories": [
+            "general:products/aws-waf,marketing:marchitecture/security-identity-and-compliance,marketing:marchitecture/networking-and-content-delivery,general:products/amazon-cloudfront"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer now supports versioning and aliasing for flows",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-versioning-aliasing/",
+          "published": "2026-10-30T15:00:00+00:00",
+          "summary": "<p>Amazon Connect Customer now supports versioning and aliasing for flows and flow modules, simplifying how you build, test, and deploy customer experience flows while minimizing impact to live end-customer traffic. With this launch, you can now create immutable versions of a flow and attach one or more friendly names (i.e., aliases) to a version, then point resources such as queues, quick connects, and phone numbers at an alias instead of a specific version.</p> \n<p>Rolling out a new version takes a single update, with no need to republish or relink each resource. For example, you can publish an updated customer experience flow as a new version and validate it in a test environment while live traffic stays on the current version, then repoint the production alias to move every phone number to the new version in a single update.</p> \n<p>This feature is available in all AWS Regions where Amazon Connect Customer is offered. To learn more, see <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/flows-versions-aliases.html\">Flow versioning and aliasing</a> in the Amazon Connect Customer Administrator Guide. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the <a href=\"https://aws.amazon.com/products/connect/customer/\">Amazon Connect Customer website.</a></p>",
+          "categories": [
+            "general:products/amazon-connect"
+          ]
+        },
+        {
+          "title": "Managed Prometheus collectors now support Amazon MSK consumer-group metrics",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/prometheus-collectors-msk-metrics/",
+          "published": "2026-10-30T08:00:00+00:00",
+          "summary": "<p>Managed Prometheus collectors now support Amazon MSK consumer-group metrics for <a href=\"https://aws.amazon.com/prometheus/\">Amazon Managed Service for Prometheus</a> and <a href=\"https://aws.amazon.com/cloudwatch/\">Amazon CloudWatch</a>. The integration collects Kafka exporter metrics and consumer-group lag metrics from your Amazon MSK clusters.</p>\n<p>Managed Prometheus collectors discover and collect Prometheus metrics from your workloads, so you don't run and operate collection agents yourself. You ingest the collected metrics into an Amazon Managed Service for Prometheus workspace or into Amazon CloudWatch, where you query and analyze them. You monitor Kafka stream health and consumer performance with consumer-group metrics. This helps you detect processing bottlenecks in your streaming applications.</p>\n<p>This feature is available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where managed Prometheus collectors are generally available. To learn more, see the documentation for <a href=\"https://docs.aws.amazon.com/prometheus/latest/userguide/prom-msk-kafka-exporter.html\">Amazon Managed Service for Prometheus</a> and <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/managed-prometheus-collectors-msk-kafka-exporter.html\">Amazon CloudWatch</a>.</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch,general:products/amazon-msk"
+          ]
+        },
+        {
+          "title": "AWS Glue Data Catalog now supports Apache Iceberg table optimization in the US West (N. California) Region",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/glue-data-catalog-optimizers-us-west-1/",
+          "published": "2026-10-30T08:00:00+00:00",
+          "summary": "<p>AWS Glue Data Catalog now supports automatic table optimization for Apache Iceberg tables in the US West (N. California) Region. Apache Iceberg is an open table format that delivers fast query performance over large tables in data lakes. With this launch, you can enable table optimization for individual tables or for all tables in your Data Catalog.</p> \n<p>Apache Iceberg tables accumulate small files, snapshots, and unreferenced files with every write, which slows queries and increases storage costs over time. Table optimization continuously monitors your tables to compact small files in the background, remove snapshots that are past your retention settings, and delete unreferenced files that are no longer needed. You can monitor each run from the AWS Glue console, Amazon CloudWatch metrics, and logs.</p> \n<p>You can enable table optimization using the AWS Glue console, AWS CLI, or AWS SDKs. For the full list of Regions where table optimization is available, see <a href=\"https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.html\">Supported Regions for table optimizers</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/glue/latest/dg/table-optimizers.html\">Optimizing Iceberg tables</a> in the AWS Glue Developer Guide. To get started, visit the <a href=\"https://aws.amazon.com/glue/\">AWS Glue product page</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/analytics,general:products/aws-glue"
+          ]
+        },
+        {
+          "title": "Amazon SageMaker AI inference now supports GPU partitioning for real-time endpoints",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/",
+          "published": "2026-10-30T08:00:00+00:00",
+          "summary": "<p>Amazon SageMaker AI inference now supports GPU partitioning, enabling you to run several models on a single GPU instead of dedicating a whole accelerator to each one. Using NVIDIA Multi-Instance GPU (MIG) technology, SageMaker AI divides a GPU into as many as seven isolated partitions, each with its own memory and compute. Customers serving small and mid-size models, such as fine-tuned variants, embedding models, rerankers, and classifiers, previously had to give every model an entire accelerator, so an instance hosted no more models than it had GPUs and paid for GPU capacity those models could never use.</p>\n<p>With GPU partitioning, you choose how to divide the GPUs behind your endpoint and place each model on a partition sized to fit it. Several models then share one accelerator with hardware-enforced isolation, so a busy model cannot take memory or throughput from the models beside it. Right-sizing an accelerator to a workload also opens up newer instance generations that would otherwise be more capacity than a single model needs. You configure GPU partitioning when you create an endpoint that hosts inference components, and you continue to invoke each model by name, so your application code doesn't change.</p>\n<p>GPU partitioning is available on P4d, P5, G7, and G7e instances in US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Singapore), Asia Pacific (Tokyo), Europe (Frankfurt), and Europe (Ireland). To learn more, visit the <a href=\"https://aws.amazon.com/sagemaker/ai/deploy/\">Amazon SageMaker AI deployment page</a> and see the <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/inference-components-accelerator-partitioning.html\">Amazon SageMaker AI Developer Guide</a>.</p>",
+          "categories": [
+            "general:products/amazon-sagemaker"
+          ]
+        },
         {
           "title": "AWS Marketplace now enables partners to list once and sell through multiple subsidiary accounts",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-marketplace-subsidiary-account-authorization",
@@ -77,15 +185,6 @@
           ]
         },
         {
-          "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-version-13-2/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>Amazon Managed Grafana now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin.</p>\n<p>With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through version control. Dynamic dashboards bring a more adaptable approach to layout and paneling. You can construct responsive views driven by conditions that respond to the data and variables in scope. With Amazon CloudWatch data source plugin support for Prometheus Query Language, you can use PromQL to query metrics that CloudWatch takes in via its OpenTelemetry (OTLP) endpoint, in addition to the existing Metric Search and Metrics Insights query types.</p>\n<p>In-place upgrade to Grafana 13.2 is supported in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS regions</a> where Amazon Managed Grafana is generally available. You can upgrade with just a few clicks from the AWS Console, AWS SDK or AWS CLI. For a complete list of new features, refer to <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v13\">Differences between Grafana versions</a> in the Amazon Managed Grafana User Guide. For upgrade instructions, see <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-version-update.html\">Update your workspace version</a>. To learn more about Amazon Managed Grafana features and its pricing, visit the <a href=\"https://aws.amazon.com/grafana/\">product page</a> and <a href=\"https://aws.amazon.com/grafana/pricing/\">pricing page</a>.</p>",
-          "categories": [
-            "general:products/amazon-cloudwatch,general:products/amazon-managed-service-for-grafana,marketing:marchitecture/management-and-governance"
-          ]
-        },
-        {
           "title": "Amazon SageMaker AI now supports SOCI-indexed images to start training jobs in seconds",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-ai-soci-images-training/",
           "published": "2026-10-29T08:00:00+00:00",
@@ -95,12 +194,39 @@
           ]
         },
         {
+          "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-version-13-2/",
+          "published": "2026-10-29T08:00:00+00:00",
+          "summary": "<p>Amazon Managed Grafana now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin.</p>\n<p>With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through version control. Dynamic dashboards bring a more adaptable approach to layout and paneling. You can construct responsive views driven by conditions that respond to the data and variables in scope. With Amazon CloudWatch data source plugin support for Prometheus Query Language, you can use PromQL to query metrics that CloudWatch takes in via its OpenTelemetry (OTLP) endpoint, in addition to the existing Metric Search and Metrics Insights query types.</p>\n<p>In-place upgrade to Grafana 13.2 is supported in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS regions</a> where Amazon Managed Grafana is generally available. You can upgrade with just a few clicks from the AWS Console, AWS SDK or AWS CLI. For a complete list of new features, refer to <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v13\">Differences between Grafana versions</a> in the Amazon Managed Grafana User Guide. For upgrade instructions, see <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-version-update.html\">Update your workspace version</a>. To learn more about Amazon Managed Grafana features and its pricing, visit the <a href=\"https://aws.amazon.com/grafana/\">product page</a> and <a href=\"https://aws.amazon.com/grafana/pricing/\">pricing page</a>.</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch,general:products/amazon-managed-service-for-grafana,marketing:marchitecture/management-and-governance"
+          ]
+        },
+        {
+          "title": "Amazon Redshift announces hands-off automated cross-region backups",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-automated-cross-region-backups/",
+          "published": "2026-10-29T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/redshift/\">Amazon Redshift </a>announces automated cross-region snapshot copy for Amazon Redshift. You can now have your Amazon Redshift provisioned cluster or serverless workgroup automatically backed up to the target AWS region(s) you choose. The automated cross-region snapshot copy feature will automatically, always copy the most recent snapshot with no manual intervention, continuously and incrementally and ensure your cluster is backed-up to the destination region(s), giving you additional options for business continuity.</p> \n<p>The benefit to enabling the new automated cross-region snapshot copy feature is that you do not need to manually intervene to initiate a cross-region snapshot copy when an unplanned outage event occurs. Also, this feature takes the most recent snapshot available on your system to copy to the destination region, so you don't have to wait for the next snapshot to be taken, making it independent of your snapshot schedule on your local cluster. To configure cross-region snapshot copy, you need to enable the automated cross-region snapshot copy feature for each cluster and configure the destination region(s) to copy snapshots and how long to keep copied automated snapshots in the destination Region. You can choose the retention period for automated snapshots in the destination region. User snapshots are retained until you explicitly delete them. To restore the snapshot in the destination region, use the snapshot restore feature to a new provisioned cluster or serverless workgroup. Snapshots copied with the automated cross-region snapshot copy feature have names prefixed with `copy` in the destination region.</p> \n<p>This feature is available in all regions AWS Commercial and GovCloud (US) regions.</p> \n<p>For more details on configuration and usage see the Amazon Redshift documentation sections for cross-region snapshot copy: <a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html\">Amazon Redshift snapshots and backups</a>. For details on restoring a cluster from a snapshot, see the documentation for <a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshot-restore-cluster-from-snapshot.html\">Restoring a cluster from a snapshot</a>. For pricing information, please review the 'Backup and storage' and 'Data transfer' sections of the <a href=\"https://aws.amazon.com/redshift/pricing/\">Amazon Redshift pricing page</a>.</p>",
+          "categories": [
+            "general:products/amazon-redshift"
+          ]
+        },
+        {
           "title": "AWS Backup now supports cross-account management and cross-account backup in the AWS European Sovereign Cloud",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-cross-account-esc/",
           "published": "2026-10-29T08:00:00+00:00",
           "summary": "<p>AWS Backup now supports cross-account management, cross-account backup, and delegated administrators in the AWS European Sovereign Cloud (Germany) Region. These capabilities help you centrally manage, monitor, and copy backups across the accounts in your organization using AWS Organizations.</p> \n<p>With cross-account management, you can deploy organization-wide backup policies from your AWS Organizations management account or a delegated administrator account. You can also monitor backup, copy, and restore jobs across all of your organization accounts from one place. With cross-account backup, you can copy recovery points to a backup vault in another account in your organization, which adds protection against accidental or malicious deletion in the source account. You can also register a member account as a delegated administrator, so your teams can manage backups across your organization without needing access to your management account.</p> \n<p>There is no additional charge to use these capabilities; standard AWS Backup pricing applies. To learn more, see the AWS Backup documentation at <a href=\"https://docs.aws.amazon.com/aws-backup/\">https://docs.aws.amazon.com/aws-backup/</a>. To get started, visit the AWS Backup console at <a href=\"https://console.aws.amazon.com/backup\">https://console.aws.amazon.com/backup</a>.</p>",
           "categories": [
             "general:products/aws-organizations,general:products/aws-backup,marketing:marchitecture/management-and-governance,marketing:marchitecture/storage"
+          ]
+        },
+        {
+          "title": "Amazon SageMaker Unified Studio now supports custom designations",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-designations/",
+          "published": "2026-10-29T08:00:00+00:00",
+          "summary": "<p>Amazon SageMaker Unified Studio now supports custom designations, named permission sets that control what actions individual project members can perform. Previously, project members could only be assigned Owner or Contributor designations, which provided nearly identical permissions. With custom designations, administrators define permission sets that align with their organization's personas and assign them to project members. Designations govern all actions within a project, providing administrators with a single permission model for separation of duties.</p>\n<p>Administrators create designations in the SageMaker Unified Studio administration portal by selecting permissions grouped into categories such as Catalog, Subscriptions, Connections, Notebooks, and Data Agent. For example, a \"Data Steward\" designation might include permissions to approve subscription requests and publish assets, while an \"Analyst\" designation is limited to querying data and running notebooks. Each designation is defined at the domain level and assigned across any project in that domain. When a member performs an action, SageMaker Unified Studio evaluates their assigned designation and permits or denies the request. Data engineers, stewards, analysts, and automated pipelines can now work within the same project with differentiated access, removing the need to create separate projects to isolate permissions. Every domain includes two managed designations, Owner and Contributor, and administrators can create up to 10 additional designations.</p>\n<p>This feature is available in all <a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\">AWS Regions</a> where Amazon SageMaker Unified Studio is available. To learn more, visit the <a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/designations.html\">Designations</a> documentation.</p>",
+          "categories": [
+            "general:products/amazon-sagemaker"
           ]
         },
         {
@@ -327,136 +453,97 @@
           "categories": [
             "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
           ]
-        },
-        {
-          "title": "Amazon WorkSpaces Core Managed Instances now supports ModifyVolume API",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-workspaces-cmi-modifyvolume/",
-          "published": "2026-10-26T18:00:00+00:00",
-          "summary": "<p>Amazon WorkSpaces Core Managed Instances now supports the ModifyVolume API, which lets you change volume size, volume type, IOPS, or throughput in place, without detaching the volume or restarting the instance. Previously, changing storage capacity or performance on a deployed managed instance required rebuilding it.</p> \n<p>With ModifyVolume, you can increase volume size up to 16,384 GiB, switch between supported Amazon EBS volume types, adjust IOPS for gp3, io1, and io2 volumes, and modify throughput for gp3 volumes. The API supports idempotency tokens to prevent duplicate changes, and you can track progress with the Amazon EC2 DescribeVolumesModifications operation.</p> \n<p>ModifyVolume is available in all AWS Regions where Amazon WorkSpaces Core Managed Instances is available.</p> \n<p>To get started, call ModifyVolume directly, or use it through your WorkSpaces Core partner solution once available. To learn more, see <a href=\"https://docs.aws.amazon.com/workspaces-instances/latest/api/API_ModifyVolume.html\" target=\"_blank\" rel=\"noopener noreferrer\">ModifyVolume</a> in the WorkSpaces Instances API Reference and <a href=\"https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modify-volume.html#elastic-volumes-limitations\" target=\"_blank\" rel=\"noopener noreferrer\">Limitations</a> in the Amazon EBS User Guide, or visit <a href=\"https://aws.amazon.com/workspaces/vdi-partners/\" target=\"_blank\" rel=\"noopener noreferrer\">WorkSpaces Core</a>.</p>",
-          "categories": []
-        },
-        {
-          "title": "Amazon IVS Low-Latency Streaming now provides a failover slate",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ivs-low-latency-streaming-failover-slate",
-          "published": "2026-10-26T15:40:00+00:00",
-          "summary": "<p>Amazon Interactive Video Service (Amazon IVS) Low-Latency Streaming now provides a failover slate, an animated image that IVS displays to viewers when a broadcaster's stream is unexpectedly interrupted. Instead of a buffering wheel or frozen frame, viewers see the slate until the broadcaster reconnects. Live playback then resumes automatically, without viewers needing to refresh their player.</p> \n<p>The failover slate helps you retain your audience during momentary disruptions and is ideal for broadcasters streaming from mobile devices or from locations with unreliable connectivity. You can enable the failover slate on new or existing channels and monitor slate activity with Amazon EventBridge events and Amazon CloudWatch metrics.</p> \n<p><a href=\"https://aws.amazon.com/ivs/\">Amazon IVS</a> is a managed live streaming solution designed to make low-latency or real-time video available to viewers around the world. Visit the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Region table</a> for a full list of AWS Regions where the Amazon IVS console and APIs for control and creation of video streams are available.</p> \n<p>To learn more, see the <a href=\"https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/failover-slate.html\">Amazon IVS Failover Slate documentation</a>.</p>",
-          "categories": [
-            "general:products/amazon-ivs"
-          ]
-        },
-        {
-          "title": "Amazon SageMaker Unified Studio adds light mode support for IDC-based domains",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/smus-light-mode",
-          "published": "2026-10-26T15:32:00+00:00",
-          "summary": "<p>Today, AWS announces light mode support in Amazon SageMaker Unified Studio for Identity Center (IDC) based domains. Customers can now configure the visual interface mode to match their preference, choosing between dark and light themes. With this launch, customers can set this visual preference in both IAM-based and IDC-based domains.&nbsp;</p> \n<p>Light mode helps improve readability in bright environments and provides a familiar visual experience for customers who prefer lighter interfaces. Combined with the existing dark mode, this update gives you full control over the appearance of your development environment, improving accessibility and reducing eye strain across varying lighting conditions. In SageMaker Unified Studio settings, you can choose 'Customize appearance' under your Profile settings to select between visual modes including dark mode, light mode, and device setting, which matches your operating system's setting. The setting persists across browsers and devices.</p> \n<p>This feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available. To learn more, see the <a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/navigating-sagemaker-unified-studio.html#display-mode\">Amazon SageMaker Unified Studio User Guide.</a></p>",
-          "categories": [
-            "general:products/amazon-sagemaker,marketing:marchitecture/analytics"
-          ]
-        },
-        {
-          "title": "Amazon Connect Customer expands testing and simulation to validate flow action outcomes",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-validate-flow-actions/",
-          "published": "2026-10-26T15:00:00+00:00",
-          "summary": "<p>Amazon Connect Customer now enables you to validate the outcomes of your customer experience flow actions during testing and simulation. In addition to confirming that an action started, you can now verify the data it returns when it completes, such as a Lambda function response, an Amazon Lex resolved intent, or the variables set by an Agentic CX block. When a test fails, you can pinpoint the exact action that returned an unexpected result instead of tracing it back from a downstream step, so you can resolve issues faster and launch flow changes with greater confidence.</p> \n<p>To learn more about this feature, see <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/testing-simulation-observe-block.html\">testing and simulation</a> in the Connect Customer administrator guide. For a complete list of testing and simulation capabilities available by AWS Region, refer to <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html\">Availability of Connect Customer features by Region</a>. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the <a href=\"https://aws.amazon.com/products/connect/customer/\">Amazon Connect Customer website</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/contact-center,general:products/amazon-connect"
-          ]
-        },
-        {
-          "title": "Amazon Connect Customer now lets you view metrics by customer lifetime value and repeat-caller status",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-boma-segment/",
-          "published": "2026-10-26T13:47:00+00:00",
-          "summary": "<p>Now you can view your metrics across customer segments: customer lifetime value (LTV) and repeat callers. See how any metric differs for repeat callers versus the rest of your contacts, or how results hold up among your highest-LTV customers; so you can spot the groups trending the wrong way before it shows up in the aggregate. Where a segment is underperforming, you can act. Route high-LTV customers to your most effective people, adjust the knowledge bases and self-service flows that repeat callers are falling back from, or refine agent guidance for segments where satisfaction is slipping. The segment tells you where to look; the metrics tell you what to fix.</p>",
-          "categories": [
-            "marketing:marchitecture/contact-center,marketing:marchitecture/analytics"
-          ]
-        },
-        {
-          "title": "Amazon Connect Customer now measures the outcomes that drive retention and revenue",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-boma-metrics/",
-          "published": "2026-10-26T13:31:00+00:00",
-          "summary": "<p>Amazon Connect Customer now scores the outcome of your customer interactions. It shows whether the customer left satisfied, is at risk of churning, made a purchase, or resolved their need in self-service. You can now see whether an interaction worked, not just how efficiently it ran. Each metric comes with a default definition you can adjust to match how your business defines success and are available both through the analytics dashboards and APIs.<br> &nbsp;</p>",
-          "categories": [
-            "marketing:marchitecture/contact-center,marketing:marchitecture/analytics"
-          ]
-        },
-        {
-          "title": "AWS IAM Identity Center now supports cross-Region trusted identity propagation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/",
-          "published": "2026-10-26T08:00:00+00:00",
-          "summary": "<p>Trusted identity propagation carries a user's identity with their request, so AWS services can grant permissions based on who the user is and their underlying group associations, and log that user's access for auditing. With cross-Region support, this identity context can now be propagated to AWS services running in different AWS Regions, giving you greater flexibility in how you architect and deploy across AWS Regions.</p> \n<p>Customers often distribute workloads across AWS Regions for many reasons including separating the compute from the data it queries, to running workloads where capacity is available, or for disaster recovery and global scale. Previously, trusted identity propagation required all of the AWS services accessing a user's identity to reside in the same AWS Region. To reach services in another AWS Region, customers had to either grant access through broad IAM roles that cannot distinguish individual users or consolidate all their services into a single AWS Region. With cross-Region trusted identity propagation, a user's identity travels with the request across AWS Regions automatically, so you can grant access based on who the user is and their underlying group associations, and audit who accessed which resources, while preserving fine-grained access control for every individual user.</p> \n<p>Cross-Region trusted identity propagation is available at no additional cost in all AWS Regions where IAM Identity Center is available. For the list of Regions where IAM Identity Center is available, see <a href=\"https://builder.aws.com/build/capabilities/explore?tab=service-feature&amp;f=eJxtks1OwzAQhF8F7bk-kFKQKnFF4sCFHusIWck2jTCx5Z8CqvLuGKeOHTu3nW_Wu_LYV9DIsTHYvmPXi0HDHo4UrCbItCH3FDZRVUF9Y-p5NXnsRLSw5nwzmUzHBFUFNQhlzsuGiFa6tgFlOyZZLeRybEQrXdsSPRRoV6LHEj15hFY3pMUsw05cVkiSZcNIg4NRjEeQ2GgzOwFVAD6t6KdJzXJuXg5P3jGoKZqeZ4u_fnKAJUhXazbfvIYNSCUkKvP70nOD6uOEzFiF7utdKUgKewpC-XPGiWPtiu6_cO6nd28HXlvfJDx79vXF12-Wm55MP_ruYKV0oVAY6xHGP20D8yw\">AWS Capabilities by Region.</a>&nbsp; For more information, see <a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html\">Trusted identity propagation</a> in the IAM Identity Center User Guide.</p>",
-          "categories": [
-            "general:products/aws-iam-identity-center,marketing:marchitecture/security-identity-and-compliance"
-          ]
-        },
-        {
-          "title": "AWS Key Management Service now supports ML-KEM for post-quantum key encapsulation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/kms-ml-kem-post-quantum/",
-          "published": "2026-10-26T08:00:00+00:00",
-          "summary": "<p>AWS Key Management Service (KMS) now supports Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM), a post-quantum cryptography standard under <a href=\"https://csrc.nist.gov/pubs/fips/203/final\">NIST FIPS 203</a>, which&nbsp;enables two parties to establish a shared secret.&nbsp;NIST designed ML-KEM to replace the classical key-establishment schemes, like DH/ECDH key agreement, and RSA-based key transport, in their strategic cryptographic roadmap&nbsp;(see <a href=\"https://csrc.nist.gov/pubs/ir/8547/ipd\">NIST IR 8547</a>).&nbsp;ML-KEM addresses the \"harvest now, decrypt later\" threat to those classical schemes, where an adversary records the key-establishment exchange today and recovers the shared secret once sufficiently powerful quantum computers become available.</p> \n<p>KMS supports all three ML-KEM key specs defined in NIST FIPS 203: ML-KEM-512, ML-KEM-768, and ML-KEM-1024. The Encapsulate API uses the public key to produce a random 32-byte shared secret and its ciphertext form. The Decapsulate API recovers the shared secret from ciphertext using the corresponding private key. KMS protects the private key of an ML-KEM key pair in FIPS 140-3 Level 3 validated hardware security modules (HSMs). You can use the GetPublicKey API to export the public key and distribute it to partners, client applications, or external systems for performing the encapsulate operation locally using cryptographic libraries like AWS-LC, OpenSSL, or Bouncy Castle.</p> \n<p>ML-KEM is available in all AWS Regions where KMS is available, except the the Middle East (UAE), Middle East (Bahrain), and China Regions. For more information, see <a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/pqkeys.html#mlkem\">ML-KEM keys in AWS KMS</a>&nbsp;and&nbsp;<a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/symm-asymm-choose-key-spec.html#key-spec-mlkem\">Key spec reference</a>&nbsp;in the AWS KMS Developer Guide.</p>",
-          "categories": [
-            "marketing:marchitecture/quantum-technologies,marketing:benefits-realized/security,general:products/aws-govcloud-us,<p>general:products/aws-cryptography</p>\n,general:products/aws-kms,general:products,marketing:marchitecture/security-identity-and-compliance"
-          ]
-        },
-        {
-          "title": "AWS Elemental MediaConnect Router now supports endpoint connection management",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/mediaconnect-cross-account-endpoints/",
-          "published": "2026-10-26T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/mediaconnect/features/router/\">AWS Elemental MediaConnect Router</a>&nbsp;now supports managing connections through a new endpoint registry, which allows you to register devices or software external to MediaConnect and connect those endpoints to your router inputs and outputs. You can share registered endpoints directly with other AWS accounts, eliminating the need to manually chain router inputs and outputs or coordinate IP addresses and encryption settings out of band.</p> \n<p>Cross-account endpoint sharing lowers costs by reducing required compute instances and decreases latency through fewer network hops. Sharing is managed through AWS Resource Access Manager (AWS RAM), with Connection Manager providing visibility and control over each shared connection. Common use cases include content distributors sharing live feeds with downstream partners, broadcasters collaborating across organizational boundaries, and media workflows that require secure cross-account video transport.</p> \n<p>MediaConnect endpoint registry is available in all AWS Regions where AWS Elemental MediaConnect Router is available, at no additional cost. For more information, see the AWS Elemental MediaConnect <a href=\"https://docs.aws.amazon.com/mediaconnect/latest/ug/working-with-endpoints.html\">User Guide</a>.</p>",
-          "categories": [
-            "marketing:benefits-realized/lower-cost,general:products/aws-resource-access-manager,general:products/aws-elemental-mediaconnect,marketing:marchitecture/media-services"
-          ]
-        },
-        {
-          "title": "AWS EC2 Auto Scaling now supports Launch Before Terminate at account-level to replace instances",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-auto-scaling-launch-before-terminate/",
-          "published": "2026-10-26T08:00:00+00:00",
-          "summary": "<p>AWS EC2 Auto Scaling now lets you enable Launch Before Terminate as the default replacement behavior across all Auto Scaling groups in your account. When enabled, Auto Scaling launches a replacement instance and waits for it to pass health checks before terminating the instance it replaces, helping your applications maintain full capacity and availability during instance replacement events. This applies to replacement events such as instance refreshes, rebalancing, health checks, and maximum-instance-lifetime replacements.</p> \n<p>You can enable Launch Before Terminate through AWS EC2 Auto Scaling account settings, which let you configure the behavior once at the account level instead of on each Auto Scaling group individually. You can manage the setting with the new `PutAccountSetting` and `DescribeAccountSettings` APIs, available through the AWS Management Console, AWS CLI, or AWS SDKs.</p> \n<p>Launch Before Terminate is available in all AWS Regions at no additional cost.</p> \n<p>To learn more, see Launch Before Terminate in the <a href=\"https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-account-settings.html\">AWS EC2 Auto Scaling User Guide</a> and <a href=\"https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Operations.html\">AWS EC2 Auto Scaling API Reference Guide</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/compute,general:products/amazon-ec2,general:products/amazon-ec2-auto-scaling"
-          ]
-        },
-        {
-          "title": "Amazon RDS now supports the latest Cumulative Update and GDR updates for Microsoft SQL Server",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-supports-latest-cumulative-update-gdr-microsoft-sql-server/",
-          "published": "2026-10-26T07:30:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Relational Database Service (Amazon RDS) for SQL Server </a>now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2017 CU31+GDR <a href=\"https://support.microsoft.com/help/5122774\" target=\"_blank\" rel=\"noopener noreferrer\">KB5122774</a> (RDS version 14.00.3550.4.v1), SQL Server 2019 CU32+GDR <a href=\"https://support.microsoft.com/help/5122772\" target=\"_blank\" rel=\"noopener noreferrer\">KB5122772</a> (RDS version 15.00.4490.9.v1), SQL Server 2022 CU27 <a href=\"https://support.microsoft.com/help/5104824\" target=\"_blank\" rel=\"noopener noreferrer\">KB5104824</a> (RDS version 16.00.4295.3.v1) and SQL Server 2025 CU9 <a href=\"https://support.microsoft.com/help/5122048\" target=\"_blank\" rel=\"noopener noreferrer\">KB5122048</a> (RDS version 17.00.5005.3.v1).<br> <br> For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5122774, KB5122772, KB5104824 and KB5122048. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/databases,general:products/aws-govcloud-us,general:products/amazon-rds-for-sql-server"
-          ]
-        },
-        {
-          "title": "AWS Glue Data Catalog now supports OAuth for Apache Iceberg REST Catalog APIs",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/glue-catalog-oauth-iceberg-rest/",
-          "published": "2026-10-26T04:00:00+00:00",
-          "summary": "<p>AWS Glue Data Catalog now supports OAuth 2.0 bearer token authentication for Apache Iceberg REST Catalog (IRC) APIs using AWS Sign-In. The Apache Iceberg REST Catalog specification defines OAuth 2.0 as its standard authentication mechanism, and query engines such as Apache Spark, Trino, and Apache Flink implement it natively. These engines and external integration partners can now authenticate to the Glue Data Catalog Iceberg endpoint using standard OAuth 2.0 bearer tokens, in addition to AWS Signature Version 4 (SigV4).</p> \n<p>You can now grant partners federated access to your Iceberg tables without distributing AWS credentials. Using OAuth 2.0 Token Exchange (RFC 8693), you exchange an OpenID Connect (OIDC) identity token for a short-lived, Glue-scoped bearer token and include it in IRC requests following the same standards-based pattern used across the Iceberg ecosystem. Access remains governed by AWS IAM and AWS Lake Formation permissions. Common use cases include enabling third-party analytics and data cloud platforms to query tables in the Glue Data Catalog through a single, consistent authentication path.</p> \n<p>This capability is available in all AWS Regions where AWS Glue and Lake Formation are available. To learn more, see the <a href=\"https://docs.aws.amazon.com/glue/latest/dg/connect-glu-iceberg-rest.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Glue User Guide</a> and <a href=\"https://docs.aws.amazon.com/signin/latest/userguide/configure-oauth-glue-iceberg-rest.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Sign-In User Guide</a>.</p>",
-          "categories": [
-            "general:products/aws-glue,marketing:marchitecture/analytics"
-          ]
-        },
-        {
-          "title": "Web Search on Amazon Bedrock now supports domain filtering and user location controls",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
-          "published": "2026-10-23T21:04:00+00:00",
-          "summary": "<p>Web Search on&nbsp;Amazon Bedrock now supports two new controls that give you more precision over the results that ground a model's response: domain filtering and user location. Both are configured directly on the web_search tool in your existing OpenAI Responses API request.</p> \n<p>With domain filtering, you can restrict Web Search results to a set of domains you choose. Using the filters parameter, you specify up to 100 allowed_domains to limit results to trusted sources, or up to 100 blocked_domains to exclude sources you don't want. This is useful when you want responses grounded only in specific sites, or when you need to keep certain domains out of results.</p> \n<p>With user location, you can optionally specify location parameters so that Web Search can return results relevant to that geography. This helps with location-dependent questions, such as regional availability or local services.</p> \n<p>Domain filtering and user location are available in all AWS Regions where Web Search is supported: US East (N. Virginia), US East (Ohio), US West (Oregon), and AWS GovCloud (US-West). To get started, see the Web Search section in the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html\">Amazon Bedrock User Guide</a>. For pricing, see the <a href=\"https://aws.amazon.com/bedrock/pricing/\">Amazon Bedrock pricing page</a>.</p>",
-          "categories": [
-            "general:products/amazon-bedrock"
-          ]
-        },
-        {
-          "title": "Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-persistent-chat",
-          "published": "2026-10-23T17:00:00+00:00",
-          "summary": "<p>Amazon Connect Customer Global Resiliency now provides customers a mechanism to deliver long, persistent chat experiences across linked AWS Regions. With this capability, end users can resume previous conversations with full context, metadata, and transcripts carried over across Regions, eliminating the need for end users to repeat information and allowing agents to provide personalized service with access to the entire conversation history across AWS Regions.</p> \n<p>For example, an end user can start a chat in US-East (N. Virginia) and later come back to it in the linked US-West (Oregon) Region, continuing the same conversation with an agent with full conversation history&nbsp;and&nbsp;chat attachment. To adopt this capability, onboard to <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/global-routing-across-acgr-regions.html\">Global routing</a>.</p> \n<p>This feature is available in all AWS Regions where <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/get-started-connect-global-resiliency.html\">Amazon Connect Customer Global Resiliency</a> is supported. To learn more, visit <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/setup-connect-global-resiliency.html\">Amazon Connect Customer Admin Guide</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/contact-center,general:products/amazon-connect"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "エージェント時代の運用：re:Invent 2026 の AIOps セッション",
+          "link": "https://aws.amazon.com/jp/blogs/news/operating-in-the-agentic-era-aiops-sessions-at-reinvent-2026/",
+          "published": "2026-10-30T08:00:12+00:00",
+          "summary": "re:Invent 2026 のクラウド運用トラックから、AI エージェントによるインシデント調査、修復、リリース検証、監査、モダナイゼーションを扱う AIOps セッションをテーマ別に紹介します。AWS DevOps Agent の事例やハンズオンを含め、目的に応じた推奨ルートもまとめます。",
+          "categories": [
+            "Announcements",
+            "AWS re:Invent",
+            "DevOps",
+            "General",
+            "Management & Governance"
+          ]
+        },
+        {
+          "title": "【随時更新】Inter BEE 2026 AWS ブースのご案内：人が創り、人が決める。AI エージェントが支える次世代放送局",
+          "link": "https://aws.amazon.com/jp/blogs/news/jpmne-interbee2026-aws-introduction/",
+          "published": "2026-10-30T06:00:08+00:00",
+          "summary": "アマゾン ウェブ サービス ジャパン合同会社（AWS）は、2026 年 11 月 18 日（水）から 20 日 […]",
+          "categories": [
+            "AWS Elemental MediaConnect",
+            "AWS Elemental MediaConvert",
+            "AWS Elemental MediaLive",
+            "AWS Elemental MediaPackage",
+            "Broadcast",
+            "Content Production",
+            "Data Science & Analytics for Media",
+            "Direct-to-Consumer & Streaming",
+            "Events",
+            "General",
+            "Industries",
+            "Media & Entertainment",
+            "Media Services",
+            "AWS Media Services",
+            "Direct-to-Consumer"
+          ]
+        },
+        {
+          "title": "KDDI における Amazon EKS Auto Mode 商用導入：カスタムコントローラーによる運用課題の解決",
+          "link": "https://aws.amazon.com/jp/blogs/news/202611-kddi-eks-auto-mode-case-study/",
+          "published": "2026-10-30T04:12:08+00:00",
+          "summary": "KDDI 株式会社では 2026 年 7 月、通信事業のお客さま向けサービスを支える Amazon EKS のクラスタを、マネージドノードグループから Amazon EKS Auto Mode へ移行しました。ノードが最長 21日で自動的に入れ替わる仕組みにより、脆弱性対応のたびに発生していたノードの更新作業がなくなりました。一方で、無人でのノード更新を前提にしたことで、起動時の CPU 需要の集中や、失効によるノード入れ替え時刻の制御といった課題が表面化しました。本稿では、Pod 配置の適正化と、カスタムコントローラ node-rotation-controller の開発による対処を、実測値とあわせて紹介します。",
+          "categories": [
+            "Case Study",
+            "Containers",
+            "Customer Solutions",
+            "Amazon Elastic Kubernetes Service (Amazon EKS)"
+          ]
+        },
+        {
+          "title": "AWS Weekly Roundup: Amazon Polly の Generative エンジン、Trainium 向け TorchNeuron など (2026 年 10 月 26 日)",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+          "published": "2026-10-30T02:42:40+00:00",
+          "summary": "数週間前、サンパウロにある AWS オフィスで、ブラジルの農業関連ビジネスに携わるビジネス部門と技術部門のリー […]",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon Bedrock AgentCore",
+            "Amazon EC2",
+            "Amazon Elastic Container Service",
+            "Amazon Elastic File System (EFS)",
+            "Amazon ElastiCache",
+            "Amazon Polly",
+            "Amazon SageMaker AI",
+            "Announcements",
+            "AWS Cloud Financial Management",
+            "AWS DataSync",
+            "AWS Neuron",
+            "AWS Trainium",
+            "AWS WAF",
+            "News",
+            "RDS for Oracle",
+            "Security"
+          ]
+        },
+        {
+          "title": "AWS Continuum for code vulnerabilities が一般提供を開始しました",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+          "published": "2026-10-30T01:55:47+00:00",
+          "summary": "2026 年 10 月 22 日、AWS Continuum for code vulnerabilities […]",
+          "categories": [
+            "Announcements",
+            "Launch",
+            "News",
+            "Security, Identity, & Compliance"
+          ]
+        },
         {
           "title": "AI エージェントに書き込みを任せるとき、境界をどこに置くか ― Kiro CLI で仕組みを作り、1 か月運用した記録",
           "link": "https://aws.amazon.com/jp/blogs/news/kiro-cli-agent-write-boundaries/",
@@ -521,68 +608,6 @@
             "Artificial Intelligence",
             "Financial Services",
             "Industries",
-            "Kiro"
-          ]
-        },
-        {
-          "title": "Amazon OpenSearch Serverless NextGen の時系列コレクションのご紹介",
-          "link": "https://aws.amazon.com/jp/blogs/news/introducing-the-next-generation-of-serverless-time-series-for-amazon-opensearch-service/",
-          "published": "2026-10-29T02:08:58+00:00",
-          "summary": "本日、Amazon OpenSearch Serverless NextGen が時系列コレクションに対応したことを発表します。クラスターのプロビジョニングや管理なしでログ、メトリクス、トレース、イベントデータを取り込み、保存、分析でき、アラートと異常検知も利用できます。コレクションあたり最大 100 TB のホットストレージをサポートし、アプリケーション監視、セキュリティ分析、IoT テレメトリなど大規模なオブザーバビリティワークロードに対応します。",
-          "categories": [
-            "Amazon OpenSearch Service",
-            "Announcements",
-            "Intermediate (200)"
-          ]
-        },
-        {
-          "title": "Amazon CloudFront と AWS WAF によりエッジで MCP エンドポイントを保護する",
-          "link": "https://aws.amazon.com/jp/blogs/news/protect-mcp-endpoints-at-the-edge-with-amazon-cloudfront-and-aws-waf/",
-          "published": "2026-10-29T00:49:07+00:00",
-          "summary": "MCP は、 AI エージェントがツールやデータとやり取りするための標準的な方法として急速に普及しました。もともと MCP は、長時間のセッション、永続的な接続、クライアントとサーバーインスタンスの紐付けを前提としたステートフルなプロトコルでした。 2026 年 7 月 28 日の改定では、 MCP がステートレスな HTTP リクエスト/レスポンス型のプロトコルとして再設計されました。これにより、すべての MCP リクエストは自己完結した POST リクエストとなり、ネットワーク上ではほかの REST API 呼び出しと見分けがつかない形になりました。その結果、ほかの HTTP API の前段ですでに利用しているのと同じレイヤー 7 の検査、変換、最適化を、 MCP サーバーのコードを変更することなく CDN や AWS WAF のレイヤーで適用できるようになります。本記事では、Amazon CloudFront または Application Load Balancer (ALB) の背後にデプロイした MCP エンドポイントを、 AWS WAF で保護し、可視化する方法を紹介します。新しい仕様によって簡単に適用できる、次の 9 つのユースケースを順に説明します。",
-          "categories": [
-            "Advanced (300)",
-            "Amazon CloudFront",
-            "AWS WAF",
-            "Best Practices",
-            "Networking & Content Delivery",
-            "Security, Identity, & Compliance",
-            "Thought Leadership",
-            "Best practices",
-            "Security"
-          ]
-        },
-        {
-          "title": "Kiro for Students の対象大学を新たに 41 校追加しました",
-          "link": "https://aws.amazon.com/jp/blogs/news/41-more-universities/",
-          "published": "2026-10-28T22:27:43+00:00",
-          "summary": "Kiro for Students の対象を、世界の 41 大学に広げます。対象校の学生は Kiro を 1 年間無料で使えます。毎月 1,000 クレジットと、プレミアムモデルなどの有料機能が含まれます。",
-          "categories": [
-            "Developer Tools",
-            "Kiro"
-          ]
-        },
-        {
-          "title": "AMOREPACIFIC が Kiro でレガシー SAP ECC に AI 駆動開発を導入した方法",
-          "link": "https://aws.amazon.com/jp/blogs/news/how-amorepacific-brought-ai-driven-development-to-sap-ecc-with-kiro/",
-          "published": "2026-10-28T15:36:46+00:00",
-          "summary": "AMOREPACIFIC の ERP Platform Planning チームが、GUI ベースのレガシーな SAP ECC 6.0 環境に AI 駆動開発を導入した事例です。Kiro の spec-driven development、AWS ソリューションアーキテクトが構築した SAP 専用 MCP サーバー、そして Steering ファイルを組み合わせ、組織のコーディング標準に従ったコード生成を実現しました。ABAP と SAPUI5 の 4 プロジェクトで、生産性は最大 72% 向上し、FS/TS ドキュメント作成時間は 80% 削減されました。",
-          "categories": [
-            "Kiro",
-            "SAP on AWS",
-            "#saponaws",
-            "RISE with SAP",
-            "S/4HANA",
-            "SAP"
-          ]
-        },
-        {
-          "title": "週 1,000 件の PR でもソフトウェアファクトリーを安定させる方法",
-          "link": "https://aws.amazon.com/jp/blogs/news/software-factory-stability/",
-          "published": "2026-10-28T10:59:02+00:00",
-          "summary": "Kiro Crew チームが、週 1,000 件のプルリクエストをマージしながら品質を保つ方法を紹介します。人間がすべての行を読まなくても確信を得られるよう、レビューの重大度分け、役割別の AI レビュアー、80 件以上のチェックを 1 つにまとめる PR Readiness 判定、prepare-pr スキルによる自動修正ループ、マージ後のセキュリティ対策へと段階的に発展させた過程を解説します。過剰なエンジニアリングへの対処法も紹介します。",
-          "categories": [
-            "Developer Tools",
             "Kiro"
           ]
         }
