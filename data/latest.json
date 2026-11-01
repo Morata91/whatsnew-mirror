@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T01:33:55.246020+00:00",
+  "generated_at": "2026-11-01T01:05:23.053397+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
@@ -460,6 +460,26 @@
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
         {
+          "title": "Kiro のハロウィンハッカソン Kiroween 2026 が始まりました",
+          "link": "https://aws.amazon.com/jp/blogs/news/kiroween-2026/",
+          "published": "2026-10-31T03:37:54+00:00",
+          "summary": "Kiro が毎年ハロウィンの時期に開いているハッカソン Kiroween が、今年も始まりました。提出の締め切りは日本時間 2026 年 12 月 5 日（土）午前 7 時で、賞金の総額は 10 万ドルです。",
+          "categories": [
+            "Developer Tools",
+            "Kiro"
+          ]
+        },
+        {
+          "title": "Spec it safe：セキュリティ要件で仕様をハードニングし、シフトレフトを実現する",
+          "link": "https://aws.amazon.com/jp/blogs/news/spec-it-safe/",
+          "published": "2026-10-31T02:33:02+00:00",
+          "summary": "spec 駆動開発 (SDD) は、大規模なチームのソフトウェア開発のやり方を変えつつあります。プロンプトだけに頼るのではなく spec を書き、それに沿って AI コーディングエージェントに設計、タスク、実装を進めさせます。",
+          "categories": [
+            "Developer Tools",
+            "Kiro"
+          ]
+        },
+        {
           "title": "エージェント時代の運用：re:Invent 2026 の AIOps セッション",
           "link": "https://aws.amazon.com/jp/blogs/news/operating-in-the-agentic-era-aiops-sessions-at-reinvent-2026/",
           "published": "2026-10-30T08:00:12+00:00",
@@ -582,33 +602,6 @@
             "Cloud Cost Optimization",
             "Events",
             "Generative AI"
-          ]
-        },
-        {
-          "title": "AWS セキュリティハンズオン連続開催のご案内",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-security-handson-series/",
-          "published": "2026-10-29T06:39:47+00:00",
-          "summary": "AWS Japan では、2026 年 11 月から、AWS のセキュリティサービスを実際に操作するオンラインハンズオンを週次で開催します。AWS Security Agent、AWS WAF、Amazon Inspector、フロンティアモデルを活用したソースコードの脆弱性対策などをテーマに、座学とハンズオンで、ご自身の組織で試すための最初の一歩までをお伝えします。本記事は、開催日程を随時更新する案内ページです。",
-          "categories": [
-            "Amazon Inspector",
-            "Announcements",
-            "AWS WAF",
-            "Security",
-            "Webinars",
-            "AWS Security",
-            "Webinar"
-          ]
-        },
-        {
-          "title": "金融機関が AI-DLC を素早く効果的に運用に乗せる方法",
-          "link": "https://aws.amazon.com/jp/blogs/news/how-financial-institutions-can-operationalize-ai-dlc-quickly-and-effectivel/",
-          "published": "2026-10-29T03:23:34+00:00",
-          "summary": "金融機関は AI コーディングエージェントを急速に導入していますが、多くの機関には、規制当局や自社のリスクアペタイトを満たすガバナンスの枠組みがありません。その結果、強力なツールが組織の統制の外でコードを生成しています。以前の記事「金融サービスのための AI 駆動開発ライフサイクル」（AI-DLC）では、お客様がこれをどう運用に乗せているかを説明しました。今回はさらに踏み込みます。チームが Amazon の Kiro、Anthropic Claude Code、OpenAI Codex のどれを使っていても、エージェントを組織のルールの範囲内で動かすためのガバナンス層をどう構成すればよいのでしょうか。この記事では、ガバナンスハーネスを数日で構築する方法と、エンジニアリングチームとガバナンス・リスク・コントロール（GRC）チームがそこから何を得られるかを説明します。",
-          "categories": [
-            "Artificial Intelligence",
-            "Financial Services",
-            "Industries",
-            "Kiro"
           ]
         }
       ]
