@@ -1,9 +1,120 @@
 {
-  "generated_at": "2026-11-01T01:05:23.053397+00:00",
+  "generated_at": "2026-11-03T03:26:40.712259+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon RDS for Oracle now supports M8i and R8i instances in additional AWS Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-m8i-r8i-instances-new-regions/",
+          "published": "2026-11-03T00:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/oracle/\">Amazon Relational Database Service (Amazon RDS) for Oracle</a>&nbsp;now supports M8i and R8i instances in additional AWS Regions. Both M8i and R8i instances are now available in Asia Pacific (New Zealand) and Canada West (Calgary), and R8i instances are now available in Europe (Milan, Stockholm, and Zurich) and Israel (Tel Aviv).</p> \n<p>These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and R8i instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances.</p> \n<p>M8i and R8i instances are available for Amazon RDS for Oracle in Bring Your Own License model for Oracle Database Enterprise Edition (EE) and Oracle Database Standard Edition 2 (SE2). For EE, instances are available in sizes from large to 48xlarge, as well as bare metal sizes metal-48xl and metal-96xl. For SE2, instances are available in sizes from large to 4xlarge and bare metal sizes metal-48xl and metal-96xl. Refer to <a href=\"https://aws.amazon.com/rds/oracle/pricing/\">Amazon RDS for Oracle Pricing</a> for available instance configurations, pricing, and region availability.</p>",
+          "categories": [
+            "general:products/amazon-rds-for-oracle,marketing:marchitecture/databases,general:products/amazon-rds"
+          ]
+        },
+        {
+          "title": "Haiku 5.5 now available on Kiro in AWS GovCloud (US)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/kiro-haiku-5-5-aws-govcloud-us/",
+          "published": "2026-11-02T20:45:00+00:00",
+          "summary": "<p>A new Anthropic model is now available in the Kiro IDE and CLI for the AWS GovCloud (US) Regions. With Haiku 5.5, all three Claude 5.5 models are now available in Kiro in AWS GovCloud (US).</p> \n<p>Claude Haiku 5.5 is the fastest model in the Claude 5.5 family. It's a clear step up from Claude Haiku 4.5, built for work that runs in large volumes and needs quick responses. Developers can use it to summarize and compact long context, classify and route requests, process text in bulk, and make small, targeted edits across many files. It also works well as a review subagent that runs in parallel, while Opus 5.5 and Sonnet 5.5 take on harder planning and coding work. Haiku 5.5 uses adaptive thinking across five effort levels from low to max, with medium as the default. It's available with a 1M context window and a 0.06x credit multiplier. Requests over 100K tokens are billed at a 0.3x multiplier.</p> \n<p>Ensure your IDE or CLI is updated to the latest version, then restart it to access the new model from the model selector. For more details, visit the <a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-kiro.html\">GovCloud documentation</a>, the <a href=\"https://kiro.dev/docs/enterprise/monitor-and-track/\">monitoring and tracking guide</a>, or contact your AWS account team. To learn more about Kiro, visit the <a href=\"https://kiro.dev/\">Kiro product page</a>.</p>",
+          "categories": [
+            "general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon RDS now supports per snapshot billing",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-per-snapshot-billing/",
+          "published": "2026-11-02T18:43:00+00:00",
+          "summary": "<p>Starting today, Amazon RDS supports per snapshot billing for Amazon RDS snapshots. Per snapshot billing allows you to get the cost of each individual snapshot.</p> \n<p>Previously, RDS snapshot charges were aggregated at the database instance level on the Cost and Usage report as well as the Cost Explorer. This meant that while understanding the snapshot charges, you could only see the aggregate view at the database instance instead of drilling down to each individual snapshot. Now, you can use cost allocation tags on your snapshots to see exactly how much each snapshot costs, giving you a better understanding of your backups spend and budgets. Per snapshot billing is enabled by default on all RDS snapshots for no additional charge.</p> \n<p>Per snapshot billing is available for all Amazon RDS engines in all commercial AWS Regions and the AWS GovCloud (US) Regions. To learn more, please visit our <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html\" target=\"_blank\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-rds"
+          ]
+        },
+        {
+          "title": "Amazon Quick on desktop now uses your organization's existing Amazon Quick sign-in",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-quick-desktop-organization-sign-in/",
+          "published": "2026-11-02T18:36:00+00:00",
+          "summary": "<p>For organizations that use Amazon Quick, the desktop application now signs users in with the same sign-in method the organization already uses for Quick on the web. Administrators no longer need to register an OIDC application in their identity provider or set up separate desktop sign-in before users can get started. If a user can sign in to Quick on the web, that user can sign in to the desktop application.</p> \n<p>To turn on desktop access, an administrator adds the desktop connector once in the Amazon Quick console. Users then enter their Quick account name, choose Sign In, and finish signing in through their browser. This works for accounts that use IAM Identity Center, IAM federation, or native Amazon Quick users. If your organization wants to manage desktop sign-in separately, you can still set up a dedicated identity provider configuration with providers such as Microsoft Entra ID, Google Workspace, Okta, or Ping Identity.</p> \n<p>Amazon Quick on desktop is available in <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html#regions-qs\" target=\"_blank\">AWS Regions that support the full Amazon Quick feature set</a>.</p> \n<p>To get started, see <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/amazon-quick-desktop.html\">Amazon Quick on desktop</a> in the Amazon Quick User Guide.</p>",
+          "categories": [
+            "marketing:marchitecture/business-productivity,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Amazon Aurora MySQL 8.4.10 is now generally available",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-8410-available/",
+          "published": "2026-11-02T17:00:00+00:00",
+          "summary": "<p>Starting today, <a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora MySQL-Compatible Edition</a> 8.4 supports MySQL 8.4.10. We recommend upgrading to the newer minor versions to accept fixes for Common Vulnerabilities and Exposures (CVEs) in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the MySQL community. For more details, refer to the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.84Updates.html\" target=\"_blank\" rel=\"noopener noreferrer\">Aurora MySQL 8.4</a> and <a href=\"https://dev.mysql.com/doc/relnotes/mysql/8.4/en/news-8-4-10.html\" target=\"_blank\" rel=\"noopener noreferrer\">MySQL 8.4.10</a> release notes.</p> \n<p>Aurora MySQL 8.4.10 adds support for global transaction identifiers (GTID) tags, which lets you assign a user-defined tag to&nbsp;GTIDs&nbsp;to help you&nbsp;identify and group related transactions in binary log replication. This release also adds&nbsp;support for a maximum of 50,000 simultaneous connections per DB instance, which allows connection-intensive applications to scale without adding a connection pooling layer. Learn more about maximum connections best practices in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Performance.html#AuroraMySQL.Managing.MaxConnections\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora MySQL User Guide</a>. &nbsp;</p> \n<p>You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.AMVU.html\" target=\"_blank\" rel=\"noopener noreferrer\">automatic minor version upgrades</a> and use the AWS Organizations <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Maintenance.AMVU.UpgradeRollout.html\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade Rollout Policy</a> to orchestrate upgrades across your clusters in phases, validating on lower-priority environments before upgrading your most critical ones. You can perform minor version upgrades in-place or via snapshot restore. Learn more about performing version upgrades in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.Upgrading.html\" target=\"_blank\">Amazon Aurora User Guide</a>. This release is supported in all <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.RegionsAndAvailabilityZones.html#Aurora.Overview.Availability.MySQL\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Regions</a> where Aurora MySQL is available.</p> \n<p><a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora</a> is designed for high performance and availability at global scale with full MySQL compatibility. It provides scale-to-zero serverless compute, Aurora Global Database for multi-Region resilience, Aurora I/O-Optimized for improved price performance on I/O-intensive workloads, and built-in security and continuous backups. To get started, take a look at Aurora's <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\" target=\"_blank\" rel=\"noopener noreferrer\">getting started page</a>.</p>",
+          "categories": [
+            "general:products/amazon-aurora,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "AWS Lambda now supports queues for Apache Kafka in self-managed Kafka event sources",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-queue-kafka-esm/",
+          "published": "2026-11-02T17:00:00+00:00",
+          "summary": "<p>AWS Lambda now supports <a href=\"https://cwiki.apache.org/confluence/spaces/KAFKA/pages/255070434/KIP-932+Queues+for+Kafka\">queues for Apache Kafka</a> in <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/with-kafka.html\">self-managed Kafka event source mappings</a> (ESM), for Kafka clusters that customers run themselves and for managed offerings such as Confluent Cloud.&nbsp;Customers can now scale processing for Kafka workloads beyond the partition count of a topic, increasing throughput during traffic spikes and improving processing resilience.</p> \n<p>Customers building event-driven Kafka workloads for use cases such as image and video encoding, fraud detection, notification delivery, and telemetry ingestion treat each event as an independent unit of work, where processing speed matters more than strict ordering. Previously, Kafka ESMs used the Kafka consumer group protocol, which assigns each partition to exactly one consumer within a consumer group. Customers needing higher parallelism had to over-partition topics or move traffic to a separate queuing system, adding infrastructure to operate and producer code to maintain. Queue support for self-managed Kafka ESMs is built on Kafka share groups, which are generally available in Apache Kafka 4.2. This launch enables multiple event pollers to consume concurrently from the same partition, with each event poller supporting up to 10 concurrent invocations. This decouples parallelism from partition count with no changes to producers, topic configuration, or function code. As a result, customers get higher throughput during traffic spikes and more resilient processing, because a slow or failed event no longer holds up other events in the same partition. Queue mode does not preserve partition ordering and is intended for workloads that do not require it.</p> \n<p>This capability requires a Kafka cluster with share groups enabled, such as Apache Kafka 4.2 or later, and is available in all <a href=\"https://builder.aws.com/build/capabilities\">AWS commercial Regions</a> where self-managed Kafka ESM is available. To get started, create a self-managed&nbsp;Kafka ESM with ConsumptionMode set to Queue through the AWS Management Console, Lambda API, AWS CLI, AWS CloudFormation, AWS SAM, or AWS CDK. Standard Lambda pricing applies. Customers who configure <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/kafka-scaling-modes.html#kafka-provisioned-mode\">provisioned mode</a> for their self-managed Kafka ESM also pay for Event Poller Unit (EPU) usage. To learn more, see the <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/polling-kafka-queue.html\">AWS Lambda Developer Guide</a> and <a href=\"https://aws.amazon.com/lambda/pricing/\">AWS Lambda pricing</a>.&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon Aurora MySQL 3.14 (compatible with MySQL 8.0.46) is generally available",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-314-available/",
+          "published": "2026-11-02T17:00:00+00:00",
+          "summary": "<p>Starting today, Amazon Aurora MySQL-Compatible Edition 3 (compatible with MySQL 8.0) supports MySQL 8.0.46, which includes community MySQL fixes and Aurora-specific improvements. In addition to operational improvements, Aurora MySQL 3.14 introduces support for post-quantum TLS (PQ-TLS) key exchange, providing you with post-quantum cryptography options for encrypting your data in-transit. For detailed information on this release, refer to <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html\" target=\"_blank\" rel=\"noopener noreferrer\">Aurora MySQL 3</a> and <a href=\"https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-46.html\" target=\"_blank\" rel=\"noopener noreferrer\">MySQL 8.0.46</a> release notes.</p> \n<p>You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.AMVU.html\" target=\"_blank\" rel=\"noopener noreferrer\">automatic minor version upgrades</a> and use the AWS Organizations <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Maintenance.AMVU.UpgradeRollout.html\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade Rollout Policy</a> to orchestrate upgrades across your clusters in phases. You can perform minor version upgrades in-place or via snapshot restore. This release is supported in all <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.RegionsAndAvailabilityZones.html#Aurora.Overview.Availability.MySQL\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Regions</a> where Aurora MySQL is available.</p> \n<p><a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora</a> is designed for high performance and availability at global scale with full MySQL compatibility. It provides scale-to-zero serverless compute, Aurora Global Database for multi-Region resilience, Aurora I/O-Optimized for improved price performance on I/O-intensive workloads, and built-in security and continuous backups. To get started, take a look at Aurora’s <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\" target=\"_blank\" rel=\"noopener noreferrer\">getting started page</a>.</p>",
+          "categories": [
+            "general:products/amazon-aurora,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer now supports Model Context Protocol (MCP) tools in flows",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/",
+          "published": "2026-11-02T16:00:00+00:00",
+          "summary": "<p>Amazon Connect Customer now enables you to invoke Model Context Protocol (MCP) tools in customer experience flows through the new 'External Tool' block. With this launch, you can connect flows to third-party applications through Amazon Bedrock AgentCore Gateway and reuse the same tools used by your agentic experiences to retrieve data or trigger actions, without writing custom Lambda functions. For example, when a customer contacts a financial institution about a recent transaction, a flow can use the External Tool block to retrieve relevant context from a third-party application, such as case history from their CRM system, or transaction details from a banking platform.</p> \n<p>This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo). To learn more about this feature, refer to the <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/external-tool.html\">administrator guide</a>. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the <a href=\"https://aws.amazon.com/products/connect/customer/\">Amazon Connect Customer website.</a></p>",
+          "categories": [
+            "marketing:marchitecture/contact-center"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer now supports Cases and External Tool events in the Wait block",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-wait-block-cases-tool-events/",
+          "published": "2026-11-02T16:00:00+00:00",
+          "summary": "<p>Amazon Connect Customer now supports Cases and External Tool events in the Wait block, giving you more control over how your customer experience flows react to real-time data changes. In addition to waiting for a Lambda function to complete, you can now wait until a Connect Case field meets a specified condition or an External Tool invocation completes. This enables you to wait for critical information before advancing an interaction, reducing unnecessary transfers and saving time for both your end-customers and agents. For example, you can hold a flow until a refund status field is updated on a case, then automatically resume and route the interaction based on the outcome.&nbsp;</p> \n<p>To learn more about this feature, refer to the <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/wait.html\">administrator guide </a>and availability of <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#cases_region\">Connect Customer features by Region</a>. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the <a href=\"https://aws.amazon.com/products/connect/customer/\">Amazon Connect Customer website.</a></p>",
+          "categories": []
+        },
+        {
+          "title": "EC2 Amazon Machine Images can now be scanned for vulnerabilities through Amazon Inspector",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-amis-scanned-through-inspector/",
+          "published": "2026-11-02T08:00:00+00:00",
+          "summary": "<p>Amazon Inspector now extends its vulnerability scanning to EC2 Amazon Machine Images (AMIs), enabling you to identify software vulnerabilities in your AMIs without launching instances or installing additional software. This helps you fix issues at the source before AMIs are used to launch instances across your fleet.</p> \n<p>With this capability, you can run continuous evaluations to monitor your AMI catalog for newly discovered vulnerabilities, or perform targeted one-time scans for specific AMIs directly from the EC2 Console. You can enable AMI scanning for an account or across your entire organization in Amazon Inspector. For AWS Security Hub customers, you can enable AMI scanning as an add-on across your organization, and findings are also delivered to Security Hub. Based on the scan results, you can enable the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html\">Allowed AMIs</a> setting and specify security criteria that AMIs must meet to be available within your account and enforce this setting across the entire organization using Declarative Policies. Customers building AMIs with <a href=\"https://docs.aws.amazon.com/imagebuilder/latest/userguide/integ-inspector.html#integ-inspector-ami-scan\">EC2 Image Builder</a> can integrate scanning directly into their pipelines and restrict distribution of AMIs that do not meet their security standards.</p> \n<p>AMI Scanning helps you detect and remediate vulnerabilities earlier in your deployment pipeline, reducing the risk of deploying compromised compute resources. Security teams can now establish a consistent vulnerability scanning process across all AMIs improving their security posture before instances are launched.</p> \n<p>This capability is available in all commercial AWS Regions where Amazon Inspector is available. To learn more, see the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-scanning.html\">EC2 User Guide</a>,&nbsp;<a href=\"https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html\">Amazon Inspector User Guide</a>,&nbsp;the <a href=\"https://aws.amazon.com/inspector/pricing/\">Amazon Inspector pricing page</a>, and the <a href=\"https://aws.amazon.com/inspector/\">Amazon Inspector product page</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance,general:products/amazon-ec2,general:products/amazon-inspector,general:products/aws-security-hub,marketing:marchitecture/compute,general:content-type/ami"
+          ]
+        },
+        {
+          "title": "Amazon Textract now available in Asia Pacific (Tokyo) and Europe (Zurich)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/textract-tokyo-zurich/",
+          "published": "2026-11-02T08:00:00+00:00",
+          "summary": "<p>Amazon Textract is now available in the Asia Pacific (Tokyo) and Europe (Zurich) Regions. Amazon Textract is a machine learning service that automatically extracts text, handwriting, and data from scanned documents, going beyond simple optical character recognition (OCR) to identify and extract text and structured data.</p>\n<p>At launch in these Regions, Amazon Textract supports text detection and document analysis. This includes the DetectDocumentText, AnalyzeDocument, StartDocumentTextDetection, GetDocumentTextDetection, StartDocumentAnalysis, and GetDocumentAnalysis operations. The AnalyzeExpense, AnalyzeID, and AnalyzeLending operations, and Custom Queries (adapters), are not available in these Regions at this time.</p>\n<p>With this launch, Amazon Textract is available in a total of 18 AWS Regions: US East (Ohio), US East (N. Virginia), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Spain), the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions, and the newly added Asia Pacific (Tokyo) and Europe (Zurich) Regions.</p>\n<p>To learn more, see the <a href=\"https://aws.amazon.com/textract/\">Amazon Textract product page</a> and the <a href=\"https://docs.aws.amazon.com/textract/\">Amazon Textract Developer Guide</a>. For pricing and Region availability, see the <a href=\"https://aws.amazon.com/textract/pricing/\">Amazon Textract pricing page</a> and <a href=\"https://docs.aws.amazon.com/general/latest/gr/textract.html\">Amazon Textract endpoints and quotas</a>.</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon CloudFront now supports self-service increases in AWS Service Quotas",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-self-service-quotas/",
+          "published": "2026-11-02T08:00:00+00:00",
+          "summary": "<p>Amazon CloudFront now supports AWS Service Quotas, so you can view, monitor, and request increases for 28 CloudFront quotas from the Service Quotas console or API.</p> \n<p>Until now, increasing a quota on resources such as distributions, cache policies, origins, or alternate domain names meant opening a support case and waiting for manual review. If you have AWS Business Support or higher, requests for limit increases within published thresholds are now approved automatically. For example, you can raise your distribution quota from 500 to 1,000, or the number of alternate domain names per distribution from 100 to 500, without opening a support case. Some quotas also publish usage metrics to Amazon CloudWatch every 5 minutes, so you can set alarms and request an increase before you reach a limit..</p> \n<p>This feature is available in all AWS Regions where Amazon CloudFront is supported.</p> \n<p>To get started, visit <a href=\"https://console.aws.amazon.com/servicequotas/home#!/services/cloudfront/quotas\">the Service Quotas console</a> to view and request increases for your CloudFront quotas. To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html\">Amazon CloudFront quotas</a> in the Amazon CloudFront Developer Guide.</p>",
+          "categories": [
+            "general:products/amazon-cloudfront,marketing:marchitecture/management-and-governance"
+          ]
+        },
+        {
+          "title": "Announcing an updated text detection model for Amazon Textract",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/textract-text-detection-model/",
+          "published": "2026-11-02T08:00:00+00:00",
+          "summary": "<p>Amazon Textract now provides an updated text detection model that improves accuracy, expands language support, and enhances multilingual table extraction. The updated model applies to the DetectDocumentText and AnalyzeDocument APIs and requires no changes to your Amazon Textract API requests or response schema. Your applications are served by the updated model automatically, so you can continue calling Amazon Textract exactly as before.</p>\n<p>The updated model expands language coverage to more than 40 languages, including Albanian, Arabic, Basque, Belarusian, Bosnian, Bulgarian, Chinese (Simplified and Traditional), Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Hebrew, Hindi, Hungarian, Icelandic, Italian, Japanese, Korean, Latvian, Lithuanian, Luxembourgish, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian Cyrillic, Serbian Latin, Slovak, Slovenian, Spanish, Swedish, Turkish, Turkmen, and Ukrainian, enabling reliable processing of previously unsupported scripts. Accuracy improvements include enhanced long-word recognition and handwriting detection. Additionally, multilingual table extraction is more robust on merged cells, skewed or rotated tables, and partial or corrupted tables. These improvements help you accurately process invoices, forms, identity documents, and other multilingual or complex documents, including those with tables, at scale.</p>\n<p>The updated Amazon Textract model is available in all AWS Regions where Amazon Textract is available. To learn more, see the <a href=\"https://aws.amazon.com/textract/\">Amazon Textract product page</a> and the <a href=\"https://docs.aws.amazon.com/textract/\">Amazon Textract Developer Guide</a>.</p>",
+          "categories": [
+            "general:products/amazon-textract"
+          ]
+        },
         {
           "title": "Amazon Bedrock expands API support and introduces Cross-Region Inferencing for OpenAI models in AWS GovCloud (US)",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/",
@@ -95,12 +206,12 @@
           ]
         },
         {
-          "title": "AWS Glue Data Catalog now supports Apache Iceberg table optimization in the US West (N. California) Region",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/glue-data-catalog-optimizers-us-west-1/",
+          "title": "Amazon Quick Introduces Quick Essentials",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-quick-essentials/",
           "published": "2026-10-30T08:00:00+00:00",
-          "summary": "<p>AWS Glue Data Catalog now supports automatic table optimization for Apache Iceberg tables in the US West (N. California) Region. Apache Iceberg is an open table format that delivers fast query performance over large tables in data lakes. With this launch, you can enable table optimization for individual tables or for all tables in your Data Catalog.</p> \n<p>Apache Iceberg tables accumulate small files, snapshots, and unreferenced files with every write, which slows queries and increases storage costs over time. Table optimization continuously monitors your tables to compact small files in the background, remove snapshots that are past your retention settings, and delete unreferenced files that are no longer needed. You can monitor each run from the AWS Glue console, Amazon CloudWatch metrics, and logs.</p> \n<p>You can enable table optimization using the AWS Glue console, AWS CLI, or AWS SDKs. For the full list of Regions where table optimization is available, see <a href=\"https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.html\">Supported Regions for table optimizers</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/glue/latest/dg/table-optimizers.html\">Optimizing Iceberg tables</a> in the AWS Glue Developer Guide. To get started, visit the <a href=\"https://aws.amazon.com/glue/\">AWS Glue product page</a>.</p>",
+          "summary": "<p>Amazon Quick introduces Quick Essentials for enterprises. The plan makes it easier for organizations to get started with all the features of Quick such as AI-powered chat, Research, Flows, and Apps, and lets users view and interact with Quick Sight dashboards and reports and then manage adoption at the desired pace.</p> \n<p>In AWS Regions where Amazon Quick is available, Quick Sight Reader users are upgraded to Quick Essentials at no additional per-user cost. With Quick Essentials, Quick Sight Readers can ask their dashboards questions in plain language, like what drove a revenue dip in March, and dig into the details with follow-up questions. They can turn the answer into a document, presentation, or spreadsheet for their team. When they need more context, Research pulls from their data, files, and the web into a detailed report with citations. If they need the same update every week, Flows can build it and send it automatically. When they need a tool that doesn't exist yet, like a request tracker, they can describe it and Apps builds it, without writing code.</p> \n<p>Existing dashboards, Favorites, and Recents stay in place. Row-level and column-level security apply to every answer, and data is not shared across customers or used to train shared models. Administrators continue to manage the capabilities with <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/custom-permissions.html\" target=\"_blank\">custom permission</a> profiles that can be applied to any user or a role.</p> \n<p>Quick Essentials is enabled in a phased rollout across <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html#regions-qs\" target=\"_blank\"><u>AWS Regions where Quick AI features are available</u></a>. To learn more, read the <a href=\"https://community.amazonquick.com/t/every-reader-gets-professional-capabilities/53958\" target=\"_blank\"><u>Amazon Quick Community blog post</u></a>. For pricing details, visit the <a href=\"https://aws.amazon.com/quick/pricing/\" target=\"_blank\">Amazon Quick pricing page</a>.</p>",
           "categories": [
-            "marketing:marchitecture/analytics,general:products/aws-glue"
+            "marketing:marchitecture/artificial-intelligence,general:products/amazon-quicksight,marketing:marchitecture/analytics"
           ]
         },
         {
@@ -110,6 +221,15 @@
           "summary": "<p>Amazon SageMaker AI inference now supports GPU partitioning, enabling you to run several models on a single GPU instead of dedicating a whole accelerator to each one. Using NVIDIA Multi-Instance GPU (MIG) technology, SageMaker AI divides a GPU into as many as seven isolated partitions, each with its own memory and compute. Customers serving small and mid-size models, such as fine-tuned variants, embedding models, rerankers, and classifiers, previously had to give every model an entire accelerator, so an instance hosted no more models than it had GPUs and paid for GPU capacity those models could never use.</p>\n<p>With GPU partitioning, you choose how to divide the GPUs behind your endpoint and place each model on a partition sized to fit it. Several models then share one accelerator with hardware-enforced isolation, so a busy model cannot take memory or throughput from the models beside it. Right-sizing an accelerator to a workload also opens up newer instance generations that would otherwise be more capacity than a single model needs. You configure GPU partitioning when you create an endpoint that hosts inference components, and you continue to invoke each model by name, so your application code doesn't change.</p>\n<p>GPU partitioning is available on P4d, P5, G7, and G7e instances in US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Singapore), Asia Pacific (Tokyo), Europe (Frankfurt), and Europe (Ireland). To learn more, visit the <a href=\"https://aws.amazon.com/sagemaker/ai/deploy/\">Amazon SageMaker AI deployment page</a> and see the <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/inference-components-accelerator-partitioning.html\">Amazon SageMaker AI Developer Guide</a>.</p>",
           "categories": [
             "general:products/amazon-sagemaker"
+          ]
+        },
+        {
+          "title": "AWS Glue Data Catalog now supports Apache Iceberg table optimization in the US West (N. California) Region",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/glue-data-catalog-optimizers-us-west-1/",
+          "published": "2026-10-30T08:00:00+00:00",
+          "summary": "<p>AWS Glue Data Catalog now supports automatic table optimization for Apache Iceberg tables in the US West (N. California) Region. Apache Iceberg is an open table format that delivers fast query performance over large tables in data lakes. With this launch, you can enable table optimization for individual tables or for all tables in your Data Catalog.</p> \n<p>Apache Iceberg tables accumulate small files, snapshots, and unreferenced files with every write, which slows queries and increases storage costs over time. Table optimization continuously monitors your tables to compact small files in the background, remove snapshots that are past your retention settings, and delete unreferenced files that are no longer needed. You can monitor each run from the AWS Glue console, Amazon CloudWatch metrics, and logs.</p> \n<p>You can enable table optimization using the AWS Glue console, AWS CLI, or AWS SDKs. For the full list of Regions where table optimization is available, see <a href=\"https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.html\">Supported Regions for table optimizers</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/glue/latest/dg/table-optimizers.html\">Optimizing Iceberg tables</a> in the AWS Glue Developer Guide. To get started, visit the <a href=\"https://aws.amazon.com/glue/\">AWS Glue product page</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/analytics,general:products/aws-glue"
           ]
         },
         {
@@ -167,12 +287,12 @@
           ]
         },
         {
-          "title": "ACM now supports ACME for public certificates in AWS GovCloud (US)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/acm-acme-support-govcloud-us/",
+          "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-version-13-2/",
           "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>AWS Certificate Manager (ACM) ACME protocol support is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West), providing a fully managed ACME server endpoint that issues public TLS certificates from Amazon Trust Services using any ACMEv2-compatible client, including Certbot, cert-manager for Kubernetes, and acme.sh. With the CA/Browser Forum mandating 47-day certificate lifetimes by 2029, manual management of public certificates becomes untenable. ACME support in ACM gives developers a standards-based path to fully automate certificate issuance and renewal.</p>\n<p>To learn more, visit the <a href=\"https://aws.amazon.com/blogs/aws/automate-public-tls-certificate-issuance-with-acme-support-in-aws-certificate-manager/\">AWS News blog post</a>, the <a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-acme.html\">ACM ACME documentation</a>, the <a href=\"https://aws.amazon.com/certificate-manager/pricing/\">ACM pricing page</a>, and the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regional Services page</a>.</p>",
+          "summary": "<p>Amazon Managed Grafana now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin.</p>\n<p>With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through version control. Dynamic dashboards bring a more adaptable approach to layout and paneling. You can construct responsive views driven by conditions that respond to the data and variables in scope. With Amazon CloudWatch data source plugin support for Prometheus Query Language, you can use PromQL to query metrics that CloudWatch takes in via its OpenTelemetry (OTLP) endpoint, in addition to the existing Metric Search and Metrics Insights query types.</p>\n<p>In-place upgrade to Grafana 13.2 is supported in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS regions</a> where Amazon Managed Grafana is generally available. You can upgrade with just a few clicks from the AWS Console, AWS SDK or AWS CLI. For a complete list of new features, refer to <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v13\">Differences between Grafana versions</a> in the Amazon Managed Grafana User Guide. For upgrade instructions, see <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-version-update.html\">Update your workspace version</a>. To learn more about Amazon Managed Grafana features and its pricing, visit the <a href=\"https://aws.amazon.com/grafana/\">product page</a> and <a href=\"https://aws.amazon.com/grafana/pricing/\">pricing page</a>.</p>",
           "categories": [
-            "general:products/aws-govcloud-us,marketing:marchitecture/security-identity-and-compliance,general:products/aws-certificate-manager"
+            "general:products/amazon-cloudwatch,general:products/amazon-managed-service-for-grafana,marketing:marchitecture/management-and-governance"
           ]
         },
         {
@@ -185,21 +305,21 @@
           ]
         },
         {
+          "title": "ACM now supports ACME for public certificates in AWS GovCloud (US)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/acm-acme-support-govcloud-us/",
+          "published": "2026-10-29T08:00:00+00:00",
+          "summary": "<p>AWS Certificate Manager (ACM) ACME protocol support is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West), providing a fully managed ACME server endpoint that issues public TLS certificates from Amazon Trust Services using any ACMEv2-compatible client, including Certbot, cert-manager for Kubernetes, and acme.sh. With the CA/Browser Forum mandating 47-day certificate lifetimes by 2029, manual management of public certificates becomes untenable. ACME support in ACM gives developers a standards-based path to fully automate certificate issuance and renewal.</p>\n<p>To learn more, visit the <a href=\"https://aws.amazon.com/blogs/aws/automate-public-tls-certificate-issuance-with-acme-support-in-aws-certificate-manager/\">AWS News blog post</a>, the <a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-acme.html\">ACM ACME documentation</a>, the <a href=\"https://aws.amazon.com/certificate-manager/pricing/\">ACM pricing page</a>, and the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regional Services page</a>.</p>",
+          "categories": [
+            "general:products/aws-govcloud-us,marketing:marchitecture/security-identity-and-compliance,general:products/aws-certificate-manager"
+          ]
+        },
+        {
           "title": "Amazon SageMaker AI now supports SOCI-indexed images to start training jobs in seconds",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-ai-soci-images-training/",
           "published": "2026-10-29T08:00:00+00:00",
           "summary": "<p>Today, Amazon SageMaker AI announces support for Seekable OCI (SOCI)-indexed container images for training and processing jobs, so your jobs start running your code sooner. SOCI-indexed images start Amazon SageMaker AI training containers in seconds, cutting GPU idle time during image pulls by up to 90%, with no impact on training performance. Before a training or processing job can run, SageMaker AI downloads its container image to the instance. For deep learning images, which routinely exceed 10 GB, that download adds minutes to the start of every job, and you pay for that time. Now, when your image includes a SOCI index, SageMaker AI lazy-loads the image, fetching only the files needed to start the container and streaming the rest in the background as your code runs.</p> \n<p>To use this feature, reference a SOCI-indexed image from a private Amazon ECR repository in your training or processing job. You can use a pre-indexed AWS Deep Learning Container by changing the image tag to its -soci variant, or add a SOCI index to your own image in Amazon ECR with open-source tools, without rebuilding the image. No changes to your job definition, entry point, or data channels are needed. SageMaker AI checks for an index automatically and images without an index download as before. If an index can't be used, the job falls back to a standard download and continues running.</p> \n<p>SOCI-indexed images for SageMaker AI training and processing jobs are available today in all AWS Regions where SageMaker AI is available, through the SageMaker AI APIs, CLIs, SDKs, and Console. To learn more, see the documentation for <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/train-soci-indexed-images.html\">training jobs</a> and <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job-soci-indexed-images.html\">processing jobs</a>, or read the <a href=\"https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/\">launch blog</a>.</p>",
           "categories": [
             "general:products/amazon-ecr,general:products/amazon-sagemaker,general:products/aws-deep-learning-containers,general:products/amazon-sagemaker-training"
-          ]
-        },
-        {
-          "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-version-13-2/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>Amazon Managed Grafana now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin.</p>\n<p>With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through version control. Dynamic dashboards bring a more adaptable approach to layout and paneling. You can construct responsive views driven by conditions that respond to the data and variables in scope. With Amazon CloudWatch data source plugin support for Prometheus Query Language, you can use PromQL to query metrics that CloudWatch takes in via its OpenTelemetry (OTLP) endpoint, in addition to the existing Metric Search and Metrics Insights query types.</p>\n<p>In-place upgrade to Grafana 13.2 is supported in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS regions</a> where Amazon Managed Grafana is generally available. You can upgrade with just a few clicks from the AWS Console, AWS SDK or AWS CLI. For a complete list of new features, refer to <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v13\">Differences between Grafana versions</a> in the Amazon Managed Grafana User Guide. For upgrade instructions, see <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-version-update.html\">Update your workspace version</a>. To learn more about Amazon Managed Grafana features and its pricing, visit the <a href=\"https://aws.amazon.com/grafana/\">product page</a> and <a href=\"https://aws.amazon.com/grafana/pricing/\">pricing page</a>.</p>",
-          "categories": [
-            "general:products/amazon-cloudwatch,general:products/amazon-managed-service-for-grafana,marketing:marchitecture/management-and-governance"
           ]
         },
         {
@@ -327,138 +447,94 @@
           "categories": [
             "marketing:marchitecture/storage,general:products/amazon-redshift,general:products/aws-backup"
           ]
-        },
-        {
-          "title": "Announcing the AWS Marketplace and Amazon Business unified storefront",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/marketplace-business-storefront/",
-          "published": "2026-10-28T08:00:00+00:00",
-          "summary": "<p>Today, AWS Marketplace and Amazon Business announced the unified storefront. Organizations can now give their teams one curated catalog that puts software, data, and AI tools from AWS Marketplace alongside physical goods and supplies from Amazon Business. Many enterprises already buy from both, but they manage two catalogs with duplicated approval rules and separate reporting. The unified storefront can now give procurement teams one front door for both.</p>\n<p>Built on AWS Marketplace Storefront, the unified storefront lets administrators connect their organization's Amazon Business account and import Amazon Business products into their branded storefront. Administrators set governance rules once, and they apply across both catalogs. Buyers can browse AWS Marketplace listings and Amazon Business products in one place. Purchases of AWS Marketplace listings complete directly in the storefront and appear on the customer's AWS invoice. When a buyer selects an Amazon Business product, single sign-on takes them to an authenticated Amazon Business cart, so they don't need a second login. Each storefront connects only to the accounts its administrator sets up.</p>\n<p>The Amazon Business connector is available in all AWS Regions where AWS Marketplace operates to AWS Marketplace Storefront customers who have access to both the AWS Marketplace and Amazon Business APIs.</p>\n<p>To learn more, visit the <a href=\"https://aws.amazon.com/marketplace/partners/storefront\">AWS Marketplace Storefront product page</a> and the <a href=\"https://docs.aws.amazon.com/marketplace/latest/storefrontguide/what-is-marketplace-storefront.html\">AWS Marketplace Storefront User Guide</a>.</p>",
-          "categories": [
-            "general:products/aws-marketplace"
-          ]
-        },
-        {
-          "title": "AWS Agent Registry is now available in four additional AWS Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-four-regions/",
-          "published": "2026-10-28T08:00:00+00:00",
-          "summary": "<p>AWS Agent Registry, available through Amazon Bedrock AgentCore, is now available in four additional AWS Regions: Europe (London) eu-west-2, Europe (Frankfurt) eu-central-1, US East (Ohio) us-east-2, and Canada (Central) ca-central-1.</p>\n<p>AWS Agent Registry is a fully managed discovery service that provides a centralized catalog for organizing, curating, and discovering resources across your organization. With AWS Agent Registry, you can publish MCP servers, tools, agents, agent skills, and custom resources into a searchable registry, control access through an approval workflow, and enable both human users and AI agents to discover the right tools and agents through hybrid search, catalog browsing, and a native MCP endpoint.</p>\n<p>AWS Agent Registry is now available in nine AWS Regions. For a complete list of Region availability, see the AWS Regional Services List.</p>\n<p>To get started, see the AWS Agent Registry documentation: <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html\">https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html</a></p>",
-          "categories": [
-            "general:products/amazon-bedrock"
-          ]
-        },
-        {
-          "title": "AWS IAM Identity Center's Identity Store now supports change notifications through Amazon EventBridge",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-identity-store-change-notifications/",
-          "published": "2026-10-28T08:00:00+00:00",
-          "summary": "<p>AWS IAM Identity Center's Identity Store now delivers real-time events to Amazon EventBridge when users, groups, or group memberships or the identity store itself is created, updated, or deleted. AWS IAM Identity Center Identity Store is a central repository that allows you to manage identities and access across AWS accounts and applications, serving as the identity source for AWS IAM Identity Center. This new capability helps you automatically respond to identity lifecycle events and support your security and compliance processes by detecting changes as they happen.</p> \n<p>With Identity Store change notifications, you can build automated workflows that respond to identity changes in your organization. For example, security teams can create EventBridge rules that trigger AWS Lambda functions to audit user provisioning activity, send alerts to security information and event management (SIEM) systems, or update access in downstream applications when users or groups change. Organizations that manage large workforces can also use this data to automate onboarding and offboarding when users are added to or removed from specific groups.</p> \n<p>Change notifications are available in all AWS Regions where IAM Identity Center is available, and events are sent in each enabled Region of your instance. For the list of Regions, see <a href=\"https://builder.aws.com/build/capabilities/explore?tab=service-feature&amp;f=eJwdi0EKhDAUQ68yZK2L2fYAc4DZ-ouIZqQgtrRfQaR3909XeeElNwo3zsrlyzXEvcBhEByl51S0fws8OqQcE7Oen7Ap8_jjpEemTW9BEjhBzIJOoFYGb7D-wWxs1jV5NggLdw16vWZL2q36ivoAQn8tDw\">AWS capabilities by Regions</a>. Change notifications are available at no additional cost beyond standard Amazon EventBridge usage charges. To learn more, see <a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/event-notifications.html\">Event notifications</a> in the AWS IAM Identity Center User Guide and <a href=\"https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-identitystore.html\">Identity Store events</a> in the Amazon EventBridge Events Reference.</p>",
-          "categories": [
-            "general:products/aws-lambda,general:products/aws-iam-identity-center,marketing:marchitecture/security-identity-and-compliance"
-          ]
-        },
-        {
-          "title": "Amazon ECS now supports GPU sharing with NVIDIA Multi-Process Service (MPS)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-gpu-sharing-nvidia-mps/",
-          "published": "2026-10-27T23:31:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\">Amazon Elastic Container Service</a> (Amazon ECS) now supports GPU sharing with NVIDIA Multi-Process Service (MPS), enabling you to run multiple Amazon ECS tasks concurrently on a single NVIDIA GPU. GPU sharing helps you increase GPU utilization and reduce infrastructure costs for workloads that use only part of a GPU's capacity, such as small-model inference, AV/ADAS simulations, embedding generation, and multi-model serving.</p> \n<p>With GPU sharing, you can pack more workloads onto each GPU instance without changing your application code. You define the GPU memory each container needs and can optionally set a maximum share of GPU compute, and Amazon ECS places tasks on GPUs with available capacity as your services scale and deploy. GPU sharing is supported on Amazon ECS Managed Instances and Amazon ECS on Amazon EC2. On Amazon ECS Managed Instances, Amazon ECS also monitors the MPS control daemon that enables sharing on each instance. If the daemon stops or becomes unhealthy, Amazon ECS automatically replaces the instance and moves your tasks to healthy capacity, so your GPU workloads keep running without manual intervention.</p> \n<p>To get started, use the AWS Management Console, AWS CLI, AWS SDKs, AWS CloudFormation, or other infrastructure-as-code tools to create a capacity provider with NVIDIA GPU instances, set the GPU sharing strategy and memory in the container definition of your task definition, and create a service on that capacity provider. This capability is available in all AWS commercial and AWS GovCloud (US) <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\">Regions</a>. To learn more, visit the Amazon ECS GPU sharing <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu-sharing.html\" target=\"_blank\">documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/containers,marketing:marchitecture/serverless,general:products/aws-fargate,general:products/amazon-ecs,general:products/aws-govcloud-us"
-          ]
-        },
-        {
-          "title": "SageMaker MLflow Apps now support MLflow 3.16",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/",
-          "published": "2026-10-27T20:40:00+00:00",
-          "summary": "<p>Amazon SageMaker AI MLflow Apps now support MLflow 3.16, bringing a redesigned tracing experience and faster experiment tracking to your generative AI and machine learning workflows.</p> \n<p>MLflow 3.16 improves debugging and analysis of generative AI applications and agents. The redesigned trace explorer is now the default, with adjustable row height, reorderable columns, custom columns from any trace tag or metadata field. This release also accelerates metric charts for experiments with large metric histories.</p> \n<p>New MLflow Apps are created on MLflow 3.16 by default. Existing MLflow Apps will be upgraded to MLflow 3.16 during an upcoming maintenance window, with no action required.</p> \n<p>MLflow 3.16 is available in all AWS Regions where MLflow Apps are available. To learn more, visit the <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow.html\">SageMaker AI MLflow developer guide</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/artificial-intelligence,general:products/amazon-sagemaker"
-          ]
-        },
-        {
-          "title": "Amazon Connect Customer supports inline attachment previews",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-attachment-previews/",
-          "published": "2026-10-27T19:15:00+00:00",
-          "summary": "<p>Amazon Connect Customer lets agents preview attachments directly in the agent workspace, reducing contact handling time and limiting the need to download sensitive customer information. Agents can preview PDFs, images, and text files across email, chat, and cases, navigate between attachments, and view multi-page documents without leaving the conversation.</p> \n<p>Amazon Connect Customer attachment previews is available in the US East (N. Virginia), US West (Oregon), Africa (Cape Town), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), and Europe (London) <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">regions</a>.</p> \n<p>To learn more and get started, please refer to the help <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/preview-attachments.html\">documentation</a> or visit the <a href=\"https://aws.amazon.com/connect/\">Amazon Connect Customer</a> website.</p>",
-          "categories": [
-            "general:products/amazon-connect,marketing:marchitecture/contact-center"
-          ]
-        },
-        {
-          "title": "Amazon Aurora serverless now supports up to 384 ACUs",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/",
-          "published": "2026-10-27T16:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/rds/aurora/serverless/\" target=\"_blank\">Amazon Aurora serverless</a> now supports database capacity of up to 384 Aurora Capacity Units (ACUs) for Aurora PostgreSQL-Compatible Edition, a 50% increase from the previous maximum of 256 ACUs. Each ACU provides approximately 2 gibibytes (GiB) of memory with corresponding CPU and networking, so a single Aurora serverless database can now scale up to 768 GiB of memory. When the workload completes, Aurora serverless automatically scales down to zero. This makes Aurora serverless especially well-suited for agentic AI applications, which typically have bursts of activity, long idle windows, and unpredictable traffic patterns. Aurora serverless handles all of it automatically, scaling capacity with your agents, so you only pay for what you use.</p> \n<p>With 384 ACU support, customers can now use Aurora serverless for even more demanding workloads while continuing to scale down to zero when not in use, paying only for the capacity consumed. For new clusters, select a supported Aurora PostgreSQL engine version and set your maximum capacity up to 384 ACUs. For existing clusters on Platform Version 4, simply modify the cluster to update the maximum capacity setting (and the engine version if needed). There will be no downtime if your database is already on Platform Version 4. For existing clusters on older platform versions, upgrade to Platform Version 4 through a pending maintenance action. 384 ACU support is available for Aurora PostgreSQL versions 18.4, 17.10, 16.14, 15.18, and 14.23, running on Platform Version 4.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.how-it-works.html#aurora-serverless-v2.how-it-works.capacity\" target=\"_blank\">Aurora serverless capacity</a> in the Amazon Aurora User Guide. For pricing details and Region availability, visit <a href=\"https://aws.amazon.com/rds/aurora/pricing/\" target=\"_blank\">Amazon Aurora Pricing</a>. &nbsp;To get started, create or modify an Aurora serverless database in the <a href=\"https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-2_a53ff6382623e9a3&amp;client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&amp;forceMobileApp=0&amp;code_challenge=SCavOinSDkGpz8021yaDgWGy_E5aIbgB7HoRsIR47N0&amp;code_challenge_method=SHA-256\" target=\"_blank\">AWS Management Console</a>.</p>",
-          "categories": [
-            "general:products/amazon-aurora,marketing:marchitecture/databases"
-          ]
-        },
-        {
-          "title": "Amazon ElastiCache expands data tiering to R8gd and R7gd nodes in Europe (Spain) and Asia Pacific (Hyderabad)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/elasticache-data-tiering-spain/",
-          "published": "2026-10-27T15:25:00+00:00",
-          "summary": "<p>Amazon ElastiCache for Valkey data tiering is now available on Graviton4-based R8gd nodes in the AWS Europe (Spain) Region, and on Graviton3-based R7gd nodes in the Europe (Spain) and Asia Pacific (Hyderabad) Regions. Data tiering is a lower-cost way to scale your Valkey clusters to hundreds of terabytes of capacity. It uses solid state drives (SSDs) on each node alongside memory. When memory fills up, ElastiCache automatically moves the least recently used items to SSD. When your application reads an item stored on SSD, ElastiCache moves it back into memory before serving the request. Data tiering is a good fit for workloads that regularly access up to 20% of their dataset, and for applications that can tolerate some extra latency when they read data from SSD.</p> \n<p>R8gd nodes are powered by AWS Graviton4 processors. They deliver up to 47% higher throughput, up to 43% lower P99 latency, and up to 31% better price-performance than Graviton3-based nodes of the same size. R7gd nodes are powered by AWS Graviton3 processors. They deliver up to 28% more throughput (read and write operations per second), up to 21% better P99 latency, and up to 25% more network bandwidth than Graviton2-based nodes. Actual performance varies by node size and workload.</p> \n<p>You can use data tiering on R8gd and R7gd nodes with Valkey 7.2 and later. To get started, create a new cluster or upgrade an existing one with the AWS Management Console, the AWS CLI, or the AWS SDKs. For pricing, see the &nbsp;<a href=\"https://aws.amazon.com/elasticache/pricing/\">Amazon ElastiCache pricing page&nbsp;</a>. To learn more, see &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/data-tiering.html\">Data tiering&nbsp;</a> and &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html\">Supported node types&nbsp;</a> in the ElastiCache documentation.</p>",
-          "categories": [
-            "general:products/amazon-elasticache,marketing:marchitecture/databases"
-          ]
-        },
-        {
-          "title": "Amazon ElastiCache for Valkey now supports changing durability on existing clusters",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/",
-          "published": "2026-10-27T15:21:00+00:00",
-          "summary": "<p>Amazon ElastiCache for Valkey now lets you enable or disable durability on your existing node-based clusters. Previously, you couldn't change the durability configuration of an existing cluster in place. This made it harder to move from caching to persistent data store use cases, or to adapt as your application requirements change. Now you can change durability at any point in your application's lifecycle.</p> \n<p>You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding to the client, designed for zero data loss at single-digit millisecond write latency. Asynchronous writes persist data after responding to the client, maintaining microsecond write latency at no additional cost. However, up to 10 seconds of uncommitted data could be lost in the rare event of a failure. Both options maintain microsecond read latency. You can now use ElastiCache for a broader set of use cases beyond caching where data loss is unacceptable such as AI agent long-term memory, AI agent workflow state, knowledge bases for RAG applications, payment tokenization, and real-time inventory management.</p> \n<p>This feature is available in all AWS Regions where ElastiCache for Valkey 9.0 and later is available. To get started, use the AWS Management Console, AWS SDK, or AWS CLI. For pricing, see the &nbsp;<a href=\"https://aws.amazon.com/elasticache/pricing/\">Amazon ElastiCache pricing page</a>. To learn more, see &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/durability.html\">Durability</a>&nbsp;in the ElastiCache documentation.</p>",
-          "categories": [
-            "marketing:marchitecture/databases,general:products/amazon-elasticache"
-          ]
-        },
-        {
-          "title": "Amazon Corretto October 2026 Patch Updates",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-oct-2026-patch-updates",
-          "published": "2026-10-27T14:00:00+00:00",
-          "summary": "<p>On October 26, 2026 Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 27.0.1.0.11, 25.0.5.0.10, 21.0.13.0.11, 17.0.21.0.11, 11.0.33.0.10, and 8u512 are now available for <a href=\"https://aws.amazon.com/corretto/\">download</a>. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.</p> \n<p>Visit the Corretto <a href=\"https://aws.amazon.com/corretto\">home page</a> to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a <a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/generic-linux-install.html\">Corretto Apt, Yum, or Apk repo</a>.</p> \n<p>Feedback is <a href=\"https://github.com/corretto\">welcomed</a>!</p>",
-          "categories": [
-            "marketing:marchitecture/developer-tools,general:products/aws-govcloud-us,general:products/amazon-corretto"
-          ]
-        },
-        {
-          "title": "Amazon Neptune now supports online index rebuild to reclaim storage",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/neptune-online-index-rebuild/",
-          "published": "2026-10-27T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/neptune/\">Amazon Neptune</a> Database now supports online index rebuild, a new capability that helps database administrators and application teams defragment Neptune indexes and reclaim unused storage space without taking their database offline. Over time, insert, update, and delete operations create gaps of unused space within data pages, keeping the <code>VolumeBytesUsed</code> metric artificially elevated even after data is deleted. This fragmentation increases I/O costs and degrades query performance for teams running Gremlin, openCypher, or SPARQL workloads at scale.</p>\n<p>With online index rebuild, read and write queries continue uninterrupted on both the writer instance and read replicas throughout the entire rebuild process. You can target all indexes, only quad indexes, or only dictionary indexes, making this feature well-suited for post-deletion cleanup, periodic maintenance, storage limit management, and performance tuning on heavily fragmented databases. Tunable concurrency and write buffer size settings let you balance rebuild speed against workload impact, while built-in storage safety mechanisms protect against storage exhaustion during the operation.</p>\n<p>Online index rebuild is available starting with Amazon Neptune engine release 1.5.0.0 on provisioned writer instances, in all regions where Amazon Neptune Database is supported. To learn more about configuring and running online index rebuild, including API references and tuning guidance, visit the <a href=\"https://docs.aws.amazon.com/neptune/latest/userguide/storage-index-rebuild.html\">Amazon Neptune documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/storage,general:products/amazon-neptune,marketing:marchitecture/databases"
-          ]
-        },
-        {
-          "title": "Amazon Bedrock now offers Canada cross-Region inference for Claude Haiku 5.5",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-haiku-5-5-canada-cris/",
-          "published": "2026-10-27T08:00:00+00:00",
-          "summary": "<p>Amazon Bedrock now offers Canada cross-Region inference (CRIS) for Anthropic's Claude Haiku 5.5. Customers with strict data residency requirements can now keep inference processing entirely within Canada. Canada CRIS routes requests only between ca-central-1 (Canada Central) and ca-west-1 (Canada West, Calgary). This helps organizations in financial services, healthcare, the public sector, and other regulated industries meet federal and provincial data residency requirements.</p>\n<p>Canada CRIS adds to the inference options already available to customers in Canada. US CRIS and global CRIS remain fully supported for Claude Haiku 5.5. Both route requests across a broader set of AWS Regions, and global CRIS also offers cost savings, which makes these options a good fit for workloads that don't require inference processing to stay in Canada.</p>\n<p>Canada CRIS is designated as an inference profile with limited model selection. Future models and model versions might not be released for this profile. We recommend Canada CRIS for workloads that must keep inference processing within Canada. For more details, see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-limited-model-selection.html\">Inference profiles with limited model selection</a> in the Amazon Bedrock User Guide.</p>\n<p>For the most current information about model availability in each Region, see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\">Regional availability</a> by models in the Amazon Bedrock User Guide. To get started with Claude models on Amazon Bedrock, visit the Amazon Bedrock console.</p>",
-          "categories": [
-            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "Amazon ECR now supports replication backfill for existing container images",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr",
-          "published": "2026-10-26T20:24:00+00:00",
-          "summary": "<p>Amazon Elastic Container Registry (Amazon ECR) now supports replication backfill, enabling you to replicate existing images in your private registry to your configured replication registry destinations. Previously, replication only applied to images pushed after the replication configuration was enabled, requiring customers to manually retag images to trigger replication of preexisting images. With replication backfill, you can now replicate your full image catalog to new or existing destinations with a single API call.</p> \n<p>Replication backfill is useful when expanding to a new AWS Region, validating disaster recovery readiness, updating replication rules, or ensuring complete image catalogs exist across Regions for compliance purposes. You can run up to ten backfill jobs concurrently, monitor progress and per-image results through new APIs, and stop a job at any time without deleting images that have already been replicated.</p> \n<p>Replication backfill is available in all AWS Regions where Amazon ECR is available. To learn more, refer to the <a href=\"https://docs.aws.amazon.com/AmazonECR/latest/userguide/replication-backfill.html\">Amazon ECR user guide</a>.&nbsp;</p>",
-          "categories": [
-            "marketing:marchitecture/containers,general:products/amazon-ecr"
-          ]
-        },
-        {
-          "title": "OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/",
-          "published": "2026-10-26T18:27:00+00:00",
-          "summary": "<p>Today, AWS announces the general availability of OpenAI GPT-6.1 Terra on Amazon Bedrock. GPT-6.1 Terra expands the GPT-6 family with a balance of capability, speed, and cost efficiency for everyday workloads.&nbsp;</p> \n<p>As the newest model in the Terra line, GPT-6.1 Terra combines detailed visual reasoning, accurate computer use, and improved factuality and natural writing over GPT-5.6 Terra, for complex workflows. In OpenAI’s Agents’ Last Exam evaluation, it scored 15 percentage points higher than GPT-5.6 Terra, performed on par with GPT-6 Astra, and completed tasks more than three times faster than GPT-6 Astra and GPT-6.1 Sol. GPT-6.1 Terra offers balanced performance with input and output token prices at least 50% lower than those of GPT-6.1 Sol and GPT-5.6 Terra. It supports a context window of up to 1 million input tokens and accepts both text and image inputs. The Amazon Bedrock inference engine delivers the performance, security, and scale required for enterprise workloads.&nbsp;</p> \n<p>You can call GPT-6.1 Terra directly through Amazon Bedrock APIs or configure ChatGPT Work and Codex to use the model on Amazon Bedrock. Use it to draft proposals, interpret technical drawings, investigate codebases, and build agents that operate across business systems.&nbsp; Established AWS controls help you secure workloads, govern access, and audit model invocation activity.&nbsp;</p> \n<p>You can get started in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs. For information about supported AWS Regions, endpoints, APIs, features, inference profiles and pricing, see the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html\">Amazon Bedrock documentation.</a> &nbsp;</p>",
-          "categories": [
-            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "Kiro が自身のハーネスの性質を Lean で証明する",
+          "link": "https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/",
+          "published": "2026-11-03T02:03:10+00:00",
+          "summary": "Kiro が自身のコードの一部を Lean でモデル化し、そのモデルについての定理を証明し、各モデルを TypeScript、Rust、Python のコードと照らし合わせる作業を、自動で進める仕組みを作りました。最初に適用した対象は Kiro 自身です。",
+          "categories": [
+            "Developer Tools",
+            "Kiro"
+          ]
+        },
+        {
+          "title": "大規模金融系保守開発における AI 適用への挑戦 ── ニッセイ情報テクノロジーが AI-DLC v2 と内製ツールで進める、個人保険基幹系システムの AI 駆動開発",
+          "link": "https://aws.amazon.com/jp/blogs/news/ai-dlc-unicorn-gym-nissay-it-202611/",
+          "published": "2026-11-02T08:08:43+00:00",
+          "summary": "AWS では、AI を開発ライフサイクル全体に組み込み、人が意思決定と承認を担う開発の方法論「AI-DLC（A […]",
+          "categories": [
+            "Amazon Bedrock",
+            "Developer Tools",
+            "General"
+          ]
+        },
+        {
+          "title": "Amazon EVS と FSx for ONTAP 上で高可用性の Oracle Database を設計する",
+          "link": "https://aws.amazon.com/jp/blogs/news/architect-highly-available-oracle-database-on-amazon-evs-and-fsx-for-ontap/",
+          "published": "2026-11-02T07:51:22+00:00",
+          "summary": "VMware Cloud Foundation (VCF) への既存投資がある企業は、アプリケーションの再設計や運用チームの再教育を行うことなく、Oracle データベースを AWS に移行したいと考えています。Amazon Elastic VMware Service (Amazon EVS) 上の Oracle は、既存の VMware 運用ワークフローを維持しながら、サブミリ秒のストレージレイテンシー、スナップショットベースのバックアップ、クロスリージョンディザスタリカバリ (DR)、および独立したストレージスケーリングを活用できます。 この記事では、Amazon FSx for NetApp ONTAP を使用して Amazon EVS 上に完全な Oracle Database 環境を設計する方法を紹介します。使い慣れた VMware 運用ツールを維持しながら、ストレージ、コンピューティング、ネットワーキング、ディザスタリカバリの各レイヤーがどのように連携して高可用性、クロスリージョン DR、サブミリ秒のストレージレイテンシーを実現するかを学びます。",
+          "categories": [
+            "Advanced (300)",
+            "Amazon Elastic VMware Service (Amazon EVS)",
+            "Best Practices"
+          ]
+        },
+        {
+          "title": "Amazon EVS と FSx for ONTAP における Oracle Database のデプロイステップ",
+          "link": "https://aws.amazon.com/jp/blogs/news/deploy-oracle-database-step-by-step-on-amazon-evs-with-fsx-for-ontap/",
+          "published": "2026-11-02T07:51:05+00:00",
+          "summary": "この記事では、NFS データストアストレージとして Amazon FSx for NetApp ONTAP を使用して、Amazon Elastic VMware Service (Amazon EVS) 上に Oracle Database をデプロイするためのステップバイステップの手順を紹介します。ストレージボリュームのプロビジョニング、NFS データストアのマウント、Oracle のインストール、そしてクロスリージョンディザスタリカバリのための SnapMirror レプリケーションの設定を行います。 VMware 上で Oracle データベースを稼働させている企業は、再設計や再教育を行うことなく既存の運用ワークフローを維持できる AWS への移行パスを求めています。関連記事「Amazon EVS と FSx for ONTAP 上で高可用性の Oracle Database を設計する」では、Amazon Elastic Compute Cloud (Amazon EC2) ベアメタルインスタンスの選択、VM のサイジング、vSAN と FSx for ONTAP 間でのストレージの分割、クロスリージョン DR のための SnapMirror レプリケーションの計画など、環境を設計する方法を説明しました。 この記事は、アーキテクチャ編の続きです。Oracle VM のプロビジョニングと FSx for ONTAP ボリュームの作成から、NFS データストアのマウント、Oracle 19c のインストール、SnapMirror と SnapCenter の設定まで、スタック全体をデプロイするためのステップバイステップの手順を紹介します。また、既存のオンプレミス Oracle ワークロードを Amazon EVS に移行するための 4 つの移行パスと、スナップショットバックアップ、ポイントインタイムリカバリ、データベースクローニングを含む Day 2 運用についても説明します。",
+          "categories": [
+            "Advanced (300)",
+            "Amazon Elastic VMware Service (Amazon EVS)",
+            "Amazon FSx for NetApp ONTAP",
+            "Technical How-to"
+          ]
+        },
+        {
+          "title": "【開催報告】フロンティア AI 時代のサイバー攻撃に備える ― 臨時開催 AWS セキュリティセミナー",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-security-seminar-frontier-ai-report/",
+          "published": "2026-11-02T07:10:46+00:00",
+          "summary": "2026年10月23日と30日に、臨時のAWSセキュリティセミナー「フロンティアAI時代のサイバー攻撃に備える」をオンラインで開催しました。AWSが基盤側で行っている対策と、AWS WAF、Amazon Inspector、AWS Security Agentなどお客様の側で取り組める対策を、2回分まとめてご報告します。11月からは週次のオンラインハンズオンも開催しています。",
+          "categories": [
+            "Security",
+            "Webinars",
+            "Amazon Inspector",
+            "AWS Security",
+            "AWS WAF",
+            "Webinar"
+          ]
+        },
+        {
+          "title": "週刊生成AI with AWS – 2026/10/26 週",
+          "link": "https://aws.amazon.com/jp/blogs/news/weekly-genai-20261026/",
+          "published": "2026-11-02T05:32:10+00:00",
+          "summary": "今週の「週刊生成 AI with AWS」は、ドコモSMTBネット銀行が Amazon Connect Customer AI agents で電話とチャットの自動応対を始めた国内事例や、AMOREPACIFIC が Kiro でレガシー SAP ECC に AI 駆動開発を導入した事例を紹介しています。 サービスアップデートでは、Amazon Bedrock での OpenAI GPT-6.1 Terra の一般提供、Amazon Bedrock AgentCore CLI 1.0 の公開、AWS Step Functions のワークフローを AI エージェントのツールとして使える機能などを取り上げています。 Kiro では、ハロウィンハッカソン Kiroween 2026 の開始、11 月 1 日からの新しい無料トライアル、週 1,000 件の PR を支える Kiro Crew チームの品質管理の記事をまとめています。",
+          "categories": [
+            "General",
+            "Generative AI",
+            "AWSサービスアップデートまとめ",
+            "週刊AWS"
+          ]
+        },
+        {
+          "title": "AI ガードレールによるコンタクトセンターでの責任ある AI の実装",
+          "link": "https://aws.amazon.com/jp/blogs/news/implementing-responsible-ai-in-contact-centers-with-connect-ai-agents-guardrails/",
+          "published": "2026-11-02T05:23:14+00:00",
+          "summary": "Amazon Connect Customer のネイティブ機能 AI ガードレールは、コンタクトセンターにおける AI の安全で倫理的な導入を実現します。本記事では、プロンプト攻撃検出、コンテンツフィルタリング、PII 保護、コンテキストグラウンディングなど 7 つの保護コンポーネントの詳細と、AWS の責任ある AI フレームワークの 8 つの側面に沿った実装ガイダンスを解説します。",
+          "categories": [
+            "Amazon Connect",
+            "Security & Governance",
+            "#amazonconnect",
+            "contactcenter"
+          ]
+        },
         {
           "title": "Kiro のハロウィンハッカソン Kiroween 2026 が始まりました",
           "link": "https://aws.amazon.com/jp/blogs/news/kiroween-2026/",
@@ -490,118 +566,6 @@
             "DevOps",
             "General",
             "Management & Governance"
-          ]
-        },
-        {
-          "title": "【随時更新】Inter BEE 2026 AWS ブースのご案内：人が創り、人が決める。AI エージェントが支える次世代放送局",
-          "link": "https://aws.amazon.com/jp/blogs/news/jpmne-interbee2026-aws-introduction/",
-          "published": "2026-10-30T06:00:08+00:00",
-          "summary": "アマゾン ウェブ サービス ジャパン合同会社（AWS）は、2026 年 11 月 18 日（水）から 20 日 […]",
-          "categories": [
-            "AWS Elemental MediaConnect",
-            "AWS Elemental MediaConvert",
-            "AWS Elemental MediaLive",
-            "AWS Elemental MediaPackage",
-            "Broadcast",
-            "Content Production",
-            "Data Science & Analytics for Media",
-            "Direct-to-Consumer & Streaming",
-            "Events",
-            "General",
-            "Industries",
-            "Media & Entertainment",
-            "Media Services",
-            "AWS Media Services",
-            "Direct-to-Consumer"
-          ]
-        },
-        {
-          "title": "KDDI における Amazon EKS Auto Mode 商用導入：カスタムコントローラーによる運用課題の解決",
-          "link": "https://aws.amazon.com/jp/blogs/news/202611-kddi-eks-auto-mode-case-study/",
-          "published": "2026-10-30T04:12:08+00:00",
-          "summary": "KDDI 株式会社では 2026 年 7 月、通信事業のお客さま向けサービスを支える Amazon EKS のクラスタを、マネージドノードグループから Amazon EKS Auto Mode へ移行しました。ノードが最長 21日で自動的に入れ替わる仕組みにより、脆弱性対応のたびに発生していたノードの更新作業がなくなりました。一方で、無人でのノード更新を前提にしたことで、起動時の CPU 需要の集中や、失効によるノード入れ替え時刻の制御といった課題が表面化しました。本稿では、Pod 配置の適正化と、カスタムコントローラ node-rotation-controller の開発による対処を、実測値とあわせて紹介します。",
-          "categories": [
-            "Case Study",
-            "Containers",
-            "Customer Solutions",
-            "Amazon Elastic Kubernetes Service (Amazon EKS)"
-          ]
-        },
-        {
-          "title": "AWS Weekly Roundup: Amazon Polly の Generative エンジン、Trainium 向け TorchNeuron など (2026 年 10 月 26 日)",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
-          "published": "2026-10-30T02:42:40+00:00",
-          "summary": "数週間前、サンパウロにある AWS オフィスで、ブラジルの農業関連ビジネスに携わるビジネス部門と技術部門のリー […]",
-          "categories": [
-            "Amazon Bedrock",
-            "Amazon Bedrock AgentCore",
-            "Amazon EC2",
-            "Amazon Elastic Container Service",
-            "Amazon Elastic File System (EFS)",
-            "Amazon ElastiCache",
-            "Amazon Polly",
-            "Amazon SageMaker AI",
-            "Announcements",
-            "AWS Cloud Financial Management",
-            "AWS DataSync",
-            "AWS Neuron",
-            "AWS Trainium",
-            "AWS WAF",
-            "News",
-            "RDS for Oracle",
-            "Security"
-          ]
-        },
-        {
-          "title": "AWS Continuum for code vulnerabilities が一般提供を開始しました",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
-          "published": "2026-10-30T01:55:47+00:00",
-          "summary": "2026 年 10 月 22 日、AWS Continuum for code vulnerabilities […]",
-          "categories": [
-            "Announcements",
-            "Launch",
-            "News",
-            "Security, Identity, & Compliance"
-          ]
-        },
-        {
-          "title": "AI エージェントに書き込みを任せるとき、境界をどこに置くか ― Kiro CLI で仕組みを作り、1 か月運用した記録",
-          "link": "https://aws.amazon.com/jp/blogs/news/kiro-cli-agent-write-boundaries/",
-          "published": "2026-10-30T01:04:45+00:00",
-          "summary": "AI エージェント同士を組み合わせること自体は、いまではさまざまな方法で実現できます。2 つのコーディングエージェントを対話させる方法もあれば、Kiro のように公式の機能で複数のエージェントを段階的に動かす方法もあります。本記事が扱うのは、組み合わせ方そのものではありません。組み合わせた AI に書き込みを任せるとき、誰が権限を持ち、どこまで変更してよく、何を条件にマージするのか、という境界の置き方です。私は、自社プロダクトの開発のために、Kiro CLI を実装役とする仕組み（以下 BRIDGE）を作り、約 1 か月運用しました。本記事では、BRIDGE を作ったきっかけ、その構成と 4 つの境界、運用で分かったことを紹介し、最後に 2026 年 10 月時点の Kiro の標準機能と比較します。",
-          "categories": [
-            "Amazon Q Developer",
-            "Developer Tools",
-            "Kiro"
-          ]
-        },
-        {
-          "title": "Amazon EKS の高度な Kubernetes コントロールプレーン設定の紹介",
-          "link": "https://aws.amazon.com/jp/blogs/news/introducing-advanced-kubernetes-control-plane-configuration-in-amazon-eks/",
-          "published": "2026-10-29T13:03:32+00:00",
-          "summary": "2026 年 8 月に、Amazon EKS で、Kubernetes のコントロールプレーンのコンポーネント (API サーバー、スケジューラ、コントローラーマネージャー) を EKS API で直接設定できるようになりました。この記事では、設定できる項目を説明し、2 つのウォークスルーで実際に試します。1 つは Pod の配置を最適化する MostAllocated のビンパッキングの有効化、もう 1 つはイベントの保持期間の調整です。",
-          "categories": [
-            "Advanced (300)",
-            "Amazon Elastic Kubernetes Service",
-            "Announcements"
-          ]
-        },
-        {
-          "title": "re:Invent 2026 クラウドと AI の支出管理 ガイド: 参加前に押さえておきたいポイント",
-          "link": "https://aws.amazon.com/jp/blogs/news/use-ai-to-manage-your-ai-spend-your-guide-to-cloud-financial-management-sessions-at-reinvent-2026/",
-          "published": "2026-10-29T08:36:10+00:00",
-          "summary": "本投稿は、2026年 10 月 16 日に公開された、Know Before You Go: your re: […]",
-          "categories": [
-            "Amazon Bedrock",
-            "Amazon Bedrock Guardrails",
-            "Artificial Intelligence",
-            "AWS Cloud Financial Management",
-            "AWS Cost and Usage Report",
-            "AWS Cost Explorer",
-            "AWS re:Invent",
-            "Cloud Cost Optimization",
-            "Events",
-            "Generative AI"
           ]
         }
       ]
