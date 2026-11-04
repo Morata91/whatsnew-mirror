@@ -1,9 +1,61 @@
 {
-  "generated_at": "2026-11-03T03:26:40.712259+00:00",
+  "generated_at": "2026-11-04T02:16:09.490614+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon Connect Customer lets agents pause and resume emails",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-pause-resume-email/",
+          "published": "2026-11-03T20:15:00+00:00",
+          "summary": "<p>Amazon Connect Customer lets agents pause emails while waiting for information or approvals, freeing them to handle higher-priority contacts and resume their work later. For example, an agent waiting for a supervisor to approve a refund can pause the email and take an incoming call. Paused time is tracked separately from active handling time, giving supervisors a more accurate view of the time agents spend working on emails.</p> \n<p>Agents can pause and resume emails directly from the Agent Workspace or Contact Control Panel (CCP) and see how long each email has been paused. Supervisors can monitor paused emails and pause duration in real time, and use flows to automatically resume or transfer emails that remain paused beyond a configured threshold.</p> \n<p>Amazon Connect Customer email pause and resume is available in the US East (N. Virginia), US West (Oregon), Africa (Cape Town), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), and Europe (London) <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">regions</a>. To learn more and get started, please refer to the help <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/concepts-pause-and-resume-emails.html\">documentation</a> or visit the <a href=\"https://aws.amazon.com/connect/\">Amazon Connect Customer</a> website.</p>",
+          "categories": [
+            "general:products/amazon-connect,marketing:marchitecture/contact-center"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer prefills the email address for new threads started from cases",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-email-addresses/",
+          "published": "2026-11-03T17:00:00+00:00",
+          "summary": "<p>Amazon Connect Customer automatically fills in the customer’s email address from the linked customer profile when agents start a new email thread from a case. This saves agents time and reduces manual entry errors by eliminating the need to look up or type the address.</p> \n<p>Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Cases <a href=\"https://aws.amazon.com/products/connect/customer/cases/\" target=\"_blank\" rel=\"noopener noreferrer\">webpage</a> and <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/cases.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/contact-center,general:products/amazon-connect,marketing:marchitecture/messaging,marketing:marchitecture/business-productivity"
+          ]
+        },
+        {
+          "title": "AWS Config now supports 10 new resource types",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-new-resource-types",
+          "published": "2026-11-03T16:00:00+00:00",
+          "summary": "<p>AWS Config now supports 10 additional AWS resource types across key services including Amazon ElastiCache and Amazon QuickSight. This expansion provides greater coverage over your AWS environment, enabling you to more effectively discover, assess, audit, and remediate an even broader range of resources.</p> \n<p>With this launch, if you have enabled recording for all resource types, then AWS Config will automatically track these new additions. The newly supported resource types are also available in Config rules and Config aggregators.</p> \n<p>You can now use AWS Config to monitor the following newly supported resource types in all <a href=\"https://docs.aws.amazon.com/config/latest/developerguide/what-is-resource-config-coverage.html\">AWS Regions</a> where the resources are available:</p> \n<p><br> Resource Types:</p> \n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"174\"> \n <tbody>\n  <tr>\n   <td height=\"21\" width=\"87\">AWS::Billing::BillingView</td> \n   <td width=\"87\">AWS::MPA::IdentitySource</td> \n  </tr>\n  <tr>\n   <td height=\"21\">AWS::Connect::HoursOfOperation</td> \n   <td>AWS::Notifications::OrganizationalUnitAssociation</td> \n  </tr>\n  <tr>\n   <td height=\"21\">AWS::ElastiCache::CacheCluster</td> \n   <td>AWS::NotificationsContacts::EmailContact</td> \n  </tr>\n  <tr>\n   <td height=\"21\">AWS::ElastiCache::ReplicationGroup</td> \n   <td>AWS::Oam::Link</td> \n  </tr>\n  <tr>\n   <td height=\"21\">AWS::MediaLive::SignalMap</td> \n   <td>AWS::QuickSight::Agent</td> \n  </tr>\n </tbody>\n</table>",
+          "categories": [
+            "general:products/aws-config,marketing:marchitecture/management-and-governance"
+          ]
+        },
+        {
+          "title": "Amazon RDS now supports the latest Cumulative Update and GDR updates for Microsoft SQL Server",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-supports-latest-cumulative-update-gdr-microsoft-sql-server/",
+          "published": "2026-11-03T08:30:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\">Amazon Relational Database Service (Amazon RDS) for SQL Server</a> now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2017 CU31+GDR <a href=\"https://support.microsoft.com/en-us/help/5128496\" target=\"_blank\">KB5128496</a> (RDS version 14.00.3560.2.v1), SQL Server 2019 CU32+GDR <a href=\"https://support.microsoft.com/en-us/help/5128494\" target=\"_blank\">KB5128494</a> (RDS version 15.00.4500.2.v1), SQL Server 2022 CU27+GDR <a href=\"https://support.microsoft.com/en-us/help/5126934\" target=\"_blank\">KB5126934</a> (RDS version 16.00.4305.5.v1) and SQL Server 2025 CU10 <a href=\"https://support.microsoft.com/en-us/help/5125471\" target=\"_blank\">KB5125471</a> (RDS version 17.00.5035.5.v1).</p> \n<p>For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5128496, KB5128494, KB5126934 and KB5125471. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\">Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine</a>.</p>",
+          "categories": [
+            "general:products/aws-govcloud-us,general:products/amazon-rds-for-sql-server,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "AWS Transform for mainframe improves the reimagine modernization workflow",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-mainframe-reimagine/",
+          "published": "2026-11-03T08:00:00+00:00",
+          "summary": "<p>AWS Transform for mainframe now discovers business functions with field-level precision and generates a new requirements coverage report in the assess and reimagine workflow. Previously, business functions that used the same table or file were grouped together, and you had to build your own traceability reporting from AWS Transform artifacts. With this launch, you can start modernizing z/OS COBOL and PL/I workloads from a more accurate catalog of business functions and verify requirements coverage before you build.</p>\n<p>Business functions are now grouped only when they affect the same data fields. They also include screens and queues and carry clearer names and descriptions. The new requirements coverage report shows how every part of your application is accounted for in the generated requirements. Every line of source code is classified by how it was handled, every business rule links to the exact lines it came from, and every requirement is backed by the business rules that support it. You can review coverage from the full portfolio down to a single line before moving into forward engineering in Kiro and other IDEs.</p>\n<p>These capabilities are available in all AWS Regions where AWS Transform for mainframe is available. For more information, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Region table</a>. To learn more, visit <a href=\"https://aws.amazon.com/transform/mainframe/\">AWS Transform for mainframe</a> or see the <a href=\"https://docs.aws.amazon.com/transform/\">AWS Transform for mainframe documentation</a>.</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon EKS Capabilities now supports Argo CD Notifications",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-argo-cd-notifications",
+          "published": "2026-11-03T06:00:00+00:00",
+          "summary": "<p>The Amazon Elastic Kubernetes Service (Amazon EKS) Capability for Argo CD now supports Argo CD Notifications, providing notifications when your applications sync, fail, or change health. You define triggers and message templates in your cluster and subscribe individual Applications with an annotation, the same way you do in upstream Argo CD.</p> \n<p>With this launch, you can deliver notifications to 16 notification services, including Slack, PagerDuty, Opsgenie, Amazon SQS, and Amazon EventBridge. The Amazon SQS and Amazon EventBridge services authenticate with your IAM Capability Role, so you can route deployment events into your own event-driven workflows without storing credentials in your cluster. For a service that requires third-party credentials such as a Slack token, you can specify an AWS Secrets Manager ARN in place of the secret and EKS will automatically use it on your behalf.</p> \n<p>Notifications are available in all AWS Regions where the EKS Capability for Argo CD is available, at no additional charge. Standard charges apply for resources related to the services your notifications use, for example Amazon SQS or Amazon EventBridge. To learn more, visit <a href=\"https://aws.amazon.com/eks/features/\">Amazon EKS</a>&nbsp;and refer to the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/argocd-notifications.html\">Amazon EKS User Guide</a>.</p>",
+          "categories": [
+            "general:products/amazon-eks,marketing:marchitecture/containers"
+          ]
+        },
         {
           "title": "Amazon RDS for Oracle now supports M8i and R8i instances in additional AWS Regions",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-m8i-r8i-instances-new-regions/",
@@ -98,12 +150,12 @@
           "categories": []
         },
         {
-          "title": "Amazon CloudFront now supports self-service increases in AWS Service Quotas",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-self-service-quotas/",
+          "title": "Announcing AWS for Fluent Bit 3.0.0 based on Fluent Bit 4.1.1",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2025/10/aws-fluent-bit-3-0-0-based-4-1-1",
           "published": "2026-11-02T08:00:00+00:00",
-          "summary": "<p>Amazon CloudFront now supports AWS Service Quotas, so you can view, monitor, and request increases for 28 CloudFront quotas from the Service Quotas console or API.</p> \n<p>Until now, increasing a quota on resources such as distributions, cache policies, origins, or alternate domain names meant opening a support case and waiting for manual review. If you have AWS Business Support or higher, requests for limit increases within published thresholds are now approved automatically. For example, you can raise your distribution quota from 500 to 1,000, or the number of alternate domain names per distribution from 100 to 500, without opening a support case. Some quotas also publish usage metrics to Amazon CloudWatch every 5 minutes, so you can set alarms and request an increase before you reach a limit..</p> \n<p>This feature is available in all AWS Regions where Amazon CloudFront is supported.</p> \n<p>To get started, visit <a href=\"https://console.aws.amazon.com/servicequotas/home#!/services/cloudfront/quotas\">the Service Quotas console</a> to view and request increases for your CloudFront quotas. To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html\">Amazon CloudFront quotas</a> in the Amazon CloudFront Developer Guide.</p>",
+          "summary": "<p>AWS for Fluent Bit announces version <a href=\"https://github.com/aws/aws-for-fluent-bit/releases/tag/v3.0.0\" target=\"_blank\" rel=\"noopener noreferrer\">3.0.0</a>, based on Fluent Bit version 4.1.1 and Amazon Linux 2023. Container logging using AWS for Fluent Bit is now more performant and more feature-rich for AWS customers, including those using <a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Elastic Container Services</a> (Amazon ECS) and <a href=\"https://aws.amazon.com/eks/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Elastic Kubernetes Service</a> (Amazon EKS).<br> <br> AWS for Fluent Bit enables Amazon ECS and Amazon EKS customers to collect, process, and route container logs to destinations including Amazon CloudWatch Logs, Amazon Data Firehose, Amazon Kinesis Data Streams, and Amazon S3 without changing application code. AWS for Fluent Bit 3.0.0 upgrades the Fluent Bit version to 4.1.1, and upgrades the base image to Amazon Linux 2023. These updates deliver access to the latest Fluent Bit features, significant performance improvements, and enhanced security. New features include native OpenTelemetry (OTel) support for ingesting and forwarding OTLP logs, metrics, and traces with AWS SigV4 authentication. Performance improvements include faster JSON parsing, processing more logs per vCPU with lower latency. Security enhancements include TLS min version and cipher controls, which enforce your TLS policy on outputs from AWS for Fluent Bit for stronger protocol posture.<br> <br> You can use AWS for Fluent Bit 3.0.0 on both ECS and EKS. On ECS, update the FireLens log-router container image in your task definition to the 3.0.0 tag from the Amazon ECR Public Gallery. On EKS, upgrade by either updating the Helm release or setting the DaemonSet image to the 3.0.0 version.<br> <br> The <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/firelens-using-fluentbit.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS for Fluent Bit image</a> is available in the <a href=\"https://gallery.ecr.aws/aws-observability/aws-for-fluent-bit\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon ECR Public Gallery</a> and in the Amazon ECR repository. You can also find it on <a href=\"https://github.com/aws/aws-for-fluent-bit\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> for source code and additional guidance.</p> \n<p>&nbsp;</p> \n<p><i>10/29/2025 - This post has been updated to accurately reflect the Fluent Bit version at launch.<br> 11/02/2026 - This post has been updated to clarify the scope of OpenTelemetry support.</i></p> \n<p>&nbsp;</p>",
           "categories": [
-            "general:products/amazon-cloudfront,marketing:marchitecture/management-and-governance"
+            "general:products/amazon-eks,marketing:marchitecture/containers,general:products/amazon-ecs,general:products/aws-govcloud-us"
           ]
         },
         {
@@ -113,6 +165,15 @@
           "summary": "<p>Amazon Textract now provides an updated text detection model that improves accuracy, expands language support, and enhances multilingual table extraction. The updated model applies to the DetectDocumentText and AnalyzeDocument APIs and requires no changes to your Amazon Textract API requests or response schema. Your applications are served by the updated model automatically, so you can continue calling Amazon Textract exactly as before.</p>\n<p>The updated model expands language coverage to more than 40 languages, including Albanian, Arabic, Basque, Belarusian, Bosnian, Bulgarian, Chinese (Simplified and Traditional), Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Hebrew, Hindi, Hungarian, Icelandic, Italian, Japanese, Korean, Latvian, Lithuanian, Luxembourgish, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian Cyrillic, Serbian Latin, Slovak, Slovenian, Spanish, Swedish, Turkish, Turkmen, and Ukrainian, enabling reliable processing of previously unsupported scripts. Accuracy improvements include enhanced long-word recognition and handwriting detection. Additionally, multilingual table extraction is more robust on merged cells, skewed or rotated tables, and partial or corrupted tables. These improvements help you accurately process invoices, forms, identity documents, and other multilingual or complex documents, including those with tables, at scale.</p>\n<p>The updated Amazon Textract model is available in all AWS Regions where Amazon Textract is available. To learn more, see the <a href=\"https://aws.amazon.com/textract/\">Amazon Textract product page</a> and the <a href=\"https://docs.aws.amazon.com/textract/\">Amazon Textract Developer Guide</a>.</p>",
           "categories": [
             "general:products/amazon-textract"
+          ]
+        },
+        {
+          "title": "Amazon CloudFront now supports self-service increases in AWS Service Quotas",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-self-service-quotas/",
+          "published": "2026-11-02T08:00:00+00:00",
+          "summary": "<p>Amazon CloudFront now supports AWS Service Quotas, so you can view, monitor, and request increases for 28 CloudFront quotas from the Service Quotas console or API.</p> \n<p>Until now, increasing a quota on resources such as distributions, cache policies, origins, or alternate domain names meant opening a support case and waiting for manual review. If you have AWS Business Support or higher, requests for limit increases within published thresholds are now approved automatically. For example, you can raise your distribution quota from 500 to 1,000, or the number of alternate domain names per distribution from 100 to 500, without opening a support case. Some quotas also publish usage metrics to Amazon CloudWatch every 5 minutes, so you can set alarms and request an increase before you reach a limit..</p> \n<p>This feature is available in all AWS Regions where Amazon CloudFront is supported.</p> \n<p>To get started, visit <a href=\"https://console.aws.amazon.com/servicequotas/home#!/services/cloudfront/quotas\">the Service Quotas console</a> to view and request increases for your CloudFront quotas. To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html\">Amazon CloudFront quotas</a> in the Amazon CloudFront Developer Guide.</p>",
+          "categories": [
+            "general:products/amazon-cloudfront,marketing:marchitecture/management-and-governance"
           ]
         },
         {
@@ -197,21 +258,21 @@
           ]
         },
         {
-          "title": "Managed Prometheus collectors now support Amazon MSK consumer-group metrics",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/prometheus-collectors-msk-metrics/",
-          "published": "2026-10-30T08:00:00+00:00",
-          "summary": "<p>Managed Prometheus collectors now support Amazon MSK consumer-group metrics for <a href=\"https://aws.amazon.com/prometheus/\">Amazon Managed Service for Prometheus</a> and <a href=\"https://aws.amazon.com/cloudwatch/\">Amazon CloudWatch</a>. The integration collects Kafka exporter metrics and consumer-group lag metrics from your Amazon MSK clusters.</p>\n<p>Managed Prometheus collectors discover and collect Prometheus metrics from your workloads, so you don't run and operate collection agents yourself. You ingest the collected metrics into an Amazon Managed Service for Prometheus workspace or into Amazon CloudWatch, where you query and analyze them. You monitor Kafka stream health and consumer performance with consumer-group metrics. This helps you detect processing bottlenecks in your streaming applications.</p>\n<p>This feature is available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where managed Prometheus collectors are generally available. To learn more, see the documentation for <a href=\"https://docs.aws.amazon.com/prometheus/latest/userguide/prom-msk-kafka-exporter.html\">Amazon Managed Service for Prometheus</a> and <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/managed-prometheus-collectors-msk-kafka-exporter.html\">Amazon CloudWatch</a>.</p>",
-          "categories": [
-            "general:products/amazon-cloudwatch,general:products/amazon-msk"
-          ]
-        },
-        {
           "title": "Amazon Quick Introduces Quick Essentials",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-quick-essentials/",
           "published": "2026-10-30T08:00:00+00:00",
           "summary": "<p>Amazon Quick introduces Quick Essentials for enterprises. The plan makes it easier for organizations to get started with all the features of Quick such as AI-powered chat, Research, Flows, and Apps, and lets users view and interact with Quick Sight dashboards and reports and then manage adoption at the desired pace.</p> \n<p>In AWS Regions where Amazon Quick is available, Quick Sight Reader users are upgraded to Quick Essentials at no additional per-user cost. With Quick Essentials, Quick Sight Readers can ask their dashboards questions in plain language, like what drove a revenue dip in March, and dig into the details with follow-up questions. They can turn the answer into a document, presentation, or spreadsheet for their team. When they need more context, Research pulls from their data, files, and the web into a detailed report with citations. If they need the same update every week, Flows can build it and send it automatically. When they need a tool that doesn't exist yet, like a request tracker, they can describe it and Apps builds it, without writing code.</p> \n<p>Existing dashboards, Favorites, and Recents stay in place. Row-level and column-level security apply to every answer, and data is not shared across customers or used to train shared models. Administrators continue to manage the capabilities with <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/custom-permissions.html\" target=\"_blank\">custom permission</a> profiles that can be applied to any user or a role.</p> \n<p>Quick Essentials is enabled in a phased rollout across <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html#regions-qs\" target=\"_blank\"><u>AWS Regions where Quick AI features are available</u></a>. To learn more, read the <a href=\"https://community.amazonquick.com/t/every-reader-gets-professional-capabilities/53958\" target=\"_blank\"><u>Amazon Quick Community blog post</u></a>. For pricing details, visit the <a href=\"https://aws.amazon.com/quick/pricing/\" target=\"_blank\">Amazon Quick pricing page</a>.</p>",
           "categories": [
             "marketing:marchitecture/artificial-intelligence,general:products/amazon-quicksight,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "Managed Prometheus collectors now support Amazon MSK consumer-group metrics",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/prometheus-collectors-msk-metrics/",
+          "published": "2026-10-30T08:00:00+00:00",
+          "summary": "<p>Managed Prometheus collectors now support Amazon MSK consumer-group metrics for <a href=\"https://aws.amazon.com/prometheus/\">Amazon Managed Service for Prometheus</a> and <a href=\"https://aws.amazon.com/cloudwatch/\">Amazon CloudWatch</a>. The integration collects Kafka exporter metrics and consumer-group lag metrics from your Amazon MSK clusters.</p>\n<p>Managed Prometheus collectors discover and collect Prometheus metrics from your workloads, so you don't run and operate collection agents yourself. You ingest the collected metrics into an Amazon Managed Service for Prometheus workspace or into Amazon CloudWatch, where you query and analyze them. You monitor Kafka stream health and consumer performance with consumer-group metrics. This helps you detect processing bottlenecks in your streaming applications.</p>\n<p>This feature is available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where managed Prometheus collectors are generally available. To learn more, see the documentation for <a href=\"https://docs.aws.amazon.com/prometheus/latest/userguide/prom-msk-kafka-exporter.html\">Amazon Managed Service for Prometheus</a> and <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/managed-prometheus-collectors-msk-kafka-exporter.html\">Amazon CloudWatch</a>.</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch,general:products/amazon-msk"
           ]
         },
         {
@@ -287,12 +348,12 @@
           ]
         },
         {
-          "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-version-13-2/",
+          "title": "ACM now supports ACME for public certificates in AWS GovCloud (US)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/acm-acme-support-govcloud-us/",
           "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>Amazon Managed Grafana now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin.</p>\n<p>With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through version control. Dynamic dashboards bring a more adaptable approach to layout and paneling. You can construct responsive views driven by conditions that respond to the data and variables in scope. With Amazon CloudWatch data source plugin support for Prometheus Query Language, you can use PromQL to query metrics that CloudWatch takes in via its OpenTelemetry (OTLP) endpoint, in addition to the existing Metric Search and Metrics Insights query types.</p>\n<p>In-place upgrade to Grafana 13.2 is supported in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS regions</a> where Amazon Managed Grafana is generally available. You can upgrade with just a few clicks from the AWS Console, AWS SDK or AWS CLI. For a complete list of new features, refer to <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v13\">Differences between Grafana versions</a> in the Amazon Managed Grafana User Guide. For upgrade instructions, see <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-version-update.html\">Update your workspace version</a>. To learn more about Amazon Managed Grafana features and its pricing, visit the <a href=\"https://aws.amazon.com/grafana/\">product page</a> and <a href=\"https://aws.amazon.com/grafana/pricing/\">pricing page</a>.</p>",
+          "summary": "<p>AWS Certificate Manager (ACM) ACME protocol support is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West), providing a fully managed ACME server endpoint that issues public TLS certificates from Amazon Trust Services using any ACMEv2-compatible client, including Certbot, cert-manager for Kubernetes, and acme.sh. With the CA/Browser Forum mandating 47-day certificate lifetimes by 2029, manual management of public certificates becomes untenable. ACME support in ACM gives developers a standards-based path to fully automate certificate issuance and renewal.</p>\n<p>To learn more, visit the <a href=\"https://aws.amazon.com/blogs/aws/automate-public-tls-certificate-issuance-with-acme-support-in-aws-certificate-manager/\">AWS News blog post</a>, the <a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-acme.html\">ACM ACME documentation</a>, the <a href=\"https://aws.amazon.com/certificate-manager/pricing/\">ACM pricing page</a>, and the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regional Services page</a>.</p>",
           "categories": [
-            "general:products/amazon-cloudwatch,general:products/amazon-managed-service-for-grafana,marketing:marchitecture/management-and-governance"
+            "general:products/aws-govcloud-us,marketing:marchitecture/security-identity-and-compliance,general:products/aws-certificate-manager"
           ]
         },
         {
@@ -305,21 +366,21 @@
           ]
         },
         {
-          "title": "ACM now supports ACME for public certificates in AWS GovCloud (US)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/acm-acme-support-govcloud-us/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>AWS Certificate Manager (ACM) ACME protocol support is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West), providing a fully managed ACME server endpoint that issues public TLS certificates from Amazon Trust Services using any ACMEv2-compatible client, including Certbot, cert-manager for Kubernetes, and acme.sh. With the CA/Browser Forum mandating 47-day certificate lifetimes by 2029, manual management of public certificates becomes untenable. ACME support in ACM gives developers a standards-based path to fully automate certificate issuance and renewal.</p>\n<p>To learn more, visit the <a href=\"https://aws.amazon.com/blogs/aws/automate-public-tls-certificate-issuance-with-acme-support-in-aws-certificate-manager/\">AWS News blog post</a>, the <a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-acme.html\">ACM ACME documentation</a>, the <a href=\"https://aws.amazon.com/certificate-manager/pricing/\">ACM pricing page</a>, and the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regional Services page</a>.</p>",
-          "categories": [
-            "general:products/aws-govcloud-us,marketing:marchitecture/security-identity-and-compliance,general:products/aws-certificate-manager"
-          ]
-        },
-        {
           "title": "Amazon SageMaker AI now supports SOCI-indexed images to start training jobs in seconds",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-ai-soci-images-training/",
           "published": "2026-10-29T08:00:00+00:00",
           "summary": "<p>Today, Amazon SageMaker AI announces support for Seekable OCI (SOCI)-indexed container images for training and processing jobs, so your jobs start running your code sooner. SOCI-indexed images start Amazon SageMaker AI training containers in seconds, cutting GPU idle time during image pulls by up to 90%, with no impact on training performance. Before a training or processing job can run, SageMaker AI downloads its container image to the instance. For deep learning images, which routinely exceed 10 GB, that download adds minutes to the start of every job, and you pay for that time. Now, when your image includes a SOCI index, SageMaker AI lazy-loads the image, fetching only the files needed to start the container and streaming the rest in the background as your code runs.</p> \n<p>To use this feature, reference a SOCI-indexed image from a private Amazon ECR repository in your training or processing job. You can use a pre-indexed AWS Deep Learning Container by changing the image tag to its -soci variant, or add a SOCI index to your own image in Amazon ECR with open-source tools, without rebuilding the image. No changes to your job definition, entry point, or data channels are needed. SageMaker AI checks for an index automatically and images without an index download as before. If an index can't be used, the job falls back to a standard download and continues running.</p> \n<p>SOCI-indexed images for SageMaker AI training and processing jobs are available today in all AWS Regions where SageMaker AI is available, through the SageMaker AI APIs, CLIs, SDKs, and Console. To learn more, see the documentation for <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/train-soci-indexed-images.html\">training jobs</a> and <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job-soci-indexed-images.html\">processing jobs</a>, or read the <a href=\"https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/\">launch blog</a>.</p>",
           "categories": [
             "general:products/amazon-ecr,general:products/amazon-sagemaker,general:products/aws-deep-learning-containers,general:products/amazon-sagemaker-training"
+          ]
+        },
+        {
+          "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-version-13-2/",
+          "published": "2026-10-29T08:00:00+00:00",
+          "summary": "<p>Amazon Managed Grafana now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin.</p>\n<p>With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through version control. Dynamic dashboards bring a more adaptable approach to layout and paneling. You can construct responsive views driven by conditions that respond to the data and variables in scope. With Amazon CloudWatch data source plugin support for Prometheus Query Language, you can use PromQL to query metrics that CloudWatch takes in via its OpenTelemetry (OTLP) endpoint, in addition to the existing Metric Search and Metrics Insights query types.</p>\n<p>In-place upgrade to Grafana 13.2 is supported in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS regions</a> where Amazon Managed Grafana is generally available. You can upgrade with just a few clicks from the AWS Console, AWS SDK or AWS CLI. For a complete list of new features, refer to <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v13\">Differences between Grafana versions</a> in the Amazon Managed Grafana User Guide. For upgrade instructions, see <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-version-update.html\">Update your workspace version</a>. To learn more about Amazon Managed Grafana features and its pricing, visit the <a href=\"https://aws.amazon.com/grafana/\">product page</a> and <a href=\"https://aws.amazon.com/grafana/pricing/\">pricing page</a>.</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch,general:products/amazon-managed-service-for-grafana,marketing:marchitecture/management-and-governance"
           ]
         },
         {
@@ -384,75 +445,34 @@
           "categories": [
             "general:products/aws-lambda,marketing:marchitecture/serverless"
           ]
-        },
-        {
-          "title": "Introducing time series collections for the next generation of Amazon OpenSearch Serverless",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/time-series-collection-next-generation-opensearch-serverless/",
-          "published": "2026-10-28T18:35:00+00:00",
-          "summary": "<p>Today, we're announcing support for time series collections on the next generation of Amazon OpenSearch Serverless. With time series collections, you can ingest, store, and analyze logs, metrics, traces, and event data without provisioning or managing clusters. They absorb ingest spikes automatically, keep recent data fast to query, and make months or years of history searchable at low cost, all in the same collection.</p> \n<p>Time series collections add a new, lower-cost warm storage tier in addition to the existing hot storage tier, so customers can retain their infrequently accessed data without paying hot storage prices. Customers can choose how long data stays hot before transitiong to warm storage.&nbsp; With up to 100 TB of hot storage per collection, time series collections can handle high-volume observability workloads such as application monitoring, security analytics, and IoT telemetry. Alerting and anomaly detection are also now available, so customers can get notified about issues and spot unusual patterns in their log and event data without separate tooling.</p> \n<p>Time series collections are available today in all <a href=\"https://docs.aws.amazon.com/general/latest/gr/opensearch-service.html\" target=\"_blank\">AWS Regions</a> where OpenSearch Serverless is available. To learn more about the pricing for the new warm storage,&nbsp; see <a href=\"https://aws.amazon.com/opensearch-service/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">OpenSearch Serverless pricing</a>. To learn more about time series collections on Amazon OpenSearch Serverless, see the <a href=\"https://aws.amazon.com/opensearch-service/features/serverless/\" target=\"_blank\">OpenSearch Serverless feature page</a>, the <a href=\"https://aws.amazon.com/blogs/big-data/introducing-the-next-generation-of-serverless-time-series-for-amazon-opensearch-service/\" target=\"_blank\">launch blog</a>, and the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html\" target=\"_blank\">AWS documentation</a>.<a href=\"https://aws.amazon.com/opensearch-service/pricing/\"></a></p>",
-          "categories": [
-            "marketing:marchitecture/serverless,marketing:marchitecture/analytics,general:products/amazon-opensearch-service"
-          ]
-        },
-        {
-          "title": "Quick now supports smart approvals for agentic actions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/quick-smart-approvals-agentic-actions/",
-          "published": "2026-10-28T18:28:00+00:00",
-          "summary": "<p>Amazon Quick now supports smart approvals, a review layer that reduces unnecessary approval prompts while preserving human oversight of the actions that matter most. As agents take more actions on a user's behalf, such as sending email, updating records, and creating tickets, asking a person to approve every step leads to approval fatigue and weaker oversight over time. With smart approvals, a separate review model called the classifier evaluates each eligible action against the user's request. It approves routine actions automatically and refers consequential actions to the user for review.</p> \n<p>Your existing policies always come first. Smart approvals only reviews actions where the user's setting is \"ask\" each time. Denied actions stay denied, and smart approvals never grants new access. The classifier sends higher-impact actions to the user for review. These include sending content outside the organization, changing permissions, deleting content, making payments, and actions that go beyond what the user asked for. Each automatic approval covers only the exact action that was reviewed. If a review fails or times out, the action goes to the user.</p> \n<p>Smart approvals is on for all users by default. Administrators control who can use it with custom permissions, and users can turn it off for their conversations and scheduled runs in chat options. AWS CloudTrail records each action review made through smart approvals and each change to a user's smart approvals setting.</p> \n<p>Smart approvals is available in Amazon Quick in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Region table</a>.</p> \n<p>To learn more about smart approvals, see <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/smart-approvals.html\" target=\"_blank\" rel=\"noopener noreferrer\">smart approvals</a> in the Amazon Quick User Guide. For more information about Amazon Quick, see the <a href=\"https://aws.amazon.com/quick/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Quick product page</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/business-productivity,general:products/aiml,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "Amazon EKS Dashboard now provides fleet-wide visibility into certificate authority (CA) rotation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-dashboard-fleet-wide-visibility-certificate-authority-ca-rotation/",
-          "published": "2026-10-28T18:07:00+00:00",
-          "summary": "<p>Today, Amazon Elastic Kubernetes Service (Amazon EKS) announces certificate authority (CA) rotation visibility in the Amazon EKS Dashboard, giving you a consolidated view of CA rotation across your clusters. The Amazon EKS Dashboard already provides centralized visibility into your clusters across AWS Regions and accounts, and it now includes CA rotation, so you can see where action is needed without checking each cluster individually.</p> \n<p>Each Amazon EKS cluster has its own CA, and clusters created since 2018 have CAs with a 10-year validity period that are now approaching the point where rotation activities should begin. In the EKS Dashboard, you can now see your clusters and their CA rotation status, which clusters have CAs approaching expiration, and upcoming automated rotation events, so platform teams who operate many clusters can prioritize action across their fleet from one place.</p> \n<p>The Amazon EKS Dashboard aggregates data across your accounts and Regions through AWS Organizations, so you enable trusted access for the dashboard in your organization’s management account to use this capability. You view the dashboard from the US East region (us-east-1), and it is available at no additional cost. CA rotation support extends to all commercial AWS Regions, and the dashboard brings that rotation status together in one fleet-wide view. To learn more, see the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/certificate-authority-rotation.html\">Amazon EKS documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,general:products/amazon-eks,marketing:marchitecture/compute,marketing:marchitecture/containers"
-          ]
-        },
-        {
-          "title": "Amazon ECS Managed Instances adds cross-instance and Spot consolidation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/ecs-managed-instances-consolidation/",
-          "published": "2026-10-28T18:00:00+00:00",
-          "summary": "<p>Today, <a href=\"https://aws.amazon.com/ecs/managed-instances/\">Amazon Elastic Container Service (Amazon ECS) Managed Instances</a> introduces two infrastructure optimization updates: cross-instance and Spot consolidation. Cross-instance consolidation evaluates tasks running across multiple underutilized instances together, packing them onto fewer instances to raise utilization and lower costs. Spot consolidation extends this capability to Spot capacity, consolidating underutilized Spot Instances after first verifying replacement capacity is available.</p>\n<p>Amazon ECS Managed Instances provisions, configures, and operates right-sized Amazon EC2 instances for your workloads, balancing availability and cost. Its infrastructure optimization continuously monitors your fleet, reclaiming idle capacity and consolidating underutilized instances with graceful start-before-stop task replacement. Until now, optimization evaluated each instance in isolation for replacement, which worked well when a capacity provider was configured with diverse instance types. However, when a capacity provider was configured with a narrow range of instance types, there were fewer opportunities to consolidate multiple underutilized instances, because no single replacement could yield savings. With cross-instance consolidation, ECS now evaluates and repacks tasks across multiple instances simultaneously. For example, in our testing with a capacity provider configured for c9g instances with a minimum size of 4xlarge, running 261 tasks (each 1 vCPU, 1.94 GiB), cross-instance consolidation reduced the fleet from 19 instances (seven 4xlarge, seven 8xlarge, four 12xlarge, and one 24xlarge) to 13 instances (eight 4xlarge and five 8xlarge), while raising CPU utilization from 42% to 91% and memory utilization from 41% to 88%. Spot consolidation applies the same approach to Spot capacity, first verifying replacement capacity is available. With these enhancements, ECS Managed Instances delivers deeper cost optimization for both your On-Demand and Spot workloads.</p>\n<p>Cross-instance and Spot consolidation are now available at no additional cost in all AWS Regions, and apply automatically to all existing and new ECS Managed Instances capacity providers. To learn more, see our <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-infrastructure-optimization.html\">documentation</a>.</p>",
-          "categories": [
-            "general:products/amazon-ecs,marketing:marchitecture/containers"
-          ]
-        },
-        {
-          "title": "AWS Lambda durable functions now exports live telemetry for execution insights",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-durable-telemetry/",
-          "published": "2026-10-28T18:00:00+00:00",
-          "summary": "<p>AWS Lambda announces the Durable Execution Telemetry Exporter plugin for Lambda durable functions. This new observability plugin captures the step-by-step history of your durable executions and sends them to one or more destinations of your choice. You can use the exported data to gather operational and business insights and keep history beyond the standard retention period. We are also releasing a companion Model Context Protocol (MCP) server that lets AI agents such as Kiro query your exported telemetry data using natural language.</p> \n<p>Lambda durable functions helps you build resilient multi-step applications and AI workflows that run for up to one year. The new Telemetry Exporter sends data such as execution status, operation timing, step input and output, and errors to 13 built-in destinations. Destinations include Amazon CloudWatch Logs, Amazon S3 for Amazon Athena, Amazon DynamoDB, Amazon Aurora, and Amazon OpenSearch Service. You can redact sensitive fields before export and set a sampling rate to control data volume. With the MCP server, an on-call engineer can ask an AI agent to list recent failed executions and find the cause of a failure, and a business analyst can find all transactions for a specific customer.</p> \n<p>The exporter is available for TypeScript, Python, Java, and Go. To get started, <a href=\"https://docs.aws.amazon.com/durable-execution/sdk-reference/observability/telemetry/exporter/\">install</a> the exporter, register the plugin in your function handler, then <a href=\"https://docs.aws.amazon.com/durable-execution/sdk-reference/observability/telemetry/mcp/\">add</a> the MCP server to your agent.</p> \n<p>The Durable Execution Telemetry Exporter is available at no additional charge in all AWS Regions that support Lambda durable functions. To learn more, see the Durable Execution SDK <a href=\"https://docs.aws.amazon.com/durable-execution/sdk-reference/observability/telemetry/\">documentation</a> and the <a href=\"https://aws.amazon.com/blogs/compute/observing-aws-lambda-durable-functions-with-the-durable-execution-telemetry-exporter/\">blog post</a>.</p>",
-          "categories": [
-            "general:products/aws-lambda,marketing:marchitecture/serverless"
-          ]
-        },
-        {
-          "title": "Amazon EKS Auto Mode now supports Kubernetes Gateway API",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-auto-mode-kubernetes-gateway-api/",
-          "published": "2026-10-28T17:33:00+00:00",
-          "summary": "<p>Amazon EKS Auto Mode now supports the Kubernetes Gateway API, giving customers a standard, portable way to define how traffic reaches their applications. Customers can configure application load balancing using Gateway and HTTPRoute resources, and EKS Auto Mode provisions and manages the underlying AWS infrastructure automatically.</p> \n<p>With this launch, EKS Auto Mode customers can adopt the next-generation Kubernetes traffic management standard without installing or configuring a separate controller. Capabilities include HTTP and gRPC routing, cross-namespace traffic routing for multi-team environments, weighted traffic splitting, header-based routing, and automatic TLS certificate discovery through AWS Certificate Manager. Existing workloads using Ingress resources continue to work alongside Gateway API resources.</p> \n<p>To get started, see the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/auto-configure-gateway-api.html\">Amazon EKS documentation</a>. Gateway API support is included as part of EKS Auto Mode and is available in all AWS Regions where EKS Auto Mode is supported. Standard charges apply for the AWS load balancing resources provisioned.</p>",
-          "categories": [
-            "general:products/amazon-eks,marketing:marchitecture/compute,marketing:marchitecture/networking,marketing:marchitecture/containers"
-          ]
-        },
-        {
-          "title": "AWS Backup adds restore testing support for Amazon Redshift",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-adds-redshift-restore-testing/",
-          "published": "2026-10-28T08:00:00+00:00",
-          "summary": "<p>AWS Backup restore testing now supports Amazon Redshift. Restore testing helps you automate and periodically run restore tests of your backups, so you can confirm that your Amazon Redshift backups restore successfully and measure how long the restores take.</p> \n<p>You can now include Amazon Redshift in your restore testing plans alongside other supported AWS resources across storage, compute, and database services. Restore testing plans automatically select recovery points, run restores on a schedule, and measure restore job completion time against your recovery time objectives (RTO). This helps you evaluate recovery readiness and meet regulatory and compliance requirements for disaster recovery and business continuity.</p> \n<p>To get started, create a restore testing plan and assign your Amazon Redshift resources by Amazon Resource Name (ARN) or tag. Choose whether each test restores the latest or a random eligible recovery point. Optionally, use restore testing validation to confirm the restored resource before AWS Backup deletes the test resources.</p> \n<p>This support is available in all AWS Regions where both restore testing and Amazon Redshift are supported by AWS Backup. You can use the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. For a complete list of supported Regions and features, visit the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\" target=\"_blank\">AWS Backup documentation</a>. To learn more about restore testing, visit the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testing.html\" target=\"_blank\">product page</a> and <a href=\"https://aws.amazon.com/backup/pricing/\" target=\"_blank\">pricing page</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/storage,general:products/amazon-redshift,general:products/aws-backup"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "re:Invent 2026 で AI 時代のオブザーバビリティを学ぶ",
+          "link": "https://aws.amazon.com/jp/blogs/news/embracing-observability-for-the-ai-era-at-reinvent-2026/",
+          "published": "2026-11-03T04:57:46+00:00",
+          "summary": "AWS re:Invent 2026 の Cloud Operations トラックから、Monitoring and Observability の 25 セッションを 6 つのテーマに沿って紹介します。本番環境の AI エージェントの観測、OpenTelemetry による標準化、ログ活用、フルスタックのパフォーマンストレース、マネージドなオープンソースオブザーバビリティまで、参加計画に役立つセッションを取り上げます。",
+          "categories": [
+            "Amazon CloudWatch",
+            "Announcements",
+            "Management Tools"
+          ]
+        },
+        {
+          "title": "週刊AWS – 2026/10/26週",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-20261026/",
+          "published": "2026-11-03T04:00:20+00:00",
+          "summary": "OpenAI GPT-6.1 Terra が Amazon Bedrock で一般提供開始、Amazon EKS Auto Mode が Kubernetes Gateway API をサポート、Amazon ECS で NVIDIA MPS による GPU 共有が可能に、Amazon SageMaker AI のリアルタイム推論で GPU パーティショニングに対応、AWS Lambda Managed Instances で SOCI による遅延読み込みに対応、Amazon Quick でエージェントアクションのスマート承認に対応、次世代 Amazon OpenSearch Serverless で時系列コレクションが利用可能に、Amazon Redshift で自動クロスリージョンバックアップが可能に、AWS KMS がポスト量子暗号の ML-KEM をサポート、Amazon Aurora PostgreSQL でポスト量子 TLS 鍵交換をサポート等",
+          "categories": [
+            "News",
+            "AWSサービスアップデートまとめ",
+            "週刊AWS"
+          ]
+        },
         {
           "title": "Kiro が自身のハーネスの性質を Lean で証明する",
           "link": "https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/",
@@ -543,29 +563,6 @@
           "categories": [
             "Developer Tools",
             "Kiro"
-          ]
-        },
-        {
-          "title": "Spec it safe：セキュリティ要件で仕様をハードニングし、シフトレフトを実現する",
-          "link": "https://aws.amazon.com/jp/blogs/news/spec-it-safe/",
-          "published": "2026-10-31T02:33:02+00:00",
-          "summary": "spec 駆動開発 (SDD) は、大規模なチームのソフトウェア開発のやり方を変えつつあります。プロンプトだけに頼るのではなく spec を書き、それに沿って AI コーディングエージェントに設計、タスク、実装を進めさせます。",
-          "categories": [
-            "Developer Tools",
-            "Kiro"
-          ]
-        },
-        {
-          "title": "エージェント時代の運用：re:Invent 2026 の AIOps セッション",
-          "link": "https://aws.amazon.com/jp/blogs/news/operating-in-the-agentic-era-aiops-sessions-at-reinvent-2026/",
-          "published": "2026-10-30T08:00:12+00:00",
-          "summary": "re:Invent 2026 のクラウド運用トラックから、AI エージェントによるインシデント調査、修復、リリース検証、監査、モダナイゼーションを扱う AIOps セッションをテーマ別に紹介します。AWS DevOps Agent の事例やハンズオンを含め、目的に応じた推奨ルートもまとめます。",
-          "categories": [
-            "Announcements",
-            "AWS re:Invent",
-            "DevOps",
-            "General",
-            "Management & Governance"
           ]
         }
       ]
