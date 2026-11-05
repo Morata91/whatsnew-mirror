@@ -1,9 +1,97 @@
 {
-  "generated_at": "2026-11-04T02:16:09.490614+00:00",
+  "generated_at": "2026-11-05T02:21:23.306829+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon ECS Managed Daemons can now collect json-file logs from application containers on Amazon ECS Managed Instances",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/",
+          "published": "2026-11-04T21:29:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/ecs/\">Amazon Elastic Container Service</a> (Amazon ECS) introduces json-file log driver support for Amazon ECS Managed Instances and log driver volumes for Amazon ECS Managed Daemons. Together, these features let you collect application logs with the observability agent of your choice and forward them to any destination you choose.<br> <br> With this launch, your application containers on ECS Managed Instances can write their logs as local files in standard Docker json-file format, which most observability agents read natively. Your managed daemons can directly read these files through a volume mount, without specifying host bind mount paths or requiring root privileges. As a result, one managed daemon on each instance can collect logs from every application container that uses the json-file log driver. Amazon ECS keeps each container's logs in a dedicated directory named with the container ID and retains them until the container is removed, so your managed daemon can use native file-based log collection and trace every log back to the container that produced it.<br> <br> To get started, set the log driver to json-file in the logConfiguration of your application task definition. Next, register a daemon task definition that specifies a volume with logDriverVolumeConfiguration, and mount the volume into your daemon container using mountPoints. You can configure this using the AWS Management Console, AWS CLI, API, AWS SDKs or AWS CloudFormation. This feature is available in all commercial AWS Regions where Amazon ECS Managed Instances and Managed Daemons are available, at no additional cost. To learn more, refer to our <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-task-definitions.html#managed-daemons-volumes\">documentation</a> page and visit <a href=\"https://aws.amazon.com/ecs/managed-instances/\">Amazon ECS Managed Instances</a>.</p>",
+          "categories": [
+            "general:products/aws-fargate,marketing:marchitecture/containers,general:products/amazon-ecs"
+          ]
+        },
+        {
+          "title": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-mongodb-compatibility-asia-pacific-taipei-new-zealand-regions/",
+          "published": "2026-11-04T19:00:00+00:00",
+          "summary": "<p>Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions, adding to the <a data-agent-id=\"28\">list of </a><a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">available Regions</a> where you can use Amazon DocumentDB.</p> \n<p>Amazon DocumentDB is a fully managed, native JSON database that makes it simple and cost-effective to operate critical document workloads at virtually any scale without managing infrastructure. Amazon DocumentDB is designed to give you the scalability and durability you need when operating mission-critical MongoDB workloads. Storage scales automatically up to 128 TiB without any impact to your application. In addition, Amazon DocumentDB natively integrates with Amazon CloudWatch, AWS CloudTrail, AWS Lambda, AWS Backup, and more. Amazon DocumentDB supports millions of requests per second and can be scaled out to 15 low-latency read replicas in minutes with no application downtime.</p> \n<p>To learn more about Amazon DocumentDB, please visit the <a data-agent-id=\"29\">Amazon DocumentDB </a><a href=\"https://aws.amazon.com/documentdb/\">product page</a> and <a data-agent-id=\"30\"></a><a href=\"https://aws.amazon.com/documentdb/pricing/\">pricing page</a>. You can create an Amazon DocumentDB cluster from the <a data-agent-id=\"31\"></a><a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-documentdb-mongodb-compatibility-asia-pacific-melbourne-region/#:~:text=AWS%20Management%20console\">AWS Management Console</a>, <a data-agent-id=\"32\"></a><a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-documentdb-mongodb-compatibility-asia-pacific-melbourne-region/#:~:text=AWS%20Command%20Line%20Interface%20(CLI)\">AWS Command Line Interface (CLI)</a>, or AWS SDKs.</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon RDS for Oracle now supports copying option groups during cross-Region snapshot copy",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-oracle-cross-region-snapshot-copy-option-group/",
+          "published": "2026-11-04T18:40:00+00:00",
+          "summary": "<p>Amazon RDS for Oracle now lets you copy the option group associated with a DB snapshot when you copy that snapshot to another AWS Region.</p> \n<p>Amazon RDS for Oracle uses option groups to enable and configure features that make it simple to manage your databases. Option groups are specific to the AWS Region where you create them. Previously, customers wanting to replicate RDS backups that had option groups to a different AWS Region had to copy the snapshot without the option group and then recreate the option group in the target Region before restoring the snapshot. Now, you no longer need to separate the steps and can instead initiate the snapshot copy and specify the option group copy in the same request as the snapshot copy.</p> \n<p>The existing boolean parameter <b>CopyOptionGroup</b> on the <b>CopyDBSnapshot</b> API and CLI commands now also support cross-Region copy, along with cross-account copy. You can now copy options groups to the destination snapshot in the target AWS Region from the source snapshot by setting this parameter to <b>true</b>.</p> \n<p>This capability is available on Amazon RDS for Oracle in all commercial AWS Regions and the AWS GovCloud (US) Regions. To learn more, review the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDBSnapshot.html\" target=\"_blank\">Amazon RDS API Documentation</a>.&nbsp;</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-rds"
+          ]
+        },
+        {
+          "title": "AWS announces AWS Interconnect - last mile preview with Equinix",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-preview-equinix/",
+          "published": "2026-11-04T17:00:00+00:00",
+          "summary": "<p>AWS Interconnect - last mile is now available in preview with Equinix. You can connect your infrastructure across Equinix's global network of 282 data centers worldwide to AWS in a few clicks.</p> \n<p>Interconnect - last mile gives you managed, private, and resilient connections to AWS, so you don't have to order cross-connects or configure routers. To set up in the AWS Management Console, choose an AWS Region, a bandwidth speed, a Direct Connect gateway, and your Equinix Fabric One project ID. AWS generates an activation key, which you enter in the Equinix Fabric One portal to complete the setup. You can also initiate the connection from the Equinix Fabric One portal. AWS and Equinix set up quad-redundant capacity in advance, across two locations and four separate links, with BGP peering, VLANs and ASNs configured for you. Every connection is built for maximum resilience and comes with a 99.99% availability SLA. Traffic between AWS and Equinix edge devices is encrypted with MACsec by default.</p> \n<p>During the preview, you can order 1 Gbps Interconnect - last mile connections at no charge to the US West (N. California) Region through the San Jose metro and to the US East (N. Virginia) Region through the Northern Virginia metro. When Interconnect - last mile with Equinix becomes generally available, you'll be able to scale bandwidth from 1 Gbps to 100 Gbps in the console. You can create connections using the console, the AWS CLI, or the API. Partners can integrate using the open API package on <a href=\"https://github.com/aws/Interconnect\">GitHub</a>. To learn more, see the <a href=\"https://docs.aws.amazon.com/interconnect/\">AWS Interconnect - last mile documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:products/aws-direct-connect"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer now shows associated cases in contact records",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-contact-records/",
+          "published": "2026-11-04T17:00:00+00:00",
+          "summary": "<p>Amazon Connect Customer now includes case IDs and reference numbers in contact records, helping supervisors and analysts understand which customer issues drive contact volume. Cases track issues, such as refund requests or billing disputes, across interactions and teams. Supervisors can now identify the cases associated with an interaction directly on the Contact Details page without searching individual cases. Analysts can access the same information through the DescribeContact API and contact event streams to measure the number of interactions per case.</p> \n<p>Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Cases <a href=\"https://aws.amazon.com/products/connect/customer/cases/\" target=\"_blank\">webpage</a> and <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/cases.html\" target=\"_blank\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/business-productivity,general:products/amazon-connect,marketing:marchitecture/messaging,marketing:marchitecture/contact-center"
+          ]
+        },
+        {
+          "title": "Amazon EC2 and VPC now display related resources for all resource types",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-vpc-related-resources-all-types/",
+          "published": "2026-11-04T08:00:00+00:00",
+          "summary": "<p>Amazon Elastic Compute Cloud (Amazon EC2), Amazon Virtual Private Cloud (Amazon VPC), and AWS Global View now display related resources for all resource types in their consoles. Previously, only security groups had an option to view related resources. Now you can see relationships for all EC2 and VPC resource types, including EC2 instances, Amazon Elastic Block Store (Amazon EBS) volumes, Launch Templates, Auto Scaling groups, subnets, route tables, and more. The Related Resources tab has also been moved to the console toolbar for easier access.</p>\n<p>This capability helps you better understand your infrastructure dependencies and troubleshoot issues more efficiently. For example, when investigating an EC2 instance issue, you can quickly view its associated EBS volumes, security groups, subnets, and route tables without navigating between multiple console pages. Network administrators can now trace connections from a subnet to its associated route tables, network ACLs, and instances, streamlining network configuration reviews and security audits.</p>\n<p>This feature is now available in all commercial AWS Regions.</p>\n<p>To learn more, visit Amazon EC2 and Amazon VPC in the <a href=\"https://console.aws.amazon.com/\" target=\"_blank\">AWS Management Console</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/compute,marketing:marchitecture/networking-and-content-delivery,general:products/amazon-vpc,general:products/amazon-ec2"
+          ]
+        },
+        {
+          "title": "AWS DataSync Enhanced mode supports OpenID Connect (OIDC) for Google Cloud and Microsoft Azure",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/datasync-enhanced-oidc-google-azure/",
+          "published": "2026-11-04T08:00:00+00:00",
+          "summary": "<p>AWS DataSync Enhanced mode now supports OpenID Connect (OIDC) authentication for Google Cloud Storage and Microsoft Azure Blob Storage locations. DataSync uses an AWS Identity and Access Management (IAM) role to get short-lived credentials from Google Cloud or Microsoft Entra ID and refreshes them automatically so your transfers run without interruption.</p> \n<p>You can now use DataSync to access your Google Cloud Storage and Azure Blob Storage without long-term credentials such as hash-based message authentication code (HMAC) keys or shared access signature (SAS) tokens. This lets you move data across clouds while complying with security policies that might prohibit long-term credentials.</p> \n<p>You can get started by adding an IAM role to your DataSync location with the AWS CLI, API, or AWS CloudFormation. This capability is available in all AWS Regions where DataSync Enhanced mode is supported. To learn more, visit the <a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS DataSync User Guide</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/migration,general:products/aws-datasync"
+          ]
+        },
+        {
+          "title": "Amazon S3 Tables now provide a simple, cost-effective path for data lake modernization",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-managed-migration-hive-to-iceberg/",
+          "published": "2026-11-04T08:00:00+00:00",
+          "summary": "<p>Amazon S3 Tables now offer managed migration of your Apache Hive tables to Apache Iceberg. Iceberg adds ACID transactions, schema evolution, and time travel to your data lake, but moving off Hive usually means building a migration pipeline for each table, which can take weeks. You can now let S3 Tables manage your migration, resulting in query-ready Iceberg tables that stay optimized as data grows.</p> \n<p>S3 Tables validate, convert, and copy your data while production workloads keep running. To lower migration risk, you can review each step, sync destination tables with source changes as often as you need, or roll back to your source data. You pay only for the data that the job copies, with no charge for the Hive-to-Iceberg conversion, and source objects in S3 Intelligent-Tiering stay in their current access tier. If your tables use Snappy compression, S3 Tables recompress them to Zstandard (ZSTD) and compact them, which reduces storage and object count and improves query performance.</p> \n<p>To get started, visit the AWS Management Console or use the Amazon S3 Tables migration APIs. A <a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/analytics-skills/migrating-hive-tables-to-s3-tables\" target=\"_blank\" rel=\"noopener noreferrer\">migration skill</a> is also available in the Agent Toolkit for AWS to help AI agents orchestrate the workflow autonomously.&nbsp;At launch, S3 Tables managed migration supports AWS Glue-registered Hive tables stored in Parquet format within the same AWS account and AWS Region. It is available in the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Asia Pacific (Mumbai, Singapore, Sydney, Tokyo), Europe (Frankfurt, Ireland, Stockholm). For pricing information visit <a href=\"https://aws.amazon.com/s3/pricing/\" target=\"_blank\" style=\"background-color: rgb(255,255,255);\" rel=\"noopener noreferrer\">Amazon S3 pricing</a>. To learn more, see the Amazon S3 Tables <a href=\"https://aws.amazon.com/s3/features/tables/\" target=\"_blank\" style=\"background-color: rgb(255,255,255);\" rel=\"noopener noreferrer\">overview page</a>, <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-migrate.html\" target=\"_blank\" style=\"background-color: rgb(255,255,255);\" rel=\"noopener noreferrer\">documentation</a>, and <a href=\"https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/\" target=\"_blank\" style=\"background-color: rgb(255,255,255);\" rel=\"noopener noreferrer\">AWS News Blog</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/storage,general:products/amazon-simple-storage-service"
+          ]
+        },
+        {
+          "title": "RHEL 10, Rocky 10 and Ubuntu 26.04 Bundles for WorkSpaces",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/rhel-10-rocky-10-ubuntu-26-04-workspaces/",
+          "published": "2026-11-04T08:00:00+00:00",
+          "summary": "<p>AWS announces new Linux bundles for Amazon WorkSpaces Personal, including Rocky Linux 10, Red Hat Enterprise Linux 10, and Ubuntu 26.04 LTS. With these bundles, you can launch WorkSpaces on the latest enterprise Linux operating systems and use newer software packages that are only available in these releases. These new bundles feature modern Wayland display technology, giving you access to the latest Linux desktop capabilities. The new OS options also bring stronger security and longer support lifecycles from each distribution.</p> \n<p>While Rocky Linux 8 and 9, Red Hat Enterprise Linux 8 and 9, and Ubuntu 22.04 LTS and 24.04 LTS powered WorkSpaces bundles remain available, the new bundles let you adopt the latest releases on your own timeline. Your existing WorkSpaces keep running with no changes. You can move users to the new operating systems once your applications and workflows are ready.</p> \n<p>To get started, select a managed Rocky Linux 10, Red Hat Enterprise Linux 10, or Ubuntu 26.04 LTS bundle when you create a new Linux WorkSpace. These bundles are available in Standard, Performance, Power, and PowerPro sizes in all AWS Regions where Amazon WorkSpaces is available. For a full list of supported operating systems, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-bundles.html\" target=\"_blank\" style=\"background-color: rgb(255,255,255);\" rel=\"noopener noreferrer\">Bundles and images for WorkSpaces Personal</a>. For pricing information, visit the Amazon WorkSpaces <a href=\"https://aws.amazon.com/workspaces/desktop-as-a-service/pricing/\" style=\"background-color: rgb(255,255,255);\">pricing page</a>.</p>",
+          "categories": [
+            "general:products/amazon-workspaces"
+          ]
+        },
+        {
+          "title": "New features for Amazon EC2 Capacity Manager",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-manager-supportability-and-fulfillment/",
+          "published": "2026-11-04T07:00:00+00:00",
+          "summary": "<p>Amazon EC2 Capacity Manager now offers real-time supportability checks and capacity fulfillment metrics. Real-time supportability checks help customers find capacity by scoring how well each instance type and Availability Zone can support a request, without launching or reserving instances. Capacity fulfillment metrics show how much capacity was delivered against the amount requested.</p> \n<p>Global enterprises that run thousands of workloads across hundreds of accounts often spread each one across multiple instance types and Availability Zones, giving Amazon EC2 more options to fulfill each request. Starting today, customers can use the supportability checks in Capacity Manager to understand which Availability Zones and instance types give them the best chance of getting the capacity they need. The check returns a High, Medium, or Low score for each option, plus an overall score. Additionally, with fulfillment metrics, customers can measure fulfillment rates across their AWS organization, accounts, Regions, and tagged workloads, with a breakdown by instance type and Availability Zone, to show how well those choices are working.</p> \n<p>Both capabilities are included with <a href=\"https://docs.aws.amazon.com/awssupport/latest/user/unified-operations-intro.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Unified Operations</a>, the AWS Support plan for global enterprises running mission-critical workloads, and are available in all commercial AWS Regions.</p> \n<p>To learn more, read <a href=\"https://aws.amazon.com/blogs/compute/plan-and-measure-ec2-flexibility-with-amazon-ec2-capacity-manager/\" target=\"_blank\" rel=\"noopener noreferrer\">Plan and measure EC2 flexibility with Amazon EC2 Capacity Manager</a>&nbsp;on the AWS Compute Blog and see the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-manager.html\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon EC2 Capacity Manager user guide</a>. To get started, visit the <a href=\"https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#CapacityManagerHome\" target=\"_blank\" rel=\"noopener noreferrer\">Capacity Manager console</a>.</p>",
+          "categories": [
+            "general:products/amazon-ec2,marketing:marchitecture/compute"
+          ]
+        },
         {
           "title": "Amazon Connect Customer lets agents pause and resume emails",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-pause-resume-email/",
@@ -11,6 +99,15 @@
           "summary": "<p>Amazon Connect Customer lets agents pause emails while waiting for information or approvals, freeing them to handle higher-priority contacts and resume their work later. For example, an agent waiting for a supervisor to approve a refund can pause the email and take an incoming call. Paused time is tracked separately from active handling time, giving supervisors a more accurate view of the time agents spend working on emails.</p> \n<p>Agents can pause and resume emails directly from the Agent Workspace or Contact Control Panel (CCP) and see how long each email has been paused. Supervisors can monitor paused emails and pause duration in real time, and use flows to automatically resume or transfer emails that remain paused beyond a configured threshold.</p> \n<p>Amazon Connect Customer email pause and resume is available in the US East (N. Virginia), US West (Oregon), Africa (Cape Town), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), and Europe (London) <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">regions</a>. To learn more and get started, please refer to the help <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/concepts-pause-and-resume-emails.html\">documentation</a> or visit the <a href=\"https://aws.amazon.com/connect/\">Amazon Connect Customer</a> website.</p>",
           "categories": [
             "general:products/amazon-connect,marketing:marchitecture/contact-center"
+          ]
+        },
+        {
+          "title": "Amazon WorkSpaces for AI agents now supports Linux and Windows 11 cloud desktops",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-ai-agents-linux-windows-11",
+          "published": "2026-11-03T18:00:00+00:00",
+          "summary": "<p>WorkSpaces for AI agents now supports Linux and Windows 11 cloud desktops, in addition to Windows Server. You can run each AI agent on the operating system that its workflows and applications require. Your agents can then work in the same environments that your workforce already uses, without re-platforming.&nbsp;</p> \n<p>Linux desktops give agents full root access to the operating system where many developers already build, test, and automate agentic workflows. Agents can take on developer tasks, such as running builds, tests, and scripts, within the enterprise-grade security and governance controls you already rely on. Windows 11 desktops let agents work in the enterprise applications your teams depend on every day.</p> \n<p>Linux and Windows 11 desktops have the same security and governance controls as Windows Server desktops. These include network isolation, IAM-based access, and the compliance boundaries your organization already has in place.</p> \n<p>To get started operating AI agents on WorkSpaces, visit: <a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-access.html\">https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-access.html</a>.</p>",
+          "categories": [
+            "general:products/amazon-workspaces,marketing:marchitecture/desktop-and-app-streaming"
           ]
         },
         {
@@ -46,6 +143,15 @@
           "published": "2026-11-03T08:00:00+00:00",
           "summary": "<p>AWS Transform for mainframe now discovers business functions with field-level precision and generates a new requirements coverage report in the assess and reimagine workflow. Previously, business functions that used the same table or file were grouped together, and you had to build your own traceability reporting from AWS Transform artifacts. With this launch, you can start modernizing z/OS COBOL and PL/I workloads from a more accurate catalog of business functions and verify requirements coverage before you build.</p>\n<p>Business functions are now grouped only when they affect the same data fields. They also include screens and queues and carry clearer names and descriptions. The new requirements coverage report shows how every part of your application is accounted for in the generated requirements. Every line of source code is classified by how it was handled, every business rule links to the exact lines it came from, and every requirement is backed by the business rules that support it. You can review coverage from the full portfolio down to a single line before moving into forward engineering in Kiro and other IDEs.</p>\n<p>These capabilities are available in all AWS Regions where AWS Transform for mainframe is available. For more information, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Region table</a>. To learn more, visit <a href=\"https://aws.amazon.com/transform/mainframe/\">AWS Transform for mainframe</a> or see the <a href=\"https://docs.aws.amazon.com/transform/\">AWS Transform for mainframe documentation</a>.</p>",
           "categories": []
+        },
+        {
+          "title": "Amazon CloudWatch now supports API keys for OpenTelemetry traces",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-api-keys-opentelemetry/",
+          "published": "2026-11-03T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/cloudwatch/\">Amazon CloudWatch</a> now supports bearer token authentication, using API keys (bearer tokens), as an additional option for sending OpenTelemetry traces to the AWS X-Ray OpenTelemetry Protocol (OTLP) traces endpoint. Any OTLP/HTTP client that can set an Authorization header, including the OpenTelemetry Collector and OpenTelemetry SDK exporters, can now authenticate with a bearer token instead of signing requests with AWS Signature Version 4 (SigV4). This helps teams send traces from workloads that can't use the AWS SDK or short-term credentials, such as applications running on premises or in other clouds, CI/CD pipelines, and third-party tools that support only a static Authorization header.</p> \n<p>SigV4 remains the recommended authentication method for sending traces to CloudWatch, and the AWS Distro for OpenTelemetry (ADOT) SDKs continue to use SigV4 by default with no changes required. Traces sent with either method get the same CloudWatch capabilities, including Transaction Search, Amazon CloudWatch Application Signals, and Amazon CloudWatch Omni.</p> \n<p>Bearer token&nbsp;authentication for traces is available in all commercial AWS Regions where the AWS X-Ray OTLP traces endpoint is available.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/xray/latest/devguide/xray-opentelemetry-bearer-token.html\">Setting up bearer token authentication for traces</a> in the AWS X-Ray Developer Guide.</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch,general:products/aws-x-ray"
+          ]
         },
         {
           "title": "Amazon EKS Capabilities now supports Argo CD Notifications",
@@ -337,120 +443,54 @@
           "categories": [
             "general:products/aws-step-functions,general:products/amazon-bedrock"
           ]
-        },
-        {
-          "title": "Amazon DynamoDB Accelerator (DAX) is now available in additional Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/dax-additional-regions/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>Amazon DynamoDB Accelerator (DAX) is now available in two additional AWS Regions: Canada (Central) and Africa (Cape Town). DAX is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to ten times performance improvement, from single-digit milliseconds to microseconds, even at millions of requests per second.</p> \n<p>With DAX, you can accelerate read-intensive and bursty workloads such as real-time bidding, gaming leaderboards, and retail product catalogs, while offloading read traffic from your DynamoDB tables. DAX is API-compatible with DynamoDB, so you can add microsecond-latency caching to your applications with minimal code changes. Customers can now keep cached data within the Region and meet low-latency requirements while benefiting from a fully managed service, including automated patching and failover.</p> \n<p>To learn more, see the <a href=\"https://aws.amazon.com/dynamodb/dax/\">Amazon DynamoDB Accelerator page</a>. For the full list of Regions where DAX is available, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regional Services page</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/databases,general:products/amazon-dynamodb"
-          ]
-        },
-        {
-          "title": "ACM now supports ACME for public certificates in AWS GovCloud (US)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/acm-acme-support-govcloud-us/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>AWS Certificate Manager (ACM) ACME protocol support is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West), providing a fully managed ACME server endpoint that issues public TLS certificates from Amazon Trust Services using any ACMEv2-compatible client, including Certbot, cert-manager for Kubernetes, and acme.sh. With the CA/Browser Forum mandating 47-day certificate lifetimes by 2029, manual management of public certificates becomes untenable. ACME support in ACM gives developers a standards-based path to fully automate certificate issuance and renewal.</p>\n<p>To learn more, visit the <a href=\"https://aws.amazon.com/blogs/aws/automate-public-tls-certificate-issuance-with-acme-support-in-aws-certificate-manager/\">AWS News blog post</a>, the <a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-acme.html\">ACM ACME documentation</a>, the <a href=\"https://aws.amazon.com/certificate-manager/pricing/\">ACM pricing page</a>, and the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regional Services page</a>.</p>",
-          "categories": [
-            "general:products/aws-govcloud-us,marketing:marchitecture/security-identity-and-compliance,general:products/aws-certificate-manager"
-          ]
-        },
-        {
-          "title": "AWS DataSync Enhanced mode now supports Amazon FSx for Windows File Server, FSx for NetApp ONTAP, and Red Hat OpenShift Virtualization",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/datasync-enhanced-fsx-openshift/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>AWS DataSync Enhanced mode now supports Amazon FSx for Windows File Server and Amazon FSx for NetApp ONTAP as source or destination locations. You can now run Windows to Windows transfers, such as from an on-premises file server to FSx for Windows File Server. Additionally, Enhanced mode agents can now run on Red Hat OpenShift Virtualization version 4.20 or later.</p> \n<p>With this launch, you can use the same location options in Enhanced mode as in Basic mode. Enhanced mode processes data in parallel for higher performance, removes file count limitations, and provides detailed data transfer metrics. OpenShift Virtualization expands your agent deployment options alongside VMware ESXi, KVM, Microsoft Hyper-V, and Amazon EC2.</p> \n<p>You can get started by choosing Enhanced mode when you create a task in the <a href=\"https://console.aws.amazon.com/datasync/home\">AWS DataSync console</a>. These capabilities are available in all AWS Regions where DataSync Enhanced mode is supported. To learn more, visit the <a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html\">AWS DataSync documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/migration,general:products/aws-datasync,general:products/amazon-fsx-netapp-ontap,general:products/amazon-fsx-for-windows-file-server"
-          ]
-        },
-        {
-          "title": "Amazon SageMaker AI now supports SOCI-indexed images to start training jobs in seconds",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-ai-soci-images-training/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>Today, Amazon SageMaker AI announces support for Seekable OCI (SOCI)-indexed container images for training and processing jobs, so your jobs start running your code sooner. SOCI-indexed images start Amazon SageMaker AI training containers in seconds, cutting GPU idle time during image pulls by up to 90%, with no impact on training performance. Before a training or processing job can run, SageMaker AI downloads its container image to the instance. For deep learning images, which routinely exceed 10 GB, that download adds minutes to the start of every job, and you pay for that time. Now, when your image includes a SOCI index, SageMaker AI lazy-loads the image, fetching only the files needed to start the container and streaming the rest in the background as your code runs.</p> \n<p>To use this feature, reference a SOCI-indexed image from a private Amazon ECR repository in your training or processing job. You can use a pre-indexed AWS Deep Learning Container by changing the image tag to its -soci variant, or add a SOCI index to your own image in Amazon ECR with open-source tools, without rebuilding the image. No changes to your job definition, entry point, or data channels are needed. SageMaker AI checks for an index automatically and images without an index download as before. If an index can't be used, the job falls back to a standard download and continues running.</p> \n<p>SOCI-indexed images for SageMaker AI training and processing jobs are available today in all AWS Regions where SageMaker AI is available, through the SageMaker AI APIs, CLIs, SDKs, and Console. To learn more, see the documentation for <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/train-soci-indexed-images.html\">training jobs</a> and <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job-soci-indexed-images.html\">processing jobs</a>, or read the <a href=\"https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/\">launch blog</a>.</p>",
-          "categories": [
-            "general:products/amazon-ecr,general:products/amazon-sagemaker,general:products/aws-deep-learning-containers,general:products/amazon-sagemaker-training"
-          ]
-        },
-        {
-          "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-version-13-2/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>Amazon Managed Grafana now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin.</p>\n<p>With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through version control. Dynamic dashboards bring a more adaptable approach to layout and paneling. You can construct responsive views driven by conditions that respond to the data and variables in scope. With Amazon CloudWatch data source plugin support for Prometheus Query Language, you can use PromQL to query metrics that CloudWatch takes in via its OpenTelemetry (OTLP) endpoint, in addition to the existing Metric Search and Metrics Insights query types.</p>\n<p>In-place upgrade to Grafana 13.2 is supported in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS regions</a> where Amazon Managed Grafana is generally available. You can upgrade with just a few clicks from the AWS Console, AWS SDK or AWS CLI. For a complete list of new features, refer to <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v13\">Differences between Grafana versions</a> in the Amazon Managed Grafana User Guide. For upgrade instructions, see <a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-version-update.html\">Update your workspace version</a>. To learn more about Amazon Managed Grafana features and its pricing, visit the <a href=\"https://aws.amazon.com/grafana/\">product page</a> and <a href=\"https://aws.amazon.com/grafana/pricing/\">pricing page</a>.</p>",
-          "categories": [
-            "general:products/amazon-cloudwatch,general:products/amazon-managed-service-for-grafana,marketing:marchitecture/management-and-governance"
-          ]
-        },
-        {
-          "title": "Amazon Redshift announces hands-off automated cross-region backups",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-automated-cross-region-backups/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/redshift/\">Amazon Redshift </a>announces automated cross-region snapshot copy for Amazon Redshift. You can now have your Amazon Redshift provisioned cluster or serverless workgroup automatically backed up to the target AWS region(s) you choose. The automated cross-region snapshot copy feature will automatically, always copy the most recent snapshot with no manual intervention, continuously and incrementally and ensure your cluster is backed-up to the destination region(s), giving you additional options for business continuity.</p> \n<p>The benefit to enabling the new automated cross-region snapshot copy feature is that you do not need to manually intervene to initiate a cross-region snapshot copy when an unplanned outage event occurs. Also, this feature takes the most recent snapshot available on your system to copy to the destination region, so you don't have to wait for the next snapshot to be taken, making it independent of your snapshot schedule on your local cluster. To configure cross-region snapshot copy, you need to enable the automated cross-region snapshot copy feature for each cluster and configure the destination region(s) to copy snapshots and how long to keep copied automated snapshots in the destination Region. You can choose the retention period for automated snapshots in the destination region. User snapshots are retained until you explicitly delete them. To restore the snapshot in the destination region, use the snapshot restore feature to a new provisioned cluster or serverless workgroup. Snapshots copied with the automated cross-region snapshot copy feature have names prefixed with `copy` in the destination region.</p> \n<p>This feature is available in all regions AWS Commercial and GovCloud (US) regions.</p> \n<p>For more details on configuration and usage see the Amazon Redshift documentation sections for cross-region snapshot copy: <a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html\">Amazon Redshift snapshots and backups</a>. For details on restoring a cluster from a snapshot, see the documentation for <a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshot-restore-cluster-from-snapshot.html\">Restoring a cluster from a snapshot</a>. For pricing information, please review the 'Backup and storage' and 'Data transfer' sections of the <a href=\"https://aws.amazon.com/redshift/pricing/\">Amazon Redshift pricing page</a>.</p>",
-          "categories": [
-            "general:products/amazon-redshift"
-          ]
-        },
-        {
-          "title": "AWS Backup now supports cross-account management and cross-account backup in the AWS European Sovereign Cloud",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-cross-account-esc/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>AWS Backup now supports cross-account management, cross-account backup, and delegated administrators in the AWS European Sovereign Cloud (Germany) Region. These capabilities help you centrally manage, monitor, and copy backups across the accounts in your organization using AWS Organizations.</p> \n<p>With cross-account management, you can deploy organization-wide backup policies from your AWS Organizations management account or a delegated administrator account. You can also monitor backup, copy, and restore jobs across all of your organization accounts from one place. With cross-account backup, you can copy recovery points to a backup vault in another account in your organization, which adds protection against accidental or malicious deletion in the source account. You can also register a member account as a delegated administrator, so your teams can manage backups across your organization without needing access to your management account.</p> \n<p>There is no additional charge to use these capabilities; standard AWS Backup pricing applies. To learn more, see the AWS Backup documentation at <a href=\"https://docs.aws.amazon.com/aws-backup/\">https://docs.aws.amazon.com/aws-backup/</a>. To get started, visit the AWS Backup console at <a href=\"https://console.aws.amazon.com/backup\">https://console.aws.amazon.com/backup</a>.</p>",
-          "categories": [
-            "general:products/aws-organizations,general:products/aws-backup,marketing:marchitecture/management-and-governance,marketing:marchitecture/storage"
-          ]
-        },
-        {
-          "title": "Amazon SageMaker Unified Studio now supports custom designations",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-designations/",
-          "published": "2026-10-29T08:00:00+00:00",
-          "summary": "<p>Amazon SageMaker Unified Studio now supports custom designations, named permission sets that control what actions individual project members can perform. Previously, project members could only be assigned Owner or Contributor designations, which provided nearly identical permissions. With custom designations, administrators define permission sets that align with their organization's personas and assign them to project members. Designations govern all actions within a project, providing administrators with a single permission model for separation of duties.</p>\n<p>Administrators create designations in the SageMaker Unified Studio administration portal by selecting permissions grouped into categories such as Catalog, Subscriptions, Connections, Notebooks, and Data Agent. For example, a \"Data Steward\" designation might include permissions to approve subscription requests and publish assets, while an \"Analyst\" designation is limited to querying data and running notebooks. Each designation is defined at the domain level and assigned across any project in that domain. When a member performs an action, SageMaker Unified Studio evaluates their assigned designation and permits or denies the request. Data engineers, stewards, analysts, and automated pipelines can now work within the same project with differentiated access, removing the need to create separate projects to isolate permissions. Every domain includes two managed designations, Owner and Contributor, and administrators can create up to 10 additional designations.</p>\n<p>This feature is available in all <a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\">AWS Regions</a> where Amazon SageMaker Unified Studio is available. To learn more, visit the <a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/designations.html\">Designations</a> documentation.</p>",
-          "categories": [
-            "general:products/amazon-sagemaker"
-          ]
-        },
-        {
-          "title": "Amazon RDS for Oracle now supports September 2026 Monthly Recommended Patch",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-september-mrp",
-          "published": "2026-10-28T21:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/rds/oracle/\">Amazon Relational Database Service (Amazon RDS) for Oracle</a> now supports the September 2026 Monthly Recommended Patch (MRP) for Oracle Database version 19c and 26ai. An MRP is a minor engine version that builds on a quarterly Release Update (RU), bundling Oracle's Critical Security Patch Update (CSPU) with additional Oracle-recommended fixes. The September 2026 MRP is applied on top of the July 2026 RU and includes the <a href=\"https://www.oracle.com/security-alerts/cspusep2026.html#AppendixDB\">Oracle September CSPU</a>. We recommend upgrading to the September 2026 MRP as it includes the latest security updates for Oracle Database.</p> \n<p>This release also includes the updated Oracle time zone file (DST version 46), which reflects the latest daylight saving time rule changes in several regions, including British Columbia and Alberta in Canada (effective November 1, 2026) and Morocco and Western Sahara (effective September 20, 2026), which are moving to permanent UTC offsets. If you store timestamps that include time zone information for these areas, the updated time zone file keeps that data aligned with the new rules.</p> \n<p>You can apply the September 2026 MRP for new database instances, or upgrade existing instances to engine version 19.0.0.0.ru-2026-07.mrp-2026-09.r2 or 26.0.0.0.ru-2026-07.mrp-2026-09.r2 from the Amazon RDS Management Console, or by using the AWS SDK or CLI. To learn more about Oracle MRPs supported on Amazon RDS for each engine version, see the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html\">Amazon RDS for Oracle Release notes</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/databases,general:products/amazon-rds"
-          ]
-        },
-        {
-          "title": "Amazon Bedrock AgentCore CLI version 1.0 is now available",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/",
-          "published": "2026-10-28T20:00:00+00:00",
-          "summary": "<p>AWS announces the general availability of Amazon Bedrock AgentCore CLI version 1.0 (@aws/agentcore 1.0.0), rebuilt with faster startup, a consistent command structure, and support for more AgentCore resources. The CLI helps developers create, develop, deploy, and operate AI agents and supporting resources from the terminal.</p> \n<p>With version 1.0, developers can use the project workflow or work directly with harnesses, runtimes, memory, identity, gateways, and payments without first adding them to a project. Developers can invoke existing resources by ID or ARN, open an interactive shell, export a harness, and use searchable menus, resource pickers, and guided workflows. Consistent global flags provide region selection, JSON output, debugging, and version information across commands.</p> \n<p>Existing projects can be migrated to AgentCore version 1 using the agentcore migrate command.</p> \n<p>Install AgentCore CLI version 1.0 from <a href=\"https://www.npmjs.com/package/@aws/agentcore\">npm</a> or explore the source on <a href=\"https://github.com/aws/agentcore-cli\">GitHub</a>. To learn more, visit the <a href=\"https://aws.amazon.com/bedrock/agentcore/\">Amazon Bedrock AgentCore product page</a>, <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-cli-reference.html\">AgentCore CLI reference</a>, and <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-cli.html\">Get started with Amazon Bedrock AgentCore</a>.</p>",
-          "categories": [
-            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "Public endpoints for Amazon ElastiCache Serverless now in AWS GovCloud (US)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-elasticache-serverless-public-endpoints-govcloud/",
-          "published": "2026-10-28T19:00:00+00:00",
-          "summary": "<p>Amazon ElastiCache Serverless for Valkey now supports public endpoints in the AWS GovCloud (US) Regions. A public endpoint lets you connect to your cache from a serverless function or any application running outside a VPC, without setting up a VPN, a bastion host, or an SSH tunnel.</p> \n<p>With a public endpoint, ElastiCache Serverless gives you a fully managed cache with no VPC to configure and no infrastructure to provision, and you can create one in under a minute. Every connection uses IAM authentication over TLS 1.3, so there's no password to store or rotate. Connect using Valkey GLIDE 2.2 or later, which has built-in IAM support, or another Valkey client paired with the Developer Toolkit for ElastiCache, an open-source library that generates and refreshes IAM authentication tokens for you.</p> \n<p>With this expansion, public endpoints for ElastiCache Serverless are now available in all commercial AWS Regions, the AWS GovCloud (US) Regions, and the China Regions. There is no additional charge for using public endpoints beyond standard ElastiCache Serverless pricing.</p> \n<p>To get started, create a Valkey 9.0 or later serverless cache with a public endpoint using the AWS Management Console, AWS SDK, or AWS CLI. To learn more about public endpoints, see <a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-public-endpoints-chapter.html\" target=\"_blank\" rel=\"noopener noreferrer\">Create a Valkey serverless cache with a public endpoint</a>.&nbsp;</p>",
-          "categories": [
-            "general:products/aws-govcloud-us"
-          ]
-        },
-        {
-          "title": "AWS Lambda supports Seekable OCI (SOCI) lazy loading for Lambda Managed Instances",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-seekable-oci-soci/",
-          "published": "2026-10-28T18:44:00+00:00",
-          "summary": "<p>AWS Lambda now supports <a href=\"https://github.com/awslabs/soci-snapshotter\">Seekable OCI (SOCI)</a>&nbsp;for lazy loading <a href=\"https://aws.amazon.com/lambda/lambda-functions/\">Event Functions</a> packaged as Open Container Initiative (OCI) images running on <a href=\"https://aws.amazon.com/lambda/lambda-managed-instances/\">Lambda Managed Instances</a>. With SOCI support, Lambda fetches only the files needed at each stage of the execution environment startup rather than downloading the entire image upfront, reducing container startup times by up to 70%.</p> \n<p>Customers building compute-intensive applications such as data processing pipelines, high-throughput API backends, and batch computation workloads require substantial memory and CPU resources to process large datasets, serve low-latency responses at scale, and run complex computations efficiently. Container images for these workloads can reach several gigabytes, and downloading and preparing the full image can take several minutes when provisioning new execution environments. SOCI support on Lambda Managed Instances eliminates this bottleneck by streaming only the required files at each stage of the execution environment startup, so your functions start faster as you scale.</p> \n<p>To get started, create a <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-seekable-oci.html#lambda-managed-instances-seekable-oci-create-index\">SOCI index</a>&nbsp;(a table of contents for the files in your image layers) for your container image and push it to <a href=\"https://aws.amazon.com/ecr/\">Amazon ECR</a>. When creating or updating your function, set the image URI to the SOCI-indexed tag in Amazon ECR (for example, my-function:v1-soci) and publish a function version. Lambda automatically detects the SOCI index and enables lazy loading with no additional configuration. If you use a coding assistant such as Kiro, Claude Code, or Codex, install the Lambda Managed Instances skill from the <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/agent-setup-guide.html\">Agent Toolkit for AWS</a> to configure and deploy functions through your agent.</p> \n<p>The feature is available in all <a href=\"https://builder.aws.com/build/capabilities\">AWS commercial Regions</a> where Lambda Managed Instances is available. To learn more, visit the <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-seekable-oci.html\">AWS Lambda Managed Instances developer guide</a>.&nbsp;</p>",
-          "categories": [
-            "general:products/aws-lambda,marketing:marchitecture/serverless"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "AWS セキュリティハンズオン連続開催のご案内",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-security-handson-series/",
+          "published": "2026-11-05T00:00:47+00:00",
+          "summary": "AWS Japan では、2026 年 11 月から、AWS のセキュリティサービスを実際に操作するオンラインハンズオンを週次で開催します。AWS Security Agent、AWS WAF、Amazon Inspector、フロンティアモデルを活用したソースコードの脆弱性対策などをテーマに、座学とハンズオンで、ご自身の組織で試すための最初の一歩までをお伝えします。本記事は、開催日程を随時更新する案内ページです。",
+          "categories": [
+            "Amazon Inspector",
+            "Announcements",
+            "AWS WAF",
+            "Security",
+            "Webinars",
+            "AWS Security",
+            "Webinar"
+          ]
+        },
+        {
+          "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock、エージェントツールとしての Step Functions など (2026 年 11 月 2 日)",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+          "published": "2026-11-04T09:25:26+00:00",
+          "summary": "2026 年 10 月 26 日週、特に印象に残ったエージェント関連の発表は、モデルの性能そのものとはまったく […]",
+          "categories": [
+            "Amazon Aurora",
+            "Amazon Bedrock",
+            "Amazon Bedrock AgentCore",
+            "Amazon EC2",
+            "Amazon Elastic Container Registry",
+            "Amazon Elastic Container Service",
+            "Amazon Elastic Kubernetes Service",
+            "Amazon SageMaker AI",
+            "Amazon Simple Storage Service (S3)",
+            "Announcements",
+            "AWS Certificate Manager",
+            "AWS Fault Injection Service (FIS)",
+            "AWS IAM Identity Center",
+            "AWS Identity and Access Management (IAM)",
+            "AWS Key Management Service",
+            "AWS Lambda",
+            "AWS re:Invent",
+            "AWS Step Functions",
+            "News"
+          ]
+        },
         {
           "title": "re:Invent 2026 で AI 時代のオブザーバビリティを学ぶ",
           "link": "https://aws.amazon.com/jp/blogs/news/embracing-observability-for-the-ai-era-at-reinvent-2026/",
@@ -541,28 +581,6 @@
             "Generative AI",
             "AWSサービスアップデートまとめ",
             "週刊AWS"
-          ]
-        },
-        {
-          "title": "AI ガードレールによるコンタクトセンターでの責任ある AI の実装",
-          "link": "https://aws.amazon.com/jp/blogs/news/implementing-responsible-ai-in-contact-centers-with-connect-ai-agents-guardrails/",
-          "published": "2026-11-02T05:23:14+00:00",
-          "summary": "Amazon Connect Customer のネイティブ機能 AI ガードレールは、コンタクトセンターにおける AI の安全で倫理的な導入を実現します。本記事では、プロンプト攻撃検出、コンテンツフィルタリング、PII 保護、コンテキストグラウンディングなど 7 つの保護コンポーネントの詳細と、AWS の責任ある AI フレームワークの 8 つの側面に沿った実装ガイダンスを解説します。",
-          "categories": [
-            "Amazon Connect",
-            "Security & Governance",
-            "#amazonconnect",
-            "contactcenter"
-          ]
-        },
-        {
-          "title": "Kiro のハロウィンハッカソン Kiroween 2026 が始まりました",
-          "link": "https://aws.amazon.com/jp/blogs/news/kiroween-2026/",
-          "published": "2026-10-31T03:37:54+00:00",
-          "summary": "Kiro が毎年ハロウィンの時期に開いているハッカソン Kiroween が、今年も始まりました。提出の締め切りは日本時間 2026 年 12 月 5 日（土）午前 7 時で、賞金の総額は 10 万ドルです。",
-          "categories": [
-            "Developer Tools",
-            "Kiro"
           ]
         }
       ]
