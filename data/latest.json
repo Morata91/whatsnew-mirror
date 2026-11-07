@@ -1,9 +1,88 @@
 {
-  "generated_at": "2026-11-06T02:22:29.350102+00:00",
+  "generated_at": "2026-11-07T01:51:55.232849+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
+          "published": "2026-11-06T22:47:00+00:00",
+          "summary": "<p>Today, Kimi K3.1 Pro from Moonshot AI is available on Amazon Bedrock, expanding our open weight model portfolio with the security and governance that customers rely on. Customers using Amazon Bedrock can now run agentic use cases such as coding and document processing on Kimi K3.1 Pro (Highspeed), which delivers high output tokens per second (OTPS) for faster, more responsive results.</p> \n<p>According to Moonshot AI, Kimi K3.1 Pro is an open-weight, natively multimodal agentic model with a 1-million-token context window, and its most capable 3-trillion-parameter-class model to date. Moonshot AI reports improvements in coding, 3D creation, financial research, and other agentic work. On Amazon Bedrock, it runs within the same security boundary as proprietary models and supports <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html\">explicit prompt caching</a> to reduce latency and input costs.</p> \n<p>Kimi K3.1 Pro is available in all <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\">AWS Regions</a> where Amazon Bedrock is available through cross-Region inference. To get started, visit the <a href=\"https://console.aws.amazon.com/bedrock/\">Amazon Bedrock console</a>. To learn more, see the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k3-1-highspeed.html\">Amazon Bedrock documentation</a>.</p>",
+          "categories": [
+            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Agent Registry is now generally available in AWS GovCloud (US-West) Region",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/",
+          "published": "2026-11-06T19:48:00+00:00",
+          "summary": "<p>AWS Agent Registry, available through Amazon Bedrock AgentCore, is now available in the AWS GovCloud (US-West) Region.</p> \n<p>AWS Agent Registry is a fully managed discovery service that gives your organization a central catalog for organizing, curating, and discovering resources. You can publish MCP servers, tools, agents, agent skills, and custom resources to a searchable registry, and control what becomes discoverable through an approval workflow. People and AI agents can then find the right tools and agents through hybrid search, catalog browsing, and a native MCP endpoint.</p> \n<p>With Agent Registry in AWS GovCloud (US-West), public sector organizations and their partners get a single governed inventory of the agents and tools in their environment. Approval workflows and AWS CloudTrail audit logs support their compliance and oversight requirements.</p> \n<p>To get started, see the <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html\">AWS Agent Registry documentation</a>.</p>",
+          "categories": [
+            "general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West) Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions",
+          "published": "2026-11-06T16:00:00+00:00",
+          "summary": "<p>You can now use Amazon MSK Replicator in the AWS GovCloud (US-East, US-West) Regions to replicate streaming data across <a href=\"https://aws.amazon.com/msk/\">Amazon MSK</a> clusters and from external Apache Kafka clusters including on-premises, self-managed on AWS, or other cloud providers to Amazon MSK Provisioned clusters.</p> \n<p>MSK Replicator is a feature of Amazon MSK that automates data replication between Kafka clusters, eliminating the need to manage custom replication infrastructure or configure open-source tools. With MSK Replicator, you can easily build regionally resilient streaming applications for increased availability and business continuity. MSK Replicator provides automatic asynchronous replication across Kafka clusters, eliminating the need to write custom code, manage infrastructure, or setup cross-region networking. MSK Replicator automatically scales the underlying resources so that you can replicate data on-demand without having to monitor or scale capacity. MSK Replicator also replicates the necessary Kafka metadata including topic configurations, Access Control Lists (ACLs), and consumer group offsets. If an unexpected event occurs in a region, you can failover to the other AWS Region and seamlessly resume processing.</p> \n<p>You can get started with MSK Replicator from the Amazon MSK console or the Amazon CLI. To learn more, visit the MSK Replicator <a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator.html\"><u>documentation</u></a>, <a href=\"https://aws.amazon.com/msk/features/msk-replicator/\"><u>product page</u></a>, and <a href=\"https://aws.amazon.com/msk/pricing/\"><u>pricing page</u></a>.</p>",
+          "categories": [
+            "general:products/amazon-msk,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "Amazon Redshift expands SUPER data type to store strings up to 16 million bytes",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-redshift-expands-super-to-16-million-bytes/",
+          "published": "2026-11-06T16:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/redshift/\">Amazon Redshift</a> now supports individual strings up to 16 million bytes within <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_SUPER_type.html\">SUPER data types</a>. Once you opt in through a database parameter, this enhancement applies when ingesting structured or semi-structured data from JSON, PARQUET, TEXT, and CSV source files, and when transforming data through extract load and transform (ELT) processes. Previously, individual strings within SUPER data types were limited to 65,535 bytes.</p> \n<p>Storing large individual strings in the SUPER data type helps avoid complex pre-loading transformations needed to store the source data in Amazon Redshift. You can now directly ingest large individual strings greater than 65,535 bytes without extra processing (for example, lengthy documents like terms and conditions and contracts), making them queryable using SQL. Once the data is in Amazon Redshift, you can use the flexibility of PartiQL language to explore and navigate through the data or use string functions to transform the data.&nbsp;Functions such as <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/JSON_PARSE.html\">JSON_PARSE</a>, <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_CONCAT.html\">CONCAT</a>, and <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html\">LISTAGG</a> can now take input strings and return output strings up to 16 million bytes in length.</p> \n<p>This enhancement is available in all AWS Regions, including the AWS GovCloud (US) Regions, where Amazon Redshift is available. See the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" style=\"background-color: rgb(255,255,255);\">AWS Region Table</a> for more details. To learn more, please visit our <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_enable_large_strings_opt_in.html\" style=\"background-color: rgb(255,255,255);\">documentation</a> or <a href=\"http://aws.amazon.com/blogs/big-data/store-and-process-large-strings-in-amazon-redshift-super-columns\">blog</a>.&nbsp;&nbsp;</p>",
+          "categories": []
+        },
+        {
+          "title": "AWS launches support for amortization of EC2 Capacity Blocks for ML",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/",
+          "published": "2026-11-06T15:00:00+00:00",
+          "summary": "<p>AWS Data Exports for Cost and Usage Report (CUR) 2.0 and AWS Cost Explorer now amortize the upfront fee for Amazon EC2 Capacity Blocks for ML across the duration of each reservation. You can see the amortized cost of each instance launched into a Capacity Block and the amortized cost of unused capacity, so you can attribute your upfront fee to the workloads that used it and identify capacity that went unused.</p> \n<p>Previously, a Capacity Block's upfront fee appeared as a single charge on the purchase date, making it difficult to see how that cost was spread across usage over the reservation. Now the amortized cost appears alongside your instance usage, so you can allocate GPU costs to the teams, projects, and applications that ran on the reserved capacity. You can also see what share of your reservation went unused and plan future Capacity Block purchases. In CUR 2.0, the amortized costs appear in the reservation_amortized_upfront_fee_for_billing_period, reservation_effective_cost columns, and reservation_net_effective_cost shows the amortized cost after discounts. In Cost Explorer, select the amortized cost view to see Capacity Block costs allocated for&nbsp;the reservation.</p> \n<p>&nbsp;Amortization for Capacity Blocks is available at no additional charge in all AWS Regions except the AWS GovCloud (US) Regions and the China Regions. To learn more, see the <a href=\"https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2.html\">CUR 2.0 data dictionary</a> and <a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/ce-exploring-data.html\">exploring your data using Cost Explorer</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/cost-management"
+          ]
+        },
+        {
+          "title": "Capacity Reservation Resource Groups now support Amazon EC2 Capacity Blocks and interruptible Capacity Reservations in AWS GovCloud (US) Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/capacity-reservation-resource-groups-support-in-aws-govcloud-regions",
+          "published": "2026-11-06T14:00:00+00:00",
+          "summary": "<p>Starting today, you can add Amazon EC2 Capacity Blocks for ML and interruptible Capacity Reservations to Capacity Reservation Resource Groups in AWS GovCloud (US) Regions. Amazon EC2 offers different reservation offerings such as On-Demand Capacity Reservations (ODCRs), interruptible Capacity Reservations, and Capacity Blocks for ML. Previously, a Capacity Reservation Resource Group could only include ODCRs. Now you can add any type of Capacity Reservation to a Capacity Reservation Resource Group, making it easier to launch EC2 instances across your entire portfolio of reserved capacity.</p> \n<p>To use this feature, create a Capacity Reservation Resource Group, add any Capacity Reservation to it, and then target the group in your launch request. When using EC2 Fleet and EC2 Auto Scaling groups, you can also specify your prioritization preferences across reservation types, and configure automatic fall back to EC2 On-Demand capacity when there is no capacity remaining across your reservations.</p> \n<p>There are no additional charges for using this feature. With the addition of AWS GovCloud (US) Regions, this feature is now available in all AWS Regions where Capacity Blocks for ML and interruptible ODCRs are supported, excluding China Regions. To get started, see <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cr-group.html\">Capacity Reservation Resource Groups</a> and the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html\">Capacity Reservations user guide</a>.</p>",
+          "categories": [
+            "general:products/amazon-ec2,general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon Simple Email Service is now available in six new AWS Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-simple-email-service-new-aws-regions/",
+          "published": "2026-11-06T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/ses/\">Amazon Simple Email Service (Amazon SES)&nbsp;</a> is now available in the Asia Pacific (New Zealand, Melbourne, Taipei, Thailand), Mexico (Central), EU (Spain). Customers can now use these new Regions to leverage Amazon SES to send emails and, if needed, to help manage data requirements.</p> \n<p>Amazon SES is a scalable, cost-effective, and flexible cloud-based email service that allows digital marketers and application developers to send marketing, notification, and transactional emails from within any application. To learn more about Amazon SES, visit this&nbsp;<a href=\"https://aws.amazon.com/ses/\">page&nbsp;</a>.</p> \n<p>With this launch, Amazon SES is available in 35 AWS Regions globally: US East (N. Virginia, Ohio), US West (N. California, Oregon), AWS GovCloud (US-West, US-East), Asia Pacific (Osaka, Mumbai, Hyderabad, Sydney, Singapore, Seoul, Tokyo, Jakarta, Malaysia, New Zealand, Melbourne, Taipei, Thailand), Canada (Central, Calgary), EU (Ireland, Frankfurt, London, Paris, Stockholm, Milan, Zurich,Spain), Middle East (Bahrain, UAE), Israel (Tel Aviv), South America (Sao Paulo), Mexico (Central) and Africa (Cape Town).</p> \n<p>For a complete list of all of the regional endpoints for Amazon SES, see &nbsp;<a href=\"https://docs.aws.amazon.com/general/latest/gr/ses.html\">AWS Service Endpoints&nbsp;</a> in the AWS General Reference.</p>",
+          "categories": [
+            "general:products/amazon-simple-email-service,marketing:marchitecture/applications"
+          ]
+        },
+        {
+          "title": "AWS Glue Data Catalog now supports catalog-vended credentials with Apache Iceberg REST catalog federation",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/glue-catalog-vended-credentials-iceberg/",
+          "published": "2026-11-06T08:00:00+00:00",
+          "summary": "<p>AWS Glue Data Catalog now supports external catalog's vended credentials in Apache Iceberg REST catalog federation. You can now read external Iceberg tables from Amazon Athena, Amazon EMR, Amazon Redshift, and AWS Glue using coarse-grained table grants in your external Iceberg catalog.</p> \n<p>Glue Data Catalog already federates to external Iceberg REST catalogs through an AWS IAM role that you configure with access to your Amazon S3 buckets. This enhancement in Glue Data Catalog provides another way to connect to an external Iceberg catalog and read only the tables that the external catalog authorizes. It uses temporary security credentials that are scoped to the Amazon S3 storage prefix and vended by your external Iceberg catalog. AWS Lake Formation manages access control when you query an external table using any AWS analytics engine, letting you restrict access further down to specific rows and columns and share external Iceberg tables across AWS accounts.</p> \n<p>This feature is available through the AWS Lake Formation Management Console, AWS CLI, and the AWS Glue and Lake Formation SDKs. This feature is available in all commercial AWS Regions where Glue and Lake Formation are supported. To learn more, visit the <a href=\"https://docs.aws.amazon.com/lake-formation/latest/dg/catalog-federation.html\">documentation</a>.</p>",
+          "categories": [
+            "general:products/aws-glue,marketing:marchitecture/analytics,general:products/amazon-emr,general:products/aws-lake-formation,general:products/amazon-athena"
+          ]
+        },
+        {
+          "title": "AWS Elemental MediaConvert adds a native integration with AWS Elemental Inference Smart Subtitles",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
+          "published": "2026-11-06T08:00:00+00:00",
+          "summary": "<p>​​AWS Elemental MediaConvert now integrates Smart Subtitles, an AI-powered subtitling solution built on AWS Elemental Inference and the latest speech recognition models. This feature brings automated subtitle generation directly into your video-on-demand (VOD) transcoding and packaging workflows, eliminating the need for separate external captioning pipelines. Customers can now manage both transcoding and subtitle creation within a single, unified workflow.</p> \n<p>​Smart subtitles automatically transcribe your audio into subtitles with native support for six languages including English, French, German, Italian, Portuguese, and Spanish. With MediaConvert, you can package the outputs to text-based side-car formats and burn-in for all your streaming or distribution needs. To enhance transcription quality, you can now define custom dictionaries in Elemental Inference to guide the model on proper nouns, brand names, technical terminology, and more. Smart subtitles complement existing add-on features such as Smart Cropping for end-to-end media pipelines, intelligent framing and accessible subtitle delivery in distribution-ready formats like HLS and DASH.​</p> \n<p>​​Smart subtitles is available in all AWS regions where Elemental Inference is available including US East (N. Virginia), US West (Oregon), Europe (Ireland), Asia Pacific (Mumbai), and Asia Pacific (Sydney).​</p> \n<p>To learn more, visit <a href=\"https://docs.aws.amazon.com/mediaconvert/latest/ug/smart-subtitling-with-elemental-inference.html\">Smart subtitles with MediaConvert,</a> <a href=\"https://aws.amazon.com/mediaconvert/\">AWS Elemental MediaConvert</a>&nbsp; and <a href=\"https://docs.aws.amazon.com/elemental-inference/latest/userguide/create-feed-outputs.html#create-feed-console-smart-subtitles\">AWS Elemental Inference smart subtitles.</a></p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/media-services,general:products/aws-elemental-mediaconvert"
+          ]
+        },
         {
           "title": "AWS Security Hub now provides an SBOM inventory for your compute resources",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/",
@@ -110,6 +189,24 @@
           "summary": "<p>AWS Lambda durable functions has increased default quotas for running executions and API request rates. The new quotas below apply in all AWS Regions except US East (N. Virginia), US West (Oregon), and Europe (Ireland), which have twice these quotas.</p> \n<ul> \n <li>Running durable executions per account (1 million to 5 million)</li> \n <li>Function invocation rate to start durable executions (300 to 3,000 requests per second)</li> \n <li>CheckpointDurableExecution and GetDurableExecutionState (1,000 to 10,000 requests per second)</li> \n <li>SendDurableExecutionCallbackSuccess, SendDurableExecutionCallbackFailure, and SendDurableExecutionCallbackHeartbeat (300 to 3,000 requests per second)</li> \n <li>GetDurableExecution and StopDurableExecution (30 to 300 requests per second)</li> \n <li>GetDurableExecutionHistory and ListDurableExecutionsByFunction (15 to 150 requests per second)</li> \n</ul> \n<p><a href=\"https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Lambda durable functions</a> helps you build resilient multi-step applications and AI workflows that execute for up to one year, with built-in checkpointing, automatic retries, and waits that suspend execution without incurring compute charges. With this increase, workloads such as order processing and document pipelines can run more executions in parallel without requesting quota increases. When many executions wait on external work, such as payment confirmations or batch jobs, more can resume together. If you monitor and manage executions with your dashboards or scripts, they can now check status, list executions, read history, and stop executions at least ten times as often.</p> \n<p>The new quotas apply in all AWS Regions where AWS Lambda durable functions is available. To learn more, see <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html#durable-functions-quotas\" target=\"_blank\" rel=\"noopener noreferrer\">Lambda quotas</a> in the AWS Lambda Developer Guide.</p>",
           "categories": [
             "general:products/aws-lambda"
+          ]
+        },
+        {
+          "title": "Amazon EC2 now publishes ImdsV1Enabled CloudWatch metric",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-imdsv1enabled-cloudwatch-metric/",
+          "published": "2026-11-05T08:00:00+00:00",
+          "summary": "<p>Amazon EC2 now supports an ImdsV1Enabled CloudWatch metric, giving customers visibility into which of their EC2 instances still have Instance Metadata Service Version 1 (IMDSv1) enabled. You can use this metric to track your migration to IMDSv2 across your accounts and Regions, at scale.</p> \n<p>With the ImdsV1Enabled metric, you can configure CloudWatch dashboards and alarms to track instances that still allow IMDSv1, identify migration gaps, and prioritize remediation, without building your own tooling to check the metadata options of instances across accounts and Regions. This gives you a reliable, ongoing signal to track and complete your IMDSv2 migration.</p> \n<p>The ImdsV1Enabled CloudWatch metric is available in all AWS Regions at no additional cost.</p> \n<p>To learn more, see the ImdsV1Enabled CloudWatch metric in the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html#ec2-cloudwatch-metrics\">Amazon EC2 User Guide</a>. For step-by-step migration instructions, see <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-metadata-transition-to-version-2.html\">Transition to IMDSv2 in the Amazon EC2 User Guide</a>.</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch,marketing:marchitecture/compute,general:products/amazon-ec2"
+          ]
+        },
+        {
+          "title": "AWS CodeConnections is now available in the AWS GovCloud (US-West) Region",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-codeconnections-govcloud-west/",
+          "published": "2026-11-05T08:00:00+00:00",
+          "summary": "<p>AWS CodeConnections is now available in the AWS GovCloud (US-West) Region, in addition to AWS GovCloud (US-East). CodeConnections lets you connect AWS services such as AWS CodePipeline and AWS CodeBuild to source code repositories hosted with third-party providers such as Bitbucket.</p>\n<p>With this launch, customers running workloads in AWS GovCloud (US-West) can create connections to their source repositories in the same Region as their pipelines. For example, a team can configure a connection so that a commit to their repository automatically starts a release in AWS CodePipeline, without managing provider credentials for each integration.</p>\n<p>To learn more, see the <a href=\"https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html\">AWS CodeConnections User Guide</a> and the <a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/CodeStar-connections.html\">AWS GovCloud User Guide</a>. To get started, visit the AWS GovCloud (US) console.</p>",
+          "categories": [
+            "general:products/aws-govcloud-us"
           ]
         },
         {
@@ -291,6 +388,13 @@
           ]
         },
         {
+          "title": "AWS Transform for mainframe improves the reimagine modernization workflow",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-mainframe-reimagine/",
+          "published": "2026-11-03T08:00:00+00:00",
+          "summary": "<p>AWS Transform for mainframe now discovers business functions with field-level precision and generates a new requirements coverage report in the assess and reimagine workflow. Previously, business functions that used the same table or file were grouped together, and you had to build your own traceability reporting from AWS Transform artifacts. With this launch, you can start modernizing z/OS COBOL and PL/I workloads from a more accurate catalog of business functions and verify requirements coverage before you build.</p>\n<p>Business functions are now grouped only when they affect the same data fields. They also include screens and queues and carry clearer names and descriptions. The new requirements coverage report shows how every part of your application is accounted for in the generated requirements. Every line of source code is classified by how it was handled, every business rule links to the exact lines it came from, and every requirement is backed by the business rules that support it. You can review coverage from the full portfolio down to a single line before moving into forward engineering in Kiro and other IDEs.</p>\n<p>These capabilities are available in all AWS Regions where AWS Transform for mainframe is available. For more information, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Region table</a>. To learn more, visit <a href=\"https://aws.amazon.com/transform/mainframe/\">AWS Transform for mainframe</a> or see the <a href=\"https://docs.aws.amazon.com/transform/\">AWS Transform for mainframe documentation</a>.</p>",
+          "categories": []
+        },
+        {
           "title": "Amazon CloudWatch now supports API keys for OpenTelemetry traces",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-api-keys-opentelemetry/",
           "published": "2026-11-03T08:00:00+00:00",
@@ -298,13 +402,6 @@
           "categories": [
             "general:products/amazon-cloudwatch,general:products/aws-x-ray"
           ]
-        },
-        {
-          "title": "AWS Transform for mainframe improves the reimagine modernization workflow",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-mainframe-reimagine/",
-          "published": "2026-11-03T08:00:00+00:00",
-          "summary": "<p>AWS Transform for mainframe now discovers business functions with field-level precision and generates a new requirements coverage report in the assess and reimagine workflow. Previously, business functions that used the same table or file were grouped together, and you had to build your own traceability reporting from AWS Transform artifacts. With this launch, you can start modernizing z/OS COBOL and PL/I workloads from a more accurate catalog of business functions and verify requirements coverage before you build.</p>\n<p>Business functions are now grouped only when they affect the same data fields. They also include screens and queues and carry clearer names and descriptions. The new requirements coverage report shows how every part of your application is accounted for in the generated requirements. Every line of source code is classified by how it was handled, every business rule links to the exact lines it came from, and every requirement is backed by the business rules that support it. You can review coverage from the full portfolio down to a single line before moving into forward engineering in Kiro and other IDEs.</p>\n<p>These capabilities are available in all AWS Regions where AWS Transform for mainframe is available. For more information, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Region table</a>. To learn more, visit <a href=\"https://aws.amazon.com/transform/mainframe/\">AWS Transform for mainframe</a> or see the <a href=\"https://docs.aws.amazon.com/transform/\">AWS Transform for mainframe documentation</a>.</p>",
-          "categories": []
         },
         {
           "title": "Amazon EKS Capabilities now supports Argo CD Notifications",
@@ -350,105 +447,55 @@
           "categories": [
             "marketing:marchitecture/business-productivity,marketing:marchitecture/artificial-intelligence"
           ]
-        },
-        {
-          "title": "Amazon Aurora MySQL 8.4.10 is now generally available",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-8410-available/",
-          "published": "2026-11-02T17:00:00+00:00",
-          "summary": "<p>Starting today, <a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora MySQL-Compatible Edition</a> 8.4 supports MySQL 8.4.10. We recommend upgrading to the newer minor versions to accept fixes for Common Vulnerabilities and Exposures (CVEs) in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the MySQL community. For more details, refer to the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.84Updates.html\" target=\"_blank\" rel=\"noopener noreferrer\">Aurora MySQL 8.4</a> and <a href=\"https://dev.mysql.com/doc/relnotes/mysql/8.4/en/news-8-4-10.html\" target=\"_blank\" rel=\"noopener noreferrer\">MySQL 8.4.10</a> release notes.</p> \n<p>Aurora MySQL 8.4.10 adds support for global transaction identifiers (GTID) tags, which lets you assign a user-defined tag to&nbsp;GTIDs&nbsp;to help you&nbsp;identify and group related transactions in binary log replication. This release also adds&nbsp;support for a maximum of 50,000 simultaneous connections per DB instance, which allows connection-intensive applications to scale without adding a connection pooling layer. Learn more about maximum connections best practices in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Performance.html#AuroraMySQL.Managing.MaxConnections\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora MySQL User Guide</a>. &nbsp;</p> \n<p>You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.AMVU.html\" target=\"_blank\" rel=\"noopener noreferrer\">automatic minor version upgrades</a> and use the AWS Organizations <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Maintenance.AMVU.UpgradeRollout.html\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade Rollout Policy</a> to orchestrate upgrades across your clusters in phases, validating on lower-priority environments before upgrading your most critical ones. You can perform minor version upgrades in-place or via snapshot restore. Learn more about performing version upgrades in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.Upgrading.html\" target=\"_blank\">Amazon Aurora User Guide</a>. This release is supported in all <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.RegionsAndAvailabilityZones.html#Aurora.Overview.Availability.MySQL\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Regions</a> where Aurora MySQL is available.</p> \n<p><a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora</a> is designed for high performance and availability at global scale with full MySQL compatibility. It provides scale-to-zero serverless compute, Aurora Global Database for multi-Region resilience, Aurora I/O-Optimized for improved price performance on I/O-intensive workloads, and built-in security and continuous backups. To get started, take a look at Aurora's <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\" target=\"_blank\" rel=\"noopener noreferrer\">getting started page</a>.</p>",
-          "categories": [
-            "general:products/amazon-aurora,marketing:marchitecture/databases"
-          ]
-        },
-        {
-          "title": "AWS Lambda now supports queues for Apache Kafka in self-managed Kafka event sources",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-queue-kafka-esm/",
-          "published": "2026-11-02T17:00:00+00:00",
-          "summary": "<p>AWS Lambda now supports <a href=\"https://cwiki.apache.org/confluence/spaces/KAFKA/pages/255070434/KIP-932+Queues+for+Kafka\">queues for Apache Kafka</a> in <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/with-kafka.html\">self-managed Kafka event source mappings</a> (ESM), for Kafka clusters that customers run themselves and for managed offerings such as Confluent Cloud.&nbsp;Customers can now scale processing for Kafka workloads beyond the partition count of a topic, increasing throughput during traffic spikes and improving processing resilience.</p> \n<p>Customers building event-driven Kafka workloads for use cases such as image and video encoding, fraud detection, notification delivery, and telemetry ingestion treat each event as an independent unit of work, where processing speed matters more than strict ordering. Previously, Kafka ESMs used the Kafka consumer group protocol, which assigns each partition to exactly one consumer within a consumer group. Customers needing higher parallelism had to over-partition topics or move traffic to a separate queuing system, adding infrastructure to operate and producer code to maintain. Queue support for self-managed Kafka ESMs is built on Kafka share groups, which are generally available in Apache Kafka 4.2. This launch enables multiple event pollers to consume concurrently from the same partition, with each event poller supporting up to 10 concurrent invocations. This decouples parallelism from partition count with no changes to producers, topic configuration, or function code. As a result, customers get higher throughput during traffic spikes and more resilient processing, because a slow or failed event no longer holds up other events in the same partition. Queue mode does not preserve partition ordering and is intended for workloads that do not require it.</p> \n<p>This capability requires a Kafka cluster with share groups enabled, such as Apache Kafka 4.2 or later, and is available in all <a href=\"https://builder.aws.com/build/capabilities\">AWS commercial Regions</a> where self-managed Kafka ESM is available. To get started, create a self-managed&nbsp;Kafka ESM with ConsumptionMode set to Queue through the AWS Management Console, Lambda API, AWS CLI, AWS CloudFormation, AWS SAM, or AWS CDK. Standard Lambda pricing applies. Customers who configure <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/kafka-scaling-modes.html#kafka-provisioned-mode\">provisioned mode</a> for their self-managed Kafka ESM also pay for Event Poller Unit (EPU) usage. To learn more, see the <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/polling-kafka-queue.html\">AWS Lambda Developer Guide</a> and <a href=\"https://aws.amazon.com/lambda/pricing/\">AWS Lambda pricing</a>.&nbsp;&nbsp;&nbsp;&nbsp;</p>",
-          "categories": []
-        },
-        {
-          "title": "Amazon Aurora MySQL 3.14 (compatible with MySQL 8.0.46) is generally available",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-314-available/",
-          "published": "2026-11-02T17:00:00+00:00",
-          "summary": "<p>Starting today, Amazon Aurora MySQL-Compatible Edition 3 (compatible with MySQL 8.0) supports MySQL 8.0.46, which includes community MySQL fixes and Aurora-specific improvements. In addition to operational improvements, Aurora MySQL 3.14 introduces support for post-quantum TLS (PQ-TLS) key exchange, providing you with post-quantum cryptography options for encrypting your data in-transit. For detailed information on this release, refer to <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html\" target=\"_blank\" rel=\"noopener noreferrer\">Aurora MySQL 3</a> and <a href=\"https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-46.html\" target=\"_blank\" rel=\"noopener noreferrer\">MySQL 8.0.46</a> release notes.</p> \n<p>You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.AMVU.html\" target=\"_blank\" rel=\"noopener noreferrer\">automatic minor version upgrades</a> and use the AWS Organizations <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Maintenance.AMVU.UpgradeRollout.html\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade Rollout Policy</a> to orchestrate upgrades across your clusters in phases. You can perform minor version upgrades in-place or via snapshot restore. This release is supported in all <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.RegionsAndAvailabilityZones.html#Aurora.Overview.Availability.MySQL\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Regions</a> where Aurora MySQL is available.</p> \n<p><a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Aurora</a> is designed for high performance and availability at global scale with full MySQL compatibility. It provides scale-to-zero serverless compute, Aurora Global Database for multi-Region resilience, Aurora I/O-Optimized for improved price performance on I/O-intensive workloads, and built-in security and continuous backups. To get started, take a look at Aurora’s <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\" target=\"_blank\" rel=\"noopener noreferrer\">getting started page</a>.</p>",
-          "categories": [
-            "general:products/amazon-aurora,marketing:marchitecture/databases"
-          ]
-        },
-        {
-          "title": "Amazon Connect Customer now supports Model Context Protocol (MCP) tools in flows",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/",
-          "published": "2026-11-02T16:00:00+00:00",
-          "summary": "<p>Amazon Connect Customer now enables you to invoke Model Context Protocol (MCP) tools in customer experience flows through the new 'External Tool' block. With this launch, you can connect flows to third-party applications through Amazon Bedrock AgentCore Gateway and reuse the same tools used by your agentic experiences to retrieve data or trigger actions, without writing custom Lambda functions. For example, when a customer contacts a financial institution about a recent transaction, a flow can use the External Tool block to retrieve relevant context from a third-party application, such as case history from their CRM system, or transaction details from a banking platform.</p> \n<p>This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo). To learn more about this feature, refer to the <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/external-tool.html\">administrator guide</a>. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the <a href=\"https://aws.amazon.com/products/connect/customer/\">Amazon Connect Customer website.</a></p>",
-          "categories": [
-            "marketing:marchitecture/contact-center"
-          ]
-        },
-        {
-          "title": "Amazon Connect Customer now supports Cases and External Tool events in the Wait block",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-wait-block-cases-tool-events/",
-          "published": "2026-11-02T16:00:00+00:00",
-          "summary": "<p>Amazon Connect Customer now supports Cases and External Tool events in the Wait block, giving you more control over how your customer experience flows react to real-time data changes. In addition to waiting for a Lambda function to complete, you can now wait until a Connect Case field meets a specified condition or an External Tool invocation completes. This enables you to wait for critical information before advancing an interaction, reducing unnecessary transfers and saving time for both your end-customers and agents. For example, you can hold a flow until a refund status field is updated on a case, then automatically resume and route the interaction based on the outcome.&nbsp;</p> \n<p>To learn more about this feature, refer to the <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/wait.html\">administrator guide </a>and availability of <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#cases_region\">Connect Customer features by Region</a>. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the <a href=\"https://aws.amazon.com/products/connect/customer/\">Amazon Connect Customer website.</a></p>",
-          "categories": []
-        },
-        {
-          "title": "EC2 Amazon Machine Images can now be scanned for vulnerabilities through Amazon Inspector",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-amis-scanned-through-inspector/",
-          "published": "2026-11-02T08:00:00+00:00",
-          "summary": "<p>Amazon Inspector now extends its vulnerability scanning to EC2 Amazon Machine Images (AMIs), enabling you to identify software vulnerabilities in your AMIs without launching instances or installing additional software. This helps you fix issues at the source before AMIs are used to launch instances across your fleet.</p> \n<p>With this capability, you can run continuous evaluations to monitor your AMI catalog for newly discovered vulnerabilities, or perform targeted one-time scans for specific AMIs directly from the EC2 Console. You can enable AMI scanning for an account or across your entire organization in Amazon Inspector. For AWS Security Hub customers, you can enable AMI scanning as an add-on across your organization, and findings are also delivered to Security Hub. Based on the scan results, you can enable the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html\">Allowed AMIs</a> setting and specify security criteria that AMIs must meet to be available within your account and enforce this setting across the entire organization using Declarative Policies. Customers building AMIs with <a href=\"https://docs.aws.amazon.com/imagebuilder/latest/userguide/integ-inspector.html#integ-inspector-ami-scan\">EC2 Image Builder</a> can integrate scanning directly into their pipelines and restrict distribution of AMIs that do not meet their security standards.</p> \n<p>AMI Scanning helps you detect and remediate vulnerabilities earlier in your deployment pipeline, reducing the risk of deploying compromised compute resources. Security teams can now establish a consistent vulnerability scanning process across all AMIs improving their security posture before instances are launched.</p> \n<p>This capability is available in all commercial AWS Regions where Amazon Inspector is available. To learn more, see the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-scanning.html\">EC2 User Guide</a>,&nbsp;<a href=\"https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html\">Amazon Inspector User Guide</a>,&nbsp;the <a href=\"https://aws.amazon.com/inspector/pricing/\">Amazon Inspector pricing page</a>, and the <a href=\"https://aws.amazon.com/inspector/\">Amazon Inspector product page</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,general:products/amazon-ec2,general:products/amazon-inspector,general:products/aws-security-hub,marketing:marchitecture/compute,general:content-type/ami"
-          ]
-        },
-        {
-          "title": "Amazon Textract now available in Asia Pacific (Tokyo) and Europe (Zurich)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/textract-tokyo-zurich/",
-          "published": "2026-11-02T08:00:00+00:00",
-          "summary": "<p>Amazon Textract is now available in the Asia Pacific (Tokyo) and Europe (Zurich) Regions. Amazon Textract is a machine learning service that automatically extracts text, handwriting, and data from scanned documents, going beyond simple optical character recognition (OCR) to identify and extract text and structured data.</p>\n<p>At launch in these Regions, Amazon Textract supports text detection and document analysis. This includes the DetectDocumentText, AnalyzeDocument, StartDocumentTextDetection, GetDocumentTextDetection, StartDocumentAnalysis, and GetDocumentAnalysis operations. The AnalyzeExpense, AnalyzeID, and AnalyzeLending operations, and Custom Queries (adapters), are not available in these Regions at this time.</p>\n<p>With this launch, Amazon Textract is available in a total of 18 AWS Regions: US East (Ohio), US East (N. Virginia), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Spain), the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions, and the newly added Asia Pacific (Tokyo) and Europe (Zurich) Regions.</p>\n<p>To learn more, see the <a href=\"https://aws.amazon.com/textract/\">Amazon Textract product page</a> and the <a href=\"https://docs.aws.amazon.com/textract/\">Amazon Textract Developer Guide</a>. For pricing and Region availability, see the <a href=\"https://aws.amazon.com/textract/pricing/\">Amazon Textract pricing page</a> and <a href=\"https://docs.aws.amazon.com/general/latest/gr/textract.html\">Amazon Textract endpoints and quotas</a>.</p>",
-          "categories": []
-        },
-        {
-          "title": "Announcing AWS for Fluent Bit 3.0.0 based on Fluent Bit 4.1.1",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2025/10/aws-fluent-bit-3-0-0-based-4-1-1",
-          "published": "2026-11-02T08:00:00+00:00",
-          "summary": "<p>AWS for Fluent Bit announces version <a href=\"https://github.com/aws/aws-for-fluent-bit/releases/tag/v3.0.0\" target=\"_blank\" rel=\"noopener noreferrer\">3.0.0</a>, based on Fluent Bit version 4.1.1 and Amazon Linux 2023. Container logging using AWS for Fluent Bit is now more performant and more feature-rich for AWS customers, including those using <a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Elastic Container Services</a> (Amazon ECS) and <a href=\"https://aws.amazon.com/eks/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Elastic Kubernetes Service</a> (Amazon EKS).<br> <br> AWS for Fluent Bit enables Amazon ECS and Amazon EKS customers to collect, process, and route container logs to destinations including Amazon CloudWatch Logs, Amazon Data Firehose, Amazon Kinesis Data Streams, and Amazon S3 without changing application code. AWS for Fluent Bit 3.0.0 upgrades the Fluent Bit version to 4.1.1, and upgrades the base image to Amazon Linux 2023. These updates deliver access to the latest Fluent Bit features, significant performance improvements, and enhanced security. New features include native OpenTelemetry (OTel) support for ingesting and forwarding OTLP logs, metrics, and traces with AWS SigV4 authentication. Performance improvements include faster JSON parsing, processing more logs per vCPU with lower latency. Security enhancements include TLS min version and cipher controls, which enforce your TLS policy on outputs from AWS for Fluent Bit for stronger protocol posture.<br> <br> You can use AWS for Fluent Bit 3.0.0 on both ECS and EKS. On ECS, update the FireLens log-router container image in your task definition to the 3.0.0 tag from the Amazon ECR Public Gallery. On EKS, upgrade by either updating the Helm release or setting the DaemonSet image to the 3.0.0 version.<br> <br> The <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/firelens-using-fluentbit.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS for Fluent Bit image</a> is available in the <a href=\"https://gallery.ecr.aws/aws-observability/aws-for-fluent-bit\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon ECR Public Gallery</a> and in the Amazon ECR repository. You can also find it on <a href=\"https://github.com/aws/aws-for-fluent-bit\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> for source code and additional guidance.</p> \n<p>&nbsp;</p> \n<p><i>10/29/2025 - This post has been updated to accurately reflect the Fluent Bit version at launch.<br> 11/02/2026 - This post has been updated to clarify the scope of OpenTelemetry support.</i></p> \n<p>&nbsp;</p>",
-          "categories": [
-            "general:products/amazon-eks,marketing:marchitecture/containers,general:products/amazon-ecs,general:products/aws-govcloud-us"
-          ]
-        },
-        {
-          "title": "Announcing an updated text detection model for Amazon Textract",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/textract-text-detection-model/",
-          "published": "2026-11-02T08:00:00+00:00",
-          "summary": "<p>Amazon Textract now provides an updated text detection model that improves accuracy, expands language support, and enhances multilingual table extraction. The updated model applies to the DetectDocumentText and AnalyzeDocument APIs and requires no changes to your Amazon Textract API requests or response schema. Your applications are served by the updated model automatically, so you can continue calling Amazon Textract exactly as before.</p>\n<p>The updated model expands language coverage to more than 40 languages, including Albanian, Arabic, Basque, Belarusian, Bosnian, Bulgarian, Chinese (Simplified and Traditional), Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Hebrew, Hindi, Hungarian, Icelandic, Italian, Japanese, Korean, Latvian, Lithuanian, Luxembourgish, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian Cyrillic, Serbian Latin, Slovak, Slovenian, Spanish, Swedish, Turkish, Turkmen, and Ukrainian, enabling reliable processing of previously unsupported scripts. Accuracy improvements include enhanced long-word recognition and handwriting detection. Additionally, multilingual table extraction is more robust on merged cells, skewed or rotated tables, and partial or corrupted tables. These improvements help you accurately process invoices, forms, identity documents, and other multilingual or complex documents, including those with tables, at scale.</p>\n<p>The updated Amazon Textract model is available in all AWS Regions where Amazon Textract is available. To learn more, see the <a href=\"https://aws.amazon.com/textract/\">Amazon Textract product page</a> and the <a href=\"https://docs.aws.amazon.com/textract/\">Amazon Textract Developer Guide</a>.</p>",
-          "categories": [
-            "general:products/amazon-textract"
-          ]
-        },
-        {
-          "title": "Amazon CloudFront now supports self-service increases in AWS Service Quotas",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-self-service-quotas/",
-          "published": "2026-11-02T08:00:00+00:00",
-          "summary": "<p>Amazon CloudFront now supports AWS Service Quotas, so you can view, monitor, and request increases for 28 CloudFront quotas from the Service Quotas console or API.</p> \n<p>Until now, increasing a quota on resources such as distributions, cache policies, origins, or alternate domain names meant opening a support case and waiting for manual review. If you have AWS Business Support or higher, requests for limit increases within published thresholds are now approved automatically. For example, you can raise your distribution quota from 500 to 1,000, or the number of alternate domain names per distribution from 100 to 500, without opening a support case. Some quotas also publish usage metrics to Amazon CloudWatch every 5 minutes, so you can set alarms and request an increase before you reach a limit..</p> \n<p>This feature is available in all AWS Regions where Amazon CloudFront is supported.</p> \n<p>To get started, visit <a href=\"https://console.aws.amazon.com/servicequotas/home#!/services/cloudfront/quotas\">the Service Quotas console</a> to view and request increases for your CloudFront quotas. To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html\">Amazon CloudFront quotas</a> in the Amazon CloudFront Developer Guide.</p>",
-          "categories": [
-            "general:products/amazon-cloudfront,marketing:marchitecture/management-and-governance"
-          ]
-        },
-        {
-          "title": "Amazon Bedrock expands API support and introduces Cross-Region Inferencing for OpenAI models in AWS GovCloud (US)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/",
-          "published": "2026-10-30T20:43:00+00:00",
-          "summary": "<p>Amazon Bedrock now supports the OpenAI GPT-5.6 models (Terra and Luna) on the bedrock-runtime endpoint, with support for the Responses, Converse, and Chat Completions APIs in AWS GovCloud (US). It also adds support for Cross-Region Inference, allowing customers to use Cross-Region Inference within AWS GovCloud (US) regions to access higher throughput and increased redundancy.&nbsp;&nbsp;</p> \n<p>Cross-Region Inference automatically routes inference requests across both AWS GovCloud (US) Regions to give you higher throughput, without you needing to manage capacity across multiple Regions. Cross-Region Inference within AWS GovCloud (US) routes requests across both regions so you can scale while maintaining US data sovereignty, giving you the broadest access to Bedrock capacity and the highest throughput during demand spikes. This launch also expands API support; you can use OpenAI GPT models with the Responses API, Chat Completions API, and the Converse API on the bedrock-runtime endpoint. Because these native OpenAI APIs now run on bedrock-runtime, the models work with the same account-level controls you already use for other models on Bedrock: usage appears in Bedrock model invocation logging (deliverable to Amazon S3 or Amazon CloudWatch Logs) and in Amazon CloudWatch metrics covering invocation counts, token counts, latency, throttles, and errors, and it is itemized in AWS Cost Explorer and the AWS Cost and Usage Report so you can attribute spend by model.</p> \n<p>Cross-Region Inference for OpenAI models is available in all AWS Regions where OpenAI models on Amazon Bedrock are offered. To get started, review the model cards for GPT-5.6 (Terra and Luna) in the <a href=\"https://docs.aws.amazon.com/bedrock/\">Amazon Bedrock User Guide.</a></p>",
-          "categories": [
-            "general:products/aws-govcloud-us,general:products/amazon-bedrock"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "Kiro の Auto がモデルカスケードで作業に合ったモデルを使い分ける仕組み",
+          "link": "https://aws.amazon.com/jp/blogs/news/model-cascade/",
+          "published": "2026-11-07T01:51:29+00:00",
+          "summary": "Auto は裏側でモデルカスケードを使っています。どのセッションも効率のよい最初のモデルで始まり、独立したチェックがバックグラウンドで作業を確かめ、必要になったときに Auto はセッションをより高性能なモデルに引き継ぎます。",
+          "categories": [
+            "Developer Tools",
+            "Kiro"
+          ]
+        },
+        {
+          "title": "AWS Managed Services（AMS）で AWS クラウドインフラのセキュリティを強化する",
+          "link": "https://aws.amazon.com/jp/blogs/news/enhance-your-aws-cloud-infrastructure-security-with-aws-managed-services-ams/",
+          "published": "2026-11-06T13:06:43+00:00",
+          "summary": "セキュリティやデータ損失インシデントは、金銭的損失だけでなく社会的信用の失墜にもつながります。AWS の責任共有モデルにおいて「クラウドにおけるセキュリティ」はお客様の責任範囲ですが、IAM ガバナンス、パッチ管理、脅威検出、インシデント対応、コンプライアンス維持を大規模に実装・運用し続けることは容易ではありません。AWS Managed Services（AMS）は、GuardDuty による 24/365 の脅威監視、NIST 準拠のインシデント対応、自動パッチ適用、AWS Config を活用したコンプライアンスの可視化など、予防・検出・対応にわたるセキュリティのベストプラクティスを包括的に提供します。本記事では、AMS を活用してクラウドインフラのセキュリティ体制を強化する方法を紹介します。",
+          "categories": [
+            "AWS Managed Services",
+            "Centralized operations management",
+            "Enterprise governance and control",
+            "Management & Governance",
+            "Management Tools",
+            "Security"
+          ]
+        },
+        {
+          "title": "【寄稿】両備システムズが挑む、地方自治体ガバメントクラウドのコスト最適化 ～共同利用（ネットワーク分離方式）で長期継続割引を使いこなし、クラウド利用料を削減～",
+          "link": "https://aws.amazon.com/jp/blogs/news/%E3%80%90%E5%AF%84%E7%A8%BF%E3%80%91%E4%B8%A1%E5%82%99%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%BA%E3%81%8C%E6%8C%91%E3%82%80%E3%80%81%E5%9C%B0%E6%96%B9%E8%87%AA%E6%B2%BB%E4%BD%93%E3%82%AC%E3%83%90/",
+          "published": "2026-11-06T06:19:56+00:00",
+          "summary": "本稿は、株式会社両備システムズ ガバメントクラウド推進室 岩倉 竜太 氏による寄稿です。 ※本記事でご紹介する […]",
+          "categories": [
+            "AWS Cloud Financial Management",
+            "AWS Cost and Usage Report",
+            "AWS Cost Explorer",
+            "Case Study",
+            "General",
+            "Government",
+            "Public Sector",
+            "Public Sector Partners",
+            "Reserved Instance Reporting",
+            "State or Local Government",
+            "FinOps"
+          ]
+        },
         {
           "title": "Kiro Crew の Bot のご紹介",
           "link": "https://aws.amazon.com/jp/blogs/news/crew-bots/",
@@ -562,38 +609,6 @@
             "AWS re:Invent",
             "AWS Step Functions",
             "News"
-          ]
-        },
-        {
-          "title": "re:Invent 2026 で AI 時代のオブザーバビリティを学ぶ",
-          "link": "https://aws.amazon.com/jp/blogs/news/embracing-observability-for-the-ai-era-at-reinvent-2026/",
-          "published": "2026-11-03T04:57:46+00:00",
-          "summary": "AWS re:Invent 2026 の Cloud Operations トラックから、Monitoring and Observability の 25 セッションを 6 つのテーマに沿って紹介します。本番環境の AI エージェントの観測、OpenTelemetry による標準化、ログ活用、フルスタックのパフォーマンストレース、マネージドなオープンソースオブザーバビリティまで、参加計画に役立つセッションを取り上げます。",
-          "categories": [
-            "Amazon CloudWatch",
-            "Announcements",
-            "Management Tools"
-          ]
-        },
-        {
-          "title": "週刊AWS – 2026/10/26週",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-20261026/",
-          "published": "2026-11-03T04:00:20+00:00",
-          "summary": "OpenAI GPT-6.1 Terra が Amazon Bedrock で一般提供開始、Amazon EKS Auto Mode が Kubernetes Gateway API をサポート、Amazon ECS で NVIDIA MPS による GPU 共有が可能に、Amazon SageMaker AI のリアルタイム推論で GPU パーティショニングに対応、AWS Lambda Managed Instances で SOCI による遅延読み込みに対応、Amazon Quick でエージェントアクションのスマート承認に対応、次世代 Amazon OpenSearch Serverless で時系列コレクションが利用可能に、Amazon Redshift で自動クロスリージョンバックアップが可能に、AWS KMS がポスト量子暗号の ML-KEM をサポート、Amazon Aurora PostgreSQL でポスト量子 TLS 鍵交換をサポート等",
-          "categories": [
-            "News",
-            "AWSサービスアップデートまとめ",
-            "週刊AWS"
-          ]
-        },
-        {
-          "title": "Kiro が自身のハーネスの性質を Lean で証明する",
-          "link": "https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/",
-          "published": "2026-11-03T02:03:10+00:00",
-          "summary": "Kiro が自身のコードの一部を Lean でモデル化し、そのモデルについての定理を証明し、各モデルを TypeScript、Rust、Python のコードと照らし合わせる作業を、自動で進める仕組みを作りました。最初に適用した対象は Kiro 自身です。",
-          "categories": [
-            "Developer Tools",
-            "Kiro"
           ]
         }
       ]
