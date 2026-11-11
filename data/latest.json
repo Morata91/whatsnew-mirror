@@ -1,9 +1,149 @@
 {
-  "generated_at": "2026-11-10T04:04:13.767843+00:00",
+  "generated_at": "2026-11-11T01:53:59.721599+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-and-cost-management-multi-source-custom-billing-views",
+          "published": "2026-11-10T23:22:00+00:00",
+          "summary": "<p>Custom billing views now support AWS Billing Conductor and AWS Billing Transfer views as source views. These are the views AWS maintains per billing group and per billing transfer relationship. You can combine them into a single custom billing view, apply filters, and use that view in Cost Explorer, AWS Budgets, and the Billing and Cost Management console. There are three source view types. Billing group views contain the cost of each Billing Conductor billing group, which you can combine for chargeback and showback across business units. Billing transfer views contain the cost transferred to you for each end customer, and transfer showback views contain the cost that end customer sees. Aggregating each type gives you your total transferred cost and the total bill your end customers see.</p> \n<p>Your access does not change: you can use an AWS-managed view as a source only where you can already access it. Once created, you can share a custom billing view using AWS Resource Access Manager with accounts inside or outside your organization, so your finance team or a downstream seller works with the data in their own account. Whether you are an AWS Partner reselling AWS services or an organization using billing groups for pro forma billing, you get one consolidated view instead of one per customer or group.</p> \n<p>This feature is available in all commercial AWS Regions at no additional cost. To get started, navigate to Billing Views in the AWS Billing and Cost Management console or view the <a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/billing-view.html\">user guide</a>.</p>",
+          "categories": [
+            "general:products/cloud-financial-management,marketing:marchitecture/business-productivity,marketing:marchitecture/cost-management,general:products/aws-management-console"
+          ]
+        },
+        {
+          "title": "Amazon EC2 G7 instances now available in additional regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-additional-regions/",
+          "published": "2026-11-10T19:30:00+00:00",
+          "summary": "<p>Amazon Elastic Compute Cloud (Amazon EC2) G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs are now available in Europe (London), Asia Pacific (Mumbai, Sydney) and South America (Sao Paulo) Regions. G7 instances deliver up to 4.6x AI inference performance and up to 2.1 graphics performance compared to G6 instances. G7 instances also deliver faster performance for GPU-accelerated data analytics workloads.</p> \n<p>Customers can use G7 instances for deploying AI models for language translation, video and image analysis, speech recognition and recommender systems. They also accelerate graphics workloads such as creating and rendering real-time, cinematic-quality graphics and game streaming. Additionally, G7 instances support video transcoding, spatial computing, and data analytics workloads. G7 instances feature up to 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory per GPU and custom Intel Xeon 6 processors. They support up to 192 virtual CPUs (vCPUs) and up to 700 Gbps of Elastic Fabric Adapter (EFA) networking bandwidth. They also support up to 768 GiB of system memory, and up to 7.6 TB of local NVMe SSD storage.</p> \n<p>You can use G7 instances for Amazon EC2 in the following AWS Regions: US West (Oregon), US East (N. Virginia, Ohio) , Europe (London, Spain, Frankfurt, Stockholm) , Asia Pacific (Mumbai, Sydney) and South America (Sao Paulo). You can purchase G7 instances as On-Demand Instances, Spot Instances, or as part of Savings Plans.</p> \n<p>To get started, visit the <a href=\"https://console.aws.amazon.com/\">AWS Management Console</a>, <a href=\"https://aws.amazon.com/cli/\">AWS Command Line Interface</a> (CLI), and AWS SDKs. To learn more, visit the <a href=\"https://aws.amazon.com/ec2/instance-types/g7/\">G7 instance page</a>.</p>",
+          "categories": [
+            "general:products/amazon-ec2,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Amazon OpenSearch Service announces managed cross-Region disaster recovery",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-managed-cross-region-disaster-recovery/",
+          "published": "2026-11-10T19:00:00+00:00",
+          "summary": "<p>Amazon OpenSearch Service now offers managed cross-Region disaster recovery, so you can meet strict availability and business continuity requirements for mission-critical search, AI, and analytics workloads without building or maintaining replication yourself. After you create domains in two Regions, you can pair them with a single API call or a few steps in the AWS Management Console.</p> \n<p>Managed disaster recovery delivers a recovery point objective (RPO) of under one minute and a recovery time objective (RTO) of under 20 minutes. The secondary domain stays continuously in sync with the primary. For planned events such as maintenance or Region rotation, a switchover swaps the two domains' roles with zero data loss. If your primary domain becomes unavailable, a failover promotes the secondary, with data loss limited to the replication lag. After a failover, you restore protection by pairing the new primary with a secondary domain. You can monitor replication health and lag with Amazon CloudWatch metrics.</p> \n<p>Managed disaster recovery requires OpenSearch 3.7 or later and supports domains in the same AWS account, including domains encrypted with customer managed AWS Key Management Service (AWS KMS) keys. Domains that use UltraWarm storage or OpenSearch Optimized instances (OR1 or OR2) aren't supported. If you're on an earlier version, <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/version-migration.html\" data-agent-id=\"28\">clone-based upgrades</a> let you test OpenSearch 3.7 against your workload, cut over when you're ready, and roll back if needed.</p> \n<p>There's no additional charge for managed disaster recovery. You pay standard rates for the secondary domain and cross-Region data transfer. For details, see <a href=\"https://aws.amazon.com/opensearch-service/pricing/\" data-agent-id=\"29\">Amazon OpenSearch Service pricing</a>.</p> \n<p>Managed disaster recovery is available today in all commercial AWS Regions where Amazon OpenSearch Service is available (<a href=\"https://docs.aws.amazon.com/general/latest/gr/opensearch-service.html\">Region list</a>). To get started, see the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/disaster-recovery.html\">disaster recovery documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/management-and-governance,general:products/amazon-opensearch-service,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-extended-support/",
+          "published": "2026-11-10T17:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\">Amazon Relational Database Service (RDS) for PostgreSQL</a> announces Amazon RDS Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822.</p> \n<p><a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html\" target=\"_blank\">Amazon RDS Extended Support</a> provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version.</p> \n<p>You can upgrade your database using <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\" target=\"_blank\">Amazon RDS Blue/Green Deployments</a>, in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\">Amazon RDS for PostgreSQL User Guide</a>.</p> \n<p>Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the <a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\">Amazon RDS Management Console</a> or by using the AWS Command Line Interface (AWS CLI).</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-rds"
+          ]
+        },
+        {
+          "title": "Amazon RDS for MySQL 26.10 is now available in Amazon RDS Database Preview Environment",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-mysql-26-10-preview-environment/",
+          "published": "2026-11-10T17:00:00+00:00",
+          "summary": "<p>Starting today, <a href=\"https://aws.amazon.com/rds/mysql/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS for MySQL</a> 26.10 is available in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/create-db-instance-in-preview-environment.html\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS Database Preview Environment</a>, allowing you to evaluate the pre-release of MySQL 26.10 on Amazon RDS for MySQL.</p> \n<p>MySQL 26.10 includes bug fixes, security patches, and some improvements to READ COMMITTED workload performance and purge lag warnings in the error log. On busy READ COMMITTED workloads, NUMA systems performance could be impacted as each read view that closed required a global mutex. Read-view objects can now be reused which eliminates the global mutex on closure. The error log now reports warnings when the history-list length (HLL) crosses innodb_max_purge_lag and when purge lag begins delaying DML, so you can detect purge backlogs before they affect performance. To learn more, please refer to the <a href=\"https://dev.mysql.com/doc/refman/26.10/en/mysql-nutshell.html\" target=\"_blank\" rel=\"noopener noreferrer\">MySQL 26.10 release notes</a>.</p> \n<p>Amazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the <a href=\"https://aws.amazon.com/rds/mysql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">pricing</a> in the US East (Ohio) Region.</p>",
+          "categories": [
+            "general:products/amazon-rds,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "AWS Partner Central now provides an improved business planning experience",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-business-planning/",
+          "published": "2026-11-10T16:00:00+00:00",
+          "summary": "<p>AWS Partner Central now offers a new business planning experience in the AWS Console. AWS Partners can initiate plans for growing their AWS business or collaborate on plans initiated by AWS teams.</p> \n<p>Partners can collaborate with AWS partner development, technology, marketing, and specialist teams to define plan narratives, goals, and initiatives. AI-assisted plan readiness scores help partners identify areas to improve, while real-time tracking shows progress against goals. Partners can also add attachments and export plans to prepare for business reviews.</p> \n<p>Partners can use application programming interfaces (APIs) and software development kits (SDKs) to integrate business planning into their workflows. Programmatic notifications are also available.</p> \n<p>Business planning is available to AWS Partners who are actively engaged with AWS Partner management teams. AWS Partner Central is available in the US East (N. Virginia) Region. To get started, sign in to <a href=\"https://us-east-1.console.aws.amazon.com/partnercentral/dashboard\">AWS Partner Central</a> and choose Business Plan.</p>",
+          "categories": [
+            "marketing:marchitecture/partner-network,general:products/aws-marketplace"
+          ]
+        },
+        {
+          "title": "Amazon S3 Access Grants now support listing grants across multiple AWS accounts",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-access-grants-list-across-regions/",
+          "published": "2026-11-10T14:00:00+00:00",
+          "summary": "<p>Amazon S3 Access Grants can now discover and list all your grants across multiple AWS accounts with a single API call, eliminating the need to query each account separately. A single <i>ListCallerAccessGrants</i> call returns grants from your own S3 Access Grants instance and every instance shared with you, giving you a complete view of the S3 data you can access.</p> \n<p>By setting the new <i>InstanceScope</i> parameter to <i>ALL</i> in your <i>ListCallerAccessGrants</i> request, S3 Access Grants queries every instance shared with you through AWS Resource Access Manager (AWS RAM) and returns all the grants in one combined response, each identifying the account that owns it. Additionally, when you request credentials with <i>GetDataAccess</i> for an S3 path and set <i>InstanceScope</i> to <i>ALL</i>, S3 Access Grants locates the owning account for you, routes the request to its instance, and returns credentials for the matching grant.</p> \n<p>This capability is now available in all AWS Regions where S3 Access Grants is available, at no additional cost. You can use the AWS SDK, API, or CLI to list and access grants across accounts. To learn more, visit the <a href=\"https://aws.amazon.com/s3/features/access-grants/\" target=\"_blank\" rel=\"noopener noreferrer\">S3 Access Grants overview page</a> and the <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-list-grants.html\" target=\"_blank\" rel=\"noopener noreferrer\">S3 documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/storage,general:products/amazon-s3"
+          ]
+        },
+        {
+          "title": "Amazon Bedrock adds bedrock-runtime endpoint support for Daybreak models",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-daybreak-on-amazon-bedrock-runtime/",
+          "published": "2026-11-10T10:14:00+00:00",
+          "summary": "<p>Eligible customers can now access OpenAI’s specialized cybersecurity models Daybreak Red: GPT-5.6 Cyber and Daybreak Blue: GPT-5.6 Sol through the bedrock-runtime endpoint on Amazon Bedrock.<br> <br> Daybreak Blue is the starting point for most security teams across defensive workflows, including vulnerability discovery, detection engineering, and incident response. Daybreak Red is designed for advanced, authorized tasks such as vulnerability research, exploit reproduction, and mitigation development. For these tasks, a lower refusal threshold, matched by stronger identity verification, monitoring, and access controls, improves the speed and depth of an investigation. Your inference data is not used for model training, and neither model requires you to opt in to sharing your data with OpenAI.<br> <br> On the bedrock-runtime endpoint, the models are available through US and Global cross-Region inference (CRIS) profiles. Access to the models requires enrollment in <a href=\"https://openai.com/form/enterprise-trusted-access-for-cyber/\">Daybreak access</a> from OpenAI. To enroll, contact OpenAI or reach out to your AWS account team for guidance on eligibility. Once approved, work with your account team to request access on AWS. For regional availability through the bedrock-mantle endpoint and more information, view the<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html\"> documentation.</a></p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,general:products/amazon-bedrock"
+          ]
+        },
+        {
+          "title": "Amazon S3 Tables now support S3 server access logging",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-server-access-logging/",
+          "published": "2026-11-10T08:00:00+00:00",
+          "summary": "<p>Amazon S3 Tables now support server access logging, providing you detailed records of the requests made to your table buckets. You can now track table operations, namespace management, and data access to support security audits, access analysis, and cost attribution. Log delivery is available at no additional cost, and you pay only for the storage of the log files.</p> \n<p>When you enable server access logging on a table bucket, S3 delivers logs for requests to all tables and namespaces in that bucket to a general purpose bucket in the same account and Region. Each record captures the requester, operation, table name, namespace, response status, and request timing, using the same space-delimited format as S3 server access logs for general purpose buckets. This lets you reuse your existing log analysis workflows to query S3 Table logs with any query engine of your choice such as Amazon Athena and DuckDB.</p> \n<p>Server access logging for S3 Tables is available in all <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-regions-quotas.html#s3-tables-regions\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Regions</a> where S3 Tables are available. You can enable it using the AWS Management Console, AWS CLI, AWS SDKs, or AWS CloudFormation. To learn more, visit the <a href=\"https://aws.amazon.com/s3/features/tables/\" target=\"_blank\" rel=\"noopener noreferrer\">S3 Tables overview page</a> and <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-server-logs\" target=\"_blank\" rel=\"noopener noreferrer\">S3 Tables server access logging</a> in the Amazon S3 User Guide.</p>",
+          "categories": [
+            "marketing:marchitecture/storage,general:products/amazon-simple-storage-service"
+          ]
+        },
+        {
+          "title": "AWS Marketplace SaaS free trials now convert automatically to paid subscriptions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-free-trial-conversion/",
+          "published": "2026-11-10T08:00:00+00:00",
+          "summary": "<p>Today,&nbsp;<a href=\"https://aws.amazon.com/marketplace\">AWS Marketplace</a> announces that free trials of usage-based software as a service (SaaS) products can now convert automatically to paid subscriptions. When a free trial ends, the buyer's subscription continues at the seller's usage-based pricing, so buyers pay only for what they use after the trial. This helps sellers turn more trial users into paying customers. Buyers get a simple way to evaluate software before they buy, with no new subscription and no interruption in access.</p> \n<p>Sellers can offer a free trial of 7 to 90 days that converts to a paid subscription at the price they set. For example, a data team can try an analytics product for 30 days and, if it meets their needs, keep using it after the trial ends. Buyers see the trial length, conversion date, and pricing before they subscribe. They receive reminder emails before the trial converts and can cancel at any time before conversion at no charge.</p> \n<p>Sellers can create a free trial in AWS Partner Central, or update an existing free trial offer to convert automatically. This capability is available for public offers in all AWS Regions where AWS Marketplace is available.</p> \n<p>To learn more, see the&nbsp;<a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html\">AWS Marketplace Seller Guide</a> and the <a href=\"https://docs.aws.amazon.com/marketplace/latest/buyerguide/saas-free-trials.html\">AWS Marketplace Buyer Guide</a>.</p>",
+          "categories": [
+            "general:products/aws-marketplace"
+          ]
+        },
+        {
+          "title": "AWS Network Firewall launches next-generation firewall policy",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-launches-ngfw-policy/",
+          "published": "2026-11-10T08:00:00+00:00",
+          "summary": "<p>Today, AWS announces next-generation firewall (NGFW) policy for AWS Network Firewall, a new policy model that provides security teams with a simpler policy structure and increased rule capacity. AWS Network Firewall is a managed network security service that protects your Amazon VPCs with access control and threat detection.</p>\n<p>The new policy model strengthens your security posture by layering firewall and IPS protections instead of combining them, which also makes policies easier to manage. You author firewall rules that enforce deny-by-default access control, such as allowing traffic only to approved domains. For IPS rules, you can use managed rule groups from AWS or AWS Marketplace partners, which update automatically as new threats emerge. You can also create your own custom IPS rule groups. Firewall and IPS rules each have their own capacity, so you no longer trade one off against the other. For rules you don't share across policies, you can create embedded rule groups that draw capacity on demand without pre-allocation. With NGFW policy, all rules are stateful and evaluate with full connection context, for consistent, predictable traffic handling. Your existing policies continue to operate without changes, and IPS rules remain backward compatible.</p>\n<p>NGFW policy is available at no additional charge in all commercial AWS Regions and AWS GovCloud (US) Regions. For a full list of supported regions, visit the <a href=\"https://builder.aws.com/build/capabilities/explore?f=eJxVirEKg0AQBX9FXq1FWiGFjZAmRVKkcC0uusji4cneqYj477lcEUg3b94c8Gy5C9w_eBA3eZRoCIsv2PhQXAgt8l9TrUaseYuVsMewmvbsT-WY1c2sYa_FBtbYHIRAKJs2J8wRCE4JcQxfG98xSc-6Sse3Pn0uuWviNXH1emZ3DpvTMatFeTPWEs72xPkBR_VAow&amp;tab=service-feature&amp;refid=d08148e0-c462-4c19-ae34-467de69e31c6\" target=\"_blank\">AWS Capabilities by Region page</a>.</p>\n<p>To learn more, see the AWS Network Firewall <a href=\"https://aws.amazon.com/network-firewall/\">product page</a> and <a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-policies-v2.html\" target=\"_blank\">documentation</a>.</p>",
+          "categories": [
+            "general:products/amazon-vpc,marketing:marchitecture/networking-and-content-delivery,general:products/aws-network-firewall,marketing:marchitecture/security-identity-and-compliance"
+          ]
+        },
+        {
+          "title": "Amazon ElastiCache Serverless now supports vector, full-text and hybrid searches plus aggregations",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-elasticache-serverless-search-aggregations/",
+          "published": "2026-11-10T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/elasticache/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon ElastiCache</a> Serverless for Valkey now supports vector, full-text, and hybrid search, along with aggregations. Applications searching live data often face a hard trade-off between latency and recall, along with delays before updates become searchable. With search on ElastiCache Serverless, applications can search data with latency as low as microseconds at up to 99% recall for vector search, while serving billions of queries per day. Updates are searchable in as little as microseconds, as soon as writes complete.</p> \n<p>Search on ElastiCache Serverless is ideal for latency-sensitive applications with unpredictable traffic and for teams that want to get started with search quickly. You can combine search types in a single query, tune recall as needed, and analyze results with server-side aggregations. Developers can give every agent, session, or task its own datastore for memory and context retrieval, so agents can experiment, fail, and retry without touching production or each other. Each datastore is ready in seconds, reachable over a <a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Endpoints.html\" target=\"_blank\" rel=\"noopener noreferrer\">public endpoint</a> with no network setup, and billed only for what it uses, with zero infrastructure to manage. Applications can also power product discovery, recommendation systems, and retrieval-augmented generation (RAG).</p> \n<p>Search is available on ElastiCache Serverless for Valkey in all commercial AWS Regions, AWS GovCloud (US) Regions, and the AWS European Sovereign Cloud Region on ElastiCache version 9 for Valkey. Valkey is the most permissive open source and vendor-neutral alternative to Redis and the recommended engine for ElastiCache. To get started, create a new serverless cache or upgrade an existing one to Valkey 9 using the AWS Management Console, AWS SDK, or AWS CLI. To learn more, see the <a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/search.html\" target=\"_blank\" rel=\"noopener noreferrer\">ElastiCache documentation</a>. For pricing, see the&nbsp;<a href=\"https://aws.amazon.com/elasticache/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">ElastiCache pricing page</a>.</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon GameLift Servers now supports Game Session Placement Insights",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/gamelift-game-session-insights/",
+          "published": "2026-11-10T08:00:00+00:00",
+          "summary": "<p>Amazon GameLift Servers now offers Game Session Placement Insights, delivering detailed, per-placement diagnostic logs for game session queue routing. Amazon GameLift Servers routes game session placement requests through queues that evaluate multiple fleet locations based on latency and cost factors. This feature is designed for game developers and engineers who need greater transparency into how their game session queues operate.</p>\n<p>Previously, developers had limited visibility into why placements succeeded, failed, or timed out, making queue optimization difficult. Game Session Placement Insights captures which fleet locations were evaluated, the player latency and cost factors that influenced routing decisions, and the final placement outcome for every placement. This enables teams to identify patterns such as consistently slow placements, repeated failures, or sessions landing in unexpected locations, and to tune their queues to improve the overall player experience.</p>\n<p>You can enable this feature per queue and deliver logs to Amazon CloudWatch Logs, Amazon S3, and Amazon Data Firehose. Game Session Placement Insights is available in all supported Amazon GameLift Servers regions.</p>\n<p>To learn more about Game Session Placement Insights and how to get started, visit the <a href=\"https://docs.aws.amazon.com/gameliftservers/latest/developerguide/queues-placement-insights.html\" target=\"_blank\">Amazon GameLift Servers documentation</a>.</p>",
+          "categories": [
+            "general:products/amazon-gamelift"
+          ]
+        },
+        {
+          "title": "CloudWatch PromQL alarms now support EC2 and Application Auto Scaling",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-alarms-autoscaling-group-actions",
+          "published": "2026-11-10T03:00:00+00:00",
+          "summary": "<p>Amazon CloudWatch alarms that use Prometheus Query Language (PromQL) can now trigger Amazon EC2 and Application Auto Scaling step and simple scaling policies. You can scale your EC2 Auto Scaling groups on CloudWatch OpenTelemetry metrics using the same kind of PromQL queries you use for dashboards and alerting.</p> \n<p> </p> \n<p>In this release, PromQL alarms also support EC2 Auto Scaling simple and step scaling policies. Target tracking is not currently a supported policy type for PromQL alarms. Teams moving to OpenTelemetry can scale capacity on the same metrics as the rest of their monitoring, instead of keeping separate classic metric alarms for scaling. For step scaling, how far the value is past the threshold in your PromQL query decides which step applies. The query must return a single series and compare it to a threshold.</p> \n<p> </p> \n<p>You can add EC2 Auto Scaling and Application Auto Scaling actions in the CloudWatch console when you create or edit an alarm, or with the PutMetricAlarm API, AWS CLI, AWS SDKs, or AWS CloudFormation. You can also use the PutMetricAlarm API, AWS CLI, AWS SDKs, or AWS CloudFormation.</p> \n<p>This feature is available in all AWS Regions where CloudWatch PromQL alarms are available. Standard CloudWatch alarm pricing applies. To get started, see &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-PromQL-Alarms.html\" target=\"_blank\" rel=\"noopener noreferrer\">Using PromQL in alarms&nbsp;</a> and &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-actions.html\" target=\"_blank\" rel=\"noopener noreferrer\">Alarm actions&nbsp;</a> in the Amazon CloudWatch User Guide.</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch,marketing:marchitecture/management-and-governance"
+          ]
+        },
+        {
+          "title": "Amazon OpenSearch Service now lets you validate and roll back version upgrades",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service/upgrades/",
+          "published": "2026-11-10T02:30:00+00:00",
+          "summary": "<p>Amazon OpenSearch Service now supports clone-based upgrades, which let you validate a new OpenSearch version alongside your current one and cut over to it only when you're satisfied. If you find a problem, you can cancel before you cut over or roll back afterward. With clone-based upgrades, you can move to new versions with more confidence.</p> \n<p>When you start a clone-based upgrade, OpenSearch Service copies the data from your existing cluster (the primary cluster) to a second cluster running the new version (the cloned cluster). While the primary cluster keeps serving your workload, you can run the same search queries on both clusters and compare their performance using Amazon CloudWatch metrics. After you finish validating, you can cut over to the cloned cluster. If you keep the previous version for a retention period you choose, you can roll back to it at any time during that period. You can start and manage a clone-based upgrade from the AWS Management Console, the AWS CLI, or the OpenSearch Service APIs.</p> \n<p>Clone-based upgrades are available for domains running OpenSearch 1.1 or later, or Elasticsearch 7.10,&nbsp;in AWS Commercial Regions where Amazon OpenSearch Service is offered, except Asia Pacific (New Zealand), Asia Pacific (Taipei), Asia Pacific (Thailand), and Mexico (Central). For a complete list of Regions, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\">AWS Region Table</a>.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/version-migration.html\" target=\"_blank\">Upgrading Amazon OpenSearch Service domains</a> in the Amazon OpenSearch Service Developer Guide. To get started, visit the <a href=\"https://aws.amazon.com/opensearch-service/\" target=\"_blank\">Amazon OpenSearch Service product page</a>.</p>",
+          "categories": [
+            "general:products/amazon-opensearch-service,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "Amazon DocumentDB (with MongoDB compatibility) now supports post-quantum TLS, wildcard indexes, and $unionWith in version 8.0.3",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-8-0-3/",
+          "published": "2026-11-10T00:00:00+00:00",
+          "summary": "<p>Amazon DocumentDB (with MongoDB compatibility) 8.0.3 adds hybrid post-quantum key exchange for TLS, wildcard indexes, the $unionWith aggregation stage, and new change stream events. Post-quantum TLS protects data in transit from traffic that is recorded today and decrypted later with a quantum computer. The new MongoDB APIs let you move more MongoDB workloads to Amazon DocumentDB without changing application code.</p> \n<p>What's new in 8.0.3:</p> \n<ul> \n <li><p>Post-quantum TLS: TLS 1.3 connections use hybrid key exchange based on the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) when the client supports it. Other clients keep using classical key exchange. Two new Amazon CloudWatch metrics, TLSHandshakesClassical and TLSHandshakesPostQuantum, count the handshakes of each type.</p> </li> \n</ul> \n<ul> \n <li><p>Wildcard indexes: index every field, or every field under a path, to query documents with dynamic schemas.</p> </li> \n</ul> \n<ul> \n <li><p>Aggregation: $unionWith combines results from multiple collections in one pipeline. $lookup and $graphLookup work in views, and correlated $lookup sub-pipelines accept $unionWith and $facet.</p> </li> \n</ul> \n<ul> \n <li><p>Change streams: dropIndex() and dropIndexes() now emit dropIndexes events.</p> </li> \n</ul> \n<ul> \n <li><p>Compression metrics: collStats and stats() report per-collection input bytes, output bytes, and compression ratio.</p> </li> \n</ul> \n<p>Amazon DocumentDB 8.0.3 is available in all AWS Regions where Amazon DocumentDB is offered. To learn more, see the <a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/\" target=\"_blank\">Amazon DocumentDB Developer Guide</a>.</p>",
+          "categories": []
+        },
         {
           "title": "Amazon Bedrock AgentCore now offers a Web Search API",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
@@ -138,21 +278,21 @@
           ]
         },
         {
-          "title": "Amazon Route 53 Profiles now supports multiple Profiles per VPC",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-profiles-multiple-per-vpc/",
-          "published": "2026-11-09T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/route53/\">Amazon Route 53 Profiles</a> now lets you associate more than one Profile with a VPC. Previously, a VPC could have only one Profile, so teams that managed Route 53 configurations separately (for example, security teams managing DNS Firewall rule groups while cloud infrastructure and network admin teams manage private hosted zones and Resolver forwarding rules) all had to share a single Profile and associate their private hosted zones, Resolver rules, and DNS Firewall rule groups with it.</p> \n<p>With this launch, you can now associate multiple Profiles with the same VPC and set a priority for every Profile. Route 53 evaluates a VPC's Profiles in priority order, starting with the lowest number, so you can keep shared Route 53 configurations in one Profile and team-specific configurations in another without merging them, while assigning them the right priority. Combined with <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-route-53-profiles-granular-iam/\">the granular IAM permissions</a> launched in March 2026, multiple Profiles per VPC improves security posture by letting each team own and manage its own Profile with least-privilege permissions.</p> \n<p>This capability is available in all AWS Regions where Route 53 Profiles is available.</p> \n<p>Each Profile-VPC association is billed at standard Route 53 Profiles pricing. For details, see <a href=\"https://aws.amazon.com/route53/pricing/\">Amazon Route 53 pricing</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles.html\" target=\"_blank\" rel=\"noopener noreferrer\">Route 53 Profiles</a> in the Amazon Route 53 Developer Guide.</p>",
-          "categories": [
-            "general:products/amazon-route-53"
-          ]
-        },
-        {
           "title": "Introducing AWS Nitro Sandboxes on Amazon EKS, ECS and EC2 for hardware isolated pods, tasks and VMs",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/",
           "published": "2026-11-09T08:00:00+00:00",
           "summary": "<p>AWS Nitro Sandboxes are now available as lightweight VMs managed by the Nitro Hypervisor. You can use Nitro Sandboxes for an Amazon EKS pod, or Amazon ECS task, or lightweight Virtual Machines (VMs), including AI agents running inside them, in their own hardware-isolated virtual machine powered by the <a href=\"https://aws.amazon.com/ec2/nitro/\">AWS Nitro System</a>. Each workload gets the isolation boundary of a Nitro isolated virtual machine. This allows you to safely run untrusted, multi-tenant, or regulated workloads within the resources of a single instance.</p> \n<p>Nitro Sandboxes run on your EC2 instances with near-native EC2 performance and inherits Nitro-hypervisor isolation. You can also validate your workloads through cryptographic attestation, so that secrets are released only to Nitro Sandboxes that have proven their integrity. With Nitro Sandboxes, you can safely execute LLM-generated code in an isolated environment of its own all while improving utilization and lowering compute costs by securely sharing a single EC2 instance across multiple agentic workloads. You can easily enable EKS pods or ECS tasks to run on Nitro Sandboxes and each pod or task gets its own isolated environment. Enabling Nitro Sandboxes in EKS or ECS is a one-line change and each pod or task gets its own VM, with your workloads remaining fully native (Pod Identity, VPC CNI, EBS/EFS/S3 storage, and CloudWatch all work out of the box). If you want full control, run Nitro Sandboxes directly on EC2 with your own AMI, orchestration, and with virtual machine monitors (VMMs). Amazon Linux and Firecracker are natively supported, and patches for other options are available today.</p> \n<p>AWS Nitro Sandboxes are available today on most Nitro-based EC2 instances, in all commercial regions worldwide, at no additional charge.</p> \n<p>To learn more and get started, see the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/sandboxing.html\">EKS User Guide</a> or <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/isolated-confidential-tasks.html\">ECS User Guide</a>. For implementation details or to fully customize your Nitro Sandbox usage, see the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nitro-sandboxes.html\">Nitro Sandboxes documentation</a> in the EC2 user guide.</p>",
           "categories": [
             "general:products/amazon-eks,general:products/amazon-ec2,general:products/amazon-ecs"
+          ]
+        },
+        {
+          "title": "Amazon Route 53 Profiles now supports multiple Profiles per VPC",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-profiles-multiple-per-vpc/",
+          "published": "2026-11-09T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/route53/\">Amazon Route 53 Profiles</a> now lets you associate more than one Profile with a VPC. Previously, a VPC could have only one Profile, so teams that managed Route 53 configurations separately (for example, security teams managing DNS Firewall rule groups while cloud infrastructure and network admin teams manage private hosted zones and Resolver forwarding rules) all had to share a single Profile and associate their private hosted zones, Resolver rules, and DNS Firewall rule groups with it.</p> \n<p>With this launch, you can now associate multiple Profiles with the same VPC and set a priority for every Profile. Route 53 evaluates a VPC's Profiles in priority order, starting with the lowest number, so you can keep shared Route 53 configurations in one Profile and team-specific configurations in another without merging them, while assigning them the right priority. Combined with <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-route-53-profiles-granular-iam/\">the granular IAM permissions</a> launched in March 2026, multiple Profiles per VPC improves security posture by letting each team own and manage its own Profile with least-privilege permissions.</p> \n<p>This capability is available in all AWS Regions where Route 53 Profiles is available.</p> \n<p>Each Profile-VPC association is billed at standard Route 53 Profiles pricing. For details, see <a href=\"https://aws.amazon.com/route53/pricing/\">Amazon Route 53 pricing</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles.html\" target=\"_blank\" rel=\"noopener noreferrer\">Route 53 Profiles</a> in the Amazon Route 53 Developer Guide.</p>",
+          "categories": [
+            "general:products/amazon-route-53"
           ]
         },
         {
@@ -235,12 +375,12 @@
           ]
         },
         {
-          "title": "AWS Elemental MediaConvert adds a native integration with AWS Elemental Inference Smart Subtitles",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
+          "title": "Amazon Simple Email Service is now available in six new AWS Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-simple-email-service-new-aws-regions/",
           "published": "2026-11-06T08:00:00+00:00",
-          "summary": "<p>​​AWS Elemental MediaConvert now integrates Smart Subtitles, an AI-powered subtitling solution built on AWS Elemental Inference and the latest speech recognition models. This feature brings automated subtitle generation directly into your video-on-demand (VOD) transcoding and packaging workflows, eliminating the need for separate external captioning pipelines. Customers can now manage both transcoding and subtitle creation within a single, unified workflow.</p> \n<p>​Smart subtitles automatically transcribe your audio into subtitles with native support for six languages including English, French, German, Italian, Portuguese, and Spanish. With MediaConvert, you can package the outputs to text-based side-car formats and burn-in for all your streaming or distribution needs. To enhance transcription quality, you can now define custom dictionaries in Elemental Inference to guide the model on proper nouns, brand names, technical terminology, and more. Smart subtitles complement existing add-on features such as Smart Cropping for end-to-end media pipelines, intelligent framing and accessible subtitle delivery in distribution-ready formats like HLS and DASH.​</p> \n<p>​​Smart subtitles is available in all AWS regions where Elemental Inference is available including US East (N. Virginia), US West (Oregon), Europe (Ireland), Asia Pacific (Mumbai), and Asia Pacific (Sydney).​</p> \n<p>To learn more, visit <a href=\"https://docs.aws.amazon.com/mediaconvert/latest/ug/smart-subtitling-with-elemental-inference.html\">Smart subtitles with MediaConvert,</a> <a href=\"https://aws.amazon.com/mediaconvert/\">AWS Elemental MediaConvert</a>&nbsp; and <a href=\"https://docs.aws.amazon.com/elemental-inference/latest/userguide/create-feed-outputs.html#create-feed-console-smart-subtitles\">AWS Elemental Inference smart subtitles.</a></p>",
+          "summary": "<p><a href=\"https://aws.amazon.com/ses/\">Amazon Simple Email Service (Amazon SES)&nbsp;</a> is now available in the Asia Pacific (New Zealand, Melbourne, Taipei, Thailand), Mexico (Central), EU (Spain). Customers can now use these new Regions to leverage Amazon SES to send emails and, if needed, to help manage data requirements.</p> \n<p>Amazon SES is a scalable, cost-effective, and flexible cloud-based email service that allows digital marketers and application developers to send marketing, notification, and transactional emails from within any application. To learn more about Amazon SES, visit this&nbsp;<a href=\"https://aws.amazon.com/ses/\">page&nbsp;</a>.</p> \n<p>With this launch, Amazon SES is available in 35 AWS Regions globally: US East (N. Virginia, Ohio), US West (N. California, Oregon), AWS GovCloud (US-West, US-East), Asia Pacific (Osaka, Mumbai, Hyderabad, Sydney, Singapore, Seoul, Tokyo, Jakarta, Malaysia, New Zealand, Melbourne, Taipei, Thailand), Canada (Central, Calgary), EU (Ireland, Frankfurt, London, Paris, Stockholm, Milan, Zurich,Spain), Middle East (Bahrain, UAE), Israel (Tel Aviv), South America (Sao Paulo), Mexico (Central) and Africa (Cape Town).</p> \n<p>For a complete list of all of the regional endpoints for Amazon SES, see &nbsp;<a href=\"https://docs.aws.amazon.com/general/latest/gr/ses.html\">AWS Service Endpoints&nbsp;</a> in the AWS General Reference.</p>",
           "categories": [
-            "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/media-services,general:products/aws-elemental-mediaconvert"
+            "general:products/amazon-simple-email-service,marketing:marchitecture/applications"
           ]
         },
         {
@@ -253,12 +393,12 @@
           ]
         },
         {
-          "title": "Amazon Simple Email Service is now available in six new AWS Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-simple-email-service-new-aws-regions/",
+          "title": "AWS Elemental MediaConvert adds a native integration with AWS Elemental Inference Smart Subtitles",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
           "published": "2026-11-06T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/ses/\">Amazon Simple Email Service (Amazon SES)&nbsp;</a> is now available in the Asia Pacific (New Zealand, Melbourne, Taipei, Thailand), Mexico (Central), EU (Spain). Customers can now use these new Regions to leverage Amazon SES to send emails and, if needed, to help manage data requirements.</p> \n<p>Amazon SES is a scalable, cost-effective, and flexible cloud-based email service that allows digital marketers and application developers to send marketing, notification, and transactional emails from within any application. To learn more about Amazon SES, visit this&nbsp;<a href=\"https://aws.amazon.com/ses/\">page&nbsp;</a>.</p> \n<p>With this launch, Amazon SES is available in 35 AWS Regions globally: US East (N. Virginia, Ohio), US West (N. California, Oregon), AWS GovCloud (US-West, US-East), Asia Pacific (Osaka, Mumbai, Hyderabad, Sydney, Singapore, Seoul, Tokyo, Jakarta, Malaysia, New Zealand, Melbourne, Taipei, Thailand), Canada (Central, Calgary), EU (Ireland, Frankfurt, London, Paris, Stockholm, Milan, Zurich,Spain), Middle East (Bahrain, UAE), Israel (Tel Aviv), South America (Sao Paulo), Mexico (Central) and Africa (Cape Town).</p> \n<p>For a complete list of all of the regional endpoints for Amazon SES, see &nbsp;<a href=\"https://docs.aws.amazon.com/general/latest/gr/ses.html\">AWS Service Endpoints&nbsp;</a> in the AWS General Reference.</p>",
+          "summary": "<p>​​AWS Elemental MediaConvert now integrates Smart Subtitles, an AI-powered subtitling solution built on AWS Elemental Inference and the latest speech recognition models. This feature brings automated subtitle generation directly into your video-on-demand (VOD) transcoding and packaging workflows, eliminating the need for separate external captioning pipelines. Customers can now manage both transcoding and subtitle creation within a single, unified workflow.</p> \n<p>​Smart subtitles automatically transcribe your audio into subtitles with native support for six languages including English, French, German, Italian, Portuguese, and Spanish. With MediaConvert, you can package the outputs to text-based side-car formats and burn-in for all your streaming or distribution needs. To enhance transcription quality, you can now define custom dictionaries in Elemental Inference to guide the model on proper nouns, brand names, technical terminology, and more. Smart subtitles complement existing add-on features such as Smart Cropping for end-to-end media pipelines, intelligent framing and accessible subtitle delivery in distribution-ready formats like HLS and DASH.​</p> \n<p>​​Smart subtitles is available in all AWS regions where Elemental Inference is available including US East (N. Virginia), US West (Oregon), Europe (Ireland), Asia Pacific (Mumbai), and Asia Pacific (Sydney).​</p> \n<p>To learn more, visit <a href=\"https://docs.aws.amazon.com/mediaconvert/latest/ug/smart-subtitling-with-elemental-inference.html\">Smart subtitles with MediaConvert,</a> <a href=\"https://aws.amazon.com/mediaconvert/\">AWS Elemental MediaConvert</a>&nbsp; and <a href=\"https://docs.aws.amazon.com/elemental-inference/latest/userguide/create-feed-outputs.html#create-feed-console-smart-subtitles\">AWS Elemental Inference smart subtitles.</a></p>",
           "categories": [
-            "general:products/amazon-simple-email-service,marketing:marchitecture/applications"
+            "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/media-services,general:products/aws-elemental-mediaconvert"
           ]
         },
         {
@@ -305,154 +445,47 @@
           "categories": [
             "general:products/amazon-dynamodb,marketing:marchitecture/databases"
           ]
-        },
-        {
-          "title": "Amazon Cognito announces 99.99% Service Level Agreement for the Plus feature plan",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-sla-update/",
-          "published": "2026-11-05T18:00:00+00:00",
-          "summary": "<p>Starting November 1, 2026, the Amazon Cognito Service Level Agreement (SLA) commits to a Monthly Uptime Percentage of 99.99% for user pools on the Plus feature plan, up from 99.9%. User pools already on Plus are automatically covered by the new Service Commitment. User pools on Essentials and Lite stay at the 99.9% Service Commitment with no change to their terms.</p> \n<p>To qualify for the 99.99% Service Commitment, you can switch a user pool to the Plus feature plan using the AWS Management Console, AWS Command Line Interface (CLI), or AWS Software Development Kits (SDKs). The Plus feature plan also includes threat protection features such as adaptive authentication, compromised credentials detection, and threat and user activity logging and export.</p> \n<p>For full terms and exclusions, see the <a href=\"https://aws.amazon.com/cognito/sla/\">Amazon Cognito SLA</a>.&nbsp;To learn more about feature plans, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sign-in-feature-plans.html\">user pool feature plans</a>.&nbsp;&nbsp;&nbsp;&nbsp;</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,general:products/amazon-cognito"
-          ]
-        },
-        {
-          "title": "IAM Roles Anywhere now supports automatic certificate revocation checking",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/iam-roles-anywhere-cdp/",
-          "published": "2026-11-05T17:38:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/iam/roles-anywhere\">AWS Identity and Access Management (IAM) Roles Anywhere</a> now supports automatic revocation checking using certificate revocation list (CRL) distribution points (CDPs). This helps keep revocation checks in sync with your certificate authority (CA) and can help improve your security posture. When you enable this capability on a trust anchor, IAM Roles Anywhere reads the CDP URLs embedded in authenticating certificates, downloads the corresponding CRLs, and denies credential requests that use revoked certificates.</p> \n<p>Previously, to check revocation status, you had to import CRLs into IAM Roles Anywhere and re-import them each time your CA published an update, which added operational overhead. With this launch, IAM Roles Anywhere downloads CRLs from your CDPs and refreshes them periodically, so you no longer need to re-import them. You can use this capability with <a href=\"https://aws.amazon.com/private-ca/\">AWS Private Certificate Authority</a> or your own public key infrastructure (PKI), provided your certificates include publicly accessible CDP URLs that meet the <a href=\"https://docs.aws.amazon.com/rolesanywhere/latest/userguide/trust-model.html#crl-distribution-point-revocation\">distribution point requirements</a>. To enable it on a trust anchor, use the IAM Roles Anywhere console, AWS SDKs, or AWS CLI.</p> \n<p>This feature is available at no additional cost in all commercial AWS Regions. To learn more, see <a href=\"https://docs.aws.amazon.com/rolesanywhere/latest/userguide/trust-model.html#crl-distribution-point-revocation\">Automatic revocation checking with CRL distribution points</a> in the IAM Roles Anywhere User Guide.</p>",
-          "categories": [
-            "general:products/aws-iam,marketing:marchitecture/security-identity-and-compliance,general:products/aws-identity-and-access-management"
-          ]
-        },
-        {
-          "title": "Amazon OpenSearch Service optimized engine now supports agent traces",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-support-traces",
-          "published": "2026-11-05T17:00:00+00:00",
-          "summary": "<p>Today, the Amazon OpenSearch Service optimized engine adds support for agent traces, including OpenTelemetry traces. Your traces and logs now live in the same place. You can follow a request or an agent session from start to finish, find the step that failed or slowed down, and check the related logs without switching tools.&nbsp;</p> \n<p>The optimized engine maps OpenTelemetry logs and traces to object, nested, and flat object fields, with support for multi-valued arrays. Span events, span links, prompts, and tool calls retain their nested structure, allowing field-level queries without flattening data during ingestion.</p> \n<p>On hot-tier data, the engine supports update, delete, and upsert operations by document ID.&nbsp;When data arrives late or with errors, you can correct it in place, so your dashboards and alerts work from accurate data. In OpenSearch UI, you can analyze this data with Discover Traces, application performance monitoring, the service map, and the agent traces and sessions views.</p> \n<p>These features are available on OpenSearch 3.7, at no additional charge in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), and Europe (Spain).&nbsp;&nbsp;To get started, send OpenTelemetry data to your domain, for example by using Amazon OpenSearch Ingestion. To learn more, see the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/optimized-log-analytics.html\">documentation</a>.</p>",
-          "categories": [
-            "general:products/amazon-opensearch-service,marketing:marchitecture/analytics"
-          ]
-        },
-        {
-          "title": "Amazon FSx for Lustre delivers 16x higher metadata IOPS on Intelligent-Tiering file systems",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-fsx-for-lustre-intelligent-tiering-16x-higher-metadata-iops",
-          "published": "2026-11-05T15:39:00+00:00",
-          "summary": "<p><a></a><a href=\"https://aws.amazon.com/fsx/lustre/\">Amazon FSx for Lustre</a> now supports up to 192,000 metadata I/O operations per second (IOPS) on file systems that use the Intelligent-Tiering storage class, 16x higher than the previous maximum of 12,000 IOPS.</p> \n<p>The FSx for Lustre Intelligent-Tiering storage class delivers the lowest-cost and only fully elastic Lustre file storage in the cloud. It is optimized for workloads that mix hot and cold data and do not require consistent SSD-level performance. A file system's metadata IOPS determine how many files and directories you can create, list, read, and delete per second. Today's launch allows you to scale to even higher levels of performance, accelerate time-to-results, and optimize your storage costs for metadata-intensive machine learning research and high-performance computing (HPC) workloads.</p> \n<p>Higher metadata IOPS are available on new FSx for Lustre Intelligent-Tiering file systems in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where the Intelligent-Tiering storage class is available. For more information about the file system metadata performance, see the Amazon FSx for Lustre <a href=\"https://docs.aws.amazon.com/fsx/latest/LustreGuide/performance.html#dne-metadata-performance\">User Guide</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/storage,general:products/amazon-fsx-for-lustre"
-          ]
-        },
-        {
-          "title": "Amazon RDS for Oracle now supports Kerberos authentication with self-managed Active Directory",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-kerberos-self-managed-ad/",
-          "published": "2026-11-05T10:30:00+00:00",
-          "summary": "<p>Amazon Relational Database Service (Amazon RDS) for Oracle (<a href=\"https://aws.amazon.com/rds/oracle/\">Amazon Relational Database Service (Amazon RDS) for Oracle</a>) now allows customers to join their RDS for Oracle DB instances directly to their self-managed Microsoft Active Directory (AD) domain. Your self-managed AD can run on premises, on Amazon EC2, or with another cloud provider. Users in your AD domain can authenticate to RDS for Oracle DB instances using Kerberos.</p> \n<p>Previously, in order to use Kerberos authentication with self-managed AD for their RDS for Oracle instances, customers were required to deploy AWS Managed Microsoft AD and establish trust between AWS managed domain and self-managed domain. Now, customers can join their existing self-managed AD directly to authenticate and authorize users without setting up an additional directory or trust relationship. You can set this up using the AWS Management Console, AWS CLI, or AWS SDK. You can use self-managed AD without any additional charge.</p> \n<p>Kerberos authentication with self-managed Active Directory in Amazon RDS for Oracle is available in <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">all commercial AWS Regions</a> where Amazon RDS for Oracle is available. To learn more about Kerberos authentication with self-managed Active Directory, visit <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-smad.html\" target=\"_blank\" rel=\"noopener noreferrer\">Working with self-managed Active Directory with an Amazon RDS for Oracle DB instance</a> in the Amazon RDS User Guide.</p>",
-          "categories": [
-            "general:products/amazon-rds-for-oracle,marketing:marchitecture/databases,marketing:marchitecture/security-identity-and-compliance"
-          ]
-        },
-        {
-          "title": "AWS Security Hub Network Scanning now available in AWS GovCloud (US)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-network-scanning-govcloud/",
-          "published": "2026-11-05T09:00:00+00:00",
-          "summary": "<p>AWS Security Hub Network Scanning feature is now supported in AWS GovCloud (US).</p> \n<p>Network Scanning probes your resources from the internet to detect actual reachability, not just what could be reachable based on security group rules and route tables. It discovers public IP addresses, virtual machines, and load balancers across your AWS environments, identifies reachable ports, and determines what services are running behind them. This complements Security Hub's existing network reachability findings, which identify configurations that could make a resource reachable from the internet. Network Scanning confirms that configurations do exist which make a resource reachable from the internet. Each reachable port generates a Security Hub finding with evidence of the port and service discovered. Security Hub Exposures then automatically correlates these findings with other findings and resource configurations to determine broader risk.</p> \n<p>Existing customers can enable Network Scanning in individual accounts and regions, or across an organization via a configuration policy. For new Security Hub customers, Network Scanning is on by default. Network Scanning is included with Security Hub Essentials at no additional cost in all AWS commercial and GovCloud (US) Regions that support Security Hub. To learn more, see the <a href=\"https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-network-scanning.html\">AWS Security Hub User Guide</a> and the <a href=\"https://aws.amazon.com/security-hub/\">AWS Security Hub product page</a>. For the full list of Regions, see the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regional Services List</a>.</p>",
-          "categories": [
-            "general:products/aws-govcloud-us,marketing:audience/public-sector-government,general:products/aws-security-hub,marketing:marchitecture/security-identity-and-compliance"
-          ]
-        },
-        {
-          "title": "AWS Lambda durable functions increases default execution and API quotas",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-functions-default-quotas/",
-          "published": "2026-11-05T08:00:00+00:00",
-          "summary": "<p>AWS Lambda durable functions has increased default quotas for running executions and API request rates. The new quotas below apply in all AWS Regions except US East (N. Virginia), US West (Oregon), and Europe (Ireland), which have twice these quotas.</p> \n<ul> \n <li>Running durable executions per account (1 million to 5 million)</li> \n <li>Function invocation rate to start durable executions (300 to 3,000 requests per second)</li> \n <li>CheckpointDurableExecution and GetDurableExecutionState (1,000 to 10,000 requests per second)</li> \n <li>SendDurableExecutionCallbackSuccess, SendDurableExecutionCallbackFailure, and SendDurableExecutionCallbackHeartbeat (300 to 3,000 requests per second)</li> \n <li>GetDurableExecution and StopDurableExecution (30 to 300 requests per second)</li> \n <li>GetDurableExecutionHistory and ListDurableExecutionsByFunction (15 to 150 requests per second)</li> \n</ul> \n<p><a href=\"https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Lambda durable functions</a> helps you build resilient multi-step applications and AI workflows that execute for up to one year, with built-in checkpointing, automatic retries, and waits that suspend execution without incurring compute charges. With this increase, workloads such as order processing and document pipelines can run more executions in parallel without requesting quota increases. When many executions wait on external work, such as payment confirmations or batch jobs, more can resume together. If you monitor and manage executions with your dashboards or scripts, they can now check status, list executions, read history, and stop executions at least ten times as often.</p> \n<p>The new quotas apply in all AWS Regions where AWS Lambda durable functions is available. To learn more, see <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html#durable-functions-quotas\" target=\"_blank\" rel=\"noopener noreferrer\">Lambda quotas</a> in the AWS Lambda Developer Guide.</p>",
-          "categories": [
-            "general:products/aws-lambda"
-          ]
-        },
-        {
-          "title": "AWS CodeConnections is now available in the AWS GovCloud (US-West) Region",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-codeconnections-govcloud-west/",
-          "published": "2026-11-05T08:00:00+00:00",
-          "summary": "<p>AWS CodeConnections is now available in the AWS GovCloud (US-West) Region, in addition to AWS GovCloud (US-East). CodeConnections lets you connect AWS services such as AWS CodePipeline and AWS CodeBuild to source code repositories hosted with third-party providers such as Bitbucket.</p>\n<p>With this launch, customers running workloads in AWS GovCloud (US-West) can create connections to their source repositories in the same Region as their pipelines. For example, a team can configure a connection so that a commit to their repository automatically starts a release in AWS CodePipeline, without managing provider credentials for each integration.</p>\n<p>To learn more, see the <a href=\"https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html\">AWS CodeConnections User Guide</a> and the <a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/CodeStar-connections.html\">AWS GovCloud User Guide</a>. To get started, visit the AWS GovCloud (US) console.</p>",
-          "categories": [
-            "general:products/aws-govcloud-us"
-          ]
-        },
-        {
-          "title": "Amazon EC2 now publishes ImdsV1Enabled CloudWatch metric",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-imdsv1enabled-cloudwatch-metric/",
-          "published": "2026-11-05T08:00:00+00:00",
-          "summary": "<p>Amazon EC2 now supports an ImdsV1Enabled CloudWatch metric, giving customers visibility into which of their EC2 instances still have Instance Metadata Service Version 1 (IMDSv1) enabled. You can use this metric to track your migration to IMDSv2 across your accounts and Regions, at scale.</p> \n<p>With the ImdsV1Enabled metric, you can configure CloudWatch dashboards and alarms to track instances that still allow IMDSv1, identify migration gaps, and prioritize remediation, without building your own tooling to check the metadata options of instances across accounts and Regions. This gives you a reliable, ongoing signal to track and complete your IMDSv2 migration.</p> \n<p>The ImdsV1Enabled CloudWatch metric is available in all AWS Regions at no additional cost.</p> \n<p>To learn more, see the ImdsV1Enabled CloudWatch metric in the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html#ec2-cloudwatch-metrics\">Amazon EC2 User Guide</a>. For step-by-step migration instructions, see <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-metadata-transition-to-version-2.html\">Transition to IMDSv2 in the Amazon EC2 User Guide</a>.</p>",
-          "categories": [
-            "general:products/amazon-cloudwatch,marketing:marchitecture/compute,general:products/amazon-ec2"
-          ]
-        },
-        {
-          "title": "Amazon SageMaker AI Studio Now Supports IAM Identity Center Multi-Region Replication",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-ai-studio-iam/",
-          "published": "2026-11-05T08:00:00+00:00",
-          "summary": "<p>Amazon SageMaker AI now supports IAM Identity Center (IdC) multi-region replication, enabling you to deploy SageMaker AI Studio domains in different regions from your IdC instance's primary region. Previously, the primary IdC instance had to reside in the same region as the SageMaker AI Studio domain; now customers can replicate their primary IdC instance into the region where they wish to use SageMaker AI Studio domains. This capability helps customers maintain compliance while utilizing centralized workforce identity management.</p> \n<p>As an Amazon SageMaker AI Studio administrator, you can deploy SageMaker AI domains that align with your workforce's location and data residency requirements, independent of where your primary IdC instance is set up. Organizations can retain their primary IdC instance in one region while operating SageMaker AI Studio workloads in compliance-mandated regions, support global operations through centralized identity management, and satisfy data sovereignty requirements without compromising single sign-on (SSO) capabilities.</p> \n<p>To get started see the <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-custom.html\">SageMaker AI documentation</a> and to learn about setting up IAM Identity Center multi-region support see the <a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html\">IAM Identity Center User Guide</a>.</p> \n<p>Multi-region IdC replication is available in all standard <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where Amazon SageMaker AI Studio is supported, including: Asia Pacific (Tokyo), Europe (Ireland), US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Frankfurt), South America (São Paulo), Asia Pacific (Seoul), Europe (London), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Asia Pacific (Mumbai), Europe (Paris), Europe (Stockholm).</p>",
-          "categories": [
-            "general:products/amazon-sagemaker-studio"
-          ]
-        },
-        {
-          "title": "AWS WAF AI traffic monetization now supports fiat payouts through Stripe",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-stripe-fiat-payouts/",
-          "published": "2026-11-05T08:00:00+00:00",
-          "summary": "<p>AWS WAF AI traffic monetization now integrates with Stripe. Publishers, content owners, and API providers can collect stablecoin payments from AI bots and agents that settle in local currency directly to their Stripe balance. With this launch, customers can monetize agent access without holding stablecoins or managing a crypto wallet. Stripe is now available as a new payout method alongside existing stablecoin payouts.</p> \n<p>To get started, connect your Stripe account to AWS WAF through Stripe Connect in the AWS WAF console. Your existing pricing and agent policies work unchanged. When an agent requests protected content, AWS WAF returns an HTTP 402 response with the valid payment credential types that it accepts. Once the agent returns with a valid payment credential and makes the request again, the content is returned ungated. Revenue from all payment providers appears in the AWS WAF console revenue analytics.</p> \n<p>The Stripe integration is available at no additional charge to all AWS WAF customers using Amazon CloudFront, in all edge locations where AWS WAF web ACLs are associated with CloudFront distributions. Standard AWS WAF and Stripe processing fees apply. See <a href=\"https://aws.amazon.com/waf/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">AWS WAF pricing</a> for details.</p> \n<p>To get started, visit the <a href=\"https://aws.amazon.com/console/\" target=\"_blank\" rel=\"noopener noreferrer\">AWS WAF console</a> or explore the <a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/waf-ai-traffic-monetization-getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS WAF Developer Guide</a>.</p>",
-          "categories": [
-            "general:products/aws-waf,general:products/amazon-cloudfront"
-          ]
-        },
-        {
-          "title": "Amazon Q Developer in console is now the AWS assistant",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/q-developer-renamed-aws-assistant/",
-          "published": "2026-11-05T08:00:00+00:00",
-          "summary": "<p>Amazon Q Developer in the AWS Management Console and Console Mobile Apps is now called the AWS assistant. Previously, customers interacted with Amazon Q Developer across these surfaces. Now, the AWS assistant provides the same personalized, account-aware guidance and actions with a name that immediately communicates what the product does.</p>\n<p>The AWS assistant simplifies how customers build, operate, and optimize on AWS. The AWS assistant is currently offered for free. Existing Amazon Q Developer Pro subscribers will automatically retain their Pro Tier capabilities under the AWS assistant.</p>\n<p>The AWS assistant is available globally. To learn more, visit <a href=\"https://aws.amazon.com/products/assistant/\">aws.amazon.com/products/assistant/</a>.</p>",
-          "categories": [
-            "general:products/aws-management-console"
-          ]
-        },
-        {
-          "title": "﻿﻿AWS Systems Manager Parameter Store now allows organization and validation with built-in data types",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-ssm-parameter-store-allows-organization-validation-with-new-data-types/",
-          "published": "2026-11-05T05:00:00+00:00",
-          "summary": "<p>AWS Systems Manager Parameter Store now supports 13 new parameter data types that automatically validate parameter values when you create or update a parameter. With built-in validation, you can stop malformed configuration values, such as an invalid IP address, AWS account ID, or JSON document, before your applications read them, without writing your own validation logic.&nbsp;These types allow you to better organize your parameters across your workloads. You can filter by type when calling the DescribeParameters API or when browsing parameters in the Parameter Store console.<br> <br> The following data types are available for both standard and advanced parameters:&nbsp; aws:region, aws:account:id, boolean, integer, float, binary, hostname, email, ipv4-address, and ipv6-address. Three more data types, url, json, and jsonc, are available for advanced parameters. Parameter Store checks the value when you call PutParameter and rejects any value that doesn't match its data type. New data types work with String and SecureString parameters, and several also support StringList parameters, where each item in the list is validated. You can combine a data type with an AllowedPattern for additional constraints, and you can change the data type of an existing text parameter.</p>",
-          "categories": [
-            "general:products/aws-systems-manager"
-          ]
-        },
-        {
-          "title": "Amazon MWAA now supports cost allocation tags",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-mwaa-cost-allocation-tags/",
-          "published": "2026-11-04T23:00:00+00:00",
-          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) now supports <a href=\"https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html\" target=\"_blank\">cost allocation tags</a>. Tags you apply to an Amazon MWAA environment now propagate to the compute that runs it, including workers, schedulers, and web servers. You can then track Amazon MWAA spend by tag in AWS Cost Explorer and AWS Cost and Usage Reports.</p>\n<p>With this launch, platform teams can show back or charge back Airflow costs to the team, project, or cost center that owns each environment. You can use cost allocation tags when you create a new environment or update an existing one. To get started, tag your environment using the Amazon MWAA console, AWS CLI, or Amazon MWAA API, then activate the tag key as a cost allocation tag in the AWS Billing and Cost Management console.</p>\n<p>This feature is available in all AWS Regions where Amazon MWAA is available. For more information, see the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/get-started.html#regions\" target=\"_blank\">AWS Region table</a>. To learn more, visit <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/cost-allocation-tags.html\" target=\"_blank\">Cost allocation tags in Amazon MWAA</a> in the Amazon MWAA User Guide.</p>",
-          "categories": [
-            "general:products/amazon-mwaa,marketing:marchitecture/analytics"
-          ]
-        },
-        {
-          "title": "Amazon ECS Managed Daemons can now collect json-file logs from application containers on Amazon ECS Managed Instances",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/",
-          "published": "2026-11-04T21:29:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/ecs/\">Amazon Elastic Container Service</a> (Amazon ECS) introduces json-file log driver support for Amazon ECS Managed Instances and log driver volumes for Amazon ECS Managed Daemons. Together, these features let you collect application logs with the observability agent of your choice and forward them to any destination you choose.<br> <br> With this launch, your application containers on ECS Managed Instances can write their logs as local files in standard Docker json-file format, which most observability agents read natively. Your managed daemons can directly read these files through a volume mount, without specifying host bind mount paths or requiring root privileges. As a result, one managed daemon on each instance can collect logs from every application container that uses the json-file log driver. Amazon ECS keeps each container's logs in a dedicated directory named with the container ID and retains them until the container is removed, so your managed daemon can use native file-based log collection and trace every log back to the container that produced it.<br> <br> To get started, set the log driver to json-file in the logConfiguration of your application task definition. Next, register a daemon task definition that specifies a volume with logDriverVolumeConfiguration, and mount the volume into your daemon container using mountPoints. You can configure this using the AWS Management Console, AWS CLI, API, AWS SDKs or AWS CloudFormation. This feature is available in all commercial AWS Regions where Amazon ECS Managed Instances and Managed Daemons are available, at no additional cost. To learn more, refer to our <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-task-definitions.html#managed-daemons-volumes\">documentation</a> page and visit <a href=\"https://aws.amazon.com/ecs/managed-instances/\">Amazon ECS Managed Instances</a>.</p>",
-          "categories": [
-            "general:products/aws-fargate,marketing:marchitecture/containers,general:products/amazon-ecs"
-          ]
-        },
-        {
-          "title": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-mongodb-compatibility-asia-pacific-taipei-new-zealand-regions/",
-          "published": "2026-11-04T19:00:00+00:00",
-          "summary": "<p>Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions, adding to the list of&nbsp;<a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">available Regions</a> where you can use Amazon DocumentDB.</p> \n<p>Amazon DocumentDB is a fully managed, native JSON database that makes it simple and cost-effective to operate critical document workloads at virtually any scale without managing infrastructure. Amazon DocumentDB is designed to give you the scalability and durability you need when operating mission-critical MongoDB workloads. In addition, Amazon DocumentDB natively integrates with Amazon CloudWatch, AWS CloudTrail, AWS Lambda, AWS Backup, and more. Amazon DocumentDB supports millions of requests per second and can be scaled out to 15 low-latency read replicas in minutes with no application downtime.</p> \n<p>To learn more about Amazon DocumentDB, please visit the Amazon DocumentDB&nbsp;<a href=\"https://aws.amazon.com/documentdb/\">product page</a> and <a data-agent-id=\"30\"></a><a href=\"https://aws.amazon.com/documentdb/pricing/\">pricing page</a>. You can create an Amazon DocumentDB cluster from the <a data-agent-id=\"31\"></a><a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-documentdb-mongodb-compatibility-asia-pacific-melbourne-region/#:~:text=AWS%20Management%20console\">AWS Management Console</a>, <a data-agent-id=\"32\"></a><a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-documentdb-mongodb-compatibility-asia-pacific-melbourne-region/#:~:text=AWS%20Command%20Line%20Interface%20(CLI)\">AWS Command Line Interface (CLI)</a>, or AWS SDKs.</p>",
-          "categories": []
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "製造業 7 社が率直に語った AI エージェント全社基盤の実践と課題：生成 AI 基盤・活用推進 ラウンドテーブル 2026年10月 開催報告",
+          "link": "https://aws.amazon.com/jp/blogs/news/genai-roundtable-202610/",
+          "published": "2026-11-11T01:38:37+00:00",
+          "summary": "製造業のお客様を支援しているソリューションアーキテクトの西田です。 2026 年 10 月 26 日に AWS […]",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon Bedrock AgentCore",
+            "Generative AI",
+            "Manufacturing"
+          ]
+        },
+        {
+          "title": "AIが進め、人が決める ― AI駆動開発の本当のボトルネックはどこにあったか",
+          "link": "https://aws.amazon.com/jp/blogs/news/mbk-wellness-ai-dlc-workshop/",
+          "published": "2026-11-10T23:48:12+00:00",
+          "summary": "こんにちは。AWS ソリューションアーキテクトの崔 祐碩（Woosuk Choi）です。AI 開発を進めている多くのお客様から「開発を加速したい」というご相談をいただいています。お客様と議論を重ねるたびに、本当のボトルネックは開発そのものではなく、意思決定をめぐるプロセスと組織ではないか、と感じることが増えてきました。本ブログでは、2026年7月29日に MBK Wellness 株式会社と実施した AI-DLC ワークショップを題材に、私たちがこの仮説をどう確かめ、どんな答えが返ってきたのかをご紹介します。",
+          "categories": [
+            "General",
+            "Generative AI"
+          ]
+        },
+        {
+          "title": "AWS Nitro Sandboxes: Amazon EKS で実現するハードウェア強制型ワークロード分離",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-nitro-sandboxes-hardware-enforced-workload-isolation-on-amazon-eks/",
+          "published": "2026-11-10T04:22:48+00:00",
+          "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) 向けに AWS Nitro Sandboxes の提供を開始しました。サンドボックス化されたポッドは AWS Nitro System を基盤とする専用の軽量 VM で実行されるため、ポッドごとにハードウェアベースのセキュリティ境界を設けられます。EKS Auto Mode ではポッド仕様を 1 行変更するだけで有効にでき、分離モードと機密モードを選べます。AI エージェント、マルチテナント SaaS、規制対象のワークロードを安全かつ効率的に実行する方法を、AI コーディングエージェントの実行例とともに紹介します。",
+          "categories": [
+            "Advanced (300)",
+            "Amazon Elastic Kubernetes Service",
+            "Announcements",
+            "Security, Identity, & Compliance",
+            "Security Blog"
+          ]
+        },
         {
           "title": "第 1 回: 電子カルテベンダーのためのガバメントクラウド入門 — ガバクラ・公共 SaaS を理解する",
           "link": "https://aws.amazon.com/jp/blogs/news/emr-govcloud-saas-japan/",
@@ -545,47 +578,6 @@
             "automated reasoning",
             "Security",
             "Security Blog"
-          ]
-        },
-        {
-          "title": "国内大手製造業のグローバル製品サポートを支える Amazon Bedrock AgentCore Runtime V2",
-          "link": "https://aws.amazon.com/jp/blogs/news/japan-customer-usecase-bedrock-agentcore-runtime-v2/",
-          "published": "2026-11-09T23:51:55+00:00",
-          "summary": "30 以上の言語に対応する製品サポートチャットを Amazon Bedrock AgentCore で実現した、国内大手製造業の事例です。Runtime V2 による起動の高速化、会話文脈の保持、回答品質の評価の工夫を紹介します。",
-          "categories": [
-            "Amazon Bedrock",
-            "Amazon Bedrock AgentCore",
-            "General",
-            "Generative AI",
-            "AI",
-            "利用事例"
-          ]
-        },
-        {
-          "title": "月刊AWS製造 2026年11月号",
-          "link": "https://aws.amazon.com/jp/blogs/news/monthly-manufacturing-202611/",
-          "published": "2026-11-09T12:33:48+00:00",
-          "summary": "みなさん、こんにちは。ソリューションアーキテクトの水野です。11 月に入り、朝晩はぐっと冷え込むようになってき […]",
-          "categories": [
-            "Best Practices",
-            "Case Study",
-            "General",
-            "Generative AI",
-            "Industries",
-            "Manufacturing",
-            "AWS Manufacturing Monthly"
-          ]
-        },
-        {
-          "title": "週刊生成AI with AWS – 2026年11月2日週",
-          "link": "https://aws.amazon.com/jp/blogs/news/weekly-genai-20261102/",
-          "published": "2026-11-09T05:31:50+00:00",
-          "summary": "週刊生成AI with AWS, Kiro と AI エージェントの話題が充実した2026年11月2日号 - ニッセイ情報テクノロジー株式会社様の国内事例ブログを紹介。また、Toyota Motor North America の AI アシスト型 SAP 運用プラットフォーム BasisPilot や Kiro Crew の Bot、Kiro のモデルカスケードなどのブログ記事も。サービスアップデートでは Amazon Bedrock での Kimi K3.1 Pro の提供開始や Amazon Bedrock AgentCore の Web Answer の一般提供開始をはじめとする 12 件のアップデートを紹介。",
-          "categories": [
-            "General",
-            "Generative AI",
-            "AWSサービスアップデートまとめ",
-            "週刊AWS"
           ]
         }
       ]
