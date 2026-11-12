@@ -1,9 +1,108 @@
 {
-  "generated_at": "2026-11-11T01:53:59.721599+00:00",
+  "generated_at": "2026-11-12T02:55:42.495644+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Ornith-1.0-9B and Ornith-1.0-35B models now available on Amazon SageMaker JumpStart",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/01/ornith-1-0-9b-ornith-1-0-35b-on-sagemaker-jumpstart/",
+          "published": "2026-11-11T23:36:00+00:00",
+          "summary": "<p>DeepReinforce AI's Ornith-1.0-9B and Ornith-1.0-35B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models are part of the Ornith 1.0 family of open-source, self-scaffolding agentic coding models released under the MIT license, achieving state-of-the-art performance among open-source models of comparable size on coding benchmarks such as Terminal-Bench 2.1, SWE-Bench, NL2Repo, and OpenClaw.</p> \n<p>These models address different agentic coding challenges with specialized capabilities:</p> \n<p>Ornith-1.0-9B is a lightweight 9B-parameter dense model post-trained on Qwen 3.5 9B, designed for efficient single-GPU deployment. With a 256K-token context window and 32 decoder layers, it is well-suited for individual developers and small teams running agentic coding workflows on a single GPU — including laptops with consumer-grade hardware. Its self-improving training framework uses reinforcement learning to jointly optimize scaffold generation and solution rollouts, enabling the model to discover better search trajectories and generate higher-quality code solutions.</p> \n<p>Ornith-1.0-35B is a 35B-parameter Mixture-of-Experts (MoE) model post-trained on Qwen 3.5, delivering stronger agentic coding performance while remaining deployable on a single 24GB consumer GPU. Like its smaller sibling, it employs reinforcement learning to jointly optimize the scaffolds that drive coding tasks and the resulting solution rollouts, discovering superior code trajectories. Its MoE architecture activates only a subset of parameters per token, providing a strong balance of quality and efficiency for production agentic coding workloads.</p> \n<p>With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.</p> \n<p>To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\">Amazon SageMaker JumpStart documentation</a>.</p>",
+          "categories": [
+            "general:products/aiml,marketing:marchitecture/artificial-intelligence,general:products/amazon-sagemaker-jumpstart"
+          ]
+        },
+        {
+          "title": "DeepSeek-V4-Pro, DeepSeek-V4-Flash, and DeepSeek-V4.1-Flash models now available on Amazon SageMaker JumpStart",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/01/deepseek-v4-pro-v4-flash-v4.1-flash-on-sagemaker-jumpstart/",
+          "published": "2026-11-11T23:18:00+00:00",
+          "summary": "<p>DeepSeek's DeepSeek-V4-Pro, DeepSeek-V4-Flash, and DeepSeek-V4.1-Flash models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three open-weight Mixture-of-Experts (MoE) language models, released under the MIT license, deliver frontier-class performance across reasoning, coding, and agentic workloads while activating only a fraction of their total parameters per token, enabling high efficiency at scale.</p> \n<p>These models address different AI challenges with specialized capabilities:</p> \n<p>DeepSeek-V4-Pro is designed for complex reasoning and high-quality text generation at flagship scale. This 1.6T-parameter MoE model activates 49B parameters per token and supports a 1M-token context window, making it well-suited for long-document analysis, multi-step reasoning, and demanding generation tasks that require maximum model capacity.</p> \n<p>DeepSeek-V4-Flash delivers strong performance at significantly lower compute cost as an efficient 284B-parameter MoE model activating 13B parameters per token. It supports the same 1M-token context window as V4-Pro, making it ideal for latency-sensitive and cost-conscious production deployments across a wide range of language tasks.</p> \n<p>DeepSeek-V4.1-Flash provides next-generation agentic efficiency with native multimodal support. Built on a novel Causal Encoder-Decoder (CED) architecture with a 552B-parameter backbone, it activates just 8B parameters during prefill and 16B during decode, supporting a 1M-token context window and 384K max output tokens. Its Compressed Sparse Attention 2 (CSA2) and FP4 KV caching reduce the global KV cache footprint to roughly 1/4 of V4-Flash, delivering substantially improved cost efficiency for agentic workloads, coding, and vision tasks.</p> \n<p>With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.</p> \n<p>To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\">Amazon SageMaker JumpStart documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,general:products/amazon-sagemaker-jumpstart,general:products/aiml"
+          ]
+        },
+        {
+          "title": "AWS Network Security Manager now available in AWS European Sovereign Cloud and Additional New Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-security-mgr-eu-sovereign-cloud/",
+          "published": "2026-11-11T21:00:00+00:00",
+          "summary": "<p>AWS Network Security Manager is now available in AWS European Sovereign Cloud Region and Thirty-One new Regions<br> <br> Today, AWS announces the general availability of AWS Network Security Manager in the AWS European Sovereign Cloud Region and additional regions. Network Security Manager is a comprehensive network security management solution designed to simplify security policy deployment and enforcement at scale. Network Security Manager supports AWS WAF and AWS Shield in AWS European Sovereign Cloud Region.&nbsp;The additional regions are: US East (Ohio);&nbsp; US West (N. California); US West (Oregon); Asia Pacific (Mumbai); Asia Pacific (Hong Kong); Asia Pacific (Taipei); Asia Pacific (Seoul); Asia Pacific (Osaka); Asia Pacific (Hyderabad); Asia Pacific (Singapore); Asia Pacific (Sydney); Asia Pacific (Melbourne); Asia Pacific (Malaysia); Asia Pacific (New Zealand); Asia Pacific (Thailand); Asia Pacific (Johor); Asia Pacific (Tokyo); Canada (Central);&nbsp; Canada West (Calgary); Mexico (Central); Europe (Frankfurt); Europe (Zurich); Europe (Stockholm); Europe (Ireland); Europe (Milan); Europe (Spain); Europe (London); Europe (Paris); Israel (Tel Aviv); South America (São Paulo), Africa (Cape Town).<br> <br> Network Security Manager features always-on security deployment automation that applies AWS WAF security protection to Internet facing assets like AWS Application Load Balancer. This automated approach helps security teams deploy and manage WAF rules and AWS Shield Advanced protections efficiently, ensuring consistent security posture across targeted accounts and resources. Teams can centrally manage security policies, automatically detect configuration drift, and apply remediation by reducing the operational overhead of manual security management while maintaining comprehensive protection.<br> <br> To see which regions AWS Network Security Manager is available in, visit the <u><a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Region Table</a></u>. For pricing information, visit the <u><a href=\"https://aws.amazon.com/network-security-manager/pricing/\">AWS Network Security Manager Pricing page</a></u>. for standard regions, and the&nbsp;<u><a href=\"https://aws.eu/network-security-manager/pricing/\">European Sovereign Cloud Pricing</a></u>&nbsp;page.</p>",
+          "categories": [
+            "general:products/aws-shield,general:products/aws-waf"
+          ]
+        },
+        {
+          "title": "AWS Cloud WAN now supports Flow Logs",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cloud-wan-flow-logs/",
+          "published": "2026-11-11T20:05:00+00:00",
+          "summary": "<p>AWS Cloud WAN now supports VPC Flow Logs, giving you central visibility into IP traffic across your global network. Flow Logs capture detailed information for each flow, so you can understand how traffic moves across your core network without leaving your AWS Cloud WAN account.</p> \n<p>Until now, network administrators had to stitch together VPC Flow Logs from many VPCs, accounts, and Regions to see traffic across their global network. They often depended on other teams for access to those logs. Cloud WAN Flow Logs give core network owners one consolidated view of traffic between VPCs, Regions, and on-premises networks connected over AWS Direct Connect, AWS Site-to-Site VPN, or SD-WAN. You can use this data to troubleshoot connectivity and performance problems, plan capacity from historical bandwidth trends, find unusual traffic patterns, and keep records for security and compliance. Flow log records include IP addresses, ports, protocol, traffic volume, and packet-loss counters, along with Cloud WAN metadata such as segment, Region, service insertion hops and attachment details. You can turn on Flow Logs for an entire core network, a single core network edge, or individual attachments. You can publish them to Amazon CloudWatch Logs, Amazon Simple Storage Service (Amazon S3), or Amazon Data Firehose. Cloud WAN adds no charge for Flow Logs. Standard charges apply for each destination.</p> \n<p>Cloud WAN Flow Logs are available in all AWS Regions where AWS Cloud WAN is available. You can get started with the AWS Management Console, AWS CLI, or API. To learn more, see AWS Cloud WAN Flow Logs&nbsp;<a href=\"https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flow-logs\">user guide</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:products/aws-cloud-wan,general:products/amazon-vpc"
+          ]
+        },
+        {
+          "title": "Amazon EKS Provisioned Control Plane now offers a 24 GB etcd database on 4XL and 8XL tiers",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-provisioned-control-plane-larger-etcd-database/",
+          "published": "2026-11-11T19:45:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/pm/eks/\">Amazon Elastic Kubernetes Service (Amazon EKS)</a> now offers a larger 24 GB etcd database, up from 16 GB, for 4XL and 8XL <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/eks-provisioned-control-plane.html\">Provisioned Control Plane</a> clusters. etcd is the key-value store in the Kubernetes control plane that holds your cluster state, so its size limits how many Kubernetes objects your cluster can store. With 50% more capacity, you can run bigger clusters with more pods, jobs, events, and custom resources.</p> \n<p>The larger database gives more headroom to workloads that create and update many Kubernetes objects, such as large-scale AI/ML training and inference, batch processing, and CI/CD pipelines. When the etcd database fills up, you can’t add or change objects in your cluster, so the extra headroom helps keep these workloads running as they scale.</p> \n<p>To get the larger database,&nbsp;choose the 4XL or 8XL tier of Provisioned Control Plane on a cluster running EKS version 1.34 or later. Existing clusters on the 4XL and 8XL tiers running these versions get the larger database automatically, with no action required. The 24 GB etcd database is available in all commercial AWS Regions where Provisioned Control Plane is available. To learn more, see the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/eks-provisioned-control-plane.html\">Amazon EKS Provisioned Control Plane user guide</a>.&nbsp;<br> </p>",
+          "categories": [
+            "marketing:marchitecture/containers,general:products/amazon-eks,general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon Cognito now supports user pool session management",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-session-management/",
+          "published": "2026-11-11T19:00:00+00:00",
+          "summary": "<p>Amazon Cognito now supports session management for user pools, giving you visibility into and control over the sessions your users establish when they sign in to your applications. Single sign-on (SSO) sessions are created when a user signs in through managed login and let them access other app clients without re-authenticating. Token sessions are created when a user signs in to an app client and receives tokens. Session management lets you list a user's active SSO and token sessions across all devices and app clients and revoke any of them on demand. You can also now configure how long each app client reuses an SSO session before requiring re-authentication, instead of the previous fixed one-hour duration.</p> \n<p>Each session includes details such as session type, app client ID, device type, last activity time and location, and initial sign-in time, so you can build your own end-user or admin session experiences. You can revoke an individual session, optionally with its linked sessions, or use global sign-out to end all sessions associated with one user. You can also set a maximum number of active token sessions per user.</p> \n<p>Session management is available for user pools in the Essentials or Plus feature plans in all AWS Regions where Amazon Cognito is available.<i> </i>You can manage sessions using the AWS Management Console, API, AWS Command Line Interface, and AWS Software Development Kits, and configure settings with AWS CloudFormation. Visit the <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/managing-user-sessions.html\">Developer Guide</a> and <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_Operations.html\">API Reference</a> for details.&nbsp;</p>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance,general:products/amazon-cognito"
+          ]
+        },
+        {
+          "title": "AWS Lambda MicroVMs now supports the x86 CPU architecture",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-x86-architecture/",
+          "published": "2026-11-11T18:00:00+00:00",
+          "summary": "<p>AWS Lambda MicroVMs now supports the x86 CPU architecture, so you can run your existing x86 applications, tools, and software dependencies without recompiling or porting them. When you create a MicroVM image, you can now choose between x86 and Arm (AWS Graviton) to give each user or job an isolated MicroVM on the architecture your workload uses.</p> \n<p>Lambda MicroVMs is a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for running user or AI-generated code, in applications such as AI coding assistants, CI/CD runners, interactive development environments, and vulnerability scanners. Today’s launch enables you to run x86-based workloads on Lambda MicroVMs as-is. For workloads that run on Arm, you can continue using AWS Graviton processors which is the default CPU architecture option.</p> \n<p>To start building x86 workloads on Lambda MicroVMs, choose the x86 architecture when you create a MicroVM image from your Dockerfile, then launch MicroVMs from that image. You can use&nbsp;MicroVMs through the AWS Lambda console, AWS CloudFormation, AWS Cloud Development Kit, or with your preferred agentic development tools using the <a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/aws-lambda-microvms\">Agent Toolkit for AWS</a>.</p> \n<p>Support for the x86&nbsp;CPU architecture is available in all AWS Regions where Lambda MicroVMs is available, except Asia Pacific (Hong Kong), Asia Pacific (Malaysia), Asia Pacific (Thailand), and Europe (Spain). To learn more, visit the <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-microvms-guide.html\">AWS Lambda MicroVMs developer guide</a>. For information on pricing, see <a href=\"https://aws.amazon.com/lambda/pricing/\">Lambda MicroVMs pricing</a>.</p>",
+          "categories": [
+            "general:products/aws-lambda,marketing:marchitecture/serverless,marketing:marchitecture/compute,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Amazon EKS Auto Mode now supports security groups for Pods",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-security-groups-for-pods/",
+          "published": "2026-11-11T17:26:00+00:00",
+          "summary": "<p>Amazon EKS Auto Mode now supports security groups for Pods, letting you apply dedicated Amazon EC2 security group rules to individual Pods. Different workloads on the same node can carry different security groups, giving your Pods network-level segmentation without creating separate node pools for each application.</p> \n<p>Security groups for Pods extends your existing AWS network controls to the Pod level, so your Pods can reach resources such as Amazon RDS and Amazon ElastiCache databases that authorize connections by security group under the same rules the rest of your VPC uses. You define which Pods receive which security groups with a SecurityGroupPolicy resource, and Pods not matched by a policy keep using their node’s security groups.</p> \n<p>Security groups for Pods is included as part of EKS Auto Mode at no additional charge and is available on clusters running Kubernetes version 1.36 or later, in all AWS Regions where EKS Auto Mode is supported. To learn more, see <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/auto-sgp.html\">Security groups for Pods</a> in the Amazon EKS User Guide and the <a href=\"https://aws.amazon.com/eks/auto-mode/\">Amazon EKS Auto Mode</a> product page.</p>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance,marketing:marchitecture/containers,marketing:marchitecture/networking,general:products/amazon-eks,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "AWS Emulator is now available for building and testing AWS applications locally",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-emulator-now-available/",
+          "published": "2026-11-11T17:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/products/developer-tools/emulator/\">AWS Emulator</a> is now available for building and testing AWS applications locally.</p> \n<p>Starting today, you can use AWS Emulator to build and test AWS applications on your computer or in your continuous integration (CI) environment. Your existing AWS SDK and CLI calls go to AWS Emulator and come back in milliseconds, so you and your coding agents can find and fix errors locally, with no deployments or AWS account required.</p> \n<p>You create and manage resources with the same AWS SDK and AWS CLI calls you use with AWS, signed with credentials the emulator provides. <i>For the operations it supports, AWS Emulator returns the same result as AWS for valid calls and the same errors for invalid ones. Operations it doesn’t yet support return 501 Not Implemented.</i>&nbsp;AWS Emulator keeps the state of your resources in memory until you stop it. Each copy you start gets its own port, keys and in-memory state, so agents, test suites, and CI jobs never see each other’s resources. For example, a coding agent can create an Amazon DynamoDB table, test against it offline, and fix its code before it deploys.</p> \n<p>Services in AWS Emulator are generated from the API models AWS publishes, the same models behind the AWS SDKs. When AWS adds a service or API, it shows up in AWS Emulator, and its behavior is filled in and verified release by release. To see how its responses compare to AWS, review the <a href=\"http://docs.aws.amazon.com/emulator/latest/userguide/fidelity.html\">AWS Emulator fidelity report</a>.</p> \n<p>AWS Emulator doesn’t depend on an AWS Region. AWS Emulator has no additional service fee. You pay only for AWS resources when you deploy to AWS. Its source code is published under the CC0 1.0 Universal public domain dedication. To get started, see the <a href=\"https://docs.aws.amazon.com/emulator\">AWS Emulator documentation</a>, or view the source in the <a href=\"https://github.com/aws/aws-emulator\">AWS Emulator GitHub repository</a>.</p>",
+          "categories": [
+            "general:products/aws-tools-and-sdks,general:products/aws-command-line-interface,marketing:marchitecture/developer-tools"
+          ]
+        },
+        {
+          "title": "AWS Quick apps are now available in Asia Pacific (Singapore)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-apps-available-in-asia-pacific-singapore/",
+          "published": "2026-11-11T15:20:00+00:00",
+          "summary": "<p>The AWS Quick desktop app for macOS and Windows and the Quick mobile app for iOS and Android are now available in the Asia Pacific (Singapore) Region. This launch builds on the recent <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-quick-now-available-in-the-aws-singapore-region/\">availability of Quick in Singapore</a>.</p> \n<p>The desktop app works with your local files and connects to your calendar, email, and business apps. The mobile app lets you chat with Quick, review your activity feed, and open dashboards. Your conversations, context, and agents stay in sync across web, desktop, and mobile, so you can start an agent on your desktop, check on it from your phone, and let it keep running after you close your computer.&nbsp;</p> \n<p>To get started, download the desktop app from the <a href=\"https://aws.amazon.com/quick/download/\">AWS Quick download page</a> or the mobile app from the <a href=\"https://apps.apple.com/us/app/amazon-quick/id1148226615\">Apple App Store</a> or <a href=\"https://play.google.com/store/apps/details?id=com.amazonaws.quicksight.mobile&amp;hl=en_US&amp;trk=e0dcca02-d7b6-48fd-a721-6f3538a9b485&amp;sc_channel=el\" target=\"_blank\">Google Play</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/amazon-quick-mobile.html\">AWS Quick on mobile</a> in the AWS Quick User Guide and the <a href=\"https://aws.amazon.com/quick/\">AWS Quick product page</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/business-productivity,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Amazon SES now supports higher limits for email identities, tenants, and configuration sets",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ses-higher-resource-limits/",
+          "published": "2026-11-11T08:00:00+00:00",
+          "summary": "<p>Amazon Simple Email Service (Amazon SES) now supports higher limits for email identities, tenants, and configuration sets. You can view your current usage against each limit and request increases in the AWS Service Quotas console. A single account can now keep pace with your growth, so you no longer need to split email workloads across several accounts to stay within per-account limits.</p> \n<p>Customers running multi-tenant workloads often create a separate email identity, tenant, or configuration set for each customer, brand, or AI agent they serve. As you add more customers, brands, and AI agents, these resources can multiply quickly, and higher limits let all of these workloads grow in one account. To help you manage larger accounts, you can now also search these resources by name or status.</p> \n<p>Higher limits for email identities, tenants, and configuration sets are available in all AWS Regions where Amazon SES is available.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/ses/latest/dg/quotas.html\">Service quotas in Amazon SES</a> in the <i>Amazon SES Developer Guide</i> and the <a href=\"https://aws.amazon.com/ses/\">Amazon SES</a> product page.</p>",
+          "categories": [
+            "general:products/amazon-ses"
+          ]
+        },
         {
           "title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-and-cost-management-multi-source-custom-billing-views",
@@ -138,19 +237,21 @@
           ]
         },
         {
-          "title": "Amazon DocumentDB (with MongoDB compatibility) now supports post-quantum TLS, wildcard indexes, and $unionWith in version 8.0.3",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-8-0-3/",
-          "published": "2026-11-10T00:00:00+00:00",
-          "summary": "<p>Amazon DocumentDB (with MongoDB compatibility) 8.0.3 adds hybrid post-quantum key exchange for TLS, wildcard indexes, the $unionWith aggregation stage, and new change stream events. Post-quantum TLS protects data in transit from traffic that is recorded today and decrypted later with a quantum computer. The new MongoDB APIs let you move more MongoDB workloads to Amazon DocumentDB without changing application code.</p> \n<p>What's new in 8.0.3:</p> \n<ul> \n <li><p>Post-quantum TLS: TLS 1.3 connections use hybrid key exchange based on the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) when the client supports it. Other clients keep using classical key exchange. Two new Amazon CloudWatch metrics, TLSHandshakesClassical and TLSHandshakesPostQuantum, count the handshakes of each type.</p> </li> \n</ul> \n<ul> \n <li><p>Wildcard indexes: index every field, or every field under a path, to query documents with dynamic schemas.</p> </li> \n</ul> \n<ul> \n <li><p>Aggregation: $unionWith combines results from multiple collections in one pipeline. $lookup and $graphLookup work in views, and correlated $lookup sub-pipelines accept $unionWith and $facet.</p> </li> \n</ul> \n<ul> \n <li><p>Change streams: dropIndex() and dropIndexes() now emit dropIndexes events.</p> </li> \n</ul> \n<ul> \n <li><p>Compression metrics: collStats and stats() report per-collection input bytes, output bytes, and compression ratio.</p> </li> \n</ul> \n<p>Amazon DocumentDB 8.0.3 is available in all AWS Regions where Amazon DocumentDB is offered. To learn more, see the <a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/\" target=\"_blank\">Amazon DocumentDB Developer Guide</a>.</p>",
-          "categories": []
-        },
-        {
           "title": "Amazon Bedrock AgentCore now offers a Web Search API",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
           "published": "2026-11-10T00:00:00+00:00",
           "summary": "<p>Today, AWS announces the general availability of the Web Search API on Amazon Bedrock AgentCore, which lets you search the web with a single API call. Web Search on AgentCore has been available as an MCP tool through AgentCore Gateway. The new InvokeWebSearch API gives applications, custom agent loops, and data pipelines search results with no resources to create.</p> \n<p>The API returns ranked results from the Amazon-operated web index behind Web Search on AgentCore. Each result includes a text extract and, when available, the page title, URL, and publication time. You can filter each request by domain and publication time, for example to find recent product announcements or check a claim against trusted domains.</p> \n<p>You call the API with the AWS SDKs or the AWS Command Line Interface (AWS CLI) and authorize calls with AWS Identity and Access Management (IAM). You can call it from your virtual private cloud (VPC) through AWS PrivateLink and log requests as AWS CloudTrail data events. Web Search API queries are billed at $7 per 1,000 queries, the same rate as Web Search through AgentCore Gateway, with no gateway charges.</p> \n<p>The Web Search API is available in US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Ireland). To learn more, see&nbsp;<a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/web-search-api.html\">Search the web with the InvokeWebSearch API</a>&nbsp;in the AgentCore Developer Guide, the&nbsp;<a href=\"https://aws.amazon.com/bedrock/grounding/web-search/\">Web Search&nbsp;</a> page, and <a href=\"https://aws.amazon.com/bedrock/agentcore/pricing/\">AgentCore pricing&nbsp;</a>.</p>",
           "categories": [
             "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Amazon DocumentDB (with MongoDB compatibility) now supports post-quantum TLS, wildcard indexes, and $unionWith in version 8.0.3",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-8-0-3/",
+          "published": "2026-11-10T00:00:00+00:00",
+          "summary": "<p>Amazon DocumentDB (with MongoDB compatibility) 8.0.3 adds hybrid post-quantum key exchange for TLS, wildcard indexes, the $unionWith aggregation stage, and new change stream events. Post-quantum TLS protects data in transit from traffic that is recorded today and decrypted later with a quantum computer. The new MongoDB APIs let you move more MongoDB workloads to Amazon DocumentDB without changing application code.</p> \n<p>What's new in 8.0.3:</p> \n<ul> \n <li><p>Post-quantum TLS: TLS 1.3 connections use hybrid key exchange based on the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) when the client supports it. Other clients keep using classical key exchange. Two new Amazon CloudWatch metrics, TLSHandshakesClassical and TLSHandshakesPostQuantum, count the handshakes of each type.</p> </li> \n</ul> \n<ul> \n <li><p>Wildcard indexes: index every field, or every field under a path, to query documents with dynamic schemas.</p> </li> \n</ul> \n<ul> \n <li><p>Aggregation: $unionWith combines results from multiple collections in one pipeline. $lookup and $graphLookup work in views, and correlated $lookup sub-pipelines accept $unionWith and $facet.</p> </li> \n</ul> \n<ul> \n <li><p>Change streams: dropIndex() and dropIndexes() now emit dropIndexes events.</p> </li> \n</ul> \n<ul> \n <li><p>Compression metrics: collStats and stats() report per-collection input bytes, output bytes, and compression ratio.</p> </li> \n</ul> \n<p>Amazon DocumentDB 8.0.3 is available in all AWS Regions where Amazon DocumentDB is offered. To learn more, see the <a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon DocumentDB Developer Guide</a>.</p>",
+          "categories": [
+            "general:products/amazon-documentdb"
           ]
         },
         {
@@ -323,19 +424,19 @@
           ]
         },
         {
-          "title": "Amazon MWAA Serverless supports Apache Airflow connections and variables",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-serverless-connections-variables/",
+          "title": "Amazon MWAA Serverless now supports custom and provider package operators",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-serverless-custom-operators/",
           "published": "2026-11-06T18:00:00+00:00",
-          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Serverless now supports Apache Airflow connections and variables, so your workflows can reach databases, APIs, and other external systems. You can manage credentials and configuration outside your workflow code.</p>\n<p>You store sensitive connections and variables in the secrets backend of your choice, such as AWS Secrets Manager, AWS Systems Manager Parameter Store, or your own custom backend, configure it on your workflow, and grant your workflow execution role access. Tasks retrieve them at run time through standard Apache Airflow methods. You can define non-secret values as environment variables on the workflow.</p>\n<p>This feature is available in all AWS Regions where Amazon MWAA Serverless is available. For more information, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html#regions\" target=\"_blank\">Amazon MWAA Serverless Regions</a>.</p>\n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/connections.html\" target=\"_blank\">Managing connections and variables</a> and <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/workflows-environment-variables.html\" target=\"_blank\">Using environment variables in Amazon MWAA Serverless workflows</a> in the Amazon MWAA Serverless User Guide.</p>",
+          "summary": "<p>Amazon MWAA Serverless now supports operators from Apache Airflow provider packages, such as HTTP, Snowflake, or dbt, and custom operators that you write. This gives data engineers the flexibility to integrate with more systems and build specialized workflow tasks without provisioning infrastructure.</p>\n<p>To get started, add the provider package or your own operator to a code package, upload it to Amazon S3, and reference the operator in your workflow definition when you create or update a workflow.</p>\n<p>This feature is available in all AWS Regions where Amazon MWAA Serverless is available. For a list of supported Regions, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html#regions\" target=\"_blank\">Amazon MWAA Serverless Regions</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/custom-code-operators.html\" target=\"_blank\">Running custom code with Python, Bash, and custom operators</a> in the Amazon MWAA Serverless User Guide.</p>",
           "categories": [
             "marketing:marchitecture/analytics,general:products/amazon-mwaa"
           ]
         },
         {
-          "title": "Amazon MWAA Serverless now supports custom and provider package operators",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-serverless-custom-operators/",
+          "title": "Amazon MWAA Serverless supports Apache Airflow connections and variables",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-serverless-connections-variables/",
           "published": "2026-11-06T18:00:00+00:00",
-          "summary": "<p>Amazon MWAA Serverless now supports operators from Apache Airflow provider packages, such as HTTP, Snowflake, or dbt, and custom operators that you write. This gives data engineers the flexibility to integrate with more systems and build specialized workflow tasks without provisioning infrastructure.</p>\n<p>To get started, add the provider package or your own operator to a code package, upload it to Amazon S3, and reference the operator in your workflow definition when you create or update a workflow.</p>\n<p>This feature is available in all AWS Regions where Amazon MWAA Serverless is available. For a list of supported Regions, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html#regions\" target=\"_blank\">Amazon MWAA Serverless Regions</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/custom-code-operators.html\" target=\"_blank\">Running custom code with Python, Bash, and custom operators</a> in the Amazon MWAA Serverless User Guide.</p>",
+          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Serverless now supports Apache Airflow connections and variables, so your workflows can reach databases, APIs, and other external systems. You can manage credentials and configuration outside your workflow code.</p>\n<p>You store sensitive connections and variables in the secrets backend of your choice, such as AWS Secrets Manager, AWS Systems Manager Parameter Store, or your own custom backend, configure it on your workflow, and grant your workflow execution role access. Tasks retrieve them at run time through standard Apache Airflow methods. You can define non-secret values as environment variables on the workflow.</p>\n<p>This feature is available in all AWS Regions where Amazon MWAA Serverless is available. For more information, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html#regions\" target=\"_blank\">Amazon MWAA Serverless Regions</a>.</p>\n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/connections.html\" target=\"_blank\">Managing connections and variables</a> and <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/workflows-environment-variables.html\" target=\"_blank\">Using environment variables in Amazon MWAA Serverless workflows</a> in the Amazon MWAA Serverless User Guide.</p>",
           "categories": [
             "marketing:marchitecture/analytics,general:products/amazon-mwaa"
           ]
@@ -348,109 +449,67 @@
           "categories": [
             "general:products/amazon-msk,marketing:marchitecture/analytics"
           ]
-        },
-        {
-          "title": "Amazon Redshift expands SUPER data type to store strings up to 16 million bytes",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-redshift-expands-super-to-16-million-bytes/",
-          "published": "2026-11-06T16:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/redshift/\">Amazon Redshift</a> now supports individual strings up to 16 million bytes within <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_SUPER_type.html\">SUPER data types</a>. Once you opt in through a database parameter, this enhancement applies when ingesting structured or semi-structured data from JSON, PARQUET, TEXT, and CSV source files, and when transforming data through extract load and transform (ELT) processes. Previously, individual strings within SUPER data types were limited to 65,535 bytes.</p> \n<p>Storing large individual strings in the SUPER data type helps avoid complex pre-loading transformations needed to store the source data in Amazon Redshift. You can now directly ingest large individual strings greater than 65,535 bytes without extra processing (for example, lengthy documents like terms and conditions and contracts), making them queryable using SQL. Once the data is in Amazon Redshift, you can use the flexibility of PartiQL language to explore and navigate through the data or use string functions to transform the data.&nbsp;Functions such as <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/JSON_PARSE.html\">JSON_PARSE</a>, <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_CONCAT.html\">CONCAT</a>, and <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html\">LISTAGG</a> can now take input strings and return output strings up to 16 million bytes in length.</p> \n<p>This enhancement is available in all AWS Regions, including the AWS GovCloud (US) Regions, where Amazon Redshift is available. See the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" style=\"background-color: rgb(255,255,255);\">AWS Region Table</a> for more details. To learn more, please visit our <a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_enable_large_strings_opt_in.html\" style=\"background-color: rgb(255,255,255);\">documentation</a> or <a href=\"http://aws.amazon.com/blogs/big-data/store-and-process-large-strings-in-amazon-redshift-super-columns\">blog</a>.&nbsp;&nbsp;</p>",
-          "categories": []
-        },
-        {
-          "title": "AWS launches support for amortization of EC2 Capacity Blocks for ML",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/",
-          "published": "2026-11-06T15:00:00+00:00",
-          "summary": "<p>AWS Data Exports for Cost and Usage Report (CUR) 2.0 and AWS Cost Explorer now amortize the upfront fee for Amazon EC2 Capacity Blocks for ML across the duration of each reservation. You can see the amortized cost of each instance launched into a Capacity Block and the amortized cost of unused capacity, so you can attribute your upfront fee to the workloads that used it and identify capacity that went unused.</p> \n<p>Previously, a Capacity Block's upfront fee appeared as a single charge on the purchase date, making it difficult to see how that cost was spread across usage over the reservation. Now the amortized cost appears alongside your instance usage, so you can allocate GPU costs to the teams, projects, and applications that ran on the reserved capacity. You can also see what share of your reservation went unused and plan future Capacity Block purchases. In CUR 2.0, the amortized costs appear in the reservation_amortized_upfront_fee_for_billing_period, reservation_effective_cost columns, and reservation_net_effective_cost shows the amortized cost after discounts. In Cost Explorer, select the amortized cost view to see Capacity Block costs allocated for&nbsp;the reservation.</p> \n<p>&nbsp;Amortization for Capacity Blocks is available at no additional charge in all AWS Regions except the AWS GovCloud (US) Regions and the China Regions. To learn more, see the <a href=\"https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2.html\">CUR 2.0 data dictionary</a> and <a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/ce-exploring-data.html\">exploring your data using Cost Explorer</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/cost-management"
-          ]
-        },
-        {
-          "title": "Capacity Reservation Resource Groups now support Amazon EC2 Capacity Blocks and interruptible Capacity Reservations in AWS GovCloud (US) Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/capacity-reservation-resource-groups-support-in-aws-govcloud-regions",
-          "published": "2026-11-06T14:00:00+00:00",
-          "summary": "<p>Starting today, you can add Amazon EC2 Capacity Blocks for ML and interruptible Capacity Reservations to Capacity Reservation Resource Groups in AWS GovCloud (US) Regions. Amazon EC2 offers different reservation offerings such as On-Demand Capacity Reservations (ODCRs), interruptible Capacity Reservations, and Capacity Blocks for ML. Previously, a Capacity Reservation Resource Group could only include ODCRs. Now you can add any type of Capacity Reservation to a Capacity Reservation Resource Group, making it easier to launch EC2 instances across your entire portfolio of reserved capacity.</p> \n<p>To use this feature, create a Capacity Reservation Resource Group, add any Capacity Reservation to it, and then target the group in your launch request. When using EC2 Fleet and EC2 Auto Scaling groups, you can also specify your prioritization preferences across reservation types, and configure automatic fall back to EC2 On-Demand capacity when there is no capacity remaining across your reservations.</p> \n<p>There are no additional charges for using this feature. With the addition of AWS GovCloud (US) Regions, this feature is now available in all AWS Regions where Capacity Blocks for ML and interruptible ODCRs are supported, excluding China Regions. To get started, see <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cr-group.html\">Capacity Reservation Resource Groups</a> and the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html\">Capacity Reservations user guide</a>.</p>",
-          "categories": [
-            "general:products/amazon-ec2,general:products/aws-govcloud-us"
-          ]
-        },
-        {
-          "title": "Amazon Simple Email Service is now available in six new AWS Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-simple-email-service-new-aws-regions/",
-          "published": "2026-11-06T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/ses/\">Amazon Simple Email Service (Amazon SES)&nbsp;</a> is now available in the Asia Pacific (New Zealand, Melbourne, Taipei, Thailand), Mexico (Central), EU (Spain). Customers can now use these new Regions to leverage Amazon SES to send emails and, if needed, to help manage data requirements.</p> \n<p>Amazon SES is a scalable, cost-effective, and flexible cloud-based email service that allows digital marketers and application developers to send marketing, notification, and transactional emails from within any application. To learn more about Amazon SES, visit this&nbsp;<a href=\"https://aws.amazon.com/ses/\">page&nbsp;</a>.</p> \n<p>With this launch, Amazon SES is available in 35 AWS Regions globally: US East (N. Virginia, Ohio), US West (N. California, Oregon), AWS GovCloud (US-West, US-East), Asia Pacific (Osaka, Mumbai, Hyderabad, Sydney, Singapore, Seoul, Tokyo, Jakarta, Malaysia, New Zealand, Melbourne, Taipei, Thailand), Canada (Central, Calgary), EU (Ireland, Frankfurt, London, Paris, Stockholm, Milan, Zurich,Spain), Middle East (Bahrain, UAE), Israel (Tel Aviv), South America (Sao Paulo), Mexico (Central) and Africa (Cape Town).</p> \n<p>For a complete list of all of the regional endpoints for Amazon SES, see &nbsp;<a href=\"https://docs.aws.amazon.com/general/latest/gr/ses.html\">AWS Service Endpoints&nbsp;</a> in the AWS General Reference.</p>",
-          "categories": [
-            "general:products/amazon-simple-email-service,marketing:marchitecture/applications"
-          ]
-        },
-        {
-          "title": "AWS Glue Data Catalog now supports catalog-vended credentials with Apache Iceberg REST catalog federation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/glue-catalog-vended-credentials-iceberg/",
-          "published": "2026-11-06T08:00:00+00:00",
-          "summary": "<p>AWS Glue Data Catalog now supports external catalog's vended credentials in Apache Iceberg REST catalog federation. You can now read external Iceberg tables from Amazon Athena, Amazon EMR, Amazon Redshift, and AWS Glue using coarse-grained table grants in your external Iceberg catalog.</p> \n<p>Glue Data Catalog already federates to external Iceberg REST catalogs through an AWS IAM role that you configure with access to your Amazon S3 buckets. This enhancement in Glue Data Catalog provides another way to connect to an external Iceberg catalog and read only the tables that the external catalog authorizes. It uses temporary security credentials that are scoped to the Amazon S3 storage prefix and vended by your external Iceberg catalog. AWS Lake Formation manages access control when you query an external table using any AWS analytics engine, letting you restrict access further down to specific rows and columns and share external Iceberg tables across AWS accounts.</p> \n<p>This feature is available through the AWS Lake Formation Management Console, AWS CLI, and the AWS Glue and Lake Formation SDKs. This feature is available in all commercial AWS Regions where Glue and Lake Formation are supported. To learn more, visit the <a href=\"https://docs.aws.amazon.com/lake-formation/latest/dg/catalog-federation.html\">documentation</a>.</p>",
-          "categories": [
-            "general:products/aws-glue,marketing:marchitecture/analytics,general:products/amazon-emr,general:products/aws-lake-formation,general:products/amazon-athena"
-          ]
-        },
-        {
-          "title": "AWS Elemental MediaConvert adds a native integration with AWS Elemental Inference Smart Subtitles",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
-          "published": "2026-11-06T08:00:00+00:00",
-          "summary": "<p>​​AWS Elemental MediaConvert now integrates Smart Subtitles, an AI-powered subtitling solution built on AWS Elemental Inference and the latest speech recognition models. This feature brings automated subtitle generation directly into your video-on-demand (VOD) transcoding and packaging workflows, eliminating the need for separate external captioning pipelines. Customers can now manage both transcoding and subtitle creation within a single, unified workflow.</p> \n<p>​Smart subtitles automatically transcribe your audio into subtitles with native support for six languages including English, French, German, Italian, Portuguese, and Spanish. With MediaConvert, you can package the outputs to text-based side-car formats and burn-in for all your streaming or distribution needs. To enhance transcription quality, you can now define custom dictionaries in Elemental Inference to guide the model on proper nouns, brand names, technical terminology, and more. Smart subtitles complement existing add-on features such as Smart Cropping for end-to-end media pipelines, intelligent framing and accessible subtitle delivery in distribution-ready formats like HLS and DASH.​</p> \n<p>​​Smart subtitles is available in all AWS regions where Elemental Inference is available including US East (N. Virginia), US West (Oregon), Europe (Ireland), Asia Pacific (Mumbai), and Asia Pacific (Sydney).​</p> \n<p>To learn more, visit <a href=\"https://docs.aws.amazon.com/mediaconvert/latest/ug/smart-subtitling-with-elemental-inference.html\">Smart subtitles with MediaConvert,</a> <a href=\"https://aws.amazon.com/mediaconvert/\">AWS Elemental MediaConvert</a>&nbsp; and <a href=\"https://docs.aws.amazon.com/elemental-inference/latest/userguide/create-feed-outputs.html#create-feed-console-smart-subtitles\">AWS Elemental Inference smart subtitles.</a></p>",
-          "categories": [
-            "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/media-services,general:products/aws-elemental-mediaconvert"
-          ]
-        },
-        {
-          "title": "AWS Security Hub now provides an SBOM inventory for your compute resources",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/",
-          "published": "2026-11-06T00:30:00+00:00",
-          "summary": "<p>Today, AWS announces that AWS Security Hub now provides a Software Bill of Materials (SBOM) inventory, giving central security teams a continuously updated, organization-wide view of the software packages and applications installed on their compute resources.</p> \n<p>Security Hub builds the inventory from the SBOMs that Amazon Inspector generates for Amazon EC2 instances, Amazon ECR container images, and AWS Lambda functions, with no additional configuration. The SBOM page lists each package with its version, type, and the number of resources where it is installed. You can filter and group the list by package attributes, account, and region. On the resource detail page, the Installed software tab lists every package on that resource, so you can judge its function and criticality while triaging any finding. You can also query the inventory through the Security Hub API.</p> \n<p>The SBOM inventory is included with Security Hub Essentials at no additional cost. It requires no new enablement and populates automatically where Amazon Inspector is enabled. It is available in all AWS Regions where Security Hub is available. To learn more, see the <a href=\"https://docs.aws.amazon.com/securityhub/latest/userguide/\">AWS Security Hub User Guide</a> and the <a href=\"https://aws.amazon.com/security-hub/\">AWS Security Hub product page</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,general:products/aws-security-hub"
-          ]
-        },
-        {
-          "title": "AWS Interconnect - last mile announces new metro in Northern Virginia, USA",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-northern-virginia/",
-          "published": "2026-11-05T21:30:00+00:00",
-          "summary": "<p>Today, AWS announced a new AWS Interconnect - last mile metro in Northern Virginia, USA. Northern Virginia joins New York as the second metro where you can connect your data center, branch office, or colocation facility to AWS.&nbsp;</p> \n<p>AWS Interconnect - last mile gives you managed, private, resilient connections to AWS, so you don't have to order cross-connects or configure routers. Every connection is provisioned by default across two physically diverse locations with four redundant links, providing maximum resilience out of the box and backed by a 99.99% availability SLA up to the Direct Connect port. Traffic between AWS and partner edge devices is encrypted with MACsec by default.</p> \n<p>Lumen customers anywhere in the continental United States can order generally available connections through the Northern Virginia metro to reach all public AWS Regions (except those in China) and AWS Local Zones. AWS Interconnect - last mile is also available in preview through Megaport and Equinix in the Northern Virginia metro. You can create connections using the AWS Management Console, AWS CLI, or AWS Interconnect API. For pricing, see <a href=\"https://aws.amazon.com/interconnect/lastmile/pricing/\">AWS Interconnect - last mile pricing</a>.</p>",
-          "categories": [
-            "general:products/aws-direct-connect,marketing:marchitecture/networking-and-content-delivery"
-          ]
-        },
-        {
-          "title": "Announcing Web Answer on Amazon Bedrock AgentCore",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-answer-amazon-bedrock/",
-          "published": "2026-11-05T20:56:00+00:00",
-          "summary": "<p>Today, we are announcing the general availability of Web Answer on Amazon Bedrock AgentCore. Web Answer is a managed tool that returns a synthesized, grounded, cited answer to a natural-language question in a single call, so agent builders can attach it to an agent and get back a finished answer grounded in current web sources, without building and maintaining their own search, retrieve, synthesis, and citation pipeline.&nbsp;</p> \n<p>Web Answer builds on Web Search on Amazon Bedrock AgentCore, which launched in June, extending it from \"find the web content\" to \"return the finished answer,\" a capability customers have been asking for. With Web Answer, your agent sends a question and receives a synthesized cited answer in one tool call. Web Answer works like an agent; it plans its own searches, runs several in parallel, and decides when it has gathered enough evidence to answer. You stay in control of the boundaries, with domain include, deny lists and publish-date filters that scope where it looks. It attaches as a target on an AgentCore Gateway and is called over MCP, authenticated with IAM, with zero data egress.&nbsp;</p> \n<p>Web Answer is available in the US East (N. Virginia) Region, with per-tool call pricing.&nbsp;</p> \n<p>To learn more about Web Answer on Amazon Bedrock AgentCore, see Web Answer’s documentation <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-answer-tool.html\">page</a> and Web Answer’s <a href=\"http://aws.amazon.com/bedrock/grounding/web-answer/\">website</a>. For Region availability, see the AWS Region <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html\">table</a>.&nbsp;</p>",
-          "categories": [
-            "general:products/amazon-bedrock"
-          ]
-        },
-        {
-          "title": "AWS Network Load Balancer is now available in the AWS Phoenix Local Zone",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-nlb-available-phx-local-zone/",
-          "published": "2026-11-05T20:00:00+00:00",
-          "summary": "<p>AWS Network Load Balancer is now available in the Phoenix Local Zone (us-west-2-phx-2a). AWS Local Zones is a type of AWS infrastructure deployment that places AWS compute, storage, database, and other select services closer to large population, industry, and IT centers where no AWS Region exists today.</p> \n<p>With this launch, you can create an AWS Network Load Balancer directly in the Phoenix Local Zone. Previously, if your targets ran in the Phoenix Local Zone, you had to place the load balancer in an Availability Zone in the parent Region, so connections and their traffic had to travel to the parent Region and back. This added latency and routed traffic outside the zone where your application runs. Now, connection routing stays local to your targets, delivering lower and more consistent latency to end users in the Phoenix metro area and keeping traffic within the Local Zone. This is especially valuable for latency-sensitive workloads such as real-time gaming, media streaming, and live financial applications serving users in the region.</p> \n<p>To learn more about Network Load Balancer, visit the <a href=\"https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html\">documentation</a>. For more information on AWS Local Zones, visit the <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/\">AWS Local Zones website</a>. The <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/\">Locations webpage</a> lists the available and announced Local Zones. You can enable AWS Local Zones from the <a href=\"https://us-east-1.console.aws.amazon.com/awsglobalview/home#RegionsAndZones:tabId=lz\">Local Zones </a>tab in the AWS Global View console, or the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAvailabilityZoneGroup.html\">ModifyAvailabilityZoneGroup</a> API.</p>",
-          "categories": [
-            "marketing:marchitecture/compute,general:products/amazon-elastic-load-balancing,marketing:marchitecture/global-infrastructure,marketing:marchitecture/networking,general:products/aws-local-zones"
-          ]
-        },
-        {
-          "title": "Amazon DynamoDB now supports bulk put items",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-dynamodb-now-supports-bulk-put-items/",
-          "published": "2026-11-05T18:00:00+00:00",
-          "summary": "<p>Today, AWS announces the general availability of bulk put items for Amazon DynamoDB, a fully managed feature that writes data from Amazon S3 into your existing DynamoDB tables. Many DynamoDB applications use data that other systems produce and store in Amazon S3. Writing this data into existing DynamoDB tables has typically meant building custom pipelines and managing table capacity. With bulk put items, developers and data engineers can write this data without impacting existing workloads or building a custom ingestion pipeline, in a cost-efficient way.</p> \n<p>You point bulk put items at the S3 location of your input files, and DynamoDB handles the rest. Each item supports its own condition expression, so you can enforce insert-only or version-guarded writes. The Standard tier fits most workloads, and the Accelerated tier is for more time-sensitive workloads. Common use cases include daily refreshes, large catalog enrichments, backfills, and migrations.</p> \n<p>Bulk put items with Standard tier is available in all commercial AWS Regions and the AWS GovCloud (US) Regions, to see the list where the Accelerated tier is available see the <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.Tiers.html#BulkPutItems.Tiers.Accelerated\" target=\"_blank\">regional availability.</a> To learn more, visit the <a href=\"https://aws.amazon.com/blogs/database/introducing-bulk-put-items-for-amazon-dynamodb-load-data-from-amazon-s3-into-existing-tables-at-scale/\" target=\"_blank\">Introducing bulk put items for Amazon DynamoDB</a> blog and the <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.HowItWorks.html\" target=\"_blank\">Amazon DynamoDB Developer Guide</a>.</p>",
-          "categories": [
-            "general:products/amazon-dynamodb,marketing:marchitecture/databases"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "【開催報告 & 資料公開】Claude Mythos 時代の AWS セキュリティ対策 ～ AWS Security Agent ご紹介 ～",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-jpps-seminar-2026-july/",
+          "published": "2026-11-12T01:20:54+00:00",
+          "summary": "こんにちは。アマゾン ウェブ サービス ジャパン合同会社 パートナーソリューションアーキテクトの深井宣之です。 […]",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon GuardDuty",
+            "Amazon Inspector",
+            "AWS Lambda",
+            "AWS Security Hub",
+            "AWS WAF",
+            "AWS Partner Network"
+          ]
+        },
+        {
+          "title": "AWS re:Invent 2026 で見逃せないデジタル主権関連セッション",
+          "link": "https://aws.amazon.com/jp/blogs/news/digital-sovereignty-at-reinvent-2026-sessions-you-wont-want-to-miss/",
+          "published": "2026-11-12T00:02:08+00:00",
+          "summary": "2026 年 11 月 30 日～12 月 4 日にラスベガスで開催される AWS re:Invent 2026 から、デジタル主権に関するブレイクアウトセッション、チョークトーク、ワークショップ、ライトニングトークを 5 つのテーマ別に紹介します。AWS European Sovereign Cloud による運用上の自律性、データレジデンシー要件下での AI ワークロードの配置、AWS Outposts や AWS 専有ローカルゾーンなどのインフラストラクチャの選び方、ディザスタリカバリとパーティション間接続、業界別のデジタル主権を取り上げます。",
+          "categories": [
+            "Announcements",
+            "AWS re:Invent",
+            "Events",
+            "Foundational (100)",
+            "Security, Identity, & Compliance",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "業務部門が自分で改善できる AI Ready Data を作る ― AI がどれだけ賢くなっても解決できないこと",
+          "link": "https://aws.amazon.com/jp/blogs/news/%E6%A5%AD%E5%8B%99%E9%83%A8%E9%96%80%E3%81%8C%E8%87%AA%E5%88%86%E3%81%A7%E6%94%B9%E5%96%84%E3%81%A7%E3%81%8D%E3%82%8B-ai-ready-data-%E3%82%92%E4%BD%9C%E3%82%8B-%E2%80%95-ai-%E3%81%8C%E3%81%A9%E3%82%8C/",
+          "published": "2026-11-11T23:44:21+00:00",
+          "summary": "このブログでは、IHI 様と AWS プロフェッショナルサービスチームが、業務部門の悩みを AI で解決するた […]",
+          "categories": [
+            "Amazon Bedrock",
+            "Amazon Machine Learning",
+            "Amazon Neptune",
+            "Artificial Intelligence",
+            "AWS Professional Services",
+            "Customer Enablement",
+            "Database",
+            "General"
+          ]
+        },
+        {
+          "title": "Kiro の「Approve for me」のご紹介",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-approve-for-me/",
+          "published": "2026-11-11T05:29:19+00:00",
+          "summary": "2026 年 11 月 10 日、Kiro IDE、Kiro CLI、Kiro Web で「Approve for me」の提供を始めました。Approve for me を有効にすると、ルールで決まっていない操作について、Kiro が LLM によるレビューを行います。",
+          "categories": [
+            "Developer Tools",
+            "Kiro"
+          ]
+        },
         {
           "title": "製造業 7 社が率直に語った AI エージェント全社基盤の実践と課題：生成 AI 基盤・活用推進 ラウンドテーブル 2026年10月 開催報告",
           "link": "https://aws.amazon.com/jp/blogs/news/genai-roundtable-202610/",
@@ -519,65 +578,6 @@
             "AWS Transform",
             "Generative AI",
             "Windows on AWS"
-          ]
-        },
-        {
-          "title": "【開催報告】ランサムウェアに備える「防御」「復旧」「説明責任」— AI エージェント時代に見直す対策と次の一歩",
-          "link": "https://aws.amazon.com/jp/blogs/news/ransomware-security-seminar-oct-2026/",
-          "published": "2026-11-10T01:03:44+00:00",
-          "summary": "2026 年 10 月 26 日に開催したセキュリティセミナーの開催報告です。「防御・検知」「説明責任」「復旧」の 3 つの軸で、AWS とパートナー 5 社のセッション内容と、軸ごとにまず着手したい対策をまとめました。",
-          "categories": [
-            "Amazon GuardDuty",
-            "AWS Backup",
-            "AWS Security Hub",
-            "Events",
-            "Partner solutions",
-            "Security",
-            "Storage"
-          ]
-        },
-        {
-          "title": "インフラストラクチャの移行: AWS re:Invent 2026 完全ガイド",
-          "link": "https://aws.amazon.com/jp/blogs/news/infrastructure-migrations-your-complete-aws-reinvent-2026-guide/",
-          "published": "2026-11-10T00:58:06+00:00",
-          "summary": "AWS re:Invent 2026 (11 月 30 日〜12 月 4 日、ラスベガス) では、AWS Transform のエージェント型 AI が移行ライフサイクル全体をどのように自動化するかを紹介するセッションが多数用意されています。本記事では、移行戦略とお客様事例、ビジネスケースの構築、AWS Transform と Amazon EVS のハンズオンセッション、AWS Outposts への移行、そして移行後のモダナイゼーションまで、インフラ移行に関するセッションを厳選して紹介します。",
-          "categories": [
-            "Amazon Elastic VMware Service (Amazon EVS)",
-            "Announcements",
-            "AWS Transform",
-            "Migration"
-          ]
-        },
-        {
-          "title": "Amazon Bedrock を活用したアプリケーションの設計に信頼と安全性を組み込む",
-          "link": "https://aws.amazon.com/jp/blogs/news/designing-trust-and-safety-into-amazon-bedrock-powered-applications/",
-          "published": "2026-11-10T00:18:41+00:00",
-          "summary": "Amazon Bedrock を活用した生成 AI アプリケーションでは、設計段階から安全性を組み込むことが重要です。本記事では、責任ある AI の主要な側面と、設計と開発、デプロイ、運用の各フェーズで安全性を確保するための考え方を解説します。さらに、Amazon CloudWatch による監視や Amazon Bedrock Guardrails による保護措置のカスタマイズなど、不正使用を防止する方法を紹介します。AWS Trust &amp; Safety チームから不正使用の報告を受けた際の対応プロセスも説明します。",
-          "categories": [
-            "Amazon Bedrock",
-            "Best Practices",
-            "Foundational (100)",
-            "Security, Identity, & Compliance",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "Amazon Bedrock AgentCore Policy がエージェンティックワークフローの保護に Cedar を採用した理由",
-          "link": "https://aws.amazon.com/jp/blogs/news/why-policy-in-amazon-bedrock-agentcore-chose-cedar-for-securing-agentic-workflows/",
-          "published": "2026-11-10T00:09:29+00:00",
-          "summary": "AI エージェントの中核にある大規模言語モデル (LLM) は非決定論的で、ハルシネーションやプロンプトインジェクションのリスクがあります。本記事では、LLM を信頼できないアクターとして扱う考え方を説明します。そのうえで、Amazon Bedrock AgentCore Gateway でツール呼び出しを認可制御する AgentCore Policy が Cedar を採用した理由を解説します。可読性、決定論的な動作、自動推論による分析可能性を活かして、ニューロシンボリック AI でポリシーを作成し、Cedar Analysis で論理エラーや競合を検出する仕組みも紹介します。",
-          "categories": [
-            "Amazon Bedrock",
-            "Amazon Bedrock AgentCore",
-            "Generative AI",
-            "Intermediate (200)",
-            "Open Source",
-            "Security, Identity, & Compliance",
-            "AI",
-            "authorization",
-            "automated reasoning",
-            "Security",
-            "Security Blog"
           ]
         }
       ]
