@@ -1,9 +1,151 @@
 {
-  "generated_at": "2026-11-12T02:55:42.495644+00:00",
+  "generated_at": "2026-11-13T02:36:17.079263+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon Cognito now supports OAuth 2.0 token exchange",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/",
+          "published": "2026-11-12T22:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/cognito/\">Amazon Cognito</a> now supports OAuth 2.0 token exchange (RFC 8693). Amazon Cognito helps you add sign-up, sign-in, and access control to your web applications, mobile applications, and AI agents. With token exchange, a service or AI agent acting on a user's behalf can exchange the user's token for a new token scoped to a specific downstream service. Previously, a service that called another service on a user's behalf had to forward the user's original token or build and maintain its own token minting logic.</p> \n<p>With token exchange, you can issue a new token that has a narrower scope than the original token, is bound to a single audience, and comes without a refresh token. When you include an actor token, Cognito adds an act claim that identifies the intermediary, so downstream services can tell a request that an agent made on a user's behalf from one the user made directly. For example, a Model Context Protocol (MCP) server can exchange a user's token for a narrowly scoped token to call a backend API, with the act&nbsp;claim recording the MCP server as the actor.</p> \n<p>You can exchange tokens through the token endpoint or with the new <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetDerivedToken.html\">GetDerivedToken API</a>. Token exchange is available on the Essentials and Plus feature plans in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where Amazon Cognito is available. To learn more, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-token-exchange.html\">exchanging tokens for downstream services</a> in the Amazon Cognito Developer Guide.</p>",
+          "categories": [
+            "general:products/amazon-cognito,marketing:marchitecture/security-identity-and-compliance"
+          ]
+        },
+        {
+          "title": "Amazon Aurora and RDS now support Graviton5-based R9g database instances",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-rds-postgresql-mysql-mariadb-r9g-instances/",
+          "published": "2026-11-12T19:02:00+00:00",
+          "summary": "<p>AWS Graviton5-based R9g database instances are now generally available for Amazon Aurora with PostgreSQL compatibility and MySQL compatibility, and for Amazon RDS for PostgreSQL, MySQL, and MariaDB.<br> &nbsp;<br> Graviton5-based R9g instances provide up to a 30% performance improvement and up to a 22% price-performance improvement for on-demand pricing over Graviton4-based instances of equivalent sizes on Amazon Aurora, depending on database engine, version, and workload. Built on the AWS Nitro System, R9g instances are available in nine sizes, from large to 48xlarge. They deliver up to 192 vCPUs, an 8:1 ratio of memory to vCPU, up to 100 Gbps of networking bandwidth, and up to 72 Gbps of bandwidth to Amazon Elastic Block Store (Amazon EBS).&nbsp;</p> \n<p>You can get started using the R9g database instances through the <a href=\"https://console.aws.amazon.com/rds/home?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\">Amazon RDS Management Console</a> or by using the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be#Aurora.CreateInstance.Creating\">AWS Command Line Interface </a>(CLI). The instances are available in US East (N. Virginia, Ohio), US West (Oregon), and Europe (Frankfurt) regions. For the specific engine versions that support these instance classes, see the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.SupportAurora.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\">Aurora</a> and <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.Support.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\">RDS</a> documentation. For pricing, see <a href=\"https://aws.amazon.com/rds/aurora/pricing/\">Amazon Aurora pricing</a> and <a href=\"https://aws.amazon.com/rds/pricing/\">Amazon RDS pricing</a>.</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon MWAA now supports fine-grained access control with IAM Identity Center and multi-team environments",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-fine-grained-access-control/",
+          "published": "2026-11-12T18:00:00+00:00",
+          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) now supports fine-grained access control, giving administrators precise control over who can access which workflows and resources in an Apache Airflow environment. Fine-grained access control is delivered through two new capabilities: IAM Identity Center integration and multi-team environments.</p>\n<p>With IAM Identity Center integration, users sign in to the Apache Airflow UI with their corporate identity provider. Authorization is evaluated per request using IAM policies attached to IAM Identity Center Permission Sets, with condition keys that scope access by resource type (DAGs, connections, variables, pools, and more), action, and specific resource ID.</p>\n<p>With multi-team environments, several teams can share a single MWAA environment. Each team gets its own DAG folder in Amazon S3, and users see only shared DAGs plus their own teams' DAGs based on IAM Identity Center group membership. Teams reduce cost through shared infrastructure and simplify management by configuring environment settings once. Multi-team environments are based on the Apache Airflow multi-team feature, which is currently in preview.</p>\n<p>These features are available in all <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/get-started.html#regions\" target=\"_blank\">AWS Regions</a> where Amazon MWAA is available.</p>\n<p>To learn more, visit the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/identity-center-integration.html\" target=\"_blank\">IAM Identity Center integration documentation</a> and the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/multi-team-environments.html\" target=\"_blank\">multi-team environments documentation</a>.</p>",
+          "categories": [
+            "general:products/amazon-mwaa,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "Amazon Connect Customer supports merging and linking related cases in the agent workspace",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-merge-link/",
+          "published": "2026-11-12T17:00:00+00:00",
+          "summary": "<p>Amazon Connect Customer now lets agents merge and link related cases in the agent workspace, so they can resolve customer issues faster and respond consistently. When a customer contacts a business about the same issue more than once, or on different channels, the history can end up split across several cases. Agents can merge those cases into one case with a single, consolidated history. For example, an agent can merge the chat and email cases a customer opened about a delayed shipment.</p> \n<p>Agents can also link related cases, such as cases from different customers affected by the same issue, so they can coordinate one consistent response for every affected customer.</p> \n<p>Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Cases <a href=\"https://aws.amazon.com/products/connect/customer/cases/\" target=\"_blank\">webpage</a> and <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/cases.html\" target=\"_blank\">documentation</a>.</p>",
+          "categories": [
+            "general:products/amazon-connect,marketing:marchitecture/messaging,marketing:marchitecture/contact-center,marketing:marchitecture/business-productivity"
+          ]
+        },
+        {
+          "title": "Amazon SNS now supports push notifications in four additional AWS Regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sns-push-four-regions/",
+          "published": "2026-11-12T16:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/sns/\">Amazon Simple Notification Service (Amazon SNS)</a> now supports sending push notifications in the Asia Pacific (Hyderabad), Asia Pacific (Melbourne), Europe (Zurich), and AWS GovCloud (US-East) Regions.</p> \n<p>Amazon SNS is a fully managed pub/sub service that provides message delivery to multiple endpoints, including AWS Lambda, Amazon SQS, Amazon Data Firehose, HTTP, SMS (via AWS End User Messaging), push notifications, and email. With this launch, customers in these four additional Regions can use Amazon SNS to send push notifications to the following supported push notification services: Amazon Device Messaging (ADM), Apple Push Notification Service (APNs), Baidu Cloud Push (Baidu), Firebase Cloud Messaging (FCM), and Windows Push Notification Services (WNS).</p> \n<p>For the full list of Regions from which you can send push notifications, see <a href=\"https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-push-supported-regions.html\">Supported Regions and Countries</a> in the Amazon SNS Developer Guide. For more information, see the <a href=\"https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-application-as-subscriber.html\">Amazon SNS push notifications documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/serverless,general:products/aws-govcloud-us,general:products/amazon-sns"
+          ]
+        },
+        {
+          "title": "AWS Quick enhances granular governance with the ability to restrict structured data sources",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-structured-data-source-restrictions/",
+          "published": "2026-11-12T09:00:00+00:00",
+          "summary": "<p>Today, AWS Quick is announcing the general availability of structured data connector restrictions through custom permissions. This capability gives administrators granular control over which types of data sources users can create, update, or share, helping organizations enforce data governance requirements while enabling self-service analytics.<br> <br> With this feature, administrators can configure <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/custom-permissions.html\">custom permissions profiles</a> in Enterprise edition through the Quick UI, APIs, or AWS Command Line Interface. For example, an organization can allow users to create Amazon Redshift data sources while restricting the creation of file-upload data sources. Administrators can also prevent users from sharing data sources for a particular connector. Create, update, and share restrictions can be configured independently, providing more precise controls than restrictions that apply to all data source types.<br> <br> This feature is now available in all supported AWS Quick Regions listed <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\">here</a>. To learn more, check our documentation <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/custom-permissions.html\">here</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "Amazon Route 53 Domains now supports self-service restore for expired and deleted domains",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-domains-self-service-restore/",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p>Amazon Route 53 Domains now lets you restore an expired or recently deleted domain yourself, using the Amazon Route 53 console, AWS CLI, or AWS SDKs. Previously, restoring a domain required a request to AWS Support. Now you can recover a domain lost to a missed renewal, an expired payment method, or an accidental deletion, and restore the website, email, and applications that depend on it.</p> \n<p>To restore a domain, you enter the domain name, review the restoration price, accept the charge, and submit the request. Route 53 works with the top-level domain (TLD) registry to reactivate the registration and return the domain to your AWS account. Most TLD registries support restoration, and each registry sets how long after expiration or deletion a domain can still be restored. Restoring a domain typically costs more than registering or renewing one.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-restore-expired.html\" target=\"_blank\" rel=\"noopener noreferrer\">Restoring an expired or deleted domain</a> in the Route 53 Developer Guide, or visit the <a href=\"https://aws.amazon.com/route53/domains/\" target=\"_blank\">Amazon Route 53 Domains page</a>. For a complete list of supported TLDs, see the <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-tld-list.html\" target=\"_blank\" rel=\"noopener noreferrer\">Route 53 TLD list</a>. For pricing, visit the Route 53 <a href=\"https://aws.amazon.com/route53/pricing/\" target=\"_blank\">pricing page</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:products/amazon-route-53,general:products"
+          ]
+        },
+        {
+          "title": "EC2 Image Builder console now integrates with the DevOps Agent for troubleshooting and resource creation",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-image-builder-devops-agent-integration",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p>EC2 Image Builder now integrates with the AWS DevOps Agent directly in the Image Builder console, enabling you to troubleshoot failed image pipelines and create resources directly from the console chat panel. You can diagnose up to 50 failed pipelines at once and ask follow-up questions in the same conversation. You can also choose to create resources by describing what you want, and the agent populates the console with values the service has already validated.</p> \n<p>With this integration, diagnosing a failed pipeline no longer requires manually inspecting build logs, cross-referencing error codes, or iterating through configuration fixes, saving you significant time and expertise. The agent reads build logs, workflow steps, components, and network configuration, then provides the root cause and the steps to fix it. For resource creation,&nbsp; the agent verifies the configuration before populating the console for you to review and submit. If you troubleshoot or build with your own AI agents, the new EC2 Image Builder skill in the AWS Agent Toolkit provides you the same troubleshooting and creation capabilities.</p> \n<p>This feature is available in all commercial regions. To get started, open the EC2 Image Builder console and use the DevOps Agent from the console panel. For more information, see the <a href=\"https://docs.aws.amazon.com/imagebuilder/latest/userguide/ai-image-builder.html\">EC2 Image Builder documentation</a> and for pricing refer <a href=\"https://aws.amazon.com/devops-agent/pricing/\">DevOps agent Pricing page</a>.&nbsp;</p>",
+          "categories": [
+            "marketing:marchitecture/compute,general:products/amazon-ec2"
+          ]
+        },
+        {
+          "title": "Amazon FSx for Lustre lowers the entry cost of Intelligent-Tiering file systems by 75%",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/fsx-lustre-intelligent-tiering-lower-throughput/",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/fsx/lustre/\">Amazon FSx for Lustre</a> is reducing the minimum provisioned throughput capacity and metadata IOPS on Intelligent-Tiering file systems by 75%, allowing you to use Intelligent-Tiering even more cost-effectively for high-performance computing (HPC) and machine learning workloads that start with small datasets and grow over time.</p> \n<p>The FSx for Lustre Intelligent-Tiering storage class delivers the lowest-cost and only fully elastic Lustre file storage in the cloud. It is optimized for workloads that mix hot and cold data and do not require consistent SSD-level performance. A file system's throughput capacity determines the read and write speeds supported by its underlying file servers, and its level of metadata IOPS determines how many files and directories you can create, read, and delete per second. Today’s launch reduces the minimum throughput capacity on an Intelligent-Tiering file system from 4,000 to 1,000 MBps and the minimum metadata performance from 6,000 to 1,500 IOPS.&nbsp;</p> \n<p>The lower throughput capacity and metadata IOPS levels are available on new FSx for Lustre Intelligent-Tiering file systems in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where the Intelligent-Tiering storage class is available. To learn more, see Performance characteristics of Intelligent-Tiering storage class in the <a href=\"https://docs.aws.amazon.com/fsx/latest/LustreGuide/intelligent-tiering-file-systems.html\">Amazon FSx for Lustre User Guide.</a></p>",
+          "categories": [
+            "general:products/amazon-fsx-for-lustre,general:use-case/high-performance-computing,marketing:marchitecture/storage"
+          ]
+        },
+        {
+          "title": "AWS Backup adds logically air-gapped vault support for Amazon EBS Snapshots Archive",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-lag-vault-ebs-archive/",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p>AWS Backup logically air-gapped vault now supports Amazon EBS Snapshots Archive. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event.</p> \n<p>You can now archive Amazon EBS backups held in a logically air-gapped vault to Amazon EBS Snapshots Archive, a low-cost tier for snapshots you rarely access. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using AWS owned keys or customer-managed keys. This helps you meet long-term retention and compliance requirements at lower storage cost.</p> \n<p>You can get started using the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. In a backup plan rule that runs monthly or less often, specify a logically air-gapped vault as the primary backup destination or copy destination. Then enable Archive Amazon EBS snapshots in the backup rule lifecycle or copy lifecycle and set the time in warm storage before the backup transitions.</p> \n<p>This support is available in all AWS Regions where both logically air-gapped vault and Amazon EBS Snapshots Archive are available. For more information and detailed regional availability, visit the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Backup documentation</a>. To learn more about logically air-gapped vaults, visit the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html\" target=\"_blank\" rel=\"noopener noreferrer\">product documentation</a> and <a href=\"https://aws.amazon.com/backup/pricing/\">pricing page</a>.</p>",
+          "categories": [
+            "general:products/aws-backup,general:products/amazon-elastic-block-store,marketing:marchitecture/storage"
+          ]
+        },
+        {
+          "title": "AWS Glue announces automatic version upgrades for Apache Spark jobs",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/glue-spark-auto-upgrades/",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p>AWS Glue introduces automatic version upgrades, a capability that keeps your Apache Spark jobs current on the latest AWS Glue runtime without manual coordination. Staying current on supported runtimes gives your jobs the latest security patches, performance improvements, and support for evolving table formats such as Apache Iceberg. Auto upgrades include multiple levels of validations including assessing jobs for compatibility with the upgraded runtime, obtaining your consent before executing jobs on a newer version, and validating upgraded job runs against each job's established output profile, so your jobs upgrade with the right guardrails in place.</p>\n<p>By setting a job's version to \"Auto\", upgrades that once required weeks of planning and execution now happen automatically. Platform teams can standardize runtime versions across large fleets without chasing individual job owners, and business units without a central upgrade team can keep their jobs current hands-free. Each job is validated against its established output schema, data volume, latency, and format before it upgrades, so you can advance with confidence. Jobs that need code changes keep running safely on their current version, and AWS Glue provides an upgrade analysis with specific fixes you can apply directly or with the Apache Spark upgrade agent.</p>\n<p>Auto upgrades for AWS Glue are available in all AWS Commercial Regions.</p>\n<p>To get started, select \"Auto\" as the AWS Glue version when creating or updating an Apache Spark job using the AWS Glue Studio or AWS CLI, API, and SDKs. Alternatively, you can update multiple jobs at once using the AWS Glue <a href=\"https://github.com/aws-samples/aws-glue-samples/blob/8d52b2c004d48b4d15c20cb1b0bd161da0c98a0d/utilities/skills/managing-glue-jobs/README.md\" target=\"_blank\">skill to manage your jobs</a>. To learn more, visit the <a href=\"https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.html\" target=\"_blank\">AWS Glue documentation</a>.</p>",
+          "categories": [
+            "general:products/aws-glue"
+          ]
+        },
+        {
+          "title": "AWS Backup now supports resource modifiers for Amazon EKS restores",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-resource-modifiers-eks/",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p>Today, AWS Backup announces support for resource modifiers when restoring Amazon Elastic Kubernetes Service (Amazon EKS) backups. Resource modifiers let you transform Kubernetes resources during a restore, so you can adapt a restored cluster to its target environment.</p> \n<p>When you restore an EKS backup that has been copied across accounts or across AWS Regions, the restored cluster can carry references tied to the source environment, such as IAM roles, database endpoints, and Amazon ECR registry URIs. Previously, you had to locate and update these references manually after every restore, which was time consuming and error prone. With resource modifiers, you can define transformation rules once via a YAML file, and AWS Backup applies them automatically as part of the restore, improving the reliability of your cross-account and cross-Region disaster recovery workflows.</p> \n<p>AWS Backup support for resource modifiers for Amazon EKS backups is available in all commercial AWS Regions and AWS GovCloud (US) Regions. To get started, see the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-eks.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Backup Documentation</a> and read the <a href=\"https://aws.amazon.com/blogs/storage/remap-amazon-eks-namespaces-on-restore-with-aws-backup-resource-modifiers/\" target=\"_blank\" rel=\"noopener noreferrer\">launch blog</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/storage,general:products/aws-backup,marketing:marchitecture/containers,general:products/amazon-eks"
+          ]
+        },
+        {
+          "title": "AWS Cloud WAN now supports BGP communities on Direct Connect attachments for routing policy",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloud-wan-bgp-community-directconnect/",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p>AWS Cloud WAN now supports BGP communities on Direct Connect attachments, enabling advanced routing controls for enterprise hybrid networks. Previously, Cloud WAN Routing Policy evaluated BGP communities only on Site-to-Site VPN and Connect attachments. Now, customers can tag routes with routing intent on-premises, apply filtering and path preference rules inside Cloud WAN, and propagate communities back to their on-premises routers over Direct Connect.</p> \n<p>With this capability, enterprises can simplify hybrid network orchestration by signaling routing policies dynamically from on-premises environments. Customers can match community tags to filter production versus disaster recovery traffic, prioritize preferred paths, or restrict regional propagation. This eliminates the need for VPN overlay workarounds and manual policy replication, reducing operational complexity and misconfiguration risk.</p> \n<p>BGP community support on AWS Cloud WAN Direct Connect attachments is available in all AWS Regions where both AWS Direct Connect and AWS Cloud WAN are available. For the complete list of available Regions, see the <a href=\"https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-routing-policies.html\" target=\"_blank\">Cloud WAN Routing Policies documentation</a>.</p>",
+          "categories": [
+            "general:products/aws-direct-connect,general:products/aws-cloud-wan,marketing:marchitecture/networking-and-content-delivery"
+          ]
+        },
+        {
+          "title": "Amazon Managed Service for Apache Flink introduces enhanced snapshots",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/managed-flink-enhanced-snapshots/",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p>Amazon Managed Service for Apache Flink now supports enhanced snapshots, a capability that lets you capture, export, and restore application state across Apache Flink applications and AWS Regions, so you can run blue/green deployments, easily migrate self-managed workloads to Amazon Managed Service for Apache Flink without losing state, and keep backup in a secondary Region for cross-Region recovery.</p>\n<p>To deploy an application update without pausing processing for blue/green deployments, create an enhanced snapshot from an application and use it to start a second application. To migrate a self-managed workload, import its Apache Flink savepoint into Amazon Managed Service for Apache Flink as an enhanced snapshot. For cross-Region recovery, export an enhanced snapshot to an Amazon Simple Storage Service (Amazon S3) bucket, and replicate the exported state to a bucket in a secondary Region.</p>\n<p>Enhanced snapshots are available today for applications on Apache Flink 1.20 and later in all AWS Regions where Amazon Managed Service for Apache Flink is available except European Sovereign Cloud (Germany). You pay for enhanced snapshot storage per GB-month as durable application backups. To learn more and get started, see <a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/snapshots-how-it-works.html\" target=\"_blank\">enhanced snapshots</a> in the Amazon Managed Service for Apache Flink Developer Guide. You can also use <a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/what-is-agent-toolkit.html\" target=\"_blank\">Agent Toolkit for AWS</a> with Kiro, Claude Code, or Cursor for guidance on building and operating Flink applications with enhanced snapshots.</p>",
+          "categories": [
+            "general:products/amazon-managed-service-for-apache-flink"
+          ]
+        },
+        {
+          "title": "Amazon RDS for SQL Server now supports M8id and R8id instances",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-sqlserver-supports-m8id-r8id-instances",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Relational Database Service (Amazon RDS) for SQL Server</a> now supports M8id and R8id instances. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, and include local NVMe SSD storage. They scale up to 384 vCPUs, 3 TiB of memory, and 22.8 TB of local NVMe SSD storage. That's 4x the vCPUs and memory and more than 6x the local storage of M5d and R5d instances.</p> \n<p>When you create or modify a DB instance to use M8id or R8id, RDS for SQL Server automatically places the tempdb data and log files on the local NVMe instance store. This gives tempdb lower read and write latency than Amazon EBS storage. Your database data and log files stay on Amazon EBS. Because snapshots don't include tempdb files on the instance store, your snapshots are smaller and use less of your free backup storage. To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.InstanceStore.html\" target=\"_blank\" rel=\"noopener noreferrer\">Instance store support for the tempdb database on Amazon RDS for SQL Server</a>.</p> \n<p>To use the new M8id and R8id instances, you can modify your existing RDS database instance or create a new RDS database instance from the RDS Management Console, or using the AWS SDK or CLI. M8id and R8id instances are available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Europe (Ireland), Europe (London), Europe (Frankfurt), Europe (Stockholm), Europe (Spain), Asia Pacific (Tokyo), Asia Pacific (Mumbai), Asia Pacific (Sydney), and Asia Pacific (Malaysia). For pricing details, see <a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS for SQL Server Pricing</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-rds-for-sql-server"
+          ]
+        },
+        {
+          "title": "The next generation AgentCore runtime is now the default",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/",
+          "published": "2026-11-12T05:00:00+00:00",
+          "summary": "<p>Starting today, new runtimes in Amazon Bedrock AgentCore use the next generation of AgentCore runtime by default. The new runtime restores each session from a snapshot of your initialized agent, scales compute and memory with the work, and scales idle agents to zero. Every session still runs in its own hardware-isolated Firecracker microVM. Your agents can run heavy work like compiling a large codebase, driving a browser, or loading a local model inside the session.&nbsp;</p> \n<p>Sessions scale to 8 vCPU and 32 GB of memory and support container images up to 10 GB. On a 2 GB image, sessions start in under 2 seconds at P75, down from 29.7 seconds on the previous generation. Idle agents scale to zero, and memory is reclaimed within minutes of release. For multi-turn agents, that means up to 68% less billed memory per session.</p> \n<p>Existing runtimes stay on the current version until you move them. To move an existing runtime, or to use the next generation in a Region where it isn't the default yet, set platformVersion to V2 when you create or update a runtime. To keep a new runtime on the current version, set platformVersion to V1.</p> \n<p>The new AgentCore Runtime is now the default runtime in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), South America (São Paulo), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Milan), Europe (Paris), Europe (Spain), Europe (Stockholm), Asia Pacific (Malaysia), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Thailand), and Asia Pacific (Tokyo). &nbsp;To learn more, visit the <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html\">AgentCore runtime documentation</a> or the AWS Blog. For pricing details, visit <a href=\"https://aws.amazon.com/bedrock/agentcore/pricing/\">AgentCore pricing</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/compute,general:products/amazon-bedrock"
+          ]
+        },
         {
           "title": "Ornith-1.0-9B and Ornith-1.0-35B models now available on Amazon SageMaker JumpStart",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/01/ornith-1-0-9b-ornith-1-0-35b-on-sagemaker-jumpstart/",
@@ -131,12 +273,12 @@
           ]
         },
         {
-          "title": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-extended-support/",
-          "published": "2026-11-10T17:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\">Amazon Relational Database Service (RDS) for PostgreSQL</a> announces Amazon RDS Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822.</p> \n<p><a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html\" target=\"_blank\">Amazon RDS Extended Support</a> provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version.</p> \n<p>You can upgrade your database using <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\" target=\"_blank\">Amazon RDS Blue/Green Deployments</a>, in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\">Amazon RDS for PostgreSQL User Guide</a>.</p> \n<p>Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the <a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\">Amazon RDS Management Console</a> or by using the AWS Command Line Interface (AWS CLI).</p>",
+          "title": "Amazon MWAA Serverless supports DuckDB operators",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-mwaa-serverless-duckdb-operators/",
+          "published": "2026-11-10T18:00:00+00:00",
+          "summary": "<p>Amazon MWAA Serverless now supports DuckDB operators, enabling you to analyze and transform data with high-performance in-memory analytics directly in your workflows. You can query data in Amazon S3 or run analytics locally, without manual credential configuration. DuckDB operators are also supported in SageMaker Unified Studio visual workflows.</p>\n<p>To get started in MWAA Serverless, add a DuckDB task to your workflow definition. A pre-created default connection automatically uses your workflow's execution role credentials for S3 access, so you can start analyzing data immediately. In SageMaker Unified Studio, add DuckDB operators from the task panel to your visual workflow canvas.</p>\n<p>DuckDB operators are available in all <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html#regions\" target=\"_blank\">Regions</a> where Amazon MWAA Serverless is available. To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/code-examples-duckdb.html\" target=\"_blank\">Using DuckDB in Amazon MWAA Serverless workflows</a> and <a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/serverless-visual-workflows.html\" target=\"_blank\">Using serverless visual workflows</a>.</p>",
           "categories": [
-            "marketing:marchitecture/databases,general:products/amazon-rds"
+            "marketing:marchitecture/analytics,general:products/amazon-mwaa,general:products/amazon-sagemaker"
           ]
         },
         {
@@ -146,6 +288,15 @@
           "summary": "<p>Starting today, <a href=\"https://aws.amazon.com/rds/mysql/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS for MySQL</a> 26.10 is available in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/create-db-instance-in-preview-environment.html\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS Database Preview Environment</a>, allowing you to evaluate the pre-release of MySQL 26.10 on Amazon RDS for MySQL.</p> \n<p>MySQL 26.10 includes bug fixes, security patches, and some improvements to READ COMMITTED workload performance and purge lag warnings in the error log. On busy READ COMMITTED workloads, NUMA systems performance could be impacted as each read view that closed required a global mutex. Read-view objects can now be reused which eliminates the global mutex on closure. The error log now reports warnings when the history-list length (HLL) crosses innodb_max_purge_lag and when purge lag begins delaying DML, so you can detect purge backlogs before they affect performance. To learn more, please refer to the <a href=\"https://dev.mysql.com/doc/refman/26.10/en/mysql-nutshell.html\" target=\"_blank\" rel=\"noopener noreferrer\">MySQL 26.10 release notes</a>.</p> \n<p>Amazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the <a href=\"https://aws.amazon.com/rds/mysql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">pricing</a> in the US East (Ohio) Region.</p>",
           "categories": [
             "general:products/amazon-rds,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-extended-support/",
+          "published": "2026-11-10T17:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\">Amazon Relational Database Service (RDS) for PostgreSQL</a> announces Amazon RDS Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822.</p> \n<p><a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html\" target=\"_blank\">Amazon RDS Extended Support</a> provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version.</p> \n<p>You can upgrade your database using <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\" target=\"_blank\">Amazon RDS Blue/Green Deployments</a>, in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\">Amazon RDS for PostgreSQL User Guide</a>.</p> \n<p>Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the <a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\">Amazon RDS Management Console</a> or by using the AWS Command Line Interface (AWS CLI).</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-rds"
           ]
         },
         {
@@ -296,159 +447,6 @@
           "categories": [
             "general:products/amazon-bedrock,general:products/aws-govcloud-us"
           ]
-        },
-        {
-          "title": "Amazon Bedrock now offers Claude Mythos 5.2 to Eligible Customers in AWS GovCloud (US)",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-claude-mythos-5-2-govcloud/",
-          "published": "2026-11-09T18:30:00+00:00",
-          "summary": "<p>Amazon Bedrock, the platform for building generative AI applications and agents at production scale, now offers Claude Mythos 5.2 to eligible customers in AWS GovCloud (US). Claude Mythos 5.2 is Anthropic's most advanced AI model to date for use cases across cybersecurity, software coding, and complex reasoning tasks. The model can identify sophisticated security vulnerabilities in software and demonstrate exploitability. It can also comprehend large codebases and deliver actionable findings with less manual guidance than previous AI models. This enables security teams to accelerate defensive cybersecurity work, find and fix security vulnerabilities in the world's most critical software, and address them before threats emerge. Claude Mythos 5.2 is the first of Anthropic's AI models with powerful cybersecurity capabilities to be available in AWS GovCloud (US).</p> \n<p>Claude Mythos 5.2 is available to eligible customers in AWS GovCloud (US) Regions through <a href=\"https://aws.amazon.com/bedrock/anthropic/\">Amazon Bedrock</a>. Access is limited to allow-listed organizations; to get started, visit <a href=\"https://support.claude.com/en/articles/14604842-cyber-verification-program\">Anthropic's Cyber Verification Program</a>.&nbsp;</p>",
-          "categories": [
-            "general:products/aws-govcloud-us,general:products/amazon-bedrock"
-          ]
-        },
-        {
-          "title": "Amazon Connect Customer launches evaluation form templates",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-evaluation-form-templates/",
-          "published": "2026-11-09T18:00:00+00:00",
-          "summary": "<p>Amazon Connect Customer now provides evaluation form templates so managers don't have to build forms from scratch, reducing the time to deploy automated evaluations of human and AI agent performance. These templates cover typical customer interaction scenarios: customer service, inbound sales, and self-service. Each template assesses human and AI agent behaviors. For example, the customer service template includes questions such as \"Did the agent show empathy toward the customer's issue?\" Templates also include questions that assess business outcomes such as customer satisfaction and attrition risk, so managers can see how agent behaviors relate to outcomes. Managers can use the templates as-is or customize them before deploying.</p> \n<p>This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo). To learn more, visit our <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluation-forms.html#step-title\">documentation</a> and our <a href=\"https://aws.amazon.com/products/connect/customer/conversational-analytics/\">webpage</a>. For Amazon Connect Customer pricing, visit our <a href=\"https://aws.amazon.com/products/connect/customer/pricing/?trk=758059ab-77e5-44fc-8a4a-1be845ee42b9&amp;sc_channel=ps&amp;ef_id=Cj0KCQiA-8XXBhDaARIsADnEOrC6AcGdc359ptTkUc4LUTvbjzEeQ5z7gYhB7FnoadVenwtyW0c3VoAaApRdEALw_wcB:G:s&amp;gclid=Cj0KCQiA-8XXBhDaARIsADnEOrC6AcGdc359ptTkUc4LUTvbjzEeQ5z7gYhB7FnoadVenwtyW0c3VoAaApRdEALw_wcB\">pricing</a> page.</p>",
-          "categories": [
-            "general:products/amazon-connect,marketing:marchitecture/contact-center"
-          ]
-        },
-        {
-          "title": "Amazon MWAA now supports DuckDB operators",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-mwaa-supports-duckdb-operators/",
-          "published": "2026-11-09T18:00:00+00:00",
-          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) now supports DuckDB operators. DuckDB is an embedded analytical database that lets customers perform data quality checks, summaries, and transformations on data from sources DuckDB supports, including Amazon S3.</p> \n<p>Native support is available for DuckDB on Amazon MWAA Provisioned environments running Apache Airflow 3.3.1. DuckDB comes preinstalled and preconfigured for AWS connections in the latest MWAA Airflow 3.3.1 update. After updating their MWAA environment to Airflow 3.3.1 and adding execution role access to their data stores, customers can start writing tasks with DuckDBExecuteQueryOperator with no additional setup.</p> \n<p>This feature is available in all AWS Regions where Amazon MWAA is available. For more information, see the <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/get-started.html#regions\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Region table</a>.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/samples-duckdb.html\" target=\"_blank\" rel=\"noopener noreferrer\">Using DuckDB with Amazon MWAA</a> in the Amazon MWAA User Guide.</p>",
-          "categories": [
-            "marketing:marchitecture/analytics,general:products/amazon-mwaa"
-          ]
-        },
-        {
-          "title": "Introducing an open-source UI for graph analytics over data lakes with Amazon Neptune Analytics",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-graphover-datalakes-generally-available",
-          "published": "2026-11-09T17:00:00+00:00",
-          "summary": "<p>Today, AWS is introducing an open-source solution with a local web UI that helps customers turn data lake records into graphs for analysis with Amazon Neptune Analytics. By projecting selected records and relationships, customers can investigate connections across tables and run graph algorithms without building their own ETL pipelines.</p> \n<p>For example, a customer could project accounts and transactions into a graph to explore how accounts are connected or identify communities that may warrant investigation. Doing this today often means writing queries to prepare node and relationship data, creating a Neptune Analytics graph, and managing the import. Customers may also need to build a selective projection so they do not load an entire dataset for a narrower question.</p> \n<p>The new UI brings those steps into single workflow. To run graph analytics over iceberg tables, customers select an Athena catalog and database, define a property graph using SQL/PGQ, and preview rows before import. The solution runs the projection queries through Athena, stages the selected data in Amazon S3, and imports it into Neptune Analytics. The UI helps customers manage the resulting graph. They can open the loaded graph in Graph Explorer to query and visualize relationships. <a href=\"https://github.com/awslabs/nx-neptune\"><b>[1]</b></a></p> \n<p>The UI runs locally and it is available in all regions where Amazon Neptune Analytics is available. To get started, see the <a href=\"https://github.com/awslabs/nx-neptune/blob/main/proxy/README.md\"><b>setup instructions</b></a>.</p>",
-          "categories": [
-            "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/databases,marketing:marchitecture/analytics,general:products/amazon-neptune"
-          ]
-        },
-        {
-          "title": "Amazon DocumentDB Serverless now provides up to 35% higher throughput",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/documentdb-serverless-platform-version-4/",
-          "published": "2026-11-09T16:00:00+00:00",
-          "summary": "<p>Amazon DocumentDB Serverless now provides up to 35% higher throughput with the launch of platform version 4. Platform versions represent improvements in performance, scaling capabilities, or features, and are automatically managed at the cluster level.</p> \n<p>All new serverless clusters launch on the latest platform version available in your AWS Region. You can upgrade existing clusters on platform version 3 to platform version 4 by applying the serverless-platform-version-update pending maintenance action. This gives you control over when to apply the update, either immediately or during your next scheduled maintenance window. After you upgrade to a newer platform version, you can't downgrade to a previous version.<a href=\"https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverless-how-it-works.html#docdb-serverless-scaling-capacity\"></a><a href=\"https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverless-how-it-works.html#docdb-serverless-scaling-capacity\"></a></p> \n<p>You can view the platform version of a cluster in the AWS Management Console or through the ServerlessV2PlatformVersion field of the DescribeDBClusters API. For more information, see <a href=\"https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverless-how-it-works.html#docdb-serverless-scaling-capacity\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon DocumentDB serverless scaling capacity</a> and <a href=\"https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverless-managing.html#docdb-serverless-platform-version\" target=\"_blank\" rel=\"noopener noreferrer\">Checking and upgrading the platform version of a serverless cluster</a>.</p>",
-          "categories": [
-            "general:products/amazon-documentdb,marketing:marchitecture/databases"
-          ]
-        },
-        {
-          "title": "Amazon Athena introduces system tables for observability, auditing, and usage analytics",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/athena-system-tables/",
-          "published": "2026-11-09T16:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/athena/\">Amazon Athena</a> now offers system tables which automatically capture your usage data and make it available for observability, usage analysis, and audit use cases. When you enable system tables, usage data is available within minutes of query completion across your workgroups and stored as service-managed, read-only Iceberg tables on <a href=\"https://aws.amazon.com/s3/features/tables/\">Amazon S3 Tables</a> with configurable retention. You can query it directly with Athena, while AWS manages the tables for you, including schema definition, partitioning, compaction, and snapshot maintenance, removing all operational burden.</p> \n<p>Athena provides usage data through APIs like GetQueryExecution, CloudWatch metrics, and CloudTrail logs. With this launch, usage data is also available as iceberg tables that you can search, filter, aggregate, and join directly without building or maintaining custom pipelines. Platform teams can query the query_executions table to build cost allocation dashboards that show data scanned by workgroup, by user, or by table using simple SQL statements, and without custom ETL. Additionally, the <a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/system-table-skills\">AWS Agent Toolkit</a> provides skills for querying system tables to surface usage patterns and optimization recommendations. Because the data is stored in the open Apache Iceberg format, you can also query it with <a href=\"https://duckdb.org/\">DuckDB</a>, <a href=\"https://aws.amazon.com/pm/redshift/?trk=de3518c5-eb66-4ef5-ab94-ec69c34b86df&amp;sc_channel=ps&amp;ef_id=CjwKCAjws_DTBhB_EiwAXZknGRt-CfJCeVl3UL127isQ9p0q7arv1kekRNZF_pd22P4m8ReyZkhvahoCNwYQAvD_BwE&amp;gads_camp=23522747487&amp;gads_ag=196433734207&amp;gads_ad=795876995213&amp;gads_kw=amazon%20redshift&amp;gads_matchtype=e&amp;gads_network=g&amp;gads_device=c&amp;gads_geo=1027744&amp;gad_campaignid=23522747487&amp;gbraid=0AAAAADjHtp9cwZBKiv30JXu5qrPDkKSyb&amp;gclid=CjwKCAjws_DTBhB_EiwAXZknGRt-CfJCeVl3UL127isQ9p0q7arv1kekRNZF_pd22P4m8ReyZkhvahoCNwYQAvD_BwE\">Amazon Redshift,</a> <a href=\"https://aws.amazon.com/emr/\">Amazon EMR</a> or any other Iceberg-compatible engine.</p> \n<p>Athena system tables are available in all AWS Regions where Athena and Amazon S3 Tables are available. To get started, enable system tables from the Athena console or API. To learn more, visit the Amazon Athena <a href=\"https://docs.aws.amazon.com/athena/latest/ug/athena-system-tables.html\">documentation </a>or the &nbsp;<a href=\"https://aws.amazon.com/blogs/big-data/amazon-athena-introduces-system-tables-for-query-execution-observability/\" style=\"background-color: rgb(255,255,255);\">blog</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/analytics,marketing:benefits-realized/ease-of-use,general:products/amazon-athena,general:use-case/security-and-compliance"
-          ]
-        },
-        {
-          "title": "Claude Fable 5.2 is now available on AWS",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/claude-fable-5-2-aws/",
-          "published": "2026-11-09T15:00:00+00:00",
-          "summary": "<p>Claude Fable 5.2 is now available on AWS and brings Anthropic's most capable generally available model for technical work&nbsp;to all customers. Fable 5.2 sets a new standard on the hardest projects in coding, math, and science, and Anthropic recommends it for fields like software engineering, scientific research, and finance, where judgment, iteration, and accuracy are critical. Claude Mythos 5.2, the same underlying model as Claude Fable 5.2 with its full cyber and bio capabilities retained for cybersecurity and biology research, is available through Anthropic’s verification programs.</p> \n<p>Claude Fable 5.2 can work for hours and up to days unattended, driving autonomous work and taking on bigger, more challenging projects. It takes on large, loosely defined engineering problems across multiple repositories and monorepos, tests its own work as it goes, and is more willing to question inherited conclusions, so it finds root causes previous Claude models miss. In Anthropic’s testing, it coordinated hundreds of subagents as a lead agent and flagged results that don't reproduce. Beyond coding, it develops new analytical methods for scientific research and brings frontier reasoning to quantitative finance.</p> \n<p>Anthropic has designated Fable 5.2 and Mythos 5.2 as covered models, which require data retention for safety monitoring. Until Enterprise Frontier Safeguards is available, eligible customers can use Fable 5.2 with zero data retention. Visit the Amazon Bedrock <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html\" target=\"_blank\" rel=\"noopener noreferrer\">abuse detection</a> page to learn more about details regarding data retention for these models.</p> \n<p>Customers have two ways to access Claude Fable 5.2: Amazon Bedrock and Claude Platform on AWS. To learn more, see the Amazon Bedrock <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-2.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>, <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\" target=\"_blank\" rel=\"noopener noreferrer\">regional availability</a>, and <a href=\"https://docs.aws.amazon.com/claude-platform/latest/userguide/welcome.html\" target=\"_blank\" rel=\"noopener noreferrer\">Claude Platform on AWS</a> documentation.&nbsp;</p>",
-          "categories": [
-            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "AWS Analytics services now support Workday Data Cloud integration",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-analytics-workday-data-cloud/",
-          "published": "2026-11-09T08:00:00+00:00",
-          "summary": "<p>Today, AWS announces a new bi-directional, zero-copy integration between AWS Analytics services and Workday Data Cloud. Instead of building and maintaining ETL pipelines to replicate data between systems, joint customers can now query across their AWS and Workday datasets in place, without moving or copying data, while retaining existing security controls in both environments.</p>\n<p>From AWS, you can use Amazon SageMaker Unified Studio, Amazon EMR, AWS Glue, Amazon Redshift, and Amazon Athena to query Workday data through Workday Live Data Query or federate to Apache Iceberg tables in Workday Data Cloud through catalog federation. Configure a connection in SageMaker Unified Studio, AWS Glue, or AWS Lake Formation consoles and begin querying immediately. Access is governed by AWS and Workday permissions.</p>\n<p>From Workday, you can register your AWS Glue Data Catalog Iceberg REST endpoint as an external catalog in Workday Analytics and query your AWS Iceberg tables directly. Common use cases include joining workforce data with business data for talent analytics, workforce planning, and machine learning.</p>\n<p>This integration is available in all AWS commercial regions where AWS Glue is available. To learn more, see the <a href=\"https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-workday.html\" target=\"_blank\">AWS Glue User Guide</a>, the <a href=\"https://doc.workday.com/admin-guide/en-us/workday-data-cloud/data-out/workday-data-lake/workday-data-lake.html\" target=\"_blank\">Workday Data Cloud integration with AWS on Workday Data Cloud</a>, and the <a href=\"https://aws.amazon.com/blogs/big-data/introducing-the-workday-data-cloud-integration-with-aws/\" target=\"_blank\">AWS Big Data Blog post</a>.</p>",
-          "categories": [
-            "general:products/amazon-redshift,general:products/aws-glue,general:products/amazon-athena,general:products/amazon-sagemaker"
-          ]
-        },
-        {
-          "title": "Amazon S3 Access Points for Amazon FSx are now available in additional AWS Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/s3-access-points-fsx-regions/",
-          "published": "2026-11-09T08:00:00+00:00",
-          "summary": "<p>You can now attach Amazon S3 Access Points to your Amazon FSx for NetApp ONTAP file systems in 4 additional AWS Regions, and to your Amazon FSx for OpenZFS file systems in 20 additional AWS Regions. With this capability, your file data in Amazon FSx is accessible for use with the broad range of artificial intelligence, machine learning, and analytics services and applications that work with S3, while your data continues to reside on your FSx file system.</p> \n<p>An S3 Access Point for Amazon FSx is an S3 endpoint that gives S3-based applications and services access to the data on your FSx file system through the Amazon S3 API, without copying or moving that data. For example, you can connect generative AI applications and agents to your file data with Amazon Bedrock Knowledge Bases so they deliver relevant, contextual responses. Users can query the same data in place with Amazon Athena or transform it with AWS Glue, and you can share files with partners over SFTP, FTPS, and FTP using AWS Transfer Family. You can also access your files from serverless compute such as Amazon ECS and AWS Fargate, or from your own S3-based applications.</p> \n<p>Amazon S3 Access Points for FSx for ONTAP and FSx for OpenZFS are now available in additional AWS Regions across North America, South America, Europe, Asia Pacific, and Africa. For the full list of AWS Regions supported for each file system, see the <a href=\"https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/accessing-data-via-s3-access-points.html#access-points-for-fsx-ontap-supported-regions\" target=\"_blank\" rel=\"noopener noreferrer\">FSx for ONTAP</a> and <a href=\"https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/s3accesspoints-for-FSx.html#access-points-for-fsx-openzfs-supported-regions\" target=\"_blank\" rel=\"noopener noreferrer\">FSx for OpenZFS</a> user guides. Get started by creating and attaching S3 Access Points using the Amazon FSx console, the AWS Command Line Interface (AWS CLI), or the AWS Software Development Kit (AWS SDK). To learn more, visit the <a href=\"https://aws.amazon.com/fsx/netapp-ontap/\">Amazon FSx for NetApp ONTAP</a> and <a href=\"https://aws.amazon.com/fsx/openzfs/\">Amazon FSx for OpenZFS</a> product pages, the <a href=\"https://aws.amazon.com/s3/features/access-points/\">Amazon S3 Access Points page</a>, and the FSx for <a href=\"https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/accessing-data-via-s3-access-points.html\" target=\"_blank\" rel=\"noopener noreferrer\">ONTAP</a> and <a href=\"https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/s3accesspoints-for-FSx.html\" target=\"_blank\" rel=\"noopener noreferrer\">OpenZFS</a> user guides.</p>",
-          "categories": [
-            "general:products/amazon-fsx-for-openzfs,general:products/amazon-fsx-netapp-ontap"
-          ]
-        },
-        {
-          "title": "Introducing AWS Nitro Sandboxes on Amazon EKS, ECS and EC2 for hardware isolated pods, tasks and VMs",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/",
-          "published": "2026-11-09T08:00:00+00:00",
-          "summary": "<p>AWS Nitro Sandboxes are now available as lightweight VMs managed by the Nitro Hypervisor. You can use Nitro Sandboxes for an Amazon EKS pod, or Amazon ECS task, or lightweight Virtual Machines (VMs), including AI agents running inside them, in their own hardware-isolated virtual machine powered by the <a href=\"https://aws.amazon.com/ec2/nitro/\">AWS Nitro System</a>. Each workload gets the isolation boundary of a Nitro isolated virtual machine. This allows you to safely run untrusted, multi-tenant, or regulated workloads within the resources of a single instance.</p> \n<p>Nitro Sandboxes run on your EC2 instances with near-native EC2 performance and inherits Nitro-hypervisor isolation. You can also validate your workloads through cryptographic attestation, so that secrets are released only to Nitro Sandboxes that have proven their integrity. With Nitro Sandboxes, you can safely execute LLM-generated code in an isolated environment of its own all while improving utilization and lowering compute costs by securely sharing a single EC2 instance across multiple agentic workloads. You can easily enable EKS pods or ECS tasks to run on Nitro Sandboxes and each pod or task gets its own isolated environment. Enabling Nitro Sandboxes in EKS or ECS is a one-line change and each pod or task gets its own VM, with your workloads remaining fully native (Pod Identity, VPC CNI, EBS/EFS/S3 storage, and CloudWatch all work out of the box). If you want full control, run Nitro Sandboxes directly on EC2 with your own AMI, orchestration, and with virtual machine monitors (VMMs). Amazon Linux and Firecracker are natively supported, and patches for other options are available today.</p> \n<p>AWS Nitro Sandboxes are available today on most Nitro-based EC2 instances, in all commercial regions worldwide, at no additional charge.</p> \n<p>To learn more and get started, see the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/sandboxing.html\">EKS User Guide</a> or <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/isolated-confidential-tasks.html\">ECS User Guide</a>. For implementation details or to fully customize your Nitro Sandbox usage, see the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nitro-sandboxes.html\">Nitro Sandboxes documentation</a> in the EC2 user guide.</p>",
-          "categories": [
-            "general:products/amazon-eks,general:products/amazon-ec2,general:products/amazon-ecs"
-          ]
-        },
-        {
-          "title": "Amazon Route 53 Profiles now supports multiple Profiles per VPC",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-profiles-multiple-per-vpc/",
-          "published": "2026-11-09T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/route53/\">Amazon Route 53 Profiles</a> now lets you associate more than one Profile with a VPC. Previously, a VPC could have only one Profile, so teams that managed Route 53 configurations separately (for example, security teams managing DNS Firewall rule groups while cloud infrastructure and network admin teams manage private hosted zones and Resolver forwarding rules) all had to share a single Profile and associate their private hosted zones, Resolver rules, and DNS Firewall rule groups with it.</p> \n<p>With this launch, you can now associate multiple Profiles with the same VPC and set a priority for every Profile. Route 53 evaluates a VPC's Profiles in priority order, starting with the lowest number, so you can keep shared Route 53 configurations in one Profile and team-specific configurations in another without merging them, while assigning them the right priority. Combined with <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-route-53-profiles-granular-iam/\">the granular IAM permissions</a> launched in March 2026, multiple Profiles per VPC improves security posture by letting each team own and manage its own Profile with least-privilege permissions.</p> \n<p>This capability is available in all AWS Regions where Route 53 Profiles is available.</p> \n<p>Each Profile-VPC association is billed at standard Route 53 Profiles pricing. For details, see <a href=\"https://aws.amazon.com/route53/pricing/\">Amazon Route 53 pricing</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles.html\" target=\"_blank\" rel=\"noopener noreferrer\">Route 53 Profiles</a> in the Amazon Route 53 Developer Guide.</p>",
-          "categories": [
-            "general:products/amazon-route-53"
-          ]
-        },
-        {
-          "title": "Amazon EKS Auto Mode and Karpenter now support Dynamic Resource Allocation",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-karpenter-dra/",
-          "published": "2026-11-09T06:00:00+00:00",
-          "summary": "<p>Amazon Elastic Kubernetes Service (Amazon EKS) now supports Dynamic Resource Allocation (DRA) for NVIDIA GPUs and Elastic Fabric Adapter (EFA) network devices when using Amazon EKS Auto Mode and Karpenter. You can now define the device attributes your Kubernetes workloads need with DRA, share GPU devices across Pods, and allocate topology-aligned GPU and EFA devices while Amazon EKS Auto Mode and Karpenter dynamically scale Amazon EC2 instances based on workload demand.</p> \n<p>With DRA, you define ResourceClaim or ResourceClaimTemplate objects that describe what GPU or EFA devices can be allocated to workloads, by model, architecture, or other attributes. When running distributed training or inference, you can define PCIe-aligned GPU and EFA devices for optimal performance. Workloads then request those DRA objects in their configuration, and Karpenter automatically launches the lowest-cost instances that match. When using Amazon EKS Auto Mode, the NVIDIA DRA driver and EFA DRA driver (DRANET) are built-in, and you simply define your DRA objects and use them in your workloads. Amazon EKS Auto Mode automatically prevents workloads using DRA and workloads using device plugins for the same device type from running on the same nodes to mitigate the risk of silent device oversubscription during migrations.</p> \n<p>DRA support for Amazon EKS Auto Mode and Karpenter is available in all AWS Regions, except the AWS GovCloud (US) Regions and the China Regions. DRA support is available for all Kubernetes versions in Karpenter, and for Kubernetes versions 1.36 and newer in <a href=\"https://aws.amazon.com/eks/auto-mode/\">Amazon EKS Auto Mode</a>. To learn more, see the DRA documentation in the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/device-management.html\">Amazon EKS User Guide</a> and <a href=\"https://karpenter.sh/docs/tasks/dra/\">Karpenter documentation</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/containers,general:products/amazon-eks"
-          ]
-        },
-        {
-          "title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
-          "published": "2026-11-06T22:47:00+00:00",
-          "summary": "<p>Today, Kimi K3.1 Pro from Moonshot AI is available on Amazon Bedrock, expanding our open weight model portfolio with the security and governance that customers rely on. Customers using Amazon Bedrock can now run agentic use cases such as coding and document processing on Kimi K3.1 Pro (Highspeed), which delivers high output tokens per second (OTPS) for faster, more responsive results.</p> \n<p>According to Moonshot AI, Kimi K3.1 Pro is an open-weight, natively multimodal agentic model with a 1-million-token context window, and its most capable 3-trillion-parameter-class model to date. Moonshot AI reports improvements in coding, 3D creation, financial research, and other agentic work. On Amazon Bedrock, it runs within the same security boundary as proprietary models and supports <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html\">explicit prompt caching</a> to reduce latency and input costs.</p> \n<p>Kimi K3.1 Pro is available in all <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\">AWS Regions</a> where Amazon Bedrock is available through cross-Region inference. To get started, visit the <a href=\"https://console.aws.amazon.com/bedrock/\">Amazon Bedrock console</a>. To learn more, see the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k3-1-highspeed.html\">Amazon Bedrock documentation</a>.</p>",
-          "categories": [
-            "general:products/amazon-bedrock,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "Agent Registry is now generally available in AWS GovCloud (US-West) Region",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/",
-          "published": "2026-11-06T19:48:00+00:00",
-          "summary": "<p>AWS Agent Registry, available through Amazon Bedrock AgentCore, is now available in the AWS GovCloud (US-West) Region.</p> \n<p>AWS Agent Registry is a fully managed discovery service that gives your organization a central catalog for organizing, curating, and discovering resources. You can publish MCP servers, tools, agents, agent skills, and custom resources to a searchable registry, and control what becomes discoverable through an approval workflow. People and AI agents can then find the right tools and agents through hybrid search, catalog browsing, and a native MCP endpoint.</p> \n<p>With Agent Registry in AWS GovCloud (US-West), public sector organizations and their partners get a single governed inventory of the agents and tools in their environment. Approval workflows and AWS CloudTrail audit logs support their compliance and oversight requirements.</p> \n<p>To get started, see the <a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html\">AWS Agent Registry documentation</a>.</p>",
-          "categories": [
-            "general:products/aws-govcloud-us"
-          ]
-        },
-        {
-          "title": "Amazon MWAA Serverless now supports custom and provider package operators",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-serverless-custom-operators/",
-          "published": "2026-11-06T18:00:00+00:00",
-          "summary": "<p>Amazon MWAA Serverless now supports operators from Apache Airflow provider packages, such as HTTP, Snowflake, or dbt, and custom operators that you write. This gives data engineers the flexibility to integrate with more systems and build specialized workflow tasks without provisioning infrastructure.</p>\n<p>To get started, add the provider package or your own operator to a code package, upload it to Amazon S3, and reference the operator in your workflow definition when you create or update a workflow.</p>\n<p>This feature is available in all AWS Regions where Amazon MWAA Serverless is available. For a list of supported Regions, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html#regions\" target=\"_blank\">Amazon MWAA Serverless Regions</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/custom-code-operators.html\" target=\"_blank\">Running custom code with Python, Bash, and custom operators</a> in the Amazon MWAA Serverless User Guide.</p>",
-          "categories": [
-            "marketing:marchitecture/analytics,general:products/amazon-mwaa"
-          ]
-        },
-        {
-          "title": "Amazon MWAA Serverless supports Apache Airflow connections and variables",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-serverless-connections-variables/",
-          "published": "2026-11-06T18:00:00+00:00",
-          "summary": "<p>Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Serverless now supports Apache Airflow connections and variables, so your workflows can reach databases, APIs, and other external systems. You can manage credentials and configuration outside your workflow code.</p>\n<p>You store sensitive connections and variables in the secrets backend of your choice, such as AWS Secrets Manager, AWS Systems Manager Parameter Store, or your own custom backend, configure it on your workflow, and grant your workflow execution role access. Tasks retrieve them at run time through standard Apache Airflow methods. You can define non-secret values as environment variables on the workflow.</p>\n<p>This feature is available in all AWS Regions where Amazon MWAA Serverless is available. For more information, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html#regions\" target=\"_blank\">Amazon MWAA Serverless Regions</a>.</p>\n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/connections.html\" target=\"_blank\">Managing connections and variables</a> and <a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/workflows-environment-variables.html\" target=\"_blank\">Using environment variables in Amazon MWAA Serverless workflows</a> in the Amazon MWAA Serverless User Guide.</p>",
-          "categories": [
-            "marketing:marchitecture/analytics,general:products/amazon-mwaa"
-          ]
-        },
-        {
-          "title": "Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West) Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions",
-          "published": "2026-11-06T16:00:00+00:00",
-          "summary": "<p>You can now use Amazon MSK Replicator in the AWS GovCloud (US-East, US-West) Regions to replicate streaming data across <a href=\"https://aws.amazon.com/msk/\">Amazon MSK</a> clusters and from external Apache Kafka clusters including on-premises, self-managed on AWS, or other cloud providers to Amazon MSK Provisioned clusters.</p> \n<p>MSK Replicator is a feature of Amazon MSK that automates data replication between Kafka clusters, eliminating the need to manage custom replication infrastructure or configure open-source tools. With MSK Replicator, you can easily build regionally resilient streaming applications for increased availability and business continuity. MSK Replicator provides automatic asynchronous replication across Kafka clusters, eliminating the need to write custom code, manage infrastructure, or setup cross-region networking. MSK Replicator automatically scales the underlying resources so that you can replicate data on-demand without having to monitor or scale capacity. MSK Replicator also replicates the necessary Kafka metadata including topic configurations, Access Control Lists (ACLs), and consumer group offsets. If an unexpected event occurs in a region, you can failover to the other AWS Region and seamlessly resume processing.</p> \n<p>You can get started with MSK Replicator from the Amazon MSK console or the Amazon CLI. To learn more, visit the MSK Replicator <a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator.html\"><u>documentation</u></a>, <a href=\"https://aws.amazon.com/msk/features/msk-replicator/\"><u>product page</u></a>, and <a href=\"https://aws.amazon.com/msk/pricing/\"><u>pricing page</u></a>.</p>",
-          "categories": [
-            "general:products/amazon-msk,marketing:marchitecture/analytics"
-          ]
         }
       ]
     },
@@ -456,128 +454,137 @@
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
         {
-          "title": "【開催報告 & 資料公開】Claude Mythos 時代の AWS セキュリティ対策 ～ AWS Security Agent ご紹介 ～",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-jpps-seminar-2026-july/",
-          "published": "2026-11-12T01:20:54+00:00",
-          "summary": "こんにちは。アマゾン ウェブ サービス ジャパン合同会社 パートナーソリューションアーキテクトの深井宣之です。 […]",
+          "title": "AWS Emulator を使用してローカルで AWS に対してアプリケーションをテストする",
+          "link": "https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/",
+          "published": "2026-11-13T02:12:53+00:00",
+          "summary": "2026 年 11 月 11 日、Amazon Web Services (AWS) のローカルエミュレーター […]",
           "categories": [
+            "Amazon Bedrock AgentCore",
+            "Announcements",
+            "Developer Tools",
+            "Launch",
+            "Technical How-to"
+          ]
+        },
+        {
+          "title": "AWS Quick の Smart Approvals: 必要なところに人の監督を",
+          "link": "https://aws.amazon.com/jp/blogs/news/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/",
+          "published": "2026-11-13T01:57:43+00:00",
+          "summary": "AWS Quick の Smart Approvals は、既存の制御の範囲内で、エージェントが提案するアクションをユーザーの依頼と照らし合わせて評価し、自動で承認するかユーザーに戻すかを決めます。本記事では、そのしくみ、監査の証跡、パイロットから始める導入の進め方を紹介します。",
+          "categories": [
+            "AWS Quick",
+            "Intermediate (200)",
+            "Thought Leadership"
+          ]
+        },
+        {
+          "title": "AWS Quick をエンタープライズ対応に: 自動化され監査も可能な、アカウント間のリソース昇格",
+          "link": "https://aws.amazon.com/jp/blogs/news/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/",
+          "published": "2026-11-13T01:56:04+00:00",
+          "summary": "AWS Quick のエージェント、アクションコネクタ、ナレッジベース、フロー、スペースを、開発アカウントから本番アカウントへ昇格させる作業は、これまで手作業でした。本記事では、Amazon Bedrock AgentCore 上で動く冪等で監査可能な MCP サーバー「Quick Resource Migrator」で、権限も含めたアカウント間の昇格を自動化する方法を紹介します。",
+          "categories": [
+            "Advanced (300)",
+            "AWS Quick",
+            "Technical How-to"
+          ]
+        },
+        {
+          "title": "AWS PrivateLink で企業ネットワークから AWS Quick へのアクセスを保護する",
+          "link": "https://aws.amazon.com/jp/blogs/news/securing-quick-access-from-corporate-networks-with-aws-privatelink/",
+          "published": "2026-11-13T01:53:56+00:00",
+          "summary": "社内ファイアウォールの内側やオンプレミスにあるデータソースに、パブリックインターネットを通らずに AWS Quick から接続する方法を説明します。AWS PrivateLink による VPC エンドポイント、VPC 接続、IAM Identity Center によるアイデンティティ制御、VPC エンドポイントによるアクセス制限を組み合わせた構成を紹介します。",
+          "categories": [
+            "Advanced (300)",
+            "AWS PrivateLink",
+            "AWS Quick",
+            "Technical How-to"
+          ]
+        },
+        {
+          "title": "AWS Quick のスキルとエージェントの仕組み",
+          "link": "https://aws.amazon.com/jp/blogs/news/how-skills-and-agents-work-in-aws-quick/",
+          "published": "2026-11-13T01:50:29+00:00",
+          "summary": "AWS Quick でエージェント、スキル、データがどう組み合わさるのかを説明します。チームで使えるスキルの作り方と共有方法、本番用スキルのベストプラクティス、公式カタログとカスタムエージェントの活用方法も紹介します。",
+          "categories": [
+            "AWS Quick",
+            "Best Practices",
+            "Intermediate (200)"
+          ]
+        },
+        {
+          "title": "AWS Quick のチャットエージェントを企業アプリケーションに埋め込む",
+          "link": "https://aws.amazon.com/jp/blogs/news/embed-amazon-quick-suite-chat-agents-in-enterprise-applications/",
+          "published": "2026-11-13T01:48:08+00:00",
+          "summary": "AWS Quick の埋め込みチャットを使うと、普段使っているアプリケーションの中で対話型 AI を利用できます。本記事では、Amazon CloudFront、Amazon Cognito、Amazon API Gateway、AWS Lambda を組み合わせ、AWS Quick のチャットエージェントを企業ポータルにセキュアに埋め込むソリューションを、ワンクリックでデプロイする方法を紹介します。",
+          "categories": [
+            "Amazon API Gateway",
+            "Amazon CloudFront",
+            "Amazon Cognito",
+            "Artificial Intelligence",
+            "AWS Lambda",
+            "AWS Quick",
+            "Embedded Analytics",
+            "Generative AI",
+            "Intermediate (200)",
+            "Technical How-to"
+          ]
+        },
+        {
+          "title": "AWS Weekly Roundup: AgentCore Runtime V2、Amazon DynamoDB のバルクプット項目など (2026 年 11 月 9 日)",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/",
+          "published": "2026-11-13T01:38:23+00:00",
+          "summary": "新しいものを導入する際のコストの大部分は、新しいもの自体ではなく、移行作業にあります。Hive テーブルを A […]",
+          "categories": [
+            "Amazon Athena",
+            "Amazon Aurora",
             "Amazon Bedrock",
-            "Amazon GuardDuty",
+            "Amazon Bedrock AgentCore",
+            "Amazon DynamoDB",
+            "Amazon EC2",
+            "Amazon Elastic Container Registry",
+            "Amazon Elastic Container Service",
             "Amazon Inspector",
+            "Amazon S3 Tables",
+            "Amazon SageMaker Unified Studio",
+            "Amazon Simple Notification Service (SNS)",
+            "Announcements",
+            "AWS Direct Connect",
+            "AWS Fargate",
+            "AWS Glue",
             "AWS Lambda",
             "AWS Security Hub",
-            "AWS WAF",
-            "AWS Partner Network"
+            "News"
           ]
         },
         {
-          "title": "AWS re:Invent 2026 で見逃せないデジタル主権関連セッション",
-          "link": "https://aws.amazon.com/jp/blogs/news/digital-sovereignty-at-reinvent-2026-sessions-you-wont-want-to-miss/",
-          "published": "2026-11-12T00:02:08+00:00",
-          "summary": "2026 年 11 月 30 日～12 月 4 日にラスベガスで開催される AWS re:Invent 2026 から、デジタル主権に関するブレイクアウトセッション、チョークトーク、ワークショップ、ライトニングトークを 5 つのテーマ別に紹介します。AWS European Sovereign Cloud による運用上の自律性、データレジデンシー要件下での AI ワークロードの配置、AWS Outposts や AWS 専有ローカルゾーンなどのインフラストラクチャの選び方、ディザスタリカバリとパーティション間接続、業界別のデジタル主権を取り上げます。",
-          "categories": [
-            "Announcements",
-            "AWS re:Invent",
-            "Events",
-            "Foundational (100)",
-            "Security, Identity, & Compliance",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "業務部門が自分で改善できる AI Ready Data を作る ― AI がどれだけ賢くなっても解決できないこと",
-          "link": "https://aws.amazon.com/jp/blogs/news/%E6%A5%AD%E5%8B%99%E9%83%A8%E9%96%80%E3%81%8C%E8%87%AA%E5%88%86%E3%81%A7%E6%94%B9%E5%96%84%E3%81%A7%E3%81%8D%E3%82%8B-ai-ready-data-%E3%82%92%E4%BD%9C%E3%82%8B-%E2%80%95-ai-%E3%81%8C%E3%81%A9%E3%82%8C/",
-          "published": "2026-11-11T23:44:21+00:00",
-          "summary": "このブログでは、IHI 様と AWS プロフェッショナルサービスチームが、業務部門の悩みを AI で解決するた […]",
-          "categories": [
-            "Amazon Bedrock",
-            "Amazon Machine Learning",
-            "Amazon Neptune",
-            "Artificial Intelligence",
-            "AWS Professional Services",
-            "Customer Enablement",
-            "Database",
-            "General"
-          ]
-        },
-        {
-          "title": "Kiro の「Approve for me」のご紹介",
-          "link": "https://aws.amazon.com/jp/blogs/news/introducing-approve-for-me/",
-          "published": "2026-11-11T05:29:19+00:00",
-          "summary": "2026 年 11 月 10 日、Kiro IDE、Kiro CLI、Kiro Web で「Approve for me」の提供を始めました。Approve for me を有効にすると、ルールで決まっていない操作について、Kiro が LLM によるレビューを行います。",
+          "title": "Kiro for Android のご紹介",
+          "link": "https://aws.amazon.com/jp/blogs/news/android/",
+          "published": "2026-11-13T01:22:07+00:00",
+          "summary": "Kiro for Android を Google Play で提供開始しました。Android のユーザーは、スマートフォンから新しい作業を始め、すでに動いているクラウドの作業を引き継ぎ、そのまま進められるようになりました。",
           "categories": [
             "Developer Tools",
             "Kiro"
           ]
         },
         {
-          "title": "製造業 7 社が率直に語った AI エージェント全社基盤の実践と課題：生成 AI 基盤・活用推進 ラウンドテーブル 2026年10月 開催報告",
-          "link": "https://aws.amazon.com/jp/blogs/news/genai-roundtable-202610/",
-          "published": "2026-11-11T01:38:37+00:00",
-          "summary": "製造業のお客様を支援しているソリューションアーキテクトの西田です。 2026 年 10 月 26 日に AWS […]",
+          "title": "Grok 4.7 が Kiro で使えるようになりました",
+          "link": "https://aws.amazon.com/jp/blogs/news/grok-4-7/",
+          "published": "2026-11-13T01:21:12+00:00",
+          "summary": "SpaceXSI の Grok 4.7 を、Kiro IDE、CLI、Crew、Web で使えるようになりました。Grok 4.7 は数時間に及ぶ難しいタスクでも作業を続け、次に進む前に自分の作業を確かめるように作られています。",
           "categories": [
-            "Amazon Bedrock",
-            "Amazon Bedrock AgentCore",
-            "Generative AI",
-            "Manufacturing"
+            "Developer Tools",
+            "Kiro"
           ]
         },
         {
-          "title": "AIが進め、人が決める ― AI駆動開発の本当のボトルネックはどこにあったか",
-          "link": "https://aws.amazon.com/jp/blogs/news/mbk-wellness-ai-dlc-workshop/",
-          "published": "2026-11-10T23:48:12+00:00",
-          "summary": "こんにちは。AWS ソリューションアーキテクトの崔 祐碩（Woosuk Choi）です。AI 開発を進めている多くのお客様から「開発を加速したい」というご相談をいただいています。お客様と議論を重ねるたびに、本当のボトルネックは開発そのものではなく、意思決定をめぐるプロセスと組織ではないか、と感じることが増えてきました。本ブログでは、2026年7月29日に MBK Wellness 株式会社と実施した AI-DLC ワークショップを題材に、私たちがこの仮説をどう確かめ、どんな答えが返ってきたのかをご紹介します。",
-          "categories": [
-            "General",
-            "Generative AI"
-          ]
-        },
-        {
-          "title": "AWS Nitro Sandboxes: Amazon EKS で実現するハードウェア強制型ワークロード分離",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-nitro-sandboxes-hardware-enforced-workload-isolation-on-amazon-eks/",
-          "published": "2026-11-10T04:22:48+00:00",
-          "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) 向けに AWS Nitro Sandboxes の提供を開始しました。サンドボックス化されたポッドは AWS Nitro System を基盤とする専用の軽量 VM で実行されるため、ポッドごとにハードウェアベースのセキュリティ境界を設けられます。EKS Auto Mode ではポッド仕様を 1 行変更するだけで有効にでき、分離モードと機密モードを選べます。AI エージェント、マルチテナント SaaS、規制対象のワークロードを安全かつ効率的に実行する方法を、AI コーディングエージェントの実行例とともに紹介します。",
-          "categories": [
-            "Advanced (300)",
-            "Amazon Elastic Kubernetes Service",
-            "Announcements",
-            "Security, Identity, & Compliance",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "第 1 回: 電子カルテベンダーのためのガバメントクラウド入門 — ガバクラ・公共 SaaS を理解する",
-          "link": "https://aws.amazon.com/jp/blogs/news/emr-govcloud-saas-japan/",
-          "published": "2026-11-10T02:40:19+00:00",
-          "summary": "みなさん、こんにちは。AWS ジャパン 執行役員 パブリックセクター技術統括本部長の瀧澤です。 電子カルテベン […]",
-          "categories": [
-            "General",
-            "Healthcare",
-            "Public Sector"
-          ]
-        },
-        {
-          "title": "AMS Trusted Remediator でコスト最適化とセキュリティ修復を自動化する",
-          "link": "https://aws.amazon.com/jp/blogs/news/optimize-cost-and-automate-security-remediation-with-ams-trusted-remediator/",
-          "published": "2026-11-10T02:02:53+00:00",
-          "summary": "Amazon Web Services (AWS) を活用している組織は、セキュリティとコスト最適化に関する推奨事項を毎月数千件も受け取ります。しかし、優先順位の問題やリソースの制約からその多くは実施されないままとなっています。AWS Managed Services (AMS) の Trusted Remediator はこの課題を解決するため、複数の AWS アカウントにわたる修復を自動化し、手作業による修復にかかる時間と手間を大幅に減らします。あらかじめ用意された修復ライブラリは、116 件の推奨事項に対応しており、新しい機能が加わるたびに増え続けています。これらの自動化は、セキュリティ、コスト最適化、運用上の優秀性の各分野にわたります。企業はセキュリティホールを効率よくふさぎ、コストを最適化し、コンプライアンスを維持しながら AWS のベストプラクティスの変化にも柔軟に対応できます。",
-          "categories": [
-            "AWS Managed Services",
-            "AWS Support",
-            "Cloud Cost Optimization",
-            "Security & Governance"
-          ]
-        },
-        {
-          "title": "AWS 上の Microsoft ワークロード: re:Invent 2026 完全ガイド",
-          "link": "https://aws.amazon.com/jp/blogs/news/microsoft-workloads-on-aws-your-complete-reinvent-2026-guide/",
-          "published": "2026-11-10T01:14:18+00:00",
-          "summary": "AWS re:Invent 2026 では、AWS 上で Microsoft ワークロードを実行しているお客様向けに充実したセッションを用意しています。AWS Transform と Kiro によるエージェンティック AI での .NET と SQL Server のモダナイゼーション、ライセンスコストの削減、VMware からの移行、レジリエンスの高い運用まで、ぜひ参加していただきたいセッションを紹介します。",
+          "title": "プロの仕事には、プロの道具を。AWS Quick のご紹介",
+          "link": "https://aws.amazon.com/jp/blogs/news/professional-work-deserves-professional-tools-meet-aws-quick/",
+          "published": "2026-11-13T01:12:08+00:00",
+          "summary": "AWS Quick として初めてのブランドキャンペーンを米国と英国で始めました。本記事では、仕事のためだけに作られた AI ワークスペースである AWS Quick の考え方と、組み込まれたセキュリティとガバナンスを紹介します。",
           "categories": [
             "Announcements",
-            "AWS Transform",
-            "Generative AI",
-            "Windows on AWS"
+            "AWS Quick",
+            "Foundational (100)"
           ]
         }
       ]
