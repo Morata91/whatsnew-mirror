@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T02:20:22.291462+00:00",
+  "generated_at": "2026-11-15T01:50:08.286058+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
@@ -174,6 +174,15 @@
           ]
         },
         {
+          "title": "AWS Backup adds logically air-gapped vault support for Amazon EBS Snapshots Archive",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-lag-vault-ebs-archive/",
+          "published": "2026-11-12T08:00:00+00:00",
+          "summary": "<p>AWS Backup logically air-gapped vault now supports Amazon EBS Snapshots Archive. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event.</p> \n<p>You can now archive Amazon EBS backups held in a logically air-gapped vault to Amazon EBS Snapshots Archive, a low-cost tier for snapshots you rarely access. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using AWS owned keys or customer-managed keys. This helps you meet long-term retention and compliance requirements at lower storage cost.</p> \n<p>You can get started using the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. In a backup plan rule that runs monthly or less often, specify a logically air-gapped vault as the primary backup destination or copy destination. Then enable Archive Amazon EBS snapshots in the backup rule lifecycle or copy lifecycle and set the time in warm storage before the backup transitions.</p> \n<p>This support is available in all AWS Regions where both logically air-gapped vault and Amazon EBS Snapshots Archive are available. For more information and detailed regional availability, visit the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Backup documentation</a>. To learn more about logically air-gapped vaults, visit the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html\" target=\"_blank\" rel=\"noopener noreferrer\">product documentation</a> and <a href=\"https://aws.amazon.com/backup/pricing/\">pricing page</a>.</p>",
+          "categories": [
+            "general:products/aws-backup,general:products/amazon-elastic-block-store,marketing:marchitecture/storage"
+          ]
+        },
+        {
           "title": "Amazon FSx for Lustre lowers the entry cost of Intelligent-Tiering file systems by 75%",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/fsx-lustre-intelligent-tiering-lower-throughput/",
           "published": "2026-11-12T08:00:00+00:00",
@@ -189,15 +198,6 @@
           "summary": "<p>AWS Glue introduces automatic version upgrades, a capability that keeps your Apache Spark jobs current on the latest AWS Glue runtime without manual coordination. Staying current on supported runtimes gives your jobs the latest security patches, performance improvements, and support for evolving table formats such as Apache Iceberg. Auto upgrades include multiple levels of validations including assessing jobs for compatibility with the upgraded runtime, obtaining your consent before executing jobs on a newer version, and validating upgraded job runs against each job's established output profile, so your jobs upgrade with the right guardrails in place.</p>\n<p>By setting a job's version to \"Auto\", upgrades that once required weeks of planning and execution now happen automatically. Platform teams can standardize runtime versions across large fleets without chasing individual job owners, and business units without a central upgrade team can keep their jobs current hands-free. Each job is validated against its established output schema, data volume, latency, and format before it upgrades, so you can advance with confidence. Jobs that need code changes keep running safely on their current version, and AWS Glue provides an upgrade analysis with specific fixes you can apply directly or with the Apache Spark upgrade agent.</p>\n<p>Auto upgrades for AWS Glue are available in all AWS Commercial Regions.</p>\n<p>To get started, select \"Auto\" as the AWS Glue version when creating or updating an Apache Spark job using the AWS Glue Studio or AWS CLI, API, and SDKs. Alternatively, you can update multiple jobs at once using the AWS Glue <a href=\"https://github.com/aws-samples/aws-glue-samples/blob/8d52b2c004d48b4d15c20cb1b0bd161da0c98a0d/utilities/skills/managing-glue-jobs/README.md\" target=\"_blank\">skill to manage your jobs</a>. To learn more, visit the <a href=\"https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.html\" target=\"_blank\">AWS Glue documentation</a>.</p>",
           "categories": [
             "general:products/aws-glue"
-          ]
-        },
-        {
-          "title": "AWS Backup adds logically air-gapped vault support for Amazon EBS Snapshots Archive",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-lag-vault-ebs-archive/",
-          "published": "2026-11-12T08:00:00+00:00",
-          "summary": "<p>AWS Backup logically air-gapped vault now supports Amazon EBS Snapshots Archive. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event.</p> \n<p>You can now archive Amazon EBS backups held in a logically air-gapped vault to Amazon EBS Snapshots Archive, a low-cost tier for snapshots you rarely access. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using AWS owned keys or customer-managed keys. This helps you meet long-term retention and compliance requirements at lower storage cost.</p> \n<p>You can get started using the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. In a backup plan rule that runs monthly or less often, specify a logically air-gapped vault as the primary backup destination or copy destination. Then enable Archive Amazon EBS snapshots in the backup rule lifecycle or copy lifecycle and set the time in warm storage before the backup transitions.</p> \n<p>This support is available in all AWS Regions where both logically air-gapped vault and Amazon EBS Snapshots Archive are available. For more information and detailed regional availability, visit the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Backup documentation</a>. To learn more about logically air-gapped vaults, visit the <a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html\" target=\"_blank\" rel=\"noopener noreferrer\">product documentation</a> and <a href=\"https://aws.amazon.com/backup/pricing/\">pricing page</a>.</p>",
-          "categories": [
-            "general:products/aws-backup,general:products/amazon-elastic-block-store,marketing:marchitecture/storage"
           ]
         },
         {
@@ -408,21 +408,21 @@
           ]
         },
         {
-          "title": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-extended-support/",
-          "published": "2026-11-10T17:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\">Amazon Relational Database Service (RDS) for PostgreSQL</a> announces Amazon RDS Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822.</p> \n<p><a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html\" target=\"_blank\">Amazon RDS Extended Support</a> provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version.</p> \n<p>You can upgrade your database using <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\" target=\"_blank\">Amazon RDS Blue/Green Deployments</a>, in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\">Amazon RDS for PostgreSQL User Guide</a>.</p> \n<p>Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the <a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\">Amazon RDS Management Console</a> or by using the AWS Command Line Interface (AWS CLI).</p>",
-          "categories": [
-            "marketing:marchitecture/databases,general:products/amazon-rds"
-          ]
-        },
-        {
           "title": "Amazon RDS for MySQL 26.10 is now available in Amazon RDS Database Preview Environment",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-mysql-26-10-preview-environment/",
           "published": "2026-11-10T17:00:00+00:00",
           "summary": "<p>Starting today, <a href=\"https://aws.amazon.com/rds/mysql/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS for MySQL</a> 26.10 is available in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/create-db-instance-in-preview-environment.html\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS Database Preview Environment</a>, allowing you to evaluate the pre-release of MySQL 26.10 on Amazon RDS for MySQL.</p> \n<p>MySQL 26.10 includes bug fixes, security patches, and some improvements to READ COMMITTED workload performance and purge lag warnings in the error log. On busy READ COMMITTED workloads, NUMA systems performance could be impacted as each read view that closed required a global mutex. Read-view objects can now be reused which eliminates the global mutex on closure. The error log now reports warnings when the history-list length (HLL) crosses innodb_max_purge_lag and when purge lag begins delaying DML, so you can detect purge backlogs before they affect performance. To learn more, please refer to the <a href=\"https://dev.mysql.com/doc/refman/26.10/en/mysql-nutshell.html\" target=\"_blank\" rel=\"noopener noreferrer\">MySQL 26.10 release notes</a>.</p> \n<p>Amazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the <a href=\"https://aws.amazon.com/rds/mysql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">pricing</a> in the US East (Ohio) Region.</p>",
           "categories": [
             "general:products/amazon-rds,marketing:marchitecture/databases"
+          ]
+        },
+        {
+          "title": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-extended-support/",
+          "published": "2026-11-10T17:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\">Amazon Relational Database Service (RDS) for PostgreSQL</a> announces Amazon RDS Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822.</p> \n<p><a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html\" target=\"_blank\">Amazon RDS Extended Support</a> provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version.</p> \n<p>You can upgrade your database using <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\" target=\"_blank\">Amazon RDS Blue/Green Deployments</a>, in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\">Amazon RDS for PostgreSQL User Guide</a>.</p> \n<p>Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the <a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\">Amazon RDS Management Console</a> or by using the AWS Command Line Interface (AWS CLI).</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-rds"
           ]
         },
         {
