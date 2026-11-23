@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T02:10:01.014774+00:00",
+  "generated_at": "2026-11-23T02:40:29.586795+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
@@ -116,21 +116,21 @@
           "categories": []
         },
         {
-          "title": "Demand Center now available in AWS Partner Central",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/demand-center-partner-central/",
-          "published": "2026-11-20T21:00:00+00:00",
-          "summary": "<p>AWS Partners can now plan, launch, fund, and measure demand generation campaigns in one AI-powered experience. Demand Center in AWS Partner Central succeeds Marketing Central and brings together Marketing Central and MDF capabilities, letting you work in Partner Central, in your CRM, or in your AI agents.</p>\n<p>Create hero and distribution assets in multiple languages in minutes with AI campaign creation. Generate content from reference materials, a URL, or a description, and launch it across email, social, and banner ads. Upload leads to get them enriched with propensity signals and recommended next actions. Choose from ready-to-run Partner Ready Campaign kits or connect with AWS-vetted agencies through Agency Connect.</p>\n<p>Generate case studies with AI from ACE closed-won opportunities, and tailor campaign content to the leads included in each campaign. Connect your CRM or marketing automation tool agent-to-agent, or use Demand Center inside agents such as AWS Quick through the Partner Central MCP server. Track campaign-to-revenue performance in Partner Analytics.</p>\n<p>To get started, sign in to AWS Partner Central and select Demand Center.</p>",
-          "categories": [
-            "general:producer/partner,marketing:marchitecture/artificial-intelligence,marketing:marchitecture/partner-network"
-          ]
-        },
-        {
           "title": "Account Mapping and Planning now available in AWS Partner Central",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/account-mapping-and-planning/",
           "published": "2026-11-20T21:00:00+00:00",
           "summary": "<p>AWS Partners can now map their target accounts against AWS records and find where to collaborate with AWS on joint go-to-market before an opportunity exists. Account Mapping and Planning in AWS Partner Central replaces manual, spreadsheet-based account mapping. Upload a target account list through CSV, API, or CRM integration, and accounts are matched automatically against AWS records, including accounts without an ACE opportunity and in any country.</p>\n<p>Partners can use Account Mapping and Planning to enrich matched accounts with AWS Marketplace propensity insights, solution-level purchase likelihood, and eligibility for programs such as the Partner Greenfield Program and the Partner-Led Sales Motion. This helps Partners prioritize high-propensity and program-eligible accounts for go-to-market activity. Eligible Partners can also request joint account planning with AWS sales on accounts marked Qualified, so AWS and Partner teams can align on an account strategy earlier. Account planning is available to Consulting Partners that are ACE-eligible, Premier tier and managed by an AWS Partner Development Manager (PDM), and to ISVs that are ACE-eligible, enrolled in the SaaS Co-sell Benefit program and PDM-managed.</p>\n<p>Account Mapping and Planning is available under the Sell tab in AWS Partner Central, and account matching and enrichment are open to all ACE-eligible Partners. Partners can work in the Partner Central console, through the API and SDK, through the Partner Central MCP server, or through an integration Partner to connect results to their CRM.</p>\n<p>To get started, sign in to AWS Partner Central, go to the Account Mapping page under the Sell tab, and upload a target account list.</p>",
           "categories": [
             "marketing:marchitecture/partner-network,general:producer/partner"
+          ]
+        },
+        {
+          "title": "Demand Center now available in AWS Partner Central",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/demand-center-partner-central/",
+          "published": "2026-11-20T21:00:00+00:00",
+          "summary": "<p>AWS Partners can now plan, launch, fund, and measure demand generation campaigns in one AI-powered experience. Demand Center in AWS Partner Central succeeds Marketing Central and brings together Marketing Central and MDF capabilities, letting you work in Partner Central, in your CRM, or in your AI agents.</p>\n<p>Create hero and distribution assets in multiple languages in minutes with AI campaign creation. Generate content from reference materials, a URL, or a description, and launch it across email, social, and banner ads. Upload leads to get them enriched with propensity signals and recommended next actions. Choose from ready-to-run Partner Ready Campaign kits or connect with AWS-vetted agencies through Agency Connect.</p>\n<p>Generate case studies with AI from ACE closed-won opportunities, and tailor campaign content to the leads included in each campaign. Connect your CRM or marketing automation tool agent-to-agent, or use Demand Center inside agents such as AWS Quick through the Partner Central MCP server. Track campaign-to-revenue performance in Partner Analytics.</p>\n<p>To get started, sign in to AWS Partner Central and select Demand Center.</p>",
+          "categories": [
+            "general:producer/partner,marketing:marchitecture/artificial-intelligence,marketing:marchitecture/partner-network"
           ]
         },
         {
@@ -372,21 +372,21 @@
           ]
         },
         {
-          "title": "Amazon Managed Service for Prometheus supports 2B active metrics and 300K rules per workspace",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amp-supports-2b-metrics-300k-rules/",
-          "published": "2026-11-20T16:00:00+00:00",
-          "summary": "<p>Amazon Managed Service for Prometheus now supports up to 2 billion active metric time series and up to 300,000 total recording and alerting rules per workspace. Customers can also create multiple workspaces per account. This lets them store and analyze billions of Prometheus metrics across their organization.</p> \n<p>Amazon Managed Service for Prometheus is a fully managed, Prometheus-compatible monitoring service. It helps you monitor and alert on operational metrics at scale. It scales ingestion and storage automatically for high-cardinality workloads across containerized, serverless and hybrid environments. </p> \n<p>To get started, create an Amazon Managed Service for Prometheus workspace. To raise your active series or rules limits, file a service limit increase request in AWS Support Center or AWS Service Quotas. To learn more, see the <a href=\"https://docs.aws.amazon.com/prometheus/latest/userguide/AMP_quotas.html\">Amazon Managed Service for Prometheus user guide</a> and the <a href=\"https://aws.amazon.com/prometheus/\">product page.</a></p>",
-          "categories": [
-            "marketing:marchitecture/management-and-governance"
-          ]
-        },
-        {
           "title": "AWS Lambda MicroVMs is now available in 7 additional AWS regions",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-7-regions",
           "published": "2026-11-20T16:00:00+00:00",
           "summary": "<p>AWS Lambda MicroVMs is now available in 7 additional AWS Regions: Asia Pacific (Osaka), Asia Pacific (Seoul), Canada (Central), Europe (London), Europe (Paris), South America (São Paulo), and US West (N. California). With this launch, you can use Lambda MicroVMs in a total of 21 AWS Regions.</p> \n<p>Lambda MicroVMs is a serverless compute primitive that provides VM-level isolation, near-instant launch and resume speeds, and state preservation for executing user or AI generated code.&nbsp; The service enables secure, stateful, and responsive code execution for applications including AI coding assistants, interactive development environments, and vulnerability scanners.</p> \n<p>With today's launch, developers can run Lambda MicroVMs closer to their end-users in 7 additional Regions, helping meet latency and data residency requirements. To get started, create a MicroVM image from your Dockerfile, then launch MicroVMs from that image. Give each user or job their own MicroVM with a dedicated HTTPS URL that supports popular connectivity protocols such as HTTP/2, gRPC, and WebSockets. You can use MicroVMs through the AWS Lambda console, AWS CloudFormation, AWS Cloud Development Kit, or with your preferred Agentic development tools using the <a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/aws-lambda-microvms\">Agent Toolkit for AWS</a>.</p> \n<p>To learn more, visit the <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-microvms-guide.html\">AWS Lambda MicroVMs developer guide</a>. For information on pricing, see <a href=\"https://aws.amazon.com/lambda/pricing/\">Lambda MicroVMs pricing</a>. Visit the <a href=\"https://builder.aws.com/build/capabilities\">AWS Capabilities by Region page</a> for the latest region availability.</p>",
           "categories": [
             "general:products/aws-lambda,marketing:marchitecture/serverless,marketing:marchitecture/artificial-intelligence,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Amazon Managed Service for Prometheus supports 2B active metrics and 300K rules per workspace",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amp-supports-2b-metrics-300k-rules/",
+          "published": "2026-11-20T16:00:00+00:00",
+          "summary": "<p>Amazon Managed Service for Prometheus now supports up to 2 billion active metric time series and up to 300,000 total recording and alerting rules per workspace. Customers can also create multiple workspaces per account. This lets them store and analyze billions of Prometheus metrics across their organization.</p> \n<p>Amazon Managed Service for Prometheus is a fully managed, Prometheus-compatible monitoring service. It helps you monitor and alert on operational metrics at scale. It scales ingestion and storage automatically for high-cardinality workloads across containerized, serverless and hybrid environments. </p> \n<p>To get started, create an Amazon Managed Service for Prometheus workspace. To raise your active series or rules limits, file a service limit increase request in AWS Support Center or AWS Service Quotas. To learn more, see the <a href=\"https://docs.aws.amazon.com/prometheus/latest/userguide/AMP_quotas.html\">Amazon Managed Service for Prometheus user guide</a> and the <a href=\"https://aws.amazon.com/prometheus/\">product page.</a></p>",
+          "categories": [
+            "marketing:marchitecture/management-and-governance"
           ]
         },
         {
