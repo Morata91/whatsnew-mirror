@@ -1,9 +1,126 @@
 {
-  "generated_at": "2026-11-25T04:52:45.843687+00:00",
+  "generated_at": "2026-11-26T04:07:02.626542+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
+          "published": "2026-11-25T20:00:00+00:00",
+          "summary": "<p>Today, AWS announces a developer preview of a new extension for orchestrating <a href=\"https://aws.amazon.com/lambda/lambda-microvms/\">Lambda MicroVMs</a> with <a href=\"https://aws.amazon.com/lambda/lambda-durable-functions/\">Lambda durable functions</a>. The extension adds durable operations for running work on MicroVMs and managing their lifecycle. You can use the new operations to build software factories, security scanners, or orchestrate CI/CD jobs that run untrusted or agent-generated code in isolated sandboxes.</p> \n<p>With Lambda durable functions, you can build resilient, multi-step applications and AI workflows that run for up to one year, with built-in checkpointing and automatic retries. Lambda MicroVMs are a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for running user-generated or AI-generated code. With this launch, you can run individual tasks in a MicroVM or launch a MicroVM session, where tasks share the same files and memory. The durable function manages the MicroVM lifecycle and runs each task as a durable operation. It checkpoints progress, retries failed tasks, and refreshes MicroVM tokens as needed. A single durable function can orchestrate multiple MicroVMs in parallel, and you can trigger it from event sources such as <a href=\"https://aws.amazon.com/sqs/\">Amazon SQS</a> or <a href=\"https://aws.amazon.com/eventbridge/\">Amazon EventBridge</a>. An optional worker library runs inside your MicroVM image to receive tasks, send heartbeats, and report results.</p> \n<p>The MicroVM extension is available as a developer preview for the AWS Durable Execution SDK for <a href=\"https://github.com/aws/aws-durable-execution-sdk-js/tree/main/packages/aws-durable-execution-sdk-js-extensions\">TypeScript </a>and <a href=\"https://github.com/aws/aws-durable-execution-sdk-python/tree/main/packages/aws-durable-execution-sdk-python-extensions\">Python</a>. To get started, add the extensions package to your function alongside the Durable Execution SDK (<a href=\"https://github.com/aws/aws-durable-execution-sdk-js/tree/main\">JS/TS</a>, <a href=\"https://github.com/aws/aws-durable-execution-sdk-python/tree/main\">Python</a>) and add the MicroVM worker library (<a href=\"https://github.com/aws/aws-durable-execution-sdk-js/tree/main/packages/aws-durable-execution-sdk-js-compute-worker\">JS/TS</a>, <a href=\"https://github.com/aws/aws-durable-execution-sdk-python/tree/main/packages/aws-durable-execution-sdk-python-compute-worker\">Python</a>) to your MicroVM image. Developer preview features may change, so do not use them for production workloads. The extension is available in all AWS Regions that support Lambda durable functions and Lambda MicroVMs.</p> \n<p>To learn more, see the MicroVM orchestration <a href=\"https://github.com/aws/aws-durable-execution-sdk-js/tree/main/packages/aws-durable-execution-sdk-js-extensions\">documentation </a>and the <a href=\"https://github.com/aws/aws-durable-execution-sdk-js/tree/main/packages/aws-durable-execution-sdk-js-examples\">sample application</a>. To share feedback, open an issue in the Durable Execution SDK GitHub repository in <a href=\"https://github.com/aws/aws-durable-execution-sdk-js/issues\">JavaScript </a>or <a href=\"https://github.com/aws/aws-durable-execution-sdk-python/issues\">Python</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/serverless,general:products/aws-lambda"
+          ]
+        },
+        {
+          "title": "Amazon CloudWatch Omni now integrates with PagerDuty",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/",
+          "published": "2026-11-25T20:00:00+00:00",
+          "summary": "<p>Amazon CloudWatch Omni alerts can now automatically create PagerDuty incidents, so notifications flow directly into your existing incident management workflows. This reduces mean time to resolution (MTTR) by eliminating manual notification steps and ensuring consistent incident workflows.&nbsp;</p> \n<p>CloudWatch Omni is a fully managed AI-powered observability experience built on open standards that unifies monitoring for AI agents, applications, and infrastructure. PagerDuty is an incident management platform that routes alerts to the right on-call responders and coordinates their response. When an Omni alert fires, Omni creates a PagerDuty incident. In PagerDuty, Omni alerts follow your existing on-call schedules and escalation policies, so critical alerts reach the right responder wherever they are, at any hour. Omni alerts include severity, the affected service, and a link back to the related data in Omni, so responders have the context they need to diagnose the problem.</p> \n<p>For PagerDuty integration in Amazon CloudWatch Omni regional availability, see <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-supported-regions.html\">Supported Regions for CloudWatch Omni</a>.</p> \n<p>To learn more, visit <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-omni.html\">Amazon CloudWatch Omni documentation</a> and refer to the <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-connect-pagerduty.html\">Omni PagerDuty integration</a> page.</p>",
+          "categories": [
+            "general:products/amazon-cloudwatch"
+          ]
+        },
+        {
+          "title": "Amazon EC2 M8g instances are now available in Israel (Tel Aviv)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m8g-instances-telaviv-region/",
+          "published": "2026-11-25T17:15:00+00:00",
+          "summary": "<p>Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M8g instances are available in the Israel (Tel Aviv) region. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 M8g instances are built for general-purpose workloads, such as application servers, microservices, gaming servers, midsize data stores, and caching fleets.<br> <a href=\"https://aws.amazon.com/ec2/instance-types/m8g/\">M8g instances</a> are up to 40% faster for databases, up to 30% faster for web applications, and up to 45% faster for large Java applications than AWS Graviton3-based M7g instances. These instances are built on the <a href=\"https://aws.amazon.com/ec2/nitro/\">AWS Nitro System</a>, which offloads CPU virtualization, storage, and networking functions to dedicated hardware and software to enhance the performance and security of your workloads. M8g instances offer larger instance sizes with up to 3x more vCPUs and memory than Graviton3-based M7g instances.<br> M8g instances are available for purchase in this region via Savings Plans, On-Demand, Spot Instances, Dedicated Instances, or Dedicated Hosts. <a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\">Level up your compute with AWS Graviton</a> and <a href=\"https://aws.amazon.com/ec2/instance-types/m8g/\">get started with M8g today</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/compute,general:products/amazon-ec2"
+          ]
+        },
+        {
+          "title": "Amazon EC2 M9gd instances are now available in Asia Pacific (Seoul)",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m9gd-asiapacific-seoul/",
+          "published": "2026-11-25T17:10:00+00:00",
+          "summary": "<p>Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9gd instances are available in the Asia Pacific (Seoul) region. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad range of workloads running on Amazon EC2.</p> \n<p><a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\">M9gd instances</a> deliver up to 25% better compute performance than AWS Graviton4-based M8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation <a href=\"https://aws.amazon.com/ec2/nitro/\">AWS Nitro System</a> and are the first to feature the <a href=\"https://aws.amazon.com/blogs/compute/aws-nitro-isolation-engine-formally-verifying-the-hypervisor-in-the-aws-nitro-system/\">Nitro Isolation Engine</a>. The Isolation Engine uses formal verification to provide mathematical assurance that customer workloads are isolated from each other and from AWS operators, pioneering a new standard for mathematically proven cloud security.</p> \n<p>M9gd instances serve a broad range of general-purpose workloads, including application servers, microservices, gaming, caching, and containers. They also deliver the performance needed for agentic AI use cases like real-time reasoning, code generation, and multi-step orchestration. M9gd instances also offer local NVMe-based SSD block-level storage for workloads that need high-speed, low-latency local storage for scratch space, temporary files, and caches.</p> \n<p>M9gd instances are available for purchase in this region via Savings Plans, On-Demand, Spot Instances, Dedicated Instances, or Dedicated Hosts. <a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\">Level up your compute with AWS Graviton</a> and <a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\">get started with M9gd today</a>.</p>",
+          "categories": [
+            "general:products/amazon-ec2,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Amazon EC2 C9gd instances now available in additional regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c9gd-instances-additional-regions/",
+          "published": "2026-11-25T16:49:00+00:00",
+          "summary": "<p>Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C9gd instances are available in the Europe (Ireland, Spain) regions. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad range of workloads running on Amazon EC2.</p> \n<p><a href=\"https://aws.amazon.com/ec2/instance-types/c9g/\">C9gd instances</a> deliver up to 25% better compute performance than AWS Graviton4-based C8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation <a href=\"https://aws.amazon.com/ec2/nitro/\">AWS Nitro System</a> and are the first to feature the <a href=\"https://aws.amazon.com/blogs/compute/aws-nitro-isolation-engine-formally-verifying-the-hypervisor-in-the-aws-nitro-system/\">Nitro Isolation Engine</a>. The Isolation Engine uses formal verification to provide mathematical assurance that customer workloads are isolated from each other and from AWS operators, pioneering a new standard for mathematically proven cloud security.</p> \n<p>C9gd instances are ideal for compute-intensive workloads such as high-performance computing (HPC), batch processing, gaming, video encoding, scientific modeling, distributed analytics, CPU-based machine learning (ML) inference, real-time analytics, and ad serving. They also offer local NVMe-based SSD block-level storage for workloads that need high-speed, low-latency local storage for scratch space, temporary files, and caches.</p> \n<p>C9gd instances are available for purchase in these regions via Savings Plans, On-Demand, Spot Instances, Dedicated Instances, or Dedicated Hosts. <a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\">Level up your compute with AWS Graviton</a> and <a href=\"https://aws.amazon.com/ec2/instance-types/c9g/\">get started with C9gd today</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/compute,general:products/amazon-ec2"
+          ]
+        },
+        {
+          "title": "Amazon EC2 C9g instances are now available in additional regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c9g-instances-additional-regions/",
+          "published": "2026-11-25T16:17:00+00:00",
+          "summary": "<p>Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C9g instances are available in the Asia Pacific (Sydney), Europe (Ireland, Spain), and South America (São Paulo) regions. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad range of workloads running on Amazon EC2.</p> \n<p><a href=\"https://aws.amazon.com/ec2/instance-types/c9g/\">C9g instances</a> deliver up to 25% better compute performance than AWS Graviton4-based C8g instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation <a href=\"https://aws.amazon.com/ec2/nitro/\">AWS Nitro System</a> and are the first to feature the <a href=\"https://aws.amazon.com/blogs/compute/aws-nitro-isolation-engine-formally-verifying-the-hypervisor-in-the-aws-nitro-system/\">Nitro Isolation Engine</a>. The Isolation Engine uses formal verification to provide mathematical assurance that customer workloads are isolated from each other and from AWS operators, pioneering a new standard for mathematically proven cloud security.</p> \n<p>C9g instances are ideal for compute-intensive workloads such as high-performance computing (HPC), batch processing, gaming, video encoding, scientific modeling, distributed analytics, CPU-based machine learning (ML) inference, real-time analytics, and ad serving.</p> \n<p>C9g instances are available for purchase in these regions via Savings Plans, On-Demand, Spot Instances, Dedicated Instances, or Dedicated Hosts. <a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\">Level up your compute with AWS Graviton</a> and <a href=\"https://aws.amazon.com/ec2/instance-types/c9g/\">get started with C9g today</a>.</p>",
+          "categories": [
+            "general:products/amazon-ec2,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Amazon EC2 M9g instances now available in additional regions",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m9g-instances-additional-regions/",
+          "published": "2026-11-25T16:06:00+00:00",
+          "summary": "<p>Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9g instances, powered by AWS Graviton5 processors, are available in US West (N. California), Canada (Central), South America (São Paulo), and Asia Pacific (Seoul) regions. AWS Graviton5 processors are the fifth generation of custom-designed CPUs, delivering the best price performance for memory-intensive workloads running on Amazon EC2.</p> \n<p><a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\">M9g instances</a> deliver up to 25% better performance compared to AWS Graviton4-based M8g instances. They are up to 30% faster for databases. These instances are built on the sixth-generation <a href=\"https://aws.amazon.com/ec2/nitro/\">AWS Nitro System</a> and are the first to feature the <a href=\"https://aws.amazon.com/blogs/compute/aws-nitro-isolation-engine-formally-verifying-the-hypervisor-in-the-aws-nitro-system/\">Nitro Isolation Engine</a>, harnessing formal verification to provide mathematical assurance that customer workloads are isolated from each other and AWS operators, pioneering a new standard for mathematically proven cloud security.</p> \n<p>M9g instances are ideal for workloads such as open-source databases, in-memory caches, big data analytics, and memory-intensive applications.</p> \n<p>M9g instances are available for purchase in these four regions via Savings Plans, On-Demand, Spot instances, Dedicated instances, or Dedicated hosts. <a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\">Level up your compute with AWS Graviton</a> and <a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\">get started today.</a></p>",
+          "categories": [
+            "general:products/amazon-ec2,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Elastic Load Balancing for Envoy is now generally available",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/elastic-load-balancing-for-envoy-generally-available",
+          "published": "2026-11-25T16:00:00+00:00",
+          "summary": "<p>Today, AWS announces the general availability of ELB for Envoy, a new load balancer type in Elastic Load Balancing (ELB) that runs open-source Envoy proxies. Platform teams that run Envoy themselves own upgrades, security patching, and capacity across Availability Zones (AZs). ELB for Envoy takes on that work. Each load balancer runs its proxies on dedicated Amazon Elastic Compute Cloud (Amazon EC2) instances with hardware isolation from the AWS Nitro System, so a zero-day in Envoy stays contained to your load balancer. ELB for Envoy also monitors for security vulnerabilities (CVEs) and applies Envoy and operating system patches automatically, so you can focus on your applications instead of your proxy fleet.</p> \n<p>You can bring your existing Envoy configurations, extensions, and control planes as they are, and add AWS&nbsp;integrations such as AWS&nbsp;Certificate Manager (ACM)&nbsp;and AWS WAF&nbsp;with minimal configuration. If you run Envoy Gateway on Kubernetes, install the <a href=\"https://github.com/aws/elb-envoy-remote-infra-provider\" target=\"_blank\" rel=\"noopener noreferrer\">ELB for Envoy remote infrastructure provider</a>&nbsp;alongside Envoy Gateway to move your proxies to ELB&nbsp;for Envoy without rewriting your Gateway API&nbsp;resources.</p> \n<p>You can add custom logic with WebAssembly, Lua scripting, or external processing. ELB for Envoy runs inside your VPC, integrates with Amazon Virtual Private Cloud (Amazon VPC) security groups, and supports VPC encryption. It's well suited to workloads that need Envoy's extensibility, such as custom authentication, request transformation, or advanced traffic routing, along with Kubernetes ingress and migrations from self-managed Envoy.</p> \n<p>At general availability, ELB for Envoy is available in 14 AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), Europe (Frankfurt), Europe (Stockholm), Europe (Spain), Asia Pacific (Sydney), Asia Pacific (Hong Kong), Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Mumbai), Asia Pacific (Malaysia), and Asia Pacific (Thailand). To learn more, visit the <a href=\"https://aws.amazon.com/elasticloadbalancing/elbproxy\" target=\"_blank\" rel=\"noopener noreferrer\">ELB for Envoy product page</a>, <a href=\"https://aws.amazon.com/elasticloadbalancing/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">ELB pricing page</a>, and <a href=\"http://docs.aws.amazon.com/elasticloadbalancing/latest/elbproxy/what-is.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>. To get started, visit the <a href=\"https://aws.amazon.com/elasticloadbalancing/getting-started/#Getting_started_with_the_AWS_Management_Console\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Management Console</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/networking-and-content-delivery,general:products/amazon-elastic-load-balancing"
+          ]
+        },
+        {
+          "title": "Amazon Transcribe Turbo: more accurate transcripts and natural turn-taking for voice agents, now in public preview",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/transcribe-turbo-preview/",
+          "published": "2026-11-25T08:00:00+00:00",
+          "summary": "<p>Amazon Transcribe Turbo, our next-generation speech-to-text model, is now in public preview in US East (Ohio) for batch and streaming. Turbo improves accuracy, supports custom vocabulary, and formats numbers, dates, currency, phone numbers and addresses following each locale's conventions.</p> \n<ul> \n <li><p><b>Streaming:</b> English, Portuguese, French, Italian, German and Spanish supported. Word Error Rate (WER) drops ~14% relative in English and 11% relative in the other languages versus the current production model, and formatting accuracy improves by more than 20 points.</p> </li> \n <li><p><b>Batch:</b> English Turbo is generally available in most AWS Regions. Portuguese, French, Italian, German, Spanish, Chinese, Japanese, Korean and Arabic are now in preview, with ~16% lower word error rate.</p> </li> \n</ul> \n<p>The base model needs no API, code, or SDK changes.</p> \n<p>Turbo streaming also adds two new features for voice agents in English at launch and for other languages by the end of December 2026.</p> \n<p><b>Semantic turn-taking</b> detects when a caller is done speaking from <i>what</i> they said and their <i>prosody </i>in speech, not silence alone. It won't cut callers off mid-sentence (\"I'd like to transfer… $250 to savings\") or make short answers like \"yes\", \"no\" wait on silence timeouts. It responds in about 615 ms with a 5% interruption rate, and you can tune it.</p> \n<p><b>Runtime ASR hints</b> give your agent context at every turn. Unlike static custom vocabulary, set once per session, hints enable your client application to send menu options, expected names and the expected entity type (date, phone number, currency) before each turn. On English customer service data, hints raise menu-routing accuracy from 87% to 97%.</p> \n<p>Both features come at no additional charge. To try them, turn on EndOfTurnDetection and send hints in a ConfigureEvent.</p> \n<p>Learn more in the <a href=\"https://builder.aws.com/content/3MbnTQKvOMxTZQbm34D6XV7hv8q/getting-started-with-amazon-transcribe-turbo-and-voice-agent-features\" target=\"_blank\" rel=\"noopener noreferrer\">Builder Center blog</a> and the <a href=\"https://github.com/aws-samples/amazon-ai-samples/tree/main/speech-to-text/turbo/features/javascript\" target=\"_blank\" rel=\"noopener noreferrer\">sample voice agent on GitHub</a>.</p>",
+          "categories": [
+            "general:products/amazon-transcribe"
+          ]
+        },
+        {
+          "title": "AWS IoT Core now uses dedicated IPv6 address ranges for the HTTP rule action",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-dedicated-ipv6-ranges/",
+          "published": "2026-11-25T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/iot-core/\">AWS IoT Core</a> can now send traffic to HTTPS endpoints within a dedicated, published IPv6 address range. This launch enables you to configure your HTTPS endpoints to accept requests only from AWS IoT Core and block all other traffic, thereby reducing your endpoint's exposure to public internet.</p>\n<p>AWS IoT Core is a fully managed service that securely connects&nbsp;IoT devices at scale to the AWS cloud and routes IoT device data to AWS and third-party services. AWS IoT Core's <a href=\"https://docs.aws.amazon.com/iot/latest/developerguide/https-rule-action.html\" target=\"_blank\">HTTP rule action</a> delivers IoT device data to any HTTPS endpoint, such as your application servers, on-premises systems, or partner services. With this launch, you can choose from AWS IoT Core's published IPv6 range, and add the fixed IPv6 range to an <a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-resource-policies.html\" target=\"_blank\">Amazon API Gateway resource policy</a>, a <a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html\" target=\"_blank\">security group</a>, or your <a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups.html\" target=\"_blank\">firewall rules</a>. Your HTTPS endpoints will then accept traffic only from AWS IoT Core, giving you network layer control over who can reach your endpoint.</p>\n<p>To get started, configure your HTTPS endpoint destination to be reachable only over IPv6 by publishing AAAA DNS records (and removing the A DNS records). This allows IoT Core's HTTP rule action to use only IPv6 addresses when sending data to your HTTP destination. Then allow AWS IoT Core's published IPv6 range for your Region, and create or update your HTTP rule action with the endpoint destination. Dedicated IPv6 ranges are available at no additional charge in all AWS Global Regions where AWS IoT Core is available, including AWS GovCloud (US). To find the range for your Region, see <a href=\"https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-role.html#rules-engine-ip-ranges\" target=\"_blank\">Restricting HTTP action traffic to the rules engine IPv6 ranges</a> in the AWS IoT Core Developer Guide.</p>",
+          "categories": [
+            "marketing:marchitecture/internet-of-things"
+          ]
+        },
+        {
+          "title": "AWS IoT Core quotas and usage are now visible in AWS Service Quotas console",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-quota-usage-monitoring/",
+          "published": "2026-11-25T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/iot-core/\">AWS IoT Core</a> now publishes its most used service quotas and your current usage against the quotas in <a href=\"https://us-east-1.console.aws.amazon.com/servicequotas/home/dashboard\" target=\"_blank\">AWS Service Quotas console</a>, improving observability and monitoring of API limits and quotas. This launch enables you to monitor your service quota usage, set alarms before you are throttled, and request quota increases ahead of planned growth.</p>\n<p>AWS IoT Core is a fully managed service that securely connects IoT devices at scale to the AWS cloud and routes IoT device data to AWS and third-party services. As your device fleet grows, your applications depend on quotas for operations, such as connecting and authenticating devices, publishing and subscribing to messages. Previously, service quotas and usage were not visibile in AWS Service Quotas Console and you had to contact AWS Support to learn about your current utilization before throttling occured. Now you can view quotas and usage for both device messaging (data plane) and resource management (control plane) APIs. You can also use <a href=\"https://aws.amazon.com/cloudwatch/\">Amazon CloudWatch</a> usage metrics to create alarms that notify you when your usage approaches a quota.</p>\n<p>To get started, visit AWS Service Quotas console and choose AWS IoT Core. This capability is available at no additional cost. To learn more, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/iot-core.html\" target=\"_blank\">AWS IoT Core quotas</a> in the AWS General Reference and <a href=\"https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html\" target=\"_blank\">Viewing service quotas</a> in the Service Quotas User Guide.</p>",
+          "categories": [
+            "marketing:marchitecture/internet-of-things"
+          ]
+        },
+        {
+          "title": "AWS Device Farm now supports Android emulators and iOS simulators",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/device-farm-virtual-devices/",
+          "published": "2026-11-25T08:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/device-farm/\">AWS Device Farm</a>, a service for testing mobile and web apps, now supports Android emulators and iOS simulators alongside real devices for automated and manual testing, enabling faster testing at scale early in your development pipeline. With virtual devices, you can shift testing left to stages that need high speed and volume, such as pull requests, code merges, and smoke tests, and keep real devices for later stages that need high fidelity, such as regression and release testing. Virtual devices running the latest device and OS typically start in seconds, and others start in around a minute.</p>\n<p>Previously, you could build and maintain your own Android emulator and iOS simulator infrastructure, which requires separate tooling and compute such as Mac hosts for iOS, or run every stage on real devices, which is slower, limited by device availability, and costs more than early-stage testing needs. Now you can use the same fully managed Device Farm APIs, test environment, private endpoint access, and test frameworks for both virtual and real devices. To switch, you change only the device type, so your pipeline and tests stay the same and you avoid maintaining two separate orchestration layers.</p>\n<p>Virtual devices use the existing metered <a href=\"https://aws.amazon.com/device-farm/pricing/\">pricing</a>. For Android, your existing unmetered slots now go further and run either a real or a virtual device at no additional charge.</p>\n<p>Android emulators and iOS simulators are available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where AWS Device Farm is offered.</p>\n<p>To get started, see the AWS Device Farm <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/virtual-devices.html\" target=\"_blank\">Developer Guide</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/developer-tools,marketing:marchitecture/front-end-web-mobile,general:use-case/mobile,general:products/aws-device-farm"
+          ]
+        },
+        {
+          "title": "AWS IAM extends trusted identity propagation to IAM federation and IAM Roles Anywhere, and simplifies it in IAM Identity Center",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iam/",
+          "published": "2026-11-25T06:00:00+00:00",
+          "summary": "<p><a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html\" target=\"_blank\" rel=\"noopener noreferrer\">Trusted identity propagation (TIP)</a> carries the identity of a human user or workload with requests to supported AWS Services. Customers can use that identity in IAM policy conditions for access control and to identify the originating human user or workload in AWS CloudTrail. AWS is expanding TIP to <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html#id_roles_providers_federation\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Identity and Access Management (IAM) federation</a> and <a href=\"https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html\" target=\"_blank\" rel=\"noopener noreferrer\">IAM Roles Anywhere</a>, while simplifying the existing TIP experience in AWS IAM Identity Center. In addition, <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_outbound.html\" target=\"_blank\" rel=\"noopener noreferrer\">IAM outbound identity federation</a> now enables customers to request an AWS-signed JSON Web Token (JWT) that includes identity information from TIP sessions, allowing external services to identify the human user or workload that originated the request.</p> \n<p>With TIP for IAM federation, customers can map the human or workload identity, along with optional runtime claims such as a risk score or a CI/CD workflow name, from the SAML assertion or OIDC token used for federation to the role session. IAM Roles Anywhere extends TIP to identities sourced from X.509 certificates. For IAM Identity Center, which supports workforce identities, the simplified experience adds the username, an identifier provided by your identity source, alongside the user ID that IAM Identity Center generates, and carries this information uniformly whether users access applications or AWS accounts. Across all supported paths, TIP preserves identity information as requests move between IAM roles and AWS services without requiring per-role trust policy updates.&nbsp;</p> \n<p>TIP for IAM federation, IAM Roles Anywhere, IAM outbound identity federation, and the simplified IAM Identity Center experience are available in all commercial AWS Regions, the AWS GovCloud (US) Regions, and the AWS European Sovereign Cloud (Germany) Region. To get started, see the <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_tip.html\" target=\"_blank\" rel=\"noopener noreferrer\">Trusted Identity Propagation for IAM documentation</a>, <a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/simplified-tip-overview.html\" target=\"_blank\" rel=\"noopener noreferrer\">Trusted Identity Propagation in IAM Identity Center documentation</a>, and the&nbsp;<a href=\"https://aws.amazon.com/blogs/security/know-the-identity-behind-the-role-authorize-and-audit-with-trusted-identity-propagation/\" target=\"_blank\" rel=\"noopener noreferrer\">TIP launch blog</a>.</p> \n<h3>&nbsp;</h3>",
+          "categories": [
+            "marketing:marchitecture/security-identity-and-compliance"
+          ]
+        },
         {
           "title": "Amazon Bedrock adds bedrock-runtime endpoint support for OpenAI Daybreak Red in AWS GovCloud (US)",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/gpt-daybreak-red-runtime-govcloud/",
@@ -183,21 +300,21 @@
           ]
         },
         {
-          "title": "AWS Quick adds identity-aware access via 3LO for Snowflake and Databricks structured data sources",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-snowflake-databricks-3lo-end-user-permissions/",
-          "published": "2026-11-23T17:00:00+00:00",
-          "summary": "<p>AWS Quick now supports three-legged OAuth (3LO) with end-user permissions for Snowflake and Databricks.&nbsp;When end users in AWS Quick consume Chat, interactive dashboards, or Apps, queries run using their own Snowflake or Databricks identity. Governance policies configured in Snowflake or Databricks Unity Catalog, including applicable row- and column-level controls and access to tables and views, are enforced by the source platform without requiring teams to recreate those policies in Quick.</p> \n<p>To get started, an administrator adds an OAuth client application in Quick account settings. Data curators then create a Snowflake or Databricks data source, choose 3LO, and turn on trusted identity propagation so each user's identity is passed to the source. End-user permissions through 3LO are supported only for DirectQuery datasets.</p> \n<p>This feature is available in Quick regions <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\">here</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/connecting-to-snowflake.html\">Using Snowflake with AWS Quick</a> and <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/catalog-integration-databricks-3lo.html\">Setting up identity enforcement with Databricks 3LO</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/analytics"
-          ]
-        },
-        {
           "title": "Amazon SageMaker HyperPod now detects and recovers hung training jobs on Slurm clusters",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-slurm-hung-jobs/",
           "published": "2026-11-23T17:00:00+00:00",
           "summary": "<p>Amazon SageMaker HyperPod now supports hung job detection for Slurm-orchestrated clusters, which finds training jobs that have stopped making progress and returns them to the job queue. SageMaker HyperPod helps you provision resilient clusters for training and deploying AI/ML models. Previously, a job that hung on an NCCL timeout, a stalled data pipeline, or a deadlock kept its GPUs while Slurm reported it as running, until you noticed that the job is not making progress.</p> \n<p>Now, if a training run hangs, HyperPod detects it within minutes from the job's output and GPU activity, or from log patterns that you define, such as your training step message or an NCCL error, and writes an event to Amazon CloudWatch. You can also have HyperPod cancel the hung job and let Slurm requeue it, so the job can restart from its last checkpoint instead of holding its GPUs idle. You turn on detection per job with an environment variable that points to a rules file, and it works with any framework, including PyTorch, TensorFlow, and JAX, without changes to your code or containers.</p> \n<p>Hung job detection is available for HyperPod clusters orchestrated by Slurm in all AWS Regions where SageMaker HyperPod is available.To learn more, see <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-resiliency-slurm-hang-detection.html\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"background-color: rgb(255, 255, 255);\">hung job detection</a> in the user guide and the <a href=\"https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"background-color: rgb(255, 255, 255);\">blog post</a>.</p>",
           "categories": [
             "marketing:marchitecture/artificial-intelligence"
+          ]
+        },
+        {
+          "title": "AWS Quick adds identity-aware access via 3LO for Snowflake and Databricks structured data sources",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-snowflake-databricks-3lo-end-user-permissions/",
+          "published": "2026-11-23T17:00:00+00:00",
+          "summary": "<p>AWS Quick now supports three-legged OAuth (3LO) with end-user permissions for Snowflake and Databricks.&nbsp;When end users in AWS Quick consume Chat, interactive dashboards, or Apps, queries run using their own Snowflake or Databricks identity. Governance policies configured in Snowflake or Databricks Unity Catalog, including applicable row- and column-level controls and access to tables and views, are enforced by the source platform without requiring teams to recreate those policies in Quick.</p> \n<p>To get started, an administrator adds an OAuth client application in Quick account settings. Data curators then create a Snowflake or Databricks data source, choose 3LO, and turn on trusted identity propagation so each user's identity is passed to the source. End-user permissions through 3LO are supported only for DirectQuery datasets.</p> \n<p>This feature is available in Quick regions <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\">here</a>. To learn more, see <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/connecting-to-snowflake.html\">Using Snowflake with AWS Quick</a> and <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/catalog-integration-databricks-3lo.html\">Setting up identity enforcement with Databricks 3LO</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/analytics"
           ]
         },
         {
@@ -234,6 +351,15 @@
           "summary": "<p>Today, AWS Quick makes your legacy datasets AI ready through the new technology stack used by its improved visual data preparation experience. This stack powers Dataset Semantics, topics and semantic models, and Dataset Evaluation. Data curators can add business context through dataset descriptions, column descriptions, and custom instructions. They can then compare answer accuracy before and after semantic enrichment to assess how well AI answers reflect their business definitions.</p> \n<p>When authors edit a supported legacy dataset, AWS Quick automatically opens it in the visual data preparation experience, carrying over its existing data sources, joins, transformations, and calculated fields. Authors can then add semantics and evaluate answer accuracy without recreating the dataset.</p> \n<p>The visual data preparation experience runs on a new technology stack for structured data, introduced in October 2025. It supports visual, multi-step transformations such as Append, Aggregate, and Pivot, faster ingestion for larger datasets, and up to 20 times higher cross-source join limits than the legacy experience. To make this architecture available to more legacy datasets, AWS Quick has expanded support for Google Sheets and Salesforce connectors, JODA date formats, incremental refresh, and preservation of existing unmaterialized calculated columns during legacy dataset upgrades.</p> \n<p>This capability is available in all supported <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\">AWS Quick Regions</a>. To learn more, see the <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/data-prep-experience-new.html\">documentation</a>.</p>",
           "categories": [
             "marketing:marchitecture/artificial-intelligence,marketing:marchitecture/analytics"
+          ]
+        },
+        {
+          "title": "Amazon SageMaker HyperPod now supports NCCL profiling for training jobs",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-nccl-profiler/",
+          "published": "2026-11-23T17:00:00+00:00",
+          "summary": "<p>Amazon SageMaker HyperPod now supports NVIDIA Collective Communications Library (NCCL) profiling with the HyperPod NCCL Profiler, giving you visibility into communication performance across the nodes and GPUs in a distributed training job. SageMaker HyperPod helps you scale generative AI model development across hundreds or thousands of AI accelerators. Previously, one throttled GPU or degraded link could slow the whole job without an error, and finding it meant stopping the job to run NCCL tests.</p> \n<p>Now, the HyperPod NCCL profiler loads as a plugin in your training job and sends per-rank bandwidth and timing to Amazon CloudWatch or Amazon Managed Service for Prometheus, with no changes to your training code. For example, if training throughput drops with no errors, the NCCL profiler dashboard on Amazon Managed Grafana flags the node whose GPUs fall behind their peers and shows whether they are throttled, so you find it without stopping the job. If cross-node bandwidth drops on every node at once, the dashboard shows that too, so you can tell a network problem from a faulty GPU.</p> \n<p>This profiler is available for clusters orchestrated by Amazon EKS or Slurm in all AWS Regions where SageMaker HyperPod is available. To learn more, see <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-observability-addon.html\" target=\"_blank\" rel=\"noopener noreferrer\">Observability for clusters orchestrated with Amazon EKS</a> and <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-cluster-observability-slurm-extension-config.html\" target=\"_blank\" rel=\"noopener noreferrer\">Observability extension configuration for Slurm</a> in the user guide.</p>",
+          "categories": [
+            "marketing:marchitecture/artificial-intelligence"
           ]
         },
         {
@@ -325,130 +451,6 @@
           "categories": [
             "general:products/amazon-sagemaker"
           ]
-        },
-        {
-          "title": "AWS WAF announces automated discovery and protection for API endpoints",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/api-security-with-waf/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>Automated API discovery and protection are now generally available, enabling you to discover every API behind Amazon API Gateway, Application Load Balancers, and Amazon CloudFront across your AWS Organization and protect them using AWS WAF.</p> \n<p>Discovery is available through the new API Gateway API Portal, which identifies the APIs automatically from traffic logs and service configuration records, with no agents to deploy or logs to forward. The API Portal classifies the APIs it finds, identifies zombie and shadow APIs, evaluates each API's security posture, and reports findings, including the ones that are missing WAF protections. For unprotected APIs, customers can enable protection using WAF.</p> \n<p>Protection is available through the new AWS WAF API Security managed rule group, which protects your APIs against the most exploited API attack categories: Broken Object Level Authorization (BOLA), where the attackers change record IDs in requests to read other users' data, Broken Authentication and Credential Stuffing, where the attackers forge tokens or try stolen passwords at scale, and API Reconnaissance and Enumeration, where the attackers map an API by guessing hidden routes and probing for exposed docs. The events detected by WAF are consolidated into the API Portal findings to provide a complete security picture of your APIs. You can use API Security alongside other AWS Managed Rules or your own custom rules to protect your applications.</p> \n<p>Together, API Portal and API Security provide you a complete solution from discovery of all APIs in your AWS environment to protecting them, without having to write any custom rules.</p> \n<p>API Portal is available in 32 AWS Regions. See the <a href=\"https://aws.amazon.com/api-gateway/faqs/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon API Gateway FAQ</a> for the list. API Security is available in all AWS Regions where AWS WAF is available, except the AWS GovCloud (US) Regions, the China Regions, and the AWS European Sovereign Cloud.</p> \n<p>To get started, see the following resources:</p> \n<p><a href=\"https://aws.amazon.com/waf/\">AWS WAF product page</a></p> \n<p><a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/waf-api-security.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS WAF API Security in the AWS WAF Developer Guide</a></p> \n<p><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/apiportal.html\" target=\"_blank\" rel=\"noopener noreferrer\">API Portal Developer Guide</a></p> \n<p><a href=\"https://aws.amazon.com/blogs/security/introducing-api-and-ai-security-on-aws-from-discovery-to-protection/\">Introducing API and AI security on AWS, from discovery to protection blog post</a></p>",
-          "categories": [
-            "general:products/aws-waf,marketing:marchitecture/security-identity-and-compliance,general:products/amazon-api-gateway"
-          ]
-        },
-        {
-          "title": "AWS DevOps Agent adds Access Profiles and AWS Organizations",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-access-profiles-orgs/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>AWS DevOps Agent now gives you more ways to govern and control your AWS DevOps Agent instances.</p> \n<p>With the new Access Profiles feature you can link IAM IDC users in your Agent Spaces to specific permission sets. For example, you can use Access Profiles to limit the ability to create or update skills and memories to a select set of users. AWS Organizations support allows you to more easily configure your Agent Space's AWS account access permissions by automatically aligning accounts in organizations with your Agent Spaces.</p> \n<p>For the list of AWS Regions where AWS DevOps Agent is available, see the <a href=\"https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-supported-regions.html\"><u>supported Regions table</u></a>.</p> \n<p>See all the latest AWS DevOps Agent features on the <a href=\"https://docs.aws.amazon.com/devopsagent/latest/userguide/whats-new.html\"><u>release history</u></a> page.&nbsp;</p>",
-          "categories": [
-            "general:products/aws-organizations,general:products/aws-govcloud-us,general:products/aws-iam-identity-center"
-          ]
-        },
-        {
-          "title": "AWS Systems Manager Automation now automates operational tasks in Azure and Google Cloud",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-multicloud-automation/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>AWS Systems Manager Automation now lets you create custom workflows (runbooks) that can automate operational tasks across Microsoft Azure, Google Cloud, and AWS resources. Automation helps you make changes safely at scale, such as remediating misconfigurations or cleaning up idle resources. Runbooks can roll out in controlled batches, pause for approval, and stop if errors pass a threshold. Instead of maintaining separate tools and credentials for each cloud, teams can now author and execute runbooks from a single place.</p>\n<p>Six new runbook actions call Azure and Google Cloud APIs, check a resource's state, and wait for operations to finish without custom code. You can target Azure resources by subscription, region, resource group, resource type, and tag. Google Cloud resources can be targeted by project, zone, asset type, and label. For more complex logic, aws:executeScript now includes Azure and Google Cloud Python SDKs and gets short-lived credentials from your Systems Manager Cloud Connector, so you don't store secrets in runbooks. For example, you can stop tagged development virtual machines outside business hours or fix storage buckets that don't meet your security policy. To get started, use the AWS-provided runbooks that install the SSM Agent or the Amazon Inspector agent on your Azure or Google Cloud virtual machines, or create your own custom workflow.</p>\n<p>This capability is available in all AWS Regions where you can create a Systems Manager Cloud Connector. To learn more, see <a href=\"https://docs.aws.amazon.com/systems-manager/latest/userguide/running-automations-cloud-connector.html\" target=\"_blank\">Run automations on multicloud resources</a> in the AWS Systems Manager User Guide, or visit the <a href=\"https://aws.amazon.com/systems-manager/\">AWS Systems Manager product page</a>.</p>",
-          "categories": [
-            "general:products/aws-systems-manager,marketing:marchitecture/management-and-governance"
-          ]
-        },
-        {
-          "title": "Amazon EC2 Capacity Blocks for ML now supports search across multiple instance types and AWS Regions",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-blocks-ml-flex-search/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>Amazon EC2 Capacity Blocks for ML now lets customers search across multiple instance types and AWS Regions in a single search, making it easier to find and reserve the capacity their ML workloads need. With Capacity Blocks for ML, customers can reserve accelerated compute instances such as Amazon EC2 P6-B300, P6-B200, and Trn2 instances, for a future start date and for up to 6 months.</p> \n<p>Until now, customers looking to buy Capacity Blocks had to run a separate search for every instance type and Region combination. Starting today, customers can use a single search in the AWS Management Console to look for Capacity Blocks across multiple instance types and Regions, making it easier to secure capacity without repeated searches. Customers can also programmatically search for capacity across multiple instance types within a Region with a single API call using DescribeCapacityBlockOfferings.</p> \n<p>This feature is available for all Instance Capacity Blocks in AWS Regions where EC2 Capacity Blocks for ML are offered. For a complete list of supported regions, refer to <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html#capacity-blocks-considerations\" target=\"_blank\" rel=\"noopener noreferrer\">Capacity Blocks documentation</a>. To get started, visit the <a href=\"https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#CreateCapacityBlockReservation:\" target=\"_blank\" rel=\"noopener noreferrer\">Capacity Blocks page in the Amazon EC2 console</a>.</p>",
-          "categories": [
-            "general:products/amazon-ec2"
-          ]
-        },
-        {
-          "title": "AWS Parallel Computing Service now supports Split Cost Allocation Data",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/pcs-supports-split-cost-data/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>Starting today, customers can receive granular cost visibility for AWS Parallel Computing Service (AWS PCS) in the <a href=\"https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/\">AWS Cost and Usage Reports</a> (CUR), enabling you to analyze, optimize, and chargeback costs for your Slurm jobs. With AWS Split Cost Allocation Data for AWS PCS, customers can now allocate costs to individual teams and projects based on how jobs request and consume shared EC2 CPU, GPU, and memory resources.</p>\n<p>AWS PCS is a managed service that makes it easier for you to run and scale your high performance computing (HPC) workloads and build scientific and engineering models on AWS using Slurm. With Split Cost Allocation Data for AWS PCS, you get granular visibility into job-level costs based on compute and memory utilization. You can attribute cost to an individual job and aggregate the cost by job, user, Slurm account, queue, compute node group, node, and cluster. You can also identify capacity that wasn't allocated to any job, such as idle cores or nodes waiting for work. This helps you find opportunities to right-size your clusters and minimize inefficiencies.</p>\n<p>This feature is available in all AWS commercial regions where AWS PCS is available. It requires Slurm version 25.11 or later. To start receiving AWS PCS Slurm job level cost data in the AWS CUR, visit <a href=\"https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/features/\">AWS Cost and Usage Reports</a>, <a href=\"https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html\" target=\"_blank\">Understanding Split Cost Allocation Data</a> and the <a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/monitoring-cost-allocation.html\" target=\"_blank\">AWS PCS User Guide</a>.</p>",
-          "categories": [
-            "general:use-case/high-performance-computing,general:products/cost-usage-reports,marketing:marchitecture/cost-management"
-          ]
-        },
-        {
-          "title": "Amazon FSx for NetApp ONTAP adds AWS CloudFormation and Console support for snapshots, clones, and data replication",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-fsx-for-netapp-ontap-additional-resources/",
-          "published": "2026-11-23T05:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/fsx/netapp-ontap/\">Amazon FSx for NetApp ONTAP</a> now lets you snapshot, clone, and replicate your data directly from the Amazon FSx Console and AWS CloudFormation. Today’s launch allows you to protect and copy your ONTAP data using the same AWS tools that you use across the rest of your AWS environments,&nbsp;with a few clicks in the AWS console or as part of your infrastructure-as-code workflows.&nbsp;</p> \n<p>FSx for ONTAP is the first and only storage service that allows you to launch and run fully managed, fully featured ONTAP file systems in the cloud. Previously,&nbsp;you could only set up and manage snapshots, volume clones, and SnapMirror replication&nbsp;via the ONTAP CLI or REST API. Starting today, you can also use the&nbsp;Amazon FSx Console, Amazon FSx API, and AWS CloudFormation, in addition to the ONTAP CLI and REST API, to manage these resources.</p> \n<p>AWS Console and CloudFormation support for these resources are available in all AWS Regions where FSx for ONTAP is available. To learn more, visit the <a href=\"https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started.html\">FSx for NetApp ONTAP user guide</a> and the <a href=\"https://aws.amazon.com/fsx/netapp-ontap/\">Amazon FSx for NetApp ONTAP product page</a>.</p>",
-          "categories": [
-            "general:products/amazon-fsx-netapp-ontap,marketing:marchitecture/storage"
-          ]
-        },
-        {
-          "title": "You can now copy data server-side between Amazon S3 buckets and Amazon FSx file systems with S3 Access Points",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/s3-access-points-server-side-copy-fsx/",
-          "published": "2026-11-22T08:00:00+00:00",
-          "summary": "<p>You can now use Amazon S3 Access Points to copy or move data server-side between Amazon S3 general purpose buckets and Amazon FSx file systems within the same AWS Region, making it faster, lower-cost, and easier to move your data between S3 and FSx or across FSx file systems.</p>\n<p>An S3 Access Point for FSx is an S3 endpoint that allows you to access the data on your Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS file systems via the S3 API and from S3-based services and applications. You can also use S3 Access Points to transfer data to and from your file system without the need to mount it—for example, to copy data into your file system from an S3 bucket owned by a partner or to export job results into another team's bucket. Previously, S3 Access Points for FSx didn't support server-side copies, so transferring your data meant downloading and then uploading each object from a server you run. Starting today, you can now transfer data server-side using S3's standard CopyObject and UploadPartCopy operations, reducing the time, cost, and effort needed to move data between S3 and FSx or between FSx file systems.</p>\n<p>This capability is available in all AWS Regions where S3 Access Points for FSx are available. You can copy data with the AWS CLI, AWS SDKs, or S3-compatible tools to move and copy data. To learn more, see the <a href=\"https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/accessing-data-via-s3-access-points.html\" target=\"_blank\">FSx for ONTAP</a> and <a href=\"https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/s3accesspoints-for-FSx.html\" target=\"_blank\">FSx for OpenZFS</a> user guides, and visit the <a href=\"https://aws.amazon.com/s3/features/access-points/\">Amazon S3 Access Points page</a>.</p>",
-          "categories": [
-            "general:products/amazon-fsx-for-openzfs,general:products/amazon-fsx-netapp-ontap,general:products/amazon-s3"
-          ]
-        },
-        {
-          "title": "AWS Certificate Manager now supports Amazon N2 certificates for mTLS",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/acm-amazon-n2-certificates/",
-          "published": "2026-11-21T04:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/certificate-manager/\">AWS Certificate Manager</a> (ACM) now issues Amazon N2 certificates for mutual TLS (mTLS) and other authentication outside web browsers. ACM public certificates no longer include client authentication, in line with WebPKI requirements, so teams that needed client certificates had to define their own trust governance models and apply them to their private PKI. With Amazon N2 certificates, you can authenticate to partners and other organizations, such as a partner's client calling your API, without building and governing your own CA for them to rely on.</p> \n<p>Amazon N2 certificates come from the Amazon N2 certificate authorities (CAs), which are operated and governed by Amazon Trust Services, the same organization that operates the CAs issuing ACM public WebPKI certificates. Your peers add the <a href=\"https://www.amazontrust.com/repository/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon N2 roots</a> to their trust stores to verify your certificates. Certificates are valid for up to 395 days, and ACM renews them automatically: AWS integrated services use each renewed certificate, and you can also export them to your own clients and servers.</p> \n<p>You pay for each domain name in an ACM-issued Amazon N2 certificate, including when you use it with AWS integrated services. For details, see <a href=\"https://aws.amazon.com/certificate-manager/pricing/\">ACM pricing</a>.&nbsp;</p> \n<p>Amazon N2 certificates are available in all commercial AWS Regions where ACM is available. To learn more, see Amazon N2 certificates in the <a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-amazon-n2-certificates.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Certificate Manager User Guide</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/security-identity-and-compliance,general:products/aws-certificate-manager"
-          ]
-        },
-        {
-          "title": "Amazon CloudWatch Query Studio now supports saved queries",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-query-studio-saved-queries",
-          "published": "2026-11-21T03:00:00+00:00",
-          "summary": "<p>Amazon CloudWatch Query Studio now lets you save your PromQL and SQL metrics queries and reuse them. You no longer need to rewrite or search for queries you run often, such as a latency query you check during every incident.</p> \n<p>You can save a query under a name and use \"/\" in the name to organize queries into folders. In the Saved tab of the Queries panel, you can search, sort, and preview your saved queries. You can then apply one to replace what's in the studio, append it to your current queries, edit it, or delete it. Saved queries are stored in your account and Region, and you control who can create, view, and delete them by using AWS Identity and Access Management (IAM) permissions. You can also manage them programmatically with the new PutMetricDataQueryDefinition, GetMetricDataQueryDefinition, ListMetricDataQueryDefinitions, and DeleteMetricDataQueryDefinition APIs.</p> \n<p>You can use saved queries in Amazon CloudWatch Query Studio in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Canada (Central), South America (São Paulo), Europe (Ireland), Europe (London), Europe (Paris), Europe (Frankfurt), Europe (Stockholm), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Osaka), Asia Pacific (Tokyo), Asia Pacific (Singapore), and Asia Pacific (Sydney).</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-PromQL-QueryStudio.html#CloudWatch-PromQL-QueryStudio-SavedQueries\" target=\"_blank\">Saving and reusing queries&nbsp;</a> in the <i>Amazon CloudWatch User Guide</i>. For product information, see <a href=\"https://aws.amazon.com/cloudwatch/\" target=\"_blank\">Amazon CloudWatch&nbsp;</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/management-and-governance,general:products/amazon-cloudwatch"
-          ]
-        },
-        {
-          "title": "AWS Quick now supports plugins to bundle agents, skills, connectors and flows",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-plugins-bundle-agents-skills-connectors-flows/",
-          "published": "2026-11-21T02:58:00+00:00",
-          "summary": "<p>AWS Quick now supports plugins, agents, skills, connectors, and flows built for a specific task, role, or use case. Most work draws on several of these at once: connectors to reach your systems, skills for how your team works, agents to reason through tasks, and flows to orchestrate each process. Plugins package these capabilities together, so users can install everything a job needs in one step.</p> \n<p>To get started, users can browse and install official plugins from AWS, such as the Calendar and Meetings Assistant, which helps users plan time away and turn meeting notes into action items, or the Sales Development plugin, which takes a prospect from lead research to outreach and a proposal. More than 100 skills and plugins cover everyday productivity, roles such as finance, marketing and legal, industries, and popular business applications.</p> \n<p>Builders can also create their own custom plugins for their team, department, or organization. Just describe the job in chat, and Quick assembles the plugin. Then share it for teammates to discover.</p> \n<p>This is available in all Regions where AWS Quick is available.</p> \n<p>To learn more, see the <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/what-is.html\">AWS Quick User Guide</a>. To get started with Quick, visit <a href=\"https://aws.amazon.com/quick/\">AWS Quick</a>.</p>",
-          "categories": [
-            "general:products/aiml,marketing:marchitecture/business-productivity,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "Amazon CloudWatch Omni now supports Microsoft Azure platform logs, metrics and traces",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-microsoft-azure",
-          "published": "2026-11-21T01:10:00+00:00",
-          "summary": "<p>Amazon CloudWatch Omni now supports collecting Azure resource logs, Azure Monitor platform metrics, virtual network (VNet) flow logs, and traces from Application Insights. Teams that run workloads on both AWS and Azure no longer need separate monitoring tools or custom pipelines to see their whole environment. Central operations, DevOps, and site reliability engineering (SRE) teams can now view Azure telemetry alongside their AWS telemetry in one place.</p> \n<p>To get started, connect a Microsoft Entra ID tenant to your AWS account and Region. You can choose the telemetry types, subscriptions, Azure regions, resource types, and tags to collect. Azure telemetry lands in Amazon CloudWatch, and Omni spaces can monitor applications and infrastructure across cloud providers. For example, during an incident you can trace a slow request from an Azure-hosted service to its AWS dependencies without switching consoles. You can set up the connectors in the Amazon CloudWatch Omni console or with the AWS CLI.</p> \n<p>Azure telemetry collection is available in all Azure Public Regions and can be ingested to all regions where CloudWatch Omni is available. To get started, visit the &nbsp;<a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-send-platform-telemetry-from-microsoft-azure.html\">CloudWatch Omni User Guide&nbsp;</a> and for pricing visit&nbsp;<a href=\"https://aws.amazon.com/cognito/pricing/\">pricing page.</a></p>",
-          "categories": []
-        },
-        {
-          "title": "AWS Quick launches a new web experience with updated browser extension and Microsoft 365 add-ins",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-launches-new-web-experience-updated-browser-extension-microsoft-365-add-ins/",
-          "published": "2026-11-21T00:27:00+00:00",
-          "summary": "<p>The AWS Quick web app now brings the Quick desktop experience to your browser. Create, share, and use the same agents and skills as on desktop, with the same connectors. Start each day with a daily briefing and a prioritized feed of the email and messages that need your attention. Quick keeps your conversations, agents, and files synchronized across web, desktop, and mobile, so work you start on one surface carries over to the others. Your dashboards, topics, and spaces work as before.</p> \n<p>Additionally, agents you start or schedule from the web keep running after you close your browser. Schedule an agent in the morning, answer its questions from the mobile app between meetings, and review the results on your desktop. Mission Control shows what your agents have finished and where they need your input. The Quick browser extension and Microsoft 365 add-ins for Word, Excel, PowerPoint, and Outlook are also updated.</p> \n<p>These updates are available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt), Europe (Ireland), Europe (London), Asia Pacific (Sydney), Asia Pacific (Tokyo), and US East (N. Virginia).</p> \n<p>Existing Quick users can sign in to the web app to get started, or download the desktop app <a href=\"https://aws.amazon.com/quick/download/\">here</a>. The Quick mobile app is available for free from the <a href=\"https://apps.apple.com/us/app/amazon-quick/id1148226615\">Apple App Store</a> and <a href=\"https://play.google.com/store/apps/details?id=com.amazonaws.quicksight.mobile&amp;hl=en_US\">Google Play Store</a>. To learn more, see the <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/\">AWS Quick User Guide</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/business-productivity,general:products/aiml,marketing:marchitecture/artificial-intelligence"
-          ]
-        },
-        {
-          "title": "Web Search on Amazon Bedrock expands language support and country-aware search",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-search-amazon-bedrock/",
-          "published": "2026-11-21T00:17:00+00:00",
-          "summary": "<p>Web Search on Amazon Bedrock, the tool that grounds AI agents and applications in cited, current web information, now supports five new languages, plus non-US English, on Amazon Bedrock AgentCore and Amazon Bedrock: Spanish, French, German, Italian, and Japanese.&nbsp; Agents serving users in these languages get results that draw on local-language sources.</p> \n<p>We are also introducing a new optional country field that biases results toward sources from a specific country - just pass an ISO 3166-1 alpha-2 country code, such as “JP” or “DE”. This is useful for agents that serve users in multiple countries, for questions whose answer depends on the user's actual or preferred location (e.g., local regulations, prices or public officials), and for surfacing regional sources.</p> \n<p>Both the expanded language support and the optional&nbsp; country field are available today in every Region where Web Search is offered: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Ireland) for Web Search on Amazon Bedrock AgentCore, and US Regions for Web Search on Amazon Bedrock. Queries are processed in the Region you call, helping organizations meet data residency requirements. Existing customers get the new language capabilities automatically, with no code changes, and pricing is the same in every language.&nbsp;</p> \n<p>To get started with Web Search on Amazon Bedrock, checkout the developer <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html#:~:text=User%20location,time%20zone%20identifier\">guide</a> and the web search product <a href=\"https://aws.amazon.com/bedrock/grounding/web-search/\">page</a>.&nbsp;</p>",
-          "categories": [
-            "general:products/amazon-bedrock"
-          ]
-        },
-        {
-          "title": "Build more capable automations through chat with Flows in AWS Quick",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-flows-automations-chat/",
-          "published": "2026-11-20T23:59:00+00:00",
-          "summary": "<p>Flows in AWS Quick now lets users build, run, and refine automations for themselves and their teams, all through conversation. Users describe a process in chat, and Quick builds the flow, with no coding needed.</p> \n<p>Flows can now orchestrate agents, skills, and tools, with access to structured data, knowledge, and apps. A flow can pull answers from the business data a team already reports on, produce ready-to-share documents, spreadsheets, and presentations, and save the results to a team space. Flows also support longer-running workflows and larger volumes of data.</p> \n<p>New deterministic steps help keep results consistent, and validations check each step's output against rules the user sets, such as requiring a summary table in a report, before the flow continues. For example, an accounts payable team can build a flow that uses agents to read invoices and match them to purchase orders, and deterministic steps to check totals and catch duplicates.</p> \n<p>Users can now run flows wherever they work, across desktop, web, and mobile. In the desktop app, flows can work with local files and complete tasks in the browser. In the mobile app, users can start flows and check on them on the go.</p> \n<p>These updates are available in all AWS Regions where AWS Quick is available.</p> \n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/using-amazon-quick-flows.html\">Flows in AWS Quick</a> in the <a href=\"https://docs.aws.amazon.com/quick/latest/userguide/\" target=\"_blank\">AWS Quick User Guide</a> and the <a href=\"https://aws.amazon.com/quick/\">AWS Quick</a> product page.</p>",
-          "categories": [
-            "marketing:marchitecture/business-productivity,general:products/aiml,marketing:marchitecture/artificial-intelligence"
-          ]
         }
       ]
     },
@@ -456,125 +458,154 @@
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
         {
-          "title": "AWS STS GetScopedCredentials で既存セッションの権限をスコープダウン",
-          "link": "https://aws.amazon.com/jp/blogs/news/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/",
-          "published": "2026-11-25T00:15:24+00:00",
-          "summary": "GetScopedCredentials は、既存の一時的なセキュリティ認証情報の権限をスコープダウンできる新しい AWS STS API です。AI エージェントやサブエージェントごとに、呼び出し元の IAM アイデンティティを維持したまま、権限の縮小やセッション期間の短縮を適用した認証情報を割り当てられます。この記事では、主なユースケース、IAM Policy Autopilot の活用を含むスコープダウンポリシーの作成方法、API の呼び出し方法、アクセスの管理方法を紹介します。",
+          "title": "AWS Weekly Roundup: ボゴタのローカルゾーン、30 分の Lambda タイムアウト、その他 (2026 年 11 月 24 日)",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/",
+          "published": "2026-11-26T02:57:14+00:00",
+          "summary": "一部の制限は、どの機能よりもアーキテクチャを形作ります。AWS Lambda は 2014 年に 60 秒のタ […]",
           "categories": [
+            "Amazon Aurora",
+            "Amazon CloudFront",
+            "Amazon Cognito",
+            "Amazon EC2",
+            "Amazon Elastic Block Store (Amazon EBS)",
+            "Amazon Elastic Container Registry",
+            "Amazon Elastic Container Service",
+            "Amazon Elastic Kubernetes Service",
+            "Amazon Managed Streaming for Apache Kafka (Amazon MSK)",
+            "Amazon Polly",
+            "Amazon Simple Storage Service (S3)",
             "Announcements",
-            "Security, Identity, & Compliance",
-            "Security Blog"
+            "AWS CloudTrail",
+            "AWS Direct Connect",
+            "AWS Identity and Access Management (IAM)",
+            "AWS Lambda",
+            "AWS Local Zones",
+            "AWS Security Token Service",
+            "News"
           ]
         },
         {
-          "title": "AWS Security Incident Response がセキュリティの検出結果をトリアージする仕組み",
-          "link": "https://aws.amazon.com/jp/blogs/news/how-aws-security-incident-response-triages-your-security-findings/",
-          "published": "2026-11-25T00:13:06+00:00",
-          "summary": "AWS Security Incident Response は、Amazon GuardDuty と AWS Security Hub CSPM からの脅威の検出結果を継続的にトリアージしますが、その作業のほとんどはケースとして表に出ません。この記事では、取り込まれた検出結果がアーカイブ、プロアクティブケースのオープン、[Current] での保持のいずれに至るのかと、トリアージの精度が時間とともに向上する仕組みを説明します。また、Proactive response ダッシュボードや月次レポートでトリアージの状況を確認する方法も紹介します。",
-          "categories": [
-            "Advanced (300)",
-            "Amazon GuardDuty",
-            "AWS Security Hub",
-            "Security, Identity, & Compliance",
-            "Technical How-to",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "Amazon GuardDuty の脅威検出機能をカスタマイズしてアラート疲れを軽減",
-          "link": "https://aws.amazon.com/jp/blogs/news/reduce-alert-fatigue-by-customizing-threat-detection-features-in-amazon-guardduty/",
-          "published": "2026-11-25T00:10:17+00:00",
-          "summary": "アラート疲れを軽減するため、Amazon GuardDuty の脅威検出機能をカスタマイズする方法を 3 つのステージで紹介します。Custom Detection Rules のドライランモードでノイズを測定してからライブモードで有効化する手順、ファイルハッシュを含む脅威エンティティリストの活用、ワイルドカードや追加のフィールドで範囲を絞り込んだ抑制ルールによるトリアージ、GuardDuty Investigation による調査の迅速化について説明します。",
-          "categories": [
-            "Amazon GuardDuty",
-            "Security, Identity, & Compliance",
-            "Technical How-to",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "Greenlight Financial が Amazon Bedrock AgentCore で自律型 SOC ソリューションを構築した方法",
-          "link": "https://aws.amazon.com/jp/blogs/news/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/",
-          "published": "2026-11-25T00:07:05+00:00",
-          "summary": "Greenlight Financial が Amazon Bedrock AgentCore 上に構築した自律型 SOC ソリューションを紹介します。Tier 1 と Tier 2 のスーパーバイザーによる階層型マルチエージェントシステム、30 を超える専門エージェント、継続的な学習を支えるエピソード記憶を解説します。また、毎月最大 4,000 件のセキュリティおよびリスクのケースのうち 90% 超を人の介入なしに解決した成果、金融リスクのトリアージへの拡張、規制対象業界で役立つ教訓も説明します。",
-          "categories": [
-            "Advanced (300)",
-            "Amazon Bedrock AgentCore",
-            "Customer Solutions",
-            "Security, Identity, & Compliance",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "週刊生成AI with AWS – 2026/11/16 週",
-          "link": "https://aws.amazon.com/jp/blogs/news/weekly-genai-20261116/",
-          "published": "2026-11-24T14:59:54+00:00",
-          "summary": "今週の「週刊生成 AI with AWS」は、株式会社 BTM 様がログ分析エージェントを Amazon Bedrock AgentCore で作り直した事例をはじめ、既存コードから AI 向け仕様書を起こす Reverse Spec Flow、Kiro for VS Code の一般提供、クラウドセッションの VPC 接続など 12 本の記事を紹介しています。 サービスアップデートでは、Amazon Bedrock の OpenAI GPT-6.2 Astra/Sol、AgentCore の Web 検索 5,000 件無料枠、Amazon S3 Vectors のハイブリッド検索、Amazon Polly の音声クローンなど 27 件と、Kiro の最新 changelog 9 件をまとめています。",
+          "title": "Ｓｋｙ株式会社様の AI-DLC Unicorn Gym 実践レポート：4 チームの実践から各事業本部に広がる AI 駆動開発",
+          "link": "https://aws.amazon.com/jp/blogs/news/sky-ai-dlc/",
+          "published": "2026-11-26T01:56:36+00:00",
+          "summary": "本稿は、AI 駆動開発ライフサイクル（AI-Driven Development Life Cycle、以下 AI-DLC）Unicorn Gym を Ｓｋｙ株式会社様（以下、同社）向けに実施した際に得られた学びと成果をお伝えするものです。 AI-DLC は、要件定義からリリースまでの開発プロセス全体に AI を深く組み込む、AWS が提唱する開発方法論です。AI が開発プロセス全体をオーケストレーション（計画策定、タスク分解、アーキテクチャ提案など）し、人間が検証・意思決定・監督の責任を保持します。従来は数週間を要していた開発の 1 サイクルを、「Bolt」と呼ぶ半日〜1 日単位の短い反復に圧縮できる点が特徴です。AI-DLC の詳細は、AI-DLC のホワイトペーパーと日本語の解説ブログをご覧ください。 本ブログでは、2026 年 6 月 9 日から 11 日の 3 日間にわたり同社向けに実施された AI-DLC Unicorn Gym について紹介します。AI-DLC Unicorn Gym は、座学ではなく実際のプロダクト開発を題材に AI-DLC を実践し、その効果を検証する実践型プログラムです。実案件を持ち込むことで、プログラムでの学びがそのまま本番開発へつながる点が特徴です。今回はエンジニア・PM・PdM・デザイナーを含む 4 チーム・計 36 名 が参加し、AI-DLC workflow v1 に沿って、Claude Code を用いて開発を進めました。",
           "categories": [
             "General",
             "Generative AI",
-            "AWSサービスアップデートまとめ",
-            "週刊AWS"
+            "AI",
+            "利用事例",
+            "開催報告"
           ]
         },
         {
-          "title": "【開催報告】地方自治情報化推進フェア2026 AWS 出展報告",
-          "link": "https://aws.amazon.com/jp/blogs/news/jlis-fair-2026-aws-exhibition-report/",
-          "published": "2026-11-24T14:54:35+00:00",
-          "summary": "2026 年 10 月 27 日・28 日に幕張メッセで開かれた「地方自治情報化推進フェア2026」の AWS 出展報告です。AWS ブースの 4 つのコーナーのデモ、協賛パートナー 11 社の展示、ブース内のミニシアターと、奈良市 CIO にご登壇いただいたベンダープレゼンテーション（ガバメントクラウドでの生成 AI 活用）の内容をご紹介します。",
-          "categories": [
-            "Amazon Connect",
-            "Amazon WorkSpaces",
-            "General",
-            "Generative AI",
-            "Government",
-            "Public Sector",
-            "State or Local Government"
-          ]
-        },
-        {
-          "title": "何日も動き続けるエージェントに、Kiro CLI がついていけるようになりました",
-          "link": "https://aws.amazon.com/jp/blogs/news/agents-run-for-days/",
-          "published": "2026-11-24T09:42:01+00:00",
-          "summary": "Kiro CLI で、何日も開いたままのセッションでもメモリが増え続けなくなりました。あわせて、ダウンロードは小さく、起動は速くなり、長い応答のあとでも打った文字がすぐに表示されるようになっています。",
+          "title": "よく知らないコードベースでコーディングエージェントを使う方法",
+          "link": "https://aws.amazon.com/jp/blogs/news/unfamiliar-codebase/",
+          "published": "2026-11-26T01:49:59+00:00",
+          "summary": "よく知らないリポジトリでは、エージェントがコードを書く前に、確かめられる証拠を作らせます。影響を受ける経路をたどり、今の振る舞いをテストに記録し、変更が守るべきことを書き出してから、証拠と影響の広さに応じて任せる範囲を広げる方法を紹介します。",
           "categories": [
             "Developer Tools",
             "Kiro"
           ]
         },
         {
-          "title": "週刊AWS – 2026/11/16週",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-20261116/",
-          "published": "2026-11-24T09:32:59+00:00",
-          "summary": "Amazon S3 Vectors がベクトル検索と全文検索を組み合わせたハイブリッド検索をサポート、OpenAI GPT-6.2 Astra および GPT-6.2 Sol が Amazon Bedrock で一般提供開始、Amazon Bedrock AgentCore ランタイムインスタンスが privileged mode をサポート、Amazon SageMaker AI が生成 AI 推論エンドポイントのレスポンスタイム上昇、GPU 遊休、最適化漏れを検知、Amazon FSx for NetApp ONTAP が最大 3.6 倍の性能を持つ新世代ファイルシステムを発表 など",
+          "title": "IAM ロールの背後にいるユーザーやワークロードの ID を把握: 信頼できる ID の伝播 (TIP) による認可と監査",
+          "link": "https://aws.amazon.com/jp/blogs/news/know-the-identity-behind-the-role-authorize-and-audit-with-trusted-identity-propagation/",
+          "published": "2026-11-26T01:46:47+00:00",
+          "summary": "信頼できる ID の伝播 (TIP) が IAM フェデレーションと IAM Roles Anywhere に拡張され、IAM Identity Center でもより簡単に使用できるようになりました。この記事では、IAM ロールの背後にいるユーザーまたはワークロードの ID コンテキストをロールセッションに伝達し、IAM ポリシーでの認可や AWS CloudTrail での監査に活用する仕組みを説明します。GitHub Actions による Lambda デプロイの追跡やリスクスコアに基づく S3 バケットポリシーの例、考慮事項と開始方法も紹介します。",
           "categories": [
-            "General",
-            "News",
-            "AWSサービスアップデートまとめ",
-            "週刊AWS"
+            "AWS IAM Identity Center",
+            "AWS Identity and Access Management (IAM)",
+            "AWS Organizations",
+            "Intermediate (200)",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "IAM",
+            "Security Blog"
           ]
         },
         {
-          "title": "AWS と SAP のエージェント間（Agent-to-Agent）相互運用性",
-          "link": "https://aws.amazon.com/jp/blogs/news/a2a-interoperability-between-aws-and-sap/",
-          "published": "2026-11-24T06:51:26+00:00",
-          "summary": "AWS と SAP は、オープンプロトコル A2A によるエージェント連携をサポートしました。Amazon Bedrock AgentCore 上のエージェントが SAP の agent gateway を介して Joule エージェントを検出・呼び出し、SAP Cloud Identity Services によりユーザーの ID と既存の SAP 権限のもとで安全に実行されます。さらに AWS Quick から MCP コネクタ経由で Joule エージェントを利用でき、ビジネスユーザーは1つの会話で SAP と SAP 以外のシステムを横断して作業できます。",
-          "categories": [
-            "Amazon Bedrock AgentCore",
-            "Announcements",
-            "AWS Quick",
-            "SAP on AWS"
-          ]
-        },
-        {
-          "title": "チャネルコーポレーションのアーキテクチャモダナイゼーション：Amazon DynamoDB 活用事例 パート 3 ユーザーとバッジ",
-          "link": "https://aws.amazon.com/jp/blogs/news/how-channel-corporation-modernized-their-architecture-with-amazon-dynamodb-part-3-user-and-badge/",
-          "published": "2026-11-24T05:47:06+00:00",
-          "summary": "チャネルコーポレーションが Amazon DynamoDB でアーキテクチャをモダナイズした事例の第 3 弾です。約 16.8 億件・1.8 TB の User テーブルからバッジの機能を UserBadge テーブルに分離し、バッジの更新によるスロットリングと GSI のバックプレッシャーを解消した経緯を紹介します。DynamoDB の Export to S3 と Import from S3、AWS Glue を使ったオンライン移行で、移行時間を 128 時間から 5.5〜6 時間に短縮し、コストを 36% 削減しました。",
+          "title": "IAM Roles Anywhere と PKI を統合するためのベストプラクティス",
+          "link": "https://aws.amazon.com/jp/blogs/news/best-practices-for-integrating-iam-roles-anywhere-with-your-pki/",
+          "published": "2026-11-26T01:44:48+00:00",
+          "summary": "AWS IAM Roles Anywhere を使用すると、AWS の外部で実行されるワークロードが X.509 証明書を使って一時的な認証情報を取得し、AWS リソースにアクセスできます。この記事では、PKI を IAM Roles Anywhere と統合するためのベストプラクティスを紹介します。具体的には、トラストアンカーを中心とした信頼モデル、証明書属性を使った信頼ポリシーの条件、認証情報ヘルパーの使い方、TPM 2.0 や PKCS #11 によるプライベートキーの保護、証明書の有効期限のモニタリングとローテーションを取り上げます。",
           "categories": [
             "Advanced (300)",
-            "Amazon DynamoDB",
-            "Customer Solutions"
+            "AWS Certificate Manager",
+            "AWS Identity and Access Management (IAM)",
+            "Best Practices",
+            "Security, Identity, & Compliance",
+            "AWS IAM",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "寄稿： 三菱電機ビルソリューションズ、昇降機のグローバル遠隔保守システムを AWS へ移行",
+          "link": "https://aws.amazon.com/jp/blogs/news/mebs_msbridge_aws_migration/",
+          "published": "2026-11-26T00:50:04+00:00",
+          "summary": "本稿は、三菱電機ビルソリューションズ株式会社による昇降機グローバル遠隔保守サービス「M’s BR […]",
+          "categories": [
+            "Amazon EC2",
+            "Amazon Elastic File System (EFS)",
+            "AWS Application Migration Service",
+            "Case Study",
+            "Manufacturing",
+            "Migration",
+            "Technical How-to",
+            "利用事例"
+          ]
+        },
+        {
+          "title": "AWS RTB Fabric Modules を AWS Marketplace で提供開始：AdTech パートナーの知見・データを bid に組み込む",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-aws-rtb-fabric-modules-available-through-aws-marketplace-adtech-partner-intelligence-inline-in-the-bid-path/",
+          "published": "2026-11-26T00:11:31+00:00",
+          "summary": "2026 年 11 月 19 日、AWS RTB Fabric Modules の一般提供を開始しました。AdTech 企業とそのパートナーは、Real Time Bidding (RTB) ワークロードに広告インテリジェンスと意思決定の機能を追加できるようになります。Pixalate、WURFL by ScientiaMobile、Picnic などの AdTech パートナーが提供する AWS RTB Fabric Modules を、AWS Marketplace から利用できます。",
+          "categories": [
+            "Announcements",
+            "AWS Marketplace",
+            "General",
+            "Marketing & Advertising",
+            "Media & Entertainment",
+            "News",
+            "Partner solutions",
+            "advertising",
+            "aws for advertising & marketing"
+          ]
+        },
+        {
+          "title": "AWS DMS のパフォーマンスのための長時間実行トランザクションの管理",
+          "link": "https://aws.amazon.com/jp/blogs/news/manage-long-running-transactions-for-aws-dms-performance/",
+          "published": "2026-11-25T23:43:08+00:00",
+          "summary": "本記事は 2026 年 06 月 30 日に公開された “Manage long-running transa […]",
+          "categories": [
+            "Advanced (300)",
+            "AWS Database Migration Service",
+            "Database",
+            "Technical How-to",
+            "database",
+            "DMS"
+          ]
+        },
+        {
+          "title": "タグエディタが AWS Resource Explorer に移行: 複数のリージョンにまたがるリソースにタグを一括付与可能に",
+          "link": "https://aws.amazon.com/jp/blogs/news/tag-editor-moves-to-aws-resource-explorer-bulk-tag-resources-across-regions/",
+          "published": "2026-11-25T08:49:40+00:00",
+          "summary": "本記事は 2026 年 11 月 3 日に公開された「Tag Editor moves to AWS Reso […]",
+          "categories": [
+            "Announcements",
+            "Best Practices",
+            "Configuration, compliance, and auditing",
+            "Management Tools"
+          ]
+        },
+        {
+          "title": "Amazon Bedrock のコストを一連の流れで管理する：FinOps チームとプラットフォームチーム向けのプレイブック",
+          "link": "https://aws.amazon.com/jp/blogs/news/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+          "published": "2026-11-25T08:49:33+00:00",
+          "summary": "本記事は 2026 年 10 月 30 日に公開された「Managing Amazon Bedrock cos […]",
+          "categories": [
+            "Advanced (300)",
+            "Amazon Bedrock",
+            "Technical How-to"
           ]
         }
       ]
