@@ -1,9 +1,18 @@
 {
-  "generated_at": "2026-11-26T04:07:02.626542+00:00",
+  "generated_at": "2026-11-27T04:11:50.353293+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon RDS for PostgreSQL supports minor versions 18.7, 17.12, 16.16, 15.20, and 14.25",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-18-7-17-12-16-16-15-20-14-25/",
+          "published": "2026-11-26T17:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Relational Database Service (RDS) for PostgreSQL</a> now supports the latest minor versions 18.7, 17.12, 16.16, 15.20, and 14.25. We recommend that you upgrade to the latest minor versions to address Common Vulnerabilities and Exposures (CVEs) in prior versions of PostgreSQL, and to benefit from the bug fixes and improvements added by the PostgreSQL community.</p> \n<p>You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS.Maintenance.AMVU.UpgradeRollout.html\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade Rollout Policy</a> to orchestrate multiple upgrades in phases, validating on lower-priority environments before upgrading your most critical ones. You can also use Amazon RDS Blue/Green deployments to minimize downtime for minor version upgrades. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrading RDS for PostgreSQL DB engine</a>.</p> \n<p>Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. See <a href=\"https://aws.amazon.com/rds/postgresql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS for PostgreSQL Pricing</a> for pricing details and regional availability. Create or update a fully managed Amazon RDS database in the <a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon RDS Management Console</a> or by using the AWS Command Line Interface (CLI).</p>",
+          "categories": [
+            "general:products/amazon-rds,marketing:marchitecture/databases"
+          ]
+        },
         {
           "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
@@ -155,6 +164,15 @@
           "summary": "<p>Amazon Connect Customer analytics dashboards now support grouping historical metrics by time interval on trailing widgets, giving contact center managers granular control over how performance data is visualized over time. Trailing widgets now display data grouped by 15-minute, 30-minute, one-hour, daily, and weekly intervals. For example, a workforce manager investigating a spike in average handle time can switch from a daily view to 15-minute intervals to pinpoint the exact period the spike occurred, then zoom out to a weekly view to confirm whether it reflects a broader trend.</p> \n<p>Time interval grouping on dashboards is available in all AWS <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#amazonconnect_region\">regions</a> where Amazon Connect Customer is offered. To learn more, see the <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/dashboard-customize-widgets.html#configure-groupings\">Amazon Connect Customer Administrator Guide.</a>&nbsp; To learn more about Amazon Connect Customer, visit the <a href=\"https://aws.amazon.com/connect/\">Amazon Connect Customer website</a>.</p>",
           "categories": [
             "marketing:marchitecture/contact-center,general:products/amazon-connect,marketing:marchitecture/business-productivity,general:products/aws-govcloud-us"
+          ]
+        },
+        {
+          "title": "Amazon OpenSearch Service new engine now joins logs, traces, and metadata",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-distributed-joins",
+          "published": "2026-11-24T17:00:00+00:00",
+          "summary": "<p>Amazon OpenSearch Service now supports distributed joins, high-cardinality aggregations, and OpenSearch query DSL on the new engine. Observability data often spans logs, traces, service metadata, deployment records, and tenant data. Engineers and their AI agents must connect these datasets to determine what failed, where it failed, and who was affected.</p> \n<p>With Piped Processing Language (PPL) or SQL, engineers and agents can query multiple petabytes of data to connect an error log to its trace, and enrich telemetry with service ownership or deployment metadata, in one query. High-cardinality aggregations measure incident impact across millions of distinct hosts, users, or tenants. The new engine spreads aggregations and joins across data nodes, so you don't need to copy related data into a single index first. With routing key support, you can keep related documents on the same shard, so lookups and joins on that key stay fast.</p> \n<p>In addition to PPL and SQL, the new engine now supports OpenSearch query DSL. You get the engine's cost savings and performance improvements for supported analytics workloads without rewriting queries in PPL or SQL. Applications, alerts, and integrations that send query DSL keep working.</p> \n<p>These features are available on OpenSearch 3.9, at no additional charge, in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), and Europe (Spain). To get started, create or upgrade a domain to OpenSearch 3.9 with the new engine. To learn more, see the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/optimized-log-analytics-queries.html\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/analytics,general:products/amazon-opensearch-service"
           ]
         },
         {
@@ -433,30 +451,110 @@
           "categories": [
             "marketing:marchitecture/front-end-web-mobile,general:products/aws-device-farm,marketing:marchitecture/developer-tools,general:use-case/mobile"
           ]
-        },
-        {
-          "title": "Amazon SageMaker HyperPod launches a redesigned console experience for creating Amazon EKS-orchestrated clusters",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-console-eks/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>Amazon SageMaker HyperPod now offers a redesigned AWS Management Console experience for creating clusters orchestrated by Amazon EKS. A guided workflow helps ML infrastructure administrators and platform teams set up networking, instance groups, storage, permissions, resiliency, observability, lifecycle scripts, and tags. Required settings are kept apart from optional ones. You enter only what is needed to create the cluster and add other capabilities later, when you need them.</p>\n<p>You can start with smart defaults or choose a workload profile that applies a coordinated set of settings based on how you plan to use the cluster. You can then adjust individual and advanced settings as needed, reducing repetitive setup while retaining control over the configuration.</p>\n<p>The redesigned experience is available in all AWS Regions where Amazon SageMaker HyperPod is available. To learn more, check our <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-eks-operate-console-ui-create-cluster.html\" target=\"_blank\">documentation</a>.</p>",
-          "categories": [
-            "general:products/amazon-eks"
-          ]
-        },
-        {
-          "title": "Amazon SageMaker AI now supports viewing capacity reservations",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-capacity-reservations/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>Amazon SageMaker AI now lets you view SageMaker Capacity Reservations in the SageMaker console, AWS CLI, and AWS SDKs. Previously, customers had no self-service way to see their reserved capacity, including reservation timelines and instance availability, and had to rely on AWS Support to plan their own workloads. Starting today, administrators can review the capacity they hold without leaving SageMaker AI. Administrators can list reservations with their status, instance type, availability zone, instance count, start time, and end time.</p> \n<p>Customers can view their SageMaker Capacity Reservations under Reserved Capacity section in SageMaker Console. They can open a reservation to see its details, including the ML reservation ARN to use in a SageMaker Inference Endpoint configuration. Additionally, the details page lists the SageMaker AI resources that can use the reservation, such as Amazon SageMaker HyperPod clusters and SageMaker Inference endpoints, and shows the status of each association.</p> \n<p>This capability is available in all AWS Regions where Amazon SageMaker HyperPod is available. To learn more, see <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod.html#sagemaker-hyperpod-available-regions\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon SageMaker HyperPod available regions</a> and the <a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sm-capacity-reservations.html\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon SageMaker AI user guide</a>.</p>",
-          "categories": [
-            "general:products/amazon-sagemaker"
-          ]
         }
       ]
     },
     "aws_blog": {
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
+        {
+          "title": "AWS セキュリティハンズオン連続開催のご案内",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-security-handson-series/",
+          "published": "2026-11-27T03:00:47+00:00",
+          "summary": "AWS Japan では、2026 年 11 月から、AWS のセキュリティサービスを実際に操作するオンラインハンズオンを週次で開催します。AWS Security Agent、AWS WAF、Amazon Inspector、フロンティアモデルを活用したソースコードの脆弱性対策などをテーマに、座学とハンズオンで、ご自身の組織で試すための最初の一歩までをお伝えします。本記事は、開催日程を随時更新する案内ページです。",
+          "categories": [
+            "Amazon Inspector",
+            "Announcements",
+            "AWS WAF",
+            "Security",
+            "Webinars",
+            "AWS Security",
+            "Webinar"
+          ]
+        },
+        {
+          "title": "AWS オブザーバビリティ成熟度アセスメント：推測から改善計画へ",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-observability-maturity-assessment-from-guesswork-to-a-blueprint/",
+          "published": "2026-11-27T01:52:47+00:00",
+          "summary": "本記事は、2026 年 11 月 16 日 に公開された AWS observability maturity […]",
+          "categories": [
+            "Amazon CloudWatch"
+          ]
+        },
+        {
+          "title": "ランサムウェア対策の検討を支援する Agent Skills のご紹介 ― Skills の根底にある考え方と観点",
+          "link": "https://aws.amazon.com/jp/blogs/news/fsi-ransomware-resilience-agent-skills-intro/",
+          "published": "2026-11-27T00:48:38+00:00",
+          "summary": "ランサムウェアへの備えとして、侵入を完全に防ぐことに加え、侵入されることを前提に異常に早く気づき、影響の範囲を見極め、安全な状態に戻せるようにしておく「サイバーレジリエンス」の観点が重要になっています。本記事では、金融リファレンスアーキテクチャ日本版で公開している、ランサムウェア対策の検討を支援する Agent Skills をご紹介します。あわせて、金融業界のお客様の検討をご支援する中で見えてきた、Skills の根底にある考え方と観点として、保護・検知・対応・復旧・組織対応の 5 つの要素とそのつながり、要素をまたいで共通する考え方、検討の中で向き合うトレードオフをご紹介します。",
+          "categories": [
+            "Artificial Intelligence",
+            "Financial Services",
+            "Industries",
+            "Security, Identity, & Compliance",
+            "Financial Services Industry",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "開発者が Kiro に持ち込む作業で、コーディングエージェントをベンチマークする",
+          "link": "https://aws.amazon.com/jp/blogs/news/kirobench/",
+          "published": "2026-11-26T13:42:52+00:00",
+          "summary": "開発者は Kiro を、ちょっとした質問から、多くのファイルにまたがり何往復も会話が続く作業まで、あらゆることに使っています。そうした使い方のすべてにわたってエージェントを測るために、私たちは「KiroBench」と呼ぶ社内ベンチマークを作りました。",
+          "categories": [
+            "Developer Tools",
+            "Kiro"
+          ]
+        },
+        {
+          "title": "人の注意を中心にソフトウェアファクトリーを作る",
+          "link": "https://aws.amazon.com/jp/blogs/news/software-factory-human-attention/",
+          "published": "2026-11-26T05:52:18+00:00",
+          "summary": "Kiro の中のエージェントを作っているチームが、人の注意をどこにどう使うかを中心にソフトウェアファクトリーを作りました。判断をライフサイクル全体に分散させ、1 回 1 回のレビューを楽にし、要らないコンテキストの切り替えを減らす仕組みと、運用してわかったことを紹介します。",
+          "categories": [
+            "Developer Tools",
+            "Kiro"
+          ]
+        },
+        {
+          "title": "AWS WAF のシンプルで予測しやすい新しい料金体系のご紹介",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-aws-waf-simplified-pricing/",
+          "published": "2026-11-26T04:26:40+00:00",
+          "summary": "AWS は 2026 年 11 月 23 日、保護するリソース、AWS WAF が検査するリクエスト、高度な保護が評価するリクエストという 3 つの要素に基づく AWS WAF の新しい料金体系を発表しました。新しい料金体系は 2027 年 2 月 1 日以降の利用分に適用されます。ルールを追加・変更しても料金単価は変わりません。また、Bot Control の共通保護や Anti-DDoS ルールグループを有効にしてもサブスクリプションは追加されないため、コストを予測しやすくなります。この記事では、新しい料金体系の仕組みと、計算例を使った請求額の見積り方法を紹介します。",
+          "categories": [
+            "Announcements",
+            "AWS WAF",
+            "Intermediate (200)",
+            "Security, Identity, & Compliance",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "新しい AWS WAF セキュリティ分析ダッシュボードのご紹介: すべての保護パックのトラフィックを単一ページで調査・対処",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-the-new-aws-waf-security-analytics-dashboard/",
+          "published": "2026-11-26T04:25:01+00:00",
+          "summary": "AWS WAF セキュリティ分析ダッシュボードを使うと、すべての保護パック (ウェブ ACL)、リージョンリソース、Amazon CloudFront ディストリビューションにわたるトラフィックを単一のグローバルページで調査し、同じページから対処できます。この記事では、ホストやラベルなどのディメンションと、フィルターやグループ化などのコントロールを紹介します。また、トラフィックの急増の調査と、誤検知を減らすためのルールのチューニングという 2 つのユースケースを説明します。",
+          "categories": [
+            "Announcements",
+            "AWS WAF",
+            "Best Practices",
+            "Security, Identity, & Compliance",
+            "Best practices",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "AWS WAF Bot Control のターゲットを絞った検査レベルでオンボーディングを簡素化",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-simplified-onboarding-for-aws-waf-bot-control-at-the-targeted-inspection-level/",
+          "published": "2026-11-26T04:23:29+00:00",
+          "summary": "ターゲットを絞った検査レベルの AWS WAF Bot Control で、簡素化されたオンボーディングとボット信頼度レベルの提供を開始しました。ラベルルールを記述する代わりに High、Medium、Low の信頼度レベルごとにアクションを選べるため、AI を活用したボットを含む自動化されたトラフィックへの対処に役立ちます。Amazon CloudFront では、1 つのトグルで Targeted bot control を有効にでき、自動 SDK 統合によってアプリケーションコードを変更せずに導入できる場合が多くあります。この記事では、コンソールと API での設定手順と考慮事項を紹介します。",
+          "categories": [
+            "Announcements",
+            "AWS WAF",
+            "Foundational (100)",
+            "Security, Identity, & Compliance",
+            "Security Blog"
+          ]
+        },
         {
           "title": "AWS Weekly Roundup: ボゴタのローカルゾーン、30 分の Lambda タイムアウト、その他 (2026 年 11 月 24 日)",
           "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/",
@@ -495,117 +593,6 @@
             "AI",
             "利用事例",
             "開催報告"
-          ]
-        },
-        {
-          "title": "よく知らないコードベースでコーディングエージェントを使う方法",
-          "link": "https://aws.amazon.com/jp/blogs/news/unfamiliar-codebase/",
-          "published": "2026-11-26T01:49:59+00:00",
-          "summary": "よく知らないリポジトリでは、エージェントがコードを書く前に、確かめられる証拠を作らせます。影響を受ける経路をたどり、今の振る舞いをテストに記録し、変更が守るべきことを書き出してから、証拠と影響の広さに応じて任せる範囲を広げる方法を紹介します。",
-          "categories": [
-            "Developer Tools",
-            "Kiro"
-          ]
-        },
-        {
-          "title": "IAM ロールの背後にいるユーザーやワークロードの ID を把握: 信頼できる ID の伝播 (TIP) による認可と監査",
-          "link": "https://aws.amazon.com/jp/blogs/news/know-the-identity-behind-the-role-authorize-and-audit-with-trusted-identity-propagation/",
-          "published": "2026-11-26T01:46:47+00:00",
-          "summary": "信頼できる ID の伝播 (TIP) が IAM フェデレーションと IAM Roles Anywhere に拡張され、IAM Identity Center でもより簡単に使用できるようになりました。この記事では、IAM ロールの背後にいるユーザーまたはワークロードの ID コンテキストをロールセッションに伝達し、IAM ポリシーでの認可や AWS CloudTrail での監査に活用する仕組みを説明します。GitHub Actions による Lambda デプロイの追跡やリスクスコアに基づく S3 バケットポリシーの例、考慮事項と開始方法も紹介します。",
-          "categories": [
-            "AWS IAM Identity Center",
-            "AWS Identity and Access Management (IAM)",
-            "AWS Organizations",
-            "Intermediate (200)",
-            "Security, Identity, & Compliance",
-            "Technical How-to",
-            "IAM",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "IAM Roles Anywhere と PKI を統合するためのベストプラクティス",
-          "link": "https://aws.amazon.com/jp/blogs/news/best-practices-for-integrating-iam-roles-anywhere-with-your-pki/",
-          "published": "2026-11-26T01:44:48+00:00",
-          "summary": "AWS IAM Roles Anywhere を使用すると、AWS の外部で実行されるワークロードが X.509 証明書を使って一時的な認証情報を取得し、AWS リソースにアクセスできます。この記事では、PKI を IAM Roles Anywhere と統合するためのベストプラクティスを紹介します。具体的には、トラストアンカーを中心とした信頼モデル、証明書属性を使った信頼ポリシーの条件、認証情報ヘルパーの使い方、TPM 2.0 や PKCS #11 によるプライベートキーの保護、証明書の有効期限のモニタリングとローテーションを取り上げます。",
-          "categories": [
-            "Advanced (300)",
-            "AWS Certificate Manager",
-            "AWS Identity and Access Management (IAM)",
-            "Best Practices",
-            "Security, Identity, & Compliance",
-            "AWS IAM",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "寄稿： 三菱電機ビルソリューションズ、昇降機のグローバル遠隔保守システムを AWS へ移行",
-          "link": "https://aws.amazon.com/jp/blogs/news/mebs_msbridge_aws_migration/",
-          "published": "2026-11-26T00:50:04+00:00",
-          "summary": "本稿は、三菱電機ビルソリューションズ株式会社による昇降機グローバル遠隔保守サービス「M’s BR […]",
-          "categories": [
-            "Amazon EC2",
-            "Amazon Elastic File System (EFS)",
-            "AWS Application Migration Service",
-            "Case Study",
-            "Manufacturing",
-            "Migration",
-            "Technical How-to",
-            "利用事例"
-          ]
-        },
-        {
-          "title": "AWS RTB Fabric Modules を AWS Marketplace で提供開始：AdTech パートナーの知見・データを bid に組み込む",
-          "link": "https://aws.amazon.com/jp/blogs/news/introducing-aws-rtb-fabric-modules-available-through-aws-marketplace-adtech-partner-intelligence-inline-in-the-bid-path/",
-          "published": "2026-11-26T00:11:31+00:00",
-          "summary": "2026 年 11 月 19 日、AWS RTB Fabric Modules の一般提供を開始しました。AdTech 企業とそのパートナーは、Real Time Bidding (RTB) ワークロードに広告インテリジェンスと意思決定の機能を追加できるようになります。Pixalate、WURFL by ScientiaMobile、Picnic などの AdTech パートナーが提供する AWS RTB Fabric Modules を、AWS Marketplace から利用できます。",
-          "categories": [
-            "Announcements",
-            "AWS Marketplace",
-            "General",
-            "Marketing & Advertising",
-            "Media & Entertainment",
-            "News",
-            "Partner solutions",
-            "advertising",
-            "aws for advertising & marketing"
-          ]
-        },
-        {
-          "title": "AWS DMS のパフォーマンスのための長時間実行トランザクションの管理",
-          "link": "https://aws.amazon.com/jp/blogs/news/manage-long-running-transactions-for-aws-dms-performance/",
-          "published": "2026-11-25T23:43:08+00:00",
-          "summary": "本記事は 2026 年 06 月 30 日に公開された “Manage long-running transa […]",
-          "categories": [
-            "Advanced (300)",
-            "AWS Database Migration Service",
-            "Database",
-            "Technical How-to",
-            "database",
-            "DMS"
-          ]
-        },
-        {
-          "title": "タグエディタが AWS Resource Explorer に移行: 複数のリージョンにまたがるリソースにタグを一括付与可能に",
-          "link": "https://aws.amazon.com/jp/blogs/news/tag-editor-moves-to-aws-resource-explorer-bulk-tag-resources-across-regions/",
-          "published": "2026-11-25T08:49:40+00:00",
-          "summary": "本記事は 2026 年 11 月 3 日に公開された「Tag Editor moves to AWS Reso […]",
-          "categories": [
-            "Announcements",
-            "Best Practices",
-            "Configuration, compliance, and auditing",
-            "Management Tools"
-          ]
-        },
-        {
-          "title": "Amazon Bedrock のコストを一連の流れで管理する：FinOps チームとプラットフォームチーム向けのプレイブック",
-          "link": "https://aws.amazon.com/jp/blogs/news/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
-          "published": "2026-11-25T08:49:33+00:00",
-          "summary": "本記事は 2026 年 10 月 30 日に公開された「Managing Amazon Bedrock cos […]",
-          "categories": [
-            "Advanced (300)",
-            "Amazon Bedrock",
-            "Technical How-to"
           ]
         }
       ]
