@@ -1,9 +1,34 @@
 {
-  "generated_at": "2026-11-27T04:11:50.353293+00:00",
+  "generated_at": "2026-11-28T03:51:53.208811+00:00",
   "feeds": {
     "whats_new": {
       "source": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
       "items": [
+        {
+          "title": "Amazon Timestream for InfluxDB 3 now supports heterogeneous clusters",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/influxdb-heterogeneous-cluster/",
+          "published": "2026-11-27T22:30:00+00:00",
+          "summary": "<p>Amazon Timestream for InfluxDB 3 now supports heterogeneous clusters, which let you assign a different instance size to each node role in an InfluxDB 3 Enterprise cluster. You can size the writer, reader, and compactor roles independently. You set the size for each role when you create a cluster or add nodes to an existing cluster, using the Amazon Timestream console, the AWS Command Line Interface (CLI), or the AWS SDKs.</p> \n<p>Time series workloads rarely load every part of a database the same way. Queries need memory for the query cache, writes are gated by durable flushes to object storage, and compaction needs vCPUs to merge files in the background. Because every node previously ran one instance size, scaling a single role meant scaling all of them and paying for headroom on nodes already sized correctly. You can now place reader nodes on a larger size for a bigger cache or more complex queries while keeping writer nodes smaller, or give the compactor more vCPUs without changing the rest of the cluster.</p> \n<p>There is no additional charge, and you pay the standard price for each node at the size you select. Heterogeneous clusters are available for InfluxDB 3 Enterprise clusters in all AWS <a href=\"https://docs.aws.amazon.com/general/latest/gr/timestream.html\">Regions</a> where Amazon Timestream for InfluxDB is available. To get started, open the Amazon Timestream console. For more information, see the <a href=\"https://docs.aws.amazon.com/timestream/\">Amazon Timestream for InfluxDB documentation</a> and <a href=\"https://aws.amazon.com/timestream/pricing/\">pricing page</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/databases,general:products/amazon-timestream"
+          ]
+        },
+        {
+          "title": "Amazon CloudWatch announces basic OpenTelemetry enrichment at no additional cost",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-opentelemetry-enrichment/",
+          "published": "2026-11-27T21:03:00+00:00",
+          "summary": "<p>Amazon CloudWatch now offers basic OpenTelemetry enrichment for AWS service metrics at no additional cost. Basic enrichment turns the metrics that AWS services publish to CloudWatch into OpenTelemetry data points you can query with PromQL. It covers metrics that identify a resource, such as Amazon EC2 CPUUtilization with an InstanceId dimension. Enriched metrics get resource attributes for the Amazon Resource Name, cloud provider, Region, and account ID, plus an instrumentation scope naming the source service. Your original CloudWatch dimensions become data point attributes.</p> \n<p>To query AWS resource tags as PromQL labels, choose resource tag enrichment instead. It is charged as OTel Vended Metric Enrichment, and you can switch levels at any time. Your AWS service metrics stay available through existing CloudWatch APIs.</p> \n<p>When you set up CloudWatch Omni, basic enrichment is enabled by default, so you can query your AWS service metrics with PromQL right away. Any account can also enable it directly in the CloudWatch console, AWS Command Line Interface, or the AWS SDKs. Basic enrichment is available in all AWS Regions where CloudWatch OpenTelemetry metrics are supported. To learn more, see <a title=\"AWS vended metrics in OpenTelemetry format with PromQL querying\" href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OTelEnrichment.html\">AWS vended metrics in OpenTelemetry format</a>. For pricing, see <a title=\"CloudWatch pricing\" href=\"https://aws.amazon.com/cloudwatch/pricing/\">Amazon CloudWatch pricin</a>g.</p>",
+          "categories": []
+        },
+        {
+          "title": "Amazon Neptune introduces Neptune Graph Sessions, smaller graphs designed for agents that scale to zero and resume automatically",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-neptune-graph-sessions-generally-available",
+          "published": "2026-11-27T19:00:00+00:00",
+          "summary": "<p><a href=\"https://aws.amazon.com/neptune/\">Amazon Neptune</a> now supports Neptune Graph Sessions, a compute mode designed for agents that scales memory and CPU automatically and scales to zero when idle. You can give each agent, user or task its own graph without paying for the 16 m-NCU minimum of a provisioned graph. You choose a starting size of 4 s-NCU (sessions Neptune capacity units) or 8 s-NCU of working memory when you create a graph.</p> \n<p>Applications such as GraphRAG assistants, AI agents and per-user analytics improve accuracy when using a graph. These use cases often need a separate graph for each conversation or task, and the size of that graph is hard to predict. Each Graph Sessions graph starts at the size you choose and includes memory headroom up to twice that size for the data you load and the queries you run (a 4 s-NCU graph has up to 8 s-NCU of memory, and an 8 s-NCU graph has up to 16 s-NCU), so the starting size does not have to cover your largest graph. You are billed for the memory your graph uses, so a graph that fits in the smaller size is billed at the smaller size.</p> \n<p>When a graph is idle, Graph Sessions scales to zero automatically after 15 minutes, and the graph resumes in seconds when the next query arrives. Your graph and its data are kept, so you do not reload data for each session and pay for the running price.</p> \n<p>You can create a Neptune Graph Sessions graph using the AWS Management Console, AWS CLI, or AWS SDKs, and query it with openCypher like any other Neptune Analytics graph. For more information, see the <a href=\"https://docs.aws.amazon.com/neptune-analytics/latest/userguide/gettingStarted.html\">Neptune Analytics User Guide</a> and the <a href=\"https://aws.amazon.com/neptune/pricing/\">Amazon Neptune pricing page</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/analytics,general:products/amazon-neptune,marketing:marchitecture/databases"
+          ]
+        },
         {
           "title": "Amazon RDS for PostgreSQL supports minor versions 18.7, 17.12, 16.16, 15.20, and 14.25",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-18-7-17-12-16-16-15-20-14-25/",
@@ -47,6 +72,15 @@
           "summary": "<p>Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9gd instances are available in the Asia Pacific (Seoul) region. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad range of workloads running on Amazon EC2.</p> \n<p><a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\">M9gd instances</a> deliver up to 25% better compute performance than AWS Graviton4-based M8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation <a href=\"https://aws.amazon.com/ec2/nitro/\">AWS Nitro System</a> and are the first to feature the <a href=\"https://aws.amazon.com/blogs/compute/aws-nitro-isolation-engine-formally-verifying-the-hypervisor-in-the-aws-nitro-system/\">Nitro Isolation Engine</a>. The Isolation Engine uses formal verification to provide mathematical assurance that customer workloads are isolated from each other and from AWS operators, pioneering a new standard for mathematically proven cloud security.</p> \n<p>M9gd instances serve a broad range of general-purpose workloads, including application servers, microservices, gaming, caching, and containers. They also deliver the performance needed for agentic AI use cases like real-time reasoning, code generation, and multi-step orchestration. M9gd instances also offer local NVMe-based SSD block-level storage for workloads that need high-speed, low-latency local storage for scratch space, temporary files, and caches.</p> \n<p>M9gd instances are available for purchase in this region via Savings Plans, On-Demand, Spot Instances, Dedicated Instances, or Dedicated Hosts. <a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\">Level up your compute with AWS Graviton</a> and <a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\">get started with M9gd today</a>.</p>",
           "categories": [
             "general:products/amazon-ec2,marketing:marchitecture/compute"
+          ]
+        },
+        {
+          "title": "Amazon OpenSearch Service optimised engine now publishes data to Amazon S3 Tables",
+          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-publish-s3-tables",
+          "published": "2026-11-25T17:00:00+00:00",
+          "summary": "<p>The optimized engine for observability in Amazon OpenSearch Service now lets customers who send observability data directly to OpenSearch publish that data to Amazon S3 Tables. These customers can search and analyze data in OpenSearch, but reusing it with other analytics and AI tools often requires a parallel ingestion or custom export pipeline. This integration provides an open-table reuse path without changing how data enters OpenSearch.</p> \n<p>Publish policies make selected indexes available as Apache Iceberg tables in your AWS account. Engineers and AI agents can query the same observability data with Amazon EMR Serverless, DuckDB, and other Iceberg-compatible tools without adding query load to OpenSearch. They can reuse it for historical investigations, cross-dataset analysis, audits, and long-term trend analysis while retaining it at lower cost.</p> \n<p>This feature is available at no additional charge on the new engine for observability with OpenSearch 3.9 in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), and Europe (Spain). Amazon S3 Tables storage and the services you use to query the data incur standard charges. To get started, add a publish policy to your <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/optimized-log-analytics.html\">optimized domain</a> and see Publish indexes to Amazon S3 Tables in the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/publishing-indices-s3-tables.html\">documentation</a>.</p>",
+          "categories": [
+            "marketing:marchitecture/analytics,general:products/amazon-opensearch-service"
           ]
         },
         {
@@ -116,9 +150,9 @@
           "title": "AWS Device Farm now supports Android emulators and iOS simulators",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/device-farm-virtual-devices/",
           "published": "2026-11-25T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/device-farm/\">AWS Device Farm</a>, a service for testing mobile and web apps, now supports Android emulators and iOS simulators alongside real devices for automated and manual testing, enabling faster testing at scale early in your development pipeline. With virtual devices, you can shift testing left to stages that need high speed and volume, such as pull requests, code merges, and smoke tests, and keep real devices for later stages that need high fidelity, such as regression and release testing. Virtual devices running the latest device and OS typically start in seconds, and others start in around a minute.</p>\n<p>Previously, you could build and maintain your own Android emulator and iOS simulator infrastructure, which requires separate tooling and compute such as Mac hosts for iOS, or run every stage on real devices, which is slower, limited by device availability, and costs more than early-stage testing needs. Now you can use the same fully managed Device Farm APIs, test environment, private endpoint access, and test frameworks for both virtual and real devices. To switch, you change only the device type, so your pipeline and tests stay the same and you avoid maintaining two separate orchestration layers.</p>\n<p>Virtual devices use the existing metered <a href=\"https://aws.amazon.com/device-farm/pricing/\">pricing</a>. For Android, your existing unmetered slots now go further and run either a real or a virtual device at no additional charge.</p>\n<p>Android emulators and iOS simulators are available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where AWS Device Farm is offered.</p>\n<p>To get started, see the AWS Device Farm <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/virtual-devices.html\" target=\"_blank\">Developer Guide</a>.</p>",
+          "summary": "<p><a href=\"https://aws.amazon.com/device-farm/\">AWS Device Farm</a>, a service for testing mobile and web apps, now supports Android emulators and iOS simulators alongside real devices for automated and manual testing, enabling faster testing at scale early in your development pipeline. With virtual devices, you can shift testing left to stages that need high speed and volume, such as pull requests, code merges, and smoke tests, and keep real devices for later stages that need high fidelity, such as regression and release testing. Virtual devices running the latest supported OS version typically start in seconds, and others start in about a minute.</p>\n<p>Previously, you could build and maintain your own Android emulator and iOS simulator infrastructure, which requires separate tooling and compute such as Mac hosts for iOS, or run every stage on real devices, which is slower, limited by device availability, and costs more than early-stage testing needs. Now you can use the same fully managed Device Farm APIs, test environment, private endpoint access, and test frameworks for both virtual and real devices. To switch, you change only the device type, so your pipeline and tests stay the same and you avoid maintaining two separate orchestration layers.</p>\n<p>Virtual devices use the existing metered <a href=\"https://aws.amazon.com/device-farm/pricing/\">pricing</a>. For Android, your existing unmetered slots now go further and run either a real or a virtual device at no additional charge.</p>\n<p>Android emulators and iOS simulators are available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a> where AWS Device Farm is offered.</p>\n<p>To get started, see the AWS Device Farm <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/virtual-devices.html\" target=\"_blank\">Developer Guide</a>.</p>",
           "categories": [
-            "marketing:marchitecture/developer-tools,marketing:marchitecture/front-end-web-mobile,general:use-case/mobile,general:products/aws-device-farm"
+            "general:use-case/mobile,marketing:marchitecture/front-end-web-mobile,general:products/aws-device-farm,marketing:marchitecture/developer-tools"
           ]
         },
         {
@@ -167,12 +201,12 @@
           ]
         },
         {
-          "title": "Amazon OpenSearch Service new engine now joins logs, traces, and metadata",
+          "title": "Amazon OpenSearch Service optimized engine supports high-cardinality query and DSL",
           "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-distributed-joins",
           "published": "2026-11-24T17:00:00+00:00",
-          "summary": "<p>Amazon OpenSearch Service now supports distributed joins, high-cardinality aggregations, and OpenSearch query DSL on the new engine. Observability data often spans logs, traces, service metadata, deployment records, and tenant data. Engineers and their AI agents must connect these datasets to determine what failed, where it failed, and who was affected.</p> \n<p>With Piped Processing Language (PPL) or SQL, engineers and agents can query multiple petabytes of data to connect an error log to its trace, and enrich telemetry with service ownership or deployment metadata, in one query. High-cardinality aggregations measure incident impact across millions of distinct hosts, users, or tenants. The new engine spreads aggregations and joins across data nodes, so you don't need to copy related data into a single index first. With routing key support, you can keep related documents on the same shard, so lookups and joins on that key stay fast.</p> \n<p>In addition to PPL and SQL, the new engine now supports OpenSearch query DSL. You get the engine's cost savings and performance improvements for supported analytics workloads without rewriting queries in PPL or SQL. Applications, alerts, and integrations that send query DSL keep working.</p> \n<p>These features are available on OpenSearch 3.9, at no additional charge, in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), and Europe (Spain). To get started, create or upgrade a domain to OpenSearch 3.9 with the new engine. To learn more, see the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/optimized-log-analytics-queries.html\">documentation</a>.</p>",
+          "summary": "<p>Amazon OpenSearch Service now supports distributed joins, high-cardinality aggregations, and OpenSearch query DSL on the new engine. Observability data often spans logs, traces, and agent traces. Engineers and their AI agents must connect these datasets to determine what failed, where it failed, and who was affected.</p> \n<p>&nbsp;&nbsp;&nbsp;&nbsp;With Piped Processing Language (PPL) or SQL, engineers and agents can query multiple petabytes to connect an error log to its trace and enrich telemetry with service ownership or deployment metadata in one query. High-cardinality aggregations help you measure incident impact across millions of distinct hosts, users, or tenants. Because the new engine distributes joins and aggregations across data nodes, you don’t need to copy related data into a single index.</p> \n<p>Routing key support keeps related documents on the same shard, so lookups and joins on that key stay fast. The new engine also supports OpenSearch query DSL, so applications, alerts, and integrations that send query DSL get its cost and performance benefits for supported analytics workloads without rewrites.</p> \n<p>These features are available on OpenSearch 3.9, at no additional charge, in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), and Europe (Spain). To get started, create or upgrade a domain to OpenSearch 3.9 with the new engine. To learn more, see the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/optimized-log-analytics-queries.html\">documentation</a>.</p>",
           "categories": [
-            "marketing:marchitecture/analytics,general:products/amazon-opensearch-service"
+            "general:products/amazon-opensearch-service,marketing:marchitecture/analytics"
           ]
         },
         {
@@ -415,42 +449,6 @@
           "categories": [
             "general:products/amazon-eks,general:products/amazon-sagemaker-studio"
           ]
-        },
-        {
-          "title": "Amazon Connect Customer AI agents now fill in step-by-step guides",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-ai-agents-fill-guides/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>AI agents in Amazon Connect Customer can now populate fields of a step-by-step guide for contact center agents during live customer interactions. With step-by-step guides, managers can design forms and other user interfaces for common workflows, such as rebooking a trip or submitting a claim. Now, AI agents can fill in a guide when it first loads and suggest updates during live conversations, saving time and improving data accuracy.</p>\n<p>When contact center agents speak to customers, they spend valuable time recording the information they need to solve the customer's problem in a step-by-step guide. For example, when a traveler calls an airline to change her flight, the agent might record her booking reference, dates of travel, and seat preferences. Now, Connect Customer's AI agents can automatically suggest and populate information like this, based on the context of the conversation. Human agents can review each suggestion, accept or reject suggestions individually or in bulk, and make any edits before submitting. The agent can focus on the customer and the problem at hand rather than on manual data entry.</p>\n<p>You can use AI agents with step-by-step guides in the following AWS regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), and Europe (London).</p>\n<p>To learn more and get started, see <a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/autofill-guides.html\" target=\"_blank\">step-by-step guides</a> in the Amazon Connect Customer administrator guide.</p>",
-          "categories": [
-            "general:products/amazon-connect,marketing:marchitecture/contact-center"
-          ]
-        },
-        {
-          "title": "Amazon Inspector expands runtime reachability analysis for ECR and EC2 findings",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/inspector-runtime-reachability/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>Amazon Inspector has expanded its vulnerability management capabilities with runtime reachability analysis for findings originating from Amazon Elastic Container Registry (Amazon ECR) and Amazon Elastic Compute Cloud (Amazon EC2) instances. Previously, Inspector reported every vulnerability found in a resource, including packages that were never used by applications. Security teams had to manually assess which vulnerabilities actually posed risk in their deployed environments. Now, Inspector automatically identifies which vulnerabilities are potentially reachable by analyzing package placement in container images and process activity on EC2 instances.</p>\n<p>With runtime reachability analysis, you can focus remediation efforts on vulnerabilities that matter most to your security posture. For container images, Inspector determines whether a vulnerable package is within your application's dockerfile paths defined by WORKDIR, ENTRYPOINT, or CMD instructions. For EC2 instances, Inspector identifies whether a vulnerable package was observed running as a process during the most recent scan. For EC2, customers must use the <a href=\"https://docs.aws.amazon.com/inspector/latest/user/inspector-vm-scanner.html\" target=\"_blank\">Inspector VM Scanner</a> for agent-based scanning to get this capability. This helps organizations managing large container fleets or complex applications prioritize remediation by distinguishing between vulnerabilities that are potentially reachable versus those in unused dependencies, reducing noise and enabling development and security teams to work more efficiently. Newly generated findings will have runtime reachability analysis included, and backfill of existing findings will be completed over time.</p>\n<p>Runtime reachability for Inspector findings is available at no additional charge and is available in all AWS Regions where Inspector is already available.</p>\n<p>To learn more, visit the <a href=\"https://aws.amazon.com/inspector/\">Amazon Inspector product page</a>.</p>",
-          "categories": [
-            "general:products/amazon-inspector,general:products/amazon-ec2,marketing:marchitecture/security-identity-and-compliance,general:products/amazon-ecr"
-          ]
-        },
-        {
-          "title": "AWS CodeDeploy now supports suspending Amazon EC2 Auto Scaling processes",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-codedeploy-suspend-asg-processes/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p>AWS CodeDeploy can now suspend Amazon EC2 Auto Scaling processes during EC2 in-place deployments to Auto Scaling groups. CodeDeploy is a fully managed service that automates application deployments to Amazon EC2 instances, on-premises servers, AWS Lambda functions, and Amazon ECS services. This launch helps prevent scaling activities from terminating or replacing instances while CodeDeploy is updating them, which can cause a deployment to fail.</p>\n<p>You can choose to suspend any combination of these processes (Terminate, AZRebalance, InstanceRefresh, and ScheduledActions) on a deployment group, or on a single deployment. CodeDeploy suspends the processes you choose before it deploys and resumes them when the deployment succeeds, fails, or is stopped, so you don't need custom scripts to suspend and resume processes during deployments. A setting on the deployment group applies to every deployment in that group, including deployments that your existing pipelines start.</p>\n<p>You can configure this feature by using the CodeDeploy console, AWS Command Line Interface (AWS CLI), or AWS SDKs. This feature is available in all <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\">AWS Regions</a>, including the AWS GovCloud (US) Regions and the China Regions.</p>\n<p>To learn more, see <a href=\"https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-aws-auto-scaling-suspend-processes.html\" target=\"_blank\">Suspending Amazon EC2 Auto Scaling processes during deployments</a> in the <em>AWS CodeDeploy User Guide</em>, or visit the <a href=\"https://aws.amazon.com/codedeploy/\">AWS CodeDeploy product page</a>.</p>",
-          "categories": [
-            "general:products/aws-govcloud-us,general:products/aws-codedeploy"
-          ]
-        },
-        {
-          "title": "AWS Device Farm launches Device Connect for local access to remote Android devices",
-          "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/device-farm-device-connect/",
-          "published": "2026-11-23T08:00:00+00:00",
-          "summary": "<p><a href=\"https://aws.amazon.com/device-farm/\">AWS Device Farm</a>, a service for testing mobile and web apps, now offers Device Connect. With Device Connect, you and AI agents can use remote Android devices from your local machine in an IDE, terminal, or development environment of your choice, as if it were plugged into your laptop. You can attach a debugger, profile performance, preview builds, run ADB (Android Debug Bridge) commands, and interact manually with the devices. You also get live video along with device and test logs. Tools and test frameworks that work with ADB locally now run on a real device that Device Farm manages for you.</p>\n<p>Previously, you used Device Farm devices manually in a web browser or for automated tests through APIs. You couldn't reach them from your local tools, such as Android Studio or a terminal. Device Connect closes that gap by connecting your local machine to a device hosted in AWS. Your existing ADB-based workflows run unchanged.</p>\n<p>To get started, install the <a href=\"https://github.com/aws/device-connect-devicefarm\" target=\"_blank\">Device Connect client</a> from GitHub, create a remote access session on Device Farm, and attach to the session's device with the 'devicefarm-connect' command. Device Connect supports Android OS versions nine and later. The client runs on macOS, Linux, and Windows with no additional cost. Device usage is billed at standard Device Farm rates.</p>\n<p>Device Connect is available in the US West (Oregon) AWS Region.</p>\n<p>To learn more, see the AWS Device Farm <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/device-connect.html\" target=\"_blank\">Developer Guide</a>.</p>",
-          "categories": [
-            "marketing:marchitecture/front-end-web-mobile,general:products/aws-device-farm,marketing:marchitecture/developer-tools,general:use-case/mobile"
-          ]
         }
       ]
     },
@@ -458,141 +456,139 @@
       "source": "https://aws.amazon.com/jp/blogs/news/feed/",
       "items": [
         {
-          "title": "AWS セキュリティハンズオン連続開催のご案内",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-security-handson-series/",
-          "published": "2026-11-27T03:00:47+00:00",
-          "summary": "AWS Japan では、2026 年 11 月から、AWS のセキュリティサービスを実際に操作するオンラインハンズオンを週次で開催します。AWS Security Agent、AWS WAF、Amazon Inspector、フロンティアモデルを活用したソースコードの脆弱性対策などをテーマに、座学とハンズオンで、ご自身の組織で試すための最初の一歩までをお伝えします。本記事は、開催日程を随時更新する案内ページです。",
+          "title": "AI の安全性は緊急ブレーキ頼みではなく、より優れたエンジニアリングで実現",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-ceo-ai-safety-engineering/",
+          "published": "2026-11-27T12:24:32+00:00",
+          "summary": "AI の安全性は、緊急ブレーキだけに頼るのではなく、エンジニアリングで確保すべきです。信頼できる AI システムを構築するための実践的なツールは既に存在します。本記事では、AWS CEO の Matt Garman が、AI エージェントへの独自のアイデンティティの付与、最小権限、封じ込めの境界、監視対象から独立した監視、自動推論による制御の検証など、実績のあるセキュリティの基本原則を AI に適用する方法を紹介します。また、Nitro や Firecracker を活用し、モデルとは独立してインフラストラクチャレベルで分離を強制する AWS の取り組みも解説します。",
           "categories": [
-            "Amazon Inspector",
-            "Announcements",
-            "AWS WAF",
-            "Security",
-            "Webinars",
-            "AWS Security",
-            "Webinar"
-          ]
-        },
-        {
-          "title": "AWS オブザーバビリティ成熟度アセスメント：推測から改善計画へ",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-observability-maturity-assessment-from-guesswork-to-a-blueprint/",
-          "published": "2026-11-27T01:52:47+00:00",
-          "summary": "本記事は、2026 年 11 月 16 日 に公開された AWS observability maturity […]",
-          "categories": [
-            "Amazon CloudWatch"
-          ]
-        },
-        {
-          "title": "ランサムウェア対策の検討を支援する Agent Skills のご紹介 ― Skills の根底にある考え方と観点",
-          "link": "https://aws.amazon.com/jp/blogs/news/fsi-ransomware-resilience-agent-skills-intro/",
-          "published": "2026-11-27T00:48:38+00:00",
-          "summary": "ランサムウェアへの備えとして、侵入を完全に防ぐことに加え、侵入されることを前提に異常に早く気づき、影響の範囲を見極め、安全な状態に戻せるようにしておく「サイバーレジリエンス」の観点が重要になっています。本記事では、金融リファレンスアーキテクチャ日本版で公開している、ランサムウェア対策の検討を支援する Agent Skills をご紹介します。あわせて、金融業界のお客様の検討をご支援する中で見えてきた、Skills の根底にある考え方と観点として、保護・検知・対応・復旧・組織対応の 5 つの要素とそのつながり、要素をまたいで共通する考え方、検討の中で向き合うトレードオフをご紹介します。",
-          "categories": [
-            "Artificial Intelligence",
-            "Financial Services",
-            "Industries",
             "Security, Identity, & Compliance",
-            "Financial Services Industry",
+            "Artificial Intelligence",
+            "aws",
+            "Innovation",
             "Security Blog"
           ]
         },
         {
-          "title": "開発者が Kiro に持ち込む作業で、コーディングエージェントをベンチマークする",
-          "link": "https://aws.amazon.com/jp/blogs/news/kirobench/",
-          "published": "2026-11-26T13:42:52+00:00",
-          "summary": "開発者は Kiro を、ちょっとした質問から、多くのファイルにまたがり何往復も会話が続く作業まで、あらゆることに使っています。そうした使い方のすべてにわたってエージェントを測るために、私たちは「KiroBench」と呼ぶ社内ベンチマークを作りました。",
-          "categories": [
-            "Developer Tools",
-            "Kiro"
-          ]
-        },
-        {
-          "title": "人の注意を中心にソフトウェアファクトリーを作る",
-          "link": "https://aws.amazon.com/jp/blogs/news/software-factory-human-attention/",
-          "published": "2026-11-26T05:52:18+00:00",
-          "summary": "Kiro の中のエージェントを作っているチームが、人の注意をどこにどう使うかを中心にソフトウェアファクトリーを作りました。判断をライフサイクル全体に分散させ、1 回 1 回のレビューを楽にし、要らないコンテキストの切り替えを減らす仕組みと、運用してわかったことを紹介します。",
-          "categories": [
-            "Developer Tools",
-            "Kiro"
-          ]
-        },
-        {
-          "title": "AWS WAF のシンプルで予測しやすい新しい料金体系のご紹介",
-          "link": "https://aws.amazon.com/jp/blogs/news/introducing-aws-waf-simplified-pricing/",
-          "published": "2026-11-26T04:26:40+00:00",
-          "summary": "AWS は 2026 年 11 月 23 日、保護するリソース、AWS WAF が検査するリクエスト、高度な保護が評価するリクエストという 3 つの要素に基づく AWS WAF の新しい料金体系を発表しました。新しい料金体系は 2027 年 2 月 1 日以降の利用分に適用されます。ルールを追加・変更しても料金単価は変わりません。また、Bot Control の共通保護や Anti-DDoS ルールグループを有効にしてもサブスクリプションは追加されないため、コストを予測しやすくなります。この記事では、新しい料金体系の仕組みと、計算例を使った請求額の見積り方法を紹介します。",
+          "title": "AWS のセキュリティ新機能: API と AI エンドポイントの検出から保護までを実現",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-api-and-ai-security-on-aws-from-discovery-to-protection/",
+          "published": "2026-11-27T12:23:09+00:00",
+          "summary": "AI エージェントが API を直接呼び出すようになった今、API と AI エンドポイントを検出して保護するために AWS が 2026 年 11 月に一般提供を開始した 3 つの新機能を紹介します。Amazon API Gateway の API Portal は、シャドー API を含む各種 API と、MCP サーバーなどの AI エンドポイントを同じインベントリにまとめます。AWS WAF の API Security マネージドルールグループは、トークン改ざんやオブジェクトレベルの認可の不備 (BOLA) などの不正使用に対応します。AI Security マネージドルールグループは、MCP と A2A のプロトコル違反を検出し、Amazon Bedrock Guardrails と連携してプロンプト攻撃をチェックします。ラベルを使った独自ルールの作成方法も解説します。",
           "categories": [
             "Announcements",
+            "Artificial Intelligence",
             "AWS WAF",
             "Intermediate (200)",
+            "Launch",
             "Security, Identity, & Compliance",
             "Security Blog"
           ]
         },
         {
-          "title": "新しい AWS WAF セキュリティ分析ダッシュボードのご紹介: すべての保護パックのトラフィックを単一ページで調査・対処",
-          "link": "https://aws.amazon.com/jp/blogs/news/introducing-the-new-aws-waf-security-analytics-dashboard/",
-          "published": "2026-11-26T04:25:01+00:00",
-          "summary": "AWS WAF セキュリティ分析ダッシュボードを使うと、すべての保護パック (ウェブ ACL)、リージョンリソース、Amazon CloudFront ディストリビューションにわたるトラフィックを単一のグローバルページで調査し、同じページから対処できます。この記事では、ホストやラベルなどのディメンションと、フィルターやグループ化などのコントロールを紹介します。また、トラフィックの急増の調査と、誤検知を減らすためのルールのチューニングという 2 つのユースケースを説明します。",
+          "title": "Enterprise-Managed Authorization で実現する AI エージェントによる AWS への安全なアクセス",
+          "link": "https://aws.amazon.com/jp/blogs/news/secure-agentic-access-to-aws-with-enterprise-managed-authorization/",
+          "published": "2026-11-27T12:22:24+00:00",
+          "summary": "AWS サインインが、ID-JAG を使用した Enterprise-Managed Authorization (EMA) のサポートを開始しました。Okta などの既存のエンタープライズ IdP を通じて、AI エージェントによる AWS MCP Server へのアクセスを一元的かつ安全に認可できます。ユーザーが追加の長期的な認証情報を管理する必要はありません。この記事では、EMA と ID-JAG の仕組み、Okta と IAM ロールを使った設定手順、AWS CloudTrail による認可アクティビティの確認方法、セキュリティのベストプラクティスを紹介します。",
           "categories": [
-            "Announcements",
-            "AWS WAF",
-            "Best Practices",
-            "Security, Identity, & Compliance",
-            "Best practices",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "AWS WAF Bot Control のターゲットを絞った検査レベルでオンボーディングを簡素化",
-          "link": "https://aws.amazon.com/jp/blogs/news/introducing-simplified-onboarding-for-aws-waf-bot-control-at-the-targeted-inspection-level/",
-          "published": "2026-11-26T04:23:29+00:00",
-          "summary": "ターゲットを絞った検査レベルの AWS WAF Bot Control で、簡素化されたオンボーディングとボット信頼度レベルの提供を開始しました。ラベルルールを記述する代わりに High、Medium、Low の信頼度レベルごとにアクションを選べるため、AI を活用したボットを含む自動化されたトラフィックへの対処に役立ちます。Amazon CloudFront では、1 つのトグルで Targeted bot control を有効にでき、自動 SDK 統合によってアプリケーションコードを変更せずに導入できる場合が多くあります。この記事では、コンソールと API での設定手順と考慮事項を紹介します。",
-          "categories": [
-            "Announcements",
-            "AWS WAF",
-            "Foundational (100)",
-            "Security, Identity, & Compliance",
-            "Security Blog"
-          ]
-        },
-        {
-          "title": "AWS Weekly Roundup: ボゴタのローカルゾーン、30 分の Lambda タイムアウト、その他 (2026 年 11 月 24 日)",
-          "link": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/",
-          "published": "2026-11-26T02:57:14+00:00",
-          "summary": "一部の制限は、どの機能よりもアーキテクチャを形作ります。AWS Lambda は 2014 年に 60 秒のタ […]",
-          "categories": [
-            "Amazon Aurora",
-            "Amazon CloudFront",
-            "Amazon Cognito",
-            "Amazon EC2",
-            "Amazon Elastic Block Store (Amazon EBS)",
-            "Amazon Elastic Container Registry",
-            "Amazon Elastic Container Service",
-            "Amazon Elastic Kubernetes Service",
-            "Amazon Managed Streaming for Apache Kafka (Amazon MSK)",
-            "Amazon Polly",
-            "Amazon Simple Storage Service (S3)",
-            "Announcements",
-            "AWS CloudTrail",
-            "AWS Direct Connect",
+            "Artificial Intelligence",
             "AWS Identity and Access Management (IAM)",
-            "AWS Lambda",
-            "AWS Local Zones",
-            "AWS Security Token Service",
-            "News"
+            "Developer Tools",
+            "Intermediate (200)",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "AWS IAM",
+            "Security Blog"
           ]
         },
         {
-          "title": "Ｓｋｙ株式会社様の AI-DLC Unicorn Gym 実践レポート：4 チームの実践から各事業本部に広がる AI 駆動開発",
-          "link": "https://aws.amazon.com/jp/blogs/news/sky-ai-dlc/",
-          "published": "2026-11-26T01:56:36+00:00",
-          "summary": "本稿は、AI 駆動開発ライフサイクル（AI-Driven Development Life Cycle、以下 AI-DLC）Unicorn Gym を Ｓｋｙ株式会社様（以下、同社）向けに実施した際に得られた学びと成果をお伝えするものです。 AI-DLC は、要件定義からリリースまでの開発プロセス全体に AI を深く組み込む、AWS が提唱する開発方法論です。AI が開発プロセス全体をオーケストレーション（計画策定、タスク分解、アーキテクチャ提案など）し、人間が検証・意思決定・監督の責任を保持します。従来は数週間を要していた開発の 1 サイクルを、「Bolt」と呼ぶ半日〜1 日単位の短い反復に圧縮できる点が特徴です。AI-DLC の詳細は、AI-DLC のホワイトペーパーと日本語の解説ブログをご覧ください。 本ブログでは、2026 年 6 月 9 日から 11 日の 3 日間にわたり同社向けに実施された AI-DLC Unicorn Gym について紹介します。AI-DLC Unicorn Gym は、座学ではなく実際のプロダクト開発を題材に AI-DLC を実践し、その効果を検証する実践型プログラムです。実案件を持ち込むことで、プログラムでの学びがそのまま本番開発へつながる点が特徴です。今回はエンジニア・PM・PdM・デザイナーを含む 4 チーム・計 36 名 が参加し、AI-DLC workflow v1 に沿って、Claude Code を用いて開発を進めました。",
+          "title": "AWS Network Firewall で自動インターネットファイアウォールモード (プレビュー) の提供を開始",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-network-firewall-introduces-automated-internet-firewall-mode-preview/",
+          "published": "2026-11-27T12:21:30+00:00",
+          "summary": "AWS Network Firewall の自動インターネットファイアウォールモード (プレビュー) では、一元的に定義したルールを各 VPC のインターネットゲートウェイで適用します。アウトバウンド専用の IPv4 接続には、組み込みの NAT を使用します。VPC ごとにファイアウォールエンドポイントや NAT ゲートウェイをデプロイする必要はありません。この記事では、仕組みとサブネットの接続タイプ、AWS Network Security Manager でのポリシー管理、監視モードから始める導入手順、既存の VPC の移行方法を紹介します。",
           "categories": [
-            "General",
-            "Generative AI",
-            "AI",
-            "利用事例",
-            "開催報告"
+            "Announcements",
+            "AWS Network Firewall",
+            "Intermediate (200)",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "AWS Network Firewall のコンテキスト対応ルールのご紹介: IP アドレスではなく AWS リソースに基づくトラフィック照合",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-context-aware-rules-for-aws-network-firewall/",
+          "published": "2026-11-27T12:20:58+00:00",
+          "summary": "AWS Network Firewall がコンテキスト対応ルールをサポートするようになりました。このルールは、IP アドレスではなく送信元や送信先の AWS リソースに基づいてトラフィックを照合します。VPC、サブネット、セキュリティグループ、Transit Gateway アタッチメントを指定でき、VPC に接続された Lambda 関数がスケールアウトする場合など、短期間しか存在しないワークロードにもルールが追随します。この記事では、コンテキストストアとトランジットゲートウェイによる仕組み、複数のアカウントにわたる設定手順、ログに記録されるコンテキストを紹介します。",
+          "categories": [
+            "Advanced (300)",
+            "Announcements",
+            "AWS Network Firewall",
+            "Launch",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "Security Blog",
+            "technical How-to"
+          ]
+        },
+        {
+          "title": "AWS Network Firewall の Next Generation ポリシーの紹介: アクセス制御と脅威防御を個別のエンジンで実現",
+          "link": "https://aws.amazon.com/jp/blogs/news/introducing-aws-network-firewall-next-generation-policy/",
+          "published": "2026-11-27T12:20:13+00:00",
+          "summary": "AWS Network Firewall の Next Generation ポリシーでは、アクセス制御を担うファイアウォールエンジンと脅威防御を担う IPS エンジンが分離され、それぞれが独自のルール容量を持ちます。この記事では、Classic ポリシーとの違い、ファイアウォールエンジンがフックとアクションスコープを使ってトラフィックを評価する仕組み、各エンジンが記録するログの読み方、監視モードでの検証方法を説明します。さらに、ドメイン許可リストと脅威防御を組み合わせたポリシーの作成例も紹介します。",
+          "categories": [
+            "Advanced (300)",
+            "Announcements",
+            "AWS Network Firewall",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "AWS-LC でポスト量子暗号の更新を日常的な作業にするアプローチ",
+          "link": "https://aws.amazon.com/jp/blogs/news/make-post-quantum-cryptography-updates-routine-with-aws-lc/",
+          "published": "2026-11-27T12:19:13+00:00",
+          "summary": "ポスト量子暗号 (PQC) への移行を見据え、暗号アルゴリズムの更新を日常的な作業にするための考え方を紹介します。AWS が保守する暗号ライブラリ AWS-LC が、互換性、保証、パフォーマンスという 3 つの特性をどのように実現しているかを説明します。OpenSSL 互換の API、形式的検証、ML-KEM と ML-DSA の最適化に加え、ハイブリッドポスト量子鍵交換と ML-DSA 証明書が TLS ハンドシェイクに与える影響の測定結果も紹介します。",
+          "categories": [
+            "Expert (400)",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "cryptography",
+            "post-quantum cryptography",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "Amazon Cognito の Plus 機能プラン: 99.99% のサービスコミットメントを踏まえた可用性計画",
+          "link": "https://aws.amazon.com/jp/blogs/news/planning-for-99-99-percent-availability-with-the-amazon-cognito-plus-feature-plan/",
+          "published": "2026-11-27T12:17:52+00:00",
+          "summary": "AWS は、Amazon Cognito の Plus 機能プランのユーザープールについて、2026 年 11 月 1 日から月間稼働率に関する SLA のサービスコミットメントを従来の 99.9% から 99.99% に引き上げました。既に Plus を利用しているユーザープールには自動的に適用されます。この記事では、引き上げの理由、サービスクレジット、5 分単位の区間で可用性を測定する方法、2025 年 11 月から 2026 年 10 月までの可用性の実績を紹介します。あわせて、AWS マネジメントコンソールなどでユーザープールを Plus に切り替える手順も説明します。",
+          "categories": [
+            "Amazon Cognito",
+            "Intermediate (200)",
+            "Security, Identity, & Compliance",
+            "Technical How-to",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "Amazon Cognito のポイントインタイムリカバリ (PITR) によるアイデンティティデータの保護",
+          "link": "https://aws.amazon.com/jp/blogs/news/protect-identity-data-with-point-in-time-recovery-in-amazon-cognito/",
+          "published": "2026-11-27T12:17:00+00:00",
+          "summary": "Amazon Cognito ユーザープールのポイントインタイムリカバリ (PITR) を使用して、誤った一括操作の後にユーザープールを復旧し、アイデンティティデータを保護する方法を紹介します。リカバリの開始、プレビューでの影響件数の確認、承認またはキャンセルという 3 つのステップを説明します。あわせて、sub 識別子やアプリケーションの統合が変わらない点や、開始と承認の権限分離などのセキュリティに関する考慮事項も解説します。",
+          "categories": [
+            "Security, Identity, & Compliance",
+            "Security Blog"
+          ]
+        },
+        {
+          "title": "AWS Nitro System がお客様の最も機密性の高いデータを保護する仕組み",
+          "link": "https://aws.amazon.com/jp/blogs/news/aws-nitro-system-customer-data-privacy/",
+          "published": "2026-11-27T12:15:56+00:00",
+          "summary": "AWS Nitro System は、新しい世代のすべての Amazon EC2 インスタンスを支える独自のハードウェアとソフトウェアです。AWS のオペレーターがお客様のデータにアクセスする手段を一切持たないように設計されています。本記事では、Xen ハイパーバイザーから Nitro Card への処理の移行と、転送中の暗号化やメモリ暗号化などの保護機能を紹介します。さらに、分離を担う Nitro Isolation Engine の仕組みと、AWS が形式的検証によって証明したその 4 つの性質を解説します。",
+          "categories": [
+            "Security, Identity, & Compliance",
+            "AWS Nitro System",
+            "Security Blog"
           ]
         }
       ]
